@@ -1,0 +1,81 @@
+# Medical Imaging AI - Git Ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Data files (medical images can be large)
+data/raw/*
+data/processed/*
+data/reports/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/reports/.gitkeep
+
+# Model weights (can be large)
+src/models/*.pth
+src/models/*.pt
+src/models/*.h5
+src/models/*.pkl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# API keys
+config/secrets.yml
+config/api_keys.txt
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Output
+output/
+reports/
+*.pdf
+*.docx
+
+# System files
+Thumbs.db
+.DS_Store
