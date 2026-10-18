@@ -23,9 +23,10 @@ grader tells them apart. Organs: breast, thyroid, fetal.
 |---|---|
 | templates, error injection, severity, magnitude (3 organs) | done, tested |
 | bleu, rougeL, chrf, fact_checker, fact_f1, evidence_check | done, tested |
-| bertscore | wrapper written; run locally (needs model download) |
-| llm_judge, Inspect task | written; Inspect task loads, end-to-end run **not** completed (sandbox blocked a download); judge not tested against a live API |
-| ratescore, green | wrappers written from their READMEs; **untested** |
+| bertscore (roberta-large) | **run** on a 5,654-pair sample (100 cases/dataset, `bench_small.jsonl`): AUROC 0.01, harmless mean 0.96 (`results_stage2.md`) |
+| llm_judge (claude CLI backend `claude_judge:<model>`), Inspect task | backend written + unit-tested with a fake runner; **not run live** (CLI returned "Credit balance is too low"); Inspect end-to-end **not** verified |
+| ratescore | **run** on the same 5,654-pair sample (CPU): AUROC 0.15, harmless mean 0.76 |
+| green | **not run**: 7B model too large for 16 GB (and `green-score` does not install on Python 3.9) |
 | severity levels | **provisional**, author-assigned; need clinician confirmation |
 | reports | **templated from labels**, as in BUSTR; no real clinician-written report text exists in these datasets |
 | fact_checker / evidence_check | rule-based, built on our own wording, so on templated text they are an **upper bound**, not evidence about free text |
