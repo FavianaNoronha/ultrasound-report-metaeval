@@ -1,0 +1,2285 @@
+{
+ "all": {
+  "bleu": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 622
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 622
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 622
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 622
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "count": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "echogenicity": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "hc_mm": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "location": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "margin": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 522
+    },
+    "posterior_features": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "size": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.4089465086303534,
+    "identical_mean": 1.0000000000000002
+   },
+   "severity_spearman": 0.10512929630766442,
+   "magnitude_spearman": {
+    "birads": 0.26576648827241717,
+    "hc_mm": null
+   }
+  },
+  "rougeL": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 622
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 622
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 622
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 622
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "count": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "echogenicity": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "hc_mm": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "location": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "margin": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 522
+    },
+    "posterior_features": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "size": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.5904972506068733,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": 0.02303352689865649,
+   "magnitude_spearman": {
+    "birads": 0.27069922609832364,
+    "hc_mm": -0.048425805377563545
+   }
+  },
+  "chrf": {
+   "discrimination": {
+    "auroc": 0.00022329403358342266,
+    "lo": 0.0,
+    "hi": 0.0004689174705251875,
+    "n": 622
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0002679528403001072,
+     "lo": 0.0,
+     "hi": 0.0008038585209003215,
+     "n": 622
+    },
+    "2": {
+     "auroc": 0.00040192926045016077,
+     "lo": 0.0,
+     "hi": 0.0010048231511254019,
+     "n": 622
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 622
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "count": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "echogenicity": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "hc_mm": {
+     "auroc": 0.0005555555555555556,
+     "lo": 0.0,
+     "hi": 0.0016805555555555586,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "location": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "margin": {
+     "auroc": 0.01,
+     "lo": 0.0,
+     "hi": 0.025,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 522
+    },
+    "posterior_features": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "size": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.6847669409198057,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": 0.18177396503965923,
+   "magnitude_spearman": {
+    "birads": 0.20906588744372767,
+    "hc_mm": -0.09633377590010316
+   }
+  },
+  "fact_checker": {
+   "discrimination": {
+    "auroc": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 622
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 622
+    },
+    "2": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 622
+    },
+    "3": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 622
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "count": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "echogenicity": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "hc_mm": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "location": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "margin": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 522
+    },
+    "posterior_features": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "size": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.9999925595238095,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": -0.7435887089554842,
+   "magnitude_spearman": {
+    "birads": 0.287223676945425,
+    "hc_mm": -0.9851206669016689
+   }
+  },
+  "evidence_check": {
+   "discrimination": {
+    "auroc": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 622
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 622
+    },
+    "2": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 622
+    },
+    "3": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 622
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "count": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "echogenicity": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "hc_mm": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "location": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "margin": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 522
+    },
+    "posterior_features": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "size": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.9998158482142857,
+    "identical_mean": 0.9998673633440515
+   },
+   "severity_spearman": -0.7419182542950072,
+   "magnitude_spearman": {
+    "birads": 0.287223676945425,
+    "hc_mm": -0.9783919163968935
+   }
+  },
+  "bertscore[roberta-large]": {
+   "discrimination": {
+    "auroc": 0.00730171489817792,
+    "lo": 0.0052853697749196136,
+    "hi": 0.009112071275455519,
+    "n": 622
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.02090032154340836,
+     "lo": 0.01487138263665595,
+     "hi": 0.02652733118971061,
+     "n": 622
+    },
+    "2": {
+     "auroc": 0.0011387995712754553,
+     "lo": 0.00020096463022508038,
+     "hi": 0.0022139603429796365,
+     "n": 622
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 622
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "count": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "echogenicity": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "hc_mm": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 0.26,
+     "lo": 0.21,
+     "hi": 0.31012500000000004,
+     "n": 100
+    },
+    "location": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "margin": {
+     "auroc": 0.025,
+     "lo": 0.005,
+     "hi": 0.05,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 522
+    },
+    "posterior_features": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "size": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.9565526902054747,
+    "identical_mean": 0.9999999575484604
+   },
+   "severity_spearman": -0.06297142008562728,
+   "magnitude_spearman": {
+    "birads": -0.35388759165290434,
+    "hc_mm": -0.6634611526291025
+   }
+  },
+  "ratescore": {
+   "discrimination": {
+    "auroc": 0.15344765987852807,
+    "lo": 0.14430432743837085,
+    "hi": 0.16461291979278314,
+    "n": 622
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.11554126473740622,
+     "lo": 0.10416532690246519,
+     "hi": 0.12993837084673096,
+     "n": 622
+    },
+    "2": {
+     "auroc": 0.15963290460878884,
+     "lo": 0.14710845391211147,
+     "hi": 0.17454347534833872,
+     "n": 622
+    },
+    "3": {
+     "auroc": 0.14596730975348338,
+     "lo": 0.12973439174705254,
+     "hi": 0.16486300911039656,
+     "n": 622
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 0.005,
+     "lo": 0.0,
+     "hi": 0.02,
+     "n": 100
+    },
+    "count": {
+     "auroc": 0.41770186335403725,
+     "lo": 0.39592391304347824,
+     "hi": 0.43788819875776397,
+     "n": 322
+    },
+    "echogenicity": {
+     "auroc": 0.105,
+     "lo": 0.059875,
+     "hi": 0.14512500000000003,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "hc_mm": {
+     "auroc": 0.23944444444444443,
+     "lo": 0.19220833333333331,
+     "hi": 0.2867777777777778,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 0.92,
+     "lo": 0.884875,
+     "hi": 0.950125,
+     "n": 100
+    },
+    "location": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "margin": {
+     "auroc": 0.175,
+     "lo": 0.12987500000000002,
+     "hi": 0.22,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 0.16187739463601533,
+     "lo": 0.1446360153256705,
+     "hi": 0.18199233716475097,
+     "n": 522
+    },
+    "posterior_features": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 0.355,
+     "lo": 0.315,
+     "hi": 0.4,
+     "n": 100
+    },
+    "side": {
+     "auroc": 0.035,
+     "lo": 0.015,
+     "hi": 0.065,
+     "n": 100
+    },
+    "size": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.7599302967389967,
+    "identical_mean": 0.9999999719565318
+   },
+   "severity_spearman": 0.019749694307240273,
+   "magnitude_spearman": {
+    "birads": -0.011045017305474643,
+    "hc_mm": -0.4077030976493179
+   }
+  }
+ },
+ "breast": {
+  "bleu": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 200
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "echogenicity": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "margin": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "posterior_features": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.4139383216369697,
+    "identical_mean": 1.0000000000000002
+   },
+   "severity_spearman": 0.02594624524870115,
+   "magnitude_spearman": {
+    "birads": 0.26576648827241717
+   }
+  },
+  "rougeL": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 200
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "echogenicity": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "margin": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "posterior_features": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.5453350646578112,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": 0.08023289189944635,
+   "magnitude_spearman": {
+    "birads": 0.27069922609832364
+   }
+  },
+  "chrf": {
+   "discrimination": {
+    "auroc": 0.00041666666666666664,
+    "lo": 0.0,
+    "hi": 0.0010416666666666667,
+    "n": 200
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "2": {
+     "auroc": 0.00125,
+     "lo": 0.0,
+     "hi": 0.003125,
+     "n": 200
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "echogenicity": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "margin": {
+     "auroc": 0.01,
+     "lo": 0.0,
+     "hi": 0.025,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "posterior_features": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.6954199813294867,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": 0.09426545497658283,
+   "magnitude_spearman": {
+    "birads": 0.20906588744372767
+   }
+  },
+  "fact_checker": {
+   "discrimination": {
+    "auroc": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 200
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    },
+    "2": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    },
+    "3": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "echogenicity": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "margin": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    },
+    "posterior_features": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 1.0,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": -0.6217829547367726,
+   "magnitude_spearman": {
+    "birads": 0.287223676945425
+   }
+  },
+  "evidence_check": {
+   "discrimination": {
+    "auroc": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 200
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    },
+    "2": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    },
+    "3": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "echogenicity": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "margin": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 200
+    },
+    "posterior_features": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 1.0,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": -0.6217829547367726,
+   "magnitude_spearman": {
+    "birads": 0.287223676945425
+   }
+  },
+  "bertscore[roberta-large]": {
+   "discrimination": {
+    "auroc": 0.02270833333333333,
+    "lo": 0.017484375000000003,
+    "hi": 0.028546875,
+    "n": 200
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.065,
+     "lo": 0.04875,
+     "hi": 0.08128125000000001,
+     "n": 200
+    },
+    "2": {
+     "auroc": 0.0035416666666666665,
+     "lo": 0.0008333333333333333,
+     "hi": 0.007505208333333334,
+     "n": 200
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "echogenicity": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 0.26,
+     "lo": 0.21,
+     "hi": 0.31012500000000004,
+     "n": 100
+    },
+    "margin": {
+     "auroc": 0.025,
+     "lo": 0.005,
+     "hi": 0.05,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "posterior_features": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "side": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.9488808770477771,
+    "identical_mean": 0.9999999582767487
+   },
+   "severity_spearman": 0.06051697238685813,
+   "magnitude_spearman": {
+    "birads": -0.35388759165290434
+   }
+  },
+  "ratescore": {
+   "discrimination": {
+    "auroc": 0.133125,
+    "lo": 0.12061979166666666,
+    "hi": 0.146046875,
+    "n": 200
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.27266666666666667,
+     "lo": 0.24699166666666666,
+     "hi": 0.29896875,
+     "n": 200
+    },
+    "2": {
+     "auroc": 0.03854166666666667,
+     "lo": 0.027374999999999997,
+     "hi": 0.051709374999999995,
+     "n": 200
+    },
+    "3": {
+     "auroc": 0.07812499999999999,
+     "lo": 0.06516145833333332,
+     "hi": 0.09210416666666667,
+     "n": 200
+    }
+   },
+   "by_perturbation": {
+    "birads": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 200
+    },
+    "calcifications": {
+     "auroc": 0.005,
+     "lo": 0.0,
+     "hi": 0.02,
+     "n": 100
+    },
+    "echogenicity": {
+     "auroc": 0.105,
+     "lo": 0.059875,
+     "hi": 0.14512500000000003,
+     "n": 100
+    },
+    "halo": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "histology_same_class": {
+     "auroc": 0.92,
+     "lo": 0.884875,
+     "hi": 0.950125,
+     "n": 100
+    },
+    "margin": {
+     "auroc": 0.175,
+     "lo": 0.12987500000000002,
+     "hi": 0.22,
+     "n": 100
+    },
+    "pathology": {
+     "auroc": 0.1975,
+     "lo": 0.1625,
+     "hi": 0.23,
+     "n": 200
+    },
+    "posterior_features": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "shape": {
+     "auroc": 0.355,
+     "lo": 0.315,
+     "hi": 0.4,
+     "n": 100
+    },
+    "side": {
+     "auroc": 0.035,
+     "lo": 0.015,
+     "hi": 0.065,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.8209838070850509,
+    "identical_mean": 1.0000000302551189
+   },
+   "severity_spearman": 0.24566425766209368,
+   "magnitude_spearman": {
+    "birads": -0.011045017305474643
+   }
+  }
+ },
+ "fetal": {
+  "bleu": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 100
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "by_perturbation": {
+    "hc_mm": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.4948598178011999,
+    "identical_mean": 1.0000000000000002
+   },
+   "severity_spearman": null,
+   "magnitude_spearman": {
+    "hc_mm": null
+   }
+  },
+  "rougeL": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 100
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "by_perturbation": {
+    "hc_mm": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.6777777777777777,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": -0.057879908017323276,
+   "magnitude_spearman": {
+    "hc_mm": -0.048425805377563545
+   }
+  },
+  "chrf": {
+   "discrimination": {
+    "auroc": 0.0005555555555555556,
+    "lo": 0.0,
+    "hi": 0.0016805555555555586,
+    "n": 100
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0016666666666666666,
+     "lo": 0.0,
+     "hi": 0.005041666666666676,
+     "n": 100
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "by_perturbation": {
+    "hc_mm": {
+     "auroc": 0.0005555555555555556,
+     "lo": 0.0,
+     "hi": 0.0016805555555555586,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.7410082592742906,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": -0.0978190588889636,
+   "magnitude_spearman": {
+    "hc_mm": -0.09633377590010316
+   }
+  },
+  "fact_checker": {
+   "discrimination": {
+    "auroc": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 100
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "2": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "3": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    }
+   },
+   "by_perturbation": {
+    "hc_mm": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.9999666666666667,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": -0.9693749877203373,
+   "magnitude_spearman": {
+    "hc_mm": -0.9851206669016689
+   }
+  },
+  "evidence_check": {
+   "discrimination": {
+    "auroc": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 100
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "2": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    },
+    "3": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    }
+   },
+   "by_perturbation": {
+    "hc_mm": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.999175,
+    "identical_mean": 0.9991749999999999
+   },
+   "severity_spearman": -0.954057583605303,
+   "magnitude_spearman": {
+    "hc_mm": -0.9783919163968935
+   }
+  },
+  "bertscore[roberta-large]": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 100
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "by_perturbation": {
+    "hc_mm": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.9651521096626917,
+    "identical_mean": 0.9999999916553497
+   },
+   "severity_spearman": -0.6675097841635621,
+   "magnitude_spearman": {
+    "hc_mm": -0.6634611526291025
+   }
+  },
+  "ratescore": {
+   "discrimination": {
+    "auroc": 0.23944444444444443,
+    "lo": 0.19220833333333331,
+    "hi": 0.2867777777777778,
+    "n": 100
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.17333333333333328,
+     "lo": 0.13333333333333333,
+     "hi": 0.2150416666666667,
+     "n": 100
+    },
+    "2": {
+     "auroc": 0.24333333333333335,
+     "lo": 0.18166666666666664,
+     "hi": 0.30004166666666665,
+     "n": 100
+    },
+    "3": {
+     "auroc": 0.30166666666666664,
+     "lo": 0.23995833333333333,
+     "hi": 0.35999999999999993,
+     "n": 100
+    }
+   },
+   "by_perturbation": {
+    "hc_mm": {
+     "auroc": 0.23944444444444443,
+     "lo": 0.19220833333333331,
+     "hi": 0.2867777777777778,
+     "n": 100
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.7037261277153338,
+    "identical_mean": 0.9999999811333222
+   },
+   "severity_spearman": -0.3893100777530373,
+   "magnitude_spearman": {
+    "hc_mm": -0.4077030976493179
+   }
+  }
+ },
+ "thyroid": {
+  "bleu": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 322
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "by_perturbation": {
+    "count": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "location": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "size": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.3658242757826818,
+    "identical_mean": 1.0000000000000002
+   },
+   "severity_spearman": 0.4693263359165349,
+   "magnitude_spearman": {}
+  },
+  "rougeL": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 322
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "by_perturbation": {
+    "count": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "location": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "size": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.5778896671105277,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": 0.0,
+   "magnitude_spearman": {}
+  },
+  "chrf": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 322
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "by_perturbation": {
+    "count": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "location": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "size": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.6519507737300266,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": 0.3080751719251276,
+   "magnitude_spearman": {}
+  },
+  "fact_checker": {
+   "discrimination": {
+    "auroc": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 322
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "2": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "3": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    }
+   },
+   "by_perturbation": {
+    "count": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "location": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "pathology": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "size": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 1.0,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": -0.9999999999999999,
+   "magnitude_spearman": {}
+  },
+  "evidence_check": {
+   "discrimination": {
+    "auroc": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 322
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "2": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "3": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    }
+   },
+   "by_perturbation": {
+    "count": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "location": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "pathology": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    },
+    "size": {
+     "auroc": 1.0,
+     "lo": 1.0,
+     "hi": 1.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 1.0,
+    "identical_mean": 1.0
+   },
+   "severity_spearman": -0.9999999999999999,
+   "magnitude_spearman": {}
+  },
+  "bertscore[roberta-large]": {
+   "discrimination": {
+    "auroc": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 322
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "2": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "3": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "by_perturbation": {
+    "count": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "location": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "pathology": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "size": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.9573118508047198,
+    "identical_mean": 0.9999999465039058
+   },
+   "severity_spearman": -0.16925009934094065,
+   "magnitude_spearman": {}
+  },
+  "ratescore": {
+   "discrimination": {
+    "auroc": 0.13936335403726707,
+    "lo": 0.13002717391304347,
+    "hi": 0.14752523291925465,
+    "n": 322
+   },
+   "by_severity": {
+    "1": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "2": {
+     "auroc": 0.20885093167701863,
+     "lo": 0.19796195652173912,
+     "hi": 0.21894409937888198,
+     "n": 322
+    },
+    "3": {
+     "auroc": 0.13975155279503104,
+     "lo": 0.11956521739130435,
+     "hi": 0.15997670807453418,
+     "n": 322
+    }
+   },
+   "by_perturbation": {
+    "count": {
+     "auroc": 0.41770186335403725,
+     "lo": 0.39592391304347824,
+     "hi": 0.43788819875776397,
+     "n": 322
+    },
+    "location": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    },
+    "pathology": {
+     "auroc": 0.13975155279503104,
+     "lo": 0.11956521739130435,
+     "hi": 0.15997670807453418,
+     "n": 322
+    },
+    "size": {
+     "auroc": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 322
+    }
+   },
+   "robustness": {
+    "harmless_mean": 0.7481909280568185,
+    "identical_mean": 0.9999999328962944
+   },
+   "severity_spearman": -0.49143310635060117,
+   "magnitude_spearman": {}
+  }
+ }
+}

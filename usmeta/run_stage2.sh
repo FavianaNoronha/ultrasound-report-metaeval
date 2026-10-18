@@ -13,7 +13,7 @@ keep={c for s in cases.values() for c in random.sample(sorted(s), min(100,len(s)
 out=[i for i in items if i['case_id'] in keep]
 open('bench_small.jsonl','w').write(''.join(json.dumps(i)+'\n' for i in out)); print(len(out),'items in bench_small.jsonl')
 P
-G=bleu,rougeL,chrf,fact_checker,evidence_check,bertscore:roberta-large,ratescore,green
+G=bleu,rougeL,chrf,fact_checker,evidence_check,bertscore:roberta-large,ratescore
 if [ "$1" = judge ]; then G=$G,llm_judge; fi
 python3 -m usmeta.run grade --bench bench_small.jsonl --graders $G --out scores_stage2.json
 python3 -m usmeta.run report --bench bench_small.jsonl --scores scores_stage2.json --out results_stage2

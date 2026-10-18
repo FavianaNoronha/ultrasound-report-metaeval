@@ -140,7 +140,7 @@ class RaTEScore:
     """pip install RaTEScore  (radiology entity-aware metric; built for chest/CT/MRI text). API from its README; untested here."""
     name = 'ratescore'
     def __init__(self):
-        from RaTEScore import RaTEScore as R; self.r = R()
+        from RaTEScore import RaTEScore as R; self.r = R(use_gpu=False, batch_size=16)  # no CUDA on a Mac: default use_gpu=True crashes
     def batch(self, refs, hyps, items=None): return list(self.r.compute_score(hyps, refs))
     def score(self, ref, hyp, item=None): return self.batch([ref], [hyp])[0]
 
@@ -148,7 +148,11 @@ class Green:
     """pip install green-score  (LLM-based error counter, Stanford AIMI). API from its README; untested here; needs a GPU."""
     name = 'green'
     def __init__(self):
-        from green_score import GREEN; self.g = GREEN('StanfordAIMI/GREEN-radllama2-7b', output_dir='.')
+        try: from green_score import GREEN
+        except ImportError as e:
+            raise RuntimeError('green-score is not installable here (needs Python>=3.10; the 7B model also needs a GPU or ~16 GB+ free RAM). '
+                               'Run on a GPU box or drop green from --graders.') from e
+        self.g = GREEN('StanfordAIMI/GREEN-radllama2-7b', output_dir='.')
     def batch(self, refs, hyps, items=None):
         _, _, scores, _, _ = self.g(refs, hyps); return list(scores)
     def score(self, ref, hyp, item=None): return self.batch([ref], [hyp])[0]
