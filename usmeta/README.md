@@ -59,3 +59,16 @@ python -m usmeta.run report --bench bench.jsonl --scores scores.json --out resul
 - BUSTR (arXiv 2511.20956): breast report generator trained on label-built reports.
 - Chest X-ray metric work: GREEN, RaTEScore, RadGraph-F1, CRIMSON (2603.06183), RadMatch (2609.01470), and ReEvalMed with "Beyond Scalar Scores" (2606.18797), which tests discrimination vs robustness for LLM judges on chest X-ray reports.
 - Not found: an ultrasound benchmark that tests the *graders* with planted errors, severity and harmless rewordings.
+
+## Stage 3 status (real reports from vision-language models)
+| piece | state |
+|---|---|
+| report writer `usmeta/generate.py` | Qwen2.5-VL-3B **running** (50 scans x BUS-BRA, TN5000, TN3K, HC18; ~30 s/scan on Apple GPU); MedGemma-4B **not started** (waits for Qwen); LLaVA-Med **not started** |
+| BrEaST | **no images, not evaluated** (only the label spreadsheet is available) |
+| UltraG thyroid | no images, skipped |
+| free-text extractor `usmeta/freetext.py` | local Gemma-2-9B-it 4-bit (MLX); agreement with rule-based extractor 0.976 and 1.0 on two 20-report samples |
+| judge/extractor for Qwen reports | local Gemma-family model; for MedGemma reports a Qwen-family model (never the same family as the writer) |
+| thyroid grading | diagnosis field **left out** (TN3K/TN5000 class 0/1 meaning unconfirmed); count, location, size only |
+| Claude judge | **not run** (claude CLI: "Credit balance is too low") |
+| GREEN | **not run**: 7B model too large for 16 GB |
+| contamination | BUSI, BUS-BRA, TN3K, TN5000, HC18 are **possibly seen in training**; cannot be ruled out. BUS-BRA is the least-bad option, still flagged |
