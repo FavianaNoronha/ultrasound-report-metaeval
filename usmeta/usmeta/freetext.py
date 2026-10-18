@@ -5,18 +5,19 @@ import json, re
 from . import extract
 
 FIELD_HELP = {
- 'breast': dict(path='benign|malignant', birads='BI-RADS category as written, e.g. 2, 3, 4a, 4b, 4c, 5', margin='margin description as written',
-                calc='"no" if no calcifications, else "yes:<type>"', shape='mass shape (oval, round, irregular)',
+ 'breast': dict(path='benign|malignant', birads='the category only, e.g. 2, 3, 4a, 4b, 4c, 5 (no "BI-RADS" prefix)', margin='margin description copied from the text, without the words "margins" or "borders"',
+                calc='"no" if the report says no calcifications, else "yes:<type or location as written>"; null if not mentioned', shape='mass shape (oval, round, irregular)',
                 echo='echogenicity (anechoic, hypoechoic, hyperechoic, isoechoic, heterogeneous, complex cystic/solid)',
-                post='shadowing|enhancement|combined|no', halo='yes|no'),
+                post='exactly one of: shadowing, enhancement, combined, no (no = no posterior acoustic features)', halo='yes|no'),
  'busbra': dict(path='benign|malignant', birads='BI-RADS category', side='left|right', hist='histological type'),
- 'thyroid': dict(path='benign|malignant', count='a single nodule|two nodules|three or more nodules',
-                 loc='location such as "right-lobe"', size='small|medium|large'),
- 'fetal': dict(hc='head circumference in millimetres (number)'),
+ 'thyroid': dict(path='the word benign or malignant, or "class 0"/"class 1" if the report says class', count='a single nodule|two nodules|three or more nodules',
+                 loc='the hyphenated location phrase only, e.g. "middle-central", "right-lobe" (no extra words)', size='small|medium|large'),
+ 'fetal': dict(hc='head circumference as a number in MILLIMETRES (convert: 1 cm = 10 mm; 25.88 cm -> 258.8)'),
 }
 PROMPT = """Extract facts from this ultrasound report. Reply with JSON only, with exactly these keys:
 {keys}
-Use null for any key the report does not state. Do not guess or infer beyond the text.
+Use null for any key the report does not state. Do not guess, compute or infer beyond the text.
+Write every value as a JSON string in double quotes (for example "birads": "4a"), except hc, which is a bare number copied from the report (converted to mm only if given in cm).
 
 REPORT:
 {report}
@@ -37,7 +38,9 @@ def extract_llm(cli, report, organ):
     if organ == 'fetal' and out['hc'] is not None:
         try: out['hc'] = float(out['hc'])
         except Exception: out['hc'] = None
-    if isinstance(out.get('path'), str): out['path'] = out['path'].lower()
+    for k, v in list(out.items()):
+        if isinstance(v, str): out[k] = v.lower().strip()
+    if isinstance(out.get('birads'), str): out['birads'] = re.sub(r'^bi-?rads\s*(category\s*)?', '', out['birads']).strip()
     return out
 
 def agreement(cli, items):
