@@ -47,12 +47,23 @@ Fact checker and evidence check: AUROC 1.00, but only because the reports are te
 2. LLM judge across several models. Add a backend that calls the `claude` CLI (uses my login, no API key), selectable by model,
    and run it with `bash run_stage2.sh judge`. Also verify `usmeta/inspect_task.py` end to end with `inspect eval`
    (never verified; the sandbox blocked a tiktoken download). Compare judges in one results table.
-3. Realistic reports: generate reports from real scans with an open vision-language model (MedGemma, Qwen2.5-VL, LLaVA-Med),
-   then check what real mistakes look like vs our planted ones.
+3. Realistic reports: run ALL THREE open vision-language models as report writers on the same scans, with the same prompt:
+   MedGemma (google/medgemma-4b-it), Qwen2.5-VL (Qwen/Qwen2.5-VL-3B-Instruct or 7B), LLaVA-Med.
+   Use 50 scans per dataset first (CPU is slow; use a GPU or a smaller model if needed). Save reports to `reports_<model>.jsonl`,
+   then extract facts and grade each model's reports with every scorer. Compare models per organ and per dataset, and
+   compare real mistakes against our planted ones (do the scorers behave the same way?).
 4. Replace the oracle image check (`evidence_check` uses dataset labels) with a real one: a segmentation model or a VLM.
 5. Add BUSI and UDIAT; add BERTScore for thyroid and fetal.
 6. Severity levels are our own provisional guesses: prepare a short sample for a clinician to confirm.
 7. After each stage, regenerate `results_*.md` and tell me the headline numbers; I will update the team slides.
+
+## Contamination rules (do not skip)
+- Our reference texts come from our own templates, so judges cannot have memorised them. The scorer test is mostly safe.
+- The report-writing models may have seen BUSI, BUS-BRA, TN3K, TN5000, HC18 during training; we cannot verify this.
+  Report every model result per dataset, mark public older datasets as "possibly seen", and keep BrEaST (newer, small) as the cleanest check.
+- Add a sanity check: flipped or cropped copies of a scan should not change a model's report much if it is not memorising.
+- A judge must never grade reports from its own model family. Use a different family as judge than the report writer.
+- State in the paper that contamination cannot be ruled out. Do not claim it is absent.
 
 ## Rules
 - Do not overwrite `bench_v1.jsonl`, `scores_v1.json` or raw data; write new files beside them.
