@@ -172,6 +172,26 @@ class ClaudeJudge:
         if js is None: self.missing += 1; return float('nan')
         return judge_to_score(js)
 
+class LocalLLM:
+    """Local open model through MLX (mlx-lm), same ask() interface and disk cache as ClaudeCLI. Greedy decoding."""
+    def __init__(self, model_id, cache_dir='.llm_cache', runner=None, max_tokens=400):
+        self.model, self.dir, self.runner, self.max_tokens = model_id, cache_dir, runner, max_tokens
+        os.makedirs(cache_dir, exist_ok=True); self._m = None
+    def _run(self, prompt):
+        if self.runner: return self.runner(prompt)
+        if self._m is None:
+            from mlx_lm import load; self._m = load(self.model)
+        from mlx_lm import generate
+        model, tok = self._m
+        chat = tok.apply_chat_template([{'role': 'user', 'content': prompt}], add_generation_prompt=True, tokenize=False)
+        return generate(model, tok, prompt=chat, max_tokens=self.max_tokens)
+    ask = ClaudeCLI.ask
+
+class LocalJudge(ClaudeJudge):
+    """Spec 'local_judge:<hf-id>'. Name records which model judged, e.g. llm_judge[local:gemma-2-9b-it-4bit]."""
+    def __init__(self, model='mlx-community/gemma-2-9b-it-4bit', cli=None):
+        super().__init__(cli=cli or LocalLLM(model)); self.name = f'llm_judge[local:{model.split("/")[-1]}]'
+
 # ---------------------------------------------------------------- optional learned metrics (run locally)
 class BertScore:
     def __init__(self, model='distilbert-base-uncased'):
@@ -203,7 +223,7 @@ class Green:
     def score(self, ref, hyp, item=None): return self.batch([ref], [hyp])[0]
 
 REGISTRY = {'bleu': Bleu, 'rougeL': RougeL, 'chrf': Chrf, 'fact_checker': FactChecker, 'fact_f1': FactF1,
-            'evidence_check': EvidenceCheck, 'judge_mock': JudgeMock, 'llm_judge': LLMJudge, 'claude_judge': ClaudeJudge,
+            'evidence_check': EvidenceCheck, 'judge_mock': JudgeMock, 'llm_judge': LLMJudge, 'claude_judge': ClaudeJudge, 'local_judge': LocalJudge,
             'ratescore': RaTEScore, 'green': Green, 'bertscore': BertScore}
 
 def make(spec):
