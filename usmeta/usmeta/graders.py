@@ -127,6 +127,51 @@ class LLMJudge:
         try: return judge_to_score(json.loads(m.group(0)))
         except Exception: return float('nan')
 
+
+# ---------------------------------------------------------------- LLM judge via the local `claude` CLI (uses the user's login)
+import subprocess, hashlib, shutil
+CLAUDE_BIN_FALLBACK = os.path.expanduser('~/Library/Application Support/Claude/claude-code')
+
+def find_claude():
+    b = os.environ.get('USMETA_CLAUDE_BIN') or shutil.which('claude')
+    if b: return b
+    import glob
+    c = sorted(glob.glob(CLAUDE_BIN_FALLBACK + '/*/*/claude.app/Contents/MacOS/claude'))
+    if c: return c[-1]
+    raise RuntimeError('claude CLI not found; set USMETA_CLAUDE_BIN')
+
+class ClaudeCLI:
+    """Disk-cached `claude -p --model <m>` call. Cache key = model + prompt, so re-runs are free."""
+    def __init__(self, model, cache_dir='.llm_cache', runner=None):
+        self.model, self.dir = model, cache_dir; os.makedirs(cache_dir, exist_ok=True); self.runner = runner
+    def _run(self, prompt):
+        if self.runner: return self.runner(prompt)
+        r = subprocess.run([find_claude(), '-p', '--model', self.model], input=prompt, capture_output=True, text=True, timeout=180)
+        if r.returncode != 0: raise RuntimeError(f'claude CLI failed: {(r.stdout + r.stderr).strip()[:300]}')
+        return r.stdout
+    def ask(self, prompt, valid=lambda t: True):
+        f = os.path.join(self.dir, hashlib.sha256((self.model + '\0' + prompt).encode()).hexdigest() + '.txt')
+        if os.path.exists(f): return open(f).read()
+        for _ in range(2):  # retry once on bad output
+            t = self._run(prompt)
+            if valid(t): open(f, 'w').write(t); return t
+        return None
+
+def _parse_judge(txt):
+    m = re.search(r'\{.*\}', txt or '', re.S)
+    try: js = json.loads(m.group(0)); return js if isinstance(js.get('errors'), list) else None
+    except Exception: return None
+
+class ClaudeJudge:
+    """LLM judge through the claude CLI. Spec: 'claude_judge:sonnet'. Bad JSON twice -> NaN (missing, NOT zero); count in .missing."""
+    def __init__(self, model='sonnet', cli=None):
+        self.cli = cli or ClaudeCLI(model); self.name = f'llm_judge[claude-{model}]'; self.missing = 0
+    def score(self, ref, hyp, item=None):
+        txt = self.cli.ask(JUDGE_PROMPT.replace('{ref}', ref).replace('{hyp}', hyp), valid=lambda t: _parse_judge(t) is not None)
+        js = _parse_judge(txt)
+        if js is None: self.missing += 1; return float('nan')
+        return judge_to_score(js)
+
 # ---------------------------------------------------------------- optional learned metrics (run locally)
 class BertScore:
     def __init__(self, model='distilbert-base-uncased'):
@@ -158,7 +203,7 @@ class Green:
     def score(self, ref, hyp, item=None): return self.batch([ref], [hyp])[0]
 
 REGISTRY = {'bleu': Bleu, 'rougeL': RougeL, 'chrf': Chrf, 'fact_checker': FactChecker, 'fact_f1': FactF1,
-            'evidence_check': EvidenceCheck, 'judge_mock': JudgeMock, 'llm_judge': LLMJudge,
+            'evidence_check': EvidenceCheck, 'judge_mock': JudgeMock, 'llm_judge': LLMJudge, 'claude_judge': ClaudeJudge,
             'ratescore': RaTEScore, 'green': Green, 'bertscore': BertScore}
 
 def make(spec):
