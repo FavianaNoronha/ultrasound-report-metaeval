@@ -79,3 +79,10 @@ reports/
 # System files
 Thumbs.db
 .DS_Store
+
+# usmeta / baseline
+baseline_exp/.venv/
+usmeta/.git_nested_old/
+usmeta_v0.zip
+usmeta/scores*.json
+usmeta/.pytest_cache/

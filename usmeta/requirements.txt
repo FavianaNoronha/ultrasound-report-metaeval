@@ -1,0 +1,12 @@
+pandas
+numpy
+scipy
+sacrebleu
+openpyxl
+pytest
+# optional, run on your own machine:
+# bert-score torch transformers   (bertscore)
+# RaTEScore                       (ratescore)
+# green-score                     (green; GPU)
+# anthropic or openai             (llm_judge)
+# inspect-ai                      (Inspect task wrapper)

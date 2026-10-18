@@ -1,0 +1,60 @@
+# usmeta: do report graders catch clinical errors in ultrasound reports?
+
+**Question.** Ultrasound report-generation papers grade reports with BLEU, ROUGE, BERTScore and similar. Do those
+scores drop for a clinically important mistake and stay high for harmless rewording? Which graders do?
+
+**What this is.** A meta-evaluation benchmark and harness. It builds (reference, candidate) pairs with *planted errors*
+(with severity and magnitude) and *harmless rewordings*, runs any set of graders on them, and reports how well each
+grader tells them apart. Organs: breast, thyroid, fetal.
+
+## Pipeline
+
+```
+ DATA            REPORTS                         GRADERS (pluggable)              META-EVALUATION
+ labels, masks → reference (from labels)    →   L0 bleu rougeL chrf bertscore  →  discrimination AUROC
+ BrEaST          candidates:                    L1 fact_checker fact_f1            robustness (harmless mean)
+ TN3K, UltraG      planted errors (+severity)   L2 llm_judge (Inspect), ratescore, severity / magnitude Spearman
+ HC18              harmless rewordings             green, judge_mock               per organ / severity / perturbation
+                   (later: VLM-written reports) L3 evidence_check (oracle → image)
+```
+
+## Status of v0 (be honest about this)
+| piece | state |
+|---|---|
+| templates, error injection, severity, magnitude (3 organs) | done, tested |
+| bleu, rougeL, chrf, fact_checker, fact_f1, evidence_check | done, tested |
+| bertscore | wrapper written; run locally (needs model download) |
+| llm_judge, Inspect task | written; Inspect task loads, end-to-end run **not** completed (sandbox blocked a download); judge not tested against a live API |
+| ratescore, green | wrappers written from their READMEs; **untested** |
+| severity levels | **provisional**, author-assigned; need clinician confirmation |
+| reports | **templated from labels**, as in BUSTR; no real clinician-written report text exists in these datasets |
+| fact_checker / evidence_check | rule-based, built on our own wording, so on templated text they are an **upper bound**, not evidence about free text |
+| evidence_check | uses dataset annotations as evidence (oracle). Real image check = replace evidence with facts recovered from the image |
+
+## Run
+```
+pip install -r requirements.txt
+python -m usmeta.run build --breast breast.xlsx --thyroid-records tn3k_records.json \
+    --ultrag-thyroid-jsonl thyroid_grounded_full_v1.jsonl --hc18 training_set_pixel_size_and_HC.csv --n 500 --out bench.jsonl
+python -m usmeta.run grade  --bench bench.jsonl --graders bleu,rougeL,chrf,fact_checker,evidence_check --out scores.json
+python -m usmeta.run report --bench bench.jsonl --scores scores.json --out results
+# optional graders: bertscore:roberta-large, ratescore, green, llm_judge (set USMETA_JUDGE, USMETA_JUDGE_MODEL)
+# Inspect: inspect eval usmeta/inspect_task.py --model anthropic/<model-id> -T bench=bench.jsonl
+```
+
+## Item fields
+`organ, dataset, case_id, image, kind (error|harmless|identical), perturbation, magnitude, severity (1 minor, 2 major,
+3 critical, provisional), reference, candidate, evidence`.
+
+## Metrics
+- **Discrimination AUROC**: P(score(error) < score(harmless rewording of the same case)). 1 perfect, 0.5 chance, 0 inverted. Bootstrapped over cases.
+- **Robustness**: mean score of harmless rewordings (ideal 1.0). Identical copy must be 1.0 (sanity).
+- **Severity ρ**: Spearman(severity, score) over errors. Strongly negative is good.
+- **Magnitude ρ**: within one perturbation, Spearman(error size, score): BI-RADS steps, mm.
+
+## Prior work checked (search window about Oct 2025 to Oct 2026; not exhaustive)
+- U2-Bench (arXiv 2505.17779): 7,241 ultrasound cases, 15 regions, 23 LVLMs; report generation scored with BLEU-4, ROUGE, BERTScore; no metric validation.
+- UltraG-Bench (arXiv 2609.30928, Sep 2026): 40 datasets; report generation scored with ROUGE-L and SemAcc (presence, category, location, size vs masks); references written by an LLM; no metric validation.
+- BUSTR (arXiv 2511.20956): breast report generator trained on label-built reports.
+- Chest X-ray metric work: GREEN, RaTEScore, RadGraph-F1, CRIMSON (2603.06183), RadMatch (2609.01470), and ReEvalMed with "Beyond Scalar Scores" (2606.18797), which tests discrimination vs robustness for LLM judges on chest X-ray reports.
+- Not found: an ultrasound benchmark that tests the *graders* with planted errors, severity and harmless rewordings.

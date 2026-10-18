@@ -1,0 +1,8 @@
+pandas
+numpy
+scipy
+openpyxl
+sacrebleu
+bert-score
+torch
+transformers
