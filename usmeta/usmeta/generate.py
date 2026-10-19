@@ -49,10 +49,11 @@ def pick_cases(bench, per_dataset, seed=0):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('--model', default='qwen'); ap.add_argument('--bench', default='bench_v1.jsonl')
-    ap.add_argument('--per-dataset', type=int, default=50); ap.add_argument('--out'); ap.add_argument('--flip', action='store_true')
+    ap.add_argument('--per-dataset', type=int, default=50); ap.add_argument('--out'); ap.add_argument('--flip', action='store_true'); ap.add_argument('--only')
     a = ap.parse_args(); out = a.out or f'reports_{a.model}.jsonl'
     done = {json.loads(l)['case_id'] for l in open(out)} if os.path.exists(out) else set()
     todo = [c for c in pick_cases(a.bench, a.per_dataset) if c['case_id'] not in done]
+    if a.only: keep = set(json.load(open(a.only))); todo = [c for c in pick_cases(a.bench, 10**6) if c['case_id'] in keep and c['case_id'] not in done]
     print(len(todo), 'to do'); w = Writer(a.model)
     for c in todo:
         t = time.time(); img = Image.open(image_path(c)).convert('RGB')
