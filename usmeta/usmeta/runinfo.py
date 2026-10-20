@@ -25,5 +25,5 @@ def save_step(step, name, results_md, files=(), counts=None, seeds=None, models=
     os.makedirs(os.path.join(ROOT, 'summaries'), exist_ok=True); shutil.copy(os.path.join(d, 'results.md'), os.path.join(ROOT, 'summaries', f'{step}.md'))
     idx = os.path.join(ROOT, 'INDEX.md')
     if not os.path.exists(idx): open(idx, 'w').write('# Part A results index\n\n| step | date | commit | folder | headline |\n|---|---|---|---|---|\n')
-    open(idx, 'a').write(f"| {step} | {datetime.date.today()} | {{COMMIT}} | [{step}_{name}]({step}_{name}/) | {headline} |\n")
+    open(idx, 'a').write(f"| {step} | {datetime.date.today()} | {_git('rev-parse', '--short', 'HEAD')} | [{step}_{name}]({step}_{name}/) | {headline} |\n")
     return d
