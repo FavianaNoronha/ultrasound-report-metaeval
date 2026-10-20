@@ -84,3 +84,4 @@ Thumbs.db
 baseline_exp/.venv/
 usmeta/scores*.json
 usmeta/.pytest_cache/
+usmeta/local_data/
