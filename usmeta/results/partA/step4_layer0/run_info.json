@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-21T01:10:04",
+  "git_commit": "6d4e0ae",
+  "dataset_record_counts": {
+    "bench_v2_rows": 27193,
+    "unique_pairs": 23759
+  },
+  "seeds": {
+    "bootstrap": 0,
+    "n_boot": 1000
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "bertscore": "roberta-large (mps)",
+    "ratescore": "RaTEScore 0.6.0, Angelakeke/RaTE-NER-Deberta + FremyCompany/BioLORD-2023-C (mps)",
+    "sacrebleu": "BLEU/chrF defaults"
+  },
+  "command": "python3 -m usmeta.layer0 score --bench bench_v2.jsonl --out scores_v2_layer0.json; python3 -m usmeta.layer0 report ..."
+}

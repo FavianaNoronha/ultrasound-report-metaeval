@@ -198,7 +198,9 @@ class BertScore:
         self.model = model; self.name = f'bertscore[{model}]'
     def batch(self, refs, hyps, items=None):
         from bert_score import score
-        return score(hyps, refs, model_type=self.model, lang='en', batch_size=64, verbose=False)[2].tolist()
+        import torch
+        dev = 'mps' if torch.backends.mps.is_available() else None   # Apple GPU when present, else bert_score default
+        return score(hyps, refs, model_type=self.model, lang='en', batch_size=64, verbose=False, device=dev)[2].tolist()
     def score(self, ref, hyp, item=None): return self.batch([ref], [hyp])[0]
 
 class RaTEScore:
@@ -206,6 +208,9 @@ class RaTEScore:
     name = 'ratescore'
     def __init__(self):
         from RaTEScore import RaTEScore as R; self.r = R(use_gpu=False, batch_size=16)  # no CUDA on a Mac: default use_gpu=True crashes
+        import torch
+        if torch.backends.mps.is_available():  # Apple GPU: same scores as CPU (max diff 1e-7), ~25% faster
+            self.r.device = torch.device('mps'); self.r.model.to('mps'); self.r.eval_model.to('mps')
     def batch(self, refs, hyps, items=None): return list(self.r.compute_score(hyps, refs))
     def score(self, ref, hyp, item=None): return self.batch([ref], [hyp])[0]
 
