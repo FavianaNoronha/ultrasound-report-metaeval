@@ -64,7 +64,7 @@ def facts(rec):
                 if v is not None:
                     if k == 'margin': v = (lambda m: 'not circumscribed (' + m[1].replace('&', ', ') + ')' if m else v)(re.match(r'not circumscribed - (.*)', v))
                     f[k] = (v, 'labelled')
-        if ds == 'BUS-BRA' and L.get('side'): f['side'] = (L['side'], 'labelled')
+        if ds == 'BUS-BRA' and L.get('side') in ('left', 'right'): f['side'] = (L['side'], 'labelled')   # BUS-BRA also has side='single' (253 images): not a laterality, so not stated
         if L.get('birads') is not None: f['birads'] = (str(L['birads']).lower(), 'labelled')
         if cls: f['path'] = (cls, 'labelled')
         if L.get('hist'): f['hist'] = (L['hist'], 'labelled')

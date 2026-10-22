@@ -44,3 +44,7 @@ def test_thyroid_tn_has_no_diagnosis_class():
 def test_no_invented_fields_for_datasets_without_labels():
     rec = t.load('BUSI')[0]; f = t.facts(rec)
     assert not ({'birads', 'margin', 'echo', 'calc', 'size_mm'} & set(f))
+
+def test_bus_bra_single_is_not_stated_as_a_side():
+    singles = [r for r in t.load('BUSBRA') if r['labels'].get('side') == 'single']
+    assert singles and all('side' not in t.facts(r) and 'single breast' not in t.render(t.facts(r), 'breast', 'standard') for r in singles)

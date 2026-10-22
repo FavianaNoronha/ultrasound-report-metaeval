@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-23T01:32:07",
+  "git_commit": "4a019e7",
+  "dataset_record_counts": {
+    "bench_v2d_rows": 31976,
+    "bus_bra_rows_changed": 1163
+  },
+  "seeds": {
+    "bootstrap": 0,
+    "n_boot": 1000,
+    "sampling": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "scores": "bench_v2c scores reused, 597 new pairs scored"
+  },
+  "command": "python3 -m usmeta.templates_v2 (v2d); usmeta.bench_v2.build + bench_v2b.convert + add_matched -> bench_v2d.jsonl; python3 -m usmeta.layer0b --incremental ...; python3 -m usmeta.layer0b --bench bench_v2d.jsonl ..."
+}

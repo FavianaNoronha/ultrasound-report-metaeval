@@ -52,7 +52,7 @@ def errors(rec, f):
     if 'pos' in f:
         v, h = _val(f, 'pos').split('-'); mirror = {'left': 'right', 'right': 'left', 'central': 'central'}
         flip = {'upper': 'lower', 'lower': 'upper', 'middle': 'middle'}
-        for new in {f'{v}-{mirror[h]}', f'{flip[v]}-{h}'} - {_val(f, 'pos')}:
+        for new in sorted({f'{v}-{mirror[h]}', f'{flip[v]}-{h}'} - {_val(f, 'pos')}):   # sorted: set order varies with PYTHONHASHSEED
             add('wrong location', 'pos', _val(f, 'pos'), new, None, 1, _set(f, 'pos', new))
     if 'side' in f:
         new = 'right' if _val(f, 'side') == 'left' else 'left'; add('wrong location', 'side', _val(f, 'side'), new, None, 3, _set(f, 'side', new))

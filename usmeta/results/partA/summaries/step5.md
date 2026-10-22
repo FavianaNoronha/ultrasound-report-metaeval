@@ -1,30 +1,14 @@
-# Step 5 re-run 2: matched-edit-size harmless group added (plain-language summary)
+# Step 5 re-run 3: bug fix in BUS-BRA reports (found while building Step 6)
 
-**Why this re-run.** In Step 5 even `harmless_small` (synonyms, reorder) changed 5-10 times more text than a planted error (17-36% of tokens vs 2-4%), so AUROC mixed "did a fact change" with "how much text changed". This re-run adds **`synonym1`** (harmless_type `matched`): the reference with exactly ONE substitution (mass -> lesion, margins -> borders, Assessment: -> Impression:, is seen -> is demonstrated, about <-> approximately; fetal: Head -> Cranial). New file **bench_v2c.jsonl** = bench_v2b + 4,812 matched rows (bench_v2 and bench_v2b untouched). Only the 3,839 new text pairs were scored (cached scores reused for the rest, pair-checked). Scorers: BLEU, ROUGE-L, chrF, BERTScore roberta-large, RaTEScore.
+**Bug.** BUS-BRA's `Side` column has the value `single` for 253 of 1,875 images (811 left, 811 right). The Step 2 template wrote it as a laterality ("seen in the **single breast**"), and Step 3 generated a side-swap error from it ("single" -> "left"). "single" is not a side (probably a single-view image, to confirm with the dataset paper), so stating it was wrong. Found by the Step 6 extractor check (BUS-BRA `side` agreement 0.81).
 
-**Wiring gate:** identical-copy score 1.0000 for every scorer on every dataset (min 0.9999997).
+**Fix.** `templates_v2.facts` states a side only if it is left or right (test added). Rebuilt: `true_reports_v2d.jsonl`, `bench_v2d.jsonl` (31,976 rows; bench_v2, v2b, v2c and the old true reports are untouched). Also made the position-error order deterministic (it depended on Python's hash seed; ids now stable). Only BUS-BRA changed: 596 candidate rows removed, 567 added (the 29 side-swap errors on `single` cases are gone, `single breast` text is gone). Every other dataset is identical by content. Only 597 new text pairs needed scoring (BLEU, ROUGE-L, chrF, BERTScore, RaTEScore).
 
-**Edit size is now matched.** Share of tokens changed: `synonym1` vs planted errors: BrEaST 2.5% vs 2.3-2.6%; BUS-BRA 3.2% vs 3.2-4.2%; TN5000 4.3% vs 4.3-8.7%. (HC18 is not matched: its text is only ~6 tokens, so one word is 17%; read fetal rows with that in mind.)
+**Impact on Layer 0 results.** Identical-copy gate 1.0000 (min 0.9999997). BUS-BRA AUROC changes by at most 0.03 (e.g. vs matched synonym: BLEU 0.75 -> 0.75, chrF 0.37 -> 0.37, BERTScore 0.42 -> 0.42, RaTEScore 0.66 -> 0.67; vs small: BLEU 0.20 -> 0.21, RaTEScore 0.53 -> 0.54). Every other dataset: 0.00 change. So the conclusions of Steps 4 and 5 stand; use `bench_v2d` from here on. The full per-dataset tables below replace the BUS-BRA rows of `step5_harmless_split_layer0_rerun2`.
 
-**Result (AUROC of planted error vs the matched harmless synonym; 0.5 = chance):**
-- **BLEU and ROUGE-L move above chance**: BrEaST 0.60 / 0.58, BUS-BRA 0.75 / 0.66, BUSI 0.82 / 0.74, TN3K 0.82 / 0.73, BUS-UCLM 0.92 / 0.89. RaTEScore 0.52-0.66 on breast, 0.53-0.56 on thyroid.
-- **chrF stays below chance** (BrEaST 0.24, BUS-BRA 0.37, TN3K 0.45): changing a word ("mass" -> "lesion") alters many characters, changing a number alters one.
-- **BERTScore is at chance** on breast and thyroid (BrEaST 0.52, BUS-BRA 0.42, UDIAT 0.52, TN3K 0.58, DDTI 0.53).
-- **So the earlier below-chance numbers were mostly an edit-size effect**, but removing it does not make the scorers good: the best they reach on BrEaST is 0.63 (RaTEScore).
-- **By error category (vs matched synonym), BrEaST:** wrong measurement BLEU **0.50 exactly** (a pure tie: the scorer gives the size error and the synonym the same score, i.e. it cannot tell them apart), chrF 0.00, BERTScore 0.07, RaTEScore 0.76; wrong location BLEU 0.50, chrF 0.00, BERTScore 0.20, RaTEScore 0.18; wrong severity/category 0.50 / 0.27 / 0.55 / 0.57. Missed and false findings are caught (0.65-0.95) because they are big edits.
-- **Wrong measurement stays unseen:** size-error score is identical for x0.5, x1.5, x2 (BLEU 0.952 on BrEaST) and rho ~ 0.
-
-**Honest reading.** When edit size is matched, word-overlap scorers go from "systematically wrong" to "roughly chance to modest", and they are decided by how many characters or tokens differ, not by clinical meaning. Style swaps (harmless_large) remain a failure at 0.00-0.33 for every scorer. Which harmless group is the "right" comparison is a design choice we should agree on before quoting one AUROC.
-
-**Caveats (keep visible).** Templated, label-derived reports (synthetic but fact-correct); severity provisional pending clinician; template sources "to confirm" (usmeta/docs/templates_sources.md); per dataset only, never pooled; datasets support different error types; critical-only 1.00 on TN3K/TN5000 comes from missed/false lesion being the only severity-3 error; RaTEScore is built for chest/CT; 150 cases per dataset (256 BrEaST).
+**Caveats (keep visible).** Templated, label-derived reports; severity provisional; template sources "to confirm"; per dataset only; 150 cases per dataset (256 BrEaST); the meaning of BUS-BRA `side = single` is not confirmed.
 
 ---
-
-## Share of tokens changed vs the reference (mean)
-
-**BrEaST**: ERR:false finding 0.04, ERR:missed finding 0.73, ERR:wrong location 0.02, ERR:wrong measurement 0.02, ERR:wrong severity/category 0.03, hedge 0.08, negation 0.08, pad1 0.06, pad3 0.16, reorder 0.36, style_long 0.54, style_terse 0.64, synonym1 0.02, synonyms 0.18, unit_cm 0.05
-**BUS-BRA**: ERR:false finding 0.06, ERR:missed finding 0.95, ERR:wrong location 0.03, ERR:wrong measurement 0.03, ERR:wrong severity/category 0.04, hedge 0.10, pad1 0.07, pad3 0.20, reorder 0.24, style_long 0.38, style_terse 0.44, synonym1 0.03, synonyms 0.17
-**TN5000**: ERR:false finding 0.11, ERR:missed finding 0.86, ERR:wrong location 0.04, ERR:wrong measurement 0.04, ERR:wrong severity/category 0.09, hedge 0.13, pad1 0.10, pad3 0.26, reorder 0.13, style_long 0.33, style_terse 0.66, synonym1 0.04, synonyms 0.18
 
 ## breast
 
@@ -42,11 +26,11 @@
 
 | scorer | AUROC vs small (95% CI) | AUROC vs matched 1-word (95% CI) | AUROC vs large (95% CI) | critical-only small / matched / large | harmless_small mean | harmless_matched mean | harmless_large mean | identical mean | lazy mean | severity ρ | magnitude ρ |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| bleu | 0.20 (0.19–0.21) | 0.75 (0.74–0.76) | 0.09 (0.09–0.09) | 0.28 / 0.76 / 0.28 | 0.82 | 0.95 | 0.54 | 1.0000 | 0.00 | -0.05 | count —, size 0.00, birads 0.02 |
-| rougeL | 0.09 (0.09–0.09) | 0.66 (0.66–0.67) | 0.09 (0.09–0.09) | 0.28 / 0.64 / 0.28 | 0.79 | 0.97 | 0.70 | 1.0000 | 0.00 | -0.01 | count —, size 0.00, birads 0.02 |
-| chrf | 0.31 (0.30–0.31) | 0.37 (0.37–0.38) | 0.09 (0.09–0.09) | 0.50 / 0.58 / 0.28 | 0.88 | 0.95 | 0.74 | 1.0000 | 0.02 | -0.27 | count —, size -0.00, birads -0.46 |
-| bertscore[roberta-large] | 0.09 (0.09–0.09) | 0.42 (0.41–0.43) | 0.09 (0.09–0.09) | 0.28 / 0.46 / 0.28 | 0.97 | 0.99 | 0.95 | 1.0000 | 0.84 | -0.27 | count —, size 0.00, birads -0.68 |
-| ratescore | 0.53 (0.52–0.54) | 0.66 (0.65–0.67) | 0.20 (0.18–0.21) | 0.60 / 0.70 / 0.31 | 0.92 | 0.96 | 0.87 | 1.0000 | 0.50 | -0.17 | count —, size -0.01, birads -0.00 |
+| bleu | 0.21 (0.20–0.21) | 0.75 (0.75–0.76) | 0.09 (0.09–0.10) | 0.30 / 0.77 / 0.30 | 0.82 | 0.95 | 0.54 | 1.0000 | 0.00 | -0.04 | count —, size 0.00, birads 0.01 |
+| rougeL | 0.09 (0.09–0.10) | 0.67 (0.66–0.67) | 0.09 (0.09–0.10) | 0.30 / 0.65 / 0.30 | 0.78 | 0.97 | 0.69 | 1.0000 | 0.00 | -0.01 | count —, size 0.00, birads 0.02 |
+| chrf | 0.30 (0.30–0.31) | 0.37 (0.36–0.38) | 0.09 (0.09–0.10) | 0.51 / 0.58 / 0.30 | 0.88 | 0.95 | 0.74 | 1.0000 | 0.02 | -0.26 | count —, size 0.00, birads -0.40 |
+| bertscore[roberta-large] | 0.09 (0.09–0.10) | 0.42 (0.41–0.43) | 0.09 (0.09–0.10) | 0.30 / 0.47 / 0.30 | 0.97 | 0.99 | 0.95 | 1.0000 | 0.84 | -0.28 | count —, size 0.00, birads -0.66 |
+| ratescore | 0.54 (0.53–0.55) | 0.67 (0.66–0.68) | 0.22 (0.20–0.24) | 0.61 / 0.72 / 0.32 | 0.92 | 0.96 | 0.87 | 1.0000 | 0.50 | -0.20 | count —, size -0.01, birads -0.01 |
 
 ### BUSI (150 cases)
 
@@ -150,9 +134,9 @@
 |---|---|---|---|---|---|
 | bleu | 0.50 / 1.00 / 0.00 | 1.00 / 1.00 / 1.00 | 0.00 / 0.67 / 0.00 | 0.00 / 0.67 / 0.00 | 0.17 / 0.74 / 0.00 |
 | rougeL | 0.00 / 1.00 / 0.00 | 1.00 / 1.00 / 1.00 | 0.00 / 0.50 / 0.00 | 0.00 / 0.50 / 0.00 | 0.00 / 0.69 / 0.00 |
-| chrf | 0.50 / 0.33 / 0.00 | 1.00 / 1.00 / 1.00 | 0.21 / 0.38 / 0.00 | 0.00 / 0.00 / 0.00 | 0.37 / 0.53 / 0.00 |
-| bertscore[roberta-large] | 0.00 / 1.00 / 0.00 | 1.00 / 1.00 / 1.00 | 0.00 / 0.06 / 0.00 | 0.00 / 0.00 / 0.00 | 0.00 / 0.60 / 0.00 |
-| ratescore | 0.48 / 0.65 / 0.03 | 1.00 / 1.00 / 1.00 | 0.43 / 0.57 / 0.03 | 0.50 / 0.67 / 0.06 | 0.50 / 0.63 / 0.21 |
+| chrf | 0.50 / 0.33 / 0.00 | 1.00 / 1.00 / 1.00 | 0.16 / 0.33 / 0.00 | 0.00 / 0.00 / 0.00 | 0.37 / 0.53 / 0.00 |
+| bertscore[roberta-large] | 0.00 / 1.00 / 0.00 | 1.00 / 1.00 / 1.00 | 0.00 / 0.00 / 0.00 | 0.00 / 0.00 / 0.00 | 0.00 / 0.60 / 0.00 |
+| ratescore | 0.49 / 0.68 / 0.10 | 1.00 / 1.00 / 1.00 | 0.42 / 0.54 / 0.00 | 0.50 / 0.68 / 0.10 | 0.51 / 0.64 / 0.21 |
 
 **BUSI**
 
@@ -250,11 +234,11 @@
 
 | scorer | synonym1 | synonyms | reorder | unit_cm | style_terse | style_long | negation | hedge | pad1 | pad3 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| bleu | 0.75 | 0.09 | 0.31 | — | 0.09 | 0.09 | — | 0.09 | 0.09 | 0.09 |
-| rougeL | 0.66 | 0.09 | 0.09 | — | 0.09 | 0.09 | — | 0.09 | 0.09 | 0.09 |
-| chrf | 0.37 | 0.09 | 0.52 | — | 0.09 | 0.09 | — | 0.43 | 0.38 | 0.09 |
+| bleu | 0.75 | 0.09 | 0.32 | — | 0.09 | 0.09 | — | 0.09 | 0.09 | 0.09 |
+| rougeL | 0.67 | 0.09 | 0.09 | — | 0.09 | 0.09 | — | 0.09 | 0.09 | 0.09 |
+| chrf | 0.37 | 0.09 | 0.51 | — | 0.09 | 0.09 | — | 0.42 | 0.37 | 0.09 |
 | bertscore[roberta-large] | 0.42 | 0.09 | 0.09 | — | 0.09 | 0.09 | — | 0.09 | 0.09 | 0.09 |
-| ratescore | 0.66 | 0.14 | 0.92 | — | 0.23 | 0.17 | — | 0.91 | 0.91 | 0.91 |
+| ratescore | 0.67 | 0.16 | 0.92 | — | 0.28 | 0.16 | — | 0.92 | 0.92 | 0.92 |
 
 **BUSI**
 
