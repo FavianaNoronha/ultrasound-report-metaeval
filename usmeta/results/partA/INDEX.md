@@ -6,3 +6,4 @@
 | step3 | 2026-10-21 | 86bbde4 | [step3_bench_v2](step3_bench_v2/) | 27,193 candidates: 13,396 planted errors, 12,187 harmless, 1,610 identical |
 | step4 | 2026-10-21 | 6d4e0ae | [step4_layer0](step4_layer0/) | All Layer 0 scorers below chance on BrEaST/BUS-BRA (AUROC 0.09-0.36); size errors AUROC ~0; lazy answer BERTScore 0.85 |
 | step5 | 2026-10-22 | 0ae8d5d | [step5_harmless_split_layer0](step5_harmless_split_layer0/) | Style swaps drive AUROC to ~0.1 (vs large); vs small still <=0.5 on BrEaST/BUS-BRA: synonyms/reorder change 17-36% of tokens, errors 2-4% |
+| step5 | 2026-10-23 | 57f8ec7 | [step5_harmless_split_layer0_rerun2](step5_harmless_split_layer0_rerun2/) | RERUN2 (adds 1-word synonym group, edit size matched): BLEU/ROUGE-L 0.58-0.92 vs matched synonym, chrF below chance (0.24 BrEaST), BERTScore ~chance; reason: Step 5 small group changed 5-10x more text than errors |
