@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-22T23:56:44",
+  "git_commit": "0ae8d5d",
+  "dataset_record_counts": {
+    "bench_v2b_rows": 27193,
+    "harmless_small": 3767,
+    "harmless_large": 3220,
+    "harmless_other": 5200
+  },
+  "seeds": {
+    "bootstrap": 0,
+    "n_boot": 1000
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "scores": "reused from step4_layer0 (same 23,759 pairs, verified)"
+  },
+  "command": "python3 -m usmeta.bench_v2b; python3 -m usmeta.layer0b --out results/partA/step5_harmless_split_layer0"
+}
