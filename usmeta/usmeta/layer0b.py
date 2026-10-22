@@ -20,7 +20,8 @@ def analyse(rows, S):
             sev, magk, sizeby = [], collections.defaultdict(lambda: ([], [])), collections.defaultdict(list)
             for cid, rs in cases.items():
                 e = [r for r in rs if r['kind'] == 'error']
-                I += [sc(r) for r in rs if r['kind'] == 'identical']; L.append(arr[idx[(rs[0]['reference'], LAZY)]])
+                I += [sc(r) for r in rs if r['kind'] == 'identical']
+                if (rs[0]['reference'], LAZY) in idx: L.append(arr[idx[(rs[0]['reference'], LAZY)]])
                 if e:
                     for g in {r['group'] for r in rs if r['kind'] == 'harmless'}:
                         G[g].append(auroc_case([sc(r) for r in e], [sc(r) for r in rs if r['kind'] == 'harmless' and r['group'] == g]))
@@ -47,7 +48,7 @@ def analyse(rows, S):
                 auroc_small=boot(A['small']) if A['small'] else None, auroc_large=boot(A['large']) if A['large'] else None,
                 critical_small=boot(C['small'])[0] if C['small'] else None, critical_large=boot(C['large'])[0] if C['large'] else None,
                 harmless_small_mean=float(np.mean(HM['small'])) if HM['small'] else None, harmless_large_mean=float(np.mean(HM['large'])) if HM['large'] else None,
-                identical_mean=float(np.mean(I)), identical_min=float(np.min(I)), lazy_mean=float(np.mean(L)),
+                identical_mean=float(np.mean(I)) if I else None, identical_min=float(np.min(I)) if I else None, lazy_mean=float(np.mean(L)) if L else None,
                 severity_rho=rho([a for a, _ in sev], [b for _, b in sev]), magnitude_rho={k: rho(a, b) for k, (a, b) in magk.items()},
                 size_error_mean_score={str(k): float(np.mean(v)) for k, v in sizeby.items()},
                 cat_small={c: float(np.mean(v)) for c, v in cat['small'].items()}, cat_large={c: float(np.mean(v)) for c, v in cat['large'].items()})
@@ -63,7 +64,7 @@ def tables(res):
                     '| scorer | AUROC vs small (95% CI) | AUROC vs matched 1-word (95% CI) | AUROC vs large (95% CI) | critical-only small / matched / large | harmless_small mean | harmless_matched mean | harmless_large mean | identical mean | lazy mean | severity ρ | magnitude ρ |', '|---|---|---|---|---|---|---|---|---|---|---|---|']
             for n, v in d.items():
                 mr = ', '.join(f'{k} {fmt(x)}' for k, x in v['magnitude_rho'].items()) or '—'
-                out.append(f"| {n} | {fmt(v['auroc_small'])} | {fmt(v['auroc_matched'])} | {fmt(v['auroc_large'])} | {fmt(v['critical_small'])} / {fmt(v['critical_matched'])} / {fmt(v['critical_large'])} | {fmt(v['harmless_small_mean'])} | {fmt(v['harmless_matched_mean'])} | {fmt(v['harmless_large_mean'])} | {v['identical_mean']:.4f} | {fmt(v['lazy_mean'])} | {fmt(v['severity_rho'])} | {mr} |")
+                out.append(f"| {n} | {fmt(v['auroc_small'])} | {fmt(v['auroc_matched'])} | {fmt(v['auroc_large'])} | {fmt(v['critical_small'])} / {fmt(v['critical_matched'])} / {fmt(v['critical_large'])} | {fmt(v['harmless_small_mean'])} | {fmt(v['harmless_matched_mean'])} | {fmt(v['harmless_large_mean'])} | {'—' if v['identical_mean'] is None else format(v['identical_mean'], '.4f')} | {fmt(v['lazy_mean'])} | {fmt(v['severity_rho'])} | {mr} |")
             out.append('')
     return out
 

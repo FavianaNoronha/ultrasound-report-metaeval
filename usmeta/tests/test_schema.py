@@ -35,3 +35,10 @@ def test_llm_extractor_keeps_only_quoted_values_and_normalises(tmp_path):
     cli = graders.LocalLLM('m', str(tmp_path), runner=lambda p: reply)
     f, bad = schema.extract_llm(cli, rep, 'breast')
     assert f['calc'] == 'no' and f['birads'] == '4a' and 'path' not in f and bad == 1 and f['lesion'] == 'present'
+
+def test_sentence_check_parsing_tolerates_trailing_commas_and_flags_length_mismatch():
+    from usmeta import judge2
+    txt = '```json\n{"candidate_supported": [true, false], "reference_covered": [true, true, true], "errors": [{"field": "x", "severity": "major", "category": "wrong measurement"},]}\n```'
+    js = judge2.parse(txt, 2, 2); assert js is not None and js['len_mismatch'] is True
+    s = judge2.scores_from(js); assert s['precision'] == 0.5 and s['recall'] == 1.0 and s['cats'] == ['wrong measurement'] and abs(s['judge'] - 0.7) < 1e-9
+    assert judge2.parse('not json', 2, 2) is None
