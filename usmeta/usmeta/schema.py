@@ -7,7 +7,7 @@ Schema (entity -> attributes), status in {present, absent, uncertain}:
   fetal  : head{hc_mm, plane}
 Flat facts use the same keys as templates_v2.facts, so the extractor can be scored against dataset labels field by field.
 """
-import re
+import re, json
 from . import extract
 
 ORG_ENT = {'breast': ['lesion', 'calcifications', 'halo', 'assessment', 'pathology'], 'thyroid': ['lesion', 'foci', 'assessment'], 'fetal': ['head']}
@@ -35,7 +35,7 @@ def extract_rule(text, organ):
         m = re.search(r'(trans (?:thalamic|cerebellum|ventricular))', tl)
         if m: f['plane'] = m[1]
         return f
-    if re.search(r'no (?:focal )?(?:lesion|nodule)|(?:lesion|nodule) is not seen|shows no focal', tl):
+    if re.search(r'no (?:focal )?(?:lesion|nodule)|(?:lesion|nodule) is not seen|shows no focal|no abnormality|within normal limits', tl):
         f['lesion'] = 'absent'
         m = re.search(r'bi-rads (\w+)', tl); f['birads'] = m[1] if m else None
         if 'pathology: normal' in tl: f['path'] = 'normal'
@@ -62,7 +62,7 @@ def extract_rule(text, organ):
         if re.search(r'no calcifications|calcifications are absent', tl): f['calc'] = 'no'
         else:
             m = re.search(r'calcifications \(([^)]*)\)', tl)
-            if m: f['calc'] = m[1]
+            if m: f['calc'] = m[1].replace('in a lesion', 'in a mass')   # our synonym rewording turns 'mass' into 'lesion'
         if re.search(r'no echogenic halo|echogenic halo is absent', tl): f['halo'] = 'no'
         elif 'echogenic halo' in tl: f['halo'] = 'yes'
         m = re.search(r'(left|right) breast', tl)
@@ -137,3 +137,73 @@ class FindingRecall:
     name = 'finding_recall'
     def score(self, ref, hyp, item):
         o = item['organ']; return finding_scores(to_findings(extract_rule(ref, o), o), to_findings(extract_rule(hyp, o), o))[1]
+
+# ---------------------------------------------------------------- local-LLM extractor for FREE text (quotes its evidence)
+LLM_FIELDS = {
+ 'breast': dict(lesion='present or absent (is a mass/lesion described?)', count='number of lesions (integer)', shape='oval|round|irregular', orient='wider than tall|taller than wide',
+                margin='margin wording as written, e.g. circumscribed or not circumscribed (angular, indistinct)',
+                echo='anechoic|hypoechoic|hyperechoic|isoechoic|heterogeneous|complex cystic/solid', post='shadowing|enhancement|combined|no',
+                calc='no, or the calcification type/location as written', halo='yes|no', size_mm='longest size in mm (number; convert cm x10)',
+                size_pct='size as % of image width (number)', pos='image position as written, e.g. upper-central, middle-right, lower-left', side='left|right (breast side)',
+                birads='category only e.g. 3, 4a, 5', path='benign|malignant|normal', hist='histologic type as written'),
+ 'thyroid': dict(lesion='present or absent (is a nodule/lesion described?)', count='number of nodules (integer)', comp='solid|cystic|predominantly solid|predominantly cystic|spongiform|dense',
+                 echo='hypoechoic|hyperechoic|isoechoic|marked hypoechoic|anechoic', margin='well defined|well defined smooth|ill defined|microlobulated|spiculated|macrolobulated',
+                 orient='wider than tall|taller than wide', foci='none, or echogenic foci type as written', size_mm='longest size in mm (number)', size_pct='size as % of image width (number)',
+                 pos='image position as written, e.g. upper-central, middle-right, lower-left', tirads='category only e.g. 2, 3, 4a, 5'),
+ 'fetal': dict(hc_mm='head circumference in mm (number; convert cm x10)', plane='trans thalamic|trans cerebellum|trans ventricular'),
+}
+LLM_PROMPT = """Extract facts from this ultrasound report. Reply with JSON only: one key per field below, each value an object {{"value": ..., "quote": "<exact words copied from the report>"}}.
+Use {{"value": null, "quote": null}} for any field the report does not state. Do not guess or infer. Numbers are bare numbers; everything else is a string.
+
+FIELDS:
+{fields}
+
+REPORT:
+{report}
+"""
+
+def _parse_llm(txt, organ):
+    m = re.search(r'\{.*\}', txt or '', re.S)
+    try: js = json.loads(m.group(0))
+    except Exception: return None
+    return js if isinstance(js, dict) and all(isinstance(v, dict) for v in js.values()) else None
+
+def extract_llm(cli, report, organ):
+    """flat facts like extract_rule, from a local LLM. A value is kept only if its quote appears in the report; returns (facts, n_unquoted)."""
+    fields = '\n'.join(f'- {k}: {v}' for k, v in LLM_FIELDS[organ].items())
+    t = cli.ask(LLM_PROMPT.format(fields=fields, report=report), valid=lambda x: _parse_llm(x, organ) is not None)
+    js = _parse_llm(t, organ)
+    if js is None: return None, 0
+    f, bad = {}, 0; rl = re.sub(r'\s+', ' ', report.lower())
+    for k in LLM_FIELDS[organ]:
+        d = js.get(k) or {}; v, q = d.get('value'), d.get('quote')
+        if v in (None, '', 'null') or q in (None, ''): continue
+        if re.sub(r'\s+', ' ', str(q).lower()) not in rl: bad += 1; continue
+        v = str(v).strip().lower() if not isinstance(v, (int, float)) else v
+        if k in ('size_mm', 'size_pct', 'hc_mm', 'count'):
+            try: v = float(v); v = int(round(v)) if k != 'hc_mm' else round(v, 1)
+            except Exception: continue
+        if k == 'lesion' and v not in ('present', 'absent'): continue
+        if k == 'pos' and isinstance(v, str): v = v.replace(' ', '-')
+        if k == 'birads' and isinstance(v, str): v = re.sub(r'^bi-?rads\s*', '', v)
+        f[k] = _norm_llm(k, v, organ)
+    if 'lesion' not in f: f['lesion'] = 'present' if any(FIELD_ENTITY[k] == 'lesion' for k in f) else 'absent'   # a described attribute implies a lesion; none -> absent
+    return f, bad
+
+def _norm_llm(k, v, organ):
+    """map the model's wording onto the schema values (no model call; same mapping for every report)"""
+    if isinstance(v, bool): v = 'yes' if v else 'no'
+    if not isinstance(v, str): return v
+    if k == 'calc':
+        if re.match(r'(no|none|absent)\b|no calcifications', v): return 'no'
+        m = re.search(r'calcifications? \(([^)]*)\)', v); return m[1] if m else v
+    if k == 'foci':
+        if re.match(r'(no|none)\b|no echogenic foci', v): return 'none'
+        m = re.search(r'\(([^)]*)\)', v); return m[1] if m else v
+    if k == 'halo': return 'no' if re.search(r'\b(no|absent|without|lacking)\b|^false', v) else 'yes'
+    if k == 'post' and re.search(r'\bno\b|absent', v): return 'no'
+    if k == 'margin' and organ == 'breast':
+        m = re.match(r'(?:not circumscribed\s*[-:(]?\s*)?(.*?)\)?$', v); inner = m[1].strip() if m else v
+        if v.startswith('circumscribed') or v == 'circumscribed': return 'circumscribed'
+        if re.search(r'indistinct|angular|microlobulated|spiculated', v): return f'not circumscribed ({inner})' if not v.startswith('not circumscribed (') else v
+    return v

@@ -2,9 +2,9 @@ import json, sys, collections
 sys.path.insert(0, '.')
 from usmeta import schema
 tr = {}
-for l in open('true_reports_v2.jsonl'):
+for l in open('true_reports_v2d.jsonl'):
     r = json.loads(l); tr[r['case_id']] = r
-rows = [json.loads(l) for l in open('bench_v2c.jsonl')]
+rows = [json.loads(l) for l in open('bench_v2d.jsonl')]
 hit = collections.Counter(); tot = collections.Counter(); bad = collections.defaultdict(list)
 for r in rows:
     if r['kind'] == 'error': continue

@@ -10,3 +10,4 @@
 | step5 | 2026-10-23 | 4a019e7 | [step5_harmless_split_layer0_rerun3](step5_harmless_split_layer0_rerun3/) | RERUN3: BUS-BRA side="single" (253 images) was stated as a laterality; fixed in bench_v2d; BUS-BRA AUROC changes <=0.03, other datasets 0.00 |
 
 _Notes:_ step2 and step3 outputs are superseded for BUS-BRA by step5 rerun3 (side='single' bug); use bench_v2d.jsonl / true_reports_v2d.jsonl from Step 6 on. Step 5 rerun2 added the matched one-word synonym group; reason: Step 5 'small' rewordings changed 5-10x more text than planted errors.
+| step6 | 2026-10-23 | 9827cb0 | [step6_layer1_finding_f1](step6_layer1_finding_f1/) | finding_f1 AUROC 1.00 on all 10 datasets (upper bound: extractor = template, 99.99% field agreement); LLM extractor 98.5% fresh sample (82.9% before normalisation); legacy fact_checker fails identical-copy gate |

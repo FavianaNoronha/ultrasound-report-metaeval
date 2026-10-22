@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-23T02:23:16",
+  "git_commit": "9827cb0",
+  "dataset_record_counts": {
+    "bench_v2d_rows": 31976,
+    "unique_pairs": 27570
+  },
+  "seeds": {
+    "bootstrap": 0,
+    "llm_check_seeds": [
+      0,
+      1
+    ]
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "llm_extractor": "mlx-community/gemma-2-9b-it-4bit (greedy)",
+    "rule_extractor": "usmeta/schema.py"
+  },
+  "command": "python3 -m usmeta.layer1 score --bench bench_v2d.jsonl; analysis via usmeta.layer0b.analyse; python3 check_schema.py; python3 check_llm_extractor.py 2 1"
+}
