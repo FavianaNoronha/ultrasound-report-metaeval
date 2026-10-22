@@ -1,0 +1,122 @@
+[
+ {
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "expected_folder": "BrEaST-Lesions_USG-images_and_masks",
+  "usmeta_reads": "images, masks, expert BI-RADS descriptors (baseline_exp/breast.xlsx in this repo)",
+  "citation_from_memory_to_confirm": "Paw\u0142owska et al. 2024, BrEaST-Lesions-USG (TCIA)",
+  "licence": "to confirm",
+  "present_on_this_machine": true,
+  "files": 522,
+  "bytes": 70204787,
+  "tree_sha256": "2bd19900b053f1451bcbe7b19563a039a1e978d89038a900341f55cb43c818c3"
+ },
+ {
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "expected_folder": "archive-5",
+  "usmeta_reads": "BUSBRA/BUSBRA/{Images,Masks,bus_data.csv}",
+  "citation_from_memory_to_confirm": "G\u00f3mez-Flores et al. 2024, BUS-BRA",
+  "licence": "to confirm",
+  "present_on_this_machine": true,
+  "files": 5627,
+  "bytes": 265526681,
+  "tree_sha256": "10a8df08cbb4bde56e2eef09d1845fdaae8f043ce6a075900e50c49261551be5"
+ },
+ {
+  "dataset": "BUSI",
+  "organ": "breast",
+  "expected_folder": "Dataset_BUSI_with_GT",
+  "usmeta_reads": "{benign,malignant,normal}/*.png and *_mask*.png",
+  "citation_from_memory_to_confirm": "Al-Dhabyani et al. 2020, Dataset of breast ultrasound images",
+  "licence": "to confirm",
+  "present_on_this_machine": true,
+  "files": 1578,
+  "bytes": 266185470,
+  "tree_sha256": "606aacab2e12d3345cfaf90539c7102b49283a33540342d5b63ba04a72f43f0a"
+ },
+ {
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "expected_folder": "archive-4",
+  "usmeta_reads": "UDIAT_Dataset_B/{original,GT,DatasetB.xlsx}",
+  "citation_from_memory_to_confirm": "Yap et al. 2018, UDIAT dataset B",
+  "licence": "to confirm",
+  "present_on_this_machine": true,
+  "files": 357,
+  "bytes": 24898522,
+  "tree_sha256": "11a25c9fe62c78951436ae1c26f4424aabcfc28e739014b036c873e533c37ee1"
+ },
+ {
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "expected_folder": "archive-8",
+  "usmeta_reads": "BUS-UCLM/{images,masks,INFO.csv}",
+  "citation_from_memory_to_confirm": "Vallez et al. 2025, BUS-UCLM",
+  "licence": "to confirm",
+  "present_on_this_machine": true,
+  "files": 2050,
+  "bytes": 673743789,
+  "tree_sha256": "612c24b42b67e3f6a212e296ddc703fb95b84c7520d40a012543fc001d1058ba"
+ },
+ {
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "expected_folder": "archive-6",
+  "usmeta_reads": "{trainval,test}-{image,mask}/",
+  "citation_from_memory_to_confirm": "Gong et al. 2021, TN3K (TRFE-Net)",
+  "licence": "to confirm",
+  "present_on_this_machine": true,
+  "files": 6986,
+  "bytes": 191162633,
+  "tree_sha256": "61c4e5fbf863fe4260000559c6d9c690ede336f68415be229aacdf3b34c07d4c"
+ },
+ {
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "expected_folder": "TN5000_forReview",
+  "usmeta_reads": "{JPEGImages,Annotations,ImageSets}/",
+  "citation_from_memory_to_confirm": "TN5000 (2025), to confirm",
+  "licence": "to confirm",
+  "present_on_this_machine": true,
+  "files": 10004,
+  "bytes": 209931527,
+  "tree_sha256": "12867c939d47b357bfc1d8b35f25fde90cda42b0d5a2fe348c743663c22c15c8"
+ },
+ {
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "expected_folder": "archive-9",
+  "usmeta_reads": "jpg images + xml outlines",
+  "citation_from_memory_to_confirm": "Pedraza et al. 2015, DDTI",
+  "licence": "to confirm",
+  "present_on_this_machine": true,
+  "files": 870,
+  "bytes": 18746349,
+  "tree_sha256": "4d222b884523ced351e9c3b83535a36b01a26d1f66aa1e8b300572b7369c1bc6"
+ },
+ {
+  "dataset": "HC18",
+  "organ": "fetal",
+  "expected_folder": "archive-7",
+  "usmeta_reads": "{training_set,test_set}/, training_set_pixel_size_and_HC.csv",
+  "citation_from_memory_to_confirm": "van den Heuvel et al. 2018, HC18 challenge",
+  "licence": "to confirm",
+  "present_on_this_machine": true,
+  "files": 2335,
+  "bytes": 176257670,
+  "tree_sha256": "e295a24ca541edbf15fcbb8453d2aa008204ccd742653839afb1aa6da0178139"
+ },
+ {
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "expected_folder": "Trans-cerebellum;Trans-thalamic;Trans-ventricular",
+  "usmeta_reads": "three plane folders (Patient..._Plane..png + masks)",
+  "citation_from_memory_to_confirm": "to confirm (fetal head plane dataset)",
+  "licence": "to confirm",
+  "present_on_this_machine": true,
+  "files": 2869,
+  "bytes": 1103461824,
+  "tree_sha256": "2c0f78f0f8661cac2356efb316cfedc8e5ab7146f6ee992e7c37023f2ec59fa9"
+ }
+]

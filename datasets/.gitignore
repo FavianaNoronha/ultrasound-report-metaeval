@@ -1,0 +1,6 @@
+# never commit raw images or archives here
+*
+!README.md
+!manifest.json
+!make_manifest.py
+!.gitignore
