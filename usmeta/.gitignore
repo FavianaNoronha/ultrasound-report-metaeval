@@ -6,3 +6,4 @@ __pycache__/
 scores*.json
 .llm_cache/
 judge2_scores*.jsonl
+dedupe_hashes.npz
