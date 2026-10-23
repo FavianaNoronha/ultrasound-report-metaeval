@@ -8,7 +8,7 @@ import re, json
 from . import graders
 
 CATS = ('false finding', 'missed finding', 'wrong location', 'wrong severity/category', 'wrong measurement')
-PROMPT = """You are a sonographer-radiologist comparing an AI-written ultrasound report (CANDIDATE) with a REFERENCE report.
+PROMPT_V1 = """You are a sonographer-radiologist comparing an AI-written ultrasound report (CANDIDATE) with a REFERENCE report.
 Ignore wording, order and style when the meaning is unchanged. Units are equivalent (10 mm = 1 cm).
 
 REFERENCE sentences:
@@ -22,6 +22,27 @@ Reply with JSON only:
  "reference_covered": [true or false for each REFERENCE sentence, in order: true only if the CANDIDATE states or implies it],
  "errors": [{{"field": "<what differs>", "severity": "critical|major|minor", "category": "false finding|missed finding|wrong location|wrong severity/category|wrong measurement"}}]}}
 Use an empty errors list if the reports agree in meaning.
+"""
+
+PROMPT = """You are a sonographer-radiologist comparing an AI-written ultrasound report (CANDIDATE) with a REFERENCE report.
+Compare ONLY what the two reports say. Do not judge whether a finding is medically plausible or complete.
+Rules:
+- A CANDIDATE sentence is supported (true) if it appears word for word in the REFERENCE, or says the same facts in other words.
+- A REFERENCE sentence is covered (true) if it appears word for word in the CANDIDATE, or its facts are stated in other words.
+- Ignore wording, order and style when the meaning is unchanged. Units are equivalent (10 mm = 1 cm).
+- If the two reports are identical, every value is true and errors is empty.
+- List an error only when a fact differs: something added, missing, or changed (a value, location, size or category).
+
+REFERENCE sentences:
+{ref}
+
+CANDIDATE sentences:
+{hyp}
+
+Reply with JSON only:
+{{"candidate_supported": [true or false for each CANDIDATE sentence, in order],
+ "reference_covered": [true or false for each REFERENCE sentence, in order],
+ "errors": [{{"field": "<what differs>", "severity": "critical|major|minor", "category": "false finding|missed finding|wrong location|wrong severity/category|wrong measurement"}}]}}
 """
 
 def sentences(t): return [s.strip() for s in re.split(r'(?<=[.!?])\s+', t.strip()) if s.strip()]

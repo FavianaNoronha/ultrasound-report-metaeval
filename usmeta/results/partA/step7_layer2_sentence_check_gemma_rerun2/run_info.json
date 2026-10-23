@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-23T12:54:40",
+  "git_commit": "5468716",
+  "dataset_record_counts": {
+    "sampled_rows": 995,
+    "unique_pairs_judged": 925,
+    "dropped_unparseable": 0,
+    "len_mismatch_replies": 41,
+    "identical_copies_gate_test": 100
+  },
+  "seeds": {
+    "sampling": 0,
+    "bootstrap": 0,
+    "gate_test": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "judge": "mlx-community/gemma-2-9b-it-4bit (greedy, max_tokens 500)",
+    "prompt": "PROMPT (v2, stricter); PROMPT_V1 kept"
+  },
+  "command": "python3 check_identical_gate.py 10 0; python3 -m usmeta.judge2 20 judge2_scores_v2.jsonl; python3 -m usmeta.judge2_report --scores judge2_scores_v2.jsonl --out ..."
+}
