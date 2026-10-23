@@ -45,6 +45,8 @@ Reply with JSON only:
  "errors": [{{"field": "<what differs>", "severity": "critical|major|minor", "category": "false finding|missed finding|wrong location|wrong severity/category|wrong measurement"}}]}}
 """
 
+PROMPT_V2 = PROMPT   # prompt_v2 (stricter): identical copies must get 1.0. PROMPT_V1 = prompt_v1 (first Step 7 run). Both frozen in FROZEN.md.
+
 def sentences(t): return [s.strip() for s in re.split(r'(?<=[.!?])\s+', t.strip()) if s.strip()]
 
 def numbered(ss): return '\n'.join(f'{i + 1}. {s}' for i, s in enumerate(ss))
