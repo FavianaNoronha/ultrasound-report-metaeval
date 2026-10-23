@@ -1,0 +1,56 @@
+{
+ "rows": 9797,
+ "text_pairs_missing": 0,
+ "claims_backed_on_true_text": {
+  "BrEaST": [
+   500,
+   500
+  ],
+  "BUS-BRA": [
+   500,
+   500
+  ],
+  "BUSI": [
+   500,
+   500
+  ],
+  "UDIAT": [
+   500,
+   500
+  ],
+  "BUS-UCLM": [
+   285,
+   285
+  ],
+  "TN3K": [
+   500,
+   500
+  ],
+  "TN5000": [
+   500,
+   500
+  ],
+  "DDTI": [
+   500,
+   500
+  ],
+  "HC18": [
+   100,
+   100
+  ],
+  "FetalHead": [
+   100,
+   100
+  ]
+ },
+ "sanity": {
+  "mask_iou_true_vs_true": [
+   1.0,
+   1.0
+  ],
+  "dice_true_vs_true": [
+   1.0,
+   1.0
+  ]
+ }
+}

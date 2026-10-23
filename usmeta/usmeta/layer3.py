@@ -27,6 +27,7 @@ def mask_verified(text, organ, meas):
     for k, v in claims.items():
         m = meas.get(k)
         if m is None: continue
+        if k == 'count' and organ == 'thyroid': m = min(m, 3)    # the thyroid wording stops at 'three or more nodules'
         c = schema.attr_credit(k, m, v) if k in ('size_mm', 'size_pct', 'hc_mm') else float(str(m) == str(v)); n += 1; b += c >= 0.5; cred.append(c)
     return (float(np.mean(cred)) if cred else None), n, b
 
@@ -68,11 +69,14 @@ def score_rows(rows, text_scores=None):
         mv, nclaims, nback = mask_verified(r['candidate'], r['organ'], meas); s['mask_verified_facts'] = mv if mv is not None else 1.0; s['_claims'] = nclaims; s['_backed'] = nback
         s['semacc'] = semacc(r['candidate'], rec, meas)
         s['box_support'], s['pixel_precision'], s['pixel_recall'] = box_support(r['boxes'], m, r['gt_boxes'])
+        gtm = np.zeros_like(m, bool)
+        for b in r['gt_boxes']: gtm[int(b[1]):int(b[3]), int(b[0]):int(b[2])] = True
+        s['box_support_gtbox'] = box_support(r['boxes'], gtm, r['gt_boxes'])[0]   # same 50% rule against the TRUE BOX region (a tight box of an irregular mask fills < 50% of itself)
         s['mask_iou_true_vs_true'] = location.mask_iou(m, m); s['dice_true_vs_true'] = location.dice(m, m)
         out.append(s)
     return out
 
-SCORERS = ['bleu', 'rougeL', 'chrf', 'bertscore[roberta-large]', 'ratescore', 'oracle_label_check', 'mask_verified_facts', 'semacc', 'location_check', 'grounded_check', 'box_support']
+SCORERS = ['bleu', 'rougeL', 'chrf', 'bertscore[roberta-large]', 'ratescore', 'oracle_label_check', 'mask_verified_facts', 'semacc', 'location_check', 'grounded_check', 'box_support', 'box_support_gtbox']
 
 def analyse(rows, S):
     res = {}; by = collections.defaultdict(lambda: collections.defaultdict(list))
@@ -92,3 +96,34 @@ def analyse(rows, S):
             res.setdefault(ds, {})[name] = dict(n_cases=len(cases), auroc=boot(A) if A else None, harmless_mean=float(np.mean(H)) if H else None,
                 identical_mean=float(np.mean(I)), identical_min=float(np.min(I)), severity_rho=rho, auroc_by_group={g: float(np.mean(v)) for g, v in byg.items()})
     return res
+
+def run(bench='bench_loc.jsonl', layer0_scores='scores_v2d_layer0.json'):
+    rows = [json.loads(l) for l in open(bench)]; S = score_rows(rows); L0 = json.load(open(layer0_scores)); idx = {tuple(p): i for i, p in enumerate(L0['pairs'])}; miss = 0
+    for r, s in zip(rows, S):
+        i = idx.get((r['reference'], r['candidate']))
+        if i is None: miss += 1
+        for n, arr in L0['scores'].items(): s[n] = float(arr[i]) if i is not None else float('nan')
+    return rows, S, miss
+
+def tables(res):
+    out = []
+    for ds, d in res.items():
+        out += [f'### {ds} ({next(iter(d.values()))["n_cases"]} cases)', '', '| scorer | AUROC (95% CI) | box-only | text position (box right) | text position + box moved | size | harmless mean | identical mean | severity ρ |', '|---|---|---|---|---|---|---|---|---|']
+        fm = lambda x: '—' if x is None else (f'{x[0]:.2f} ({x[1]:.2f}–{x[2]:.2f})' if isinstance(x, tuple) else f'{x:.2f}')
+        for n, v in d.items():
+            g = v['auroc_by_group']
+            out.append(f"| {n} | {fm(v['auroc'])} | {fm(g.get('box_only'))} | {fm(g.get('text_pos'))} | {fm(g.get('text_pos_box'))} | {fm(g.get('size'))} | {fm(v['harmless_mean'])} | {v['identical_mean']:.4f} | {fm(v['severity_rho'])} |")
+        out.append('')
+    return out
+
+if __name__ == '__main__':
+    ap = argparse.ArgumentParser(); ap.add_argument('--out', required=True); a = ap.parse_args()
+    rows, S, miss = run(); res = analyse(rows, S); os.makedirs(a.out, exist_ok=True)
+    json.dump(res, open(os.path.join(a.out, 'results_partA_layer3.json'), 'w'), indent=1)
+    open(os.path.join(a.out, 'tables.md'), 'w').write('\n'.join(tables(res)))
+    claims = collections.defaultdict(lambda: [0, 0])
+    for r, s in zip(rows, S):
+        if r['kind'] == 'identical': claims[r['dataset']][0] += s['_claims']; claims[r['dataset']][1] += s['_backed']
+    sanity = {k: (min(s[k] for s in S), max(s[k] for s in S)) for k in ('mask_iou_true_vs_true', 'dice_true_vs_true')}
+    json.dump(dict(rows=len(rows), text_pairs_missing=miss, claims_backed_on_true_text={k: v for k, v in claims.items()}, sanity=sanity), open(os.path.join(a.out, 'meta.json'), 'w'), indent=1)
+    print('rows', len(rows), 'missing text pairs', miss, '| true-vs-true IoU/Dice', sanity, '| identical gate min', min(v['identical_min'] for d in res.values() for v in d.values()))

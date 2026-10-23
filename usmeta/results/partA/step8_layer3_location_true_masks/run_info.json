@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-23T12:57:55",
+  "git_commit": "0b0e161",
+  "dataset_record_counts": {
+    "bench_loc_rows": 9797,
+    "cases_per_dataset": 100
+  },
+  "seeds": {
+    "sampling": 0,
+    "bootstrap": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "masks": "dataset ground-truth masks/boxes (no model)"
+  },
+  "command": "python3 -m usmeta.bench_loc; python3 -m usmeta.layer3 --out ..."
+}

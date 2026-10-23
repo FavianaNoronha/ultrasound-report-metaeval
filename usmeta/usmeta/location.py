@@ -79,14 +79,20 @@ def gt_mask(rec):
         if ds == 'HC18':
             p = _p(unified.find('archive-7'), 'training_set', cid + '_Annotation.png'); return ndimage.binary_fill_holes(f(p)) if os.path.exists(p) else None
         if ds == 'FetalHead':
+            ensure_fetal_masks()
             for plane in ('Trans-cerebellum', 'Trans-thalamic', 'Trans-ventricular'):
                 p = _p(unified.CACHE, plane, 'SegmentationClass', cid + '.png')
                 if os.path.exists(p): return np.all(np.array(Image.open(p).convert('RGB')) == np.array((255, 0, 0)), axis=-1)
         if ds == 'DDTI':
-            r = rec['region']
-            if not r: return None
-            m = np.zeros((r['H'], r['W']), bool); x0, y0, x1, y1 = [int(v) for v in r['box']]
-            return None   # outline polygons are re-drawn by unified.ddti only; boxes from the record are used instead
+            import xml.etree.ElementTree as ET
+            num, idx = cid.split('_'); root = unified.find('archive-9'); r = ET.parse(_p(root, num + '.xml')).getroot()
+            for mark in r.findall('mark'):
+                if (mark.findtext('image') or '').strip() != idx: continue
+                W, H = Image.open(rec['image'].replace(os.path.dirname(rec['image']), root)).size; im = Image.new('L', (W, H), 0); dr = ImageDraw.Draw(im)
+                for rg in json.loads(mark.findtext('svg') or '[]'):
+                    pts = [(q['x'], q['y']) for q in rg.get('points', [])]
+                    if len(pts) >= 3: dr.polygon(pts, fill=255)
+                return np.array(im) > 127
     except Exception: return None
     return None
 
@@ -94,3 +100,12 @@ def gt_boxes(rec, mask=None):
     r = rec.get('region')
     if not r: return []
     return [list(map(float, b)) for b in r['boxes']]
+
+
+def ensure_fetal_masks():
+    """extract the fetal-head segmentation zips into unified.CACHE (same place unified.fetal_planes uses)"""
+    base = os.path.dirname(unified.find('Trans-cerebellum'))
+    for plane in ('Trans-cerebellum', 'Trans-thalamic', 'Trans-ventricular'):
+        pdir = os.path.join(base, plane); out = os.path.join(unified.CACHE, plane); seg = (glob.glob(os.path.join(pdir, '*egmentation*.zip')) or [None])[0]
+        if seg and not os.path.isdir(os.path.join(out, 'SegmentationClass')):
+            os.makedirs(out, exist_ok=True); zipfile.ZipFile(seg).extractall(out)
