@@ -53,3 +53,6 @@ dev 30% / test 70%, assigned by group id (BrEaST, BUS-BRA, BUS-UCLM, DDTI, Fetal
 - Error counts per dataset differ a lot (BrEaST has the most error types), so never pool datasets: report per dataset.
 - The 150-case sample is a subset; rebuild with a larger `per_dataset` if more power is needed.
 - Severity is our guess: do not quote it as clinical ground truth.
+
+---
+Limitations: see [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-24T02:44:10",
+  "git_commit": "e9f8e6d",
+  "dataset_record_counts": {},
+  "seeds": {},
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {},
+  "command": "see git log"
+}

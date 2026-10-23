@@ -37,3 +37,6 @@
 | chrf | 0.00 (0.00–0.00) | 0.00 | 0.65 | 1.00 | 0.33 |
 | fact_checker | 1.00 (1.00–1.00) | 1.00 | 1.00 | 1.00 | -1.00 |
 | evidence_check | 1.00 (1.00–1.00) | 1.00 | 1.00 | 1.00 | -1.00 |
+
+---
+Limitations: see [docs/LIMITATIONS.md](docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

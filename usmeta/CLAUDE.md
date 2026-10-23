@@ -40,6 +40,9 @@ Word overlap (BLEU, ROUGE-L, chrF): AUROC 0.00 on every organ. A wrong diagnosis
 (BLEU: BUS-BRA 0.88 vs 0.45, TN5000 0.94 vs 0.38, BrEaST wrong BI-RADS 0.95 vs 0.47, fetal 1 mm and 40 mm both 0.83).
 Fact checker and evidence check: AUROC 1.00, but only because the reports are templated (upper bound, not a finding).
 
+## FREEZE (2026-10-24)
+Read `docs/LIMITATIONS.md` first. Tag `freeze-v1`: frozen items are listed in `FROZEN.md`; changes need a new version + `CHANGELOG.md`. Splits are locked (`splits.jsonl`): tune on dev/val only, report final numbers on test via `usmeta.splits.load("test")` (logged). Step 10 outputs are in `results/partA/step10*`.
+
 ## PROGRESS (2026-10-23) - read before the old task list
 Done: stage 2 scorers (BERTScore, RaTEScore; GREEN not run), local Gemma judge, Qwen real reports (200 scans), Part A steps 2-9 (templates_v2, bench_v2d,
 Layers 0-3, results_layers_all.md). Use `bench_v2d.jsonl` and `true_reports_v2d.jsonl` (supersede bench_v2/v2b/v2c; BUS-BRA side bug fixed).

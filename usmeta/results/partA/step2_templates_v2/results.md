@@ -57,3 +57,6 @@ Fields that are **not** expert labels (provenance):
 - Image files are not on this Mac (records point to another machine); not needed for text-only Part A.
 
 Total: 16562 true reports, 49686 style texts. Example (BrEaST, standard): An irregular mass (wider than tall) with not circumscribed (indistinct) margins and heterogeneous echo pattern is seen in the upper central part of the image, measuring approximately 25 mm. Posterior acoustic shadowing and no calcifications and no echogenic halo. Assessment: BI-RADS 2. Pathology: benign.
+
+---
+Limitations: see [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

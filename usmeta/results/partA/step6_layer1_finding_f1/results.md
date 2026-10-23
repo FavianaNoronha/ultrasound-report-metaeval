@@ -473,3 +473,6 @@ lesion 1.00, count 1.00, pos 0.95, orient 1.00, size_mm 1.00, shape 1.00, margin
 | UDIAT | path | 1.000 | 150 |
 | UDIAT | pos | 1.000 | 115 |
 | UDIAT | size_pct | 1.000 | 450 |
+
+---
+Limitations: see [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

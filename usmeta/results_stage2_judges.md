@@ -21,3 +21,6 @@
 | grader | AUROC (95% CI) | critical-only AUROC | harmless mean | identical mean | severity ρ |
 |---|---|---|---|---|---|
 | llm_judge[local:gemma-2-9b-it-4bit] | 0.76 (0.74–0.79) | 1.00 | 0.79 | 1.00 | -0.53 |
+
+---
+Limitations: see [docs/LIMITATIONS.md](docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

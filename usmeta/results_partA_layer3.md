@@ -188,3 +188,6 @@
 | grounded_check | 0.88 (0.87–0.88) | 1.00 | — | — | 0.78 | 0.89 | 1.0000 | -0.59 |
 | box_support | 0.64 (0.64–0.64) | 0.83 | — | — | 0.50 | 1.00 | 1.0000 | -0.42 |
 | box_support_gtbox | 0.63 (0.62–0.63) | 0.79 | — | — | 0.50 | 1.00 | 1.0000 | -0.44 |
+
+---
+Limitations: see [docs/LIMITATIONS.md](docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

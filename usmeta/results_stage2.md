@@ -45,3 +45,6 @@
 | evidence_check | 1.00 (1.00–1.00) | 1.00 | 1.00 | 1.00 | -1.00 |
 | bertscore[roberta-large] | 0.00 (0.00–0.00) | 0.00 | 0.96 | 1.00 | -0.17 |
 | ratescore | 0.14 (0.13–0.15) | 0.14 | 0.75 | 1.00 | -0.49 |
+
+---
+Limitations: see [docs/LIMITATIONS.md](docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

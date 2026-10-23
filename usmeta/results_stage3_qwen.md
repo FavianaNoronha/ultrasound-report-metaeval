@@ -47,3 +47,6 @@ Writer: Qwen/Qwen2.5-VL-3B-Instruct | extractor+judge: mlx-community/gemma-2-9b-
 | fact_coverage | 0.37 |
 | llm_judge[local:gemma-2-9b-it-4bit] | 0.00 |
 | bertscore[roberta-large] | 0.82 |
+
+---
+Limitations: see [docs/LIMITATIONS.md](docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

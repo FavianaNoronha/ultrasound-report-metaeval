@@ -332,3 +332,6 @@
 | chrf | 0.20 | 1.00 | 0.44 | 0.01 | 0.09 | — | 0.21 | 0.21 | 0.00 |
 | bertscore[roberta-large] | 0.20 | 0.00 | 0.20 | 0.00 | 0.21 | — | 0.00 | 0.00 | 0.00 |
 | ratescore | 0.09 | 1.00 | 0.38 | 0.00 | 0.21 | — | 1.00 | 1.00 | 1.00 |
+
+---
+Limitations: see [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

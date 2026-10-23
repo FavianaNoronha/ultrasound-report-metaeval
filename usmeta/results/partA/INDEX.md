@@ -17,3 +17,6 @@ _Notes:_ step2 and step3 outputs are superseded for BUS-BRA by step5 rerun3 (sid
 | step9 | 2026-10-23 | 64e4670 | [step9_combined_results](step9_combined_results/) | combined table: 14 scorers x 10 datasets, 4 layers, per-category AUROC, idea-borrowed-from column |
 | step10a | 2026-10-24 | 3531221 | [step10a_dedupe](step10a_dedupe/) | no cross-benchmark duplicates; HC18 == Diverse Fetal Head (derived copy); within-dataset near-dups: BUSI 37%, FetalHead 9%, BUS-UCLM 6.6%, TN5000 5.6% -> STOP/ask |
 | step10b | 2026-10-24 | 395c3cf | [step10b_splits](step10b_splits/) | splits 40/20/40 by group, 16,562 cases, near-dup clusters merged; test guard + log; 5 datasets have no group ids (image id stand-in) |
+| step10f | 2026-10-24 | e9f8e6d | [step10f_contamination](step10f_contamination/) | Qwen probe: 0/120 dataset names correct; labels from file names at baseline (BUSI uses the class in the file name); model card lists no training datasets (to confirm in tech report) |
+| step10c | 2026-10-24 | e9f8e6d | [step10c_freeze](step10c_freeze/) | freeze-v1: FROZEN.md with file hashes, judge prompts v1/v2, threshold rule (90% error recall on val); CHANGELOG.md |
+| step10e | 2026-10-24 | e9f8e6d | [step10e_honesty_labels](step10e_honesty_labels/) | docs/LIMITATIONS.md linked from every results.md; README + CLAUDE.md updated |

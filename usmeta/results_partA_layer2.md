@@ -255,3 +255,6 @@
 | UDIAT | wrong location | 4 | 1.00 | 1.00 |
 | UDIAT | wrong measurement | 16 | 0.94 | 0.94 |
 | UDIAT | wrong severity/category | 11 | 0.45 | 1.00 |
+
+---
+Limitations: see [docs/LIMITATIONS.md](docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

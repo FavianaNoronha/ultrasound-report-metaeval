@@ -362,3 +362,6 @@ Groups: box-only = text unchanged, box moved (text scorers cannot see it: by con
 | FetalHead | box_support_gtbox | 0.79 | — | — | 0.50 | 1.00 | 1.0000 | spatial support rule (>= 50% of the box in the true region) |
 
 Not run yet: GREEN (7B model too large for 16 GB), Claude judge (no credit), original RadFact, SAM/MedSAM predicted masks (Part B), real VLM-written reports on bench_v2d, any clinician-confirmed severity.
+
+---
+Limitations: see [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

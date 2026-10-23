@@ -326,3 +326,6 @@ Gate: lowest identical-copy score over all scorers and datasets = 1.0000 (must b
 | chrf | — | 0.91 | 0.90 | 0.75 |
 | bertscore[roberta-large] | — | 0.94 | 0.94 | 0.94 |
 | ratescore | — | 1.00 | 1.00 | 1.00 |
+
+---
+Limitations: see [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 

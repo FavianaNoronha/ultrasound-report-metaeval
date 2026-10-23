@@ -88,3 +88,5 @@ Everything below lives in `results/partA/` (see `results/partA/INDEX.md`; combin
 | clinician-confirmed severity | **not done** |
 | real VLM reports on bench_v2d, MedGemma, LLaVA-Med | **not done** (MedGemma access pending; BrEaST images now on the Mac) |
 Datasets: images are not in git; see `../datasets/README.md` (manifest, hashes, licences "to confirm").
+
+**Read `docs/LIMITATIONS.md` before quoting any number.** Final numbers = the locked test split (`usmeta.splits.load("test")`, access logged in `results/partA/test_access.log`); tuning uses dev and val only; frozen versions in `FROZEN.md` / `CHANGELOG.md` (tag `freeze-v1`).

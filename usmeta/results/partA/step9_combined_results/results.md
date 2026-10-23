@@ -10,3 +10,6 @@ The full table is `results_layers_all.md` (copied here as `results_layers_all.md
 - Not run: GREEN, Claude judge, original RadFact, SAM/MedSAM, real VLM reports through Layers 1-3, clinician severity.
 
 **Keep visible:** reports are templated from labels (synthetic but fact-correct); severity is provisional pending clinician; template sources "to confirm" must be verified before any paper claim; results are per dataset only.
+
+---
+Limitations: see [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md) (templated reports, upper bounds, prompt-sensitive judge, provisional severity, possible exposure). 
