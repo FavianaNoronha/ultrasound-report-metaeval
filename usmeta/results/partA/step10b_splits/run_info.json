@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-24T02:20:07",
+  "git_commit": "395c3cf",
+  "dataset_record_counts": {
+    "BUS-BRA": 1875,
+    "BUS-UCLM": 683,
+    "BUSI": 780,
+    "BrEaST": 256,
+    "DDTI": 480,
+    "FetalHead": 2833,
+    "HC18": 999,
+    "TN3K": 3493,
+    "TN5000": 5000,
+    "UDIAT": 163
+  },
+  "seeds": {
+    "split": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {},
+  "command": "python3 -m usmeta.splits"
+}

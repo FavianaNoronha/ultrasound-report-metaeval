@@ -1,0 +1,9 @@
+{
+ "sha256": {
+  "splits.jsonl": "be1904128ac1e50f9e6fa17966c6c7b16c9734f26e02266d95370048cdfc0e02",
+  "bench_v2d.jsonl": "d95cbd38be2dd7d238a52437dd96705ffe89a8e54e2ddabf028e210899954e8e",
+  "true_reports_v2d.jsonl": "e24f3368b5f743d3099f6b86af19342ff4f75c84e07ad8b4ffe4b96d02108fad"
+ },
+ "git_commit": "395c3cf",
+ "written": "2026-10-24T02:20:07"
+}
