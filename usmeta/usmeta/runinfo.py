@@ -22,7 +22,9 @@ def save_step(step, name, results_md, files=(), counts=None, seeds=None, models=
     json.dump(dict(date=datetime.datetime.now().isoformat(timespec='seconds'), git_commit=_git('rev-parse', '--short', 'HEAD'),
                    dataset_record_counts=counts, seeds=seeds, packages=pkg_versions(), python=platform.python_version(),
                    models=models, command=command), open(os.path.join(d, 'run_info.json'), 'w'), indent=2)
-    os.makedirs(os.path.join(ROOT, 'summaries'), exist_ok=True); shutil.copy(os.path.join(d, 'results.md'), os.path.join(ROOT, 'summaries', f'{step}.md'))
+    os.makedirs(os.path.join(ROOT, 'summaries'), exist_ok=True); import re as _re
+    m = _re.search(r'_rerun\d+$', name); sname = f'{step}{m.group(0)}.md' if m else f'{step}.md'   # a re-run never overwrites the original summary
+    shutil.copy(os.path.join(d, 'results.md'), os.path.join(ROOT, 'summaries', sname))
     idx = os.path.join(ROOT, 'INDEX.md')
     if not os.path.exists(idx): open(idx, 'w').write('# Part A results index\n\n| step | date | commit | folder | headline |\n|---|---|---|---|---|\n')
     open(idx, 'a').write(f"| {step} | {datetime.date.today()} | {_git('rev-parse', '--short', 'HEAD')} | [{step}_{name}]({step}_{name}/) | {headline} |\n")
