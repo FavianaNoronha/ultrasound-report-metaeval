@@ -72,3 +72,19 @@ python -m usmeta.run report --bench bench.jsonl --scores scores.json --out resul
 | Claude judge | **not run** (claude CLI: "Credit balance is too low") |
 | GREEN | **not run**: 7B model too large for 16 GB |
 | contamination | BUSI, BUS-BRA, TN3K, TN5000, HC18 are **possibly seen in training**; cannot be ruled out. BUS-BRA is the least-bad option, still flagged |
+
+## Part A status (ground truth v2, Layers 0-3 on bench_v2d), as of 2026-10-23
+Everything below lives in `results/partA/` (see `results/partA/INDEX.md`; combined table: `results_layers_all.md`).
+| piece | state |
+|---|---|
+| true reports from record facts (`templates_v2.py`, 10 datasets, 3 styles) | done, tested; template sources "to confirm" (`docs/templates_sources.md`) |
+| `bench_v2d.jsonl` (planted errors with category + provisional severity, harmless groups small / matched / large) | done; BUS-BRA side="single" bug fixed (rerun3) |
+| Layer 0: BLEU, ROUGE-L, chrF, BERTScore, RaTEScore | done: below chance vs style swaps; 0.2-0.9 vs matched one-word synonym; size errors unseen |
+| Layer 1: `finding_f1` (schema.py) | done: AUROC 1.00 on all datasets (upper bound: extractor = template, 99.99% field agreement); LLM extractor 98.5% on a fresh templated sample |
+| Layer 2: Gemma-2-9B `sentence_check` (RadFact protocol, own prompt) | done on 20 cases per dataset; two prompts, identical copies 1.0 with the stricter one; prompt-sensitive |
+| Layer 3: location / size check against TRUE masks | done (Test 1); circular for text built from the same masks; SAM/MedSAM not run |
+| GREEN | **not run**: 7B model too large for 16 GB |
+| Claude judge, original RadFact | **not run** |
+| clinician-confirmed severity | **not done** |
+| real VLM reports on bench_v2d, MedGemma, LLaVA-Med | **not done** (MedGemma access pending; BrEaST images now on the Mac) |
+Datasets: images are not in git; see `../datasets/README.md` (manifest, hashes, licences "to confirm").

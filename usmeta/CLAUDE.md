@@ -40,7 +40,15 @@ Word overlap (BLEU, ROUGE-L, chrF): AUROC 0.00 on every organ. A wrong diagnosis
 (BLEU: BUS-BRA 0.88 vs 0.45, TN5000 0.94 vs 0.38, BrEaST wrong BI-RADS 0.95 vs 0.47, fetal 1 mm and 40 mm both 0.83).
 Fact checker and evidence check: AUROC 1.00, but only because the reports are templated (upper bound, not a finding).
 
-## TASKS FOR CLAUDE CODE (in order)
+## PROGRESS (2026-10-23) - read before the old task list
+Done: stage 2 scorers (BERTScore, RaTEScore; GREEN not run), local Gemma judge, Qwen real reports (200 scans), Part A steps 2-9 (templates_v2, bench_v2d,
+Layers 0-3, results_layers_all.md). Use `bench_v2d.jsonl` and `true_reports_v2d.jsonl` (supersede bench_v2/v2b/v2c; BUS-BRA side bug fixed).
+Results are saved under `results/partA/stepN_*/` with `INDEX.md`; datasets manifest in `../datasets/`.
+Still open: MedGemma/LLaVA-Med reports and ranking comparison, Claude judge (needs credit), Inspect check, SAM/MedSAM predicted masks (Part B),
+real-VLM reports graded by Layers 1-3, clinician severity sample, BERTScore on thyroid/fetal done (Layer 0). Keep the caveats visible:
+templated reports, provisional severity, template sources "to confirm", per-dataset results only, contamination cannot be ruled out.
+
+## TASKS FOR CLAUDE CODE (original list, partly done: see PROGRESS above)
 1. `pip install -r requirements.txt bert-score`, then run `bash run_stage2.sh`
    (100 cases per dataset; BERTScore roberta-large, RaTEScore, GREEN). The RaTEScore and GREEN wrappers have never run:
    read the errors and fix them in `usmeta/graders.py`. Add a test for each fix.
