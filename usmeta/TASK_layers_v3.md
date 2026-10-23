@@ -6,7 +6,8 @@ planted errors, severity and harmless rewordings; search not exhaustive); no X-r
 CheXbert, GREEN); do not overwrite old results; commit after each step; short status after each step with the
 results folder path. Every step saves to usmeta/results/partA/stepN_<name>/ (data, results.md, run_info.json with
 commit hash/seeds/versions/command, run.log) and updates INDEX.md + summaries/stepN.md. Re-runs go in a new
-_rerunN folder. Large files stay out of git (LARGE_FILES.md).
+_rerunN folder. Large files stay out of git (LARGE_FILES.md). If a GitHub remote `origin` exists, push after
+every commit.
 
 ## Step 5: fix the harmless split, then verify Layer 0 (do this first)
 Layer 0 AUROC was below chance (0.09-0.36 on BrEaST/BUS-BRA). Likely cause: "harmless" includes style swaps
@@ -58,6 +59,31 @@ Commit.
   VLM+segmenter design as new.
 - Do NOT run MedSAM/SAM2 yet (that is Part B, after this brief).
 Commit.
+
+## Step 8b: borrowed evaluation ideas (apply to Steps 5-8 results)
+Sources to cite: ReEvalMed "Beyond Scalar Scores" (arXiv 2606.18797, chest X-ray), "Can Jev Judge Radiology
+Reports?" (arXiv 2609.27607, chest X-ray), breast US report auditing (J Digit Imaging 2026,
+doi 10.1007/s10278-026-02163-z). They are prior work; we extend the ideas to ultrasound, not claim them.
+- Discrimination / Robustness (ReEvalMed): D = % planted errors a scorer flags; R = % harmless_small and
+  harmless_large candidates it does NOT flag. Pick each scorer's threshold on a held-out split (grouped by
+  patient/exam), report D and R on the test split, per dataset, alongside AUROC.
+- False-alarm rate (J Digit Imaging): % error-free candidates (identical + harmless) flagged, at the
+  threshold that gives 90% error recall. Also report-level sensitivity vs error-level recall for
+  sentence_check (a report with 2 errors: did it catch any vs did it catch each).
+- Repeatability (Jev paper): run each LLM judge 5 times on a 100-case subsample per organ with the same
+  settings. Report median rank agreement (Kendall tau) between runs and the % of verdicts that flip.
+- Calibration (Jev paper): for any judge that outputs a probability, report ECE and Brier score; fit
+  isotonic calibration on the held-out split and report before/after.
+- Cost and speed: seconds per 100 report pairs on the M3 and, for API judges, tokens and cost per 100 pairs.
+  Put this in every results table.
+- Jev as an extra Layer 2 judge: it is a paid API (TypeSafe AI). STOP AND ASK before any call. If approved,
+  read the key from an environment variable only, never write it to files, logs or git. Use their
+  one-question support format (supported / contradicted / not addressed, both directions) and label it
+  "Jev, following the protocol of arXiv 2609.27607".
+- Clinician agreement (later, placeholder): once clinician severity labels or error counts arrive, report
+  Kendall tau between each scorer and the clinician. If the clinician reviews ~50 candidates blind, report
+  their sensitivity and false-alarm rate next to the best scorer (physician baseline, as in J Digit Imaging).
+Save to usmeta/results/partA/step8b_borrowed/. Commit.
 
 ## Step 9: combined results
 - results_layers_all.md: every scorer x every dataset grouped by layer, AUROC per error category, harmless_small

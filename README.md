@@ -218,3 +218,11 @@ Research and educational use only. Not for clinical deployment.
 **Status**: 🚧 In Development - Data Collection Phase
 
 For questions or guidance, refer to the documentation in `docs/` folder.
+
+## Data (usmeta: ultrasound report-scoring study)
+**No datasets are included in this repository.** The ultrasound datasets used by `usmeta/` (BrEaST, BUS-BRA, BUSI, UDIAT, BUS-UCLM,
+TN3K, TN5000, DDTI, HC18, fetal-head planes) must be obtained from their original sources, and each dataset's licence applies separately
+(every licence is still marked "to confirm"; do not redistribute images). `datasets/manifest.json` lists the expected folders, file counts,
+sizes and tree hashes so you can check that your copy matches; `datasets/README.md` explains the layout.
+Not tracked: `usmeta/local_data/` (records derived from the datasets), model weights, tokens and the HiSBreast text.
+The report texts in this repo are templated from dataset labels (synthetic but fact-correct) and the Qwen-written reports are model output.

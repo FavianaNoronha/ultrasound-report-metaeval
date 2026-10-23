@@ -5,3 +5,4 @@ __pycache__/
 *.egg-info/
 scores*.json
 .llm_cache/
+judge2_scores*.jsonl
