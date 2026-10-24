@@ -21,3 +21,6 @@ _Notes:_ step2 and step3 outputs are superseded for BUS-BRA by step5 rerun3 (sid
 | step10c | 2026-10-24 | e9f8e6d | [step10c_freeze](step10c_freeze/) | freeze-v1: FROZEN.md with file hashes, judge prompts v1/v2, threshold rule (90% error recall on val); CHANGELOG.md |
 | step10e | 2026-10-24 | e9f8e6d | [step10e_honesty_labels](step10e_honesty_labels/) | docs/LIMITATIONS.md linked from every results.md; README + CLAUDE.md updated |
 | step10d | 2026-10-24 | 0a23fb3 | [step10d_test_results](step10d_test_results/) | TEST: Layers 0/1/3 unchanged vs dev-era (mean |shift| 0.005); judge (25 cases/dataset) moved up to 0.26 (BrEaST vs small 0.86 -> 0.60); prompt_v1 fails identical gate on UDIAT again |
+
+**From here on, final numbers = locked test split** (`usmeta.splits.load('test')`, logged); tuning uses dev and val only. Frozen: tag `freeze-v1` (`FROZEN.md`).
+| step8b | 2026-10-24 | d44d7f3 | [step8b_borrowed](step8b_borrowed/) | At 90% error recall BERTScore/BLEU flag 62-92% of error-free candidates (R~0); finding_f1 0%; judge cut-off degenerate on BUSI/DDTI/UDIAT; judge repeatable (0/60 flips, greedy); VLScore not added (no code); Jev not called |

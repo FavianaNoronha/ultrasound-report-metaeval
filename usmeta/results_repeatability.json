@@ -1,0 +1,20 @@
+{
+ "breast": {
+  "pairs": 20,
+  "pairs_with_any_difference": 0,
+  "median_kendall_tau": 1.0,
+  "seconds_per_pair": 17.068386035760245
+ },
+ "thyroid": {
+  "pairs": 20,
+  "pairs_with_any_difference": 0,
+  "median_kendall_tau": 0.9999999999999999,
+  "seconds_per_pair": 17.068391589323678
+ },
+ "fetal": {
+  "pairs": 20,
+  "pairs_with_any_difference": 0,
+  "median_kendall_tau": 1.0,
+  "seconds_per_pair": 17.068396765391032
+ }
+}
