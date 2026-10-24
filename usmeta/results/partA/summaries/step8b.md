@@ -7,8 +7,9 @@ Limitations: [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md). Frozen code wa
 
 **Headline (test, per dataset; full tables below).**
 - **Word-overlap and embedding scorers cannot be set to catch errors without flagging nearly everything harmless.** At 90% error recall, BERTScore flags the planted errors (D 0.89-0.92) but R is 0% on BrEaST, BUS-BRA, TN5000 and HC18 (it flags every harmless rewriting too); false-alarm rate 88-92%. BLEU: D 0.93-1.00 with R 0-50% (BrEaST 0%, BUS-BRA 0-33%, TN5000 0-50%); false alarms 62-92%. RaTEScore: cut-off 1.000 on three datasets (it scores many errors at exactly 1.0), D 0.89-1.00, R 0-43%, false alarms 68-100%.
+- **Over all 10 datasets** (test): BERTScore D 0.81-0.93, R 0-6%, false alarms 84-92%; BLEU D 0.89-1.00, R 0-50%, false alarms 62-92%; RaTEScore D 0.86-1.00, R 0-81%, false alarms 28-100%; `finding_f1` D 0.85-1.00, R 100%, false alarms 0%.
 - **`finding_f1` (upper bound under templated text):** D 0.85-1.00, R 100% on all three harmless kinds, false-alarm rate 0%.
-- **Gemma judge (`sentence_f1`, prompt_v2):** cut-offs come from the dev-era judge run restricted to dev and val cases (13-34 val errors per dataset: small). **On BUSI, DDTI and UDIAT the 90% cut-off is 1.000 (at least 10% of val errors get a perfect `sentence_f1`), so it flags everything (false alarm 100%, R 0%): a judge that lists an error but leaves `sentence_f1` at 1.0 cannot be thresholded.** Elsewhere: BUS-BRA D 0.84, R vs small 0.64, false alarms 0.12; BUS-UCLM D 0.97, R vs small 0.84; BrEaST D 0.82, R vs small 0.52, R vs large 0.12, false alarms 0.44; TN3K D 0.98, R vs small 1.00, vs large 0.64; TN5000 D 1.00, R vs large 0.36; HC18 D 1.00, R vs small 0.72, vs large 0.56; FetalHead D 1.00, R vs small 0.67.
+- **Gemma judge (`sentence_f1`, prompt_v2):** cut-offs come from the dev-era judge run restricted to dev and val cases (9-34 val errors per dataset: small). **On BUSI, DDTI and UDIAT the 90% cut-off is 1.000 (at least 10% of val errors get a perfect `sentence_f1`), so it flags everything (false alarm 100%, R 0%): a judge that lists an error but leaves `sentence_f1` at 1.0 cannot be thresholded.** Elsewhere: BUS-BRA D 0.84, R vs small 0.64, false alarms 0.12; BUS-UCLM D 0.97, R vs small 0.84; BrEaST D 0.82, R vs small 0.52, R vs large 0.12, false alarms 0.44; TN3K D 0.98, R vs small 1.00, vs large 0.64; TN5000 D 1.00, R vs large 0.36; HC18 D 1.00, R vs small 0.72, vs large 0.56; FetalHead D 1.00, R vs small 0.67.
 - **Report-level vs error-level sensitivity (sentence_check, cases with two planted errors):** a report is "caught" far more often than each error: e.g. BrEaST any error flagged in 100% of cases but each error in 82% and both in 62%; FetalHead, TN5000: 100% / 100% / 100%. See table.
 
 ## Repeatability (judge)
@@ -34,7 +35,7 @@ API judges: none run, so no token cost.
 - Clinician agreement: placeholder. When clinician severity labels or error counts arrive, add Kendall tau between each scorer and the clinician, and (if ~50 candidates are reviewed blind) the clinician's sensitivity and false-alarm rate next to the best scorer.
 - D/R for Layer 3 (true masks) was not computed (circular by construction).
 
-**Caveats.** Templated reports; provisional severity; template sources "to confirm"; per dataset only; the judge cut-offs rest on 13-34 val errors; group ids missing for BUSI, UDIAT, TN3K, TN5000, HC18.
+**Caveats.** Templated reports; provisional severity; template sources "to confirm"; per dataset only; the judge cut-offs rest on 9-34 val errors; group ids missing for BUSI, UDIAT, TN3K, TN5000, HC18.
 
 ---
 
