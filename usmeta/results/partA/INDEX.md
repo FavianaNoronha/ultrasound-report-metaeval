@@ -20,3 +20,4 @@ _Notes:_ step2 and step3 outputs are superseded for BUS-BRA by step5 rerun3 (sid
 | step10f | 2026-10-24 | e9f8e6d | [step10f_contamination](step10f_contamination/) | Qwen probe: 0/120 dataset names correct; labels from file names at baseline (BUSI uses the class in the file name); model card lists no training datasets (to confirm in tech report) |
 | step10c | 2026-10-24 | e9f8e6d | [step10c_freeze](step10c_freeze/) | freeze-v1: FROZEN.md with file hashes, judge prompts v1/v2, threshold rule (90% error recall on val); CHANGELOG.md |
 | step10e | 2026-10-24 | e9f8e6d | [step10e_honesty_labels](step10e_honesty_labels/) | docs/LIMITATIONS.md linked from every results.md; README + CLAUDE.md updated |
+| step10d | 2026-10-24 | 0a23fb3 | [step10d_test_results](step10d_test_results/) | TEST: Layers 0/1/3 unchanged vs dev-era (mean |shift| 0.005); judge (25 cases/dataset) moved up to 0.26 (BrEaST vs small 0.86 -> 0.60); prompt_v1 fails identical gate on UDIAT again |

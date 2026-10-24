@@ -1,0 +1,1858 @@
+{
+ "BrEaST": {
+  "sentence_f1": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.6,
+    0.46,
+    0.74
+   ],
+   "auroc_matched": [
+    0.91,
+    0.86975,
+    0.95
+   ],
+   "auroc_large": [
+    0.62,
+    0.48,
+    0.76
+   ],
+   "critical_small": 0.7727272727272727,
+   "harmless_small_mean": 0.87,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.8424675324675325,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.2214595674079115,
+   "cat_small": {
+    "false finding": 0.5,
+    "missed finding": 1.0,
+    "wrong severity/category": 0.6428571428571429,
+    "wrong measurement": 0.2777777777777778,
+    "wrong location": 1.0
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "missed finding": 1.0,
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.5,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "false finding": 0.5882352941176471,
+    "missed finding": 0.8571428571428571,
+    "wrong severity/category": 0.8214285714285714,
+    "wrong measurement": 0.05555555555555555,
+    "wrong location": 1.0
+   }
+  },
+  "sentence_precision": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.62,
+    0.49,
+    0.75
+   ],
+   "auroc_matched": [
+    0.91,
+    0.86975,
+    0.95
+   ],
+   "auroc_large": [
+    0.53,
+    0.39,
+    0.67
+   ],
+   "critical_small": 0.7727272727272727,
+   "harmless_small_mean": 0.87,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.7766666666666667,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.17066996757952166,
+   "cat_small": {
+    "false finding": 0.5,
+    "missed finding": 1.0,
+    "wrong severity/category": 0.7142857142857143,
+    "wrong measurement": 0.2777777777777778,
+    "wrong location": 1.0
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "missed finding": 1.0,
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.5,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "false finding": 0.47058823529411764,
+    "missed finding": 0.7857142857142857,
+    "wrong severity/category": 0.7142857142857143,
+    "wrong measurement": 0.05555555555555555,
+    "wrong location": 0.75
+   }
+  },
+  "sentence_recall": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.56,
+    0.44,
+    0.69
+   ],
+   "auroc_matched": [
+    0.78,
+    0.71,
+    0.85
+   ],
+   "auroc_large": [
+    0.65,
+    0.54,
+    0.75
+   ],
+   "critical_small": 0.7727272727272727,
+   "harmless_small_mean": 0.87,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.93,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.25686074750537996,
+   "cat_small": {
+    "false finding": 0.4411764705882353,
+    "missed finding": 1.0,
+    "wrong severity/category": 0.5714285714285714,
+    "wrong measurement": 0.2777777777777778,
+    "wrong location": 1.0
+   },
+   "cat_matched": {
+    "false finding": 0.7352941176470589,
+    "missed finding": 1.0,
+    "wrong severity/category": 0.8571428571428571,
+    "wrong measurement": 0.5,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "false finding": 0.5882352941176471,
+    "missed finding": 0.8571428571428571,
+    "wrong severity/category": 0.7857142857142857,
+    "wrong measurement": 0.2777777777777778,
+    "wrong location": 1.0
+   }
+  },
+  "judge_score": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.81,
+    0.6697500000000001,
+    0.94
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    0.44,
+    0.3,
+    0.6
+   ],
+   "critical_small": 0.6363636363636364,
+   "harmless_small_mean": 0.764,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.34,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": 0.04601724266495519,
+   "cat_small": {
+    "false finding": 0.7647058823529411,
+    "missed finding": 1.0,
+    "wrong severity/category": 0.6785714285714286,
+    "wrong measurement": 0.8888888888888888,
+    "wrong location": 1.0
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "missed finding": 1.0,
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "false finding": 0.4411764705882353,
+    "missed finding": 0.7857142857142857,
+    "wrong severity/category": 0.39285714285714285,
+    "wrong measurement": 0.1111111111111111,
+    "wrong location": 0.75
+   }
+  }
+ },
+ "BUS-BRA": {
+  "sentence_f1": {
+   "n_cases": 25,
+   "n_groups": 23,
+   "auroc_small": [
+    0.69,
+    0.5399259259259259,
+    0.8269230769230769
+   ],
+   "auroc_matched": [
+    0.92,
+    0.8748842592592593,
+    0.9615384615384616
+   ],
+   "auroc_large": [
+    0.92,
+    0.8748842592592593,
+    0.9615384615384616
+   ],
+   "critical_small": 0.7307692307692307,
+   "harmless_small_mean": 0.8859999999999999,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.44388646457499464,
+   "cat_small": {
+    "wrong measurement": 0.5625,
+    "wrong severity/category": 0.725,
+    "missed finding": 1.0,
+    "false finding": 0.6,
+    "wrong location": 0.75
+   },
+   "cat_matched": {
+    "wrong measurement": 0.75,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.75,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   }
+  },
+  "sentence_precision": {
+   "n_cases": 25,
+   "n_groups": 23,
+   "auroc_small": [
+    0.7,
+    0.5434782608695652,
+    0.8334134615384615
+   ],
+   "auroc_matched": [
+    0.92,
+    0.8748842592592593,
+    0.9615384615384616
+   ],
+   "auroc_large": [
+    0.92,
+    0.8748842592592593,
+    0.9615384615384616
+   ],
+   "critical_small": 0.7307692307692307,
+   "harmless_small_mean": 0.87,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.24571321969791787,
+   "cat_small": {
+    "wrong measurement": 0.5625,
+    "wrong severity/category": 0.75,
+    "missed finding": 1.0,
+    "false finding": 0.6,
+    "wrong location": 0.75
+   },
+   "cat_matched": {
+    "wrong measurement": 0.75,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.75,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   }
+  },
+  "sentence_recall": {
+   "n_cases": 25,
+   "n_groups": 23,
+   "auroc_small": [
+    0.59,
+    0.48,
+    0.6770833333333334
+   ],
+   "auroc_matched": [
+    0.75,
+    0.6847303511705686,
+    0.81
+   ],
+   "auroc_large": [
+    0.75,
+    0.6847303511705686,
+    0.81
+   ],
+   "critical_small": 0.8076923076923077,
+   "harmless_small_mean": 0.91,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.5714395942499463,
+   "cat_small": {
+    "wrong measurement": 0.375,
+    "wrong severity/category": 0.7,
+    "missed finding": 1.0,
+    "false finding": 0.3,
+    "wrong location": 0.75
+   },
+   "cat_matched": {
+    "wrong measurement": 0.53125,
+    "wrong severity/category": 0.875,
+    "missed finding": 1.0,
+    "false finding": 0.5,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.53125,
+    "wrong severity/category": 0.875,
+    "missed finding": 1.0,
+    "false finding": 0.5,
+    "wrong location": 1.0
+   }
+  },
+  "judge_score": {
+   "n_cases": 25,
+   "n_groups": 23,
+   "auroc_small": [
+    0.76,
+    0.5833333333333334,
+    0.9166666666666666
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 0.7692307692307693,
+   "harmless_small_mean": 0.7,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.48934219347295727,
+   "cat_small": {
+    "wrong measurement": 0.6875,
+    "wrong severity/category": 0.75,
+    "missed finding": 1.0,
+    "false finding": 0.6,
+    "wrong location": 1.0
+   },
+   "cat_matched": {
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   }
+  }
+ },
+ "BUSI": {
+  "sentence_f1": {
+   "n_cases": 25,
+   "n_groups": 24,
+   "auroc_small": [
+    0.71,
+    0.5648148148148148,
+    0.84375
+   ],
+   "auroc_matched": [
+    0.92,
+    0.87,
+    0.96
+   ],
+   "auroc_large": [
+    0.89,
+    0.7916666666666666,
+    0.9519675925925924
+   ],
+   "critical_small": 0.9615384615384616,
+   "harmless_small_mean": 0.8466666666666666,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.96,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.40537590408274876,
+   "cat_small": {
+    "wrong measurement": 0.34615384615384615,
+    "wrong severity/category": 0.5555555555555556,
+    "false finding": 0.9230769230769231,
+    "wrong location": 0.8,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "wrong measurement": 0.6923076923076923,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.6538461538461539,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.8,
+    "missed finding": 1.0
+   }
+  },
+  "sentence_precision": {
+   "n_cases": 25,
+   "n_groups": 24,
+   "auroc_small": [
+    0.74,
+    0.6248842592592593,
+    0.8501041666666665
+   ],
+   "auroc_matched": [
+    0.92,
+    0.87,
+    0.96
+   ],
+   "auroc_large": [
+    0.89,
+    0.7916666666666666,
+    0.9519675925925924
+   ],
+   "critical_small": 0.9230769230769231,
+   "harmless_small_mean": 0.8266666666666665,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.96,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.3681214843757395,
+   "cat_small": {
+    "wrong measurement": 0.46153846153846156,
+    "wrong severity/category": 0.6666666666666666,
+    "false finding": 0.9230769230769231,
+    "wrong location": 0.6,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "wrong measurement": 0.6923076923076923,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.6538461538461539,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.8,
+    "missed finding": 1.0
+   }
+  },
+  "sentence_recall": {
+   "n_cases": 25,
+   "n_groups": 24,
+   "auroc_small": [
+    0.61,
+    0.49976851851851856,
+    0.71875
+   ],
+   "auroc_matched": [
+    0.73,
+    0.6573784722222222,
+    0.8
+   ],
+   "auroc_large": [
+    0.71,
+    0.63,
+    0.78125
+   ],
+   "critical_small": 0.9615384615384616,
+   "harmless_small_mean": 0.8866666666666666,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.9866666666666666,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.608742833781482,
+   "cat_small": {
+    "wrong measurement": 0.2692307692307692,
+    "wrong severity/category": 0.4444444444444444,
+    "false finding": 0.6923076923076923,
+    "wrong location": 0.8,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "wrong measurement": 0.5,
+    "wrong severity/category": 0.6666666666666666,
+    "false finding": 0.6923076923076923,
+    "wrong location": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.46153846153846156,
+    "wrong severity/category": 0.6666666666666666,
+    "false finding": 0.6923076923076923,
+    "wrong location": 0.9,
+    "missed finding": 1.0
+   }
+  },
+  "judge_score": {
+   "n_cases": 25,
+   "n_groups": 24,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    0.96,
+    0.875,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.976,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.96,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.4888323895937049,
+   "cat_small": {
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.9230769230769231,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.8,
+    "missed finding": 1.0
+   }
+  }
+ },
+ "UDIAT": {
+  "sentence_f1": {
+   "n_cases": 25,
+   "n_groups": 24,
+   "auroc_small": [
+    0.58,
+    0.4423076923076923,
+    0.7291666666666666
+   ],
+   "auroc_matched": [
+    0.94,
+    0.8942307692307693,
+    0.9791666666666666
+   ],
+   "auroc_large": [
+    0.85,
+    0.78,
+    0.92
+   ],
+   "critical_small": 0.8181818181818182,
+   "harmless_small_mean": 0.7866666666666666,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.9243636363636364,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.41473222494087936,
+   "cat_small": {
+    "wrong severity/category": 0.71875,
+    "false finding": 0.16666666666666666,
+    "wrong measurement": 0.39285714285714285,
+    "missed finding": 1.0,
+    "wrong location": 0.6666666666666666
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong measurement": 0.7857142857142857,
+    "missed finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.9375,
+    "false finding": 1.0,
+    "wrong measurement": 0.5357142857142857,
+    "missed finding": 1.0,
+    "wrong location": 1.0
+   }
+  },
+  "sentence_precision": {
+   "n_cases": 25,
+   "n_groups": 24,
+   "auroc_small": [
+    0.56,
+    0.4463255494505495,
+    0.6875
+   ],
+   "auroc_matched": [
+    0.9,
+    0.85,
+    0.95
+   ],
+   "auroc_large": [
+    0.88,
+    0.8199326923076923,
+    0.94
+   ],
+   "critical_small": 0.75,
+   "harmless_small_mean": 0.7866666666666666,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.968,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.26385308133799806,
+   "cat_small": {
+    "wrong severity/category": 0.6875,
+    "false finding": 0.16666666666666666,
+    "wrong measurement": 0.35714285714285715,
+    "missed finding": 1.0,
+    "wrong location": 0.6666666666666666
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong measurement": 0.6428571428571429,
+    "missed finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong measurement": 0.5714285714285714,
+    "missed finding": 1.0,
+    "wrong location": 1.0
+   }
+  },
+  "sentence_recall": {
+   "n_cases": 25,
+   "n_groups": 24,
+   "auroc_small": [
+    0.57,
+    0.4519230769230769,
+    0.6979687499999999
+   ],
+   "auroc_matched": [
+    0.84,
+    0.7788461538461539,
+    0.9
+   ],
+   "auroc_large": [
+    0.72,
+    0.63,
+    0.8022235576923076
+   ],
+   "critical_small": 0.8181818181818182,
+   "harmless_small_mean": 0.7866666666666666,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.8933333333333333,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.4931777060699352,
+   "cat_small": {
+    "wrong severity/category": 0.625,
+    "false finding": 0.3333333333333333,
+    "wrong measurement": 0.39285714285714285,
+    "missed finding": 1.0,
+    "wrong location": 0.6666666666666666
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.875,
+    "false finding": 0.75,
+    "wrong measurement": 0.6785714285714286,
+    "missed finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.75,
+    "false finding": 0.6666666666666666,
+    "wrong measurement": 0.5,
+    "missed finding": 1.0,
+    "wrong location": 0.8888888888888888
+   }
+  },
+  "judge_score": {
+   "n_cases": 25,
+   "n_groups": 24,
+   "auroc_small": [
+    0.64,
+    0.48075,
+    0.8000520833333333
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    0.9,
+    0.8075520833333334,
+    0.9711538461538461
+   ],
+   "critical_small": 0.6363636363636364,
+   "harmless_small_mean": 0.52,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.8079999999999999,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.32977646275083194,
+   "cat_small": {
+    "wrong severity/category": 0.5,
+    "false finding": 0.8333333333333334,
+    "wrong measurement": 0.5,
+    "missed finding": 1.0,
+    "wrong location": 0.7777777777777778
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "wrong measurement": 1.0,
+    "missed finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.84375,
+    "false finding": 1.0,
+    "wrong measurement": 0.8214285714285714,
+    "missed finding": 1.0,
+    "wrong location": 1.0
+   }
+  }
+ },
+ "BUS-UCLM": {
+  "sentence_f1": {
+   "n_cases": 25,
+   "n_groups": 9,
+   "auroc_small": [
+    0.95,
+    0.8879310344827587,
+    1.0
+   ],
+   "auroc_matched": [
+    0.99,
+    0.975,
+    1.0
+   ],
+   "auroc_large": [
+    0.99,
+    0.975,
+    1.0
+   ],
+   "critical_small": 0.9886363636363636,
+   "harmless_small_mean": 0.9333333333333332,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.8218266707653316,
+   "cat_small": {
+    "false finding": 1.0,
+    "wrong location": 0.75,
+    "wrong severity/category": 0.8333333333333334,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.8333333333333334
+   },
+   "cat_large": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.8333333333333334
+   }
+  },
+  "sentence_precision": {
+   "n_cases": 25,
+   "n_groups": 9,
+   "auroc_small": [
+    0.93,
+    0.853448275862069,
+    0.9904017857142857
+   ],
+   "auroc_matched": [
+    0.99,
+    0.975,
+    1.0
+   ],
+   "auroc_large": [
+    0.99,
+    0.975,
+    1.0
+   ],
+   "critical_small": 0.9545454545454546,
+   "harmless_small_mean": 0.92,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.8015879753224446,
+   "cat_small": {
+    "false finding": 1.0,
+    "wrong location": 0.75,
+    "wrong severity/category": 0.5,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.8333333333333334
+   },
+   "cat_large": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.8333333333333334
+   }
+  },
+  "sentence_recall": {
+   "n_cases": 25,
+   "n_groups": 9,
+   "auroc_small": [
+    0.92,
+    0.8695652173913043,
+    0.9791875
+   ],
+   "auroc_matched": [
+    0.95,
+    0.909061004784689,
+    0.9853145424836601
+   ],
+   "auroc_large": [
+    0.95,
+    0.909061004784689,
+    0.9853145424836601
+   ],
+   "critical_small": 0.9886363636363636,
+   "harmless_small_mean": 0.96,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.8240120609544539,
+   "cat_small": {
+    "false finding": 0.9523809523809523,
+    "wrong location": 0.75,
+    "wrong severity/category": 0.8333333333333334,
+    "missed finding": 1.0,
+    "wrong measurement": 0.3333333333333333
+   },
+   "cat_matched": {
+    "false finding": 0.9523809523809523,
+    "wrong location": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5
+   },
+   "cat_large": {
+    "false finding": 0.9523809523809523,
+    "wrong location": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5
+   }
+  },
+  "judge_score": {
+   "n_cases": 25,
+   "n_groups": 9,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.992,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": 0.09320313251863992,
+   "cat_small": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0
+   },
+   "cat_large": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0
+   }
+  }
+ },
+ "TN3K": {
+  "sentence_f1": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.99,
+    0.97,
+    1.0
+   ],
+   "auroc_matched": [
+    0.99,
+    0.97,
+    1.0
+   ],
+   "auroc_large": [
+    0.93,
+    0.88975,
+    0.97
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.88,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.3410254734294232,
+   "cat_small": {
+    "wrong location": 1.0,
+    "wrong measurement": 0.9772727272727273,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "wrong location": 1.0,
+    "wrong measurement": 0.9772727272727273,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "wrong location": 1.0,
+    "wrong measurement": 0.8409090909090909,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   }
+  },
+  "sentence_precision": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.99,
+    0.97,
+    1.0
+   ],
+   "auroc_matched": [
+    0.99,
+    0.97,
+    1.0
+   ],
+   "auroc_large": [
+    0.99,
+    0.97,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.88,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.6210590034081189,
+   "cat_small": {
+    "wrong location": 1.0,
+    "wrong measurement": 0.9772727272727273,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "wrong location": 1.0,
+    "wrong measurement": 0.9772727272727273,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "wrong location": 1.0,
+    "wrong measurement": 0.9772727272727273,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   }
+  },
+  "sentence_recall": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.8,
+    0.76,
+    0.84
+   ],
+   "auroc_matched": [
+    0.8,
+    0.76,
+    0.84
+   ],
+   "auroc_large": [
+    0.74,
+    0.68,
+    0.8
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.88,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.3523809523809524,
+   "cat_small": {
+    "wrong location": 1.0,
+    "wrong measurement": 0.5454545454545454,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "wrong location": 1.0,
+    "wrong measurement": 0.5454545454545454,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "wrong location": 1.0,
+    "wrong measurement": 0.4090909090909091,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   }
+  },
+  "judge_score": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.9279999999999999,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.6243838741560628,
+   "cat_small": {
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "false finding": 1.0,
+    "missed finding": 1.0
+   }
+  }
+ },
+ "TN5000": {
+  "sentence_f1": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    0.86,
+    0.82,
+    0.91
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.7866666666666667,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.46607341490545057,
+   "cat_small": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 0.631578947368421,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   }
+  },
+  "sentence_precision": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.99,
+    0.97,
+    1.0
+   ],
+   "auroc_matched": [
+    0.99,
+    0.97,
+    1.0
+   ],
+   "auroc_large": [
+    0.99,
+    0.97,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.7866666666666667,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.6909885451322204,
+   "cat_small": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 0.9736842105263158,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 0.9736842105263158,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 0.9736842105263158,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   }
+  },
+  "sentence_recall": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.82,
+    0.78,
+    0.86
+   ],
+   "auroc_matched": [
+    0.82,
+    0.78,
+    0.86
+   ],
+   "auroc_large": [
+    0.68,
+    0.6,
+    0.76
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.7866666666666667,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.48802296571407094,
+   "cat_small": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 0.5263157894736842,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 0.5263157894736842,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 0.15789473684210525,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   }
+  },
+  "judge_score": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.872,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.6531409814892366,
+   "cat_small": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   },
+   "cat_large": {
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0
+   }
+  }
+ },
+ "DDTI": {
+  "sentence_f1": {
+   "n_cases": 25,
+   "n_groups": 23,
+   "auroc_small": [
+    0.71,
+    0.5760869565217391,
+    0.8173076923076923
+   ],
+   "auroc_matched": [
+    0.88,
+    0.8260869565217391,
+    0.9270833333333334
+   ],
+   "auroc_large": [
+    0.61,
+    0.4671648550724638,
+    0.75
+   ],
+   "critical_small": 0.8888888888888888,
+   "harmless_small_mean": 0.88,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.6948571428571428,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.369176970978303,
+   "cat_small": {
+    "wrong severity/category": 0.7777777777777778,
+    "wrong measurement": 0.5,
+    "missed finding": 0.9285714285714286,
+    "false finding": 0.875,
+    "wrong location": 0.8333333333333334
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.6666666666666666,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.6388888888888888,
+    "wrong measurement": 0.4166666666666667,
+    "missed finding": 0.8571428571428571,
+    "false finding": 0.875,
+    "wrong location": 0.6666666666666666
+   }
+  },
+  "sentence_precision": {
+   "n_cases": 25,
+   "n_groups": 23,
+   "auroc_small": [
+    0.72,
+    0.5899239130434782,
+    0.8214285714285714
+   ],
+   "auroc_matched": [
+    0.88,
+    0.8260869565217391,
+    0.9270833333333334
+   ],
+   "auroc_large": [
+    0.58,
+    0.40217391304347827,
+    0.7407407407407407
+   ],
+   "critical_small": 0.8888888888888888,
+   "harmless_small_mean": 0.88,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.6633333333333333,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.29208047221530975,
+   "cat_small": {
+    "wrong severity/category": 0.8055555555555556,
+    "wrong measurement": 0.5,
+    "missed finding": 0.9285714285714286,
+    "false finding": 0.875,
+    "wrong location": 0.8333333333333334
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.6666666666666666,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.5555555555555556,
+    "wrong measurement": 0.4722222222222222,
+    "missed finding": 0.7857142857142857,
+    "false finding": 0.75,
+    "wrong location": 0.6666666666666666
+   }
+  },
+  "sentence_recall": {
+   "n_cases": 25,
+   "n_groups": 23,
+   "auroc_small": [
+    0.63,
+    0.5176824534161492,
+    0.7211805555555555
+   ],
+   "auroc_matched": [
+    0.8,
+    0.75,
+    0.8501041666666665
+   ],
+   "auroc_large": [
+    0.77,
+    0.7115384615384616,
+    0.8333333333333334
+   ],
+   "critical_small": 0.8888888888888888,
+   "harmless_small_mean": 0.88,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.96,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.4212688530533754,
+   "cat_small": {
+    "wrong severity/category": 0.7222222222222222,
+    "wrong measurement": 0.3333333333333333,
+    "missed finding": 0.9285714285714286,
+    "false finding": 0.875,
+    "wrong location": 0.8333333333333334
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.9444444444444444,
+    "wrong measurement": 0.5,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.9444444444444444,
+    "wrong measurement": 0.4166666666666667,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   }
+  },
+  "judge_score": {
+   "n_cases": 25,
+   "n_groups": 23,
+   "auroc_small": [
+    0.88,
+    0.7391304347826086,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    0.78,
+    0.6398854166666667,
+    0.9166666666666666
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.892,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.748,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.24139838771553668,
+   "cat_small": {
+    "wrong severity/category": 0.8333333333333334,
+    "wrong measurement": 0.8333333333333334,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.6944444444444444,
+    "wrong measurement": 0.6944444444444444,
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   }
+  }
+ },
+ "HC18": {
+  "sentence_f1": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.86,
+    0.78,
+    0.94
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    0.56,
+    0.36,
+    0.76
+   ],
+   "critical_small": 0.9166666666666666,
+   "harmless_small_mean": 0.9066666666666666,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.56,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.2883717449843554,
+   "cat_small": {
+    "wrong measurement": 0.86
+   },
+   "cat_matched": {
+    "wrong measurement": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.56
+   }
+  },
+  "sentence_precision": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.86,
+    0.78,
+    0.94
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    0.56,
+    0.36,
+    0.76
+   ],
+   "critical_small": 0.9166666666666666,
+   "harmless_small_mean": 0.86,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.56,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": null,
+   "cat_small": {
+    "wrong measurement": 0.86
+   },
+   "cat_matched": {
+    "wrong measurement": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.56
+   }
+  },
+  "sentence_recall": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.52,
+    0.5,
+    0.56
+   ],
+   "auroc_matched": [
+    0.52,
+    0.5,
+    0.56
+   ],
+   "auroc_large": [
+    0.28,
+    0.18,
+    0.38
+   ],
+   "critical_small": 0.5833333333333334,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.56,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.2883717449843554,
+   "cat_small": {
+    "wrong measurement": 0.52
+   },
+   "cat_matched": {
+    "wrong measurement": 0.52
+   },
+   "cat_large": {
+    "wrong measurement": 0.28
+   }
+  },
+  "judge_score": {
+   "n_cases": 25,
+   "n_groups": 25,
+   "auroc_small": [
+    0.92,
+    0.84,
+    0.98
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    0.56,
+    0.36,
+    0.76
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.9159999999999999,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 0.56,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.7619954810527769,
+   "cat_small": {
+    "wrong measurement": 0.92
+   },
+   "cat_matched": {
+    "wrong measurement": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.56
+   }
+  }
+ },
+ "FetalHead": {
+  "sentence_f1": {
+   "n_cases": 25,
+   "n_groups": 19,
+   "auroc_small": [
+    0.9166666666666666,
+    0.8695522774327122,
+    0.9596854838709677
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 0.6666666666666666,
+   "harmless_small_mean": 0.8888888888888888,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.1111617075730961,
+   "cat_small": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.8333333333333334
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0
+   }
+  },
+  "sentence_precision": {
+   "n_cases": 25,
+   "n_groups": 19,
+   "auroc_small": [
+    0.8333333333333334,
+    0.7391045548654244,
+    0.9193709677419354
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 0.6666666666666666,
+   "harmless_small_mean": 0.8333333333333334,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.015880243939013727,
+   "cat_small": {
+    "wrong severity/category": 0.8333333333333334,
+    "wrong measurement": 0.8333333333333334
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0
+   }
+  },
+  "sentence_recall": {
+   "n_cases": 25,
+   "n_groups": 19,
+   "auroc_small": [
+    0.75,
+    0.75,
+    0.75
+   ],
+   "auroc_matched": [
+    0.76,
+    0.75,
+    0.7857142857142857
+   ],
+   "auroc_large": [
+    0.76,
+    0.75,
+    0.7857142857142857
+   ],
+   "critical_small": 0.5,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.1111617075730961,
+   "cat_small": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.5
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.5
+   },
+   "cat_large": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.5
+   }
+  },
+  "judge_score": {
+   "n_cases": 25,
+   "n_groups": 19,
+   "auroc_small": [
+    0.8125,
+    0.7045454545454546,
+    0.9090909090909091
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.9,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": null,
+   "severity_rho": -0.08731590679834479,
+   "cat_small": {
+    "wrong severity/category": 0.6666666666666666,
+    "wrong measurement": 0.9583333333333334
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0
+   }
+  }
+ }
+}

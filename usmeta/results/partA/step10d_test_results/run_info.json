@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-24T13:22:04",
+  "git_commit": "0a23fb3",
+  "dataset_record_counts": {
+    "test_bench_rows": 25887,
+    "test_cases": 1399,
+    "judge_v2_pairs": 1116,
+    "judge_v1_pairs": 564
+  },
+  "seeds": {
+    "sampling": 0,
+    "bootstrap": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "judge": "mlx-community/gemma-2-9b-it-4bit greedy; prompt_v2 main, prompt_v1 subset"
+  },
+  "command": "python3 -m usmeta.step10d build; usmeta.layer0b.score_incremental; usmeta.layer1 score; usmeta.layer3.run; python3 -m usmeta.judge2_test v2 25 / v1 12; analysis via usmeta.step10d_analysis"
+}

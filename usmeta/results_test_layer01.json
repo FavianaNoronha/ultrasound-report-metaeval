@@ -1,0 +1,2776 @@
+{
+ "BrEaST": {
+  "bleu": {
+   "n_cases": 103,
+   "n_groups": 103,
+   "auroc_small": [
+    0.25253894687075723,
+    0.23630485048139246,
+    0.27496204397243085
+   ],
+   "auroc_matched": [
+    0.6050766124224147,
+    0.596670166106024,
+    0.616897535199666
+   ],
+   "auroc_large": [
+    0.08299605876704676,
+    0.06444677740401611,
+    0.11029414968003631
+   ],
+   "critical_small": 0.3770226537216829,
+   "harmless_small_mean": 0.8511178454308259,
+   "harmless_matched_mean": 0.9495175070872888,
+   "harmless_large_mean": 0.3797049456077105,
+   "identical_mean": 1.0000000000000002,
+   "identical_min": 1.0000000000000004,
+   "lazy_mean": 0.000240160572248402,
+   "severity_rho": -0.11601831836992077,
+   "cat_small": {
+    "missed finding": 0.84983498349835,
+    "false finding": 0.5016181229773462,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.16962124783906968
+   },
+   "cat_matched": {
+    "missed finding": 0.9356435643564357,
+    "false finding": 0.8713592233009707,
+    "wrong location": 0.5,
+    "wrong measurement": 0.5,
+    "wrong severity/category": 0.5
+   },
+   "cat_large": {
+    "missed finding": 0.806930693069307,
+    "false finding": 0.019417475728155338,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "rougeL": {
+   "n_cases": 103,
+   "n_groups": 103,
+   "auroc_small": [
+    0.10387562418544712,
+    0.08326136340458512,
+    0.13230425867758105
+   ],
+   "auroc_matched": [
+    0.5813363292375286,
+    0.5698113799861908,
+    0.5955265504389666
+   ],
+   "auroc_large": [
+    0.08299605876704676,
+    0.06444677740401611,
+    0.11029414968003631
+   ],
+   "critical_small": 0.3770226537216829,
+   "harmless_small_mean": 0.8004267635141168,
+   "harmless_matched_mean": 0.9757490908702084,
+   "harmless_large_mean": 0.5890982659116782,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0439601335492634,
+   "severity_rho": -0.2144661562586073,
+   "cat_small": {
+    "missed finding": 0.8118811881188119,
+    "false finding": 0.08414239482200649,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.018383624076693385
+   },
+   "cat_matched": {
+    "missed finding": 0.9191419141914191,
+    "false finding": 0.8499190938511327,
+    "wrong location": 0.4166666666666668,
+    "wrong measurement": 0.4166666666666666,
+    "wrong severity/category": 0.5019484388915082
+   },
+   "cat_large": {
+    "missed finding": 0.806930693069307,
+    "false finding": 0.019417475728155338,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "chrf": {
+   "n_cases": 103,
+   "n_groups": 103,
+   "auroc_small": [
+    0.3791021561724019,
+    0.364810182272436,
+    0.39892225806283854
+   ],
+   "auroc_matched": [
+    0.24504974714140904,
+    0.2232504826519854,
+    0.2714949976546921
+   ],
+   "auroc_large": [
+    0.08299605876704676,
+    0.06444677740401611,
+    0.11029414968003631
+   ],
+   "critical_small": 0.6167745415318232,
+   "harmless_small_mean": 0.9211168542918176,
+   "harmless_matched_mean": 0.9633625437979,
+   "harmless_large_mean": 0.7253410236466327,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.019497068660655228,
+   "severity_rho": -0.3071716872795152,
+   "cat_small": {
+    "missed finding": 0.8514851485148515,
+    "false finding": 0.5102481121898597,
+    "wrong location": 0.6666666666666664,
+    "wrong measurement": 0.008250825082508252,
+    "wrong severity/category": 0.37144363245848394
+   },
+   "cat_matched": {
+    "missed finding": 0.8622112211221121,
+    "false finding": 0.12621359223300968,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.27063557546230815
+   },
+   "cat_large": {
+    "missed finding": 0.806930693069307,
+    "false finding": 0.019417475728155338,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "bertscore[roberta-large]": {
+   "n_cases": 103,
+   "n_groups": 103,
+   "auroc_small": [
+    0.20726238591030136,
+    0.18958094822029714,
+    0.23223673708343182
+   ],
+   "auroc_matched": [
+    0.5301296113831807,
+    0.5177921393019908,
+    0.5444986672683345
+   ],
+   "auroc_large": [
+    0.08299605876704676,
+    0.06444677740401611,
+    0.11029414968003631
+   ],
+   "critical_small": 0.470873786407767,
+   "harmless_small_mean": 0.9792865506989171,
+   "harmless_matched_mean": 0.9954958107126387,
+   "harmless_large_mean": 0.9505195678437798,
+   "identical_mean": 0.9999999681722771,
+   "identical_min": 0.9999998807907104,
+   "lazy_mean": 0.835725693448076,
+   "severity_rho": -0.34294118467367846,
+   "cat_small": {
+    "missed finding": 0.83003300330033,
+    "false finding": 0.26806903991370007,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.15991015768243486
+   },
+   "cat_matched": {
+    "missed finding": 0.9273927392739273,
+    "false finding": 0.813915857605178,
+    "wrong location": 0.21226415094339626,
+    "wrong measurement": 0.07645764576457646,
+    "wrong severity/category": 0.551447823353764
+   },
+   "cat_large": {
+    "missed finding": 0.806930693069307,
+    "false finding": 0.019417475728155338,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "ratescore": {
+   "n_cases": 103,
+   "n_groups": 103,
+   "auroc_small": [
+    0.4472284036425956,
+    0.4325954166155301,
+    0.46576359568908476
+   ],
+   "auroc_matched": [
+    0.6400777489030629,
+    0.6259015204289333,
+    0.6554835528129809
+   ],
+   "auroc_large": [
+    0.1279519761601429,
+    0.10536363106046498,
+    0.1567707740614294
+   ],
+   "critical_small": 0.6620819848975189,
+   "harmless_small_mean": 0.922543311536279,
+   "harmless_matched_mean": 0.9689883885126322,
+   "harmless_large_mean": 0.8226317667447798,
+   "identical_mean": 0.9999999884808876,
+   "identical_min": 0.9999998807907103,
+   "lazy_mean": 0.5,
+   "severity_rho": -0.3581914760253948,
+   "cat_small": {
+    "missed finding": 0.871837183718372,
+    "false finding": 0.4379719525350594,
+    "wrong location": 0.160377358490566,
+    "wrong measurement": 0.3388338833883389,
+    "wrong severity/category": 0.4282302635025407
+   },
+   "cat_matched": {
+    "missed finding": 0.896039603960396,
+    "false finding": 0.665992448759439,
+    "wrong location": 0.16981132075471692,
+    "wrong measurement": 0.7695269526952695,
+    "wrong severity/category": 0.5681334800146681
+   },
+   "cat_large": {
+    "missed finding": 0.8242574257425742,
+    "false finding": 0.06472491909385113,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0049504950495049506,
+    "wrong severity/category": 0.06882366808109382
+   }
+  },
+  "finding_f1": {
+   "n_cases": 103,
+   "n_groups": 103,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.009708737864077669,
+   "severity_rho": -0.3030366614282811,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   }
+  }
+ },
+ "BUS-BRA": {
+  "bleu": {
+   "n_cases": 150,
+   "n_groups": 85,
+   "auroc_small": [
+    0.20721872571872574,
+    0.1976702792241993,
+    0.2154445645601895
+   ],
+   "auroc_matched": [
+    0.7537566045066046,
+    0.7432149187985282,
+    0.7628719966353648
+   ],
+   "auroc_large": [
+    0.09348057498057499,
+    0.09093788446150196,
+    0.09609048032541409
+   ],
+   "critical_small": 0.291,
+   "harmless_small_mean": 0.8219567652378366,
+   "harmless_matched_mean": 0.9454624301660463,
+   "harmless_large_mean": 0.5414832528414195,
+   "identical_mean": 1.0000000000000002,
+   "identical_min": 1.0000000000000004,
+   "lazy_mean": 4.3414514070273194e-07,
+   "severity_rho": -0.049894423973551504,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.5,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.17655555555555555
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.6666666666666665,
+    "wrong measurement": 0.6666666666666665,
+    "wrong severity/category": 0.7395555555555554
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "rougeL": {
+   "n_cases": 150,
+   "n_groups": 85,
+   "auroc_small": [
+    0.09348057498057499,
+    0.09093788446150196,
+    0.09609048032541409
+   ],
+   "auroc_matched": [
+    0.6644306526806525,
+    0.6556884000818629,
+    0.6720183492643719
+   ],
+   "auroc_large": [
+    0.09348057498057499,
+    0.09093788446150196,
+    0.09609048032541409
+   ],
+   "critical_small": 0.291,
+   "harmless_small_mean": 0.7832846898521307,
+   "harmless_matched_mean": 0.9693054094071646,
+   "harmless_large_mean": 0.694180981045302,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": -0.018335378177125904,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.5,
+    "wrong measurement": 0.5,
+    "wrong severity/category": 0.6873333333333334
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "chrf": {
+   "n_cases": 150,
+   "n_groups": 85,
+   "auroc_small": [
+    0.30086389536389535,
+    0.2924357056022906,
+    0.3091008771929824
+   ],
+   "auroc_matched": [
+    0.3643708020374687,
+    0.3517674468633005,
+    0.37573437580937585
+   ],
+   "auroc_large": [
+    0.09348057498057499,
+    0.09093788446150196,
+    0.09609048032541409
+   ],
+   "critical_small": 0.49772222222222223,
+   "harmless_small_mean": 0.8802138230838156,
+   "harmless_matched_mean": 0.9518662984025807,
+   "harmless_large_mean": 0.7428074122621234,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.02302401115553287,
+   "severity_rho": -0.26588258076644083,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.5,
+    "wrong location": 0.18095238095238095,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.359
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 0.33333333333333326,
+    "wrong location": 0.33333333333333326,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.5156296296296295
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "bertscore[roberta-large]": {
+   "n_cases": 150,
+   "n_groups": 85,
+   "auroc_small": [
+    0.09348057498057499,
+    0.09093788446150196,
+    0.09609048032541409
+   ],
+   "auroc_matched": [
+    0.4230816282482949,
+    0.41215016047931663,
+    0.43196666394034805
+   ],
+   "auroc_large": [
+    0.09348057498057499,
+    0.09093788446150196,
+    0.09609048032541409
+   ],
+   "critical_small": 0.291,
+   "harmless_small_mean": 0.9704050795237223,
+   "harmless_matched_mean": 0.9933868984381358,
+   "harmless_large_mean": 0.9539651612440745,
+   "identical_mean": 0.9999999618530273,
+   "identical_min": 0.9999998211860657,
+   "lazy_mean": 0.8422016016642253,
+   "severity_rho": -0.2472150027366067,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.5985925925925926
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "ratescore": {
+   "n_cases": 150,
+   "n_groups": 85,
+   "auroc_small": [
+    0.5239188034188035,
+    0.5138293004285651,
+    0.5343903808204304
+   ],
+   "auroc_matched": [
+    0.660824613657947,
+    0.6530395135710385,
+    0.6693244342463092
+   ],
+   "auroc_large": [
+    0.19554195804195804,
+    0.17792274754573925,
+    0.2155778094283339
+   ],
+   "critical_small": 0.5978333333333332,
+   "harmless_small_mean": 0.9189944733722952,
+   "harmless_matched_mean": 0.9568171349205642,
+   "harmless_large_mean": 0.8700137109274241,
+   "identical_mean": 0.9999999795678459,
+   "identical_min": 0.9999999160041819,
+   "lazy_mean": 0.5,
+   "severity_rho": -0.15126663629058076,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.485,
+    "wrong location": 0.42202380952380947,
+    "wrong measurement": 0.5,
+    "wrong severity/category": 0.4831111111111111
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 0.6599999999999999,
+    "wrong location": 0.5751984126984127,
+    "wrong measurement": 0.6711111111111111,
+    "wrong severity/category": 0.6191111111111111
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.06666666666666667,
+    "wrong location": 0.0,
+    "wrong measurement": 0.06777777777777777,
+    "wrong severity/category": 0.18188888888888888
+   }
+  },
+  "finding_f1": {
+   "n_cases": 150,
+   "n_groups": 85,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": -0.3027413561444563,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   }
+  }
+ },
+ "BUSI": {
+  "bleu": {
+   "n_cases": 150,
+   "n_groups": 133,
+   "auroc_small": [
+    0.63635582010582,
+    0.6102746489084921,
+    0.665949665821241
+   ],
+   "auroc_matched": [
+    0.81817791005291,
+    0.8051373244542461,
+    0.8329748329106206
+   ],
+   "auroc_large": [
+    0.27533068783068787,
+    0.22228988467827757,
+    0.3328792615473383
+   ],
+   "critical_small": 0.7866666666666666,
+   "harmless_small_mean": 0.8030627275539239,
+   "harmless_matched_mean": 0.9022385947354813,
+   "harmless_large_mean": 0.47995529378473417,
+   "identical_mean": 1.0000000000000002,
+   "identical_min": 1.0000000000000004,
+   "lazy_mean": 0.005622932234772093,
+   "severity_rho": -0.08973807591884389,
+   "cat_small": {
+    "wrong severity/category": 0.494,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5,
+    "false finding": 0.5850340136054422,
+    "wrong location": 0.5
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.625,
+    "missed finding": 1.0,
+    "wrong measurement": 0.75,
+    "false finding": 1.0,
+    "wrong location": 0.75
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.17006802721088435,
+    "wrong location": 0.0
+   }
+  },
+  "rougeL": {
+   "n_cases": 150,
+   "n_groups": 133,
+   "auroc_small": [
+    0.3018419312169312,
+    0.2510180357836608,
+    0.3576262871333211
+   ],
+   "auroc_matched": [
+    0.7450198412698413,
+    0.7267079332003423,
+    0.7659421155193844
+   ],
+   "auroc_large": [
+    0.27533068783068787,
+    0.22228988467827757,
+    0.3328792615473383
+   ],
+   "critical_small": 0.5833333333333334,
+   "harmless_small_mean": 0.8549638386428018,
+   "harmless_matched_mean": 0.9492640692640693,
+   "harmless_large_mean": 0.6505437781173076,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.037037037037037035,
+   "severity_rho": -0.2298596066319105,
+   "cat_small": {
+    "wrong severity/category": 0.122,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.17006802721088435,
+    "wrong location": 0.0
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.75,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5,
+    "false finding": 1.0,
+    "wrong location": 0.5
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.17006802721088435,
+    "wrong location": 0.0
+   }
+  },
+  "chrf": {
+   "n_cases": 150,
+   "n_groups": 133,
+   "auroc_small": [
+    0.6376653439153438,
+    0.6111449423391386,
+    0.6664396307736691
+   ],
+   "auroc_matched": [
+    0.5470899470899472,
+    0.5128539841884272,
+    0.5823915569525628
+   ],
+   "auroc_large": [
+    0.27533068783068787,
+    0.22228988467827757,
+    0.3328792615473383
+   ],
+   "critical_small": 0.7916666666666666,
+   "harmless_small_mean": 0.8784225039163035,
+   "harmless_matched_mean": 0.9280356539806577,
+   "harmless_large_mean": 0.7108896288772907,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.052589360712216794,
+   "severity_rho": -0.37495943328664527,
+   "cat_small": {
+    "wrong severity/category": 0.5,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5,
+    "false finding": 0.5850340136054422,
+    "wrong location": 0.5
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.83,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0013333333333333333,
+    "false finding": 0.5850340136054422,
+    "wrong location": 0.5
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.17006802721088435,
+    "wrong location": 0.0
+   }
+  },
+  "bertscore[roberta-large]": {
+   "n_cases": 150,
+   "n_groups": 133,
+   "auroc_small": [
+    0.27533068783068787,
+    0.22228988467827757,
+    0.3328792615473383
+   ],
+   "auroc_matched": [
+    0.5165145502645503,
+    0.4809814124827133,
+    0.5558143045292828
+   ],
+   "auroc_large": [
+    0.27533068783068787,
+    0.22228988467827757,
+    0.3328792615473383
+   ],
+   "critical_small": 0.5833333333333334,
+   "harmless_small_mean": 0.96902552207311,
+   "harmless_matched_mean": 0.989035239869898,
+   "harmless_large_mean": 0.9465674189726512,
+   "identical_mean": 0.9999999483426412,
+   "identical_min": 0.9999997615814209,
+   "lazy_mean": 0.8595852470397949,
+   "severity_rho": -0.5149727637178478,
+   "cat_small": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.17006802721088435,
+    "wrong location": 0.0
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.63,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.9863945578231292,
+    "wrong location": 0.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.17006802721088435,
+    "wrong location": 0.0
+   }
+  },
+  "ratescore": {
+   "n_cases": 150,
+   "n_groups": 133,
+   "auroc_small": [
+    0.6102248677248677,
+    0.5808560993628674,
+    0.6447598997356238
+   ],
+   "auroc_matched": [
+    0.6750297619047618,
+    0.6455766776317907,
+    0.7055404798538685
+   ],
+   "auroc_large": [
+    0.5965013227513227,
+    0.5669770966645966,
+    0.6309025218344567
+   ],
+   "critical_small": 0.7866666666666666,
+   "harmless_small_mean": 0.9123764680799202,
+   "harmless_matched_mean": 0.9312320010944611,
+   "harmless_large_mean": 0.8624310798984184,
+   "identical_mean": 0.9999999872873715,
+   "identical_min": 0.9999998807907103,
+   "lazy_mean": 0.5,
+   "severity_rho": -0.8066782520383189,
+   "cat_small": {
+    "wrong severity/category": 0.488,
+    "missed finding": 1.0,
+    "wrong measurement": 0.488,
+    "false finding": 0.5850340136054422,
+    "wrong location": 0.22666666666666666
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.576,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5733333333333333,
+    "false finding": 0.7108843537414966,
+    "wrong location": 0.25
+   },
+   "cat_large": {
+    "wrong severity/category": 0.494,
+    "missed finding": 1.0,
+    "wrong measurement": 0.49333333333333335,
+    "false finding": 0.5850340136054422,
+    "wrong location": 0.0
+   }
+  },
+  "finding_f1": {
+   "n_cases": 150,
+   "n_groups": 133,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.11111111111111109,
+   "severity_rho": -0.5110036019303474,
+   "cat_small": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   }
+  }
+ },
+ "UDIAT": {
+  "bleu": {
+   "n_cases": 66,
+   "n_groups": 64,
+   "auroc_small": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "auroc_matched": [
+    0.7784617003367004,
+    0.7780126451077943,
+    0.7789352756076389
+   ],
+   "auroc_large": [
+    0.11384680134680135,
+    0.11205058043117745,
+    0.11574110243055556
+   ],
+   "critical_small": 0.75,
+   "harmless_small_mean": 0.8275635073065408,
+   "harmless_matched_mean": 0.9353732206334215,
+   "harmless_large_mean": 0.5176141439309435,
+   "identical_mean": 1.0000000000000002,
+   "identical_min": 1.0000000000000004,
+   "lazy_mean": 6.413746350925386e-06,
+   "severity_rho": -0.17400592098431947,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.5,
+    "wrong location": 0.5,
+    "wrong measurement": 0.5,
+    "wrong severity/category": 0.33333333333333326
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.75,
+    "wrong measurement": 0.75,
+    "wrong severity/category": 0.6666666666666665
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "rougeL": {
+   "n_cases": 66,
+   "n_groups": 64,
+   "auroc_small": [
+    0.11384680134680135,
+    0.11205058043117745,
+    0.11574110243055556
+   ],
+   "auroc_matched": [
+    0.670770202020202,
+    0.6680758706467661,
+    0.6736116536458333
+   ],
+   "auroc_large": [
+    0.11384680134680135,
+    0.11205058043117745,
+    0.11574110243055556
+   ],
+   "critical_small": 0.5,
+   "harmless_small_mean": 0.8412587412587411,
+   "harmless_matched_mean": 0.9615384615384617,
+   "harmless_large_mean": 0.6539558089807556,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": -0.14794315688718362,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.5,
+    "wrong measurement": 0.5,
+    "wrong severity/category": 0.6666666666666665
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "chrf": {
+   "n_cases": 66,
+   "n_groups": 64,
+   "auroc_small": [
+    0.49951599326599333,
+    0.4873668619791667,
+    0.5100505514705883
+   ],
+   "auroc_matched": [
+    0.4430765993265994,
+    0.44212944878472227,
+    0.4439747097844113
+   ],
+   "auroc_large": [
+    0.11384680134680135,
+    0.11205058043117745,
+    0.11574110243055556
+   ],
+   "critical_small": 0.75,
+   "harmless_small_mean": 0.888918026950669,
+   "harmless_matched_mean": 0.948402355183428,
+   "harmless_large_mean": 0.7393110919931294,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.028609620232757378,
+   "severity_rho": -0.3080600925608958,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.5,
+    "wrong location": 0.5,
+    "wrong measurement": 0.43686868686868685,
+    "wrong severity/category": 0.3939393939393939
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 0.5,
+    "wrong location": 0.5,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.6666666666666665
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "bertscore[roberta-large]": {
+   "n_cases": 66,
+   "n_groups": 64,
+   "auroc_small": [
+    0.11384680134680135,
+    0.11205058043117745,
+    0.11574110243055556
+   ],
+   "auroc_matched": [
+    0.5196338383838384,
+    0.504359608426704,
+    0.5346048844818376
+   ],
+   "auroc_large": [
+    0.11384680134680135,
+    0.11205058043117745,
+    0.11574110243055556
+   ],
+   "critical_small": 0.5,
+   "harmless_small_mean": 0.9691724415981409,
+   "harmless_matched_mean": 0.990827914891821,
+   "harmless_large_mean": 0.9487057680433447,
+   "identical_mean": 0.9999999638759729,
+   "identical_min": 0.9999997615814209,
+   "lazy_mean": 0.8510847516132124,
+   "severity_rho": -0.5510411742218025,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.8535353535353536
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "ratescore": {
+   "n_cases": 66,
+   "n_groups": 64,
+   "auroc_small": [
+    0.5320075757575758,
+    0.5233792240488379,
+    0.5399599358974358
+   ],
+   "auroc_matched": [
+    0.6305555555555555,
+    0.6010283119658121,
+    0.6592915207749768
+   ],
+   "auroc_large": [
+    0.5063973063973063,
+    0.4961218998015873,
+    0.5168428819444445
+   ],
+   "critical_small": 0.7537878787878788,
+   "harmless_small_mean": 0.9135468279406393,
+   "harmless_matched_mean": 0.9405192014841482,
+   "harmless_large_mean": 0.8596597959496702,
+   "identical_mean": 0.9999999812373114,
+   "identical_min": 0.9999998970409374,
+   "lazy_mean": 0.5,
+   "severity_rho": -0.7153680343133404,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.4810606060606061,
+    "wrong location": 0.22959183673469388,
+    "wrong measurement": 0.5,
+    "wrong severity/category": 0.5025252525252525
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 0.6553030303030303,
+    "wrong location": 0.25,
+    "wrong measurement": 0.6035353535353535,
+    "wrong severity/category": 0.6313131313131314
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.44696969696969696,
+    "wrong location": 0.0,
+    "wrong measurement": 0.5,
+    "wrong severity/category": 0.5
+   }
+  },
+  "finding_f1": {
+   "n_cases": 66,
+   "n_groups": 64,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": -0.47434571571041606,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   }
+  }
+ },
+ "BUS-UCLM": {
+  "bleu": {
+   "n_cases": 177,
+   "n_groups": 9,
+   "auroc_small": [
+    0.84980046632589,
+    0.8067720670965047,
+    0.8965317274321345
+   ],
+   "auroc_matched": [
+    0.924900233162945,
+    0.9033860335482523,
+    0.9482658637160672
+   ],
+   "auroc_large": [
+    0.706125011209757,
+    0.6203967139611221,
+    0.797065624690222
+   ],
+   "critical_small": 0.903954802259887,
+   "harmless_small_mean": 0.7553738298256012,
+   "harmless_matched_mean": 0.794650710342952,
+   "harmless_large_mean": 0.42237206040090686,
+   "identical_mean": 1.0000000000000002,
+   "identical_min": 1.0000000000000004,
+   "lazy_mean": 0.02222962447283446,
+   "severity_rho": -0.4022566107897698,
+   "cat_small": {
+    "false finding": 0.8461538461538461,
+    "wrong severity/category": 0.4666666666666667,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5,
+    "wrong location": 0.5
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "wrong severity/category": 0.625,
+    "missed finding": 1.0,
+    "wrong measurement": 0.75,
+    "wrong location": 0.75
+   },
+   "cat_large": {
+    "false finding": 0.6923076923076923,
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "wrong location": 0.0
+   }
+  },
+  "rougeL": {
+   "n_cases": 177,
+   "n_groups": 9,
+   "auroc_small": [
+    0.7157710070845664,
+    0.633923815810623,
+    0.803799871568049
+   ],
+   "auroc_matched": [
+    0.8949085283831046,
+    0.8657085220120754,
+    0.9279522528786103
+   ],
+   "auroc_large": [
+    0.706125011209757,
+    0.6203967139611221,
+    0.797065624690222
+   ],
+   "critical_small": 0.8305084745762712,
+   "harmless_small_mean": 0.8119003227068862,
+   "harmless_matched_mean": 0.9087803897930481,
+   "harmless_large_mean": 0.6552722784028865,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.14689265536723164,
+   "severity_rho": -0.5149537861644654,
+   "cat_small": {
+    "false finding": 0.6923076923076923,
+    "wrong severity/category": 0.10833333333333334,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "wrong location": 0.0
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "wrong severity/category": 0.75,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5,
+    "wrong location": 0.5
+   },
+   "cat_large": {
+    "false finding": 0.6923076923076923,
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "wrong location": 0.0
+   }
+  },
+  "chrf": {
+   "n_cases": 177,
+   "n_groups": 9,
+   "auroc_small": [
+    0.852120886019191,
+    0.8095198481591711,
+    0.8978644338101403
+   ],
+   "auroc_matched": [
+    0.8163785759124743,
+    0.7666838966665084,
+    0.8729021636022327
+   ],
+   "auroc_large": [
+    0.706125011209757,
+    0.6203967139611221,
+    0.797065624690222
+   ],
+   "critical_small": 0.9152542372881356,
+   "harmless_small_mean": 0.8666771116288231,
+   "harmless_matched_mean": 0.8676194001561938,
+   "harmless_large_mean": 0.6765645071064051,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.11356507189439864,
+   "severity_rho": -0.6182504969882392,
+   "cat_small": {
+    "false finding": 0.8461538461538461,
+    "wrong severity/category": 0.5,
+    "missed finding": 1.0,
+    "wrong measurement": 0.4944444444444444,
+    "wrong location": 0.5
+   },
+   "cat_matched": {
+    "false finding": 0.8461538461538461,
+    "wrong severity/category": 0.8416666666666667,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "wrong location": 0.5
+   },
+   "cat_large": {
+    "false finding": 0.6923076923076923,
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "wrong location": 0.0
+   }
+  },
+  "bertscore[roberta-large]": {
+   "n_cases": 177,
+   "n_groups": 9,
+   "auroc_small": [
+    0.706125011209757,
+    0.6203967139611221,
+    0.797065624690222
+   ],
+   "auroc_matched": [
+    0.8052865213882162,
+    0.7558391410769916,
+    0.8653993533469376
+   ],
+   "auroc_large": [
+    0.706125011209757,
+    0.6203967139611221,
+    0.797065624690222
+   ],
+   "critical_small": 0.8305084745762712,
+   "harmless_small_mean": 0.9654610195739121,
+   "harmless_matched_mean": 0.9876773297032223,
+   "harmless_large_mean": 0.9496973158612763,
+   "identical_mean": 0.9999999121084051,
+   "identical_min": 0.9999998807907104,
+   "lazy_mean": 0.875717016599946,
+   "severity_rho": -0.6778226080139791,
+   "cat_small": {
+    "false finding": 0.6923076923076923,
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "wrong location": 0.0
+   },
+   "cat_matched": {
+    "false finding": 0.9940828402366864,
+    "wrong severity/category": 0.6666666666666666,
+    "missed finding": 1.0,
+    "wrong measurement": 0.005555555555555555,
+    "wrong location": 0.0
+   },
+   "cat_large": {
+    "false finding": 0.6923076923076923,
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "wrong location": 0.0
+   }
+  },
+  "ratescore": {
+   "n_cases": 177,
+   "n_groups": 9,
+   "auroc_small": [
+    0.8276247645951035,
+    0.778190124394775,
+    0.8845633705200757
+   ],
+   "auroc_matched": [
+    0.8625739843960183,
+    0.8238633302332212,
+    0.9065544744851163
+   ],
+   "auroc_large": [
+    0.8255089229665501,
+    0.7796399398438396,
+    0.8812504056689807
+   ],
+   "critical_small": 0.903954802259887,
+   "harmless_small_mean": 0.962669632778694,
+   "harmless_matched_mean": 0.9601845865347469,
+   "harmless_large_mean": 0.8641034936892537,
+   "identical_mean": 0.9999999262902753,
+   "identical_min": 0.9999998807907103,
+   "lazy_mean": 0.5,
+   "severity_rho": -0.8518072491327986,
+   "cat_small": {
+    "false finding": 0.8461538461538461,
+    "wrong severity/category": 0.43333333333333335,
+    "missed finding": 1.0,
+    "wrong measurement": 0.43333333333333335,
+    "wrong location": 0.20394736842105263
+   },
+   "cat_matched": {
+    "false finding": 0.8846153846153846,
+    "wrong severity/category": 0.5583333333333333,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5583333333333333,
+    "wrong location": 0.24342105263157895
+   },
+   "cat_large": {
+    "false finding": 0.8461538461538461,
+    "wrong severity/category": 0.45,
+    "missed finding": 1.0,
+    "wrong measurement": 0.4472222222222222,
+    "wrong location": 0.0
+   }
+  },
+  "finding_f1": {
+   "n_cases": 177,
+   "n_groups": 9,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.4406779661016949,
+   "severity_rho": -0.7086243463503111,
+   "cat_small": {
+    "false finding": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_matched": {
+    "false finding": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "false finding": 1.0,
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0,
+    "wrong location": 1.0
+   }
+  }
+ },
+ "TN3K": {
+  "bleu": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    0.577734126984127,
+    0.576412599206349,
+    0.5791080357142857
+   ],
+   "auroc_matched": [
+    0.8165158730158729,
+    0.8128864417989418,
+    0.8198969576719577
+   ],
+   "auroc_large": [
+    0.15546825396825392,
+    0.15282519841269837,
+    0.15821607142857141
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.7976193584255472,
+   "harmless_matched_mean": 0.9024683063564924,
+   "harmless_large_mean": 0.4406622976668815,
+   "identical_mean": 1.0000000000000002,
+   "identical_min": 1.0000000000000004,
+   "lazy_mean": 9.505305526280621e-05,
+   "severity_rho": -0.35083489513525995,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.5,
+    "wrong location": 0.5,
+    "wrong measurement": 0.5,
+    "wrong severity/category": 0.5
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.6645021645021643,
+    "wrong measurement": 0.6655555555555555,
+    "wrong severity/category": 1.0
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "rougeL": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    0.15546825396825392,
+    0.15282519841269837,
+    0.15821607142857141
+   ],
+   "auroc_matched": [
+    0.7258849206349206,
+    0.7211210317460318,
+    0.7302659722222222
+   ],
+   "auroc_large": [
+    0.15546825396825392,
+    0.15282519841269837,
+    0.15821607142857141
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.8424382097048726,
+   "harmless_matched_mean": 0.9563757136583226,
+   "harmless_large_mean": 0.6298471468763583,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": -0.47891322195534825,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.5,
+    "wrong measurement": 0.5,
+    "wrong severity/category": 1.0
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "chrf": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    0.577734126984127,
+    0.576412599206349,
+    0.5791080357142857
+   ],
+   "auroc_matched": [
+    0.45176984126984127,
+    0.4422420634920634,
+    0.4605319444444445
+   ],
+   "auroc_large": [
+    0.15546825396825392,
+    0.15282519841269837,
+    0.15821607142857141
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.8603887265354998,
+   "harmless_matched_mean": 0.9208249627679272,
+   "harmless_large_mean": 0.7026955773068667,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.03304050029772024,
+   "severity_rho": -0.268659103454384,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.5,
+    "wrong location": 0.5,
+    "wrong measurement": 0.5,
+    "wrong severity/category": 0.5
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 1.0
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "bertscore[roberta-large]": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    0.15546825396825392,
+    0.15282519841269837,
+    0.15821607142857141
+   ],
+   "auroc_matched": [
+    0.5862169312169311,
+    0.573313492063492,
+    0.5991046957671957
+   ],
+   "auroc_large": [
+    0.15546825396825392,
+    0.15282519841269837,
+    0.15821607142857141
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.9708219067255656,
+   "harmless_matched_mean": 0.9936446946197086,
+   "harmless_large_mean": 0.9445917344093323,
+   "identical_mean": 0.9999999344348908,
+   "identical_min": 0.9999997615814209,
+   "lazy_mean": 0.8581422666708628,
+   "severity_rho": -0.3733159529916868,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 0.16666666666666669,
+    "wrong measurement": 0.25925925925925924,
+    "wrong severity/category": 1.0
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 0.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "wrong severity/category": 0.0
+   }
+  },
+  "ratescore": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    0.5590198412698413,
+    0.551278125,
+    0.566899503968254
+   ],
+   "auroc_matched": [
+    0.5465621693121693,
+    0.5274058201058202,
+    0.5647869047619049
+   ],
+   "auroc_large": [
+    0.32684920634920633,
+    0.31324444444444444,
+    0.3395581349206349
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.8798801327861002,
+   "harmless_matched_mean": 0.8916153635673941,
+   "harmless_large_mean": 0.7434349251840169,
+   "identical_mean": 0.9999999439877454,
+   "identical_min": 0.9999999205271404,
+   "lazy_mean": 0.5,
+   "severity_rho": -0.3210739094680159,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 0.6605839416058394,
+    "wrong location": 0.336038961038961,
+    "wrong measurement": 0.28777777777777774,
+    "wrong severity/category": 0.9466666666666667
+   },
+   "cat_matched": {
+    "missed finding": 0.9977777777777779,
+    "false finding": 0.6472019464720193,
+    "wrong location": 0.2759740259740259,
+    "wrong measurement": 0.2648148148148148,
+    "wrong severity/category": 0.94
+   },
+   "cat_large": {
+    "missed finding": 0.9866666666666667,
+    "false finding": 0.28832116788321166,
+    "wrong location": 0.003246753246753247,
+    "wrong measurement": 0.0022222222222222222,
+    "wrong severity/category": 0.8333333333333334
+   }
+  },
+  "finding_f1": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": -0.5426260175699544,
+   "cat_small": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   },
+   "cat_matched": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   },
+   "cat_large": {
+    "missed finding": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "wrong severity/category": 1.0
+   }
+  }
+ },
+ "TN5000": {
+  "bleu": {
+   "n_cases": 150,
+   "n_groups": 149,
+   "auroc_small": [
+    0.5780357142857142,
+    0.5769611354419985,
+    0.5790877976190476
+   ],
+   "auroc_matched": [
+    0.8227380952380952,
+    0.8205889375506635,
+    0.824842261904762
+   ],
+   "auroc_large": [
+    0.15607142857142856,
+    0.15392227088399693,
+    0.1581755952380952
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.7973882951489076,
+   "harmless_matched_mean": 0.9022153045810812,
+   "harmless_large_mean": 0.44107726416446574,
+   "identical_mean": 1.0000000000000002,
+   "identical_min": 1.0000000000000004,
+   "lazy_mean": 9.23060993380919e-05,
+   "severity_rho": -0.35670084902089394,
+   "cat_small": {
+    "wrong severity/category": 0.5,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5,
+    "false finding": 0.5,
+    "wrong location": 0.5
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.6666666666666665,
+    "false finding": 1.0,
+    "wrong location": 0.6666666666666664
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.0,
+    "wrong location": 0.0
+   }
+  },
+  "rougeL": {
+   "n_cases": 150,
+   "n_groups": 149,
+   "auroc_small": [
+    0.15607142857142856,
+    0.15392227088399693,
+    0.1581755952380952
+   ],
+   "auroc_matched": [
+    0.734107142857143,
+    0.7308834063259956,
+    0.7372633928571429
+   ],
+   "auroc_large": [
+    0.15607142857142856,
+    0.15392227088399693,
+    0.1581755952380952
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.8429458740017747,
+   "harmless_matched_mean": 0.956521739130435,
+   "harmless_large_mean": 0.6327913279132792,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": -0.5017011941513386,
+   "cat_small": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.0,
+    "wrong location": 0.0
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5,
+    "false finding": 1.0,
+    "wrong location": 0.5
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.0,
+    "wrong location": 0.0
+   }
+  },
+  "chrf": {
+   "n_cases": 150,
+   "n_groups": 149,
+   "auroc_small": [
+    0.5780357142857142,
+    0.5769611354419985,
+    0.5790877976190476
+   ],
+   "auroc_matched": [
+    0.46821428571428575,
+    0.46176681265199093,
+    0.47452678571428564
+   ],
+   "auroc_large": [
+    0.15607142857142856,
+    0.15392227088399693,
+    0.1581755952380952
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.8609486517244257,
+   "harmless_matched_mean": 0.9209150324926653,
+   "harmless_large_mean": 0.7057522162464583,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.032806496400791654,
+   "severity_rho": -0.2772084411466885,
+   "cat_small": {
+    "wrong severity/category": 0.5,
+    "missed finding": 1.0,
+    "wrong measurement": 0.5,
+    "false finding": 0.5,
+    "wrong location": 0.5
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 1.0,
+    "wrong location": 0.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.0,
+    "wrong location": 0.0
+   }
+  },
+  "bertscore[roberta-large]": {
+   "n_cases": 150,
+   "n_groups": 149,
+   "auroc_small": [
+    0.15607142857142856,
+    0.15392227088399693,
+    0.1581755952380952
+   ],
+   "auroc_matched": [
+    0.557116402116402,
+    0.5436636904761905,
+    0.5705904529766284
+   ],
+   "auroc_large": [
+    0.15607142857142856,
+    0.15392227088399693,
+    0.1581755952380952
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.9706670751174291,
+   "harmless_matched_mean": 0.9937127063009474,
+   "harmless_large_mean": 0.9449477775891622,
+   "identical_mean": 0.999999934832255,
+   "identical_min": 0.9999997615814209,
+   "lazy_mean": 0.8584572668870291,
+   "severity_rho": -0.3307248763687411,
+   "cat_small": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.0,
+    "wrong location": 0.0
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.16,
+    "false finding": 1.0,
+    "wrong location": 0.2138888888888889
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.0,
+    "wrong location": 0.0
+   }
+  },
+  "ratescore": {
+   "n_cases": 150,
+   "n_groups": 149,
+   "auroc_small": [
+    0.5778869047619047,
+    0.5698960895616524,
+    0.5862919146825396
+   ],
+   "auroc_matched": [
+    0.5619708994708996,
+    0.5453168558814253,
+    0.5782984646319378
+   ],
+   "auroc_large": [
+    0.3515873015873016,
+    0.34162074829931977,
+    0.3612715324384787
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 0.8839008662499898,
+   "harmless_matched_mean": 0.8977225281470839,
+   "harmless_large_mean": 0.7610890829729152,
+   "identical_mean": 0.9999999398325633,
+   "identical_min": 0.9999999205271404,
+   "lazy_mean": 0.5,
+   "severity_rho": -0.3490432491648527,
+   "cat_small": {
+    "wrong severity/category": 0.9766666666666667,
+    "missed finding": 1.0,
+    "wrong measurement": 0.2772222222222222,
+    "false finding": 0.7766666666666666,
+    "wrong location": 0.28541666666666665
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.9644444444444443,
+    "missed finding": 1.0,
+    "wrong measurement": 0.27148148148148143,
+    "false finding": 0.7244444444444443,
+    "wrong location": 0.15277777777777776
+   },
+   "cat_large": {
+    "wrong severity/category": 0.83,
+    "missed finding": 1.0,
+    "wrong measurement": 0.0011111111111111111,
+    "false finding": 0.41333333333333333,
+    "wrong location": 0.0
+   }
+  },
+  "finding_f1": {
+   "n_cases": 150,
+   "n_groups": 149,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": -0.5901880127307868,
+   "cat_small": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong measurement": 1.0,
+    "false finding": 1.0,
+    "wrong location": 1.0
+   }
+  }
+ },
+ "DDTI": {
+  "bleu": {
+   "n_cases": 150,
+   "n_groups": 114,
+   "auroc_small": [
+    0.4489070929070929,
+    0.4320521547742095,
+    0.46457963555435294
+   ],
+   "auroc_matched": [
+    0.6636362387612387,
+    0.6464377726132652,
+    0.6814778360795188
+   ],
+   "auroc_large": [
+    0.09735309135309136,
+    0.09067342816449957,
+    0.10449556017231174
+   ],
+   "critical_small": 0.698888888888889,
+   "harmless_small_mean": 0.8050837751362543,
+   "harmless_matched_mean": 0.9321715907802683,
+   "harmless_large_mean": 0.43627325740279965,
+   "identical_mean": 1.0000000000000002,
+   "identical_min": 1.0000000000000004,
+   "lazy_mean": 0.0017278541121993215,
+   "severity_rho": -0.2982498618983983,
+   "cat_small": {
+    "wrong severity/category": 0.308478120978121,
+    "missed finding": 0.8800675675675675,
+    "wrong location": 0.5,
+    "wrong measurement": 0.5,
+    "false finding": 0.49074074074074076
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.5768862612612612,
+    "missed finding": 1.0,
+    "wrong location": 0.6394444444444444,
+    "wrong measurement": 0.6342905405405406,
+    "false finding": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 0.7601351351351351,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.0
+   }
+  },
+  "rougeL": {
+   "n_cases": 150,
+   "n_groups": 114,
+   "auroc_small": [
+    0.1106864246864247,
+    0.09633870028808951,
+    0.130496262996263
+   ],
+   "auroc_matched": [
+    0.6610586913086913,
+    0.6525791701378625,
+    0.6707403635510845
+   ],
+   "auroc_large": [
+    0.1106864246864247,
+    0.09633870028808951,
+    0.130496262996263
+   ],
+   "critical_small": 0.7122222222222223,
+   "harmless_small_mean": 0.7265804961969522,
+   "harmless_matched_mean": 0.9673414105942665,
+   "harmless_large_mean": 0.6135075953385177,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.01880376515131334,
+   "severity_rho": -0.3103155205403319,
+   "cat_small": {
+    "wrong severity/category": 0.0,
+    "missed finding": 0.7601351351351351,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.018518518518518517
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.7397683397683398,
+    "missed finding": 0.8800675675675675,
+    "wrong location": 0.5,
+    "wrong measurement": 0.5,
+    "false finding": 0.8865740740740741
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 0.7601351351351351,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.018518518518518517
+   }
+  },
+  "chrf": {
+   "n_cases": 150,
+   "n_groups": 114,
+   "auroc_small": [
+    0.44161771561771557,
+    0.4226181412632406,
+    0.4591481412026931
+   ],
+   "auroc_matched": [
+    0.3560394327894328,
+    0.34119483627213015,
+    0.37235399940478064
+   ],
+   "auroc_large": [
+    0.10401975801975803,
+    0.09471325314553514,
+    0.11420916537644477
+   ],
+   "critical_small": 0.698888888888889,
+   "harmless_small_mean": 0.8701187761741247,
+   "harmless_matched_mean": 0.9460176440401209,
+   "harmless_large_mean": 0.6897492334037444,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.023617864217857592,
+   "severity_rho": -0.33650613307574884,
+   "cat_small": {
+    "wrong severity/category": 0.30395350707850705,
+    "missed finding": 0.8800675675675675,
+    "wrong location": 0.5,
+    "wrong measurement": 0.47747747747747743,
+    "false finding": 0.49074074074074076
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.45938706563706555,
+    "missed finding": 1.0,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.7916666666666666
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 0.7601351351351351,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.009259259259259259
+   }
+  },
+  "bertscore[roberta-large]": {
+   "n_cases": 150,
+   "n_groups": 114,
+   "auroc_small": [
+    0.12508075258075257,
+    0.10995546927005642,
+    0.1455563451351051
+   ],
+   "auroc_matched": [
+    0.5225573408073408,
+    0.5047620348401599,
+    0.5398599653244033
+   ],
+   "auroc_large": [
+    0.10401975801975803,
+    0.09471325314553514,
+    0.11420916537644477
+   ],
+   "critical_small": 0.7122222222222223,
+   "harmless_small_mean": 0.9731104711958226,
+   "harmless_matched_mean": 0.995120536003794,
+   "harmless_large_mean": 0.9458756822347641,
+   "identical_mean": 0.9999999626477559,
+   "identical_min": 0.9999997615814209,
+   "lazy_mean": 0.8449605659643808,
+   "severity_rho": -0.6003606719986332,
+   "cat_small": {
+    "wrong severity/category": 0.0,
+    "missed finding": 0.7989864864864865,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.08333333333333333
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.6496762387387388,
+    "missed finding": 1.0,
+    "wrong location": 0.1333333333333333,
+    "wrong measurement": 0.15108858858858856,
+    "false finding": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.0,
+    "missed finding": 0.7601351351351351,
+    "wrong location": 0.0,
+    "wrong measurement": 0.0,
+    "false finding": 0.009259259259259259
+   }
+  },
+  "ratescore": {
+   "n_cases": 150,
+   "n_groups": 114,
+   "auroc_small": [
+    0.48330884393384393,
+    0.4631836954840427,
+    0.5039493774294909
+   ],
+   "auroc_matched": [
+    0.5519651274651274,
+    0.5322638139237321,
+    0.5708780469933842
+   ],
+   "auroc_large": [
+    0.23651448551448548,
+    0.20784048387012521,
+    0.26341872260828303
+   ],
+   "critical_small": 0.7525,
+   "harmless_small_mean": 0.8712015959701394,
+   "harmless_matched_mean": 0.9237111349996291,
+   "harmless_large_mean": 0.7645159688778409,
+   "identical_mean": 0.9999999944930426,
+   "identical_min": 0.9999998511512465,
+   "lazy_mean": 0.5,
+   "severity_rho": -0.38554607830239146,
+   "cat_small": {
+    "wrong severity/category": 0.5583212676962677,
+    "missed finding": 0.839527027027027,
+    "wrong location": 0.34833333333333333,
+    "wrong measurement": 0.29617117117117114,
+    "false finding": 0.5462962962962963
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.649605855855856,
+    "missed finding": 0.9543918918918919,
+    "wrong location": 0.28527777777777774,
+    "wrong measurement": 0.2952327327327327,
+    "false finding": 0.7569444444444444
+   },
+   "cat_large": {
+    "wrong severity/category": 0.2966015122265122,
+    "missed finding": 0.8006756756756757,
+    "wrong location": 0.01,
+    "wrong measurement": 0.00563063063063063,
+    "false finding": 0.29398148148148145
+   }
+  },
+  "finding_f1": {
+   "n_cases": 150,
+   "n_groups": 114,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.013333333333333334,
+   "severity_rho": -0.2591971590505156,
+   "cat_small": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "false finding": 1.0
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "false finding": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 1.0,
+    "missed finding": 1.0,
+    "wrong location": 1.0,
+    "wrong measurement": 1.0,
+    "false finding": 1.0
+   }
+  }
+ },
+ "HC18": {
+  "bleu": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    0.33333333333333326,
+    0.33333333333333326,
+    0.33333333333333326
+   ],
+   "auroc_matched": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "auroc_large": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "critical_small": 0.33333333333333326,
+   "harmless_small_mean": 0.5775079461126074,
+   "harmless_matched_mean": 0.603553390593274,
+   "harmless_large_mean": 0.20477948501035945,
+   "identical_mean": 1.0000000000000002,
+   "identical_min": 1.0000000000000004,
+   "lazy_mean": 0.05197112497172874,
+   "severity_rho": null,
+   "cat_small": {
+    "wrong measurement": 0.33333333333333326
+   },
+   "cat_matched": {
+    "wrong measurement": 0.5
+   },
+   "cat_large": {
+    "wrong measurement": 0.0
+   }
+  },
+  "rougeL": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    0.16666666666666663,
+    0.16666666666666663,
+    0.16666666666666663
+   ],
+   "auroc_matched": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "auroc_large": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "critical_small": 0.16666666666666663,
+   "harmless_small_mean": 0.7152136752136752,
+   "harmless_matched_mean": 0.857142857142857,
+   "harmless_large_mean": 0.6844919786096255,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": null,
+   "cat_small": {
+    "wrong measurement": 0.16666666666666663
+   },
+   "cat_matched": {
+    "wrong measurement": 0.5
+   },
+   "cat_large": {
+    "wrong measurement": 0.0
+   }
+  },
+  "chrf": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    0.33555555555555555,
+    0.33388888888888885,
+    0.3377777777777778
+   ],
+   "auroc_matched": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "auroc_large": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "critical_small": 0.33333333333333326,
+   "harmless_small_mean": 0.8497182087805234,
+   "harmless_matched_mean": 0.7856704482067912,
+   "harmless_large_mean": 0.44698875863951354,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.05456620688535837,
+   "severity_rho": -0.15078632274759343,
+   "cat_small": {
+    "wrong measurement": 0.33555555555555555
+   },
+   "cat_matched": {
+    "wrong measurement": 0.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.0
+   }
+  },
+  "bertscore[roberta-large]": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "auroc_matched": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "auroc_large": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "critical_small": 0.0,
+   "harmless_small_mean": 0.969455148908827,
+   "harmless_matched_mean": 0.9785606280962627,
+   "harmless_large_mean": 0.93587171514829,
+   "identical_mean": 1.0000000091393788,
+   "identical_min": 0.9999998807907104,
+   "lazy_mean": 0.8661577129364013,
+   "severity_rho": -0.35536729853575827,
+   "cat_small": {
+    "wrong measurement": 0.0
+   },
+   "cat_matched": {
+    "wrong measurement": 0.0
+   },
+   "cat_large": {
+    "wrong measurement": 0.0
+   }
+  },
+  "ratescore": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    0.4205555555555556,
+    0.4044444444444445,
+    0.43666666666666665
+   ],
+   "auroc_matched": [
+    0.1,
+    0.07166666666666667,
+    0.13
+   ],
+   "auroc_large": [
+    0.0375,
+    0.02497916666666667,
+    0.050833333333333335
+   ],
+   "critical_small": 0.49777777777777793,
+   "harmless_small_mean": 0.8920506193076085,
+   "harmless_matched_mean": 0.8250170422702944,
+   "harmless_large_mean": 0.6050757979623926,
+   "identical_mean": 1.0000000704247944,
+   "identical_min": 0.9999999150710112,
+   "lazy_mean": 0.5,
+   "severity_rho": -0.3439499299414601,
+   "cat_small": {
+    "wrong measurement": 0.4205555555555556
+   },
+   "cat_matched": {
+    "wrong measurement": 0.1
+   },
+   "cat_large": {
+    "wrong measurement": 0.0375
+   }
+  },
+  "finding_f1": {
+   "n_cases": 150,
+   "n_groups": 150,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": -0.9949732201464017,
+   "cat_small": {
+    "wrong measurement": 1.0
+   },
+   "cat_matched": {
+    "wrong measurement": 1.0
+   },
+   "cat_large": {
+    "wrong measurement": 1.0
+   }
+  }
+ },
+ "FetalHead": {
+  "bleu": {
+   "n_cases": 153,
+   "n_groups": 54,
+   "auroc_small": [
+    0.36666666666666664,
+    0.3666666666666666,
+    0.3666666666666667
+   ],
+   "auroc_matched": [
+    0.5588235294117646,
+    0.55,
+    0.5700658332541118
+   ],
+   "auroc_large": [
+    0.00980392156862745,
+    0.0,
+    0.022295370282346228
+   ],
+   "critical_small": 0.33333333333333326,
+   "harmless_small_mean": 0.7887662705199548,
+   "harmless_matched_mean": 0.8001942833649399,
+   "harmless_large_mean": 0.3531353457453597,
+   "identical_mean": 1.0000000000000002,
+   "identical_min": 1.0000000000000004,
+   "lazy_mean": 0.011045792661084764,
+   "severity_rho": 0.0,
+   "cat_small": {
+    "wrong severity/category": 0.5,
+    "wrong measurement": 0.33333333333333326
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.7549019607843137,
+    "wrong measurement": 0.5
+   },
+   "cat_large": {
+    "wrong severity/category": 0.00980392156862745,
+    "wrong measurement": 0.0
+   }
+  },
+  "rougeL": {
+   "n_cases": 153,
+   "n_groups": 54,
+   "auroc_small": [
+    0.16666666666666663,
+    0.16666666666666663,
+    0.1666666666666667
+   ],
+   "auroc_matched": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "auroc_large": [
+    0.00980392156862745,
+    0.0,
+    0.022295370282346228
+   ],
+   "critical_small": 0.16666666666666663,
+   "harmless_small_mean": 0.7219047619047619,
+   "harmless_matched_mean": 0.8990099009900994,
+   "harmless_large_mean": 0.7885438178991663,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": 0.0,
+   "cat_small": {
+    "wrong severity/category": 0.16666666666666663,
+    "wrong measurement": 0.16666666666666663
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.5,
+    "wrong measurement": 0.5
+   },
+   "cat_large": {
+    "wrong severity/category": 0.00980392156862745,
+    "wrong measurement": 0.0
+   }
+  },
+  "chrf": {
+   "n_cases": 153,
+   "n_groups": 54,
+   "auroc_small": [
+    0.5453333333333333,
+    0.532559666024406,
+    0.5581511032804767
+   ],
+   "auroc_matched": [
+    0.21568627450980393,
+    0.2,
+    0.23567259245175404
+   ],
+   "auroc_large": [
+    0.06732026143790851,
+    0.04834164394234514,
+    0.0925413988451901
+   ],
+   "critical_small": 0.5222222222222221,
+   "harmless_small_mean": 0.9319464591262185,
+   "harmless_matched_mean": 0.8899616221162292,
+   "harmless_large_mean": 0.7047899280396265,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.040081374152770896,
+   "severity_rho": -0.3622057596887345,
+   "cat_small": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.43166666666666664
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.2581699346405229,
+    "wrong measurement": 0.0
+   }
+  },
+  "bertscore[roberta-large]": {
+   "n_cases": 153,
+   "n_groups": 54,
+   "auroc_small": [
+    0.13377777777777775,
+    0.13333333333333328,
+    0.13483737753474595
+   ],
+   "auroc_matched": [
+    0.21568627450980393,
+    0.2,
+    0.23567259245175404
+   ],
+   "auroc_large": [
+    0.10784313725490197,
+    0.1,
+    0.11783629622587702
+   ],
+   "critical_small": 0.0022222222222222222,
+   "harmless_small_mean": 0.9730953420533074,
+   "harmless_matched_mean": 0.9834450263001344,
+   "harmless_large_mean": 0.9506703917107551,
+   "identical_mean": 0.9999999563678418,
+   "identical_min": 0.9999997615814209,
+   "lazy_mean": 0.8385013980803147,
+   "severity_rho": -0.2671650423660723,
+   "cat_small": {
+    "wrong severity/category": 0.6666666666666665,
+    "wrong measurement": 0.0005555555555555556
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 0.0
+   },
+   "cat_large": {
+    "wrong severity/category": 0.5,
+    "wrong measurement": 0.0
+   }
+  },
+  "ratescore": {
+   "n_cases": 153,
+   "n_groups": 54,
+   "auroc_small": [
+    0.4866666666666667,
+    0.4707676767676768,
+    0.500271111111111
+   ],
+   "auroc_matched": [
+    0.39281045751633986,
+    0.3713304559168622,
+    0.41636006289308175
+   ],
+   "auroc_large": [
+    0.11045751633986928,
+    0.08750000000000002,
+    0.1365078546493177
+   ],
+   "critical_small": 0.4777777777777778,
+   "harmless_small_mean": 0.9234996530347447,
+   "harmless_matched_mean": 0.9063299243674436,
+   "harmless_large_mean": 0.6293004948159409,
+   "identical_mean": 1.0000000741344943,
+   "identical_min": 0.99999990472714,
+   "lazy_mean": 0.5,
+   "severity_rho": -0.10080219075914403,
+   "cat_small": {
+    "wrong severity/category": 0.5977777777777777,
+    "wrong measurement": 0.45888888888888896
+   },
+   "cat_matched": {
+    "wrong severity/category": 0.5849673202614379,
+    "wrong measurement": 0.3383333333333333
+   },
+   "cat_large": {
+    "wrong severity/category": 0.19607843137254902,
+    "wrong measurement": 0.08416666666666667
+   }
+  },
+  "finding_f1": {
+   "n_cases": 153,
+   "n_groups": 54,
+   "auroc_small": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_matched": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auroc_large": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "critical_small": 1.0,
+   "harmless_small_mean": 1.0,
+   "harmless_matched_mean": 1.0,
+   "harmless_large_mean": 1.0,
+   "identical_mean": 1.0,
+   "identical_min": 1.0,
+   "lazy_mean": 0.0,
+   "severity_rho": -0.8192655850479128,
+   "cat_small": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0
+   },
+   "cat_matched": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0
+   },
+   "cat_large": {
+    "wrong severity/category": 1.0,
+    "wrong measurement": 1.0
+   }
+  }
+ }
+}
