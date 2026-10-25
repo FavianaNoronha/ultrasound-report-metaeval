@@ -1,0 +1,8 @@
+# License notes
+
+- **Code.** The code in this repository (`usmeta/`, `datasets/make_manifest.py`, `baseline_exp/` scripts and the other source files) is covered by the code license in `LICENSE` (to be added once the owner has chosen it).
+- **Datasets are NOT covered by that license and are not part of this repository.** BrEaST, BUS-BRA, BUSI, UDIAT, BUS-UCLM, TN3K, TN5000, DDTI, HC18, the fetal-head plane dataset, HiSBreast and any other data keep their own licenses and terms of use. Each dataset's license is still marked **"to confirm"** in `datasets/manifest.json`; follow the original source's terms. Do not redistribute images or text from this repository's users' local copies.
+- **Dataset-derived files in this repository.** `baseline_exp/breast.xlsx` (the BrEaST clinical/label spreadsheet) and `baseline_exp/tn3k_records.json` (TN3K labels) were committed early on and are derived from those datasets; their original licenses and attribution requirements apply to them, not the code license. `usmeta/local_data/` (records derived from the datasets) is git-ignored. Our templated reports and benchmarks contain only label-derived text, no images.
+- **HiSBreast.** Licence blank at the source and no de-identification statement: its text, translations and images are kept local, never committed.
+- **Model outputs.** Reports written by Qwen2.5-VL-3B (`usmeta/reports_qwen*.jsonl`) are model outputs on public images; the models' own licenses apply to the models.
+- **Cited works** are cited, not reproduced. We found no ultrasound work that tests the scorers with planted errors, severity and harmless rewordings (our search was not exhaustive).
