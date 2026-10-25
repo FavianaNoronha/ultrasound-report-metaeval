@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-25T11:32:37",
+  "git_commit": "5643b82",
+  "dataset_record_counts": {
+    "breast_records": 960,
+    "exams": 427,
+    "unique_texts": 310,
+    "flagged_translations": 61
+  },
+  "seeds": {
+    "check_sample": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "translator": "mlx-community/gemma-2-9b-it-4bit greedy (glossary prompt)"
+  },
+  "command": "python3 -m usmeta.hisbreast; python3 -m usmeta.hisbreast_translate"
+}
