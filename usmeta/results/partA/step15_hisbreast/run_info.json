@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-27T04:15:18",
+  "git_commit": "4664f79",
+  "dataset_record_counts": {
+    "exams": 427,
+    "unique_texts": 310,
+    "kept_exams_strict": 101,
+    "kept_test_exams": 41,
+    "paraphrases_kept": 123
+  },
+  "seeds": {
+    "bootstrap": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "translation1": "gemma-2-9b-it-4bit",
+    "translation2_backtranslation_judge": "Qwen2.5-7B-Instruct-4bit",
+    "paraphrase": "gemma-2-9b-it-4bit"
+  },
+  "command": "python3 -m usmeta.hisbreast_validate translate2|backtranslate|fix|checks; usmeta.hisbreast_bench paraphrase|pjudge|build; usmeta.hisbreast_run layer0|judge|analyse"
+}
