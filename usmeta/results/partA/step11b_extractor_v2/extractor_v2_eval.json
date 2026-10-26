@@ -1,0 +1,102 @@
+{
+ "old40_v1": {
+  "reports": 40,
+  "agree": 37,
+  "comparisons": 41,
+  "rate": 0.9024390243902439,
+  "per_field": {
+   "side": [
+    10,
+    10
+   ],
+   "birads": [
+    9,
+    9
+   ],
+   "size_mm": [
+    8,
+    9
+   ],
+   "lesion": [
+    10,
+    13
+   ]
+  },
+  "options_dropped": 0,
+  "numeric_overrides": 0,
+  "invalid_option_values_left": 5,
+  "examples": [
+   [
+    "TN3K:trainval/2045.jpg|orig",
+    "comp",
+    "solid|heterogeneous"
+   ],
+   [
+    "TN3K:trainval/0532.jpg|orig",
+    "comp",
+    "solid|cystic|mixed"
+   ],
+   [
+    "TN5000:003205|orig",
+    "comp",
+    "solid|cystic"
+   ]
+  ]
+ },
+ "old40_v2": {
+  "reports": 40,
+  "agree": 38,
+  "comparisons": 41,
+  "rate": 0.926829268292683,
+  "per_field": {
+   "side": [
+    10,
+    10
+   ],
+   "birads": [
+    9,
+    9
+   ],
+   "size_mm": [
+    9,
+    9
+   ],
+   "lesion": [
+    10,
+    13
+   ]
+  },
+  "options_dropped": 5,
+  "numeric_overrides": 1,
+  "invalid_option_values_left": 0,
+  "examples": []
+ },
+ "new40_v2": {
+  "reports": 40,
+  "agree": 46,
+  "comparisons": 47,
+  "rate": 0.9787234042553191,
+  "per_field": {
+   "side": [
+    10,
+    10
+   ],
+   "birads": [
+    10,
+    10
+   ],
+   "size_mm": [
+    11,
+    11
+   ],
+   "lesion": [
+    15,
+    16
+   ]
+  },
+  "options_dropped": 3,
+  "numeric_overrides": 2,
+  "invalid_option_values_left": 0,
+  "examples": []
+ }
+}

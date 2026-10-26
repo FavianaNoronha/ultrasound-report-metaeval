@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-26T14:46:27",
+  "git_commit": "c371571",
+  "dataset_record_counts": {
+    "old40": 40,
+    "new40": 40
+  },
+  "seeds": {
+    "new_sample": 1
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "extractor": "gemma-2-9b-it-4bit greedy, schema_v2 post-processing"
+  },
+  "command": "python3 -m usmeta.extractor_v2_eval run|report"
+}

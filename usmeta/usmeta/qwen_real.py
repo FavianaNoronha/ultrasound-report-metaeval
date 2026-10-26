@@ -6,6 +6,7 @@ from . import splits, schema, graders, judge2, judge2_test, location, unified
 
 OUTD = 'qwen_real_work'
 def uid(c):
+    if c.startswith('BrEaST:'): return c
     if c.startswith('BUS-BRA'): return 'BUS-BRA:' + c[len('BUS-BRA-'):]
     if c.startswith('TN3K'): r = c[len('TN3K-'):]; sp = 'trainval' if r.startswith('trainval') else 'test'; return f'TN3K:{sp}/' + r[len(sp):]
     if c.startswith('TN5000'): return 'TN5000:' + c[len('TN5000-'):].replace('.jpg', '')
@@ -22,7 +23,8 @@ def prep():
     for l in open('true_reports_v2d.jsonl'): r = json.loads(l); tr[r['case_id']] = r
     allsplit = {r['case_id']: (r['split'], r['group_id']) for r in splits.load(None, script='usmeta.qwen_real')}
     rows = []
-    for fn, flipped in (('reports_qwen.jsonl', False), ('reports_qwen_flip.jsonl', True)):
+    for fn, flipped in (('reports_qwen.jsonl', False), ('reports_qwen_flip.jsonl', True), ('reports_qwen_brest.jsonl', False), ('reports_qwen_brest_flip.jsonl', True)):
+        if not os.path.exists(fn): continue
         for l in open(fn):
             r = json.loads(l); u = uid(r['case_id']); t = tr[u]; sp, g = allsplit[u]
             rows.append(dict(key=f"{u}|{'flip' if flipped else 'orig'}", case_id=u, dataset=t['dataset'], organ=t['organ'], flipped=flipped, split=sp, group_id=g, reference=t['styles']['standard'], ref_facts=t['facts'], report_raw=r['report'], report=clean_md(r['report'])))
@@ -44,10 +46,13 @@ def regex_reading(t):
     elif neg and not mass: o['lesion'] = 'absent'
     return o
 
-def extract_llm_batch(rows, out):
+def extract_llm_batch(rows, out, version='v1'):
+    from . import schema_v2
     cli = graders.LocalLLM('mlx-community/gemma-2-9b-it-4bit', max_tokens=800); done = {json.loads(l)['key'] for l in open(out)} if os.path.exists(out) else set(); t0 = time.time()
     for i, r in enumerate([x for x in rows if x['key'] not in done]):
-        f, bad = schema.extract_llm(cli, r['report'], r['organ']); open(out, 'a').write(json.dumps(dict(key=r['key'], facts=f, unquoted=bad)) + '\n')
+        if version == 'v2': f, bad, opts, over = schema_v2.extract_llm_v2(cli, r['report'], r['organ'])
+        else: f, bad = schema.extract_llm(cli, r['report'], r['organ']); opts = over = 0
+        open(out, 'a').write(json.dumps(dict(key=r['key'], facts=f, unquoted=bad, options_dropped=opts, numeric_overrides=over)) + '\n')
         if i % 10 == 0: print(i, round(time.time() - t0), 's', flush=True)
 
 def extract_check(n=10):
@@ -92,7 +97,7 @@ def boxes():
     from PIL import Image
     from . import generate
     rows = cases(); rng = random.Random(0); recs = {}
-    for ds in ('BUSBRA', 'TN3K', 'TN5000', 'HC18'):
+    for ds in ('BUSBRA', 'TN3K', 'TN5000', 'HC18', 'BrEaST'):
         for c in unified.load(ds): recs[c['case_id']] = c
     test = [r for r in rows if r['split'] == 'test']                                        # final numbers (originals + flipped)
     dev = [r for r in rows if r['split'] == 'dev' and not r['flipped']]; by = collections.defaultdict(list)

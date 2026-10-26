@@ -6,7 +6,7 @@ from . import qwen_real as Q, schema, location, unified, graders
 from .step10d_analysis import gboot
 
 THIRDS = {f'{v}-{h}' for v in ('upper', 'middle', 'lower') for h in ('left', 'central', 'right')}
-CAT = dict(lesion='missed/false finding', count='false/missed finding (count)', side='wrong location', pos='wrong location', size_mm='wrong measurement', size_pct='wrong measurement', hc_mm='wrong measurement',
+CAT = dict(shape='wrong severity/category', margin='wrong severity/category', echo='wrong severity/category', post='wrong severity/category', calc='false/missed finding', halo='false/missed finding', lesion='missed/false finding', count='false/missed finding (count)', side='wrong location', pos='wrong location', size_mm='wrong measurement', size_pct='wrong measurement', hc_mm='wrong measurement',
            birads='wrong severity/category', tirads='wrong severity/category', path='wrong severity/category', hist='wrong severity/category', orient='wrong severity/category')
 
 def judge_cmp(ref, cand, a):
@@ -14,27 +14,29 @@ def judge_cmp(ref, cand, a):
     if cand is None: return 'not stated'
     if a == 'pos': return 'correct' if cand == ref else ('wrong' if cand in THIRDS else 'not comparable')
     if a in ('size_pct',): return 'not comparable'
-    if a == 'size_mm': return 'not comparable'
+    if a == 'size_mm': return 'correct' if schema.attr_credit('size_mm', ref, cand) >= 0.5 else 'wrong'
     if a == 'hc_mm': return 'correct' if schema.attr_credit('hc_mm', ref, cand) >= 0.5 else 'wrong'
     if a == 'count': return 'correct' if int(cand) == int(ref) else 'wrong'
     return 'correct' if str(cand).lower() == str(ref).lower() else 'wrong'
 
+EXTRACT_FILE = os.environ.get('QR_EXTRACT_FILE', 'extract_test.jsonl')
+
 def main(out):
-    os.makedirs(out, exist_ok=True); cs = [c for c in Q.cases() if c['split'] == 'test']; E = {json.loads(l)['key']: json.loads(l) for l in open(f'{Q.OUTD}/extract_test.jsonl')}
+    os.makedirs(out, exist_ok=True); cs = [c for c in Q.cases() if c['split'] == 'test']; E = {json.loads(l)['key']: json.loads(l) for l in open(f'{Q.OUTD}/{EXTRACT_FILE}')}
     J = {v: {json.loads(l)['key']: json.loads(l)['result'] for l in open(f'{Q.OUTD}/judge_{v}.jsonl')} for v in ('v1', 'v2')}
     B = {json.loads(l)['key']: json.loads(l) for l in open(f'{Q.OUTD}/boxes.jsonl')}
-    recs = {c['case_id']: c for ds in ('BUSBRA', 'TN3K', 'TN5000', 'HC18') for c in unified.load(ds)}
+    recs = {c['case_id']: c for ds in ('BUSBRA', 'TN3K', 'TN5000', 'HC18', 'BrEaST') for c in unified.load(ds)}
     res = collections.defaultdict(dict); attr = collections.defaultdict(lambda: collections.Counter()); rows = []
     bleu, chrf = graders.make('bleu'), graders.make('chrf')
     for c in cs:
         if c['flipped']: continue
         k, ds, ref = c['key'], c['dataset'], c['ref_facts']; f = (E.get(k) or {}).get('facts') or {}
         rf = schema.to_findings(ref, c['organ']); cf = schema.to_findings(f, c['organ']); p, r, f1, cr = schema.finding_scores(rf, cf)
-        for (e, a), v in schema.flat_attrs(rf).items():
-            a0 = a if e not in ('calcifications', 'halo', 'foci') else 'status'
-            key = 'lesion' if (e, a) == ('lesion', 'status') else a
-            cand = f.get('lesion') if key == 'lesion' else f.get(key)
-            attr[(ds, key)][judge_cmp(v if key != 'lesion' else 'present', cand if key != 'lesion' else cand, key) if key != 'lesion' else ('correct' if cand == 'present' else ('wrong' if cand == 'absent' else 'not stated'))] += 1
+        for key, v in ref.items():
+            cand = f.get(key)
+            if key == 'lesion': cmp_ = 'correct' if cand == 'present' else ('wrong' if cand == 'absent' else 'not stated')
+            else: cmp_ = judge_cmp(v, cand, key)
+            attr[(ds, key)][cmp_] += 1
         row = dict(key=k, dataset=ds, group=c['group_id'], precision=p, recall=r, finding_f1=f1)
         for v in ('v1', 'v2'):
             j = J[v].get(k); row[f'sentence_f1_{v}'] = j['f1'] if j else None; row[f'judge_score_{v}'] = j['judge'] if j else None; row[f'judge_cats_{v}'] = (j['cats'] if j else None); row[f'judge_nerr_{v}'] = (j['n_err'] if j else None)

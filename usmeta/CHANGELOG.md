@@ -13,3 +13,6 @@ Frozen: templates_v2, schema + extractors, benchmark builders (bench_v2 / v2b / 
 - Step 7 rerun2: judge prompt v1 -> v2 (stricter) so identical copies score 1.0; AUROC moved by up to 0.30 (prompt sensitivity).
 - Step 8: thyroid count capped at 3 in `mask_verified`; `box_support_gtbox` added next to `box_support`.
 - Step 10a: no cross-dataset duplicates; within-dataset near-duplicate clusters grouped (none dropped).
+
+## extractor v2 (2026-10-26): `usmeta/schema_v2.py` (post-processing only; `schema.py` v1 stays frozen)
+Why: Step 11 showed two failures of the free-text LLM extractor. (1) The model returned 106 for "10.6 mm" (dropped decimal) -> numbers are now re-read from the model's own quote when the quote holds a number with a unit (mm / cm / %). (2) Option lists copied from the prompt ("solid|cystic") were kept as values -> dropped and counted. (3) JSON booleans for `lesion` map to present / absent. The prompt is unchanged, so cached model replies are reused. Old results with v1 are kept (`step11_qwen_real_reports`). Evaluation: `results/partA/step11b_extractor_v2/`.

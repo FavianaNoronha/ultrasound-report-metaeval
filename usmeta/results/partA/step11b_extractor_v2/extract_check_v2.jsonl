@@ -1,0 +1,40 @@
+{"key": "BUS-BRA:bus_1058-r|orig", "facts": {"lesion": "present", "shape": "round to oval", "margin": "smooth", "echo": "hypoechoic", "post": "enhancement", "size_mm": 35, "pos": "upper-outer-quadrant", "side": "right", "birads": "2"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "BUS-BRA:bus_0159-r|orig", "facts": {"lesion": "present", "shape": "round to oval", "margin": "smooth and well-defined", "echo": "hypoechoic", "post": "mild enhancement", "size_mm": 30, "pos": "upper-outer-quadrant", "side": "right", "birads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "BUS-BRA:bus_0402-l|orig", "facts": {"lesion": "present", "shape": "irregular", "margin": "slightly irregular", "echo": "hypoechoic", "calc": "multiple small calcifications scattered throughout the lesion", "pos": "left-mammary-region", "side": "left", "birads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "BUS-BRA:bus_0644-r|orig", "facts": {"lesion": "present", "shape": "somewhat irregular", "echo": "hypoechoic", "pos": "upper-outer-quadrant", "side": "left", "birads": "3", "path": "benign"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "BUS-BRA:bus_0053-r|orig", "facts": {"lesion": "present", "shape": "smooth", "margin": "well-defined", "echo": "hypoechoic", "post": "enhancement", "size_mm": 30, "pos": "upper-outer-quadrant", "side": "right", "birads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "BUS-BRA:bus_0327-l|orig", "facts": {"lesion": "present", "shape": "irregular", "margin": "not circumscribed (slightly indistinct)", "echo": "hypoechoic", "size_mm": 30, "side": "right", "birads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "BUS-BRA:bus_0220-l|orig", "facts": {"lesion": "present", "shape": "irregular", "echo": "hypoechoic", "size_mm": 30, "pos": "left-breast", "side": "left"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "BUS-BRA:bus_0486-l|orig", "facts": {"lesion": "present", "margin": "not circumscribed (indistinct)", "echo": "hypoechoic", "size_mm": 11, "pos": "upper-outer-quadrant", "side": "right", "birads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 1}
+{"key": "BUS-BRA:bus_0514-l|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "size_mm": 12, "pos": "central", "side": "right", "birads": "4a"}, "unquoted": 1, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "BUS-BRA:bus_0979-r|orig", "facts": {"lesion": "present", "shape": "round to oval", "margin": "well-defined", "echo": "hypoechoic", "calc": "no", "size_mm": 30, "pos": "upper-outer-quadrant", "side": "right", "birads": "4a"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "HC18:445_HC|orig", "facts": {"lesion": "absent"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "HC18:307_HC|orig", "facts": {"lesion": "absent"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "HC18:745_HC|orig", "facts": {"lesion": "absent"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "HC18:164_2HC|orig", "facts": {"lesion": "absent"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "HC18:110_HC|orig", "facts": {"lesion": "absent"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "HC18:419_HC|orig", "facts": {"lesion": "absent"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "HC18:214_HC|orig", "facts": {"lesion": "absent"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "HC18:718_HC|orig", "facts": {"lesion": "absent"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "HC18:226_HC|orig", "facts": {"lesion": "absent"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "HC18:577_HC|orig", "facts": {"lesion": "absent"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN3K:test/0328.jpg|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4a"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN3K:trainval/1859.jpg|orig", "facts": {"echo": "homogeneous", "tirads": "4a", "lesion": "present"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN3K:trainval/0183.jpg|orig", "facts": {"lesion": "present", "comp": "hypoechoic", "echo": "hypoechoic", "tirads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN3K:trainval/1407.jpg|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN3K:trainval/1874.jpg|orig", "facts": {"lesion": "present", "comp": "hypoechoic", "echo": "hypoechoic", "size_mm": 35, "tirads": "4a"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN3K:trainval/0202.jpg|orig", "facts": {"lesion": "present", "echo": "homogeneous", "tirads": "4a"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN3K:trainval/2045.jpg|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4"}, "unquoted": 0, "options_dropped": 1, "numeric_overrides": 0}
+{"key": "TN3K:trainval/2327.jpg|orig", "facts": {"lesion": "present", "tirads": "4a"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN3K:trainval/0532.jpg|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4"}, "unquoted": 0, "options_dropped": 1, "numeric_overrides": 0}
+{"key": "TN3K:trainval/2451.jpg|orig", "facts": {"lesion": "present", "comp": "hypoechoic", "echo": "hypoechoic", "tirads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN5000:002725|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4a"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN5000:003205|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4"}, "unquoted": 0, "options_dropped": 1, "numeric_overrides": 0}
+{"key": "TN5000:002926|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4a"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN5000:001566|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN5000:001278|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4a"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN5000:001598|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN5000:002404|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "tirads": "4"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN5000:002375|orig", "facts": {"echo": "homogeneous", "tirads": "4a", "lesion": "present"}, "unquoted": 0, "options_dropped": 0, "numeric_overrides": 0}
+{"key": "TN5000:004978|orig", "facts": {"lesion": "present", "foci": "echogenic foci", "tirads": "4"}, "unquoted": 1, "options_dropped": 1, "numeric_overrides": 0}
+{"key": "TN5000:002937|orig", "facts": {"lesion": "present", "echo": "hypoechoic", "foci": "echogenic foci", "tirads": "4"}, "unquoted": 0, "options_dropped": 1, "numeric_overrides": 0}
