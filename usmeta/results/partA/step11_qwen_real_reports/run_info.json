@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-26T13:42:47",
+  "git_commit": "baf7929",
+  "dataset_record_counts": {
+    "qwen_reports": 200,
+    "flip_reports": 20,
+    "test_reports": 73,
+    "test_flips": 10,
+    "boxes": 103
+  },
+  "seeds": {
+    "check_sample": 0,
+    "bootstrap": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "writer": "Qwen2.5-VL-3B-Instruct",
+    "extractor_judge": "gemma-2-9b-it-4bit (greedy), prompt_v1 and prompt_v2"
+  },
+  "command": "python3 -m usmeta.qwen_real prep|extract_check|extract_test|judge|boxes; python3 -m usmeta.qwen_real_analysis"
+}
