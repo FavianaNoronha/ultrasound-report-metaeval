@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-26T18:05:29",
+  "git_commit": "8f95e08",
+  "dataset_record_counts": {
+    "cases": 590,
+    "rows": 2892,
+    "new_pairs": 1477,
+    "cases_per_dataset": 59
+  },
+  "seeds": {
+    "added_case_sampling": 1,
+    "bootstrap": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "judge": "mlx-community/gemma-2-9b-it-4bit greedy, prompt_v2"
+  },
+  "command": "python3 -m usmeta.judge_big run 34 judge_big_v2.jsonl; python3 -m usmeta.judge_big report DIR"
+}
