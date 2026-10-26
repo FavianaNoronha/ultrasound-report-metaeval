@@ -1,0 +1,9 @@
+# MedGemma-1.5-4B-it: what the model card says about training data (read 2026-10-26)
+
+Source: https://huggingface.co/google/medgemma-1.5-4b-it (README, sections "Model information" and "Data card"). Paraphrased except one short quote; **to confirm against the card and the key publication it links (arXiv 2604.05081) before citing.**
+- The card says MedGemma "utilizes a combination of public and private datasets".
+- Image encoder (SigLIP) and the language model are described as trained on de-identified medical data: chest X-rays, dermatology, ophthalmology and histopathology images for the encoder; medical text, question-answer pairs, electronic-health-record data, 2D and 3D radiology images, histopathology, ophthalmology and dermatology images for the language model.
+- Named public datasets include MIMIC-CXR, ChestImaGenome (chest bounding boxes), SLAKE, PAD-UFES-20, SCIN, TCGA, CAMELYON, PMC-OA and a knee X-ray set. Additional licensed and internal de-identified datasets (CT and others) are described.
+- **Ultrasound is not listed** among the modalities or datasets in the card's training description (its intended-use section lists chest X-ray, histopathology, dermatology, fundus, CT, MR, text and EHR). That does **not** show our datasets were unseen: "radiology images" and the licensed proprietary data are not itemised, PMC-OA contains published figures of many modalities, and web-scale pretraining of the base Gemma model is not described by dataset. BUS-BRA, BUSI, BrEaST, TN3K, TN5000 and HC18 are not named in the card.
+- Bounding-box localisation is documented for anatomy on chest X-rays (ChestImaGenome); no ultrasound localisation is documented.
+- The card also warns that MedGemma's training may make it more sensitive to the specific prompt than Gemma 3, and that outputs are not for clinical use.

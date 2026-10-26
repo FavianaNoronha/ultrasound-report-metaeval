@@ -1,0 +1,112 @@
+{"key": "BUS-BRA:bus_1058-r|orig", "split": "val", "flipped": false, "size": [276, 305], "raw": "```json\n[\n  {\"box_2d\": [300, 200, 600, 700]}\n]\n```"}
+{"key": "BUS-BRA:bus_0159-r|orig", "split": "dev", "flipped": false, "size": [275, 370], "raw": "```json\n[\n  {\"box_2d\": [300, 284, 744, 744]}\n]\n```"}
+{"key": "BUS-BRA:bus_0402-l|orig", "split": "dev", "flipped": false, "size": [324, 435], "raw": "```json\n[\n  {\"box_2d\": [244, 384, 644, 644]}\n]\n```"}
+{"key": "BUS-BRA:bus_0514-l|orig", "split": "dev", "flipped": false, "size": [321, 450], "raw": "```json\n[\n  {\"box_2d\": [284, 384, 644, 704]}\n]\n```"}
+{"key": "BrEaST:117|orig", "split": "val", "flipped": false, "size": [485, 537], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 744, 744]}\n]\n```"}
+{"key": "BrEaST:89|orig", "split": "dev", "flipped": false, "size": [485, 537], "raw": "```json\n[\n  {\"box_2d\": [500, 200, 700, 500]}\n]\n```"}
+{"key": "BrEaST:165|orig", "split": "dev", "flipped": false, "size": [433, 469], "raw": "```json\n[\n  {\n    \"label\": \"breast lesion\",\n    \"bounding_box\": {\n      \"xmin\": 244,\n      \"ymin\": 244,\n      \"xmax\": 744,\n      \"ymax\": 744\n    }\n  }\n]\n```"}
+{"key": "BrEaST:227|orig", "split": "val", "flipped": false, "size": [437, 541], "raw": "```json\n[\n  {\"box_2d\": [300, 200, 800, 700]}\n]\n```"}
+{"key": "HC18:164_2HC|orig", "split": "val", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 800, 800]}\n]\n```"}
+{"key": "HC18:389_HC|orig", "split": "val", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 800, 800]}\n]\n```"}
+{"key": "HC18:652_HC|orig", "split": "dev", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 800, 800]}\n]\n```"}
+{"key": "HC18:577_HC|orig", "split": "dev", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 800, 800]}\n]\n```"}
+{"key": "TN3K:test/0036.jpg|orig", "split": "val", "flipped": false, "size": [433, 319], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": {\n      \"xmin\": 400,\n      \"ymin\": 280,\n      \"xmax\": 800,\n      \"ymax\": 720\n    }\n  }\n]\n```"}
+{"key": "TN3K:trainval/0788.jpg|orig", "split": "val", "flipped": false, "size": [291, 300], "raw": "```json\n[\n  {\"box_2d\": [500, 280, 900, 770]}\n]\n```"}
+{"key": "TN3K:test/0149.jpg|orig", "split": "dev", "flipped": false, "size": [432, 355], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 700, 700]}\n]\n```"}
+{"key": "TN3K:trainval/0451.jpg|orig", "split": "dev", "flipped": false, "size": [350, 281], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 744, 744]}\n]\n```"}
+{"key": "TN5000:002375|orig", "split": "val", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 384, 544, 574]}\n]\n```"}
+{"key": "TN5000:004084|orig", "split": "dev", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 284, 774, 744]}\n]\n```"}
+{"key": "TN5000:003944|orig", "split": "val", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": {\n      \"xmin\": 244,\n      \"ymin\": 244,\n      \"xmax\": 774,\n      \"ymax\": 744\n    }\n  }\n]\n```"}
+{"key": "TN5000:003205|orig", "split": "val", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 844, 774]}\n]\n```"}
+{"key": "TN3K:test/0407.jpg|orig", "split": "test", "flipped": false, "size": [417, 389], "raw": "```json\n[\n  {\"box_2d\": [344, 384, 644, 644]}\n]\n```"}
+{"key": "TN3K:trainval/2185.jpg|orig", "split": "test", "flipped": false, "size": [408, 332], "raw": "```json\n[\n  {\"box_2d\": [344, 284, 774, 744]}\n]\n```"}
+{"key": "TN3K:trainval/2274.jpg|orig", "split": "test", "flipped": false, "size": [291, 318], "raw": "```json\n[\n  {\"box_2d\": [300, 150, 780, 800]}\n]\n```"}
+{"key": "TN3K:trainval/1019.jpg|orig", "split": "test", "flipped": false, "size": [382, 308], "raw": "```json\n[\n  {\"box_2d\": [388, 284, 774, 744]}\n]\n```"}
+{"key": "TN3K:trainval/1877.jpg|orig", "split": "test", "flipped": false, "size": [334, 280], "raw": "```json\n[\n  {\"box_2d\": [300, 180, 800, 800]}\n]\n```"}
+{"key": "TN3K:trainval/1743.jpg|orig", "split": "test", "flipped": false, "size": [432, 365], "raw": "```json\n[\n  {\"box_2d\": [384, 284, 844, 774]}\n]\n```"}
+{"key": "TN3K:trainval/2762.jpg|orig", "split": "test", "flipped": false, "size": [436, 322], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": {\n      \"xmin\": 250,\n      \"ymin\": 200,\n      \"xmax\": 750,\n      \"ymax\": 700\n    }\n  }\n]\n```"}
+{"key": "TN3K:trainval/1511.jpg|orig", "split": "test", "flipped": false, "size": [387, 366], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": {\n      \"xmin\": 100,\n      \"ymin\": 100,\n      \"xmax\": 800,\n      \"ymax\": 700\n    }\n  }\n]\n```"}
+{"key": "TN3K:trainval/0412.jpg|orig", "split": "test", "flipped": false, "size": [282, 249], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 900, 900]}\n]\n```"}
+{"key": "TN3K:test/0570.jpg|orig", "split": "test", "flipped": false, "size": [330, 337], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": {\n      \"xmin\": 400,\n      \"ymin\": 280,\n      \"xmax\": 780,\n      \"ymax\": 670\n    }\n  }\n]\n```"}
+{"key": "TN3K:trainval/0849.jpg|orig", "split": "test", "flipped": false, "size": [310, 379], "raw": "```json\n[\n  {\"box_2d\": [344, 184, 844, 744]}\n]\n```"}
+{"key": "TN3K:trainval/2002.jpg|orig", "split": "test", "flipped": false, "size": [433, 346], "raw": "```json\n[\n  {\"box_2d\": [300, 100, 774, 744]}\n]\n```"}
+{"key": "TN3K:trainval/1792.jpg|orig", "split": "test", "flipped": false, "size": [417, 318], "raw": "```json\n[\n  {\"box_2d\": [384, 384, 744, 744]}\n]\n```"}
+{"key": "TN3K:trainval/2864.jpg|orig", "split": "test", "flipped": false, "size": [429, 398], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": [\n      300,\n      200,\n      700,\n      700\n    ]\n  }\n]\n```"}
+{"key": "TN3K:trainval/0116.jpg|orig", "split": "test", "flipped": false, "size": [302, 296], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": {\n      \"xmin\": 250,\n      \"ymin\": 244,\n      \"xmax\": 800,\n      \"ymax\": 744\n    }\n  }\n]\n```"}
+{"key": "TN3K:trainval/2764.jpg|orig", "split": "test", "flipped": false, "size": [429, 385], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": {\n      \"xmin\": 250,\n      \"ymin\": 200,\n      \"xmax\": 750,\n      \"ymax\": 750\n    }\n  }\n]\n```"}
+{"key": "TN3K:test/0173.jpg|orig", "split": "test", "flipped": false, "size": [433, 341], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": [\n      300,\n      200,\n      700,\n      700\n    ]\n  }\n]\n```"}
+{"key": "TN3K:trainval/1665.jpg|orig", "split": "test", "flipped": false, "size": [382, 317], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 744, 744]}\n]\n```"}
+{"key": "TN3K:trainval/1856.jpg|orig", "split": "test", "flipped": false, "size": [453, 327], "raw": "```json\n[\n  {\"box_2d\": [244, 183, 833, 844]}\n]\n```"}
+{"key": "TN3K:trainval/1996.jpg|orig", "split": "test", "flipped": false, "size": [340, 370], "raw": "```json\n[\n  {\"box_2d\": [344, 284, 784, 744]}\n]\n```"}
+{"key": "TN3K:trainval/1615.jpg|orig", "split": "test", "flipped": false, "size": [376, 389], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": {\n      \"xmin\": 250,\n      \"ymin\": 200,\n      \"xmax\": 750,\n      \"ymax\": 700\n    }\n  }\n]\n```"}
+{"key": "TN3K:trainval/2668.jpg|orig", "split": "test", "flipped": false, "size": [409, 331], "raw": "```json\n[\n  {\"box_2d\": [344, 374, 744, 744]}\n]\n```"}
+{"key": "BUS-BRA:bus_0098-r|orig", "split": "test", "flipped": false, "size": [277, 386], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 784, 744]}\n]\n```"}
+{"key": "BUS-BRA:bus_0372-l|orig", "split": "test", "flipped": false, "size": [320, 426], "raw": "```json\n[\n  {\"label\": \"breast lesion\", \"bounding_box\": [344, 284, 644, 644]}\n]\n```"}
+{"key": "BUS-BRA:bus_0046-l|orig", "split": "test", "flipped": false, "size": [276, 352], "raw": "```json\n[\n  {\"label\": \"breast lesion\", \"bounding_box\": [344, 284, 834, 744]}\n]\n```"}
+{"key": "BUS-BRA:bus_0993-r|orig", "split": "test", "flipped": false, "size": [275, 303], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 700, 800]}\n]\n```"}
+{"key": "BUS-BRA:bus_0873-r|orig", "split": "test", "flipped": false, "size": [285, 349], "raw": "```json\n[\n  {\"box_2d\": [344, 284, 724, 644]}\n]\n```"}
+{"key": "BUS-BRA:bus_0481-l|orig", "split": "test", "flipped": false, "size": [323, 433], "raw": "```json\n[\n  {\"box_2d\": [284, 284, 644, 644]}\n]\n```"}
+{"key": "BUS-BRA:bus_0250-l|orig", "split": "test", "flipped": false, "size": [276, 383], "raw": "```json\n[\n  {\"label\": \"breast lesion\", \"bounding_box\": [344, 284, 844, 774]}\n]\n```"}
+{"key": "BUS-BRA:bus_0400-r|orig", "split": "test", "flipped": false, "size": [321, 433], "raw": "```json\n[\n  {\"box_2d\": [344, 284, 774, 744]}\n]\n```"}
+{"key": "BUS-BRA:bus_0426-r|orig", "split": "test", "flipped": false, "size": [323, 433], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 774, 744]}\n]\n```"}
+{"key": "BUS-BRA:bus_0670-l|orig", "split": "test", "flipped": false, "size": [322, 448], "raw": "```json\n[\n  {\"box_2d\": [384, 374, 744, 744]}\n]\n```"}
+{"key": "BUS-BRA:bus_0437-l|orig", "split": "test", "flipped": false, "size": [323, 453], "raw": "```json\n[\n  {\"box_2d\": [284, 244, 744, 674]}\n]\n```"}
+{"key": "BUS-BRA:bus_1033-r|orig", "split": "test", "flipped": false, "size": [529, 305], "raw": "```json\n[\n  {\"box_2d\": [300, 200, 700, 700]}\n]\n```"}
+{"key": "BUS-BRA:bus_0650-r|orig", "split": "test", "flipped": false, "size": [324, 452], "raw": "```json\n[\n  {\"box_2d\": [284, 383, 674, 704]}\n]\n```"}
+{"key": "BUS-BRA:bus_0141-l|orig", "split": "test", "flipped": false, "size": [280, 346], "raw": "```json\n[\n  {\"box_2d\": [344, 183, 834, 744]}\n]\n```"}
+{"key": "BUS-BRA:bus_0357-l|orig", "split": "test", "flipped": false, "size": [274, 332], "raw": "```json\n[\n  {\"label\": \"breast lesion\", \"bounding_box\": [100, 100, 700, 700]}\n]\n```"}
+{"key": "BUS-BRA:bus_0444-r|orig", "split": "test", "flipped": false, "size": [321, 456], "raw": "```json\n[\n  {\"label\": \"breast lesion\", \"bounding_box\": [344, 384, 674, 644]}\n]\n```"}
+{"key": "BUS-BRA:bus_0225-r|orig", "split": "test", "flipped": false, "size": [276, 315], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 500, 500]}\n]\n```"}
+{"key": "BUS-BRA:bus_0349-r|orig", "split": "test", "flipped": false, "size": [277, 296], "raw": "```json\n[\n  {\"box_2d\": [444, 384, 774, 744]}\n]\n```"}
+{"key": "BUS-BRA:bus_0379-l|orig", "split": "test", "flipped": false, "size": [320, 433], "raw": "```json\n[\n  {\"label\": \"breast lesion\", \"bounding_box\": [344, 284, 644, 644]}\n]\n```"}
+{"key": "BUS-BRA:bus_0003-l|orig", "split": "test", "flipped": false, "size": [275, 372], "raw": "```json\n[\n  {\"label\": \"breast lesion\", \"bounding_box\": [344, 284, 744, 744]}\n]\n```"}
+{"key": "BUS-BRA:bus_0964-r|orig", "split": "test", "flipped": false, "size": [285, 347], "raw": "```json\n[\n  {\"box_2d\": [344, 284, 784, 744]}\n]\n```"}
+{"key": "TN5000:000266|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 284, 774, 744]}\n]\n```"}
+{"key": "TN5000:000605|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 834, 773]}\n]\n```"}
+{"key": "TN5000:002480|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 784, 744]}\n]\n```"}
+{"key": "TN5000:003423|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": {\n      \"xmin\": 250,\n      \"ymin\": 200,\n      \"xmax\": 750,\n      \"ymax\": 700\n    }\n  }\n]\n```"}
+{"key": "TN5000:004017|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 184, 833, 844]}\n]\n```"}
+{"key": "TN5000:002899|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [284, 244, 774, 774]}\n]\n```"}
+{"key": "TN5000:003097|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 744, 744]}\n]\n```"}
+{"key": "TN5000:000516|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": [\n      500,\n      200,\n      800,\n      700\n    ]\n  }\n]\n```"}
+{"key": "TN5000:000581|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [300, 100, 800, 800]}\n]\n```"}
+{"key": "TN5000:003009|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 844, 804]}\n]\n```"}
+{"key": "TN5000:004429|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": {\n      \"xmin\": 244,\n      \"ymin\": 244,\n      \"xmax\": 773,\n      \"ymax\": 744\n    }\n  }\n]\n```"}
+{"key": "TN5000:001552|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 744, 644]}\n]\n```"}
+{"key": "TN5000:004162|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 844, 774]}\n]\n```"}
+{"key": "TN5000:003495|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 284, 844, 774]}\n]\n```"}
+{"key": "TN5000:002131|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 834, 744]}\n]\n```"}
+{"key": "TN5000:004948|orig", "split": "test", "flipped": false, "size": [718, 500], "raw": "```json\n[\n  {\n    \"label\": \"thyroid nodule\",\n    \"bounding_box\": [\n      500,\n      250,\n      750,\n      600\n    ]\n  }\n]\n```"}
+{"key": "HC18:323_HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 900, 800]}\n]\n```"}
+{"key": "HC18:800_HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 900, 900]}\n]\n```"}
+{"key": "HC18:238_HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 800, 800]}\n]\n```"}
+{"key": "HC18:031_HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 800, 800]}\n]\n```"}
+{"key": "HC18:575_HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [125, 144, 784, 744]}\n]\n```"}
+{"key": "HC18:652_2HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 900, 900]}\n]\n```"}
+{"key": "HC18:767_HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 800, 800]}\n]\n```"}
+{"key": "HC18:321_HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 800, 800]}\n]\n```"}
+{"key": "HC18:495_3HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 800, 800]}\n]\n```"}
+{"key": "HC18:775_HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 900, 900]}\n]\n```"}
+{"key": "HC18:699_HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 900, 900]}\n]\n```"}
+{"key": "HC18:718_2HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 800, 780]}\n]\n```"}
+{"key": "HC18:705_HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 900, 800]}\n]\n```"}
+{"key": "HC18:796_2HC|orig", "split": "test", "flipped": false, "size": [800, 540], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 900, 800]}\n]\n```"}
+{"key": "BrEaST:238|orig", "split": "test", "flipped": false, "size": [485, 537], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 700, 700]}\n]\n```"}
+{"key": "BrEaST:239|orig", "split": "test", "flipped": false, "size": [433, 469], "raw": "```json\n[\n  {\"box_2d\": [344, 284, 774, 744]}\n]\n```"}
+{"key": "BrEaST:60|orig", "split": "test", "flipped": false, "size": [545, 532], "raw": "```json\n[\n  {\"box_2d\": [500, 200, 900, 800]}\n]\n```"}
+{"key": "BrEaST:145|orig", "split": "test", "flipped": false, "size": [738, 552], "raw": "```json\n[\n  {\"box_2d\": [300, 200, 700, 700]}\n]\n```"}
+{"key": "BrEaST:95|orig", "split": "test", "flipped": false, "size": [887, 533], "raw": "```json\n[\n  {\"box_2d\": [344, 384, 644, 644]}\n]\n```"}
+{"key": "BrEaST:215|orig", "split": "test", "flipped": false, "size": [789, 542], "raw": "```json\n[\n  {\"box_2d\": [100, 100, 900, 800]}\n]\n```"}
+{"key": "BrEaST:214|orig", "split": "test", "flipped": false, "size": [761, 600], "raw": "```json\n[\n  {\"box_2d\": [384, 384, 644, 644]}\n]\n```"}
+{"key": "BrEaST:222|orig", "split": "test", "flipped": false, "size": [485, 537], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 744, 744]}\n]\n```"}
+{"key": "BrEaST:225|orig", "split": "test", "flipped": false, "size": [831, 538], "raw": "```json\n[\n  {\"box_2d\": [244, 184, 773, 744]}\n]\n```"}
+{"key": "BrEaST:52|orig", "split": "test", "flipped": false, "size": [761, 576], "raw": "```json\n[\n  {\"box_2d\": [344, 244, 744, 744]}\n]\n```"}
+{"key": "BrEaST:119|orig", "split": "test", "flipped": false, "size": [957, 527], "raw": "```json\n[\n  {\"box_2d\": [244, 244, 744, 744]}\n]\n```"}
+{"key": "BrEaST:54|orig", "split": "test", "flipped": false, "size": [930, 493], "raw": "```json\n[\n  {\"box_2d\": [500, 200, 800, 700]}\n]\n```"}
+{"key": "BrEaST:192|orig", "split": "test", "flipped": false, "size": [433, 469], "raw": "```json\n[\n  {\n    \"label\": \"breast lesion\",\n    \"bounding_box\": {\n      \"xmin\": 200,\n      \"ymin\": 200,\n      \"xmax\": 750,\n      \"ymax\": 700\n    }\n  }\n]\n```"}
+{"key": "BrEaST:59|orig", "split": "test", "flipped": false, "size": [545, 532], "raw": "```json\n[\n  {\"box_2d\": [300, 200, 700, 700]}\n]\n```"}
+{"key": "BrEaST:41|orig", "split": "test", "flipped": false, "size": [794, 413], "raw": "```json\n[\n  {\"box_2d\": [300, 100, 800, 700]}\n]\n```"}
+{"key": "BrEaST:58|orig", "split": "test", "flipped": false, "size": [503, 470], "raw": "```json\n[\n  {\"box_2d\": [384, 284, 774, 744]}\n]\n```"}
+{"key": "BrEaST:47|orig", "split": "test", "flipped": false, "size": [485, 537], "raw": "```json\n[\n  {\"box_2d\": [344, 284, 744, 744]}\n]\n```"}
+{"key": "BrEaST:184|orig", "split": "test", "flipped": false, "size": [930, 385], "raw": "```json\n[\n  {\n    \"label\": \"breast lesion\",\n    \"bounding_box\": {\n      \"xmin\": 450,\n      \"ymin\": 240,\n      \"xmax\": 750,\n      \"ymax\": 570\n    }\n  }\n]\n```"}
+{"key": "BrEaST:68|orig", "split": "test", "flipped": false, "size": [545, 532], "raw": "```json\n[\n  {\"box_2d\": [300, 300, 600, 600]}\n]\n```"}

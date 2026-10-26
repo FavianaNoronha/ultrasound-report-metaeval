@@ -24,3 +24,17 @@ def test_option_list_copied_as_value_is_dropped_and_counted(tmp_path):
 def test_boolean_lesion_maps_and_missing_quote_is_dropped(tmp_path):
     f, *_ = run(tmp_path, 'A mass is seen.', {'lesion': {'value': True, 'quote': 'A mass is seen'}, 'size_mm': {'value': 5, 'quote': None}})
     assert f['lesion'] == 'present' and 'size_mm' not in f
+
+def test_looser_quote_rule_accepts_shortened_quotes_only_when_asked(tmp_path):
+    rep = 'The mass measures approximately 2 cm in its greatest dimension.'
+    reply = {'size_mm': {'value': 20, 'quote': 'mass measures 2 cm greatest dimension'}}
+    f, bad, *_ = run(tmp_path, rep, reply); assert 'size_mm' not in f and bad == 1                       # exact rule (frozen default)
+    cli = graders.LocalLLM('m', str(tmp_path / 'b'), runner=lambda p: json.dumps(reply))
+    f, bad, *_ = schema_v2.extract_llm_v2(cli, rep, 'breast', quote_match='tokens80'); assert f['size_mm'] == 20 and bad == 0
+
+def test_medgemma_box_parser_conventions_and_named_keys():
+    from usmeta import medgemma_analysis as A
+    raw = '```json\n[{"box_2d": [100, 200, 300, 400]}]\n```'
+    assert A.mg_boxes(raw, 1000, 1000, 'yxyx1000') == [[200.0, 100.0, 400.0, 300.0]] and A.mg_boxes(raw, 1000, 1000, 'xyxy1000') == [[100.0, 200.0, 300.0, 400.0]]
+    named = '[{"label": "x", "bounding_box": {"xmin": 100, "ymin": 200, "xmax": 300, "ymax": 400}}]'
+    assert A.mg_boxes(named, 1000, 1000, 'xyxy1000') == [[100.0, 200.0, 300.0, 400.0]] and A.mg_boxes('no box here', 10, 10, 'xyxy1000') == []

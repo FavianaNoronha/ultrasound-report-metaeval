@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-27T03:13:39",
+  "git_commit": "4aa37ca",
+  "dataset_record_counts": {
+    "reports": 122,
+    "test_reports": 102,
+    "test_orig": 92,
+    "boxes": 112,
+    "probe": 120
+  },
+  "seeds": {
+    "dev_check_sample": 0,
+    "bootstrap": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "writer": "google/medgemma-1.5-4b-it, 4-bit MLX local conversion (group size 64)",
+    "judge_extractor": "mlx-community/Qwen2.5-7B-Instruct-4bit (non-Gemma)",
+    "qwen_graders": "gemma-2-9b-it-4bit"
+  },
+  "command": "python3 -m usmeta.medgemma reports|boxes|probe|extract|judge_q; python3 -m usmeta.medgemma_analysis layer0 DIR; python3 -m usmeta.medgemma_report DIR"
+}

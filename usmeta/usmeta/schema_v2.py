@@ -17,16 +17,24 @@ def number_from_quote(quote, field):
         if field == 'size_pct' and u == '%': return x
     return None
 
-def extract_llm_v2(cli, report, organ):
+def _quote_ok(q, rl, mode):
+    """exact: the quote is a substring of the report (default, the frozen rule). tokens80: at least 80% of the quote's words occur in the report, in order-free fashion (for extractors that paraphrase or shorten quotes)"""
+    qn = re.sub(r'\s+', ' ', str(q).lower())
+    if qn in rl: return True
+    if mode != 'tokens80': return False
+    toks = re.findall(r'[a-z0-9.%]+', qn); words = set(re.findall(r'[a-z0-9.%]+', rl))
+    return bool(toks) and sum(t in words for t in toks) / len(toks) >= 0.8
+
+def extract_llm_v2(cli, report, organ, prompt=None, quote_match='exact'):
     fields = '\n'.join(f'- {k}: {v}' for k, v in schema.LLM_FIELDS[organ].items())
-    t = cli.ask(schema.LLM_PROMPT.format(fields=fields, report=report), valid=lambda x: schema._parse_llm(x, organ) is not None)
+    t = cli.ask((prompt or schema.LLM_PROMPT).format(fields=fields, report=report), valid=lambda x: schema._parse_llm(x, organ) is not None)
     js = schema._parse_llm(t, organ)
     if js is None: return None, 0, 0, 0
     f, bad, opts, over = {}, 0, 0, 0; rl = re.sub(r'\s+', ' ', report.lower())
     for k in schema.LLM_FIELDS[organ]:
         d = js.get(k) or {}; v, q = d.get('value'), d.get('quote')
         if v in (None, '', 'null') or q in (None, ''): continue
-        if re.sub(r'\s+', ' ', str(q).lower()) not in rl: bad += 1; continue
+        if not _quote_ok(q, rl, quote_match): bad += 1; continue
         if k == 'lesion' and isinstance(v, bool): v = 'present' if v else 'absent'
         if isinstance(v, str) and ('|' in v): opts += 1; continue
         if not isinstance(v, (int, float)): v = str(v).strip().lower()

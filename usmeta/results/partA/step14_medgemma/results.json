@@ -1,0 +1,1289 @@
+{
+ "comparison": {
+  "BUS-BRA": {
+   "n": 21,
+   "groups": 21,
+   "too_small": true,
+   "scorers": {
+    "bleu": {
+     "n": 21,
+     "qwen": 0.020396347318567192,
+     "medgemma": 0.023584242073333955,
+     "diff": [
+      -0.003187894754766759,
+      -0.009526096731331457,
+      0.002672584809808817
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "rougeL": {
+     "n": 21,
+     "qwen": 0.1505137531615751,
+     "medgemma": 0.16377134813382993,
+     "diff": [
+      -0.013257594972254825,
+      -0.028193007449009738,
+      0.0012841507967856645
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "chrf": {
+     "n": 21,
+     "qwen": 0.2425281229469789,
+     "medgemma": 0.25435716389103963,
+     "diff": [
+      -0.011829040944060724,
+      -0.022060575861921485,
+      -0.001079753194584109
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "bertscore[roberta-large]": {
+     "n": 21,
+     "qwen": 0.8413023608071464,
+     "medgemma": 0.845547202087584,
+     "diff": [
+      -0.0042448412804376515,
+      -0.00780161562420073,
+      -0.000447729939506169
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "ratescore": {
+     "n": 21,
+     "qwen": 0.6297618662302727,
+     "medgemma": 0.5603296931673215,
+     "diff": [
+      0.0694321730629513,
+      0.029624929135634265,
+      0.10980228349509508
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "finding_f1": {
+     "n": 21,
+     "qwen": 0.2447478406567305,
+     "medgemma": 0.2835793222126703,
+     "diff": [
+      -0.038831481555939754,
+      -0.10981132272153943,
+      0.0413790712989076
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "sentence_f1_v2": {
+     "n": 21,
+     "qwen": 0.26775840051879696,
+     "medgemma": 0.3294410889893905,
+     "diff": [
+      -0.06168268847059347,
+      -0.2122617831956656,
+      0.08738902857561529
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "sentence_f1_v1": {
+     "n": 21,
+     "qwen": 0.5686542310339082,
+     "medgemma": 0.350994604652086,
+     "diff": [
+      0.21765962638182232,
+      0.048000246337544,
+      0.38171892336068813
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "iou": {
+     "n": 21,
+     "qwen": 0.2131146559407626,
+     "medgemma": 0.2576812079401708,
+     "diff": [
+      -0.044566551999408094,
+      -0.12083209799113348,
+      0.03945613507694654
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    }
+   }
+  },
+  "BrEaST": {
+   "n": 19,
+   "groups": 19,
+   "too_small": true,
+   "scorers": {
+    "bleu": {
+     "n": 19,
+     "qwen": 0.012217624281497225,
+     "medgemma": 0.016992375081601122,
+     "diff": [
+      -0.004774750800103896,
+      -0.009285945032855654,
+      -0.0007480211329272345
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "rougeL": {
+     "n": 19,
+     "qwen": 0.13047777024185622,
+     "medgemma": 0.13832615434051068,
+     "diff": [
+      -0.007848384098654454,
+      -0.021766151573135748,
+      0.00714357937812368
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "chrf": {
+     "n": 19,
+     "qwen": 0.3311098082798411,
+     "medgemma": 0.3276604820848939,
+     "diff": [
+      0.003449326194947106,
+      -0.013188142805387841,
+      0.01749388894486403
+     ],
+     "winner": "no clear winner",
+     "point_winner": "Qwen"
+    },
+    "bertscore[roberta-large]": {
+     "n": 19,
+     "qwen": 0.8481330620615106,
+     "medgemma": 0.84754520968387,
+     "diff": [
+      0.0005878523776405736,
+      -0.0033954616439969914,
+      0.003946276009082794
+     ],
+     "winner": "no clear winner",
+     "point_winner": "Qwen"
+    },
+    "ratescore": {
+     "n": 19,
+     "qwen": 0.5067830280701212,
+     "medgemma": 0.4681465030027843,
+     "diff": [
+      0.03863652506733665,
+      0.004540456725138872,
+      0.07075268965842434
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "finding_f1": {
+     "n": 19,
+     "qwen": 0.17504558183529642,
+     "medgemma": 0.29962471454703177,
+     "diff": [
+      -0.12457913271173536,
+      -0.2288553058657991,
+      -0.032971262790831055
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "sentence_f1_v2": {
+     "n": 19,
+     "qwen": 0.3653926075129254,
+     "medgemma": 0.4155151874971889,
+     "diff": [
+      -0.05012257998426337,
+      -0.14387877408331512,
+      0.04597031773983663
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "sentence_f1_v1": {
+     "n": 19,
+     "qwen": 0.5711828224118133,
+     "medgemma": 0.34390801517972025,
+     "diff": [
+      0.227274807232093,
+      0.11241523319298576,
+      0.3438151239452664
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "iou": {
+     "n": 19,
+     "qwen": 0.27815790422973974,
+     "medgemma": 0.21591608155518086,
+     "diff": [
+      0.06224182267455891,
+      -0.07146256167562019,
+      0.20143139961246986
+     ],
+     "winner": "no clear winner",
+     "point_winner": "Qwen"
+    }
+   }
+  },
+  "TN3K": {
+   "n": 22,
+   "groups": 22,
+   "too_small": true,
+   "scorers": {
+    "bleu": {
+     "n": 22,
+     "qwen": 0.006164958429337521,
+     "medgemma": 0.010205981064748624,
+     "diff": [
+      -0.004041022635411102,
+      -0.005363556948643988,
+      -0.0028517378132855023
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "rougeL": {
+     "n": 22,
+     "qwen": 0.08838862023182356,
+     "medgemma": 0.11548194306303029,
+     "diff": [
+      -0.02709332283120673,
+      -0.03603724123494802,
+      -0.017779605422300598
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "chrf": {
+     "n": 22,
+     "qwen": 0.15432134824289934,
+     "medgemma": 0.2046270334194493,
+     "diff": [
+      -0.050305685176549965,
+      -0.060348202998308,
+      -0.04095783998719491
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "bertscore[roberta-large]": {
+     "n": 22,
+     "qwen": 0.814174237576398,
+     "medgemma": 0.8299621777100996,
+     "diff": [
+      -0.01578794013370167,
+      -0.0194357999346473,
+      -0.012166973542083393
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "ratescore": {
+     "n": 22,
+     "qwen": 0.4116154831171159,
+     "medgemma": 0.43749331063022673,
+     "diff": [
+      -0.02587782751311083,
+      -0.054721186673007106,
+      0.0023961037013909203
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "finding_f1": {
+     "n": 22,
+     "qwen": 0.22503052503052504,
+     "medgemma": 0.24613543022633938,
+     "diff": [
+      -0.021104905195814292,
+      -0.07234099234099235,
+      0.03894578905942542
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "sentence_f1_v2": {
+     "n": 21,
+     "qwen": 0.18209320039983656,
+     "medgemma": 0.05871822413175797,
+     "diff": [
+      0.12337497626807858,
+      0.020851608625390917,
+      0.23044233243154463
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "sentence_f1_v1": {
+     "n": 19,
+     "qwen": 0.48995756046396843,
+     "medgemma": 0.1294646873594242,
+     "diff": [
+      0.3604928731045443,
+      0.25006926102621935,
+      0.4589335271434229
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "iou": {
+     "n": 22,
+     "qwen": 0.29705632660529246,
+     "medgemma": 0.26093604787167074,
+     "diff": [
+      0.036120278733621704,
+      -0.04319285867566193,
+      0.1231024807442279
+     ],
+     "winner": "no clear winner",
+     "point_winner": "Qwen"
+    }
+   }
+  },
+  "TN5000": {
+   "n": 16,
+   "groups": 16,
+   "too_small": true,
+   "scorers": {
+    "bleu": {
+     "n": 16,
+     "qwen": 0.005744824776209374,
+     "medgemma": 0.011631601993101502,
+     "diff": [
+      -0.0058867772168921285,
+      -0.0073808133423278535,
+      -0.00470484085930085
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "rougeL": {
+     "n": 16,
+     "qwen": 0.09533536226227578,
+     "medgemma": 0.12720419910109,
+     "diff": [
+      -0.03186883683881422,
+      -0.04665664611795681,
+      -0.01825451962783644
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "chrf": {
+     "n": 16,
+     "qwen": 0.15591349607206087,
+     "medgemma": 0.2081379777464275,
+     "diff": [
+      -0.052224481674366614,
+      -0.05992046083615156,
+      -0.043281131992769804
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "bertscore[roberta-large]": {
+     "n": 16,
+     "qwen": 0.8184558413922787,
+     "medgemma": 0.834379181265831,
+     "diff": [
+      -0.015923339873552322,
+      -0.018167324643582106,
+      -0.013479287549853326
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "ratescore": {
+     "n": 16,
+     "qwen": 0.45135702479789835,
+     "medgemma": 0.46865497766170633,
+     "diff": [
+      -0.01729795286380793,
+      -0.05058741878072354,
+      0.013424079867647104
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "finding_f1": {
+     "n": 16,
+     "qwen": 0.2007530663780664,
+     "medgemma": 0.22849164724164725,
+     "diff": [
+      -0.027738580863580865,
+      -0.10665542790542792,
+      0.04816588793151293
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "sentence_f1_v2": {
+     "n": 16,
+     "qwen": 0.21593929913395857,
+     "medgemma": 0.06279137529137528,
+     "diff": [
+      0.1531479238425833,
+      0.07517612568889659,
+      0.23774417471181208
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "sentence_f1_v1": {
+     "n": 14,
+     "qwen": 0.48448839245767533,
+     "medgemma": 0.15398802877794474,
+     "diff": [
+      0.33050036367973046,
+      0.17950699617965207,
+      0.45127478474659277
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "iou": {
+     "n": 16,
+     "qwen": 0.12426578385458381,
+     "medgemma": 0.1652408091329468,
+     "diff": [
+      -0.04097502527836298,
+      -0.13264971836198453,
+      0.06102246705501492
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    }
+   }
+  },
+  "HC18": {
+   "n": 14,
+   "groups": 14,
+   "too_small": true,
+   "scorers": {
+    "bleu": {
+     "n": 14,
+     "qwen": 0.003712657775790616,
+     "medgemma": 0.006305252292776626,
+     "diff": [
+      -0.002592594516986011,
+      -0.004144811456121694,
+      -0.0010063712950365445
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "rougeL": {
+     "n": 14,
+     "qwen": 0.03873043618633916,
+     "medgemma": 0.06212140968354596,
+     "diff": [
+      -0.023390973497206796,
+      -0.034710268733349064,
+      -0.012583957636739793
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "chrf": {
+     "n": 14,
+     "qwen": 0.07129252375332959,
+     "medgemma": 0.10127791305983284,
+     "diff": [
+      -0.029985389306503248,
+      -0.04632093283956669,
+      -0.014094873872105545
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "bertscore[roberta-large]": {
+     "n": 14,
+     "qwen": 0.8283920458384922,
+     "medgemma": 0.8267522496836526,
+     "diff": [
+      0.001639796154839652,
+      -0.0018705558563981738,
+      0.005070708372763224
+     ],
+     "winner": "no clear winner",
+     "point_winner": "Qwen"
+    },
+    "ratescore": {
+     "n": 14,
+     "qwen": 0.4487956159856811,
+     "medgemma": 0.4698440150618858,
+     "diff": [
+      -0.021048399076204864,
+      -0.050332971836453314,
+      0.0064010463434667
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "finding_f1": {
+     "n": 14,
+     "qwen": 0.0,
+     "medgemma": 0.0,
+     "diff": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "winner": "no clear winner",
+     "point_winner": "tie"
+    },
+    "sentence_f1_v2": {
+     "n": 14,
+     "qwen": 0.7994033977227256,
+     "medgemma": 0.41887715459144026,
+     "diff": [
+      0.38052624313128514,
+      0.1979863915263075,
+      0.5457942291135567
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "sentence_f1_v1": {
+     "n": 14,
+     "qwen": 0.7667786811694376,
+     "medgemma": 0.5251898894756037,
+     "diff": [
+      0.24158879169383374,
+      0.0937616762905629,
+      0.3905979008736361
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "iou": {
+     "n": 14,
+     "qwen": 0.7690084665055078,
+     "medgemma": 0.6429502631755731,
+     "diff": [
+      0.12605820332993475,
+      0.060250312123530686,
+      0.1956929222577953
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    }
+   }
+  },
+  "breast (BUS-BRA + BrEaST, pooled)": {
+   "n": 40,
+   "groups": 40,
+   "too_small": false,
+   "scorers": {
+    "bleu": {
+     "n": 40,
+     "qwen": 0.01651145387595896,
+     "medgemma": 0.020453105252260857,
+     "diff": [
+      -0.0039416513763018985,
+      -0.008188055039808446,
+      -0.00022636823850721055
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "rougeL": {
+     "n": 40,
+     "qwen": 0.1409966612747086,
+     "medgemma": 0.1516848810820033,
+     "diff": [
+      -0.01068821980729465,
+      -0.022122613146950867,
+      -0.00019525530907924738
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "chrf": {
+     "n": 40,
+     "qwen": 0.28460442348008846,
+     "medgemma": 0.2891762400331204,
+     "diff": [
+      -0.004571816553032005,
+      -0.013940992673552463,
+      0.00464045694450463
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "bertscore[roberta-large]": {
+     "n": 40,
+     "qwen": 0.8445469439029694,
+     "medgemma": 0.8464962556958199,
+     "diff": [
+      -0.0019493117928504945,
+      -0.0049202110990881915,
+      0.0007307855784893034
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "ratescore": {
+     "n": 40,
+     "qwen": 0.5713469181042007,
+     "medgemma": 0.5165426778391664,
+     "diff": [
+      0.054804240265034346,
+      0.026335952964050835,
+      0.08042466948726845
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "finding_f1": {
+     "n": 40,
+     "qwen": 0.21163926771654928,
+     "medgemma": 0.291200883571492,
+     "diff": [
+      -0.07956161585494267,
+      -0.13869492834886057,
+      -0.01752852342786848
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "sentence_f1_v2": {
+     "n": 40,
+     "qwen": 0.314134648841008,
+     "medgemma": 0.3703262857805947,
+     "diff": [
+      -0.05619163693958666,
+      -0.15133057966440347,
+      0.029246134373775375
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "sentence_f1_v1": {
+     "n": 40,
+     "qwen": 0.5698553119384131,
+     "medgemma": 0.34762847465271224,
+     "diff": [
+      0.2222268372857009,
+      0.11234959541542723,
+      0.3212219118536909
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "iou": {
+     "n": 40,
+     "qwen": 0.24401019887802677,
+     "medgemma": 0.23784277290730055,
+     "diff": [
+      0.006167425970726221,
+      -0.06683982939470405,
+      0.08630329643536569
+     ],
+     "winner": "no clear winner",
+     "point_winner": "Qwen"
+    }
+   }
+  },
+  "thyroid (TN3K + TN5000, pooled)": {
+   "n": 38,
+   "groups": 38,
+   "too_small": false,
+   "scorers": {
+    "bleu": {
+     "n": 38,
+     "qwen": 0.005988060049073039,
+     "medgemma": 0.010806242508265626,
+     "diff": [
+      -0.004818182459192588,
+      -0.0058088499107297915,
+      -0.0038674026056377798
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "rougeL": {
+     "n": 38,
+     "qwen": 0.09131356424464554,
+     "medgemma": 0.12041762981589754,
+     "diff": [
+      -0.029104065571251985,
+      -0.036973901268264775,
+      -0.021531079143256474
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "chrf": {
+     "n": 38,
+     "qwen": 0.1549917262762305,
+     "medgemma": 0.20610532576765062,
+     "diff": [
+      -0.051113599491420136,
+      -0.057555499605584495,
+      -0.04478895671224209
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "bertscore[roberta-large]": {
+     "n": 38,
+     "qwen": 0.815977018130453,
+     "medgemma": 0.8318219686809339,
+     "diff": [
+      -0.015844950550480894,
+      -0.018082341434139955,
+      -0.013602676870007265
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "ratescore": {
+     "n": 38,
+     "qwen": 0.42834876382481374,
+     "medgemma": 0.45061401253821814,
+     "diff": [
+      -0.02226524871340434,
+      -0.04501470583763248,
+      -0.000639863902275124
+     ],
+     "winner": "MedGemma",
+     "point_winner": "MedGemma"
+    },
+    "finding_f1": {
+     "n": 38,
+     "qwen": 0.2148084371768582,
+     "medgemma": 0.23870646896962694,
+     "diff": [
+      -0.02389803179276864,
+      -0.06952364521443469,
+      0.021286728622254947
+     ],
+     "winner": "no clear winner",
+     "point_winner": "MedGemma"
+    },
+    "sentence_f1_v2": {
+     "n": 37,
+     "qwen": 0.19672935120378118,
+     "medgemma": 0.060479586795376274,
+     "diff": [
+      0.13624976440840494,
+      0.06533454956207009,
+      0.20560927842457402
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "sentence_f1_v1": {
+     "n": 33,
+     "qwen": 0.4876373073703895,
+     "medgemma": 0.139868529173342,
+     "diff": [
+      0.34776877819704755,
+      0.2632982244968602,
+      0.43023696558434554
+     ],
+     "winner": "Qwen",
+     "point_winner": "Qwen"
+    },
+    "iou": {
+     "n": 38,
+     "qwen": 0.22430241386815203,
+     "medgemma": 0.22064331577115545,
+     "diff": [
+      0.0036590980969965726,
+      -0.0639169374928253,
+      0.0742842296803874
+     ],
+     "winner": "no clear winner",
+     "point_winner": "Qwen"
+    }
+   }
+  }
+ },
+ "medgemma_alone": {
+  "BUS-BRA": {
+   "n": 21,
+   "groups": 21,
+   "precision": [
+    0.33033500890643747,
+    0.2412420251705966,
+    0.4275979443836586
+   ],
+   "recall": [
+    0.28042328042328035,
+    0.20634920634920634,
+    0.3492063492063492
+   ],
+   "finding_f1": [
+    0.2835793222126703,
+    0.21342339141930028,
+    0.34795051752758516
+   ],
+   "sentence_f1_v2": [
+    0.3294410889893905,
+    0.22216574469502803,
+    0.44025094840673873
+   ],
+   "sentence_f1_v1": [
+    0.350994604652086,
+    0.2191020008014941,
+    0.49529231909274896
+   ],
+   "judge_score_v2": [
+    0.03333333333333334,
+    0.0,
+    0.09523809523809523
+   ],
+   "iou": [
+    0.2576812079401708,
+    0.19391711283667046,
+    0.31711740632060714
+   ],
+   "support_gtbox": [
+    0.2857142857142857,
+    0.09523809523809523,
+    0.47619047619047616
+   ],
+   "iou_ge_0.5": 0.047619047619047616,
+   "box_parse_rate": 1.0,
+   "any_error_v2": 1.0
+  },
+  "BrEaST": {
+   "n": 19,
+   "groups": 19,
+   "precision": [
+    0.3839201733938576,
+    0.28282530335161915,
+    0.49055517581833374
+   ],
+   "recall": [
+    0.25809716599190285,
+    0.1751012145748988,
+    0.354251012145749
+   ],
+   "finding_f1": [
+    0.29962471454703177,
+    0.20916830357740268,
+    0.39615521873244985
+   ],
+   "sentence_f1_v2": [
+    0.4155151874971889,
+    0.32666635035102215,
+    0.500317424816853
+   ],
+   "sentence_f1_v1": [
+    0.34390801517972025,
+    0.2331340372275267,
+    0.4616989818068726
+   ],
+   "judge_score_v2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "iou": [
+    0.21591608155518086,
+    0.12937811172246108,
+    0.3152427395596069
+   ],
+   "support_gtbox": [
+    0.21052631578947367,
+    0.05263157894736842,
+    0.42105263157894735
+   ],
+   "iou_ge_0.5": 0.15789473684210525,
+   "box_parse_rate": 1.0,
+   "any_error_v2": 1.0
+  },
+  "TN3K": {
+   "n": 22,
+   "groups": 22,
+   "precision": [
+    0.2706709956709957,
+    0.2067992424242424,
+    0.3296536796536796
+   ],
+   "recall": [
+    0.2454545454545455,
+    0.19090909090909092,
+    0.3000000000000001
+   ],
+   "finding_f1": [
+    0.24613543022633938,
+    0.19466810966810963,
+    0.2914926550722005
+   ],
+   "sentence_f1_v2": [
+    0.056049213943950786,
+    0.0,
+    0.12303485987696514
+   ],
+   "sentence_f1_v1": [
+    0.1294646873594242,
+    0.035020242914979766,
+    0.23253711201079616
+   ],
+   "judge_score_v2": [
+    0.031818181818181815,
+    0.0,
+    0.09545454545454544
+   ],
+   "iou": [
+    0.26093604787167074,
+    0.1842162797217168,
+    0.33534916787671587
+   ],
+   "support_gtbox": [
+    0.3181818181818182,
+    0.13636363636363635,
+    0.5
+   ],
+   "iou_ge_0.5": 0.09090909090909091,
+   "box_parse_rate": 1.0,
+   "any_error_v2": 1.0
+  },
+  "TN5000": {
+   "n": 16,
+   "groups": 16,
+   "precision": [
+    0.2252232142857143,
+    0.15312127976190473,
+    0.2998995535714285
+   ],
+   "recall": [
+    0.23750000000000002,
+    0.16250000000000003,
+    0.3125
+   ],
+   "finding_f1": [
+    0.22849164724164725,
+    0.1583248348873349,
+    0.30448596542346545
+   ],
+   "sentence_f1_v2": [
+    0.06279137529137528,
+    0.020979020979020976,
+    0.11407342657342656
+   ],
+   "sentence_f1_v1": [
+    0.15398802877794474,
+    0.04155844155844156,
+    0.30258455829884406
+   ],
+   "judge_score_v2": [
+    0.0062500000000000056,
+    0.0,
+    0.018750000000000017
+   ],
+   "iou": [
+    0.1652408091329468,
+    0.09483870099351319,
+    0.25205686932443855
+   ],
+   "support_gtbox": [
+    0.0625,
+    0.0,
+    0.1875
+   ],
+   "iou_ge_0.5": 0.0625,
+   "box_parse_rate": 1.0,
+   "any_error_v2": 1.0
+  },
+  "HC18": {
+   "n": 14,
+   "groups": 14,
+   "precision": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "recall": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "finding_f1": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sentence_f1_v2": [
+    0.41887715459144026,
+    0.30065887485530335,
+    0.5456445340373911
+   ],
+   "sentence_f1_v1": [
+    0.5251898894756037,
+    0.4045261583654441,
+    0.6432852564102565
+   ],
+   "judge_score_v2": [
+    0.27142857142857146,
+    0.1142857142857143,
+    0.41446428571428556
+   ],
+   "iou": [
+    0.6429502631755731,
+    0.5631598025700109,
+    0.7167253921174477
+   ],
+   "support_gtbox": [
+    0.7857142857142857,
+    0.5714285714285714,
+    1.0
+   ],
+   "iou_ge_0.5": 0.7142857142857143,
+   "box_parse_rate": 1.0,
+   "any_error_v2": 1.0
+  }
+ },
+ "attributes": {
+  "TN3K|lesion": {
+   "not stated": 2,
+   "correct": 19,
+   "wrong": 1
+  },
+  "TN3K|count": {
+   "not stated": 13,
+   "correct": 8,
+   "wrong": 1
+  },
+  "TN3K|pos": {
+   "not stated": 17,
+   "not comparable": 5
+  },
+  "TN3K|orient": {
+   "not stated": 22
+  },
+  "TN3K|size_pct": {
+   "not stated": 22
+  },
+  "BUS-BRA|lesion": {
+   "correct": 18,
+   "wrong": 2,
+   "not stated": 1
+  },
+  "BUS-BRA|count": {
+   "correct": 12,
+   "not stated": 9
+  },
+  "BUS-BRA|pos": {
+   "not comparable": 14,
+   "not stated": 7
+  },
+  "BUS-BRA|orient": {
+   "not stated": 20,
+   "correct": 1
+  },
+  "BUS-BRA|size_pct": {
+   "not stated": 21
+  },
+  "BUS-BRA|side": {
+   "wrong": 6,
+   "correct": 8,
+   "not stated": 7
+  },
+  "BUS-BRA|birads": {
+   "correct": 7,
+   "wrong": 10,
+   "not stated": 4
+  },
+  "BUS-BRA|path": {
+   "wrong": 7,
+   "correct": 7,
+   "not stated": 7
+  },
+  "BUS-BRA|hist": {
+   "not stated": 21
+  },
+  "TN5000|lesion": {
+   "correct": 13,
+   "not stated": 2,
+   "wrong": 1
+  },
+  "TN5000|count": {
+   "correct": 6,
+   "not stated": 8,
+   "wrong": 2
+  },
+  "TN5000|pos": {
+   "not comparable": 5,
+   "not stated": 11
+  },
+  "TN5000|orient": {
+   "not stated": 16
+  },
+  "TN5000|size_pct": {
+   "not stated": 16
+  },
+  "HC18|hc_mm": {
+   "not stated": 13,
+   "wrong": 1
+  },
+  "BrEaST|lesion": {
+   "correct": 15,
+   "wrong": 3,
+   "not stated": 1
+  },
+  "BrEaST|count": {
+   "not stated": 7,
+   "correct": 12
+  },
+  "BrEaST|pos": {
+   "not stated": 7,
+   "not comparable": 12
+  },
+  "BrEaST|orient": {
+   "not stated": 18,
+   "correct": 1
+  },
+  "BrEaST|size_mm": {
+   "not stated": 11,
+   "wrong": 6,
+   "correct": 2
+  },
+  "BrEaST|shape": {
+   "not stated": 13,
+   "correct": 3,
+   "wrong": 3
+  },
+  "BrEaST|margin": {
+   "not stated": 8,
+   "wrong": 5,
+   "correct": 6
+  },
+  "BrEaST|echo": {
+   "correct": 9,
+   "wrong": 8,
+   "not stated": 2
+  },
+  "BrEaST|post": {
+   "not stated": 16,
+   "correct": 3
+  },
+  "BrEaST|calc": {
+   "not stated": 15,
+   "correct": 4
+  },
+  "BrEaST|halo": {
+   "not stated": 18,
+   "correct": 1
+  },
+  "BrEaST|birads": {
+   "not stated": 4,
+   "wrong": 14,
+   "correct": 1
+  },
+  "BrEaST|path": {
+   "wrong": 6,
+   "correct": 8,
+   "not stated": 5
+  }
+ },
+ "judge_categories": {
+  "TN3K": {
+   "missed finding": 116,
+   "wrong location": 4,
+   "wrong measurement": 4,
+   "false finding": 11
+  },
+  "BUS-BRA": {
+   "wrong location": 25,
+   "wrong measurement": 20,
+   "false finding": 11,
+   "wrong category": 7,
+   "missed finding": 42,
+   "wrong severity/category": 1
+  },
+  "TN5000": {
+   "missed finding": 91,
+   "wrong location": 2,
+   "wrong measurement": 5,
+   "false finding": 5,
+   "wrong description": 1,
+   "wrong category": 1
+  },
+  "HC18": {
+   "missed finding": 53,
+   "wrong severity/category": 1,
+   "wrong location": 3,
+   "false finding": 1
+  },
+  "BrEaST": {
+   "missed finding": 60,
+   "false finding": 23,
+   "wrong location": 17,
+   "wrong measurement": 14,
+   "wrong category": 5,
+   "wrong description": 1,
+   "wrong severity/category": 1
+  }
+ },
+ "flips": [
+  {
+   "case": "TN3K:trainval/1877.jpg",
+   "dataset": "TN3K",
+   "facts_same_share": 0.16666666666666666,
+   "side_changed": null
+  },
+  {
+   "case": "BUS-BRA:bus_0372-l",
+   "dataset": "BUS-BRA",
+   "facts_same_share": 0.4444444444444444,
+   "side_changed": true
+  },
+  {
+   "case": "BUS-BRA:bus_0670-l",
+   "dataset": "BUS-BRA",
+   "facts_same_share": 0.5,
+   "side_changed": false
+  },
+  {
+   "case": "TN5000:003009",
+   "dataset": "TN5000",
+   "facts_same_share": 0.5714285714285714,
+   "side_changed": null
+  },
+  {
+   "case": "TN5000:004429",
+   "dataset": "TN5000",
+   "facts_same_share": 0.2857142857142857,
+   "side_changed": null
+  },
+  {
+   "case": "HC18:800_HC",
+   "dataset": "HC18",
+   "facts_same_share": 1.0,
+   "side_changed": null
+  },
+  {
+   "case": "HC18:767_HC",
+   "dataset": "HC18",
+   "facts_same_share": 1.0,
+   "side_changed": null
+  }
+ ],
+ "extractor": {
+  "reports": 122,
+  "unparsed": 10,
+  "quote_dropped": 29,
+  "numeric_overrides": 9
+ },
+ "box": {
+  "box_convention": "xyxy1000",
+  "convention_scores_dev": {
+   "yxyx1000": 0.24544182725337485,
+   "xyxy1000": 0.2675052493963045,
+   "yxyx896": 0.22466062272951987,
+   "xyxy896": 0.22981480225354156,
+   "xyxy_abs": 0.0779688882164381
+  },
+  "dev_boxes": 20
+ }
+}
