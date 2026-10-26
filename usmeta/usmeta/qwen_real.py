@@ -64,6 +64,12 @@ def extract_check(n=10):
 def extract_test():
     rows = [r for r in cases() if r['split'] == 'test']; extract_llm_batch(rows, f'{OUTD}/extract_test.jsonl')
 
+def extract_test_v2():
+    rows = [r for r in cases() if r['split'] == 'test']; extract_llm_batch(rows, f'{OUTD}/extract_test_v2.jsonl', 'v2')
+
+def extract_brest_check(n=10):
+    rows = [r for r in cases() if r['dataset'] == 'BrEaST' and r['split'] in ('dev', 'val') and not r['flipped']]; random.Random(0).shuffle(rows); extract_llm_batch(rows[:n], f'{OUTD}/extract_brest_check_v2.jsonl', 'v2')
+
 def judge():
     """Gemma sentence_check, prompt_v2 and prompt_v1, on TEST pairs (reference true report vs cleaned Qwen report)"""
     rows = [r for r in cases() if r['split'] == 'test']
@@ -113,4 +119,4 @@ def boxes():
         if i % 10 == 0: print(i, round(time.time() - t0), 's', flush=True)
 
 if __name__ == '__main__':
-    {'prep': prep, 'extract_check': extract_check, 'boxes': boxes, 'extract_test': extract_test, 'judge': judge}[sys.argv[1]]()
+    {'prep': prep, 'extract_check': extract_check, 'boxes': boxes, 'extract_test': extract_test, 'extract_test_v2': extract_test_v2, 'extract_brest_check': extract_brest_check, 'judge': judge}[sys.argv[1]]()

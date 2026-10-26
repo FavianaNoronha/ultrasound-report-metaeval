@@ -1,0 +1,665 @@
+{
+ "summary": {
+  "BUS-BRA": {
+   "n": 21,
+   "groups": 21,
+   "precision": [
+    0.2696900982615268,
+    0.23530045351473916,
+    0.3076596749811035
+   ],
+   "recall": [
+    0.2275132275132275,
+    0.20105820105820107,
+    0.25396825396825395
+   ],
+   "finding_f1": [
+    0.2447478406567305,
+    0.21525190485550943,
+    0.2743947579031612
+   ],
+   "sentence_f1_v1": [
+    0.5686542310339082,
+    0.5027023790713713,
+    0.636603636296556
+   ],
+   "sentence_f1_v2": [
+    0.26775840051879696,
+    0.1685256437215855,
+    0.3633327510953171
+   ],
+   "judge_score_v1": [
+    0.014285714285714287,
+    0.0,
+    0.042857142857142864
+   ],
+   "judge_score_v2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bleu": [
+    0.020396347318567192,
+    0.017615018612836233,
+    0.023208597490137015
+   ],
+   "chrf": [
+    0.2425281229469789,
+    0.23614288752921886,
+    0.2492678534294249
+   ],
+   "iou": [
+    0.2131146559407626,
+    0.14840053265381195,
+    0.2789464023502544
+   ],
+   "support_gtbox": [
+    0.09523809523809523,
+    0.0,
+    0.23809523809523808
+   ],
+   "pix_precision": [
+    0.16188515924705443,
+    0.10749803201586702,
+    0.22071565069958562
+   ],
+   "pix_recall": [
+    0.9504072582501669,
+    0.8540830401614927,
+    0.9995607613469986
+   ],
+   "iou_ge_0.5": 0.09523809523809523,
+   "iou_n": 21,
+   "parse_rate": 1.0,
+   "judge_v1_lists_any_error": 1.0,
+   "judge_v1_categories": {
+    "wrong location": 15,
+    "wrong measurement": 19,
+    "false finding": 48,
+    "wrong severity/category": 14,
+    "missed finding": 17
+   },
+   "judge_v2_lists_any_error": 1.0,
+   "judge_v2_categories": {
+    "wrong location": 21,
+    "wrong measurement": 22,
+    "false finding": 78,
+    "missed finding": 14,
+    "wrong severity/category": 12
+   },
+   "spearman_vs_iou": {
+    "bleu": -0.36883116883116884,
+    "chrf": -0.1935064935064935,
+    "finding_f1": -0.09148578594562831,
+    "sentence_f1_v2": -0.04737252203710336
+   }
+  },
+  "BrEaST": {
+   "n": 19,
+   "groups": 19,
+   "precision": [
+    0.23000992976321927,
+    0.1869110129636445,
+    0.26818111530282585
+   ],
+   "recall": [
+    0.1433634685152904,
+    0.10893087175981914,
+    0.17641972147285911
+   ],
+   "finding_f1": [
+    0.17504558183529642,
+    0.13714970914040525,
+    0.21178326990699023
+   ],
+   "sentence_f1_v1": [
+    0.5711828224118133,
+    0.5129861919820887,
+    0.6252746521114805
+   ],
+   "sentence_f1_v2": [
+    0.3653926075129254,
+    0.2919817818427508,
+    0.44307712601341404
+   ],
+   "judge_score_v1": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "judge_score_v2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bleu": [
+    0.012217624281497225,
+    0.011004801666654497,
+    0.013652882634661885
+   ],
+   "chrf": [
+    0.3311098082798411,
+    0.3199493237019422,
+    0.3410860873853563
+   ],
+   "iou": [
+    0.24288544968409537,
+    0.14166068802337478,
+    0.34175034499251894
+   ],
+   "support_gtbox": [
+    0.23529411764705882,
+    0.058823529411764705,
+    0.4117647058823529
+   ],
+   "pix_precision": [
+    0.19097863538424328,
+    0.09920711752410587,
+    0.2901414711074638
+   ],
+   "pix_recall": [
+    0.9640205385676588,
+    0.930523603596519,
+    0.9921818836247075
+   ],
+   "iou_ge_0.5": 0.23529411764705882,
+   "iou_n": 17,
+   "parse_rate": 1.0,
+   "judge_v1_lists_any_error": 1.0,
+   "judge_v1_categories": {
+    "wrong location": 17,
+    "wrong finding": 15,
+    "wrong severity/category": 16,
+    "missed finding": 14,
+    "false finding": 26,
+    "wrong measurement": 6
+   },
+   "judge_v2_lists_any_error": 1.0,
+   "judge_v2_categories": {
+    "wrong location": 19,
+    "wrong measurement": 18,
+    "wrong severity/category": 20,
+    "false finding": 43,
+    "missed finding": 14
+   },
+   "spearman_vs_iou": {
+    "bleu": -0.1213979382071141,
+    "chrf": 0.19607843137254904,
+    "finding_f1": 0.25616074355477697,
+    "sentence_f1_v2": 0.2895707701237375
+   }
+  },
+  "HC18": {
+   "n": 14,
+   "groups": 14,
+   "precision": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "recall": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "finding_f1": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "sentence_f1_v1": [
+    0.7667786811694376,
+    0.683330629746071,
+    0.8330843234729789
+   ],
+   "sentence_f1_v2": [
+    0.7994033977227256,
+    0.7075865573502128,
+    0.8673869547819131
+   ],
+   "judge_score_v1": [
+    0.9571428571428572,
+    0.8714285714285713,
+    1.0
+   ],
+   "judge_score_v2": [
+    0.05714285714285715,
+    0.0,
+    0.14285714285714285
+   ],
+   "bleu": [
+    0.003712657775790616,
+    0.0032233165908782365,
+    0.004217906401576238
+   ],
+   "chrf": [
+    0.07129252375332959,
+    0.06996894913736823,
+    0.07286569825531475
+   ],
+   "iou": [
+    0.7690084665055078,
+    0.6904262411031338,
+    0.8311252358546232
+   ],
+   "support_gtbox": [
+    0.9285714285714286,
+    0.7857142857142857,
+    1.0
+   ],
+   "pix_precision": [
+    0.7090418705320458,
+    0.6091087672372408,
+    0.7958289499501032
+   ],
+   "pix_recall": [
+    0.9637126008937213,
+    0.9411002784857899,
+    0.9832256753992816
+   ],
+   "iou_ge_0.5": 0.9285714285714286,
+   "iou_n": 14,
+   "parse_rate": 1.0,
+   "judge_v1_lists_any_error": 0.07142857142857142,
+   "judge_v1_categories": {
+    "missed finding": 1
+   },
+   "judge_v2_lists_any_error": 1.0,
+   "judge_v2_categories": {
+    "missed finding": 14,
+    "false finding": 94,
+    "wrong severity/category": 2
+   },
+   "spearman_vs_iou": {
+    "bleu": -0.1824385740018631,
+    "chrf": -0.3186813186813187,
+    "finding_f1": null,
+    "sentence_f1_v2": 0.22598697837675233
+   }
+  },
+  "TN3K": {
+   "n": 22,
+   "groups": 22,
+   "precision": [
+    0.2879329004329004,
+    0.24778003246753244,
+    0.32889610389610385
+   ],
+   "recall": [
+    0.19090909090909094,
+    0.17272727272727278,
+    0.20000000000000007
+   ],
+   "finding_f1": [
+    0.22503052503052504,
+    0.20010239760239762,
+    0.24430014430014432
+   ],
+   "sentence_f1_v1": [
+    0.4665265500294685,
+    0.4027999483886464,
+    0.5306374606878965
+   ],
+   "sentence_f1_v2": [
+    0.18209320039983656,
+    0.10004005312929799,
+    0.26842023027377726
+   ],
+   "judge_score_v1": [
+    0.05,
+    0.0,
+    0.1409090909090909
+   ],
+   "judge_score_v2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bleu": [
+    0.006164958429337521,
+    0.005429452442583659,
+    0.006907979306181409
+   ],
+   "chrf": [
+    0.15432134824289934,
+    0.14933103572276518,
+    0.15904316942960395
+   ],
+   "iou": [
+    0.29705632660529246,
+    0.1834811008788934,
+    0.4128413567992514
+   ],
+   "support_gtbox": [
+    0.5,
+    0.31704545454545463,
+    0.7272727272727273
+   ],
+   "pix_precision": [
+    0.43498286954954574,
+    0.2810133606523833,
+    0.5962151560323585
+   ],
+   "pix_recall": [
+    0.7897502597673032,
+    0.6620824916572978,
+    0.9098142624814027
+   ],
+   "iou_ge_0.5": 0.22727272727272727,
+   "iou_n": 22,
+   "parse_rate": 1.0,
+   "judge_v1_lists_any_error": 0.9545454545454546,
+   "judge_v1_categories": {
+    "missed finding": 23,
+    "wrong measurement": 5,
+    "false finding": 60,
+    "wrong severity/category": 8,
+    "wrong location": 1
+   },
+   "judge_v2_lists_any_error": 1.0,
+   "judge_v2_categories": {
+    "missed finding": 31,
+    "false finding": 70,
+    "wrong severity/category": 3,
+    "wrong category": 2,
+    "wrong location": 6,
+    "wrong measurement": 8,
+    "wrong measurement|wrong location": 1
+   },
+   "spearman_vs_iou": {
+    "bleu": 0.313382269904009,
+    "chrf": 0.3280632411067194,
+    "finding_f1": -0.16257161408219176,
+    "sentence_f1_v2": null
+   }
+  },
+  "TN5000": {
+   "n": 16,
+   "groups": 16,
+   "precision": [
+    0.23209325396825398,
+    0.1820858134920635,
+    0.28083581349206344
+   ],
+   "recall": [
+    0.1875,
+    0.1625,
+    0.2
+   ],
+   "finding_f1": [
+    0.2007530663780664,
+    0.16660195707070707,
+    0.22714387175324674
+   ],
+   "sentence_f1_v1": [
+    0.4951149277459449,
+    0.43396219645268536,
+    0.5562817378826177
+   ],
+   "sentence_f1_v2": [
+    0.21593929913395857,
+    0.14023458999828003,
+    0.2936159792864514
+   ],
+   "judge_score_v1": [
+    6.938893903907228e-18,
+    0.0,
+    2.0816681711721685e-17
+   ],
+   "judge_score_v2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "bleu": [
+    0.005744824776209374,
+    0.004753736858174322,
+    0.0068106098014443705
+   ],
+   "chrf": [
+    0.15591349607206087,
+    0.15238932903907054,
+    0.15910275330135346
+   ],
+   "iou": [
+    0.12426578385458381,
+    0.058320887145503444,
+    0.19964439065705752
+   ],
+   "support_gtbox": [
+    0.0625,
+    0.0,
+    0.1875
+   ],
+   "pix_precision": [
+    0.13736490956295885,
+    0.06539021519184875,
+    0.22362269151064593
+   ],
+   "pix_recall": [
+    0.793138387617371,
+    0.6025528169014085,
+    0.9375
+   ],
+   "iou_ge_0.5": 0.0,
+   "iou_n": 16,
+   "parse_rate": 1.0,
+   "judge_v1_lists_any_error": 1.0,
+   "judge_v1_categories": {
+    "false finding": 67,
+    "missed finding": 13,
+    "wrong location": 3,
+    "wrong measurement": 4,
+    "wrong severity/category": 1
+   },
+   "judge_v2_lists_any_error": 1.0,
+   "judge_v2_categories": {
+    "false finding": 82,
+    "missed finding": 30,
+    "wrong location": 4,
+    "wrong measurement": 9
+   },
+   "spearman_vs_iou": {
+    "bleu": -0.08100147275405008,
+    "chrf": 0.09124358614431533,
+    "finding_f1": -0.17863942081620873,
+    "sentence_f1_v2": 0.005993398909600538
+   }
+  }
+ },
+ "attributes": {
+  "TN3K|lesion": {
+   "correct": 21,
+   "wrong": 1
+  },
+  "TN3K|count": {
+   "not stated": 22
+  },
+  "TN3K|pos": {
+   "not stated": 21,
+   "not comparable": 1
+  },
+  "TN3K|orient": {
+   "not stated": 22
+  },
+  "TN3K|size_pct": {
+   "not stated": 22
+  },
+  "BUS-BRA|lesion": {
+   "correct": 21
+  },
+  "BUS-BRA|count": {
+   "not stated": 21
+  },
+  "BUS-BRA|pos": {
+   "not comparable": 16,
+   "not stated": 5
+  },
+  "BUS-BRA|orient": {
+   "not stated": 21
+  },
+  "BUS-BRA|size_pct": {
+   "not stated": 21
+  },
+  "BUS-BRA|side": {
+   "correct": 16,
+   "wrong": 4,
+   "not stated": 1
+  },
+  "BUS-BRA|birads": {
+   "correct": 6,
+   "wrong": 15
+  },
+  "BUS-BRA|path": {
+   "not stated": 20,
+   "wrong": 1
+  },
+  "BUS-BRA|hist": {
+   "not stated": 20,
+   "wrong": 1
+  },
+  "TN5000|lesion": {
+   "correct": 15,
+   "wrong": 1
+  },
+  "TN5000|count": {
+   "not stated": 16
+  },
+  "TN5000|pos": {
+   "not stated": 12,
+   "not comparable": 4
+  },
+  "TN5000|orient": {
+   "not stated": 16
+  },
+  "TN5000|size_pct": {
+   "not stated": 16
+  },
+  "HC18|hc_mm": {
+   "not stated": 14
+  },
+  "BrEaST|lesion": {
+   "correct": 18,
+   "wrong": 1
+  },
+  "BrEaST|count": {
+   "not stated": 19
+  },
+  "BrEaST|pos": {
+   "not comparable": 18,
+   "not stated": 1
+  },
+  "BrEaST|orient": {
+   "not stated": 19
+  },
+  "BrEaST|size_mm": {
+   "wrong": 14,
+   "correct": 3,
+   "not stated": 2
+  },
+  "BrEaST|shape": {
+   "wrong": 15,
+   "not stated": 3,
+   "correct": 1
+  },
+  "BrEaST|margin": {
+   "wrong": 12,
+   "not stated": 7
+  },
+  "BrEaST|echo": {
+   "correct": 8,
+   "not stated": 6,
+   "wrong": 5
+  },
+  "BrEaST|post": {
+   "wrong": 5,
+   "not stated": 14
+  },
+  "BrEaST|calc": {
+   "not stated": 16,
+   "correct": 3
+  },
+  "BrEaST|halo": {
+   "not stated": 19
+  },
+  "BrEaST|birads": {
+   "wrong": 19
+  },
+  "BrEaST|path": {
+   "not stated": 16,
+   "correct": 3
+  }
+ },
+ "flips": [
+  {
+   "case": "TN3K:trainval/1877.jpg",
+   "dataset": "TN3K",
+   "facts_same_share": 0.42857142857142855,
+   "side_changed": null,
+   "box_iou_orig_vs_mirrored_back": 0.9130291005291007
+  },
+  {
+   "case": "TN3K:trainval/2762.jpg",
+   "dataset": "TN3K",
+   "facts_same_share": 1.0,
+   "side_changed": null,
+   "box_iou_orig_vs_mirrored_back": 0.041184085025207824
+  },
+  {
+   "case": "TN3K:trainval/2764.jpg",
+   "dataset": "TN3K",
+   "facts_same_share": 1.0,
+   "side_changed": null,
+   "box_iou_orig_vs_mirrored_back": 0.053954864868388464
+  },
+  {
+   "case": "BUS-BRA:bus_0372-l",
+   "dataset": "BUS-BRA",
+   "facts_same_share": 0.42857142857142855,
+   "side_changed": true,
+   "box_iou_orig_vs_mirrored_back": 0.9943820660049123
+  },
+  {
+   "case": "BUS-BRA:bus_0670-l",
+   "dataset": "BUS-BRA",
+   "facts_same_share": 0.5,
+   "side_changed": false,
+   "box_iou_orig_vs_mirrored_back": 0.7058268459542343
+  },
+  {
+   "case": "TN5000:003009",
+   "dataset": "TN5000",
+   "facts_same_share": 1.0,
+   "side_changed": null,
+   "box_iou_orig_vs_mirrored_back": 0.1528357601058956
+  },
+  {
+   "case": "TN5000:004429",
+   "dataset": "TN5000",
+   "facts_same_share": 0.6,
+   "side_changed": null,
+   "box_iou_orig_vs_mirrored_back": 0.9369549418604654
+  },
+  {
+   "case": "HC18:800_HC",
+   "dataset": "HC18",
+   "facts_same_share": 1.0,
+   "side_changed": null,
+   "box_iou_orig_vs_mirrored_back": 0.34746010120669524
+  },
+  {
+   "case": "HC18:767_HC",
+   "dataset": "HC18",
+   "facts_same_share": 1.0,
+   "side_changed": null,
+   "box_iou_orig_vs_mirrored_back": 0.8620546600694131
+  },
+  {
+   "case": "HC18:796_2HC",
+   "dataset": "HC18",
+   "facts_same_share": 1.0,
+   "side_changed": null,
+   "box_iou_orig_vs_mirrored_back": 0.7997845043864978
+  }
+ ]
+}
