@@ -43,7 +43,9 @@ Fact checker and evidence check: AUROC 1.00, but only because the reports are te
 ## FREEZE (2026-10-24)
 Read `docs/LIMITATIONS.md` first. Tag `freeze-v1`: frozen items are listed in `FROZEN.md`; changes need a new version + `CHANGELOG.md`. Splits are locked (`splits.jsonl`): tune on dev/val only, report final numbers on test via `usmeta.splits.load("test")` (logged). Step 10 outputs are in `results/partA/step10*`.
 
-## PROGRESS (2026-10-23) - read before the old task list
+## FINAL (2026-10-27): Steps 2-17 done. Read `RESULTS_SUMMARY.md`, `results_layers_all_final.md`, `docs/LIMITATIONS.md`. Part B (MedSAM predicted masks, Step 16), HiSBreast (Step 15), MedGemma (Step 14), larger judge (Step 12) are done. Still open: clinician severity, GREEN, Claude judge (no credit), Jev (needs approval), LLaVA-Med, a lesion detector for Part B, repo visibility (user sets private).
+
+## PROGRESS (2026-10-23, older) - read before the old task list
 Done: stage 2 scorers (BERTScore, RaTEScore; GREEN not run), local Gemma judge, Qwen real reports (200 scans), Part A steps 2-9 (templates_v2, bench_v2d,
 Layers 0-3, results_layers_all.md). Use `bench_v2d.jsonl` and `true_reports_v2d.jsonl` (supersede bench_v2/v2b/v2c; BUS-BRA side bug fixed).
 Results are saved under `results/partA/stepN_*/` with `INDEX.md`; datasets manifest in `../datasets/`.

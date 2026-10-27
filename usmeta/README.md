@@ -3,6 +3,8 @@
 **Question.** Ultrasound report-generation papers grade reports with BLEU, ROUGE, BERTScore and similar. Do those
 scores drop for a clinically important mistake and stay high for harmless rewording? Which graders do?
 
+**Where the results are (read these first).** `RESULTS_SUMMARY.md` (plain-language findings, artefacts, unverified items, limits), `results_layers_all_final.md` (every scorer x every dataset, grouped by layer, test split, n and CIs; the old `results_layers_all.md` is the Step 9 version), `docs/LIMITATIONS.md`, and `results/partA/INDEX.md` (one folder per step, Steps 2-17). The "Status of v0" table below is the original stage-1 status and is out of date.
+
 **What this is.** A meta-evaluation benchmark and harness. It builds (reference, candidate) pairs with *planted errors*
 (with severity and magnitude) and *harmless rewordings*, runs any set of graders on them, and reports how well each
 grader tells them apart. Organs: breast, thyroid, fetal.
@@ -74,7 +76,7 @@ python -m usmeta.run report --bench bench.jsonl --scores scores.json --out resul
 | contamination | BUSI, BUS-BRA, TN3K, TN5000, HC18 are **possibly seen in training**; cannot be ruled out. BUS-BRA is the least-bad option, still flagged |
 
 ## Part A status (ground truth v2, Layers 0-3 on bench_v2d), as of 2026-10-23
-Everything below lives in `results/partA/` (see `results/partA/INDEX.md`; combined table: `results_layers_all.md`).
+Everything below lives in `results/partA/` (see `results/partA/INDEX.md`; combined table: `results_layers_all_final.md`; Step 9 version `results_layers_all.md`).
 | piece | state |
 |---|---|
 | true reports from record facts (`templates_v2.py`, 10 datasets, 3 styles) | done, tested; template sources "to confirm" (`docs/templates_sources.md`) |
