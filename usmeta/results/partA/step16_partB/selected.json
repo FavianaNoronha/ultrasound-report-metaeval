@@ -1,0 +1,1730 @@
+[
+ {
+  "case_id": "BrEaST:150",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:150",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:114",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:114",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:12",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:12",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:242",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:242",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:215",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:215",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:122",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:122",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:100",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:100",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:75",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:75",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:78",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:78",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:228",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:228",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:141",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:141",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:62",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:62",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:256",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:256",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:200",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:200",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:53",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:53",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:102",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:102",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:214",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:214",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:63",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:63",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:48",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:48",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:249",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:249",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:144",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:144",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:11",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:11",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:155",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:155",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:119",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:119",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:33",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:33",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:167",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:167",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:148",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:148",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:166",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:166",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:59",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:59",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BrEaST:19",
+  "dataset": "BrEaST",
+  "group_id": "BrEaST:19",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0935-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:935",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0213-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:213",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0861-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:861",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0468-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:468",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0302-s",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:302",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0868-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:868",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0713-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:713",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0235-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:235",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0636-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:636",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0861-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:861",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0935-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:935",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0479-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:479",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0270-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:270",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0531-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:531",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0274-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:274",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0051-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:51",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0420-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:420",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0002-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:2",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0927-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:927",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0199-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:199",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0575-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:575",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0213-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:213",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0636-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:636",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0589-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:589",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0051-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:51",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0938-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:938",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0412-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:412",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0002-l",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:2",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0750-s",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:750",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-BRA:bus_0085-r",
+  "dataset": "BUS-BRA",
+  "group_id": "BUS-BRA:85",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (166)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (166)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (362)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (362)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (304)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (304)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (373)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (373)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (96)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (97)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (24)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (24)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (199)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (199)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (1)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (1)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (65)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (65)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (306)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (306)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (76)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (76)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (196)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (196)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (393)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (393)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (103)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (103)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (315)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (315)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (314)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (314)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (44)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (44)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (251)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (251)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (26)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (26)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (164)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (85)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (141)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (141)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (29)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (29)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (63)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (63)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (172)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (172)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (81)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (81)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (430)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (430)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (154)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (154)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (137)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (137)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (158)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:malignant/malignant (158)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUSI:benign/benign (15)",
+  "dataset": "BUSI",
+  "group_id": "BUSI:benign/benign (332)",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000089",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000089",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000014",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000014",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000126",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000126",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000135",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000135",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000105",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000105",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000012",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000012",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000007",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000007",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000305",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000305",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000300",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000300",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000133",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000133",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000081",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000081",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000139",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000139",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000309",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000309",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000076",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000076",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000041",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000041",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000083",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000083",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000047",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000047",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000095",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000095",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000022",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000022",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000134",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000134",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000035",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000035",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000020",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000020",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000140",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000140",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000125",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000125",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000109",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000109",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000063",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000063",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000044",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000044",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000073",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000073",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000042",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000042",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "UDIAT:000127",
+  "dataset": "UDIAT",
+  "group_id": "UDIAT:000127",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:HUBL_008",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:HUBL",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:RARE_001",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:RARE",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:ALWI_011",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:ALWI",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:ANFO_009",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:ANFO",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:RARE_003",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:RARE",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:ANFO_004",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:ANFO",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:COVA_012",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:COVA",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:ALWI_020",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:ALWI",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:ALWI_009",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:ALWI",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:HUBL_019",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:HUBL",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:RARE_004",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:RARE",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:HUBL_015",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:HUBL",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:ANFO_005",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:ANFO",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:COVA_005",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:COVA",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:CODE_005",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:CODE",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:CODE_001",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:CODE",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:CODE_006",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:CODE",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "BUS-UCLM:COVA_011",
+  "dataset": "BUS-UCLM",
+  "group_id": "BUS-UCLM:COVA",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/1906.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/1906.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/1040.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/1040.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/2534.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/2534.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/0955.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/0955.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/2365.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/2365.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:test/0480.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:test/0480.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/1700.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/1700.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/1558.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/1558.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/0615.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/0615.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/2188.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/2188.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/0110.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/0110.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/0632.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/0632.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/1157.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/1157.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/1499.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/1499.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/2043.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/2043.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/0104.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/0104.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/1143.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/1143.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/2626.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/2626.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/2331.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/2331.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/2595.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/2595.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/1866.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/1866.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/1687.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/1687.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/2670.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/2670.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/0230.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/0230.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/2755.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/2755.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/1327.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/1327.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/0062.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/0062.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:test/0323.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:test/0323.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/2406.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/2406.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN3K:trainval/0899.jpg",
+  "dataset": "TN3K",
+  "group_id": "TN3K:trainval/0899.jpg",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:8_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:8",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:271_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:271",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:141_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:141",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:130_2",
+  "dataset": "DDTI",
+  "group_id": "DDTI:130",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:139_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:139",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:146_2",
+  "dataset": "DDTI",
+  "group_id": "DDTI:146",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:206_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:206",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:53_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:53",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:196_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:196",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:160_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:160",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:353_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:396",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:156_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:156",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:156_2",
+  "dataset": "DDTI",
+  "group_id": "DDTI:156",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:150_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:233",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:90_2",
+  "dataset": "DDTI",
+  "group_id": "DDTI:90",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:326_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:233",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:337_2",
+  "dataset": "DDTI",
+  "group_id": "DDTI:337",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:125_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:125",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:105_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:105",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:270_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:270",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:109_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:109",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:353_2",
+  "dataset": "DDTI",
+  "group_id": "DDTI:396",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:91_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:91",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:222_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:222",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:341_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:341",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:394_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:394",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:359_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:359",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:80_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:80",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:146_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:146",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "DDTI:168_1",
+  "dataset": "DDTI",
+  "group_id": "DDTI:168",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:440_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:440_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:742_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:742_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:047_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:047_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:748_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:748_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:744_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:744_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:787_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:787_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:266_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:266_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:611_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:611_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:143_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:143_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:394_2HC",
+  "dataset": "HC18",
+  "group_id": "HC18:394_2HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:375_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:375_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:229_2HC",
+  "dataset": "HC18",
+  "group_id": "HC18:229_2HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:746_4HC",
+  "dataset": "HC18",
+  "group_id": "HC18:746_4HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:200_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:200_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:103_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:103_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:003_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:003_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:731_3HC",
+  "dataset": "HC18",
+  "group_id": "HC18:731_3HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:755_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:755_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:429_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:429_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:505_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:505_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:180_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:180_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:535_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:535_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:679_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:679_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:610_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:610_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:338_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:338_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:331_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:331_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:560_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:560_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:315_2HC",
+  "dataset": "HC18",
+  "group_id": "HC18:315_2HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:760_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:760_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "HC18:247_HC",
+  "dataset": "HC18",
+  "group_id": "HC18:247_HC",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01537_Plane3_6_of_9",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01135",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient00917_Plane3_4_of_5",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient00917",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient00860_Plane3_2_of_3",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient00860",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01678_Plane3_4_of_8",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01678",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01426_Plane3_1_of_4",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01426",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient00798_Plane3_2_of_2",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient00798",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01158_Plane3_5_of_5",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01158",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01158_Plane3_2_of_5",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01158",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01678_Plane3_6_of_8",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01678",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01140_Plane3_2_of_3",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01140",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient00917_Plane3_3_of_5",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient00917",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient00870_Plane3_3_of_5",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient00870",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01730_Plane3_3_of_3",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01730",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01537_Plane3_1_of_9",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01135",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01537_Plane3_4_of_9",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01135",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01021_Plane3_2_of_2",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01021",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01678_Plane3_2_of_8",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01678",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01730_Plane3_2_of_3",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01730",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01579_Plane3_2_of_4",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01579",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01140_Plane3_1_of_3",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01140",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01579_Plane3_3_of_4",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01579",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01275_Plane3_2_of_7",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01275",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01505_Plane3_2_of_3",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01505",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient00870_Plane3_4_of_5",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient00870",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01484_Plane3_2_of_2",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01484",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01275_Plane3_7_of_7",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01275",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01275_Plane3_3_of_7",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01275",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01426_Plane3_4_of_4",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01426",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient01140_Plane3_3_of_3",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient01140",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "FetalHead:Patient00917_Plane3_5_of_5",
+  "dataset": "FetalHead",
+  "group_id": "FetalHead:Patient00917",
+  "has_true_mask": true
+ },
+ {
+  "case_id": "TN5000:003845",
+  "dataset": "TN5000",
+  "group_id": "TN5000:003845",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001733",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001733",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:003569",
+  "dataset": "TN5000",
+  "group_id": "TN5000:003569",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001593",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001593",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:003867",
+  "dataset": "TN5000",
+  "group_id": "TN5000:003867",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:000609",
+  "dataset": "TN5000",
+  "group_id": "TN5000:000609",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:000199",
+  "dataset": "TN5000",
+  "group_id": "TN5000:000199",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001413",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001413",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:004145",
+  "dataset": "TN5000",
+  "group_id": "TN5000:004145",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001661",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001661",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:000425",
+  "dataset": "TN5000",
+  "group_id": "TN5000:000425",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001853",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001853",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:002435",
+  "dataset": "TN5000",
+  "group_id": "TN5000:002435",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001032",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001032",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:002048",
+  "dataset": "TN5000",
+  "group_id": "TN5000:002048",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:003097",
+  "dataset": "TN5000",
+  "group_id": "TN5000:003097",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001914",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001914",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:004057",
+  "dataset": "TN5000",
+  "group_id": "TN5000:004057",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001331",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001331",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:003009",
+  "dataset": "TN5000",
+  "group_id": "TN5000:003009",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:002095",
+  "dataset": "TN5000",
+  "group_id": "TN5000:002095",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001403",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001403",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001030",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001030",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:003340",
+  "dataset": "TN5000",
+  "group_id": "TN5000:003340",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001023",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001023",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:003329",
+  "dataset": "TN5000",
+  "group_id": "TN5000:003329",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:001441",
+  "dataset": "TN5000",
+  "group_id": "TN5000:001441",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:003805",
+  "dataset": "TN5000",
+  "group_id": "TN5000:003805",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:003404",
+  "dataset": "TN5000",
+  "group_id": "TN5000:003404",
+  "has_true_mask": false
+ },
+ {
+  "case_id": "TN5000:000689",
+  "dataset": "TN5000",
+  "group_id": "TN5000:000689",
+  "has_true_mask": false
+ }
+]

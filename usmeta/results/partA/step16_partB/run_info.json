@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-27T12:11:59",
+  "git_commit": "d9c8d85",
+  "dataset_record_counts": {
+    "BrEaST": 30,
+    "BUS-BRA": 30,
+    "BUSI": 30,
+    "UDIAT": 30,
+    "BUS-UCLM": 18,
+    "TN3K": 30,
+    "DDTI": 30,
+    "HC18": 30,
+    "FetalHead": 30,
+    "TN5000": 30
+  },
+  "seeds": {
+    "selection": 0,
+    "bootstrap": 0,
+    "jitter": "crc32(case_id|frac)"
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": {
+    "segmenter": "wanglab/medsam-vit-base (Apache-2.0)",
+    "prompts": "true-mask boxes, exact / +10% / +20%"
+  },
+  "command": "python3 -m usmeta.partb select|predict|analyse"
+}
