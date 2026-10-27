@@ -1,44 +1,16 @@
-# Core dependencies
-torch>=2.0.0
-torchvision>=0.15.0
-numpy>=1.24.0
-pandas>=2.0.0
-Pillow>=9.5.0
+# Core: enough for the full test suite and for scoring Layers 0-1 (checked by running the tests with torch/transformers/mlx blocked)
+numpy
+scipy
+pandas
+Pillow
+sacrebleu
+openpyxl
+pytest
 
-# Medical imaging
-pydicom>=2.3.0
-SimpleITK>=2.2.0
-nibabel>=5.1.0
-
-# Machine Learning
-scikit-learn>=1.3.0
-scipy>=1.10.0
-
-# NLP for reports
-spacy>=3.5.0
-transformers>=4.30.0
-
-# Optional: Medical AI toolkit
-# monai>=1.2.0
-
-# Optional: LLM integration
-# openai>=1.0.0
-# anthropic>=0.3.0
-# langchain>=0.1.0
-
-# Data handling
-opencv-python>=4.8.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-
-# Development
-jupyter>=1.0.0
-ipython>=8.12.0
-pytest>=7.4.0
-black>=23.7.0
-flake8>=6.1.0
-
-# Utilities
-tqdm>=4.65.0
-python-dotenv>=1.0.0
-pyyaml>=6.0
+# Optional, only for the steps that need them:
+# torch transformers          MedSAM (Part B), BERTScore, local judge/report writers
+# bert-score                  BERTScore
+# RaTEScore                   RaTEScore
+# mlx-lm mlx-vlm              Apple-silicon runs of Gemma / Qwen2.5-VL / MedGemma
+# inspect-ai                  Inspect task wrapper (usmeta/usmeta/inspect_task.py)
+# anthropic openai            hosted judges (not used for the reported results)

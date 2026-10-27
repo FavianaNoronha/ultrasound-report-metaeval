@@ -1,228 +1,69 @@
-# Medical Imaging AI System
+# Do Report Scorers Catch Clinical Errors? A Meta-Evaluation of Metrics for AI-Generated Ultrasound Reports
 
-## Overview
-An agentic AI system that analyzes medical images (X-rays, CT scans, MRI) and generates expert-level radiology reports, similar to human radiologists.
+AI models now write ultrasound reports, and the scores used to grade those reports mostly count matching words. This project tests the
+scorers themselves, not the report writers. On breast, thyroid and fetal-head ultrasound (10 public datasets) we build a reference report
+from dataset labels and masks, then make candidates with **one planted clinical error** (wrong BI-RADS, wrong side, wrong size, an invented
+or missed finding, each with a provisional severity), **harmless rewordings** of the same report, and identical copies. A good scorer ranks
+the error below the harmless rewording. We test four layers of scorer: word overlap and embeddings (BLEU, ROUGE-L, chrF, BERTScore,
+RaTEScore), a structured fact check, an AI judge, and an image check against masks.
 
-## 🎯 Project Goals
-1. **Read medical images** from various modalities (X-ray, CT, MRI)
-2. **Extract meaningful data** using deep learning vision models
-3. **Generate professional reports** in standard radiology format
-4. **Assist radiologists** with AI-powered analysis
+We found no ultrasound work that tests the scorers with planted errors, severity and harmless rewordings (search not exhaustive).
 
-## 🏗️ Architecture
-
-The system uses a multi-agent architecture:
-
-- **Vision Agent**: Analyzes images, extracts features, detects ROIs
-- **Analysis Agent**: Identifies pathologies, classifies diseases, assesses severity
-- **Report Agent**: Generates natural language radiology reports
-- **Orchestrator**: Coordinates all agents in a complete pipeline
-
-See [docs/AI_AGENT_ARCHITECTURE.md](docs/AI_AGENT_ARCHITECTURE.md) for detailed architecture.
-
-## 📁 Project Structure
+## Design
 
 ```
-medical-imaging-ai/
-├── data/
-│   ├── raw/              # Raw medical images (DICOM, JPG)
-│   ├── processed/        # Preprocessed images
-│   └── reports/          # Generated reports
-├── src/
-│   ├── agent/
-│   │   ├── vision_agent.py      # Image analysis
-│   │   ├── analysis_agent.py    # Medical finding detection
-│   │   └── report_agent.py      # Report generation
-│   ├── models/           # Trained model weights
-│   ├── preprocessing/    # Data preprocessing utilities
-│   ├── utils/           # Helper functions
-│   └── orchestrator.py  # Main pipeline coordinator
-├── docs/
-│   ├── DATA_COLLECTION_GUIDE.md
-│   └── AI_AGENT_ARCHITECTURE.md
-├── notebooks/           # Jupyter notebooks for experimentation
-├── tests/              # Unit tests
-└── config/             # Configuration files
+dataset labels + masks  ->  true (reference) reports, built from templates
+                        ->  edited candidates: planted errors | harmless rewordings | identical copies
+                        ->  scorers (Layer 0 text metrics, 1 fact check, 2 AI judge, 3 image check)
+                        ->  AUROC per dataset: does the scorer rank "error" below "harmless"?
 ```
 
-## 🚀 Quick Start
+Splits are locked (dev / val / test, grouped by patient, exam or near-duplicate cluster). Choices were made on dev/val; final numbers are
+from the test split. Frozen versions are listed in `usmeta/FROZEN.md` (tag `freeze-v1`).
 
-### 1. Installation
+## Where to start
+
+- **`usmeta/RESULTS_SUMMARY.md`**: plain-language findings that hold, findings that do not, what is unverified, and the limits. Read this first.
+- **`usmeta/results/partA/INDEX.md`**: every step with its results folder (`results.md`, `run_info.json`, data); reruns are kept.
+- **`usmeta/docs/LIMITATIONS.md`**: read before quoting any number (templated references, provisional severity, no clinician, possible training exposure).
+- `usmeta/results_layers_all_final.md`: the combined test-split table by layer and dataset, with n and confidence intervals.
+- `usmeta/CHANGELOG.md`: retractions and fixes. `LICENSE-NOTES.md`: what the licence covers and what it does not.
+
+## Reproduce
+
+Python 3.9+ on a Mac or Linux box; the heavy steps (local judge, report writers, MedSAM) were run on a 16 GB Apple-silicon Mac.
 
 ```bash
-# Clone or navigate to project
-cd medical-imaging-ai
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
+pip install -r requirements.txt          # core: tables, tests, Layer 0/1 scoring
+cd usmeta
+PYTHONPATH=. python3 -m pytest -q tests  # full suite (needs no dataset and no GPU; local-data tests skip if the data is absent)
 ```
 
-### 2. Run Basic Example
-
-```python
-from src.orchestrator import MedicalImagingOrchestrator
-
-# Initialize the system
-orchestrator = MedicalImagingOrchestrator()
-
-# Process a single image
-result = orchestrator.process_image(
-    "data/raw/images/sample_xray.dcm",
-    output_dir="data/reports"
-)
-
-# View the report
-print(result['report'])
-```
-
-### 3. Command Line Usage
+To rebuild from the data, put the datasets under `~/Downloads` (or set `USMETA_DATA`) using the folder names in `datasets/manifest.json`, then:
 
 ```bash
-# Process single image
-python src/orchestrator.py --image path/to/xray.dcm --output reports/
-
-# Process batch of images
-python src/orchestrator.py --batch data/raw/images/ --output reports/
-
-# Generate JSON reports
-python src/orchestrator.py --image xray.dcm --format json
-
-# Use LLM for advanced reports (requires API key)
-python src/orchestrator.py --image xray.dcm --format llm --llm-key YOUR_API_KEY
+cd usmeta
+python3 -m usmeta.unified build          # label records -> usmeta/local_data/ (git-ignored)
+python3 -m usmeta.partb select           # Part B, then: predict, analyse  (needs torch + transformers; MedSAM weights download to the HF cache)
+python3 -m usmeta.final_table results_layers_all_final.md   # combined table from saved result files
 ```
 
-## 📊 Data Collection
+Each results folder holds a `run_info.json` with the command, versions and splits used. The Layer 2 judge and the VLM report writers need
+`torch`/`transformers` or `mlx-lm`/`mlx-vlm` and downloaded model weights (see `usmeta/docs/third_party.md`).
 
-### Step 1: Access Public Datasets
+## Data
 
-**Recommended Starting Point: MIMIC-CXR**
-- 377,110 chest X-rays with expert reports
-- Requires PhysioNet credentialing (free)
-- Guide: [docs/DATA_COLLECTION_GUIDE.md](docs/DATA_COLLECTION_GUIDE.md)
+**No datasets are included in this repository.** BrEaST, BUS-BRA, BUSI, UDIAT, BUS-UCLM, TN3K, TN5000, DDTI, HC18, the fetal-head plane
+dataset and HiSBreast come from their original sources and **keep their own licences** (all still marked "to confirm"; do not redistribute
+images). `datasets/manifest.json` lists expected folders, file counts, sizes and tree hashes so you can check your copy. Two small
+label files derived from datasets (`baseline_exp/breast.xlsx`, `baseline_exp/tn3k_records.json`) are in the repo; see `LICENSE-NOTES.md`.
+Never tracked: `usmeta/local_data/`, model weights, tokens, and any HiSBreast text, translation or exam id (a test guards this).
 
-### Step 2: Apply for Access
+## Repository layout
 
-1. Create account at https://physionet.org/
-2. Complete CITI training (free online course)
-3. Submit application with certificate
-4. Download dataset once approved
-
-### Other Datasets:
-- **NIH Chest X-ray**: 112,120 images (no credentialing)
-- **CheXpert**: 224,316 chest X-rays
-- **LIDC-IDRI**: 1,018 lung CT scans
-- **The Cancer Imaging Archive**: Multi-modal datasets
-
-See full list in [DATA_COLLECTION_GUIDE.md](docs/DATA_COLLECTION_GUIDE.md)
-
-## 🛠️ Technology Stack
-
-### Core Components:
-- **PyTorch**: Deep learning framework
-- **torchvision**: Pretrained vision models
-- **pydicom**: DICOM file handling
-- **numpy/pandas**: Data manipulation
-
-### Optional Enhancements:
-- **OpenAI GPT-4**: Advanced report generation
-- **Anthropic Claude**: LLM-based analysis
-- **LangChain**: Agent orchestration
-- **MONAI**: Medical imaging AI toolkit
-
-## 🧪 Development Workflow
-
-### Phase 1: Data Collection (Current Phase)
-- [ ] Apply for MIMIC-CXR access
-- [ ] Download sample datasets
-- [ ] Set up data storage
-- [ ] Create preprocessing pipeline
-
-### Phase 2: Model Development
-- [ ] Train/fine-tune vision models
-- [ ] Develop disease classifiers
-- [ ] Build report generation system
-- [ ] Validate against expert reports
-
-### Phase 3: Integration & Testing
-- [ ] End-to-end pipeline testing
-- [ ] Performance optimization
-- [ ] Clinical validation
-- [ ] User interface development
-
-## 📈 Performance Metrics
-
-The system will be evaluated on:
-
-**Image Analysis:**
-- Accuracy, Sensitivity, Specificity
-- AUC-ROC for disease classification
-- Dice score for segmentation
-
-**Report Generation:**
-- BLEU score (text similarity)
-- Clinical accuracy
-- Radiologist agreement rate
-
-## ⚖️ Legal & Ethical Considerations
-
-### Important Notes:
-1. **Not for Clinical Use**: This is a research/educational project
-2. **FDA Approval Required**: Medical AI devices need regulatory clearance
-3. **HIPAA Compliance**: All data must be de-identified
-4. **Expert Review**: AI reports should be reviewed by licensed radiologists
-5. **Data Use Agreements**: Follow all dataset terms of service
-
-### Disclaimer:
-This AI system is for research and educational purposes only. It is NOT approved for clinical diagnosis or treatment decisions. Always consult qualified healthcare professionals.
-
-## 📚 Resources & Documentation
-
-- [Data Collection Guide](docs/DATA_COLLECTION_GUIDE.md)
-- [AI Architecture](docs/AI_AGENT_ARCHITECTURE.md)
-- [Training Notebooks](notebooks/)
-
-## 🤝 Contributing
-
-This is a research project. Key areas for contribution:
-- Medical imaging preprocessing
-- Model training and fine-tuning
-- Report quality improvement
-- Clinical validation
-
-## 📧 Next Steps
-
-1. **Read the documentation** in `docs/`
-2. **Apply for dataset access** (MIMIC-CXR recommended)
-3. **Set up environment** with `pip install -r requirements.txt`
-4. **Run example code** to understand the pipeline
-5. **Start with small dataset** for initial testing
-6. **Iterate and improve** based on results
-
-## 🎓 Learning Resources
-
-- [Stanford ML for Healthcare](http://cs.stanford.edu/~acoates/cs229/)
-- [fastai Medical Imaging Course](https://course.fast.ai/)
-- [MICCAI (Medical Imaging Conference)](https://www.miccai.org/)
-- [Radiology AI Papers](https://pubs.rsna.org/journal/ai)
-
-## License
-
-Research and educational use only. Not for clinical deployment.
-
----
-
-**Status**: 🚧 In Development - Data Collection Phase
-
-For questions or guidance, refer to the documentation in `docs/` folder.
-
-## Data (usmeta: ultrasound report-scoring study)
-**No datasets are included in this repository.** The ultrasound datasets used by `usmeta/` (BrEaST, BUS-BRA, BUSI, UDIAT, BUS-UCLM,
-TN3K, TN5000, DDTI, HC18, fetal-head planes) must be obtained from their original sources, and each dataset's licence applies separately
-(every licence is still marked "to confirm"; do not redistribute images). `datasets/manifest.json` lists the expected folders, file counts,
-sizes and tree hashes so you can check that your copy matches; `datasets/README.md` explains the layout.
-Not tracked: `usmeta/local_data/` (records derived from the datasets), model weights, tokens and the HiSBreast text.
-The report texts in this repo are templated from dataset labels (synthetic but fact-correct) and the Qwen-written reports are model output.
+| path | what |
+|---|---|
+| `usmeta/` | the study: code (`usmeta/usmeta/`), tests, benchmarks, results, docs |
+| `datasets/` | manifest and manifest builder (no data) |
+| `baseline_exp/` | two label files read by `usmeta/usmeta/unified.py` |
+| `archive/legacy_scaffold/` | the earlier chest X-ray agent scaffold, kept for history; nothing imports it |

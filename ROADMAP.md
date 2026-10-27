@@ -1,62 +1,16 @@
-# Project Roadmap
+# Status and roadmap (2026-10-27)
 
-## Phase 1: Foundation (Weeks 1-2) ✅ CURRENT
-- [x] Project structure setup
-- [x] Documentation (architecture, data collection)
-- [x] Core agent implementations (Vision, Analysis, Report)
-- [x] Orchestrator pipeline
-- [ ] Apply for MIMIC-CXR dataset access
-- [ ] Download sample datasets (NIH Chest X-ray)
+## Done (Steps 2-17; see `usmeta/results/partA/INDEX.md`)
+- Templated reference reports and a planted-error benchmark on 10 ultrasound datasets; locked dev/val/test splits; frozen versions (`freeze-v1`).
+- Layer 0 (BLEU, ROUGE-L, chrF, BERTScore, RaTEScore), Layer 1 (fact F1, upper bound on templated text), Layer 2 (Gemma-2-9B judge), Layer 3 (true masks, then MedSAM predicted masks).
+- Real reports from Qwen2.5-VL-3B and MedGemma-1.5-4B; HiSBreast real-text check (101 of 427 machine-translated exams).
+- Final combined table and `usmeta/RESULTS_SUMMARY.md`.
 
-## Phase 2: Data Collection & Preprocessing (Weeks 3-4)
-- [ ] Download and organize MIMIC-CXR data
-- [ ] Implement data preprocessing pipeline
-- [ ] Create train/validation/test splits
-- [ ] Exploratory data analysis
-- [ ] Data quality checks
-- [ ] Parse radiology reports from text
+## Open (needs input or resources)
+- Clinician review of the severity ladder and of the template sources.
+- Bilingual review of the HiSBreast translations.
+- A lesion detector for Part B (so the segmenter is not given the box); GREEN; LLaVA-Med; a Claude judge (no credit); Jev (paid API, needs approval).
+- HiSBreast images with Qwen (needs a check for burned-in identifiers first).
+- Repo visibility is set by the owner.
 
-## Phase 3: Model Development (Weeks 5-8)
-- [ ] Fine-tune vision models on chest X-rays
-- [ ] Train disease classification models
-- [ ] Develop segmentation models for ROI detection
-- [ ] Implement report generation (template-based)
-- [ ] Integrate LLM for advanced report generation
-- [ ] Model evaluation and metrics
-
-## Phase 4: Integration & Testing (Weeks 9-10)
-- [ ] End-to-end pipeline testing
-- [ ] Performance optimization
-- [ ] Error handling and edge cases
-- [ ] Logging and monitoring
-- [ ] Documentation updates
-
-## Phase 5: Validation (Weeks 11-12)
-- [ ] Clinical validation with sample cases
-- [ ] Compare with radiologist reports
-- [ ] Calculate performance metrics
-- [ ] User feedback collection
-- [ ] Iterate on improvements
-
-## Future Enhancements
-- [ ] Support for multiple modalities (CT, MRI)
-- [ ] Multi-view analysis (frontal + lateral)
-- [ ] Prior comparison functionality
-- [ ] Web interface for easy access
-- [ ] PACS integration
-- [ ] Real-time processing
-- [ ] Continuous learning from feedback
-
-## Immediate Next Steps (This Week)
-1. ✅ Complete project setup
-2. Submit MIMIC-CXR access request
-3. Download NIH Chest X-ray dataset
-4. Set up development environment
-5. Test initial pipeline with sample images
-6. Begin data preprocessing development
-
-## Long-term Goals
-- FDA-ready validation (research only for now)
-- Multi-institutional validation
-- Publication of results
-- Open-source community contribution
+The earlier chest X-ray roadmap is in `archive/legacy_scaffold/ROADMAP_old.md`.
