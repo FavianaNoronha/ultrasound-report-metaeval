@@ -37,3 +37,14 @@ A new judge prompt_v3 that adds the TI-RADS cutoffs, tuned on dev/val only, froz
 
 ## Not claimed
 No "first" claims: we found no work that tests report scorers on guideline-threshold crossing in ultrasound (search not exhaustive). Thresholds and severity are guideline-derived, not clinician-confirmed.
+
+---
+
+# Amendment 1 (2026-10-28, appended before any scorer was run; the original text above is unchanged)
+
+Step 1 found 0 eligible cases (no dataset has both a size in mm and a TI-RADS level; see `feasibility.md`). The owner then approved synthetic sizes. What changes:
+
+1. **Main experiment (H1, H2, H4; text scorers only): synthetic size, real TI-RADS level.** Cases are DDTI cases with a real TI-RADS level TR3–TR5 (TR1/TR2 dropped, they have no cutoffs). DDTI has no size in mm, so the nodule size in mm is **synthetic**, set near the ACR TI-RADS cutoffs (margins of 2, 3 and 5 mm either side) plus control cases far from any cutoff. The TI-RADS level is never invented; DDTI's 4a/4b/4c are mapped to ACR TR4 ("to confirm"). Every such report, candidate and table is labelled **"synthetic size, real TI-RADS level"**. There is **no image check** in the main experiment (there is no real thyroid size to measure).
+2. **H3 moves to BrEaST at 20 mm (secondary, "to confirm", not a BI-RADS rule).** H3 is tested on BrEaST malignant cases with real pixel-size millimetres, MedSAM prompted with TRUE boxes (Step 16 setup), against the 20 mm staging-style cutoff. The three H3 conditions are applied with these definitions: (a) median absolute size error of the predicted mask larger than the smallest delta (2 mm); (b) share of cases whose predicted size lies on the other side of 20 mm than the true size ≥ 10%; (c) the AUROC part of the original H3 can only be computed where size-error candidates exist for these cases and is reported if n ≥ 30, otherwise H3 is judged on (a) and (b) only and the cell is marked "too small to compare" if n < 30. DDTI is not used for H3.
+3. H1, H2, H4 keep their wording, falsifiers and the primary analysis (test, delta = 3 mm, per dataset and level); the dataset is DDTI only, so "per dataset" is DDTI and the per-level rows are TR3, TR4, TR5 (TR3 has only 19 DDTI cases in all splits, so it will be "too small to compare" and is shown but not pooled).
+4. Everything else is unchanged: frozen versions, dev/val for design, test via `usmeta.splits.load('test')`, identical copies must score 1.0, stop-and-ask conditions.
