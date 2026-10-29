@@ -1,0 +1,314 @@
+[
+ {
+  "case_id": "BrEaST:11",
+  "group": "BrEaST:11",
+  "true_mm": 28,
+  "exact": 26,
+  "j10": 27,
+  "j20": 26
+ },
+ {
+  "case_id": "BrEaST:12",
+  "group": "BrEaST:12",
+  "true_mm": 21,
+  "exact": 20,
+  "j10": 20,
+  "j20": 22
+ },
+ {
+  "case_id": "BrEaST:26",
+  "group": "BrEaST:26",
+  "true_mm": 10,
+  "exact": 7,
+  "j10": 8,
+  "j20": 8
+ },
+ {
+  "case_id": "BrEaST:53",
+  "group": "BrEaST:53",
+  "true_mm": 14,
+  "exact": 13,
+  "j10": 14,
+  "j20": 18
+ },
+ {
+  "case_id": "BrEaST:58",
+  "group": "BrEaST:58",
+  "true_mm": 20,
+  "exact": 17,
+  "j10": 18,
+  "j20": 20
+ },
+ {
+  "case_id": "BrEaST:60",
+  "group": "BrEaST:60",
+  "true_mm": 9,
+  "exact": 6,
+  "j10": 7,
+  "j20": 8
+ },
+ {
+  "case_id": "BrEaST:63",
+  "group": "BrEaST:63",
+  "true_mm": 7,
+  "exact": 6,
+  "j10": 6,
+  "j20": 6
+ },
+ {
+  "case_id": "BrEaST:75",
+  "group": "BrEaST:75",
+  "true_mm": 6,
+  "exact": 5,
+  "j10": 6,
+  "j20": 5
+ },
+ {
+  "case_id": "BrEaST:76",
+  "group": "BrEaST:76",
+  "true_mm": 18,
+  "exact": 17,
+  "j10": 17,
+  "j20": 18
+ },
+ {
+  "case_id": "BrEaST:86",
+  "group": "BrEaST:86",
+  "true_mm": 32,
+  "exact": 27,
+  "j10": 31,
+  "j20": 34
+ },
+ {
+  "case_id": "BrEaST:88",
+  "group": "BrEaST:88",
+  "true_mm": 13,
+  "exact": 12,
+  "j10": 12,
+  "j20": 12
+ },
+ {
+  "case_id": "BrEaST:102",
+  "group": "BrEaST:102",
+  "true_mm": 15,
+  "exact": 13,
+  "j10": 13,
+  "j20": 15
+ },
+ {
+  "case_id": "BrEaST:105",
+  "group": "BrEaST:105",
+  "true_mm": 43,
+  "exact": 30,
+  "j10": 30,
+  "j20": 32
+ },
+ {
+  "case_id": "BrEaST:106",
+  "group": "BrEaST:106",
+  "true_mm": 29,
+  "exact": 23,
+  "j10": 23,
+  "j20": 24
+ },
+ {
+  "case_id": "BrEaST:109",
+  "group": "BrEaST:109",
+  "true_mm": 15,
+  "exact": 13,
+  "j10": 14,
+  "j20": 16
+ },
+ {
+  "case_id": "BrEaST:111",
+  "group": "BrEaST:111",
+  "true_mm": 12,
+  "exact": 11,
+  "j10": 12,
+  "j20": 12
+ },
+ {
+  "case_id": "BrEaST:114",
+  "group": "BrEaST:114",
+  "true_mm": 18,
+  "exact": 16,
+  "j10": 17,
+  "j20": 17
+ },
+ {
+  "case_id": "BrEaST:121",
+  "group": "BrEaST:121",
+  "true_mm": 8,
+  "exact": 6,
+  "j10": 6,
+  "j20": 7
+ },
+ {
+  "case_id": "BrEaST:144",
+  "group": "BrEaST:144",
+  "true_mm": 55,
+  "exact": 41,
+  "j10": 40,
+  "j20": 17
+ },
+ {
+  "case_id": "BrEaST:145",
+  "group": "BrEaST:145",
+  "true_mm": 16,
+  "exact": 12,
+  "j10": 13,
+  "j20": 13
+ },
+ {
+  "case_id": "BrEaST:147",
+  "group": "BrEaST:147",
+  "true_mm": 25,
+  "exact": 21,
+  "j10": 23,
+  "j20": 23
+ },
+ {
+  "case_id": "BrEaST:148",
+  "group": "BrEaST:148",
+  "true_mm": 31,
+  "exact": 30,
+  "j10": 31,
+  "j20": 31
+ },
+ {
+  "case_id": "BrEaST:150",
+  "group": "BrEaST:150",
+  "true_mm": 24,
+  "exact": 21,
+  "j10": 22,
+  "j20": 23
+ },
+ {
+  "case_id": "BrEaST:164",
+  "group": "BrEaST:164",
+  "true_mm": 23,
+  "exact": 21,
+  "j10": 21,
+  "j20": 24
+ },
+ {
+  "case_id": "BrEaST:173",
+  "group": "BrEaST:173",
+  "true_mm": 8,
+  "exact": 6,
+  "j10": 6,
+  "j20": 6
+ },
+ {
+  "case_id": "BrEaST:176",
+  "group": "BrEaST:176",
+  "true_mm": 17,
+  "exact": 19,
+  "j10": 20,
+  "j20": 22
+ },
+ {
+  "case_id": "BrEaST:206",
+  "group": "BrEaST:206",
+  "true_mm": 30,
+  "exact": 27,
+  "j10": 28,
+  "j20": 32
+ },
+ {
+  "case_id": "BrEaST:211",
+  "group": "BrEaST:211",
+  "true_mm": 12,
+  "exact": 8,
+  "j10": 8,
+  "j20": 9
+ },
+ {
+  "case_id": "BrEaST:218",
+  "group": "BrEaST:218",
+  "true_mm": 13,
+  "exact": 12,
+  "j10": 12,
+  "j20": 13
+ },
+ {
+  "case_id": "BrEaST:225",
+  "group": "BrEaST:225",
+  "true_mm": 32,
+  "exact": 24,
+  "j10": 25,
+  "j20": 27
+ },
+ {
+  "case_id": "BrEaST:228",
+  "group": "BrEaST:228",
+  "true_mm": 19,
+  "exact": 19,
+  "j10": 19,
+  "j20": 22
+ },
+ {
+  "case_id": "BrEaST:230",
+  "group": "BrEaST:230",
+  "true_mm": 13,
+  "exact": 10,
+  "j10": 10,
+  "j20": 11
+ },
+ {
+  "case_id": "BrEaST:233",
+  "group": "BrEaST:233",
+  "true_mm": 15,
+  "exact": 14,
+  "j10": 14,
+  "j20": 14
+ },
+ {
+  "case_id": "BrEaST:238",
+  "group": "BrEaST:238",
+  "true_mm": 11,
+  "exact": 8,
+  "j10": 9,
+  "j20": 9
+ },
+ {
+  "case_id": "BrEaST:239",
+  "group": "BrEaST:239",
+  "true_mm": 32,
+  "exact": 31,
+  "j10": 34,
+  "j20": 35
+ },
+ {
+  "case_id": "BrEaST:243",
+  "group": "BrEaST:243",
+  "true_mm": 21,
+  "exact": 20,
+  "j10": 21,
+  "j20": 21
+ },
+ {
+  "case_id": "BrEaST:244",
+  "group": "BrEaST:244",
+  "true_mm": 14,
+  "exact": 12,
+  "j10": 13,
+  "j20": 13
+ },
+ {
+  "case_id": "BrEaST:245",
+  "group": "BrEaST:245",
+  "true_mm": 23,
+  "exact": 20,
+  "j10": 21,
+  "j20": 22
+ },
+ {
+  "case_id": "BrEaST:249",
+  "group": "BrEaST:249",
+  "true_mm": 18,
+  "exact": 16,
+  "j10": 17,
+  "j20": 20
+ }
+]

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-29T23:21:01",
+  "git_commit": "214cf76",
+  "dataset_record_counts": null,
+  "seeds": {
+    "bootstrap": 0
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sacrebleu": "2.6.0",
+    "torch": "2.8.0",
+    "transformers": "4.57.6",
+    "bert_score": "0.3.13",
+    "RaTEScore": "0.6.0",
+    "pytest": "8.4.2"
+  },
+  "python": "3.9.6",
+  "models": null,
+  "command": "python3 -m usmeta.step19 s19.json s19.md"
+}

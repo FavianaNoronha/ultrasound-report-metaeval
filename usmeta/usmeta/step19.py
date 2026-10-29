@@ -62,7 +62,7 @@ def image_check():
     for ds in partb.DATASETS:
         for c in unified.load(partb.LOADER.get(ds, ds)): recs[c['case_id']] = c
     MR, M = partb.meas_rows(sel, recs); V = partb.verification(sel, M, recs); out = {}
-    for ds in ('BrEaST', 'BUS-BRA', 'BUSI', 'UDIAT', 'BUS-UCLM', 'TN3K', 'DDTI', 'TN5000'):
+    for ds in ('BrEaST', 'BUS-BRA', 'BUSI', 'UDIAT', 'BUS-UCLM', 'TN3K', 'DDTI', 'TN5000', 'HC18', 'FetalHead'):
         for cat, sub in (('wrong location', 'position errors'), ('wrong measurement', 'size errors')):
             for nm in ('mvf_exact', 'bleu', 'rougeL', 'chrf', 'bertscore[roberta-large]', 'ratescore'):
                 v, g = partb.case_aurocs(V, nm, sub, ds); out.setdefault(ds, {}).setdefault(cat, {})[nm] = dict(n=len(v), groups=len(set(g)), auroc=gboot(v, g) if v else None)
