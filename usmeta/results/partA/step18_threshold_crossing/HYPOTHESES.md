@@ -63,3 +63,5 @@ Built `usmeta/bench_v3_threshold.py` → `bench_v3_threshold.jsonl` (new file; `
 - **Dose-response:** per-replica AUROC of the errors in a size-change bin against the matched synonyms (ties 0.5), averaged over replicas; bins = |change| of 1, 2, 3, 5 mm and 5, 10, 20, 30, 50 %; smallest detectable change = the smallest bin whose group-bootstrap CI excludes 0.5.
 - **Judge:** run on the pairs needed for the primary contrast first (δ = 3 mm up and down of every pair/control replica, plus the matched synonyms and identical copies), then the dose-response bins if time allows within the 3-hour limit; n reported.
 - **H3 on BrEaST** (Amendment 1) is run separately in `partb`-style code with the Step 16 setup.
+
+**Erratum to Amendment 2:** the replica counts are dev 476, val 240, test 512 (1,228 in all), not the numbers written above.

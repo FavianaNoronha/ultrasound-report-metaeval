@@ -117,7 +117,7 @@ def report(split, out):
     json.dump(R, open(out, 'w'), indent=1); return R
 
 # ---------------------------------------------------------------- judge runner
-def judge_plan(rows, n_dose, seed=0):
+def judge_plan(rows, n_dose, seed=0, cap=None):
     """rows to judge, in priority order: (1) delta=3 mm up/down of every valid digit-matched pair replica and of controls (all, or a seeded sample of controls up to the pair count),
     matched synonym (first available) and identical copy for the same replicas; (2) dose-response extras for n_dose replicas: +-1, 2, 5 mm and the % bins"""
     rng = random.Random(seed); U = units_of(rows); first, extra = [], []
@@ -128,7 +128,9 @@ def judge_plan(rows, n_dose, seed=0):
         a, b = e[('mm', 3, 'up')], e[('mm', 3, 'down')]
         if a['role'] == 'control': ctrl_u.append(u)
         elif a['crossing'] != b['crossing'] and a['digits_new'] == b['digits_new']: pair_u.append(u)
-    rng.shuffle(ctrl_u); ctrl_u = ctrl_u[:max(len(pair_u), 1)]; chosen = pair_u + ctrl_u
+    rng.shuffle(pair_u); rng.shuffle(ctrl_u)
+    if cap: pair_u = pair_u[:cap]
+    ctrl_u = ctrl_u[:max(len(pair_u), 1)]; chosen = pair_u + ctrl_u
     for k, u in enumerate(chosen):
         rs = U[u]; e = {(r['delta_type'], r['nominal'], r['direction']): r for r in rs if r['kind'] == 'error'}
         first += [e[('mm', 3, 'up')], e[('mm', 3, 'down')]]
@@ -141,9 +143,9 @@ def judge_plan(rows, n_dose, seed=0):
         extra += [r for r in rs if r['kind'] == 'harmless' and r not in first]
     return first, extra
 
-def judge_run(split, n_dose=0):
+def judge_run(split, n_dose=0, cap=None):
     from . import judge2, judge2_test
-    rows = bench(split); first, extra = judge_plan(rows, n_dose); out = f'judge_v3_{split}.jsonl'
+    rows = bench(split); first, extra = judge_plan(rows, n_dose, cap=cap); out = f'judge_v3_{split}.jsonl'
     open(f'judge_v3_{split}_plan.jsonl', 'w').write(''.join(json.dumps(r) + '\n' for r in first + extra))
     done = {(json.loads(l)['reference'], json.loads(l)['candidate']) for l in open(out)} if os.path.exists(out) else set()
     todo = list(dict.fromkeys((r['reference'], r['candidate']) for r in first + extra if (r['reference'], r['candidate']) not in done))
@@ -155,5 +157,5 @@ def judge_run(split, n_dose=0):
     print('done', round(time.time() - t0), 's missing', sc.missing, flush=True)
 
 if __name__ == '__main__':
-    if sys.argv[1] == 'judge': judge_run(sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else 0)
+    if sys.argv[1] == 'judge': judge_run(sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else 0, int(sys.argv[4]) if len(sys.argv) > 4 else None)
     if sys.argv[1] == 'report': report(sys.argv[2], sys.argv[3])
