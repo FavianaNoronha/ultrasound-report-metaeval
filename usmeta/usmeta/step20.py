@@ -109,3 +109,28 @@ def tune():
 
 if __name__ == '__main__':
     {'select': select, 'predict': predict, 'tune': tune}.get(sys.argv[1], lambda: None)()
+
+# ---------------------------------------------------------------- evaluation ONCE on the test split (frozen tau / position from tuning_devval.json)
+SUBS = {'all checkable': CHECKABLE, 'position errors': ('pos',), 'size errors': SIZE}
+
+def evaluate(out):
+    ch = json.load(open(os.path.join(ROOT, 'results', 'partA', 'step20_tolerance_image_check', 'tuning_devval.json')))['chosen']; tau, pm = ch['tau'], ch['position']
+    sel = json.load(open(os.path.join(partb.LOCAL, 'selected.json'))); R = rows_for(sel, partb.MASKS); res = dict(frozen=dict(tau=tau, position=pm)); by = collections.defaultdict(lambda: collections.defaultdict(list))
+    for r, m, s in R: by[s['dataset']][r['case_id']].append((r, m, s))
+    groups = {'LESIONS': [d for d in by if LES(d)], 'HC18': ['HC18'], 'FetalHead': ['FetalHead']} ; groups.update({d: [d] for d in by if LES(d)})
+    for gname, dss in groups.items():
+        cases = {c: rs for d in dss for c, rs in by[d].items()}; row = {}
+        for variant, (t, p) in (('exact-match (Step 16 rule)', (0.0, 'exact')), (f'tolerance-aware (tau={tau}, {pm})', (tau, pm))):
+            sc = lambda r, m, t=t, p=p: tol_score(r['candidate'], r['organ'], m, t, p)
+            ident = [sc(r, m) for rs in cases.values() for r, m, s in rs if r['kind'] == 'identical']; harm = [sc(r, m) for rs in cases.values() for r, m, s in rs if r['kind'] == 'harmless']; v = dict(n_identical=len(ident), identical_mean=float(np.mean(ident)), share_full=float(np.mean([x > 0.999 for x in ident])), harmless_mean=float(np.mean(harm)))
+            for sname, fields in SUBS.items():
+                a, g = [], []
+                for c, rs in cases.items():
+                    e = [sc(r, m) for r, m, s in rs if r['kind'] == 'error' and r['field'] in fields]; h = [sc(r, m) for r, m, s in rs if r['kind'] == 'harmless']
+                    if e and h: a.append(auroc_case(e, h)); g.append(rs[0][2]['group_id'])
+                v[sname] = dict(n=len(a), auroc=gboot(a, g) if a else None)
+            row[variant] = v
+        res[gname] = row
+    json.dump(res, open(out, 'w'), indent=1); return res
+
+if __name__ == '__main__' and sys.argv[1] == 'test': evaluate(sys.argv[2])

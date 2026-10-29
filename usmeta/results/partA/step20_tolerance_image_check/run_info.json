@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-29T23:38:28",
+  "git_commit": "42f2036",
+  "seeds": {
+    "select": 1,
+    "bootstrap": 0
+  },
+  "python": "3.9.6",
+  "models": [
+    "wanglab/medsam-vit-base"
+  ],
+  "command": "python3 -m usmeta.step20 select|predict|tune|test"
+}
