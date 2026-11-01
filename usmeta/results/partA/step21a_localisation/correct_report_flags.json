@@ -1,0 +1,27 @@
+{
+ "exact": {
+  "n_correct_reports": 228,
+  "share_below_0_5": 0.017543859649122806,
+  "share_below_0_8": 0.24561403508771928
+ },
+ "centre50": {
+  "n_correct_reports": 228,
+  "share_below_0_5": 0.21929824561403508,
+  "share_below_0_8": 0.7017543859649122
+ },
+ "whole": {
+  "n_correct_reports": 228,
+  "share_below_0_5": 0.4298245614035088,
+  "share_below_0_8": 0.8552631578947368
+ },
+ "random": {
+  "n_correct_reports": 228,
+  "share_below_0_5": 0.16666666666666666,
+  "share_below_0_8": 0.793859649122807
+ },
+ "wrongregion": {
+  "n_correct_reports": 228,
+  "share_below_0_5": 0.24561403508771928,
+  "share_below_0_8": 0.9692982456140351
+ }
+}

@@ -1,0 +1,182 @@
+[
+ {
+  "id": "H01",
+  "case_id": "BrEaST:150",
+  "dataset": "BrEaST",
+  "organ": "breast"
+ },
+ {
+  "id": "H02",
+  "case_id": "BrEaST:114",
+  "dataset": "BrEaST",
+  "organ": "breast"
+ },
+ {
+  "id": "H03",
+  "case_id": "BUS-BRA:bus_0861-l",
+  "dataset": "BUS-BRA",
+  "organ": "breast"
+ },
+ {
+  "id": "H04",
+  "case_id": "BUS-BRA:bus_0772-s",
+  "dataset": "BUS-BRA",
+  "organ": "breast"
+ },
+ {
+  "id": "H05",
+  "case_id": "BUSI:malignant/malignant (9)",
+  "dataset": "BUSI",
+  "organ": "breast"
+ },
+ {
+  "id": "H06",
+  "case_id": "BUSI:benign/benign (11)",
+  "dataset": "BUSI",
+  "organ": "breast"
+ },
+ {
+  "id": "H07",
+  "case_id": "UDIAT:000137",
+  "dataset": "UDIAT",
+  "organ": "breast"
+ },
+ {
+  "id": "H08",
+  "case_id": "UDIAT:000095",
+  "dataset": "UDIAT",
+  "organ": "breast"
+ },
+ {
+  "id": "H09",
+  "case_id": "BUS-UCLM:PLBA_018",
+  "dataset": "BUS-UCLM",
+  "organ": "breast"
+ },
+ {
+  "id": "H10",
+  "case_id": "BUS-UCLM:VITR_004",
+  "dataset": "BUS-UCLM",
+  "organ": "breast"
+ },
+ {
+  "id": "H11",
+  "case_id": "TN3K:test/0178.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid"
+ },
+ {
+  "id": "H12",
+  "case_id": "TN3K:trainval/2316.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid"
+ },
+ {
+  "id": "H13",
+  "case_id": "TN3K:test/0270.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid"
+ },
+ {
+  "id": "H14",
+  "case_id": "TN5000:002333",
+  "dataset": "TN5000",
+  "organ": "thyroid"
+ },
+ {
+  "id": "H15",
+  "case_id": "TN5000:002033",
+  "dataset": "TN5000",
+  "organ": "thyroid"
+ },
+ {
+  "id": "H16",
+  "case_id": "TN5000:001150",
+  "dataset": "TN5000",
+  "organ": "thyroid"
+ },
+ {
+  "id": "H17",
+  "case_id": "DDTI:366_3",
+  "dataset": "DDTI",
+  "organ": "thyroid"
+ },
+ {
+  "id": "H18",
+  "case_id": "DDTI:8_1",
+  "dataset": "DDTI",
+  "organ": "thyroid"
+ },
+ {
+  "id": "H19",
+  "case_id": "DDTI:233_1",
+  "dataset": "DDTI",
+  "organ": "thyroid"
+ },
+ {
+  "id": "H20",
+  "case_id": "DDTI:130_2",
+  "dataset": "DDTI",
+  "organ": "thyroid"
+ },
+ {
+  "id": "H21",
+  "case_id": "HC18:265_HC",
+  "dataset": "HC18",
+  "organ": "fetal head"
+ },
+ {
+  "id": "H22",
+  "case_id": "HC18:794_HC",
+  "dataset": "HC18",
+  "organ": "fetal head"
+ },
+ {
+  "id": "H23",
+  "case_id": "HC18:756_2HC",
+  "dataset": "HC18",
+  "organ": "fetal head"
+ },
+ {
+  "id": "H24",
+  "case_id": "HC18:788_HC",
+  "dataset": "HC18",
+  "organ": "fetal head"
+ },
+ {
+  "id": "H25",
+  "case_id": "HC18:316_HC",
+  "dataset": "HC18",
+  "organ": "fetal head"
+ },
+ {
+  "id": "H26",
+  "case_id": "FetalHead:Patient01151_Plane3_5_of_13",
+  "dataset": "FetalHead",
+  "organ": "fetal head"
+ },
+ {
+  "id": "H27",
+  "case_id": "FetalHead:Patient01730_Plane3_2_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal head"
+ },
+ {
+  "id": "H28",
+  "case_id": "FetalHead:Patient00794_Plane3_1_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal head"
+ },
+ {
+  "id": "H29",
+  "case_id": "FetalHead:Patient01635_Plane3_4_of_4",
+  "dataset": "FetalHead",
+  "organ": "fetal head"
+ },
+ {
+  "id": "H30",
+  "case_id": "FetalHead:Patient01782_Plane3_1_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal head"
+ }
+]

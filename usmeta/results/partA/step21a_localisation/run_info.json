@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-02T03:40:36",
+  "git_commit": "0ee3cf0",
+  "seeds": {
+    "box": "crc32(case|condition)",
+    "bootstrap": 0
+  },
+  "models": [
+    "wanglab/medsam-vit-base"
+  ],
+  "command": "python3 -m usmeta.step21_localisation predict; analyse"
+}
