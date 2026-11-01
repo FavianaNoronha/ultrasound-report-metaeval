@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-02T02:57:30",
+  "git_commit": "fb79db4",
+  "seeds": {
+    "sizes": "crc32(step18|case|rep)",
+    "bootstrap": 0
+  },
+  "models": [
+    "mlx-community/gemma-2-9b-it-4bit (prompt_v2, greedy)",
+    "roberta-large BERTScore",
+    "RaTEScore 0.6.0",
+    "wanglab/medsam-vit-base"
+  ],
+  "command": "python3 -m usmeta.bench_v3_threshold build; layer0/layer1 score; step18 judge test 32; step18 report test; step18_h3 run"
+}
