@@ -1,0 +1,52 @@
+{
+ "BrEaST": {
+  "cases": 256,
+  "rows": 8000,
+  "rows_per_case": 31.2
+ },
+ "BUS-BRA": {
+  "cases": 151,
+  "rows": 3288,
+  "rows_per_case": 21.8
+ },
+ "BUSI": {
+  "cases": 150,
+  "rows": 2498,
+  "rows_per_case": 16.7
+ },
+ "UDIAT": {
+  "cases": 150,
+  "rows": 2815,
+  "rows_per_case": 18.8
+ },
+ "BUS-UCLM": {
+  "cases": 152,
+  "rows": 2045,
+  "rows_per_case": 13.5
+ },
+ "TN3K": {
+  "cases": 150,
+  "rows": 2627,
+  "rows_per_case": 17.5
+ },
+ "TN5000": {
+  "cases": 150,
+  "rows": 2640,
+  "rows_per_case": 17.6
+ },
+ "DDTI": {
+  "cases": 150,
+  "rows": 3405,
+  "rows_per_case": 22.7
+ },
+ "HC18": {
+  "cases": 150,
+  "rows": 2250,
+  "rows_per_case": 15.0
+ },
+ "FetalHead": {
+  "cases": 151,
+  "rows": 2408,
+  "rows_per_case": 15.9
+ }
+}
