@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-02T05:15:14",
+  "git_commit": "91be9a0",
+  "seeds": {
+    "judge_sample": 0,
+    "bootstrap": 0
+  },
+  "models": [
+    "gemma-2-9b-it-4bit prompt_v2 greedy",
+    "roberta-large",
+    "RaTEScore 0.6.0",
+    "wanglab/medsam-vit-base"
+  ],
+  "command": "python3 -m usmeta.step21_dose build|text|judge|analyse; step21_dose_md"
+}
