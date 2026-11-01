@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-02T02:22:20",
+  "git_commit": "315d4ac",
+  "seeds": {
+    "box_direction": "crc32(case|condition)",
+    "bootstrap": 0
+  },
+  "models": [
+    "wanglab/medsam-vit-base"
+  ],
+  "command": "python3 -m usmeta.step19_boxsweep predict; python3 -m usmeta.step19_boxsweep analyse results/partA/step19b_boxsweep"
+}
