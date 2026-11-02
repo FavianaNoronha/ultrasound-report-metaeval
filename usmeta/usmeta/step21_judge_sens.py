@@ -112,13 +112,13 @@ def analyse():
         for grp in list(ORGAN) + ['breast', 'thyroid', 'fetal head', 'ALL']:
             cs = {c: rs for c, rs in by.items() if grp in ('ALL',) or rs[0]['dataset'] == grp or ORGAN[rs[0]['dataset']] == grp}
             for var in ('original', 'swap', 'paraphraseA', 'paraphraseB', 'repeat'):
-                v, g = [], []
+                v, g, cid_ = [], [], []
                 for c, rs in cs.items():
                     e = [V[var].get((r['reference'], r['candidate'])) for r in rs if r['kind'] == 'error']; h = [V[var].get((r['reference'], r['candidate'])) for r in rs if r['kind'] == 'harmless']
                     if any(x is None for x in e + h): continue          # complete cases only, so every variant is compared on the same cases
                     e = [x[score] for x in e]; h = [x[score] for x in h]
-                    if e and h: v.append(auroc_case(e, h)); g.append(rs[0]['group_id'])
-                res[f'{score}|{grp}|{var}'] = dict(n_cases=len(v), n_groups=len(set(g)), auroc=gboot(v, g) if v else None, per_case=v, groups=g)
+                    if e and h: v.append(auroc_case(e, h)); g.append(rs[0]['group_id']); cid_.append(c)
+                res[f'{score}|{grp}|{var}'] = dict(n_cases=len(v), n_groups=len(set(g)), auroc=gboot(v, g) if v else None, per_case=v, groups=g, cases=cid_)
     # change vs original (paired by case) and share of pairs with |delta judge_score| > 0.1
     chg = {}
     for var in ('swap', 'paraphraseA', 'paraphraseB', 'repeat'):
@@ -126,10 +126,11 @@ def analyse():
             ks = [(r['reference'], r['candidate']) for r in rows if (grp == 'ALL' or r['dataset'] == grp or ORGAN[r['dataset']] == grp) and (r['reference'], r['candidate']) in V[var]]
             d = [abs(V[var][k]['judge'] - V['original'][k]['judge']) for k in ks]; df = [abs(V[var][k]['f1'] - V['original'][k]['f1']) for k in ks]
             a0, a1 = res[f'judge|{grp}|original'], res[f'judge|{grp}|{var}']
+            both = [c for c in a1['cases'] if c in set(a0['cases'])]; o_on_same = float(np.mean([a0['per_case'][a0['cases'].index(c)] for c in both])) if both else None       # original AUROC on exactly the cases the variant was run on
             chg[f'{var}|{grp}'] = dict(n_pairs=len(ks), share_judge_changed_gt_0_1=float(np.mean([x > 0.1 for x in d])) if d else None, share_any_change=float(np.mean([x > 1e-9 for x in d])) if d else None,
                                        share_f1_changed_gt_0_1=float(np.mean([x > 0.1 for x in df])) if df else None, mean_abs_delta_judge=float(np.mean(d)) if d else None,
-                                       auroc_original=a0['auroc'][0] if a0['auroc'] else None, auroc_variant=a1['auroc'][0] if a1['auroc'] else None,
-                                       auroc_change=(a1['auroc'][0] - a0['auroc'][0]) if a0['auroc'] and a1['auroc'] else None, n_cases=a1['n_cases'])
+                                       auroc_original=o_on_same, auroc_variant=a1['auroc'][0] if a1['auroc'] else None,
+                                       auroc_change=(a1['auroc'][0] - o_on_same) if o_on_same is not None and a1['auroc'] else None, n_cases=a1['n_cases'])
     json.dump(dict(auroc=res, change=chg), open(P('sens_results.json'), 'w'), indent=1); return res, chg
 
 if __name__ == '__main__':

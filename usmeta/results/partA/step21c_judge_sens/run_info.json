@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-02T15:07:35",
+  "git_commit": "ff91baa",
+  "seeds": {
+    "sample": 0,
+    "bootstrap": 0
+  },
+  "models": [
+    "mlx-community/gemma-2-9b-it-4bit greedy 500 tokens"
+  ],
+  "command": "python3 -m usmeta.step21_judge_sens run; analyse"
+}

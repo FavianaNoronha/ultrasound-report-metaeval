@@ -207,3 +207,6 @@ GREEN (7B model too large for 16 GB), Claude judge (no credit), Jev (paid API, n
 
 ## Addendum (2026-11-02): where the Step 19a–19b numbers sit
 Added sections only; the tables above are unchanged. Per-dataset paired preference, tie share, val-cut-off sensitivity / false-alarm rate and the error-type breakdown: `results/partA/step19a_pairs/results.md` (test split, group bootstrap, † = fewer than 30 groups). Image check under degraded box prompts (breast + thyroid pooled, fetal head separate): `results/partA/step19b_boxsweep/results.md`. Both are labelled as above: the paired-preference numbers reuse saved scores, the box sweep is a degraded-prompt test with boxes derived from the true masks.
+
+## Addendum (2026-11-04): Step 21 robustness tests
+Added sections only. Label-free prompts for the image check: `results/partA/step21a_localisation/results.md`. Size-error dose-response by scorer and organ: `results/partA/step21b_dose/results.md`. Judge sensitivity to prompt order and wording: `results/partA/step21c_judge_sens/results.md`. Human-rewording sheet (prepared, not scored): `results/partA/step21d_human_sheet/`. All test split, group bootstrap, cells under 30 groups marked "too small to compare"; `finding_f1` is an upper bound; the image check results are for breast + thyroid with MedSAM and are not detector results.
