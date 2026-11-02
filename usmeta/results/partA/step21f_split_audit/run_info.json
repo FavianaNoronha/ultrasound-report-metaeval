@@ -1,0 +1,5 @@
+{
+  "date": "2026-11-02T15:56:18",
+  "git_commit": "2ab86c1",
+  "command": "python3 -m usmeta.step21_split_audit results/partA/step21f_split_audit"
+}

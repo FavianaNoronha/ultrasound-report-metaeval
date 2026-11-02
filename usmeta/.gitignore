@@ -7,3 +7,4 @@ scores*.json
 .llm_cache/
 judge2_scores*.jsonl
 dedupe_hashes.npz
+.llm_cache_*/

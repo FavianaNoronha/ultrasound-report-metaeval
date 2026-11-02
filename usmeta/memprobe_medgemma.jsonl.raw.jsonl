@@ -1,0 +1,200 @@
+{"id": "BUS-BRA:bus_0195-l|text", "key": "BUS-BRA:bus_0195-l", "kind": "text", "size": null, "seconds": 0.8, "text": "Benign"}
+{"id": "BUS-BRA:bus_0195-l|img", "key": "BUS-BRA:bus_0195-l", "kind": "image_q", "size": [274, 383], "seconds": 2.9, "text": "The image appears to be a grayscale ultrasound image. It shows a complex, somewhat amorphous structure with some internal echoes or variations"}
+{"id": "BUS-BRA:bus_0135-r|text", "key": "BUS-BRA:bus_0135-r", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0135-r|img", "key": "BUS-BRA:bus_0135-r", "kind": "image_q", "size": [277, 352], "seconds": 2.7, "text": "The image appears to be from the **Breast Ultrasound** dataset."}
+{"id": "BUS-BRA:bus_0263-r|text", "key": "BUS-BRA:bus_0263-r", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0263-r|img", "key": "BUS-BRA:bus_0263-r", "kind": "image_q", "size": [277, 383], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a dark area with some texture, possibly representing a mass or"}
+{"id": "BUS-BRA:bus_0387-r|text", "key": "BUS-BRA:bus_0387-r", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0387-r|img", "key": "BUS-BRA:bus_0387-r", "kind": "image_q", "size": [322, 436], "seconds": 2.7, "text": "The image appears to be from the **GE** dataset."}
+{"id": "BUS-BRA:bus_0979-r|text", "key": "BUS-BRA:bus_0979-r", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUS-BRA:bus_0979-r|img", "key": "BUS-BRA:bus_0979-r", "kind": "image_q", "size": [284, 349], "seconds": 2.9, "text": "The image appears to be a grayscale ultrasound image. The texture and structure resemble a typical ultrasound image of a breast, potentially"}
+{"id": "BUS-BRA:bus_0369-l|text", "key": "BUS-BRA:bus_0369-l", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0369-l|img", "key": "BUS-BRA:bus_0369-l", "kind": "image_q", "size": [323, 453], "seconds": 2.7, "text": "The image appears to be from the **GE** dataset."}
+{"id": "BUS-BRA:bus_0480-l|text", "key": "BUS-BRA:bus_0480-l", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0480-l|img", "key": "BUS-BRA:bus_0480-l", "kind": "image_q", "size": [322, 434], "seconds": 3.1, "text": "The image appears to be from the **GE Mammomat 72** dataset."}
+{"id": "BUS-BRA:bus_0489-l|text", "key": "BUS-BRA:bus_0489-l", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0489-l|img", "key": "BUS-BRA:bus_0489-l", "kind": "image_q", "size": [323, 437], "seconds": 2.7, "text": "The image appears to be from the **GE Mammomat** dataset."}
+{"id": "BUS-BRA:bus_0594-l|text", "key": "BUS-BRA:bus_0594-l", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0594-l|img", "key": "BUS-BRA:bus_0594-l", "kind": "image_q", "size": [272, 399], "seconds": 2.8, "text": "The image appears to be from the **MAMADIRE** dataset."}
+{"id": "BUS-BRA:bus_0586-r|text", "key": "BUS-BRA:bus_0586-r", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0586-r|img", "key": "BUS-BRA:bus_0586-r", "kind": "image_q", "size": [323, 431], "seconds": 2.7, "text": "The image appears to be from the **GE** dataset."}
+{"id": "BUS-BRA:bus_0465-l|text", "key": "BUS-BRA:bus_0465-l", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0465-l|img", "key": "BUS-BRA:bus_0465-l", "kind": "image_q", "size": [322, 453], "seconds": 2.8, "text": "The image appears to be from the **Mammographic Index (MI)** dataset."}
+{"id": "BUS-BRA:bus_0569-r|text", "key": "BUS-BRA:bus_0569-r", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0569-r|img", "key": "BUS-BRA:bus_0569-r", "kind": "image_q", "size": [324, 433], "seconds": 2.7, "text": "The image appears to be from the **GE** dataset."}
+{"id": "BUS-BRA:bus_0660-l|text", "key": "BUS-BRA:bus_0660-l", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUS-BRA:bus_0660-l|img", "key": "BUS-BRA:bus_0660-l", "kind": "image_q", "size": [320, 432], "seconds": 2.9, "text": "The image appears to be from the **GE Mammomat 7000** dataset."}
+{"id": "BUS-BRA:bus_0586-l|text", "key": "BUS-BRA:bus_0586-l", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0586-l|img", "key": "BUS-BRA:bus_0586-l", "kind": "image_q", "size": [322, 431], "seconds": 2.7, "text": "The image appears to be from the **GE** dataset."}
+{"id": "BUS-BRA:bus_0628-l|text", "key": "BUS-BRA:bus_0628-l", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0628-l|img", "key": "BUS-BRA:bus_0628-l", "kind": "image_q", "size": [271, 397], "seconds": 2.8, "text": "The image appears to be from the **Mammographic Index (MI)** dataset."}
+{"id": "BUS-BRA:bus_0339-l|text", "key": "BUS-BRA:bus_0339-l", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0339-l|img", "key": "BUS-BRA:bus_0339-l", "kind": "image_q", "size": [279, 316], "seconds": 2.7, "text": "The image appears to be from the **Breast Ultrasound** dataset."}
+{"id": "BUS-BRA:bus_0332-r|text", "key": "BUS-BRA:bus_0332-r", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0332-r|img", "key": "BUS-BRA:bus_0332-r", "kind": "image_q", "size": [276, 349], "seconds": 3.2, "text": "The image appears to be from the **ISIC (International Skin Imaging Collaboration)** dataset. Specifically, it looks like a"}
+{"id": "BUS-BRA:bus_0521-l|text", "key": "BUS-BRA:bus_0521-l", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_0521-l|img", "key": "BUS-BRA:bus_0521-l", "kind": "image_q", "size": [321, 431], "seconds": 2.7, "text": "The image appears to be from the **GE Mammography** dataset."}
+{"id": "BUS-BRA:bus_0222-l|text", "key": "BUS-BRA:bus_0222-l", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUS-BRA:bus_0222-l|img", "key": "BUS-BRA:bus_0222-l", "kind": "image_q", "size": [273, 350], "seconds": 2.7, "text": "The image appears to be from the **QGEU** dataset."}
+{"id": "BUS-BRA:bus_1017-l|text", "key": "BUS-BRA:bus_1017-l", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUS-BRA:bus_1017-l|img", "key": "BUS-BRA:bus_1017-l", "kind": "image_q", "size": [276, 304], "seconds": 2.8, "text": "The image appears to be from the **Mammographic Index (MI)** dataset."}
+{"id": "BUSI:benign/benign (360)|text", "key": "BUSI:benign/benign (360)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:benign/benign (360)|img", "key": "BUSI:benign/benign (360)", "kind": "image_q", "size": [683, 574], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a dark, somewhat irregular structure in the center, possibly representing"}
+{"id": "BUSI:benign/benign (186)|text", "key": "BUSI:benign/benign (186)", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUSI:benign/benign (186)|img", "key": "BUSI:benign/benign (186)", "kind": "image_q", "size": [741, 574], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a dark, somewhat oval-shaped structure within a larger,"}
+{"id": "BUSI:normal/normal (64)|text", "key": "BUSI:normal/normal (64)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:normal/normal (64)|img", "key": "BUSI:normal/normal (64)", "kind": "image_q", "size": [558, 470], "seconds": 2.9, "text": "The image appears to be a grayscale ultrasound image showing a complex mass, possibly in the breast. This type of image is"}
+{"id": "BUSI:malignant/malignant (121)|text", "key": "BUSI:malignant/malignant (121)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:malignant/malignant (121)|img", "key": "BUSI:malignant/malignant (121)", "kind": "image_q", "size": [562, 476], "seconds": 2.8, "text": "The image appears to be from the **Breast Imaging Repository (BIR)** dataset."}
+{"id": "BUSI:benign/benign (242)|text", "key": "BUSI:benign/benign (242)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:benign/benign (242)|img", "key": "BUSI:benign/benign (242)", "kind": "image_q", "size": [556, 474], "seconds": 3.0, "text": "The image appears to be a sonogram of the left breast (indicated by \"LT\"). This type of image is commonly"}
+{"id": "BUSI:malignant/malignant (83)|text", "key": "BUSI:malignant/malignant (83)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:malignant/malignant (83)|img", "key": "BUSI:malignant/malignant (83)", "kind": "image_q", "size": [654, 616], "seconds": 3.0, "text": "The image appears to be from the **ISIC (International Skin Lesion Clinic)** dataset. Specifically, it looks like"}
+{"id": "BUSI:malignant/malignant (205)|text", "key": "BUSI:malignant/malignant (205)", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUSI:malignant/malignant (205)|img", "key": "BUSI:malignant/malignant (205)", "kind": "image_q", "size": [510, 470], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. The texture and overall appearance suggest it might be from a dataset like:"}
+{"id": "BUSI:benign/benign (220)|text", "key": "BUSI:benign/benign (220)", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUSI:benign/benign (220)|img", "key": "BUSI:benign/benign (220)", "kind": "image_q", "size": [609, 396], "seconds": 3.0, "text": "The image appears to be from the **ISIC (International Skin Imaging Collaboration)** dataset. Specifically, it looks like a"}
+{"id": "BUSI:benign/benign (192)|text", "key": "BUSI:benign/benign (192)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:benign/benign (192)|img", "key": "BUSI:benign/benign (192)", "kind": "image_q", "size": [557, 474], "seconds": 2.8, "text": "This image appears to be from the **Breast Imaging Repository (BIR)** dataset."}
+{"id": "BUSI:benign/benign (367)|text", "key": "BUSI:benign/benign (367)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:benign/benign (367)|img", "key": "BUSI:benign/benign (367)", "kind": "image_q", "size": [560, 462], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a complex structure with multiple internal echoes, suggesting a mass or"}
+{"id": "BUSI:benign/benign (275)|text", "key": "BUSI:benign/benign (275)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:benign/benign (275)|img", "key": "BUSI:benign/benign (275)", "kind": "image_q", "size": [556, 463], "seconds": 3.0, "text": "The image appears to be from the **ISIC (International Skin Imaging Collaboration)** dataset. Specifically, it looks like a"}
+{"id": "BUSI:malignant/malignant (63)|text", "key": "BUSI:malignant/malignant (63)", "kind": "text", "size": null, "seconds": 0.3, "text": "malignant"}
+{"id": "BUSI:malignant/malignant (63)|img", "key": "BUSI:malignant/malignant (63)", "kind": "image_q", "size": [795, 572], "seconds": 2.9, "text": "The image appears to be from the **\"Ultrasound of the Breast\"** dataset."}
+{"id": "BUSI:normal/normal (13)|text", "key": "BUSI:normal/normal (13)", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUSI:normal/normal (13)|img", "key": "BUSI:normal/normal (13)", "kind": "image_q", "size": [779, 574], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image, likely of muscle tissue. It shows a complex, somewhat irregular texture."}
+{"id": "BUSI:malignant/malignant (84)|text", "key": "BUSI:malignant/malignant (84)", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUSI:malignant/malignant (84)|img", "key": "BUSI:malignant/malignant (84)", "kind": "image_q", "size": [649, 612], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image, likely of a vein or artery. It shows a dark, somewhat irregular"}
+{"id": "BUSI:malignant/malignant (78)|text", "key": "BUSI:malignant/malignant (78)", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUSI:malignant/malignant (78)|img", "key": "BUSI:malignant/malignant (78)", "kind": "image_q", "size": [880, 567], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a rounded, somewhat irregular structure with a central area that is"}
+{"id": "BUSI:benign/benign (297)|text", "key": "BUSI:benign/benign (297)", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUSI:benign/benign (297)|img", "key": "BUSI:benign/benign (297)", "kind": "image_q", "size": [467, 390], "seconds": 3.0, "text": "The image appears to be from the **ISIC (International Skin Lesion Challenge)** dataset. Specifically, it looks like"}
+{"id": "BUSI:benign/benign (57)|text", "key": "BUSI:benign/benign (57)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:benign/benign (57)|img", "key": "BUSI:benign/benign (57)", "kind": "image_q", "size": [555, 470], "seconds": 2.9, "text": "This image appears to be from the **Breast Imaging Repository (BIR)** dataset."}
+{"id": "BUSI:malignant/malignant (57)|text", "key": "BUSI:malignant/malignant (57)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:malignant/malignant (57)|img", "key": "BUSI:malignant/malignant (57)", "kind": "image_q", "size": [717, 533], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a complex mass or structure with multiple internal structures, possibly representing"}
+{"id": "BUSI:benign/benign (406)|text", "key": "BUSI:benign/benign (406)", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BUSI:benign/benign (406)|img", "key": "BUSI:benign/benign (406)", "kind": "image_q", "size": [563, 463], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image of a mass or lesion. It is difficult to definitively identify the specific dataset"}
+{"id": "BUSI:normal/normal (108)|text", "key": "BUSI:normal/normal (108)", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BUSI:normal/normal (108)|img", "key": "BUSI:normal/normal (108)", "kind": "image_q", "size": [770, 589], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image showing muscle tissue. It's difficult to definitively identify the specific dataset without"}
+{"id": "BrEaST:124|text", "key": "BrEaST:124", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:124|img", "key": "BrEaST:124", "kind": "image_q", "size": [727, 518], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a large, round, dark structure in the center, possibly"}
+{"id": "BrEaST:35|text", "key": "BrEaST:35", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BrEaST:35|img", "key": "BrEaST:35", "kind": "image_q", "size": [545, 532], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image, likely of a muscle or tissue. It shows a complex pattern of echoes"}
+{"id": "BrEaST:110|text", "key": "BrEaST:110", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:110|img", "key": "BrEaST:110", "kind": "image_q", "size": [485, 537], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. The texture and overall appearance suggest it might be from a dataset like:"}
+{"id": "BrEaST:251|text", "key": "BrEaST:251", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:251|img", "key": "BrEaST:251", "kind": "image_q", "size": [761, 572], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a dark, irregular structure within a lighter background, possibly representing"}
+{"id": "BrEaST:38|text", "key": "BrEaST:38", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:38|img", "key": "BrEaST:38", "kind": "image_q", "size": [930, 385], "seconds": 3.2, "text": "The image appears to be a grayscale ultrasound image, likely of subcutaneous tissue. It shows a complex texture, possibly representing fat"}
+{"id": "BrEaST:190|text", "key": "BrEaST:190", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:190|img", "key": "BrEaST:190", "kind": "image_q", "size": [485, 537], "seconds": 2.9, "text": "The image appears to be a grayscale ultrasound image. Based on the visual characteristics (e.g., the dark, somewhat"}
+{"id": "BrEaST:7|text", "key": "BrEaST:7", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BrEaST:7|img", "key": "BrEaST:7", "kind": "image_q", "size": [485, 537], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a complex, somewhat blurry texture, possibly representing tissue or fluid"}
+{"id": "BrEaST:253|text", "key": "BrEaST:253", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:253|img", "key": "BrEaST:253", "kind": "image_q", "size": [831, 538], "seconds": 3.0, "text": "The image appears to be a sonogram of a breast, likely showing a cyst. This type of image is commonly found"}
+{"id": "BrEaST:9|text", "key": "BrEaST:9", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:9|img", "key": "BrEaST:9", "kind": "image_q", "size": [476, 338], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a complex mass with multiple hyperechoic (bright)"}
+{"id": "BrEaST:77|text", "key": "BrEaST:77", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:77|img", "key": "BrEaST:77", "kind": "image_q", "size": [831, 538], "seconds": 3.0, "text": "The image appears to be a sonogram of a fetus. This type of image is commonly found in public ultrasound datasets used"}
+{"id": "BrEaST:207|text", "key": "BrEaST:207", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:207|img", "key": "BrEaST:207", "kind": "image_q", "size": [957, 527], "seconds": 3.0, "text": "The image appears to be a liver ultrasound. A common public dataset for liver ultrasound is the **Liver Ultrasound Dataset**."}
+{"id": "BrEaST:107|text", "key": "BrEaST:107", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BrEaST:107|img", "key": "BrEaST:107", "kind": "image_q", "size": [433, 469], "seconds": 3.0, "text": "This image appears to be a grayscale ultrasound image of muscle tissue. It shows the characteristic echogenicity and texture of muscle."}
+{"id": "BrEaST:247|text", "key": "BrEaST:247", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:247|img", "key": "BrEaST:247", "kind": "image_q", "size": [437, 541], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image, likely of a blood vessel. It shows a dark, somewhat irregular shape"}
+{"id": "BrEaST:93|text", "key": "BrEaST:93", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BrEaST:93|img", "key": "BrEaST:93", "kind": "image_q", "size": [485, 537], "seconds": 3.2, "text": "The image appears to be a grayscale ultrasound image. It shows a complex, somewhat blurry texture, possibly representing tissue or fluid"}
+{"id": "BrEaST:128|text", "key": "BrEaST:128", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:128|img", "key": "BrEaST:128", "kind": "image_q", "size": [503, 470], "seconds": 2.9, "text": "The image appears to be a grayscale ultrasound image. It shows a complex, somewhat amorphous structure with some echogenic components."}
+{"id": "BrEaST:72|text", "key": "BrEaST:72", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:72|img", "key": "BrEaST:72", "kind": "image_q", "size": [503, 470], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. The structure in the center is somewhat rounded and has a complex internal structure"}
+{"id": "BrEaST:99|text", "key": "BrEaST:99", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:99|img", "key": "BrEaST:99", "kind": "image_q", "size": [485, 537], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image. It shows a complex, somewhat blurry texture, possibly representing tissue or fluid"}
+{"id": "BrEaST:159|text", "key": "BrEaST:159", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:159|img", "key": "BrEaST:159", "kind": "image_q", "size": [545, 532], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a complex structure with some darker areas and some brighter areas,"}
+{"id": "BrEaST:187|text", "key": "BrEaST:187", "kind": "text", "size": null, "seconds": 0.3, "text": "Benign"}
+{"id": "BrEaST:187|img", "key": "BrEaST:187", "kind": "image_q", "size": [761, 609], "seconds": 2.9, "text": "This image appears to be from the **Breast Imaging Repository (BIR)** dataset."}
+{"id": "BrEaST:46|text", "key": "BrEaST:46", "kind": "text", "size": null, "seconds": 0.2, "text": "Benign"}
+{"id": "BrEaST:46|img", "key": "BrEaST:46", "kind": "image_q", "size": [517, 598], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image. It shows a dark, somewhat irregular structure against a lighter background. The"}
+{"id": "TN3K:test/0269.jpg|img", "key": "TN3K:test/0269.jpg", "kind": "image_q", "size": [439, 402], "seconds": 2.9, "text": "The image appears to be from the **NIH Chest X-ray Database**."}
+{"id": "TN3K:trainval/0751.jpg|img", "key": "TN3K:trainval/0751.jpg", "kind": "image_q", "size": [333, 312], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image. It shows a complex structure with multiple echoes, suggesting a fluid-filled"}
+{"id": "TN3K:test/0100.jpg|img", "key": "TN3K:test/0100.jpg", "kind": "image_q", "size": [498, 303], "seconds": 2.9, "text": "The image appears to be from the **NIH Chest CT Image Database**."}
+{"id": "TN3K:test/0051.jpg|img", "key": "TN3K:test/0051.jpg", "kind": "image_q", "size": [330, 338], "seconds": 3.1, "text": "The image appears to be a sonogram of a breast, likely showing a mass or lump. This type of image is"}
+{"id": "TN3K:trainval/0598.jpg|img", "key": "TN3K:trainval/0598.jpg", "kind": "image_q", "size": [498, 386], "seconds": 3.0, "text": "This image appears to be from the **ISIC (International Skin Lesion Challenge)** dataset. Specifically, it looks like"}
+{"id": "TN3K:trainval/2773.jpg|img", "key": "TN3K:trainval/2773.jpg", "kind": "image_q", "size": [408, 334], "seconds": 2.9, "text": "This image appears to be from the **NIH Chest X-ray Database**."}
+{"id": "TN3K:trainval/1892.jpg|img", "key": "TN3K:trainval/1892.jpg", "kind": "image_q", "size": [958, 621], "seconds": 3.1, "text": "The image shows a large, rounded mass in the left breast, likely representing a tumor. The ultrasound is showing the mass"}
+{"id": "TN3K:trainval/1767.jpg|img", "key": "TN3K:trainval/1767.jpg", "kind": "image_q", "size": [433, 370], "seconds": 3.0, "text": "The image appears to be a liver ultrasound. A common public dataset for liver ultrasound is the **Liver Ultrasound Dataset (L"}
+{"id": "TN3K:test/0113.jpg|img", "key": "TN3K:test/0113.jpg", "kind": "image_q", "size": [419, 394], "seconds": 2.9, "text": "The image appears to be from the **NIH Chest X-ray Database**."}
+{"id": "TN3K:trainval/1344.jpg|img", "key": "TN3K:trainval/1344.jpg", "kind": "image_q", "size": [416, 358], "seconds": 3.1, "text": "This image appears to be a grayscale ultrasound image of a muscle. The texture and structure suggest it could be a muscle belly"}
+{"id": "TN3K:trainval/0822.jpg|img", "key": "TN3K:trainval/0822.jpg", "kind": "image_q", "size": [292, 317], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image. It shows a complex structure with multiple small, rounded structures, possibly representing"}
+{"id": "TN3K:trainval/1098.jpg|img", "key": "TN3K:trainval/1098.jpg", "kind": "image_q", "size": [417, 335], "seconds": 3.1, "text": "This image appears to be from the **ISIC (International Skin Imaging Collaboration)** dataset. Specifically, it looks like a"}
+{"id": "TN3K:trainval/0867.jpg|img", "key": "TN3K:trainval/0867.jpg", "kind": "image_q", "size": [365, 334], "seconds": 3.1, "text": "The image appears to be a sonogram of a large, well-defined, hypoechoic mass, possibly a"}
+{"id": "TN3K:test/0307.jpg|img", "key": "TN3K:test/0307.jpg", "kind": "image_q", "size": [885, 772], "seconds": 3.1, "text": "The image appears to be a sonogram of a fluid-filled structure, possibly a cyst or a fluid collection. It"}
+{"id": "TN3K:trainval/1452.jpg|img", "key": "TN3K:trainval/1452.jpg", "kind": "image_q", "size": [415, 392], "seconds": 3.0, "text": "The image appears to be a grayscale ultrasound image of a breast. This type of image is often used for breast cancer screening"}
+{"id": "TN3K:trainval/1536.jpg|img", "key": "TN3K:trainval/1536.jpg", "kind": "image_q", "size": [496, 330], "seconds": 2.9, "text": "The image appears to be from the **Breast Imaging Repository (BIR)** dataset."}
+{"id": "TN3K:trainval/0509.jpg|img", "key": "TN3K:trainval/0509.jpg", "kind": "image_q", "size": [234, 320], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image. The texture and features suggest it might be from a dataset related to breast"}
+{"id": "TN3K:trainval/2025.jpg|img", "key": "TN3K:trainval/2025.jpg", "kind": "image_q", "size": [866, 700], "seconds": 3.1, "text": "This image appears to be a grayscale ultrasound image. It shows a complex structure with multiple echoes, suggesting a soft tissue mass"}
+{"id": "TN3K:test/0149.jpg|img", "key": "TN3K:test/0149.jpg", "kind": "image_q", "size": [432, 355], "seconds": 2.9, "text": "This image appears to be from the **NIH Chest X-ray Database**."}
+{"id": "TN3K:trainval/2685.jpg|img", "key": "TN3K:trainval/2685.jpg", "kind": "image_q", "size": [410, 343], "seconds": 2.9, "text": "The image appears to be from the **NIH Chest X-ray Database**."}
+{"id": "TN5000:000847|img", "key": "TN5000:000847", "kind": "image_q", "size": [818, 628], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image. The structure shown is an anechoic (dark) mass with some"}
+{"id": "TN5000:000856|img", "key": "TN5000:000856", "kind": "image_q", "size": [718, 500], "seconds": 3.1, "text": "The image appears to be from the **ISIC (International Skin Imaging Collaboration)** dataset. Specifically, it looks like a"}
+{"id": "TN5000:001328|img", "key": "TN5000:001328", "kind": "image_q", "size": [718, 500], "seconds": 2.9, "text": "The image appears to be from the **NIH Chest CT Image Database**."}
+{"id": "TN5000:000824|img", "key": "TN5000:000824", "kind": "image_q", "size": [818, 628], "seconds": 3.3, "text": "The image appears to be a grayscale ultrasound image of a breast, showing a mass. This type of image is commonly used"}
+{"id": "TN5000:004620|img", "key": "TN5000:004620", "kind": "image_q", "size": [718, 500], "seconds": 3.0, "text": "The image appears to be from the **ISIC (International Scientific Image Correlator)** dataset. Specifically, it looks"}
+{"id": "TN5000:000783|img", "key": "TN5000:000783", "kind": "image_q", "size": [718, 500], "seconds": 3.0, "text": "This image appears to be a sonogram of the neck region, specifically showing the carotid artery bifurcation and the jugular vein"}
+{"id": "TN5000:002552|img", "key": "TN5000:002552", "kind": "image_q", "size": [718, 500], "seconds": 3.1, "text": "This image appears to be from the **ISIC 2017** dataset. Specifically, it looks like a"}
+{"id": "TN5000:004200|img", "key": "TN5000:004200", "kind": "image_q", "size": [718, 500], "seconds": 2.9, "text": "The image appears to be from the **NIH Chest CT Image Database**."}
+{"id": "TN5000:003884|img", "key": "TN5000:003884", "kind": "image_q", "size": [718, 500], "seconds": 2.9, "text": "The image appears to be from the **LIDC-IDRI** dataset."}
+{"id": "TN5000:000843|img", "key": "TN5000:000843", "kind": "image_q", "size": [818, 628], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image. The structure in the center is a mass, possibly a tumor or cyst"}
+{"id": "TN5000:001639|img", "key": "TN5000:001639", "kind": "image_q", "size": [718, 500], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image. It shows a complex, somewhat amorphous structure with some internal echoes or variations"}
+{"id": "TN5000:000402|img", "key": "TN5000:000402", "kind": "image_q", "size": [818, 628], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image of the neck region, specifically showing the carotid artery and potentially the jugular"}
+{"id": "TN5000:000297|img", "key": "TN5000:000297", "kind": "image_q", "size": [498, 429], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image. It shows a rounded, somewhat hypoechoic structure within a larger"}
+{"id": "TN5000:004968|img", "key": "TN5000:004968", "kind": "image_q", "size": [498, 429], "seconds": 3.0, "text": "The image appears to be from the **\"Ultrasound of the Breast\"** dataset."}
+{"id": "TN5000:001667|img", "key": "TN5000:001667", "kind": "image_q", "size": [818, 628], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image. It shows a complex mass or lesion within a body cavity, likely the"}
+{"id": "TN5000:000306|img", "key": "TN5000:000306", "kind": "image_q", "size": [718, 500], "seconds": 3.1, "text": "The image appears to be from the **NIH Chest CT Image Database**.\n\nWhile it's a sonogram (ult"}
+{"id": "TN5000:000060|img", "key": "TN5000:000060", "kind": "image_q", "size": [818, 628], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image of a breast, likely showing a mass or nodule. This type of"}
+{"id": "TN5000:001297|img", "key": "TN5000:001297", "kind": "image_q", "size": [718, 500], "seconds": 3.1, "text": "The image appears to be from the **ISIC (International Scientific Image Correlator)** dataset. Specifically, it looks"}
+{"id": "TN5000:003246|img", "key": "TN5000:003246", "kind": "image_q", "size": [718, 500], "seconds": 3.1, "text": "The image shows a sonogram of the neck region, specifically the carotid artery bifurcation. This type of image is commonly found"}
+{"id": "TN5000:001326|img", "key": "TN5000:001326", "kind": "image_q", "size": [818, 628], "seconds": 3.1, "text": "The image appears to be a grayscale ultrasound image. The texture and structure suggest it might be a fetal ultrasound image, possibly"}
+{"id": "HC18:743_HC|text", "key": "HC18:743_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:743_HC|img", "key": "HC18:743_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "The image appears to be a sonogram of a large, round, anechoic mass, likely a cyst, possibly"}
+{"id": "HC18:631_HC|text", "key": "HC18:631_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:631_HC|img", "key": "HC18:631_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "The image appears to be a fetus in the womb, which is a common type of ultrasound image. While it's"}
+{"id": "HC18:628_2HC|text", "key": "HC18:628_2HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:628_2HC|img", "key": "HC18:628_2HC", "kind": "image_q", "size": [800, 540], "seconds": 3.2, "text": "The image appears to be a fetal ultrasound. Based on the appearance of the fetus, it resembles the **Fetal Ultrasound"}
+{"id": "HC18:786_HC|text", "key": "HC18:786_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:786_HC|img", "key": "HC18:786_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.0, "text": "The image shows a fetal head in a cross-sectional view, characteristic of an ultrasound image of a fetus. This type"}
+{"id": "HC18:218_HC|text", "key": "HC18:218_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:218_HC|img", "key": "HC18:218_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "The image appears to be a fetal ultrasound image. Based on the typical appearance of a fetus in an ultrasound, this image"}
+{"id": "HC18:618_HC|text", "key": "HC18:618_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:618_HC|img", "key": "HC18:618_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "The image appears to be a fetal ultrasound, specifically showing a fetal head. This type of image is commonly found in public"}
+{"id": "HC18:136_HC|text", "key": "HC18:136_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:136_HC|img", "key": "HC18:136_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "The image shows a fetus in the womb. This type of image is typically obtained using ultrasound. A common public dataset for"}
+{"id": "HC18:666_HC|text", "key": "HC18:666_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:666_HC|img", "key": "HC18:666_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.3, "text": "The image appears to be a fetal ultrasound, specifically a sagittal view of a fetus. This type of image is commonly found"}
+{"id": "HC18:704_2HC|text", "key": "HC18:704_2HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:704_2HC|img", "key": "HC18:704_2HC", "kind": "image_q", "size": [800, 540], "seconds": 3.4, "text": "The image appears to be a fetal ultrasound. A common public dataset for fetal ultrasound images is the **Fetal Ultrasound Dataset"}
+{"id": "HC18:607_HC|text", "key": "HC18:607_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:607_HC|img", "key": "HC18:607_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.2, "text": "The image appears to be a fetus in the womb, which is a typical image found in fetal ultrasound datasets. A common"}
+{"id": "HC18:393_HC|text", "key": "HC18:393_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:393_HC|img", "key": "HC18:393_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.2, "text": "The image appears to be a fetal ultrasound image. Based on the typical appearance of a fetus in an ultrasound, this image"}
+{"id": "HC18:217_HC|text", "key": "HC18:217_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:217_HC|img", "key": "HC18:217_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.3, "text": "The image appears to be a fetal ultrasound image. Based on the visual characteristics (fetal head, echogenic structures,"}
+{"id": "HC18:226_HC|text", "key": "HC18:226_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:226_HC|img", "key": "HC18:226_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.0, "text": "The image appears to be a fetus in the womb, which is a common subject in public ultrasound datasets. However, without"}
+{"id": "HC18:209_HC|text", "key": "HC18:209_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:209_HC|img", "key": "HC18:209_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "This image is a sonogram of a fetus, which is a common type of ultrasound image. While it's difficult"}
+{"id": "HC18:326_HC|text", "key": "HC18:326_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:326_HC|img", "key": "HC18:326_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "This image is a fetal ultrasound. It is difficult to definitively identify the specific dataset without more context or metadata. However,"}
+{"id": "HC18:235_2HC|text", "key": "HC18:235_2HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:235_2HC|img", "key": "HC18:235_2HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "The image appears to be a fetal ultrasound image showing a mass within the fetal brain. This type of image is often used"}
+{"id": "HC18:475_HC|text", "key": "HC18:475_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "47.5"}
+{"id": "HC18:475_HC|img", "key": "HC18:475_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "The image appears to be a fetus in the womb, which is a typical image found in public ultrasound datasets. A common"}
+{"id": "HC18:433_HC|text", "key": "HC18:433_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "43.3"}
+{"id": "HC18:433_HC|img", "key": "HC18:433_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "The image appears to be a fetus in utero, which is a common subject in public ultrasound datasets. A well-"}
+{"id": "HC18:156_HC|text", "key": "HC18:156_HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:156_HC|img", "key": "HC18:156_HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "The image appears to be a fetus in the womb, which is a common type of ultrasound image. This type of image"}
+{"id": "HC18:457_2HC|text", "key": "HC18:457_2HC", "kind": "text", "size": null, "seconds": 0.3, "text": "44.2"}
+{"id": "HC18:457_2HC|img", "key": "HC18:457_2HC", "kind": "image_q", "size": [800, 540], "seconds": 3.1, "text": "The image appears to be a fetus in utero, which is a common subject in public ultrasound datasets. A well-"}

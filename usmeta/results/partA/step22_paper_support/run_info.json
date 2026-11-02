@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-02T16:13:21",
+  "git_commit": "2ab86c1",
+  "seeds": {
+    "bootstrap": 0
+  },
+  "command": "python3 -m usmeta.step22_paper_support results/partA/step22_paper_support (saved results only)"
+}
