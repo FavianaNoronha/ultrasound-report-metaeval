@@ -1,0 +1,19 @@
+{
+ "date": "2026-11-09T18:37:15",
+ "git_commit": "3115c77 (+ uncommitted step24 files)",
+ "seeds": {
+  "box_perturbation": "crc32(case|setting)",
+  "jitter_seeds": [
+   0,
+   1,
+   2
+  ],
+  "bootstrap": 0
+ },
+ "models": [
+  "wanglab/medsam-vit-base (MPS)",
+  "Step 20 tolerance check tau=0.3 adjacent"
+ ],
+ "command": "python3 -m usmeta.step24_box_reliability predict | analyse; python3 -m usmeta.step24_report",
+ "notes": "4,332 new masks (65,478 s wall clock, machine heavily loaded); reused masks: exact, shrink 0.9/0.75/0.5, enlarge 1.25, and the 21a label-free masks"
+}
