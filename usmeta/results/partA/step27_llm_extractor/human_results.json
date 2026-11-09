@@ -1,0 +1,718 @@
+{
+ "n_items": 29,
+ "parse_failures": 0,
+ "human_vs_reference_llm_f1_mean": 0.9696075335527669,
+ "human_all_fields_equal_to_reference_extraction": 0.7586206896551724,
+ "human_identical_gate": 1.0,
+ "cells": {
+  "human|breast": {
+   "n_items": 9,
+   "auroc": [
+    0.7281746031746033,
+    0.49203869047619053,
+    0.9365079365079365
+   ],
+   "too_small": true
+  },
+  "human|thyroid": {
+   "n_items": 10,
+   "auroc": [
+    0.9583333333333334,
+    0.875,
+    1.0
+   ],
+   "too_small": true
+  },
+  "human|fetal head": {
+   "n_items": 10,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  },
+  "human|ALL": {
+   "n_items": 29,
+   "auroc": [
+    0.901272577996716,
+    0.8035714285714285,
+    0.9705459770114943
+   ],
+   "too_small": true
+  },
+  "small|breast": {
+   "n_items": 9,
+   "auroc": [
+    0.9652777777777778,
+    0.8958333333333334,
+    1.0
+   ],
+   "too_small": true
+  },
+  "small|thyroid": {
+   "n_items": 10,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  },
+  "small|fetal head": {
+   "n_items": 10,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  },
+  "small|ALL": {
+   "n_items": 29,
+   "auroc": [
+    0.9892241379310345,
+    0.9676724137931034,
+    1.0
+   ],
+   "too_small": true
+  },
+  "matched|breast": {
+   "n_items": 9,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  },
+  "matched|thyroid": {
+   "n_items": 10,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  },
+  "matched|fetal head": {
+   "n_items": 10,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  },
+  "matched|ALL": {
+   "n_items": 29,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  },
+  "large|breast": {
+   "n_items": 9,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  },
+  "large|thyroid": {
+   "n_items": 10,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  },
+  "large|fetal head": {
+   "n_items": 10,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  },
+  "large|ALL": {
+   "n_items": 29,
+   "auroc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": true
+  }
+ },
+ "human_pairs": [
+  {
+   "item": "H02",
+   "organ": "breast",
+   "llm_finding_f1": 0.8571428571428571,
+   "extracted_human": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "upper-central",
+    "orient": "wider than taller",
+    "size_mm": 18,
+    "shape": "oval",
+    "margin": "not circumscribed (indistinct)",
+    "echo": "hypoechoic",
+    "post": "no",
+    "halo": "no",
+    "calc": "in the mass",
+    "birads": "4b",
+    "path": "malignant"
+   },
+   "extracted_reference": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "upper-central",
+    "orient": "wider than tall",
+    "size_mm": 18,
+    "shape": "oval",
+    "margin": "not circumscribed (indistinct)",
+    "echo": "hypoechoic",
+    "post": "no",
+    "halo": "no",
+    "calc": "in a mass",
+    "birads": "4b",
+    "path": "malignant"
+   }
+  },
+  {
+   "item": "H03",
+   "organ": "breast",
+   "llm_finding_f1": 0.8888888888888888,
+   "extracted_human": {
+    "lesion": "present",
+    "count": 1,
+    "side": "left",
+    "pos": "upper-central",
+    "orient": "wider than tall",
+    "size_pct": 22,
+    "birads": "2",
+    "path": "benign",
+    "hist": "cyst"
+   },
+   "extracted_reference": {
+    "lesion": "present",
+    "count": 1,
+    "side": "left",
+    "pos": "upper-central",
+    "orient": "taller than wide",
+    "size_pct": 22,
+    "birads": "2",
+    "path": "benign",
+    "hist": "cyst"
+   }
+  },
+  {
+   "item": "H04",
+   "organ": "breast",
+   "llm_finding_f1": 0.9411764705882353,
+   "extracted_human": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "upper-central",
+    "orient": "wider than tall",
+    "size_pct": 37,
+    "shape": "oval",
+    "birads": "3",
+    "path": "benign",
+    "hist": "fibroadenoma"
+   },
+   "extracted_reference": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "upper-central",
+    "orient": "wider than tall",
+    "size_pct": 37,
+    "birads": "3",
+    "path": "benign",
+    "hist": "fibroadenoma"
+   }
+  },
+  {
+   "item": "H05",
+   "organ": "breast",
+   "llm_finding_f1": 0.8333333333333334,
+   "extracted_human": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 31,
+    "path": "malignant"
+   },
+   "extracted_reference": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "taller than wide",
+    "size_pct": 31,
+    "path": "malignant"
+   }
+  },
+  {
+   "item": "H06",
+   "organ": "breast",
+   "llm_finding_f1": 0.923076923076923,
+   "extracted_human": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "upper-central",
+    "orient": "wider than tall",
+    "size_pct": 10,
+    "shape": "oval",
+    "path": "benign"
+   },
+   "extracted_reference": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "upper-central",
+    "orient": "wider than tall",
+    "size_pct": 10,
+    "path": "benign"
+   }
+  },
+  {
+   "item": "H07",
+   "organ": "breast",
+   "llm_finding_f1": 0.875,
+   "extracted_human": {
+    "lesion": "present",
+    "count": 1,
+    "side": "right",
+    "pos": "middle",
+    "orient": "wider than tall",
+    "size_pct": 23,
+    "path": "malignant",
+    "hist": "idc"
+   },
+   "extracted_reference": {
+    "lesion": "present",
+    "count": 1,
+    "side": "right",
+    "pos": "middle-right",
+    "orient": "wider than tall",
+    "size_pct": 23,
+    "path": "malignant",
+    "hist": "idc"
+   }
+  },
+  {
+   "item": "H08",
+   "organ": "breast",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "lesion": "present",
+    "count": 1,
+    "side": "right",
+    "pos": "middle-right",
+    "orient": "wider than tall",
+    "size_pct": 47,
+    "path": "benign",
+    "hist": "fa"
+   },
+   "extracted_reference": {
+    "lesion": "present",
+    "count": 1,
+    "side": "right",
+    "pos": "middle-right",
+    "orient": "wider than tall",
+    "size_pct": 47,
+    "path": "benign",
+    "hist": "fa"
+   }
+  },
+  {
+   "item": "H09",
+   "organ": "breast",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "lesion": "present",
+    "count": 2,
+    "pos": "middle-left",
+    "orient": "wider than tall",
+    "size_pct": 36,
+    "path": "benign"
+   },
+   "extracted_reference": {
+    "lesion": "present",
+    "count": 2,
+    "pos": "middle-left",
+    "orient": "wider than tall",
+    "size_pct": 36,
+    "path": "benign"
+   }
+  },
+  {
+   "item": "H10",
+   "organ": "breast",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "upper-central",
+    "orient": "wider than tall",
+    "size_pct": 11,
+    "path": "benign"
+   },
+   "extracted_reference": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "upper-central",
+    "orient": "wider than tall",
+    "size_pct": 11,
+    "path": "benign"
+   }
+  },
+  {
+   "item": "H11",
+   "organ": "thyroid",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "count": 2,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 23,
+    "lesion": "present"
+   },
+   "extracted_reference": {
+    "count": 2,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 23,
+    "lesion": "present"
+   }
+  },
+  {
+   "item": "H12",
+   "organ": "thyroid",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 54,
+    "lesion": "present"
+   },
+   "extracted_reference": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 54,
+    "lesion": "present"
+   }
+  },
+  {
+   "item": "H13",
+   "organ": "thyroid",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 40,
+    "lesion": "present"
+   },
+   "extracted_reference": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 40,
+    "lesion": "present"
+   }
+  },
+  {
+   "item": "H14",
+   "organ": "thyroid",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 33,
+    "lesion": "present"
+   },
+   "extracted_reference": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 33,
+    "lesion": "present"
+   }
+  },
+  {
+   "item": "H15",
+   "organ": "thyroid",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 21,
+    "lesion": "present"
+   },
+   "extracted_reference": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 21,
+    "lesion": "present"
+   }
+  },
+  {
+   "item": "H16",
+   "organ": "thyroid",
+   "llm_finding_f1": 0.8000000000000002,
+   "extracted_human": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "taller than wider",
+    "size_pct": 10,
+    "lesion": "present"
+   },
+   "extracted_reference": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "taller than wide",
+    "size_pct": 10,
+    "lesion": "present"
+   }
+  },
+  {
+   "item": "H17",
+   "organ": "thyroid",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 36,
+    "margin": "well defined smooth",
+    "foci": "none",
+    "tirads": "3",
+    "lesion": "present"
+   },
+   "extracted_reference": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 36,
+    "margin": "well defined smooth",
+    "foci": "none",
+    "tirads": "3",
+    "lesion": "present"
+   }
+  },
+  {
+   "item": "H18",
+   "organ": "thyroid",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 20,
+    "comp": "dense",
+    "echo": "hypoechoic",
+    "margin": "well defined",
+    "foci": "none",
+    "tirads": "4c",
+    "lesion": "present"
+   },
+   "extracted_reference": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 20,
+    "comp": "dense",
+    "echo": "hypoechoic",
+    "margin": "well defined",
+    "foci": "none",
+    "tirads": "4c",
+    "lesion": "present"
+   }
+  },
+  {
+   "item": "H19",
+   "organ": "thyroid",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "count": 1,
+    "pos": "upper-central",
+    "orient": "wider than tall",
+    "size_pct": 29,
+    "echo": "echogenic",
+    "margin": "well defined smooth",
+    "foci": "microcalcifications",
+    "tirads": "4b",
+    "lesion": "present"
+   },
+   "extracted_reference": {
+    "count": 1,
+    "pos": "upper-central",
+    "orient": "wider than tall",
+    "size_pct": 29,
+    "echo": "echogenic",
+    "margin": "well defined smooth",
+    "foci": "microcalcifications",
+    "tirads": "4b",
+    "lesion": "present"
+   }
+  },
+  {
+   "item": "H20",
+   "organ": "thyroid",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 36,
+    "margin": "well defined smooth",
+    "foci": "none",
+    "tirads": "2",
+    "lesion": "present"
+   },
+   "extracted_reference": {
+    "count": 1,
+    "pos": "middle-central",
+    "orient": "wider than tall",
+    "size_pct": 36,
+    "margin": "well defined smooth",
+    "foci": "none",
+    "tirads": "2",
+    "lesion": "present"
+   }
+  },
+  {
+   "item": "H21",
+   "organ": "fetal",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "hc_mm": 168.9
+   },
+   "extracted_reference": {
+    "hc_mm": 168.9
+   }
+  },
+  {
+   "item": "H22",
+   "organ": "fetal",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "hc_mm": 308.5
+   },
+   "extracted_reference": {
+    "hc_mm": 308.5
+   }
+  },
+  {
+   "item": "H23",
+   "organ": "fetal",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "hc_mm": 279.2
+   },
+   "extracted_reference": {
+    "hc_mm": 279.2
+   }
+  },
+  {
+   "item": "H24",
+   "organ": "fetal",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "hc_mm": 312.5
+   },
+   "extracted_reference": {
+    "hc_mm": 312.5
+   }
+  },
+  {
+   "item": "H25",
+   "organ": "fetal",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "hc_mm": 173.8
+   },
+   "extracted_reference": {
+    "hc_mm": 173.8
+   }
+  },
+  {
+   "item": "H26",
+   "organ": "fetal",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "plane": "trans thalamic",
+    "hc_mm": 283.0
+   },
+   "extracted_reference": {
+    "plane": "trans thalamic",
+    "hc_mm": 283.0
+   }
+  },
+  {
+   "item": "H27",
+   "organ": "fetal",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "plane": "trans ventricular",
+    "hc_mm": 180.0
+   },
+   "extracted_reference": {
+    "plane": "trans ventricular",
+    "hc_mm": 180.0
+   }
+  },
+  {
+   "item": "H28",
+   "organ": "fetal",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "plane": "trans thalamic",
+    "hc_mm": 347.0
+   },
+   "extracted_reference": {
+    "plane": "trans thalamic",
+    "hc_mm": 347.0
+   }
+  },
+  {
+   "item": "H29",
+   "organ": "fetal",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "plane": "trans cerebellum",
+    "hc_mm": 173.0
+   },
+   "extracted_reference": {
+    "plane": "trans cerebellum",
+    "hc_mm": 173.0
+   }
+  },
+  {
+   "item": "H30",
+   "organ": "fetal",
+   "llm_finding_f1": 1.0,
+   "extracted_human": {
+    "plane": "trans ventricular",
+    "hc_mm": 161.0
+   },
+   "extracted_reference": {
+    "plane": "trans ventricular",
+    "hc_mm": 161.0
+   }
+  }
+ ]
+}

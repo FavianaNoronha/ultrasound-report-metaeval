@@ -1,0 +1,248 @@
+{
+ "n": 300,
+ "parse_failures": 0,
+ "fields": {
+  "breast.lesion": {
+   "n_known": 100,
+   "correct": 100,
+   "acc_when_present": 1.0,
+   "n_absent": 0,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.count": {
+   "n_known": 97,
+   "correct": 97,
+   "acc_when_present": 1.0,
+   "n_absent": 3,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.side": {
+   "n_known": 17,
+   "correct": 17,
+   "acc_when_present": 1.0,
+   "n_absent": 83,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.pos": {
+   "n_known": 96,
+   "correct": 96,
+   "acc_when_present": 1.0,
+   "n_absent": 4,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.orient": {
+   "n_known": 96,
+   "correct": 96,
+   "acc_when_present": 1.0,
+   "n_absent": 4,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.size_mm": {
+   "n_known": 44,
+   "correct": 41,
+   "acc_when_present": 0.9318181818181818,
+   "n_absent": 56,
+   "spurious": 0,
+   "agreement": 0.97
+  },
+  "breast.size_pct": {
+   "n_known": 52,
+   "correct": 52,
+   "acc_when_present": 1.0,
+   "n_absent": 48,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.shape": {
+   "n_known": 44,
+   "correct": 44,
+   "acc_when_present": 1.0,
+   "n_absent": 56,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.margin": {
+   "n_known": 44,
+   "correct": 44,
+   "acc_when_present": 1.0,
+   "n_absent": 56,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.echo": {
+   "n_known": 44,
+   "correct": 44,
+   "acc_when_present": 1.0,
+   "n_absent": 56,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.post": {
+   "n_known": 44,
+   "correct": 44,
+   "acc_when_present": 1.0,
+   "n_absent": 56,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.halo": {
+   "n_known": 44,
+   "correct": 44,
+   "acc_when_present": 1.0,
+   "n_absent": 56,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.calc": {
+   "n_known": 44,
+   "correct": 44,
+   "acc_when_present": 1.0,
+   "n_absent": 56,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.birads": {
+   "n_known": 63,
+   "correct": 63,
+   "acc_when_present": 1.0,
+   "n_absent": 37,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "breast.path": {
+   "n_known": 98,
+   "correct": 98,
+   "acc_when_present": 1.0,
+   "n_absent": 2,
+   "spurious": 1,
+   "agreement": 0.99
+  },
+  "breast.hist": {
+   "n_known": 35,
+   "correct": 35,
+   "acc_when_present": 1.0,
+   "n_absent": 65,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "thyroid.count": {
+   "n_known": 99,
+   "correct": 99,
+   "acc_when_present": 1.0,
+   "n_absent": 1,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "thyroid.pos": {
+   "n_known": 98,
+   "correct": 98,
+   "acc_when_present": 1.0,
+   "n_absent": 2,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "thyroid.orient": {
+   "n_known": 98,
+   "correct": 98,
+   "acc_when_present": 1.0,
+   "n_absent": 2,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "thyroid.size_mm": {
+   "n_known": 0,
+   "correct": 0,
+   "acc_when_present": null,
+   "n_absent": 100,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "thyroid.size_pct": {
+   "n_known": 98,
+   "correct": 98,
+   "acc_when_present": 1.0,
+   "n_absent": 2,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "thyroid.comp": {
+   "n_known": 25,
+   "correct": 25,
+   "acc_when_present": 1.0,
+   "n_absent": 75,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "thyroid.echo": {
+   "n_known": 25,
+   "correct": 25,
+   "acc_when_present": 1.0,
+   "n_absent": 75,
+   "spurious": 1,
+   "agreement": 0.99
+  },
+  "thyroid.margin": {
+   "n_known": 36,
+   "correct": 36,
+   "acc_when_present": 1.0,
+   "n_absent": 64,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "thyroid.foci": {
+   "n_known": 36,
+   "correct": 36,
+   "acc_when_present": 1.0,
+   "n_absent": 64,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "thyroid.tirads": {
+   "n_known": 36,
+   "correct": 36,
+   "acc_when_present": 1.0,
+   "n_absent": 64,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "fetal.plane": {
+   "n_known": 52,
+   "correct": 52,
+   "acc_when_present": 1.0,
+   "n_absent": 48,
+   "spurious": 0,
+   "agreement": 1.0
+  },
+  "fetal.hc_mm": {
+   "n_known": 100,
+   "correct": 100,
+   "acc_when_present": 1.0,
+   "n_absent": 0,
+   "spurious": 0,
+   "agreement": 1.0
+  }
+ },
+ "all_fields_correct": {
+  "breast": 0.96,
+  "thyroid": 0.99,
+  "fetal": 1.0
+ },
+ "calls": 189,
+ "model_seconds": 420.6255795955658,
+ "kinds": {
+  "breast.reference": 25,
+  "breast.error": 40,
+  "breast.harmless": 35,
+  "thyroid.reference": 25,
+  "thyroid.error": 40,
+  "thyroid.harmless": 35,
+  "fetal.reference": 25,
+  "fetal.error": 40,
+  "fetal.harmless": 35
+ }
+}

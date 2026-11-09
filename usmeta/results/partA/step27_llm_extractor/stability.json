@@ -1,0 +1,88 @@
+{
+ "altA": {
+  "pairs": {
+   "n_pairs": 225,
+   "changed_gt_0_1": 0.0044444444444444444,
+   "changed_at_all": 0.013333333333333334,
+   "by_organ": {
+    "breast": {
+     "n": 75,
+     "changed_gt_0_1": 0.013333333333333334
+    },
+    "thyroid": {
+     "n": 75,
+     "changed_gt_0_1": 0.0
+    },
+    "fetal": {
+     "n": 75,
+     "changed_gt_0_1": 0.0
+    }
+   }
+  },
+  "parse_failures": 0,
+  "field_change_share": {
+   "breast": 0.003125,
+   "thyroid": 0.0,
+   "fetal": 0.0
+  },
+  "fields_compared": {
+   "breast": 1600,
+   "thyroid": 1000,
+   "fetal": 200
+  },
+  "reports_with_any_change": {
+   "breast": 0.04,
+   "thyroid": 0.0,
+   "fetal": 0.0
+  },
+  "pooled_field_change": 0.0017857142857142857,
+  "all_fields_correct": {
+   "breast": 0.98,
+   "thyroid": 0.99,
+   "fetal": 1.0
+  }
+ },
+ "altB": {
+  "pairs": {
+   "n_pairs": 225,
+   "changed_gt_0_1": 0.017777777777777778,
+   "changed_at_all": 0.08888888888888889,
+   "by_organ": {
+    "breast": {
+     "n": 75,
+     "changed_gt_0_1": 0.05333333333333334
+    },
+    "thyroid": {
+     "n": 75,
+     "changed_gt_0_1": 0.0
+    },
+    "fetal": {
+     "n": 75,
+     "changed_gt_0_1": 0.0
+    }
+   }
+  },
+  "parse_failures": 0,
+  "field_change_share": {
+   "breast": 0.024375,
+   "thyroid": 0.007,
+   "fetal": 0.0
+  },
+  "fields_compared": {
+   "breast": 1600,
+   "thyroid": 1000,
+   "fetal": 200
+  },
+  "reports_with_any_change": {
+   "breast": 0.23,
+   "thyroid": 0.07,
+   "fetal": 0.0
+  },
+  "pooled_field_change": 0.016428571428571428,
+  "all_fields_correct": {
+   "breast": 0.8,
+   "thyroid": 0.94,
+   "fetal": 1.0
+  }
+ }
+}
