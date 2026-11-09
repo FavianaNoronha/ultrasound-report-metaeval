@@ -1,0 +1,19 @@
+{
+ "step": "27",
+ "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+ "decoding": "greedy",
+ "variants": [
+  "main",
+  "altA",
+  "altB"
+ ],
+ "git_head_at_report": "60d7f17",
+ "python": "3.9.6",
+ "platform": "macOS-27.2-arm64-arm-64bit",
+ "date": "2026-11-10",
+ "cache_calls": 4385,
+ "test_unique_texts": 2812,
+ "test_model_seconds": 10021.746922254562,
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "min_groups": 30
+}
