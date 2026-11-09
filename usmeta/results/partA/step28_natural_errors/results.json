@@ -1,0 +1,4713 @@
+{
+ "n_images": 180,
+ "per_organ_n": {
+  "breast": 60,
+  "thyroid": 60,
+  "fetal": 60
+ },
+ "by_organ": {
+  "breast": {
+   "n_images": 60,
+   "too_small": false,
+   "metrics": {
+    "bleu": {
+     "n": 60,
+     "spearman": [
+      0.3263766149360714,
+      0.03080750381627711,
+      0.600702332837451
+     ],
+     "kendall": [
+      0.24917812557164487,
+      0.03825872357899289,
+      0.4550482239019688
+     ],
+     "auroc_wrong_vs_correct": [
+      0.49657142857142855,
+      0.3581356427776895,
+      0.6439776733254994
+     ],
+     "auroc_n": 60
+    },
+    "rougeL": {
+     "n": 60,
+     "spearman": [
+      0.4779928434488951,
+      0.19108147355470245,
+      0.7057847857963353
+     ],
+     "kendall": [
+      0.37262439600198644,
+      0.15840466438692047,
+      0.5614454701629071
+     ],
+     "auroc_wrong_vs_correct": [
+      0.43942857142857145,
+      0.29181929181929184,
+      0.5893176202958811
+     ],
+     "auroc_n": 60
+    },
+    "chrf": {
+     "n": 60,
+     "spearman": [
+      0.5421157085028535,
+      0.2611257879178763,
+      0.7680798971376428
+     ],
+     "kendall": [
+      0.4375428448346045,
+      0.22473422131062956,
+      0.6221261876892255
+     ],
+     "auroc_wrong_vs_correct": [
+      0.3394285714285714,
+      0.20358848667672197,
+      0.48709315375982043
+     ],
+     "auroc_n": 60
+    },
+    "bertscore[roberta-large]": {
+     "n": 60,
+     "spearman": [
+      0.5121904747482161,
+      0.2691003568204837,
+      0.7175226255486238
+     ],
+     "kendall": [
+      0.38270414161533406,
+      0.20975058814213496,
+      0.5401881788531693
+     ],
+     "auroc_wrong_vs_correct": [
+      0.26057142857142856,
+      0.14687240262531884,
+      0.4019276869847552
+     ],
+     "auroc_n": 60
+    },
+    "ratescore": {
+     "n": 60,
+     "spearman": [
+      0.43754488234159256,
+      0.12618326984485717,
+      0.6741657640766692
+     ],
+     "kendall": [
+      0.340700028511212,
+      0.11436096251243366,
+      0.5389485926101029
+     ],
+     "auroc_wrong_vs_correct": [
+      0.5257142857142857,
+      0.3747067747067747,
+      0.6742936507936508
+     ],
+     "auroc_n": 60
+    },
+    "llm_finding_f1": {
+     "n": 60,
+     "spearman": [
+      0.9671372636591005,
+      0.9050826190639935,
+      1.0
+     ],
+     "kendall": [
+      0.945066696194181,
+      0.8626521174059798,
+      1.0
+     ],
+     "auroc_wrong_vs_correct": [
+      0.6125714285714285,
+      0.4525028935185185,
+      0.7547721019721019
+     ],
+     "auroc_n": 60
+    },
+    "judge_score": {
+     "n": 60,
+     "auroc_wrong_vs_correct": [
+      0.5,
+      null,
+      null
+     ],
+     "auroc_n": 60
+    },
+    "sentence_f1": {
+     "n": 60,
+     "spearman": [
+      0.37093250603607686,
+      0.13841345339540773,
+      0.5974703257091359
+     ],
+     "kendall": [
+      0.28650710281491787,
+      0.10879810088944822,
+      0.4760572330813597
+     ],
+     "auroc_wrong_vs_correct": [
+      0.6742857142857143,
+      0.5204881773399015,
+      0.8137583740606706
+     ],
+     "auroc_n": 60
+    }
+   },
+   "mean_fact_f1": 0.28746856045403124,
+   "share_with_a_wrong_key_fact": 0.5833333333333334,
+   "share_stating_no_key_fact": 0.0,
+   "n_checkable": 60,
+   "n_wrong_reports": 35,
+   "n_fully_correct": 25
+  },
+  "thyroid": {
+   "n_images": 60,
+   "too_small": false,
+   "metrics": {
+    "bleu": {
+     "n": 60,
+     "spearman": [
+      0.14525310175448863,
+      -0.13916870931440617,
+      0.4116632932287987
+     ],
+     "kendall": [
+      0.10976937092705662,
+      -0.10965402198773883,
+      0.3162492932921595
+     ],
+     "auroc_wrong_vs_correct": [
+      0.55,
+      0.3249264705882353,
+      0.7652272727272726
+     ],
+     "auroc_n": 37
+    },
+    "rougeL": {
+     "n": 60,
+     "spearman": [
+      0.19063165556422676,
+      -0.08606904834864784,
+      0.46025550438223284
+     ],
+     "kendall": [
+      0.1510747098559571,
+      -0.05750385504530323,
+      0.3639108610477272
+     ],
+     "auroc_wrong_vs_correct": [
+      0.63125,
+      0.3372916666666667,
+      0.8714285714285714
+     ],
+     "auroc_n": 37
+    },
+    "chrf": {
+     "n": 60,
+     "spearman": [
+      0.15694982633702262,
+      -0.10864592060979468,
+      0.3989359991533642
+     ],
+     "kendall": [
+      0.12984666181982096,
+      -0.08024436695200617,
+      0.3157847216935215
+     ],
+     "auroc_wrong_vs_correct": [
+      0.3,
+      0.0855952380952381,
+      0.5589126559714794
+     ],
+     "auroc_n": 37
+    },
+    "bertscore[roberta-large]": {
+     "n": 60,
+     "spearman": [
+      0.1476106631169684,
+      -0.13742795074252512,
+      0.39497456761530164
+     ],
+     "kendall": [
+      0.10211242337286891,
+      -0.11677359012556142,
+      0.2881823963777084
+     ],
+     "auroc_wrong_vs_correct": [
+      0.35,
+      0.045454545454545456,
+      0.6743538324420676
+     ],
+     "auroc_n": 37
+    },
+    "ratescore": {
+     "n": 60,
+     "spearman": [
+      0.005649617256576022,
+      -0.2437633751379925,
+      0.24448912263146752
+     ],
+     "kendall": [
+      0.0,
+      -0.1729208783938883,
+      0.17555867416011695
+     ],
+     "auroc_wrong_vs_correct": [
+      0.525,
+      0.11421658986175115,
+      0.8888888888888888
+     ],
+     "auroc_n": 37
+    },
+    "llm_finding_f1": {
+     "n": 60,
+     "spearman": [
+      1.0,
+      0.9999999999999998,
+      1.0
+     ],
+     "kendall": [
+      0.9999999999999998,
+      0.9999999999999998,
+      1.0
+     ],
+     "auroc_wrong_vs_correct": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "auroc_n": 37
+    },
+    "judge_score": {
+     "n": 59,
+     "auroc_wrong_vs_correct": [
+      0.5,
+      null,
+      null
+     ],
+     "auroc_n": 37
+    },
+    "sentence_f1": {
+     "n": 59,
+     "spearman": [
+      0.14588632708866467,
+      -0.17863006986840485,
+      0.39324372957553566
+     ],
+     "kendall": [
+      0.10837006399123982,
+      -0.14844363273108868,
+      0.3144590530133281
+     ],
+     "auroc_wrong_vs_correct": [
+      0.434375,
+      0.1111111111111111,
+      0.7948529411764699
+     ],
+     "auroc_n": 37
+    }
+   },
+   "mean_fact_f1": 0.1737888962888963,
+   "share_with_a_wrong_key_fact": 0.08333333333333333,
+   "share_stating_no_key_fact": 0.38333333333333336,
+   "n_checkable": 37,
+   "n_wrong_reports": 5,
+   "n_fully_correct": 32
+  },
+  "fetal": {
+   "n_images": 60,
+   "too_small": false,
+   "metrics": {
+    "bleu": {
+     "n": 60
+    },
+    "rougeL": {
+     "n": 60
+    },
+    "chrf": {
+     "n": 60
+    },
+    "bertscore[roberta-large]": {
+     "n": 60
+    },
+    "ratescore": {
+     "n": 60
+    },
+    "llm_finding_f1": {
+     "n": 60
+    },
+    "judge_score": {
+     "n": 60
+    },
+    "sentence_f1": {
+     "n": 60
+    }
+   },
+   "mean_fact_f1": 0.0,
+   "share_with_a_wrong_key_fact": 0.0,
+   "share_stating_no_key_fact": 1.0,
+   "n_checkable": 0,
+   "n_wrong_reports": 0,
+   "n_fully_correct": 0
+  },
+  "ALL": {
+   "n_images": 180,
+   "too_small": false,
+   "metrics": {
+    "bleu": {
+     "n": 180,
+     "spearman": [
+      0.6562705305873661,
+      0.5270001965370947,
+      0.7660884037890591
+     ],
+     "kendall": [
+      0.5163996714609616,
+      0.42564176530305803,
+      0.6014485466547556
+     ],
+     "auroc_wrong_vs_correct": [
+      0.41469298245614034,
+      0.3023717938480516,
+      0.534205125231911
+     ],
+     "auroc_n": 97
+    },
+    "rougeL": {
+     "n": 180,
+     "spearman": [
+      0.7022430238140128,
+      0.580782430587714,
+      0.8032953586683499
+     ],
+     "kendall": [
+      0.5618942346561381,
+      0.4729733299303331,
+      0.640615108635457
+     ],
+     "auroc_wrong_vs_correct": [
+      0.4010964912280702,
+      0.28169082446808513,
+      0.5379487114103086
+     ],
+     "auroc_n": 97
+    },
+    "chrf": {
+     "n": 180,
+     "spearman": [
+      0.6708298331660162,
+      0.5468845124654992,
+      0.779809773016494
+     ],
+     "kendall": [
+      0.5469701132664767,
+      0.45242560568472256,
+      0.637741407120134
+     ],
+     "auroc_wrong_vs_correct": [
+      0.33026315789473687,
+      0.2140178189308949,
+      0.45876432815794516
+     ],
+     "auroc_n": 97
+    },
+    "bertscore[roberta-large]": {
+     "n": 180,
+     "spearman": [
+      0.4896415282575559,
+      0.36136585672066085,
+      0.5971946516685518
+     ],
+     "kendall": [
+      0.3670504318014103,
+      0.2679800377382038,
+      0.4532151919928271
+     ],
+     "auroc_wrong_vs_correct": [
+      0.1837719298245614,
+      0.10543217286914766,
+      0.272325997139679
+     ],
+     "auroc_n": 97
+    },
+    "ratescore": {
+     "n": 180,
+     "spearman": [
+      0.3336889068654016,
+      0.18244596278889577,
+      0.4745441021229501
+     ],
+     "kendall": [
+      0.2558185755669557,
+      0.1414901718970745,
+      0.36299135371251207
+     ],
+     "auroc_wrong_vs_correct": [
+      0.4114035087719298,
+      0.30062010224329866,
+      0.5296216634139529
+     ],
+     "auroc_n": 97
+    },
+    "llm_finding_f1": {
+     "n": 180,
+     "spearman": [
+      0.9971642985869664,
+      0.9918407847505132,
+      0.9999999999999999
+     ],
+     "kendall": [
+      0.9892281469227925,
+      0.9732366958404756,
+      0.9999999999999999
+     ],
+     "auroc_wrong_vs_correct": [
+      0.5927631578947369,
+      0.4670759307157395,
+      0.7090723688879426
+     ],
+     "auroc_n": 97
+    },
+    "judge_score": {
+     "n": 179,
+     "spearman": [
+      -0.1942865596081731,
+      -0.2584397538240419,
+      -0.12678360020135324
+     ],
+     "kendall": [
+      -0.17411109844559114,
+      -0.23132748317669383,
+      -0.11246522356289747
+     ],
+     "auroc_wrong_vs_correct": [
+      0.5,
+      null,
+      null
+     ],
+     "auroc_n": 97
+    },
+    "sentence_f1": {
+     "n": 179,
+     "spearman": [
+      -0.10036845528513968,
+      -0.23163701634854875,
+      0.04709135896081007
+     ],
+     "kendall": [
+      -0.06930438805949415,
+      -0.1694760309819721,
+      0.04581122111748619
+     ],
+     "auroc_wrong_vs_correct": [
+      0.5763157894736842,
+      0.4713529564973029,
+      0.6935899875672838
+     ],
+     "auroc_n": 97
+    }
+   },
+   "mean_fact_f1": 0.15375248558097585,
+   "share_with_a_wrong_key_fact": 0.2222222222222222,
+   "share_stating_no_key_fact": 0.46111111111111114,
+   "n_checkable": 97,
+   "n_wrong_reports": 40,
+   "n_fully_correct": 57
+  }
+ },
+ "per_field": {
+  "breast.birads": {
+   "in_labels": 24,
+   "stated": 24,
+   "correct_of_stated": 3,
+   "accuracy_of_stated": 0.125
+  },
+  "breast.path": {
+   "in_labels": 60,
+   "stated": 28,
+   "correct_of_stated": 16,
+   "accuracy_of_stated": 0.5714285714285714
+  },
+  "breast.presence": {
+   "in_labels": 60,
+   "stated": 60,
+   "correct_of_stated": 50,
+   "accuracy_of_stated": 0.8333333333333334
+  },
+  "breast.side": {
+   "in_labels": 12,
+   "stated": 12,
+   "correct_of_stated": 10,
+   "accuracy_of_stated": 0.8333333333333334
+  },
+  "breast.size": {
+   "in_labels": 48,
+   "stated": 11,
+   "correct_of_stated": 3,
+   "accuracy_of_stated": 0.2727272727272727
+  },
+  "fetal.hc": {
+   "in_labels": 60,
+   "stated": 0,
+   "correct_of_stated": 0,
+   "accuracy_of_stated": null
+  },
+  "fetal.plane": {
+   "in_labels": 30,
+   "stated": 0,
+   "correct_of_stated": 0,
+   "accuracy_of_stated": null
+  },
+  "thyroid.presence": {
+   "in_labels": 60,
+   "stated": 37,
+   "correct_of_stated": 35,
+   "accuracy_of_stated": 0.9459459459459459
+  },
+  "thyroid.size": {
+   "in_labels": 59,
+   "stated": 0,
+   "correct_of_stated": 0,
+   "accuracy_of_stated": null
+  },
+  "thyroid.tirads": {
+   "in_labels": 16,
+   "stated": 10,
+   "correct_of_stated": 7,
+   "accuracy_of_stated": 0.7
+  }
+ },
+ "regex_vs_llm": {
+  "breast.birads": {
+   "both_stated": 59,
+   "agree_when_both_stated": 1.0,
+   "one_or_none_missing": 1,
+   "both_missing": 0
+  },
+  "breast.lesion": {
+   "both_stated": 50,
+   "agree_when_both_stated": 0.96,
+   "one_or_none_missing": 10,
+   "both_missing": 0
+  },
+  "breast.side": {
+   "both_stated": 48,
+   "agree_when_both_stated": 1.0,
+   "one_or_none_missing": 12,
+   "both_missing": 11
+  },
+  "breast.size_mm": {
+   "both_stated": 53,
+   "agree_when_both_stated": 0.9811320754716981,
+   "one_or_none_missing": 7,
+   "both_missing": 6
+  },
+  "fetal.birads": {
+   "both_stated": 0,
+   "agree_when_both_stated": null,
+   "one_or_none_missing": 60,
+   "both_missing": 15
+  },
+  "fetal.lesion": {
+   "both_stated": 0,
+   "agree_when_both_stated": null,
+   "one_or_none_missing": 60,
+   "both_missing": 20
+  },
+  "fetal.side": {
+   "both_stated": 0,
+   "agree_when_both_stated": null,
+   "one_or_none_missing": 60,
+   "both_missing": 60
+  },
+  "fetal.size_mm": {
+   "both_stated": 0,
+   "agree_when_both_stated": null,
+   "one_or_none_missing": 60,
+   "both_missing": 60
+  },
+  "thyroid.birads": {
+   "both_stated": 0,
+   "agree_when_both_stated": null,
+   "one_or_none_missing": 60,
+   "both_missing": 1
+  },
+  "thyroid.lesion": {
+   "both_stated": 31,
+   "agree_when_both_stated": 0.8064516129032258,
+   "one_or_none_missing": 29,
+   "both_missing": 0
+  },
+  "thyroid.side": {
+   "both_stated": 0,
+   "agree_when_both_stated": null,
+   "one_or_none_missing": 60,
+   "both_missing": 56
+  },
+  "thyroid.size_mm": {
+   "both_stated": 7,
+   "agree_when_both_stated": 1.0,
+   "one_or_none_missing": 53,
+   "both_missing": 53
+  }
+ },
+ "parse_failures": 0,
+ "rows": [
+  {
+   "i": 0,
+   "case_id": "BrEaST:184",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.3636363636363637,
+   "n_key": 4,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 1,
+   "case_id": "BrEaST:239",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.3229166666666667,
+   "n_key": 4,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     true
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 2,
+   "case_id": "BrEaST:214",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.2608695652173913,
+   "n_key": 4,
+   "n_stated": 3,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 3,
+   "case_id": "BrEaST:68",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.27272727272727276,
+   "n_key": 4,
+   "n_stated": 3,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 4,
+   "case_id": "BrEaST:95",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.34782608695652173,
+   "n_key": 4,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 5,
+   "case_id": "BrEaST:119",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.374581939799331,
+   "n_key": 4,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 6,
+   "case_id": "BrEaST:225",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.43452380952380953,
+   "n_key": 4,
+   "n_stated": 3,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     true
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 7,
+   "case_id": "BrEaST:59",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.34782608695652173,
+   "n_key": 4,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 8,
+   "case_id": "BrEaST:145",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.4347826086956522,
+   "n_key": 4,
+   "n_stated": 3,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 9,
+   "case_id": "BrEaST:52",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.4347826086956522,
+   "n_key": 4,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 10,
+   "case_id": "BrEaST:54",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.21052631578947367,
+   "n_key": 4,
+   "n_stated": 2,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 11,
+   "case_id": "BrEaST:58",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "acc": 0.391304347826087,
+   "n_key": 4,
+   "n_stated": 3,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     true,
+     true
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 12,
+   "case_id": "BUS-BRA:bus_0225-r",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.3333333333333333,
+   "n_key": 5,
+   "n_stated": 3,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 13,
+   "case_id": "BUS-BRA:bus_0098-r",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.5,
+   "n_key": 5,
+   "n_stated": 4,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     true
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 14,
+   "case_id": "BUS-BRA:bus_0650-r",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.47058823529411764,
+   "n_key": 5,
+   "n_stated": 4,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     true
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 15,
+   "case_id": "BUS-BRA:bus_0141-l",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.375,
+   "n_key": 5,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 16,
+   "case_id": "BUS-BRA:bus_0400-r",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.3157894736842105,
+   "n_key": 5,
+   "n_stated": 3,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 17,
+   "case_id": "BUS-BRA:bus_0670-l",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.3333333333333333,
+   "n_key": 5,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 18,
+   "case_id": "BUS-BRA:bus_0993-r",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.3157894736842105,
+   "n_key": 5,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 19,
+   "case_id": "BUS-BRA:bus_0250-l",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.35294117647058826,
+   "n_key": 5,
+   "n_stated": 3,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 20,
+   "case_id": "BUS-BRA:bus_0003-l",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.3,
+   "n_key": 5,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 21,
+   "case_id": "BUS-BRA:bus_0372-l",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.3157894736842105,
+   "n_key": 5,
+   "n_stated": 3,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 22,
+   "case_id": "BUS-BRA:bus_0444-r",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.3157894736842105,
+   "n_key": 5,
+   "n_stated": 4,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 23,
+   "case_id": "BUS-BRA:bus_0426-r",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "acc": 0.4210526315789474,
+   "n_key": 5,
+   "n_stated": 3,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "side": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "birads": [
+     true,
+     true
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 24,
+   "case_id": "BUSI:benign/benign (26)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.4,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 25,
+   "case_id": "BUSI:normal/normal (122)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 26,
+   "case_id": "BUSI:malignant/malignant (6)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.37499999999999994,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 27,
+   "case_id": "BUSI:malignant/malignant (194)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.26666666666666666,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 28,
+   "case_id": "BUSI:normal/normal (76)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 2,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 29,
+   "case_id": "BUSI:benign/benign (284)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.25,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 30,
+   "case_id": "BUSI:benign/benign (138)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.26666666666666666,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 31,
+   "case_id": "BUSI:benign/benign (121)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.4,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 32,
+   "case_id": "BUSI:benign/benign (331)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.25,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 33,
+   "case_id": "BUSI:normal/normal (58)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 34,
+   "case_id": "BUSI:benign/benign (228)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.0,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 35,
+   "case_id": "BUSI:malignant/malignant (148)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "acc": 0.37499999999999994,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 36,
+   "case_id": "UDIAT:000098",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.23529411764705882,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 37,
+   "case_id": "UDIAT:000109",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.25,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 38,
+   "case_id": "UDIAT:000140",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.25,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 39,
+   "case_id": "UDIAT:000053",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.23529411764705882,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 40,
+   "case_id": "UDIAT:000104",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.25,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 41,
+   "case_id": "UDIAT:000134",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.26666666666666666,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 42,
+   "case_id": "UDIAT:000137",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.25,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 43,
+   "case_id": "UDIAT:000121",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.26666666666666666,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 44,
+   "case_id": "UDIAT:000125",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.3157894736842105,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 45,
+   "case_id": "UDIAT:000119",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.25,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 46,
+   "case_id": "UDIAT:000050",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.375,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 47,
+   "case_id": "UDIAT:000029",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "acc": 0.25,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 48,
+   "case_id": "BUS-UCLM:ANFO_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.8,
+   "n_key": 2,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 49,
+   "case_id": "BUS-UCLM:WAQU_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 2,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 50,
+   "case_id": "BUS-UCLM:SIBA_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.25,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 51,
+   "case_id": "BUS-UCLM:HUBL_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.8,
+   "n_key": 2,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "path": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 52,
+   "case_id": "BUS-UCLM:CRCI_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.26666666666666666,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 53,
+   "case_id": "BUS-UCLM:LOTI_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 2,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 54,
+   "case_id": "BUS-UCLM:CODE_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.30769230769230765,
+   "n_key": 3,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 55,
+   "case_id": "BUS-UCLM:SECH_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 56,
+   "case_id": "BUS-UCLM:PLBA_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 57,
+   "case_id": "BUS-UCLM:TOCI_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 2,
+   "n_wrong": 2,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "path": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 58,
+   "case_id": "BUS-UCLM:VITR_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.5,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 59,
+   "case_id": "BUS-UCLM:COVA_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "path": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 60,
+   "case_id": "TN3K:trainval/1511.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 61,
+   "case_id": "TN3K:test/0570.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 62,
+   "case_id": "TN3K:trainval/0849.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 63,
+   "case_id": "TN3K:trainval/0116.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.28571428571428575,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 64,
+   "case_id": "TN3K:trainval/2864.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.20000000000000004,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 65,
+   "case_id": "TN3K:trainval/1996.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 66,
+   "case_id": "TN3K:trainval/1856.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 67,
+   "case_id": "TN3K:trainval/2764.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 68,
+   "case_id": "TN3K:trainval/2185.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 69,
+   "case_id": "TN3K:test/0173.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 70,
+   "case_id": "TN3K:trainval/2668.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 71,
+   "case_id": "TN3K:trainval/1615.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 72,
+   "case_id": "TN3K:trainval/2274.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 73,
+   "case_id": "TN3K:trainval/1743.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 74,
+   "case_id": "TN3K:trainval/0412.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 75,
+   "case_id": "TN3K:trainval/2762.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 76,
+   "case_id": "TN3K:test/0407.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 77,
+   "case_id": "TN3K:trainval/2002.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.20000000000000004,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 78,
+   "case_id": "TN3K:trainval/1792.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.22222222222222224,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 79,
+   "case_id": "TN3K:trainval/1665.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "acc": 0.22222222222222224,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 80,
+   "case_id": "TN5000:004429",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.1818181818181818,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 81,
+   "case_id": "TN5000:003495",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.20000000000000004,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 82,
+   "case_id": "TN5000:001552",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.1818181818181818,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 83,
+   "case_id": "TN5000:003423",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 84,
+   "case_id": "TN5000:000605",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.22222222222222224,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 85,
+   "case_id": "TN5000:003097",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.20000000000000004,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 86,
+   "case_id": "TN5000:002480",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 87,
+   "case_id": "TN5000:000266",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 88,
+   "case_id": "TN5000:003009",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 89,
+   "case_id": "TN5000:002131",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.4444444444444445,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 90,
+   "case_id": "TN5000:000581",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.4444444444444445,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 91,
+   "case_id": "TN5000:004948",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.3333333333333333,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 92,
+   "case_id": "TN5000:004162",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 93,
+   "case_id": "TN5000:002899",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 94,
+   "case_id": "TN5000:004017",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.20000000000000004,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 95,
+   "case_id": "TN5000:000516",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 96,
+   "case_id": "TN5000:004800",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 97,
+   "case_id": "TN5000:001701",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 98,
+   "case_id": "TN5000:001056",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.25,
+   "n_key": 2,
+   "n_stated": 1,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 99,
+   "case_id": "TN5000:002630",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 100,
+   "case_id": "DDTI:108_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.0,
+   "n_key": 3,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 101,
+   "case_id": "DDTI:88_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.39999999999999997,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 102,
+   "case_id": "DDTI:199_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 103,
+   "case_id": "DDTI:243_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.15384615384615383,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 104,
+   "case_id": "DDTI:26_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.42857142857142855,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 105,
+   "case_id": "DDTI:53_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.0,
+   "n_key": 3,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 106,
+   "case_id": "DDTI:34_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.14285714285714288,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 107,
+   "case_id": "DDTI:293_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.36363636363636365,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 108,
+   "case_id": "DDTI:160_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.0,
+   "n_key": 3,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 109,
+   "case_id": "DDTI:320_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.16666666666666666,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 1,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     true,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 110,
+   "case_id": "DDTI:110_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.0,
+   "n_key": 3,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 111,
+   "case_id": "DDTI:59_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 112,
+   "case_id": "DDTI:308_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.42857142857142855,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 113,
+   "case_id": "DDTI:107_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.28571428571428575,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 114,
+   "case_id": "DDTI:381_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.46153846153846156,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 115,
+   "case_id": "DDTI:373_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.0,
+   "n_key": 3,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 116,
+   "case_id": "DDTI:338_2",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.30769230769230765,
+   "n_key": 3,
+   "n_stated": 2,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     true,
+     true
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     true,
+     true
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 117,
+   "case_id": "DDTI:176_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 1.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 118,
+   "case_id": "DDTI:146_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 119,
+   "case_id": "DDTI:334_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "acc": 0.0,
+   "n_key": 3,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "presence": [
+     false,
+     false
+    ],
+    "size": [
+     false,
+     false
+    ],
+    "tirads": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 120,
+   "case_id": "HC18:495_3HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 121,
+   "case_id": "HC18:323_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 122,
+   "case_id": "HC18:031_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 123,
+   "case_id": "HC18:575_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 124,
+   "case_id": "HC18:796_2HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 125,
+   "case_id": "HC18:321_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 126,
+   "case_id": "HC18:800_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 127,
+   "case_id": "HC18:238_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 128,
+   "case_id": "HC18:767_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 129,
+   "case_id": "HC18:699_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 130,
+   "case_id": "HC18:652_2HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 131,
+   "case_id": "HC18:775_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 132,
+   "case_id": "HC18:705_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 133,
+   "case_id": "HC18:718_2HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 134,
+   "case_id": "HC18:054_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 135,
+   "case_id": "HC18:387_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 136,
+   "case_id": "HC18:079_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 137,
+   "case_id": "HC18:751_2HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 138,
+   "case_id": "HC18:708_3HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 139,
+   "case_id": "HC18:618_2HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 140,
+   "case_id": "HC18:356_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 141,
+   "case_id": "HC18:681_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 142,
+   "case_id": "HC18:551_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 143,
+   "case_id": "HC18:069_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 144,
+   "case_id": "HC18:215_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 145,
+   "case_id": "HC18:295_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 146,
+   "case_id": "HC18:450_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 147,
+   "case_id": "HC18:588_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 148,
+   "case_id": "HC18:716_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 149,
+   "case_id": "HC18:415_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "acc": 0.0,
+   "n_key": 1,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 150,
+   "case_id": "FetalHead:Patient01672_Plane3_1_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 151,
+   "case_id": "FetalHead:Patient01543_Plane3_1_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 152,
+   "case_id": "FetalHead:Patient01160_Plane3_2_of_4",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 153,
+   "case_id": "FetalHead:Patient01296_Plane3_1_of_5",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 154,
+   "case_id": "FetalHead:Patient00726_Plane3_1_of_3",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 155,
+   "case_id": "FetalHead:Patient01651_Plane3_2_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 156,
+   "case_id": "FetalHead:Patient01469_Plane3_1_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 157,
+   "case_id": "FetalHead:Patient01411_Plane3_1_of_3",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 158,
+   "case_id": "FetalHead:Patient00766_Plane3_1_of_3",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 159,
+   "case_id": "FetalHead:Patient01682_Plane3_1_of_6",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 160,
+   "case_id": "FetalHead:Patient00764_Plane3_4_of_6",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 161,
+   "case_id": "FetalHead:Patient01136_Plane3_2_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 162,
+   "case_id": "FetalHead:Patient01414_Plane3_1_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 163,
+   "case_id": "FetalHead:Patient01508_Plane3_1_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 164,
+   "case_id": "FetalHead:Patient01207_Plane3_1_of_4",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 165,
+   "case_id": "FetalHead:Patient01611_Plane3_2_of_3",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 166,
+   "case_id": "FetalHead:Patient01403_Plane3_1_of_1",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 167,
+   "case_id": "FetalHead:Patient00808_Plane3_1_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 168,
+   "case_id": "FetalHead:Patient01318_Plane3_2_of_3",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 169,
+   "case_id": "FetalHead:Patient01095_Plane3_1_of_4",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 170,
+   "case_id": "FetalHead:Patient00682_Plane3_1_of_3",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 171,
+   "case_id": "FetalHead:Patient01668_Plane3_2_of_3",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 172,
+   "case_id": "FetalHead:Patient01239_Plane3_4_of_6",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 173,
+   "case_id": "FetalHead:Patient01701_Plane3_2_of_3",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 174,
+   "case_id": "FetalHead:Patient00892_Plane3_3_of_3",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 175,
+   "case_id": "FetalHead:Patient00744_Plane3_1_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 176,
+   "case_id": "FetalHead:Patient00676_Plane3_1_of_1",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 177,
+   "case_id": "FetalHead:Patient01066_Plane3_2_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 178,
+   "case_id": "FetalHead:Patient00932_Plane3_1_of_1",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  },
+  {
+   "i": 179,
+   "case_id": "FetalHead:Patient00760_Plane3_3_of_4",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "acc": 0.0,
+   "n_key": 2,
+   "n_stated": 0,
+   "n_wrong": 0,
+   "keyfacts": {
+    "hc": [
+     false,
+     false
+    ],
+    "plane": [
+     false,
+     false
+    ]
+   },
+   "parse_ok": true
+  }
+ ]
+}

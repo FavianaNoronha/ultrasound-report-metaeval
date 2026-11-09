@@ -1,0 +1,15 @@
+{
+ "step": "28",
+ "writer": "Qwen/Qwen2.5-VL-3B-Instruct (frozen prompt generate.PROMPT, greedy, seed 0)",
+ "extractor": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+ "judge": "gemma-2-9b-it-4bit prompt_v2",
+ "images": 180,
+ "per_organ": 60,
+ "reduced_from": 100,
+ "reused_reports": 74,
+ "git_head_at_report": "bc6fd18",
+ "python": "3.9.6",
+ "platform": "macOS-27.2-arm64-arm-64bit",
+ "date": "2026-11-10",
+ "bootstrap": "images (one per group), 1000 resamples, seed 0"
+}
