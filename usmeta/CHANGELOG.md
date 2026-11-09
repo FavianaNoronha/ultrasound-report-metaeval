@@ -53,3 +53,6 @@ New file `usmeta/step21_edit_matched.py`; results in `results/partA/step21e_edit
 
 ## Step 21g (2026-11-09): leakage sensitivity, additions only
 New file `usmeta/step21_leak_sens.py`; results in `results/partA/step21g_leak_sens/`. Saved scores only. Uses the <= 8-bit dHash clusters of Step 21f (loose, unverified). Headline AUROCs = Step 19a pairing (error vs small / matched / large harmless), judge on the judged subset, Step 24 exact-box image check (Step 20 and Step 16 rules). Change interval: paired group bootstrap (full and reduced set resampled together).
+
+## Step 25 (2026-11-09): error-type coverage, additions only
+New file `usmeta/step25_error_coverage.py`; results in `results/partA/step25_error_coverage/`. Omission candidates are built from the test references (2,087; one sentence other than the first dropped); scored with the existing BLEU, ROUGE-L, chrF, BERTScore, RaTEScore and finding_f1 code (no judge or MedSAM call). Planted types are mapped to the requested groups; count and position errors are reported as `other`. `bench_test_v2d` and earlier scores untouched. A small wording fix to the Step 21g results text (the "within +-0.022" claim) is included in this commit.

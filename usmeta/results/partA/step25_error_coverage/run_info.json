@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-09T19:16:53",
+ "git_commit": "3cefb82",
+ "seeds": {
+  "bootstrap": 0
+ },
+ "models": [
+  "roberta-large (BERTScore)",
+  "RaTEScore 0.6.0",
+  "sacrebleu/rouge/chrF"
+ ],
+ "command": "python3 -m usmeta.step25_error_coverage build | report",
+ "notes": "omission candidates built from test references; no judge or MedSAM calls"
+}
