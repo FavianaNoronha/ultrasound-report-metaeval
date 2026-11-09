@@ -85,3 +85,6 @@ We found no ultrasound work that tests the scorers with planted errors, severity
 
 ## Addendum: Step 21e, matched edit-size comparison (2026-11-09; new section only)
 `results/partA/step21e_edit_matched/results.md`. At the same small edit size (0-5%) the word scorers still prefer the error: strict preference BLEU 0.58, ROUGE-L 0.06, chrF 0.28, BERTScore 0.20, RaTEScore 0.33 (breast); 0.74, 0.09, 0.07, 0.15, 0.11 (thyroid); 0.00-0.29 (fetal head); judge_score 0.99 / 1.00 (breast / thyroid). Across bins the preference flips with error type (right at 5-10% and 40%+, wrong at 10-20%) because the bins are confounded with error type; edit size alone does not explain the word scorers' failure.
+
+## Addendum: Step 21g, leakage sensitivity (2026-11-09; new section only)
+`results/partA/step21g_leak_sens/results.md`. Dropping the test images whose near-duplicate cluster (<= 8 bits, loose) reaches dev or val (breast 8, thyroid 84, fetal head 36 benchmark cases; thyroid image-check 11 of 90 scans) changes no headline test AUROC by more than 0.05: largest change +0.033 (thyroid image-check size, 0.78 to 0.82 with the Step 16 rule); word scorers move by 0.00-0.01, judge_score +0.017 (thyroid), 0.000 (breast, fetal head). Breast has almost nothing to drop.

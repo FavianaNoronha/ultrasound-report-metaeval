@@ -50,3 +50,6 @@ The filled human-rewording sheet (`reference to human.xlsx`, uploaded to the rep
 
 ## Step 21e (2026-11-09): matched edit-size comparison, additions only
 New file `usmeta/step21_edit_matched.py`; results in `results/partA/step21e_edit_matched/`. Saved scores only (no judge or MedSAM calls). Harmless candidates = small, matched, large and the secondary "other" variants (19a used only small / matched / large). The test-split access is logged under `usmeta.step21_edit_matched`. Added beyond the brief: error-type composition per bin, a table without the whole-report no-lesion errors, and the 21d human rewordings (no judge row: Step 21d saves judge aggregates only).
+
+## Step 21g (2026-11-09): leakage sensitivity, additions only
+New file `usmeta/step21_leak_sens.py`; results in `results/partA/step21g_leak_sens/`. Saved scores only. Uses the <= 8-bit dHash clusters of Step 21f (loose, unverified). Headline AUROCs = Step 19a pairing (error vs small / matched / large harmless), judge on the judged subset, Step 24 exact-box image check (Step 20 and Step 16 rules). Change interval: paired group bootstrap (full and reduced set resampled together).

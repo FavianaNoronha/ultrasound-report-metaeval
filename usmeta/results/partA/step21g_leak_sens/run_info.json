@@ -1,0 +1,11 @@
+{
+ "date": "2026-11-09T19:11:32",
+ "git_commit": "76e1b46",
+ "seeds": {
+  "bootstrap": 0
+ },
+ "models": [
+  "none (saved scores only)"
+ ],
+ "command": "python3 -m usmeta.step21_leak_sens results/partA/step21g_leak_sens"
+}
