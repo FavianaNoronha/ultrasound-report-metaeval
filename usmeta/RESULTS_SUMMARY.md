@@ -82,3 +82,6 @@ We found no ultrasound work that tests the scorers with planted errors, severity
 
 ## Addendum: Step 21d scored (2026-11-09; new section only)
 `results/partA/step21d_human_sheet/results.md`. 29 human rewordings of test references (breast 9, thyroid 10, fetal head 10; H01 excluded after fact check). AUROC of error vs human rewording (all organs, too small to compare: under 30 groups): BLEU 0.08, ROUGE-L 0.13, chrF 0.09, BERTScore 0.09, RaTEScore 0.17, finding_f1 0.94, judge sentence_f1 0.78, judge_score 0.84. Word scorers treat human rewordings like the project's own large rewrites (errors score higher). Spot-check only.
+
+## Addendum: Step 21e, matched edit-size comparison (2026-11-09; new section only)
+`results/partA/step21e_edit_matched/results.md`. At the same small edit size (0-5%) the word scorers still prefer the error: strict preference BLEU 0.58, ROUGE-L 0.06, chrF 0.28, BERTScore 0.20, RaTEScore 0.33 (breast); 0.74, 0.09, 0.07, 0.15, 0.11 (thyroid); 0.00-0.29 (fetal head); judge_score 0.99 / 1.00 (breast / thyroid). Across bins the preference flips with error type (right at 5-10% and 40%+, wrong at 10-20%) because the bins are confounded with error type; edit size alone does not explain the word scorers' failure.

@@ -1,0 +1,11 @@
+{
+ "date": "2026-11-09T19:10:08",
+ "git_commit": "d5ef0a8",
+ "seeds": {
+  "bootstrap": 0
+ },
+ "models": [
+  "none (saved scores only)"
+ ],
+ "command": "python3 -m usmeta.step21_edit_matched results/partA/step21e_edit_matched"
+}
