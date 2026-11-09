@@ -1,0 +1,31 @@
+id,organ,facts_ok,finding_f1_vs_reference,changed_attributes,identical_to_reference
+H01,breast,False,0.917,lesion.post=0.00;lesion.shape=0.00,False
+H02,breast,False,0.923,calcifications.status=0.00;calcifications.type=0.00,False
+H03,breast,False,0.941,lesion.orient=0.00,False
+H04,breast,False,0.933,lesion.orient=0.00,False
+H05,breast,False,0.8,lesion.orient=0.00;lesion.size_pct=0.00,False
+H06,breast,False,0.909,lesion.orient=0.00,False
+H07,breast,True,1.0,,False
+H08,breast,False,0.923,lesion.orient=0.00,False
+H09,breast,False,0.909,lesion.orient=0.00,False
+H10,breast,False,0.909,lesion.orient=0.00,False
+H11,thyroid,False,0.889,lesion.orient=0.00,False
+H12,thyroid,True,1.0,,False
+H13,thyroid,True,1.0,,False
+H14,thyroid,True,1.0,,False
+H15,thyroid,True,1.0,,False
+H16,thyroid,True,1.0,,False
+H17,thyroid,True,1.0,,False
+H18,thyroid,True,1.0,,False
+H19,thyroid,True,1.0,,False
+H20,thyroid,True,1.0,,False
+H21,fetal head,True,1.0,,False
+H22,fetal head,True,1.0,,False
+H23,fetal head,True,1.0,,False
+H24,fetal head,True,1.0,,False
+H25,fetal head,True,1.0,,False
+H26,fetal head,True,1.0,,False
+H27,fetal head,True,1.0,,False
+H28,fetal head,True,1.0,,False
+H29,fetal head,True,1.0,,False
+H30,fetal head,True,1.0,,False

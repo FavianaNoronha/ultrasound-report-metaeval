@@ -1,0 +1,1282 @@
+{
+ "bleu|human|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.11507936507936506,
+   0.0853174603174603,
+   0.13293650793650794
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bleu|human|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.1408333333333333,
+   0.10416666666666666,
+   0.16833333333333333
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bleu|human|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bleu|human|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.0842775041050903,
+   0.05738608374384236,
+   0.11149938423645318
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bleu|template_small|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.42228835978835977,
+   0.29728835978835977,
+   0.5208333333333334
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bleu|template_small|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.5204166666666667,
+   0.46875,
+   0.5704166666666666
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bleu|template_small|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.35,
+   0.34,
+   0.36
+  ],
+  "tie": 0.03333333333333333,
+  "too_small": true
+ },
+ "bleu|template_small|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.4311986863711002,
+   0.3854710591133005,
+   0.47591030377668314
+  ],
+  "tie": 0.011494252873563218,
+  "too_small": true
+ },
+ "bleu|template_matched|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.753968253968254,
+   0.7117311507936508,
+   0.7882068452380953
+  ],
+  "tie": 0.3723544973544974,
+  "too_small": true
+ },
+ "bleu|template_matched|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.7357291666666667,
+   0.6638203125,
+   0.8076041666666667
+  ],
+  "tie": 0.3285416666666666,
+  "too_small": true
+ },
+ "bleu|template_matched|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.525,
+   0.51,
+   0.54
+  ],
+  "tie": 0.05,
+  "too_small": true
+ },
+ "bleu|template_matched|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.6687243431855502,
+   0.6226289254926107,
+   0.716907455870279
+  ],
+  "tie": 0.24608990147783244,
+  "too_small": true
+ },
+ "bleu|template_large|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.11507936507936506,
+   0.0853174603174603,
+   0.13293650793650794
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bleu|template_large|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.1408333333333333,
+   0.10416666666666666,
+   0.16833333333333333
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bleu|template_large|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bleu|template_large|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.0842775041050903,
+   0.05738608374384236,
+   0.11149938423645318
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "rougeL|human|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.1220238095238095,
+   0.0853174603174603,
+   0.1488095238095238
+  ],
+  "tie": 0.013888888888888888,
+  "too_small": true
+ },
+ "rougeL|human|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.1720833333333333,
+   0.15333333333333335,
+   0.19375
+  ],
+  "tie": 0.0125,
+  "too_small": true
+ },
+ "rougeL|human|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.1,
+   0.0,
+   0.3
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "rougeL|human|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.1316912972085386,
+   0.07676005747126437,
+   0.20730808702791462
+  ],
+  "tie": 0.008620689655172414,
+  "too_small": true
+ },
+ "rougeL|template_small|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.1259920634920635,
+   0.0892733134920635,
+   0.1508060515873016
+  ],
+  "tie": 0.021825396825396824,
+  "too_small": true
+ },
+ "rougeL|template_small|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.1408333333333333,
+   0.10416666666666666,
+   0.16833333333333333
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "rougeL|template_small|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.16666666666666669,
+   0.16666666666666669,
+   0.16666666666666669
+  ],
+  "tie": 0.33333333333333337,
+  "too_small": true
+ },
+ "rougeL|template_small|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.14513546798029556,
+   0.1270499794745484,
+   0.15972957717569786
+  ],
+  "tie": 0.12171592775041054,
+  "too_small": true
+ },
+ "rougeL|template_matched|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.6577380952380953,
+   0.6259672619047619,
+   0.683531746031746
+  ],
+  "tie": 0.6567460317460317,
+  "too_small": true
+ },
+ "rougeL|template_matched|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.6950000000000001,
+   0.6575,
+   0.7325
+  ],
+  "tie": 0.61,
+  "too_small": true
+ },
+ "rougeL|template_matched|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "tie": 1.0,
+  "too_small": true
+ },
+ "rougeL|template_matched|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.6161945812807882,
+   0.5828125,
+   0.6502493842364532
+  ],
+  "tie": 0.7589901477832512,
+  "too_small": true
+ },
+ "rougeL|template_large|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.11507936507936506,
+   0.0853174603174603,
+   0.13293650793650794
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "rougeL|template_large|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.1408333333333333,
+   0.10416666666666666,
+   0.16833333333333333
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "rougeL|template_large|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "rougeL|template_large|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.0842775041050903,
+   0.05738608374384236,
+   0.11149938423645318
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|human|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.11507936507936506,
+   0.0853174603174603,
+   0.13293650793650794
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|human|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.16583333333333333,
+   0.14583333333333331,
+   0.19
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|human|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|human|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.09289819376026272,
+   0.06599137931034482,
+   0.1201169950738916
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_small|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.4533730158730158,
+   0.3482142857142857,
+   0.5317460317460317
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_small|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.5204166666666667,
+   0.46875,
+   0.5704166666666666
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_small|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.43999999999999995,
+   0.37316666666666665,
+   0.5135
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_small|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.4718801313628899,
+   0.4291769293924466,
+   0.5138449302134647
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_matched|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.3878968253968254,
+   0.2953042328042328,
+   0.46329365079365087
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_matched|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.41500000000000004,
+   0.351828125,
+   0.47437500000000005
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_matched|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.1,
+   0.04,
+   0.16
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_matched|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.2979679802955665,
+   0.23742636494252872,
+   0.36255490558292286
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_large|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.11507936507936506,
+   0.0853174603174603,
+   0.13293650793650794
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_large|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.1408333333333333,
+   0.10416666666666666,
+   0.16833333333333333
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_large|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.030000000000000006,
+   0.01,
+   0.06
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "chrf|template_large|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.0946223316912972,
+   0.07097701149425288,
+   0.1196233579638752
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|human|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.11507936507936506,
+   0.0853174603174603,
+   0.13293650793650794
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|human|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.15333333333333332,
+   0.114125,
+   0.18666666666666668
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|human|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|human|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.08858784893267652,
+   0.06033764367816092,
+   0.11793924466338257
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_small|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.12896825396825395,
+   0.125,
+   0.1349206349206349
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_small|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.14708333333333332,
+   0.11036458333333332,
+   0.17416666666666666
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_small|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.06666666666666667,
+   0.026666666666666665,
+   0.10666666666666666
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_small|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.11373152709359605,
+   0.09322198275862069,
+   0.1355305829228243
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_matched|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.3941798941798942,
+   0.3505291005291005,
+   0.4470982142857143
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_matched|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.5713888888888888,
+   0.5170729166666667,
+   0.6234895833333333
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_matched|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.1,
+   0.04,
+   0.16
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_matched|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.35384510125889423,
+   0.28057590996168585,
+   0.43138392857142854
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_large|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.11507936507936506,
+   0.0853174603174603,
+   0.13293650793650794
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_large|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.1408333333333333,
+   0.10416666666666666,
+   0.16833333333333333
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_large|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.05,
+   0.02,
+   0.08
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "bertscore[roberta-large]|template_large|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.10151888341543515,
+   0.08016728243021347,
+   0.12480090311986863
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "ratescore|human|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.36507936507936506,
+   0.1408234126984127,
+   0.5992063492063492
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "ratescore|human|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.12,
+   0.025,
+   0.22749999999999998
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "ratescore|human|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.05,
+   0.0,
+   0.15
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "ratescore|human|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.17192118226600986,
+   0.08311884236453201,
+   0.26785714285714285
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "ratescore|template_small|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.4358465608465608,
+   0.33382936507936506,
+   0.5208333333333334
+  ],
+  "tie": 0.027777777777777776,
+  "too_small": true
+ },
+ "ratescore|template_small|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.5131249999999999,
+   0.4395833333333333,
+   0.5783333333333334
+  ],
+  "tie": 0.23875000000000002,
+  "too_small": true
+ },
+ "ratescore|template_small|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.45499999999999996,
+   0.38833333333333336,
+   0.5250416666666666
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "ratescore|template_small|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.46909893267651886,
+   0.41830588054187196,
+   0.513441605090312
+  ],
+  "tie": 0.09094827586206897,
+  "too_small": true
+ },
+ "ratescore|template_matched|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.5935846560846562,
+   0.5322296626984127,
+   0.6595651455026454
+  ],
+  "tie": 0.09589947089947089,
+  "too_small": true
+ },
+ "ratescore|template_matched|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.5990972222222222,
+   0.5641276041666667,
+   0.6230902777777778
+  ],
+  "tie": 0.34875,
+  "too_small": true
+ },
+ "ratescore|template_matched|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.26,
+   0.135,
+   0.40499999999999997
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "ratescore|template_matched|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.4804563492063493,
+   0.4006549329501916,
+   0.5591651272577998
+  ],
+  "tie": 0.15002052545155992,
+  "too_small": true
+ },
+ "ratescore|template_large|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.37202380952380953,
+   0.2390873015873016,
+   0.4801835317460317
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "ratescore|template_large|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.35666666666666663,
+   0.31666666666666665,
+   0.3916666666666667
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "ratescore|template_large|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.1125,
+   0.02,
+   0.21506249999999993
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "ratescore|template_large|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.2772372742200328,
+   0.21409893267651886,
+   0.3427534893267652
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|human|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.8075396825396824,
+   0.5198412698412699,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|human|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|human|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|human|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.9402709359605911,
+   0.8503694581280787,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_small|breast": {
+  "n_items": 9,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_small|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_small|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_small|ALL": {
+  "n_items": 29,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_matched|breast": {
+  "n_items": 9,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_matched|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_matched|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_matched|ALL": {
+  "n_items": 29,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_large|breast": {
+  "n_items": 9,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_large|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_large|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "finding_f1|template_large|ALL": {
+  "n_items": 29,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "sentence_f1|human|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.808531746031746,
+   0.6328621031746031,
+   0.9503968253968255
+  ],
+  "tie": 0.14484126984126985,
+  "too_small": true
+ },
+ "sentence_f1|human|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.8291666666666666,
+   0.6166666666666666,
+   0.9729687499999999
+  ],
+  "tie": 0.06666666666666667,
+  "too_small": true
+ },
+ "sentence_f1|human|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.7,
+   0.4,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "sentence_f1|human|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.7782224958949097,
+   0.6526631773399015,
+   0.9030454638752052
+  ],
+  "tie": 0.0679392446633826,
+  "too_small": true
+ },
+ "sentence_f1|template_small|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.5949074074074073,
+   0.5571965939153439,
+   0.6374131944444446
+  ],
+  "tie": 0.21031746031746032,
+  "too_small": true
+ },
+ "sentence_f1|template_small|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.8479166666666667,
+   0.7405729166666667,
+   0.9541666666666666
+  ],
+  "tie": 0.17916666666666664,
+  "too_small": true
+ },
+ "sentence_f1|template_small|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.8575000000000002,
+   0.8441666666666666,
+   0.8708333333333333
+  ],
+  "tie": 0.285,
+  "too_small": true
+ },
+ "sentence_f1|template_small|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.7727011494252873,
+   0.715341748768473,
+   0.83123973727422
+  ],
+  "tie": 0.22532840722495892,
+  "too_small": true
+ },
+ "sentence_f1|template_matched|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.9057539682539684,
+   0.8511656746031746,
+   0.9573412698412699
+  ],
+  "tie": 0.1884920634920635,
+  "too_small": true
+ },
+ "sentence_f1|template_matched|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.9291666666666666,
+   0.8770312499999999,
+   0.975
+  ],
+  "tie": 0.14166666666666666,
+  "too_small": true
+ },
+ "sentence_f1|template_matched|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "sentence_f1|template_matched|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.9463259441707718,
+   0.9165486453201971,
+   0.9735272988505747
+  ],
+  "tie": 0.1073481116584565,
+  "too_small": true
+ },
+ "sentence_f1|template_large|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.7966269841269842,
+   0.6695808531746033,
+   0.9042906746031746
+  ],
+  "tie": 0.15873015873015872,
+  "too_small": true
+ },
+ "sentence_f1|template_large|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.724375,
+   0.593734375,
+   0.8387499999999999
+  ],
+  "tie": 0.2345833333333333,
+  "too_small": true
+ },
+ "sentence_f1|template_large|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.75,
+   0.6,
+   0.9
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "sentence_f1|template_large|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.755634236453202,
+   0.6742918719211821,
+   0.8349368842364532
+  ],
+  "tie": 0.1301518883415435,
+  "too_small": true
+ },
+ "judge_score|human|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.9226190476190477,
+   0.7956349206349207,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "judge_score|human|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.89375,
+   0.7375,
+   1.0
+  ],
+  "tie": 0.0375,
+  "too_small": true
+ },
+ "judge_score|human|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.7,
+   0.4,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "judge_score|human|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.8358990147783252,
+   0.7167102832512315,
+   0.9483297413793103
+  ],
+  "tie": 0.01293103448275862,
+  "too_small": true
+ },
+ "judge_score|template_small|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.8310185185185185,
+   0.7048032407407407,
+   0.9467592592592591
+  ],
+  "tie": 0.06481481481481481,
+  "too_small": true
+ },
+ "judge_score|template_small|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.91875,
+   0.834375,
+   0.975
+  ],
+  "tie": 0.0375,
+  "too_small": true
+ },
+ "judge_score|template_small|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.8950000000000001,
+   0.8725000000000002,
+   0.9183541666666669
+  ],
+  "tie": 0.14333333333333334,
+  "too_small": true
+ },
+ "judge_score|template_small|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.8833333333333332,
+   0.8341918103448276,
+   0.9262230603448275
+  ],
+  "tie": 0.0824712643678161,
+  "too_small": true
+ },
+ "judge_score|template_matched|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.9930555555555556,
+   0.9791666666666666,
+   1.0
+  ],
+  "tie": 0.013888888888888888,
+  "too_small": true
+ },
+ "judge_score|template_matched|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "judge_score|template_matched|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "judge_score|template_matched|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.9978448275862069,
+   0.9935344827586207,
+   1.0
+  ],
+  "tie": 0.004310344827586207,
+  "too_small": true
+ },
+ "judge_score|template_large|breast": {
+  "n_items": 9,
+  "auroc": [
+   0.8616071428571428,
+   0.716765873015873,
+   0.9791666666666666
+  ],
+  "tie": 0.04265873015873015,
+  "too_small": true
+ },
+ "judge_score|template_large|thyroid": {
+  "n_items": 10,
+  "auroc": [
+   0.8552083333333333,
+   0.7239583333333334,
+   0.95625
+  ],
+  "tie": 0.02708333333333333,
+  "too_small": true
+ },
+ "judge_score|template_large|fetal head": {
+  "n_items": 10,
+  "auroc": [
+   0.75,
+   0.6,
+   0.9
+  ],
+  "tie": 0.0,
+  "too_small": true
+ },
+ "judge_score|template_large|ALL": {
+  "n_items": 29,
+  "auroc": [
+   0.8209154351395731,
+   0.7382145422824301,
+   0.8987235734811165
+  ],
+  "tie": 0.02257799671592775,
+  "too_small": true
+ }
+}
