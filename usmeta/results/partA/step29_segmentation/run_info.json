@@ -1,0 +1,13 @@
+{
+ "step": "29",
+ "model": "U-Net, torchvision resnet18 encoder, random init",
+ "seed": 0,
+ "git_head_at_report": "0589e39",
+ "python": "3.9.6",
+ "platform": "macOS-27.2-arm64-arm-64bit",
+ "date": "2026-11-11",
+ "bootstrap": "group (scan group), 1000 resamples, seed 0",
+ "min_groups": 30,
+ "test_scans": 228,
+ "hc18_test_images": 400
+}

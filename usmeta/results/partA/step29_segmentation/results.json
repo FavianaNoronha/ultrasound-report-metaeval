@@ -1,0 +1,258 @@
+{
+ "decision": {
+  "position_auroc_pooled": [
+   0.8861940298507462,
+   0.8427927371541502,
+   0.9270265612327656
+  ],
+  "verdict": "works label-free (>= 0.80)",
+  "per_organ": {
+   "breast": {
+    "position": [
+     0.9404761904761905,
+     0.9036144578313253,
+     0.9709302325581395
+    ],
+    "verdict": "works label-free (>= 0.80)"
+   },
+   "thyroid": {
+    "position": [
+     0.795,
+     0.6911764705882353,
+     0.8877551020408163
+    ],
+    "verdict": "partial (0.55-0.80)"
+   }
+  }
+ },
+ "a_summary": {
+  "breast": {
+   "position": [
+    0.9404761904761905,
+    0.9036144578313253,
+    0.9709302325581395
+   ],
+   "size": [
+    0.8997584541062801,
+    0.866129980021154,
+    0.9333333333333332
+   ],
+   "all": [
+    0.9270703933747412,
+    0.9058743557537519,
+    0.9479737398697113
+   ],
+   "groups": 76
+  },
+  "thyroid": {
+   "position": [
+    0.795,
+    0.6911764705882353,
+    0.8877551020408163
+   ],
+   "size": [
+    0.8444444444444444,
+    0.7952794035674468,
+    0.890742337164751
+   ],
+   "all": [
+    0.857619047619048,
+    0.8215298636487824,
+    0.8887392292699275
+   ],
+   "groups": 49
+  },
+  "pooled": {
+   "position": [
+    0.8861940298507462,
+    0.8427927371541502,
+    0.9270265612327656
+   ],
+   "size": [
+    0.8779239766081872,
+    0.8486792264752792,
+    0.9055101976127081
+   ],
+   "all": [
+    0.8996553884711779,
+    0.8785713606934001,
+    0.9167070178857128
+   ],
+   "groups": 125
+  }
+ },
+ "b_summary": {
+  "n_test": 400,
+  "method": "cv2.fitEllipse on the outer contour of the filled mask, plus a constant calibrated on dev+val true masks",
+  "correction_mm": -0.7065282729966734,
+  "annotation_method_chosen": "fit_ring_points",
+  "mae_uncorrected_mm": 2.939224382415684,
+  "found": 400,
+  "mae_mm": 2.7011284727072633,
+  "median_abs_mm": 1.8463159568652827,
+  "p90_abs_mm": 5.529506741215156,
+  "mae_truemask_geometry_mm": 0.20758113521464822,
+  "mean_dice": 0.9671782934738211,
+  "mean_iou": 0.9417682880531811
+ },
+ "annotation": {
+  "devval": {
+   "moments_filled": {
+    "n": 599,
+    "mae_mm": 1.3343647443320075,
+    "median_abs_mm": 1.0315326069573842,
+    "signed_mean_mm": 1.3343647443320075,
+    "max_abs_mm": 84.2135081721677
+   },
+   "fit_filled_contour": {
+    "n": 599,
+    "mae_mm": 0.7065282729966734,
+    "median_abs_mm": 0.6576385080840623,
+    "signed_mean_mm": 0.7065282729966734,
+    "max_abs_mm": 2.0071453539008246
+   },
+   "fit_ring_points": {
+    "n": 599,
+    "mae_mm": 0.008931583123822544,
+    "median_abs_mm": 0.00724483428822964,
+    "signed_mean_mm": 0.007955682695642669,
+    "max_abs_mm": 0.07014894007292583
+   }
+  },
+  "test": {
+   "moments_filled": {
+    "n": 400,
+    "mae_mm": 1.6433605138597664,
+    "median_abs_mm": 1.0303388109590372,
+    "signed_mean_mm": 1.6433605138597664,
+    "max_abs_mm": 133.40674420532605
+   },
+   "fit_filled_contour": {
+    "n": 400,
+    "mae_mm": 0.7239558658222285,
+    "median_abs_mm": 0.6560348649851733,
+    "signed_mean_mm": 0.7239558658222285,
+    "max_abs_mm": 1.8095833889216237
+   },
+   "fit_ring_points": {
+    "n": 400,
+    "mae_mm": 0.008730366185762329,
+    "median_abs_mm": 0.007171640855190731,
+    "signed_mean_mm": 0.00784669387268071,
+    "max_abs_mm": 0.049545225261283576
+   }
+  },
+  "all": {
+   "moments_filled": {
+    "n": 999,
+    "mae_mm": 1.458086774172952,
+    "median_abs_mm": 1.0315326069573842,
+    "signed_mean_mm": 1.458086774172952,
+    "max_abs_mm": 133.40674420532605
+   },
+   "fit_filled_contour": {
+    "n": 999,
+    "mae_mm": 0.7135062881420408,
+    "median_abs_mm": 0.6561037399912664,
+    "signed_mean_mm": 0.7135062881420408,
+    "max_abs_mm": 2.0071453539008246
+   },
+   "fit_ring_points": {
+    "n": 999,
+    "mae_mm": 0.008851015781255892,
+    "median_abs_mm": 0.0071781234036620845,
+    "signed_mean_mm": 0.007912043527289532,
+    "max_abs_mm": 0.07014894007292583
+   }
+  }
+ },
+ "training": {
+  "breast": {
+   "organ": "breast",
+   "dev_total": 1501,
+   "dev_dropped_leaky": 15,
+   "dev_trained": 1270,
+   "val_n": 629,
+   "epochs_run": 28,
+   "best_val_dice_256": 0.8154246684951251,
+   "val_grid": {
+    "0.3|raw": 0.8132623491321622,
+    "0.3|largest": 0.8105349213923257,
+    "0.4|raw": 0.8148954143671897,
+    "0.4|largest": 0.8116972972567809,
+    "0.5|raw": 0.8154246684951251,
+    "0.5|largest": 0.811842383006665,
+    "0.6|raw": 0.8155447093325213,
+    "0.6|largest": 0.8114080366667462,
+    "0.7|raw": 0.8147666039674395,
+    "0.7|largest": 0.811790793486302
+   },
+   "chosen": {
+    "threshold": 0.6,
+    "keep": "raw"
+   },
+   "encoder": "resnet18 (random init, no pretrained weights)",
+   "seconds": 1029,
+   "device": "mps",
+   "seed": 0
+  },
+  "thyroid": {
+   "organ": "thyroid",
+   "dev_total": 1590,
+   "dev_dropped_leaky": 148,
+   "dev_trained": 1438,
+   "val_n": 789,
+   "epochs_run": 30,
+   "best_val_dice_256": 0.7511601982662601,
+   "val_grid": {
+    "0.3|raw": 0.7519231914974356,
+    "0.3|largest": 0.738537541677258,
+    "0.4|raw": 0.7517641504201583,
+    "0.4|largest": 0.7381382007834808,
+    "0.5|raw": 0.7511601982662601,
+    "0.5|largest": 0.737031518994147,
+    "0.6|raw": 0.7496013884545908,
+    "0.6|largest": 0.7349279520719899,
+    "0.7|raw": 0.7467360890342982,
+    "0.7|largest": 0.7319258476619125
+   },
+   "chosen": {
+    "threshold": 0.3,
+    "keep": "raw"
+   },
+   "encoder": "resnet18 (random init, no pretrained weights)",
+   "seconds": 1244,
+   "device": "mps",
+   "seed": 0
+  },
+  "hc18": {
+   "organ": "hc18",
+   "dev_total": 400,
+   "dev_dropped_leaky": 26,
+   "dev_trained": 374,
+   "val_n": 199,
+   "epochs_run": 30,
+   "best_val_dice_256": 0.9694972910599128,
+   "val_grid": {
+    "0.3|raw": 0.9690822054912772,
+    "0.3|largest": 0.9693631873813385,
+    "0.4|raw": 0.9697758046108618,
+    "0.4|largest": 0.9700272351071152,
+    "0.5|raw": 0.9694972910599128,
+    "0.5|largest": 0.9696618820846357,
+    "0.6|raw": 0.9688311168493565,
+    "0.6|largest": 0.9689749074411824,
+    "0.7|raw": 0.9675893164703495,
+    "0.7|largest": 0.9677238958725609
+   },
+   "chosen": {
+    "threshold": 0.4,
+    "keep": "largest"
+   },
+   "encoder": "resnet18 (random init, no pretrained weights)",
+   "seconds": 312,
+   "device": "mps",
+   "seed": 0
+  }
+ }
+}

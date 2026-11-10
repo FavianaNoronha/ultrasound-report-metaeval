@@ -3,7 +3,7 @@
     python3 -m usmeta.step29_run annotation   (29b-1: annotation ellipse vs the provided HC; dev + val only chosen method; no test numbers for the model)
     python3 -m usmeta.step29_run test         (needs the three trained models)
 Image check = Step 20 tolerance-aware check (tau, position rule frozen on dev/val in step20_tolerance_image_check/tuning_devval.json) and the Step 16 exact rule; same scoring code as Step 24."""
-import os, sys, json, math, random, collections, functools, time
+import os, sys, json, math, random, collections, functools, time, re
 import numpy as np
 import cv2
 from PIL import Image
@@ -108,19 +108,10 @@ def plant_texts(ref_text, hc):
     for kind, lv in [('shift_mm', s) for s in PLANT_SHIFT] + [('factor', f) for f in PLANT_FACTOR]:
         new = hc + lv if kind == 'shift_mm' else hc * lv
         if new <= 0: continue
-        out.append(dict(kind=kind, level=lv, text=ref_text.replace(f'{hc:g} mm', f'{new:.1f} mm') if f'{hc:g} mm' in ref_text else None))
+        m = re.search(r'(\d+(?:\.\d+)?) mm', ref_text); out.append(dict(kind=kind, level=lv, text=(ref_text[:m.start()] + f'{new:.1f} mm' + ref_text[m.end():]) if m else None))
     return [o for o in out if o['text']]
 
-def run_29b(dev, chosen_method):
-    ann = json.load(open(os.path.join(OUT, 'b_annotation.json'))); corr = -ann['devval']['fit_filled_contour']['signed_mean_mm']       # dev+val calibration of the filled-contour ellipse (ring thickness bias), applied to predicted masks
-    sp = G.split_rows(); recs = {c['case_id']: c for c in unified.load('HC18')}; test_ids = [c for c in recs if sp.get(c, {}).get('split') == 'test']; model, chz = load_net('hc18', dev); root = unified.find('archive-7'); rows = []; t0 = time.time()
-    for i, cid in enumerate(test_ids):
-        rec = recs[cid]; img = Image.open(partb.img_path(rec)).convert('L'); pm = predict_mask(model, dev, img, chz['threshold'], 'largest'); pm = ndimage.binary_fill_holes(pm)
-        px = rec['pixel_mm']; lab = rec['labels']['hc_mm']; tm = location.gt_mask(rec); hc0 = hc_from_mask(pm, px, 'fit'); hc = None if hc0 is None else hc0 + corr; hct0 = hc_from_mask(tm, px, 'fit') if tm is not None else None; hct = None if hct0 is None else hct0 + corr
-        rows.append(dict(case_id=cid, label=lab, pred_hc=hc, pred_hc_uncorrected=hc0, truemask_hc=hct, found=bool(pm.any()), dice=location.dice(pm, tm) if tm is not None else None, iou=location.mask_iou(pm, tm) if tm is not None else None))
-        if i % 100 == 0: print('29b', i, len(test_ids), round(time.time() - t0), 's', flush=True)
-    err = [abs(r['pred_hc'] - r['label']) for r in rows if r['pred_hc'] is not None]; res = dict(n_test=len(rows), method='cv2.fitEllipse on the outer contour of the filled mask, plus a constant calibrated on dev+val true masks', correction_mm=corr, annotation_method_chosen=chosen_method, mae_uncorrected_mm=float(np.mean([abs(r['pred_hc_uncorrected'] - r['label']) for r in rows if r['pred_hc_uncorrected'] is not None])), found=sum(r['found'] for r in rows), mae_mm=float(np.mean(err)), median_abs_mm=float(np.median(err)), p90_abs_mm=float(np.percentile(err, 90)),
-        mae_truemask_geometry_mm=float(np.mean([abs(r['truemask_hc'] - r['label']) for r in rows if r['truemask_hc'] is not None])), mean_dice=float(np.mean([r['dice'] for r in rows if r['dice'] is not None])), mean_iou=float(np.mean([r['iou'] for r in rows if r['iou'] is not None])))
+def planted_scores(rows):
     # planted HC errors on the bench test cases of HC18 (150), harmless = the case's template rewordings
     ch = json.load(open(os.path.join(ROOT, 'results', 'partA', 'step20_tolerance_image_check', 'tuning_devval.json')))['chosen']; tau, pm_ = ch['tau'], ch['position']; by = {r['case_id']: r for r in rows}; bench = collections.defaultdict(list)
     for l in open(os.path.join(ROOT, 'bench_test_v2d.jsonl')):
@@ -143,12 +134,30 @@ def run_29b(dev, chosen_method):
                 for p_ in P: d[f'{src}|{var}|lvl|{p_["kind"]}|{p_["level"]:g}'] = auroc_case([f(p_['text'])], h) if h else None
                 d[f'{src}|{var}|correct'] = float(np.mean([f(x) for x in I])) if I else None
         per.append(d)
+    return per, tau, pm_
+
+def run_29b(dev, chosen_method):
+    ann = json.load(open(os.path.join(OUT, 'b_annotation.json'))); corr = -ann['devval']['fit_filled_contour']['signed_mean_mm']       # dev+val calibration of the filled-contour ellipse (ring thickness bias), applied to predicted masks
+    sp = G.split_rows(); recs = {c['case_id']: c for c in unified.load('HC18')}; test_ids = [c for c in recs if sp.get(c, {}).get('split') == 'test']; model, chz = load_net('hc18', dev); root = unified.find('archive-7'); rows = []; t0 = time.time()
+    for i, cid in enumerate(test_ids):
+        rec = recs[cid]; img = Image.open(partb.img_path(rec)).convert('L'); pm = predict_mask(model, dev, img, chz['threshold'], 'largest'); pm = ndimage.binary_fill_holes(pm)
+        px = rec['pixel_mm']; lab = rec['labels']['hc_mm']; tm = location.gt_mask(rec); hc0 = hc_from_mask(pm, px, 'fit'); hc = None if hc0 is None else hc0 + corr; hct0 = hc_from_mask(tm, px, 'fit') if tm is not None else None; hct = None if hct0 is None else hct0 + corr
+        rows.append(dict(case_id=cid, label=lab, pred_hc=hc, pred_hc_uncorrected=hc0, truemask_hc=hct, found=bool(pm.any()), dice=location.dice(pm, tm) if tm is not None else None, iou=location.mask_iou(pm, tm) if tm is not None else None))
+        if i % 100 == 0: print('29b', i, len(test_ids), round(time.time() - t0), 's', flush=True)
+    err = [abs(r['pred_hc'] - r['label']) for r in rows if r['pred_hc'] is not None]; res = dict(n_test=len(rows), method='cv2.fitEllipse on the outer contour of the filled mask, plus a constant calibrated on dev+val true masks', correction_mm=corr, annotation_method_chosen=chosen_method, mae_uncorrected_mm=float(np.mean([abs(r['pred_hc_uncorrected'] - r['label']) for r in rows if r['pred_hc_uncorrected'] is not None])), found=sum(r['found'] for r in rows), mae_mm=float(np.mean(err)), median_abs_mm=float(np.median(err)), p90_abs_mm=float(np.percentile(err, 90)),
+        mae_truemask_geometry_mm=float(np.mean([abs(r['truemask_hc'] - r['label']) for r in rows if r['truemask_hc'] is not None])), mean_dice=float(np.mean([r['dice'] for r in rows if r['dice'] is not None])), mean_iou=float(np.mean([r['iou'] for r in rows if r['iou'] is not None])))
+    per, tau, pm_ = planted_scores(rows)
     json.dump(dict(summary=res, rows=rows, per_case=per, tau=tau, position=pm_, chosen=chz), open(os.path.join(OUT, 'b_rows.json'), 'w')); print(json.dumps(res, indent=1)); return res
+
+def rescore_planted():
+    """recompute only the planted-error check from the saved predictions (b_rows.json) after the planted-text placement was fixed (the first version placed the new number in only 59 of 150 references); no model run, no new test-split read"""
+    b = json.load(open(os.path.join(OUT, 'b_rows.json'))); per, tau, pm_ = planted_scores(b['rows']); b['per_case'] = per; b['planted_rescored'] = True; json.dump(b, open(os.path.join(OUT, 'b_rows.json'), 'w')); print('rescored', len(per), 'cases')
 
 def main():
     import torch
     dev = 'mps' if torch.backends.mps.is_available() else 'cpu'
     if sys.argv[1] == 'annotation': run_annotation(); return
+    if sys.argv[1] == 'rescore_planted': rescore_planted(); return
     ann = json.load(open(os.path.join(OUT, 'b_annotation.json')))['chosen_on_devval']
     splits.load('test', script='usmeta.step29_run')                       # one logged read of the test split for the whole run
     run_29a(dev); run_29b(dev, ann)

@@ -65,3 +65,6 @@ New files `usmeta/step28_natural_errors.py`, `step28_report.py`, `docs/step28_ch
 
 ## Step 28 hand check added (2026-11-10): additions only
 The owner filled `docs/step28_check.csv` (30 random reports): 22 right, 8 wrong; 12 of 12 fetal-head extractions right (empty), 10 of 18 right on breast and thyroid. New file `usmeta/step28_handcheck.py` writes `results/partA/step28_natural_errors/hand_check.json`; `results.md` gains a hand-check section and a caution on the decision line. No Step 28 number changed.
+
+## Step 29 (2026-11-11): label-free image check by segmentation (replaces Step 23), additions only
+New files `usmeta/step29_seg.py`, `step29_run.py`, `step29_report.py`; results in `results/partA/step29_segmentation/`. Models (git-ignored, `local_data/step29/`): U-Net with a ResNet-18 encoder, random init (no pretrained weights were available offline; none downloaded), trained on dev only (dev images in <= 8-bit clusters reaching val or test dropped), early stopping and post-processing chosen on val. One test pass (access logged under `usmeta.step29_run`). The planted-HC-error check was recomputed once from the saved predictions after a text-placement bug (no model rerun, no second test read). Step 23 not run. No earlier number changed.
