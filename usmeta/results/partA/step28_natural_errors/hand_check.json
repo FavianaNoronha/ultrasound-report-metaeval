@@ -1,0 +1,87 @@
+{
+ "n": 30,
+ "right": 22,
+ "by_organ": {
+  "thyroid": {
+   "right": 6,
+   "n": 11,
+   "share_right": [
+    0.5454545454545454,
+    0.2800877556899882,
+    0.7872904245601196
+   ]
+  },
+  "breast": {
+   "right": 4,
+   "n": 7,
+   "share_right": [
+    0.5714285714285714,
+    0.2504542304090258,
+    0.8417830777373732
+   ]
+  },
+  "fetal": {
+   "right": 12,
+   "n": 12,
+   "share_right": [
+    1.0,
+    0.7574992425007574,
+    0.9999999999999998
+   ]
+  }
+ },
+ "overall": [
+  0.7333333333333333,
+  0.5555169795568831,
+  0.8581750444608938
+ ],
+ "non_fetal": [
+  0.5555555555555556,
+  0.33716069428251627,
+  0.7544076889861088
+ ],
+ "non_fetal_n": 18,
+ "fetal_note": "all 12 fetal-head extractions are empty ({}) because the writer states no head circumference or plane; marked right",
+ "wrong_notes": [
+  {
+   "id": "C07",
+   "organ": "thyroid",
+   "note": "lesion marked present, but report describes a normal thyroid with no abnormality/lesion"
+  },
+  {
+   "id": "C08",
+   "organ": "thyroid",
+   "note": "count 3 not in report (only says multiple nodules); comp set to hypoechoic, but that is echogenicity, report gives no composition"
+  },
+  {
+   "id": "C14",
+   "organ": "breast",
+   "note": "path malignant not stated; report only says potential malignancy, biopsy recommended"
+  },
+  {
+   "id": "C15",
+   "organ": "thyroid",
+   "note": "lesion marked absent, but report describes multiple hypoechoic areas (cysts or solid nodules)"
+  },
+  {
+   "id": "C23",
+   "organ": "thyroid",
+   "note": "count 3 not in report (only says multiple nodules); comp set to hypoechoic, but that is echogenicity, report gives no composition"
+  },
+  {
+   "id": "C24",
+   "organ": "breast",
+   "note": "halo no not mentioned in report"
+  },
+  {
+   "id": "C25",
+   "organ": "breast",
+   "note": "path malignant not stated (suspicious mass, biopsy recommended); halo no not mentioned; margin circumscribed conflicts with lobulated/irregular margins"
+  },
+  {
+   "id": "C30",
+   "organ": "thyroid",
+   "note": "comp set to hypoechoic, but that is echogenicity, report gives no composition"
+  }
+ ]
+}

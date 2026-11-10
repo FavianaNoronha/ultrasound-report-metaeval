@@ -62,3 +62,6 @@ New files `usmeta/step27_extractor.py`, `step27_run.py`, `step27_report.py`, `do
 
 ## Step 28 (2026-11-10): natural-error validity test, additions only
 New files `usmeta/step28_natural_errors.py`, `step28_report.py`, `docs/step28_check.csv` (30 reports for the owner's hand check, not filled); results in `results/partA/step28_natural_errors/`. Reduced from 100 to 60 images per organ for the 3 h cap; 74 reports reused from Steps 11/14 (same writer and prompt), 106 generated now with the frozen writer prompt (`generate.PROMPT`, greedy, seed 0). Truth = label facts; accuracy via the Step 27 extractor and cache. Test-split access logged under `usmeta.step28_natural_errors`. No earlier number changed.
+
+## Step 28 hand check added (2026-11-10): additions only
+The owner filled `docs/step28_check.csv` (30 random reports): 22 right, 8 wrong; 12 of 12 fetal-head extractions right (empty), 10 of 18 right on breast and thyroid. New file `usmeta/step28_handcheck.py` writes `results/partA/step28_natural_errors/hand_check.json`; `results.md` gains a hand-check section and a caution on the decision line. No Step 28 number changed.
