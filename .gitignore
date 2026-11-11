@@ -88,3 +88,7 @@ usmeta/local_data/
 
 # local deliverables (slides etc.)
 Claude outputs/
+
+# local scratch from Steps 28-29 (not part of the repo)
+usmeta/qwen_real_work/
+usmeta/reports_medgemma.jsonl.jobs.json

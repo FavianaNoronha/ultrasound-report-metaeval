@@ -3,11 +3,28 @@
 **Question.** Ultrasound report-generation papers grade reports with BLEU, ROUGE, BERTScore and similar. Do those
 scores drop for a clinically important mistake and stay high for harmless rewording? Which graders do?
 
-**Where the results are (read these first).** `RESULTS_SUMMARY.md` (plain-language findings, artefacts, unverified items, limits), `results_layers_all_final.md` (every scorer x every dataset, grouped by layer, test split, n and CIs; the old `results_layers_all.md` is the Step 9 version), `docs/LIMITATIONS.md`, and `results/partA/INDEX.md` (one folder per step, Steps 2-17). The "Status of v0" table below is the original stage-1 status and is out of date.
+**Where the results are (read these first).** `RESULTS_SUMMARY.md` (plain-language findings, artefacts, unverified items, limits), `results_layers_all_final.md` (every scorer x every dataset, grouped by layer, test split, n and CIs; the old `results_layers_all.md` is the Step 9 version), `docs/LIMITATIONS.md`, and `results/partA/INDEX.md` (one folder per step, Steps 2-30). **The "Status of v0", "Stage 3 status" and "Part A status (2026-10-23)" tables further down are historical snapshots and are out of date; the current status is the table below and `../ROADMAP.md`.**
 
 **What this is.** A meta-evaluation benchmark and harness. It builds (reference, candidate) pairs with *planted errors*
 (with severity and magnitude) and *harmless rewordings*, runs any set of graders on them, and reports how well each
 grader tells them apart. Organs: breast, thyroid, fetal.
+
+## Current status (2026-11-11, Steps 2-30; details in `RESULTS_SUMMARY.md`)
+| steps | what | state |
+|---|---|---|
+| 2-9 | templated true reports (10 datasets), planted-error benchmark, Layers 0-3, harmless split | done (reruns kept) |
+| 10 | dedupe, locked splits, freeze (`freeze-v1`), test-split headline results, honesty labels | done |
+| 11, 12, 14, 15 | Qwen and MedGemma reports, larger judge sample, HiSBreast real-text check | done (HiSBreast data stays local) |
+| 16, 20, 24, 29 | image check: MedSAM with oracle boxes, tolerance-aware check, box-reliability curve, label-free U-Net | done: position AUROC 0.97 oracle boxes, 0.39-0.54 label-free boxes, 0.89 with the U-Net |
+| 17, 19, 22 | final combined table, routing and paired preference, paper-support tables | done |
+| 18, 21a-g, 25 | threshold crossing (exploratory), robustness tests, error-type coverage | done |
+| 27 | LLM fact extractor `llm_finding_f1` (Qwen2.5-7B) | done: 0.99-1.00 on templated text; free text only 56% right on breast and thyroid (hand check) |
+| 28 | natural errors from a real writer (60 images per organ) | done, inconclusive (noisy labels, fetal head not checkable, thyroid 5 wrong reports) |
+| 30 | severity breakdown from saved scores | done (severity is our provisional label) |
+| 23, 26 | lesion detector (replaced by 29); Step 26 | not run (23 replaced, 26 on hold at the owner's instruction) |
+| open | clinician review of severity and templates, bilingual HiSBreast review, a real detector, a better free-text extractor, patient-level splits, GREEN / Claude judge / Jev / LLaVA-Med | see `../ROADMAP.md` |
+
+Tests: `PYTHONPATH=. python3 -m pytest -q tests`. Steps 24-30 modules: `usmeta/step24_*.py` ... `usmeta/step30_*.py` (each also copied into its results folder).
 
 ## Pipeline
 

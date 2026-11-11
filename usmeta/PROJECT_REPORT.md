@@ -1,3 +1,5 @@
+> **Superseded, see `RESULTS_SUMMARY.md`** (and `../ROADMAP.md` for status). This short report was written on 2026-10-27, before Steps 18-30; its numbers and conclusions are kept as written and are not updated.
+
 # Project report in plain words (short version)
 
 ## The question
