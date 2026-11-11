@@ -1,0 +1,14 @@
+{
+ "step": "34_metamorphic",
+ "git_head_at_report": "c297f6d",
+ "python": "3.9.6",
+ "platform": "macOS-27.2-arm64-arm-64bit",
+ "date": "2026-11-12",
+ "bootstrap": "items, 1000 resamples, seed 0",
+ "delta": 0.05,
+ "deltas": [
+  0.05,
+  0.1
+ ],
+ "min_applicable": 30
+}

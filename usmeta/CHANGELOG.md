@@ -89,3 +89,6 @@ New files `usmeta/step33_factorial.py`, `step33_factorial_report.py`; results in
 
 ## Step 35 (2026-11-11): limit of detection, additions only
 New files `usmeta/step35_lod.py`, `step35_report.py`; results in `results/partA/step35_lod/`. Step 21b candidates and scores reused; new candidates: size factors x1.05, 1.10, 1.25 and head-circumference shifts of +-1, 2, 5, 10, 20 mm (5,764 rows, scored now: Layer 0, regex finding_f1, judge on a capped subset of 498 calls); the Step 16 oracle-box and Step 29 U-Net image checks re-scored per candidate from saved masks. No earlier number changed.
+
+## Step 34 metamorphic (2026-11-12): metamorphic checks, additions only
+New files `usmeta/step34_metamorphic.py`, `step34_report.py`; results in `results/partA/step34_metamorphic/` (relations, delta 0.05 / 0.10 and item sets fixed in the module docstring before scoring). Numbering note: this is the metamorphic step of the brief of 2026-11-11 (the earlier hybrid pre-registration in `step34_hybrid/` was not run, see its STATUS.md). HiSBreast texts only in `usmeta/local_data` and `usmeta/.llm_cache` (both git-ignored); only aggregated rates are written. One logged test read (`usmeta.step34_metamorphic`). LLM scorers on a capped subset (24 templated, 10 HiSBreast, 20 writer items; 301 judge pairs). No earlier number changed.
