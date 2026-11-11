@@ -1,0 +1,29 @@
+"""Step 36 report: results/partA/step36_adversarial/results.md (no model calls)."""
+import os, json, sys, platform, time, subprocess
+import numpy as np
+from . import step36_adversarial as A
+D = A.OUT; DV = json.load(open(os.path.join(D, 'devval_results.json'))); T = json.load(open(os.path.join(D, 'test_results.json'))); W = json.load(open(os.path.join(D, 'devval_wrong_reports.json'))); WT = json.load(open(os.path.join(D, 'test_wrong_reports.json')))
+ci = lambda v: f"{v[0]:+.2f} ({v[1]:+.2f} to {v[2]:+.2f})"
+pt = DV['per_transform']; win = DV['winner']; base = DV['untransformed']
+md = ['# Step 36: adversarial wording attack on the judge', '',
+      'Limitations: [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md). **Pre-registration (committed before any judge call): [PREREG.md](PREREG.md).** Code: `usmeta/step36_adversarial.py`, `step36_report.py` (new files; frozen Gemma judge, prompt_v2, greedy, imported unchanged). Test split read once (logged: `usmeta.step36_adversarial`).', '',
+      '**Hypothesis (verbatim):** "the judge can be raised by >= 0.2 on a wrong report by wording-only edits."', '',
+      '## Decision (pre-registered: supported iff the mean gain of the winning transform on the TEST wrong reports is >= 0.2)', '',
+      f"**{'SUPPORTED' if T['supported'] else 'NOT SUPPORTED'}.** The winning transform on dev / val was **{win}** (mean gain {pt[win]['mean'][0]:+.2f}); run once on the test wrong reports (n = {T['n']}, {T['groups']} groups) it changed the judge score by **{ci(T['gain']['mean'])}** on average (maximum {T['gain']['max']:+.2f}, median {T['gain']['median']:+.2f}, {T['gain']['share_ge_0_2']*100:.0f}% of reports gained >= 0.2). The untransformed wrong reports had a mean judge score of {T['mean_orig']:.2f} (selected to be <= 0.7), leaving 0.3 to 1.0 of headroom. **Reading:** the fixed wording edits lowered the judge score on average (every transform on dev / val: mean gain -0.10 to -0.21; extra or reordered text is penalised), so no transform raised it by 0.2 on average; a minority of individual reports did gain (largest single gain +0.3 to +0.5 on dev / val, +0.30 on test), which shows the judge is unstable for single reports but is not a consistent hole.", '',
+      f"**Overtaking** (the transformed wrong report scores strictly above its correct counterpart, the style-swap rewording of the same reference with the higher saved judge score): {T['overtakes_best_counterpart']*100:.0f}% of test wrong reports after {win} against {T['untransformed_overtakes_best']*100:.0f}% before; against the lower-scoring style swap {T['overtakes_weaker_counterpart']*100:.0f}% after against {T['untransformed_overtakes_weaker']*100:.0f}% before.", '',
+      '## Dev / val: the five fixed transforms (exploratory; picks the winner)', '',
+      f"{base['n']} wrong reports (up to 10 per dataset, saved judge score <= 0.7, one per case; dev + val together; per dataset: " + ', '.join(f'{k} {v}' for k, v in DV['per_dataset_n'].items()) + f"). Mean untransformed judge score {base['mean_orig']:.2f}. Gain = judge_score(transformed) - judge_score(original).", '',
+      '| transform | n | **max gain** | mean gain (95% CI, group bootstrap) | median gain | share with gain >= 0.2 | share with any gain | overtakes best correct counterpart | overtakes weaker counterpart |', '|---|---|---|---|---|---|---|---|---|']
+md.append(f"| (untransformed) | {base['n']} | — | — | — | — | — | {base['overtakes_best_counterpart']*100:.0f}% | {base['overtakes_weaker_counterpart']*100:.0f}% |")
+for t, v in pt.items(): md.append(f"| {t}{' **(winner)**' if t == win else ''} | {v['n']} | {v['max']:+.2f} | {ci(v['mean'])} | {v['median']:+.2f} | {v['share_ge_0_2']*100:.0f}% | {v['share_positive']*100:.0f}% | {v['overtakes_best_counterpart']*100:.0f}% | {v['overtakes_weaker_counterpart']*100:.0f}% |")
+md += ['', 'The five transforms are fixed in the PREREG (hedge, recommendation, double length with correct filler, confident phrasing, reorder): no fact is added, removed or changed. The winner is the highest mean gain.', '',
+       '## Test: the winning transform, once', '', f"Wrong reports from the test judged subset (Steps 10d + 12), up to 10 per dataset, saved judge score <= 0.7, seed 0: n = {T['n']}; per dataset (every cell is under 30 groups: **too small to compare**): " + ', '.join(f"{k} {v['n']} (mean {v['mean_gain']:+.2f})" for k, v in T['per_dataset'].items() if v['mean_gain'] is not None) + '.', '',
+       '## Caveats', '',
+       '- **Selection effect:** only wrong reports the judge already penalises (saved score <= 0.7) are used, so a gain is possible; errors the judge misses entirely are not part of this test. The sample is small (up to 10 per dataset; datasets with fewer qualifying reports use all of them).',
+       '- **Fixed, simple transforms on templated text**, not an optimised attack; a judge-in-the-loop search was not tried. The PREREG names "the large harmless rewording" as the correct counterpart; two exist (terse, long), so the one with the higher saved judge score is used (the stricter test) and the lower is also reported.',
+       '- Greedy decoding, one judge model, one prompt; the judge is known to depend on the prompt (Step 21c). Gains of a few hundredths are within that noise.', '']
+open(os.path.join(D, 'results.md'), 'w').write('\n'.join(md))
+def g(*c):
+    try: return subprocess.check_output(c, text=True, cwd=A.ROOT).strip()
+    except Exception: return None
+json.dump(dict(step='36', prereg='PREREG.md', winner=win, supported=T['supported'], git_head_at_report=g('git', 'rev-parse', '--short', 'HEAD'), python=sys.version.split()[0], platform=platform.platform(), date=time.strftime('%Y-%m-%d'), bootstrap='group, 1000 resamples, seed 0'), open(os.path.join(D, 'run_info.json'), 'w'), indent=1); print('wrote', len(md), 'supported:', T['supported'])

@@ -1,0 +1,76 @@
+{
+ "winner": "T5_reorder",
+ "n": 100,
+ "groups": 94,
+ "too_small_pooled": false,
+ "gain": {
+  "n": 100,
+  "max": 0.29999999999999993,
+  "mean": [
+   -0.13399999999999998,
+   -0.1762449484744393,
+   -0.08899999999999998
+  ],
+  "median": 0.0,
+  "share_ge_0_2": 0.05,
+  "share_positive": 0.06
+ },
+ "overtakes_best_counterpart": 0.06,
+ "overtakes_weaker_counterpart": 0.06,
+ "untransformed_overtakes_best": 0.09,
+ "untransformed_overtakes_weaker": 0.09,
+ "mean_orig": 0.393,
+ "supported": false,
+ "per_dataset": {
+  "BUS-BRA": {
+   "n": 10,
+   "mean_gain": -0.15,
+   "too_small": true
+  },
+  "BUS-UCLM": {
+   "n": 10,
+   "mean_gain": -0.030000000000000006,
+   "too_small": true
+  },
+  "BUSI": {
+   "n": 10,
+   "mean_gain": -0.38999999999999996,
+   "too_small": true
+  },
+  "BrEaST": {
+   "n": 10,
+   "mean_gain": -0.26999999999999996,
+   "too_small": true
+  },
+  "DDTI": {
+   "n": 10,
+   "mean_gain": -0.12999999999999995,
+   "too_small": true
+  },
+  "FetalHead": {
+   "n": 10,
+   "mean_gain": -0.059999999999999984,
+   "too_small": true
+  },
+  "HC18": {
+   "n": 10,
+   "mean_gain": -0.08999999999999998,
+   "too_small": true
+  },
+  "TN3K": {
+   "n": 10,
+   "mean_gain": -1.1102230246251566e-17,
+   "too_small": true
+  },
+  "TN5000": {
+   "n": 10,
+   "mean_gain": 0.04999999999999999,
+   "too_small": true
+  },
+  "UDIAT": {
+   "n": 10,
+   "mean_gain": -0.27,
+   "too_small": true
+  }
+ }
+}

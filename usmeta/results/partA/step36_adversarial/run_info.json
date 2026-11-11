@@ -1,0 +1,11 @@
+{
+ "step": "36",
+ "prereg": "PREREG.md",
+ "winner": "T5_reorder",
+ "supported": false,
+ "git_head_at_report": "98a116e",
+ "python": "3.9.6",
+ "platform": "macOS-27.2-arm64-arm-64bit",
+ "date": "2026-11-12",
+ "bootstrap": "group, 1000 resamples, seed 0"
+}

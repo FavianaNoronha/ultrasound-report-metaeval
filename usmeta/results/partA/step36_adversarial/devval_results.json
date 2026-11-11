@@ -1,0 +1,93 @@
+{
+ "per_transform": {
+  "T1_hedge": {
+   "n": 96,
+   "max": 0.4999999999999999,
+   "mean": [
+    -0.1333333333333333,
+    -0.18125956632653062,
+    -0.0840414893617021
+   ],
+   "median": -0.09999999999999998,
+   "share_ge_0_2": 0.13541666666666666,
+   "share_positive": 0.15625,
+   "overtakes_best_counterpart": 0.052083333333333336,
+   "overtakes_weaker_counterpart": 0.052083333333333336
+  },
+  "T2_recommendation": {
+   "n": 96,
+   "max": 0.29999999999999993,
+   "mean": [
+    -0.17812499999999995,
+    -0.2234042553191489,
+    -0.13099627659574467
+   ],
+   "median": -0.19999999999999996,
+   "share_ge_0_2": 0.041666666666666664,
+   "share_positive": 0.08333333333333333,
+   "overtakes_best_counterpart": 0.125,
+   "overtakes_weaker_counterpart": 0.125
+  },
+  "T3_double_filler": {
+   "n": 96,
+   "max": 0.29999999999999993,
+   "mean": [
+    -0.20729166666666665,
+    -0.25310969387755095,
+    -0.1609909574468085
+   ],
+   "median": -0.19999999999999996,
+   "share_ge_0_2": 0.03125,
+   "share_positive": 0.052083333333333336,
+   "overtakes_best_counterpart": 0.10416666666666667,
+   "overtakes_weaker_counterpart": 0.10416666666666667
+  },
+  "T4_confident": {
+   "n": 96,
+   "max": 0.4999999999999999,
+   "mean": [
+    -0.13854166666666665,
+    -0.18938829787234035,
+    -0.09166666666666667
+   ],
+   "median": -0.09999999999999998,
+   "share_ge_0_2": 0.13541666666666666,
+   "share_positive": 0.17708333333333334,
+   "overtakes_best_counterpart": 0.052083333333333336,
+   "overtakes_weaker_counterpart": 0.052083333333333336
+  },
+  "T5_reorder": {
+   "n": 96,
+   "max": 0.29999999999999993,
+   "mean": [
+    -0.09895833333333333,
+    -0.15111413043478256,
+    -0.04785053191489363
+   ],
+   "median": 0.0,
+   "share_ge_0_2": 0.11458333333333333,
+   "share_positive": 0.125,
+   "overtakes_best_counterpart": 0.09375,
+   "overtakes_weaker_counterpart": 0.09375
+  }
+ },
+ "untransformed": {
+  "overtakes_best_counterpart": 0.14583333333333334,
+  "overtakes_weaker_counterpart": 0.14583333333333334,
+  "mean_orig": 0.359375,
+  "n": 96
+ },
+ "winner": "T5_reorder",
+ "per_dataset_n": {
+  "BUS-BRA": 10,
+  "BUS-UCLM": 6,
+  "BUSI": 10,
+  "BrEaST": 10,
+  "DDTI": 10,
+  "FetalHead": 10,
+  "HC18": 10,
+  "TN3K": 10,
+  "TN5000": 10,
+  "UDIAT": 10
+ }
+}
