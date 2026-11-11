@@ -1,0 +1,4095 @@
+{
+ "auroc": {
+  "bleu": {
+   "breast|1|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.3252308227407829,
+     0.30141624463824945,
+     0.3455319044033276
+    ],
+    "too_small": false
+   },
+   "breast|1|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.7748411117435021,
+     0.7650733239211217,
+     0.7843724250025266
+    ],
+    "too_small": false
+   },
+   "breast|1|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "breast|2|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.3440547334471637,
+     0.32481067961165055,
+     0.3620562246137615
+    ],
+    "too_small": false
+   },
+   "breast|2|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.7419227850502753,
+     0.7316512646062578,
+     0.7525508373723385
+    ],
+    "too_small": false
+   },
+   "breast|2|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "breast|3|small": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.6346491228070176,
+     0.5704106753812636,
+     0.6861272284326081
+    ],
+    "too_small": false
+   },
+   "breast|3|matched": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.7467879256965945,
+     0.7160248485762709,
+     0.7741661088799642
+    ],
+    "too_small": false
+   },
+   "breast|3|large": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.5417698658410733,
+     0.4755762575602693,
+     0.5967037880921294
+    ],
+    "too_small": false
+   },
+   "thyroid|1|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.43993675595238096,
+     0.4279760570147342,
+     0.4504788618774587
+    ],
+    "too_small": false
+   },
+   "thyroid|1|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.6772956969246032,
+     0.6546859495516721,
+     0.6976701708909369
+    ],
+    "too_small": false
+   },
+   "thyroid|1|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|2|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.4875682043650794,
+     0.4848621071769416,
+     0.49007936507936506
+    ],
+    "too_small": false
+   },
+   "thyroid|2|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.7683991239725058,
+     0.7643540046241101,
+     0.7727934874488178
+    ],
+    "too_small": false
+   },
+   "thyroid|2|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|small": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.8996296296296297,
+     0.8741720010619626,
+     0.923398965640574
+    ],
+    "too_small": false
+   },
+   "thyroid|3|matched": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9075,
+     0.8830354906980589,
+     0.930320997264894
+    ],
+    "too_small": false
+   },
+   "thyroid|3|large": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.8996296296296297,
+     0.8741720010619626,
+     0.923398965640574
+    ],
+    "too_small": false
+   },
+   "fetal head|1|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.3333333333333333,
+     0.33333333333333326,
+     0.33333333333333337
+    ],
+    "too_small": false
+   },
+   "fetal head|1|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "too_small": false
+   },
+   "fetal head|1|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "fetal head|2|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.3611111111111111,
+     0.3557567500096017,
+     0.36585163304242696
+    ],
+    "too_small": false
+   },
+   "fetal head|2|matched": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     0.5462046204620462,
+     0.5367729771908223,
+     0.5543809284753756
+    ],
+    "too_small": false
+   },
+   "fetal head|2|large": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     0.0049504950495049506,
+     0.0,
+     0.0109375
+    ],
+    "too_small": false
+   },
+   "fetal head|3|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.3333333333333333,
+     0.33333333333333326,
+     0.33333333333333337
+    ],
+    "too_small": false
+   },
+   "fetal head|3|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "too_small": false
+   },
+   "fetal head|3|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "ALL|1|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.36828603174603175,
+     0.3579274128926466,
+     0.37866842302914416
+    ],
+    "too_small": false
+   },
+   "ALL|1|matched": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.6739189682539681,
+     0.6596186560320306,
+     0.6869771293451506
+    ],
+    "too_small": false
+   },
+   "ALL|1|large": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "ALL|2|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.3995834920634921,
+     0.39114794011990445,
+     0.4082727845790608
+    ],
+    "too_small": false
+   },
+   "ALL|2|matched": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     0.7040606908498968,
+     0.6949392446162823,
+     0.7123772006107472
+    ],
+    "too_small": false
+   },
+   "ALL|2|large": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     0.0011971268954509178,
+     0.0,
+     0.0027957511571229617
+    ],
+    "too_small": false
+   },
+   "ALL|3|small": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.6553127984718242,
+     0.6244871289852892,
+     0.68312488985065
+    ],
+    "too_small": false
+   },
+   "ALL|3|matched": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.7455587392550143,
+     0.7259902371675332,
+     0.7630017388796612
+    ],
+    "too_small": false
+   },
+   "ALL|3|large": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.5406996179560649,
+     0.5023580252676125,
+     0.5761751862264812
+    ],
+    "too_small": false
+   }
+  },
+  "rougeL": {
+   "breast|1|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.0375332005312085,
+     0.03186253916395698,
+     0.043089094421954355
+    ],
+    "too_small": false
+   },
+   "breast|1|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.6512560867640549,
+     0.6439738705082427,
+     0.6584110304574837
+    ],
+    "too_small": false
+   },
+   "breast|1|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "breast|2|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.006924682223487004,
+     0.004499087793512326,
+     0.009517387868010273
+    ],
+    "too_small": false
+   },
+   "breast|2|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.6475352558021881,
+     0.6423041838806847,
+     0.6542979863248517
+    ],
+    "too_small": false
+   },
+   "breast|2|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "breast|3|small": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.5417698658410733,
+     0.4755762575602693,
+     0.5967037880921294
+    ],
+    "too_small": false
+   },
+   "breast|3|matched": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.7626074991400069,
+     0.727798676497114,
+     0.7914608094538133
+    ],
+    "too_small": false
+   },
+   "breast|3|large": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.5417698658410733,
+     0.4755762575602693,
+     0.5967037880921294
+    ],
+    "too_small": false
+   },
+   "thyroid|1|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|1|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.6403459821428571,
+     0.6294718252977545,
+     0.6508667209328938
+    ],
+    "too_small": false
+   },
+   "thyroid|1|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|2|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|2|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.6667707447562358,
+     0.66296319653565,
+     0.6710408113862829
+    ],
+    "too_small": false
+   },
+   "thyroid|2|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|small": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9040740740740741,
+     0.8784857886374218,
+     0.9275093588369909
+    ],
+    "too_small": false
+   },
+   "thyroid|3|matched": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9520370370370369,
+     0.9392428943187109,
+     0.9637546794184955
+    ],
+    "too_small": false
+   },
+   "thyroid|3|large": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9040740740740741,
+     0.8784857886374218,
+     0.9275093588369909
+    ],
+    "too_small": false
+   },
+   "fetal head|1|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.16666666666666666,
+     0.16666666666666663,
+     0.16666666666666669
+    ],
+    "too_small": false
+   },
+   "fetal head|1|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "too_small": false
+   },
+   "fetal head|1|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "fetal head|2|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.16666666666666666,
+     0.16666666666666663,
+     0.16666666666666669
+    ],
+    "too_small": false
+   },
+   "fetal head|2|matched": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "too_small": false
+   },
+   "fetal head|2|large": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     0.0049504950495049506,
+     0.0,
+     0.0109375
+    ],
+    "too_small": false
+   },
+   "fetal head|3|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.16666666666666666,
+     0.16666666666666663,
+     0.16666666666666669
+    ],
+    "too_small": false
+   },
+   "fetal head|3|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.5,
+     0.5,
+     0.5
+    ],
+    "too_small": false
+   },
+   "fetal head|3|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "ALL|1|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.055073333333333335,
+     0.04938454450080768,
+     0.06082346683474834
+    ],
+    "too_small": false
+   },
+   "ALL|1|matched": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.6110444444444445,
+     0.6030014147160339,
+     0.6186088804399351
+    ],
+    "too_small": false
+   },
+   "ALL|1|large": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "ALL|2|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.04278095238095238,
+     0.036838173392462065,
+     0.049159142038800153
+    ],
+    "too_small": false
+   },
+   "ALL|2|matched": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     0.6187358276643992,
+     0.6125340608054769,
+     0.6250640128770664
+    ],
+    "too_small": false
+   },
+   "ALL|2|large": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     0.0011971268954509178,
+     0.0,
+     0.0027957511571229617
+    ],
+    "too_small": false
+   },
+   "ALL|3|small": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.5779489016236867,
+     0.5437662089281907,
+     0.6084475841431894
+    ],
+    "too_small": false
+   },
+   "ALL|3|matched": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.767235752944922,
+     0.7474117785868393,
+     0.7854708662848179
+    ],
+    "too_small": false
+   },
+   "ALL|3|large": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.5421322827125119,
+     0.5031406055514066,
+     0.5775965497364953
+    ],
+    "too_small": false
+   }
+  },
+  "chrf": {
+   "breast|1|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.34276426041864283,
+     0.32147640540087996,
+     0.36126172063534306
+    ],
+    "too_small": false
+   },
+   "breast|1|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.365442989944982,
+     0.3483539653092909,
+     0.3808177623185734
+    ],
+    "too_small": false
+   },
+   "breast|1|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "breast|2|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.3887173528109783,
+     0.3731220510089558,
+     0.4024010524118282
+    ],
+    "too_small": false
+   },
+   "breast|2|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.19768861063681778,
+     0.18881230729701953,
+     0.20798151250987595
+    ],
+    "too_small": false
+   },
+   "breast|2|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "breast|3|small": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.7251332989336086,
+     0.6784468137875717,
+     0.7623894867745102
+    ],
+    "too_small": false
+   },
+   "breast|3|matched": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.761859305125559,
+     0.7193755294270611,
+     0.7968194444444445
+    ],
+    "too_small": false
+   },
+   "breast|3|large": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.5417698658410733,
+     0.4755762575602693,
+     0.5967037880921294
+    ],
+    "too_small": false
+   },
+   "thyroid|1|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.4382626488095238,
+     0.4261722814002895,
+     0.4492325593963872
+    ],
+    "too_small": false
+   },
+   "thyroid|1|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.28069196428571425,
+     0.2589436505955091,
+     0.3017334418657874
+    ],
+    "too_small": false
+   },
+   "thyroid|1|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|2|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.48408048115079366,
+     0.48045017258699846,
+     0.48752227825423616
+    ],
+    "too_small": false
+   },
+   "thyroid|2|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.352570064484127,
+     0.344509780814977,
+     0.3617882269448226
+    ],
+    "too_small": false
+   },
+   "thyroid|2|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|small": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.8996296296296297,
+     0.8741720010619626,
+     0.923398965640574
+    ],
+    "too_small": false
+   },
+   "thyroid|3|matched": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9040740740740741,
+     0.8784857886374218,
+     0.9275093588369909
+    ],
+    "too_small": false
+   },
+   "thyroid|3|large": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9018518518518519,
+     0.8771753602756892,
+     0.9260964628142007
+    ],
+    "too_small": false
+   },
+   "fetal head|1|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.38666666666666666,
+     0.37412159226675357,
+     0.3995843682642156
+    ],
+    "too_small": false
+   },
+   "fetal head|1|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "fetal head|1|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "fetal head|2|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.4622222222222222,
+     0.4375706124919608,
+     0.48358353935842263
+    ],
+    "too_small": false
+   },
+   "fetal head|2|matched": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     0.1749174917491749,
+     0.14319669620391642,
+     0.20436672780894832
+    ],
+    "too_small": false
+   },
+   "fetal head|2|large": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     0.05005500550055004,
+     0.03575752333018768,
+     0.06394129979035638
+    ],
+    "too_small": false
+   },
+   "fetal head|3|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.4277777777777777,
+     0.3997418325831609,
+     0.45427039640619327
+    ],
+    "too_small": false
+   },
+   "fetal head|3|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "fetal head|3|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "ALL|1|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.3875274603174603,
+     0.3777017846627206,
+     0.3973441372830585
+    ],
+    "too_small": false
+   },
+   "ALL|1|matched": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.24736190476190478,
+     0.22968372513955884,
+     0.26470495756063056
+    ],
+    "too_small": false
+   },
+   "ALL|1|large": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "ALL|2|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.4405366666666667,
+     0.432116994754794,
+     0.44984141641492437
+    ],
+    "too_small": false
+   },
+   "ALL|2|matched": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     0.2475587162239197,
+     0.2379961088092307,
+     0.2577187817156655
+    ],
+    "too_small": false
+   },
+   "ALL|2|large": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     0.012104283054003722,
+     0.008398741230402958,
+     0.01635936908060802
+    ],
+    "too_small": false
+   },
+   "ALL|3|small": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.717480499840815,
+     0.6924977306045267,
+     0.7407415231052532
+    ],
+    "too_small": false
+   },
+   "ALL|3|matched": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.6439788283985992,
+     0.6018195004579169,
+     0.6792276458069871
+    ],
+    "too_small": false
+   },
+   "ALL|3|large": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.5414159503342884,
+     0.5027413337067462,
+     0.5772154325564335
+    ],
+    "too_small": false
+   }
+  },
+  "bertscore[roberta-large]": {
+   "breast|1|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.022407196610383862,
+     0.018202456642723096,
+     0.026796286294835617
+    ],
+    "too_small": false
+   },
+   "breast|1|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.30466388414595585,
+     0.29200535714526316,
+     0.3178206423993199
+    ],
+    "too_small": false
+   },
+   "breast|1|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "breast|2|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.031018782014797946,
+     0.02512727300329726,
+     0.03688276431212295
+    ],
+    "too_small": false
+   },
+   "breast|2|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.4383908809207614,
+     0.4227879114101313,
+     0.45441474717722136
+    ],
+    "too_small": false
+   },
+   "breast|2|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "breast|3|small": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.5567337461300309,
+     0.4926515873015873,
+     0.6098493663279798
+    ],
+    "too_small": false
+   },
+   "breast|3|matched": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.7639533883728931,
+     0.7201233254320408,
+     0.7996106982582314
+    ],
+    "too_small": false
+   },
+   "breast|3|large": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.5417698658410733,
+     0.4755762575602693,
+     0.5967037880921294
+    ],
+    "too_small": false
+   },
+   "thyroid|1|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|1|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.4199156746031746,
+     0.3982822429909051,
+     0.44184774064920507
+    ],
+    "too_small": false
+   },
+   "thyroid|1|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|2|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.008410395408163265,
+     0.005285382176252185,
+     0.012054249504598078
+    ],
+    "too_small": false
+   },
+   "thyroid|2|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.5056047158446713,
+     0.49244405043992734,
+     0.5181675168203
+    ],
+    "too_small": false
+   },
+   "thyroid|2|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|small": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9040740740740741,
+     0.8784857886374218,
+     0.9275093588369909
+    ],
+    "too_small": false
+   },
+   "thyroid|3|matched": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9280555555555555,
+     0.9088643414780664,
+     0.9456320191277432
+    ],
+    "too_small": false
+   },
+   "thyroid|3|large": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9018518518518519,
+     0.8771753602756892,
+     0.9260964628142007
+    ],
+    "too_small": false
+   },
+   "fetal head|1|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "fetal head|1|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "fetal head|1|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "fetal head|2|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.11111111111111112,
+     0.08969366670507356,
+     0.13007319883637464
+    ],
+    "too_small": false
+   },
+   "fetal head|2|matched": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     0.1749174917491749,
+     0.14319669620391642,
+     0.20436672780894832
+    ],
+    "too_small": false
+   },
+   "fetal head|2|large": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     0.08745874587458745,
+     0.07159834810195821,
+     0.10218336390447416
+    ],
+    "too_small": false
+   },
+   "fetal head|3|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0011111111111111111,
+     0.0,
+     0.003534197653509047
+    ],
+    "too_small": false
+   },
+   "fetal head|3|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "fetal head|3|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "ALL|1|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.008998730158730157,
+     0.007148217150868115,
+     0.011019392603717884
+    ],
+    "too_small": false
+   },
+   "ALL|1|matched": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.2728507936507936,
+     0.25671246441907314,
+     0.2879446618514126
+    ],
+    "too_small": false
+   },
+   "ALL|1|large": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "ALL|2|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.04213809523809524,
+     0.034467887789936404,
+     0.050678967034300575
+    ],
+    "too_small": false
+   },
+   "ALL|2|matched": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     0.39870960488478446,
+     0.38725807997558,
+     0.411199330154146
+    ],
+    "too_small": false
+   },
+   "ALL|2|large": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     0.02114924181963288,
+     0.01544921512858457,
+     0.02695239526705413
+    ],
+    "too_small": false
+   },
+   "ALL|3|small": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.5492956064947468,
+     0.5102020702451343,
+     0.5844995086609859
+    ],
+    "too_small": false
+   },
+   "ALL|3|matched": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.6526782871696912,
+     0.6102470336973992,
+     0.6877105895963114
+    ],
+    "too_small": false
+   },
+   "ALL|3|large": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.5414159503342884,
+     0.5027413337067462,
+     0.5772154325564335
+    ],
+    "too_small": false
+   }
+  },
+  "ratescore": {
+   "breast|1|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.3970083949914627,
+     0.38688343398433334,
+     0.40759005667616766
+    ],
+    "too_small": false
+   },
+   "breast|1|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.4979864273066464,
+     0.4894183655335922,
+     0.5073706058675747
+    ],
+    "too_small": false
+   },
+   "breast|1|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.20171457029026751,
+     0.17974947397563676,
+     0.22271749913774586
+    ],
+    "too_small": false
+   },
+   "breast|2|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.49812614620881557,
+     0.48609501995595256,
+     0.5091250125222726
+    ],
+    "too_small": false
+   },
+   "breast|2|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.6649572345538481,
+     0.6503325827418841,
+     0.6806124092866314
+    ],
+    "too_small": false
+   },
+   "breast|2|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     0.3207123885410738,
+     0.29811439646657323,
+     0.34037093096341675
+    ],
+    "too_small": false
+   },
+   "breast|3|small": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.7517328861369109,
+     0.716069121513391,
+     0.7816740104790679
+    ],
+    "too_small": false
+   },
+   "breast|3|matched": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.82093653250774,
+     0.7932938407553345,
+     0.8445479477695021
+    ],
+    "too_small": false
+   },
+   "breast|3|large": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     0.6510964912280702,
+     0.5894504872571771,
+     0.7023674620307679
+    ],
+    "too_small": false
+   },
+   "thyroid|1|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.48280319940476196,
+     0.46609724823009574,
+     0.49789898189902754
+    ],
+    "too_small": false
+   },
+   "thyroid|1|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.4731832837301587,
+     0.4547308222886985,
+     0.49119952341624
+    ],
+    "too_small": false
+   },
+   "thyroid|1|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.24172247023809526,
+     0.2208409629427448,
+     0.26198877590997677
+    ],
+    "too_small": false
+   },
+   "thyroid|2|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.4481192867772109,
+     0.4379560545721431,
+     0.4586900620244967
+    ],
+    "too_small": false
+   },
+   "thyroid|2|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.46862876009778914,
+     0.45253601796251625,
+     0.4846628941736314
+    ],
+    "too_small": false
+   },
+   "thyroid|2|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     0.14844635770975056,
+     0.13382352377888093,
+     0.16542575763792833
+    ],
+    "too_small": false
+   },
+   "thyroid|3|small": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9175,
+     0.8947926072841418,
+     0.9369082318204907
+    ],
+    "too_small": false
+   },
+   "thyroid|3|matched": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.9308333333333333,
+     0.9131778061009489,
+     0.9478954883572955
+    ],
+    "too_small": false
+   },
+   "thyroid|3|large": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     0.8957407407407408,
+     0.8695246869261125,
+     0.9198417454230013
+    ],
+    "too_small": false
+   },
+   "fetal head|1|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.4044444444444445,
+     0.3866119701023686,
+     0.4210000585000585
+    ],
+    "too_small": false
+   },
+   "fetal head|1|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.18333333333333332,
+     0.14767373993589258,
+     0.21556954897544361
+    ],
+    "too_small": false
+   },
+   "fetal head|1|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.051666666666666666,
+     0.037099207435425274,
+     0.06872905927835052
+    ],
+    "too_small": false
+   },
+   "fetal head|2|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.45518518518518514,
+     0.43734628932577124,
+     0.47143560192533956
+    ],
+    "too_small": false
+   },
+   "fetal head|2|matched": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     0.2615511551155115,
+     0.22276560880766286,
+     0.29603169751744784
+    ],
+    "too_small": false
+   },
+   "fetal head|2|large": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     0.0814081408140814,
+     0.06356310323701628,
+     0.09932522193048261
+    ],
+    "too_small": false
+   },
+   "fetal head|3|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.4877777777777778,
+     0.46575218831907417,
+     0.5113287056070334
+    ],
+    "too_small": false
+   },
+   "fetal head|3|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.255,
+     0.2167818873142067,
+     0.28896811763817576
+    ],
+    "too_small": false
+   },
+   "fetal head|3|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     0.06666666666666667,
+     0.047619047619047616,
+     0.08687957795605163
+    ],
+    "too_small": false
+   },
+   "ALL|1|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.4295419047619047,
+     0.4205976397976132,
+     0.43820504650474323
+    ],
+    "too_small": false
+   },
+   "ALL|1|matched": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.4135802380952381,
+     0.3984530969137667,
+     0.4263825901392198
+    ],
+    "too_small": false
+   },
+   "ALL|1|large": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.1800419047619048,
+     0.16720522000230972,
+     0.1932343904876176
+    ],
+    "too_small": false
+   },
+   "ALL|2|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     0.4698978571428572,
+     0.4628294204546086,
+     0.4768386577716583
+    ],
+    "too_small": false
+   },
+   "ALL|2|matched": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     0.4972100688506315,
+     0.4825802074283621,
+     0.5116002633036107
+    ],
+    "too_small": false
+   },
+   "ALL|2|large": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     0.2012515993361963,
+     0.18736555148582107,
+     0.2149497888877972
+    ],
+    "too_small": false
+   },
+   "ALL|3|small": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.7484439668895257,
+     0.7264913104306915,
+     0.7685393968665204
+    ],
+    "too_small": false
+   },
+   "ALL|3|matched": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.7347421203438396,
+     0.7046319764217449,
+     0.7612416439259586
+    ],
+    "too_small": false
+   },
+   "ALL|3|large": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     0.604363658070678,
+     0.5643349496850866,
+     0.6410991938225
+    ],
+    "too_small": false
+   }
+  },
+  "finding_f1": {
+   "breast|1|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|1|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|1|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|2|small": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|2|matched": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|2|large": {
+    "cases": 502,
+    "groups": 385,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|3|small": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|3|matched": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|3|large": {
+    "cases": 646,
+    "groups": 413,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|1|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|1|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|1|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|2|small": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|2|matched": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|2|large": {
+    "cases": 448,
+    "groups": 415,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|small": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|matched": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|large": {
+    "cases": 450,
+    "groups": 417,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|1|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|1|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|1|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|2|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|2|matched": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|2|large": {
+    "cases": 303,
+    "groups": 204,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|3|small": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|3|matched": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|3|large": {
+    "cases": 300,
+    "groups": 203,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|1|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|1|matched": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|1|large": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|2|small": {
+    "cases": 1250,
+    "groups": 1003,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|2|matched": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|2|large": {
+    "cases": 1253,
+    "groups": 1004,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|3|small": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|3|matched": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|3|large": {
+    "cases": 1396,
+    "groups": 1033,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   }
+  },
+  "sentence_f1": {
+   "breast|1|small": {
+    "cases": 157,
+    "groups": 139,
+    "auroc": [
+     0.5613057324840764,
+     0.49661987418452935,
+     0.6258171278379773
+    ],
+    "too_small": false
+   },
+   "breast|1|matched": {
+    "cases": 157,
+    "groups": 139,
+    "auroc": [
+     0.9299363057324841,
+     0.9013147418706,
+     0.9544174528301886
+    ],
+    "too_small": false
+   },
+   "breast|1|large": {
+    "cases": 157,
+    "groups": 139,
+    "auroc": [
+     0.8280254777070064,
+     0.7744318181818182,
+     0.8782142857142857
+    ],
+    "too_small": false
+   },
+   "breast|2|small": {
+    "cases": 182,
+    "groups": 167,
+    "auroc": [
+     0.4768772893772894,
+     0.4189309382629926,
+     0.5419474159488746
+    ],
+    "too_small": false
+   },
+   "breast|2|matched": {
+    "cases": 182,
+    "groups": 167,
+    "auroc": [
+     0.8452380952380951,
+     0.8098341102341189,
+     0.8807867496430567
+    ],
+    "too_small": false
+   },
+   "breast|2|large": {
+    "cases": 182,
+    "groups": 167,
+    "auroc": [
+     0.7147435897435896,
+     0.6593874853113982,
+     0.7681589746406378
+    ],
+    "too_small": false
+   },
+   "breast|3|small": {
+    "cases": 272,
+    "groups": 149,
+    "auroc": [
+     0.9278492647058824,
+     0.8835781842979127,
+     0.9562307768138801
+    ],
+    "too_small": false
+   },
+   "breast|3|matched": {
+    "cases": 272,
+    "groups": 149,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|3|large": {
+    "cases": 272,
+    "groups": 149,
+    "auroc": [
+     0.9944852941176471,
+     0.9852065527065528,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|1|small": {
+    "cases": 167,
+    "groups": 164,
+    "auroc": [
+     0.9565868263473054,
+     0.9266467065868264,
+     0.9810147527910685
+    ],
+    "too_small": false
+   },
+   "thyroid|1|matched": {
+    "cases": 167,
+    "groups": 164,
+    "auroc": [
+     0.9775449101796407,
+     0.9622071000704722,
+     0.9910179640718563
+    ],
+    "too_small": false
+   },
+   "thyroid|1|large": {
+    "cases": 167,
+    "groups": 164,
+    "auroc": [
+     0.8735029940119761,
+     0.835299813034188,
+     0.906198596782339
+    ],
+    "too_small": false
+   },
+   "thyroid|2|small": {
+    "cases": 202,
+    "groups": 196,
+    "auroc": [
+     0.9084158415841584,
+     0.8768323583743842,
+     0.9371937814070351
+    ],
+    "too_small": false
+   },
+   "thyroid|2|matched": {
+    "cases": 202,
+    "groups": 196,
+    "auroc": [
+     0.9616336633663366,
+     0.9449963235294118,
+     0.9763681592039801
+    ],
+    "too_small": false
+   },
+   "thyroid|2|large": {
+    "cases": 202,
+    "groups": 196,
+    "auroc": [
+     0.813943894389439,
+     0.7764930456405862,
+     0.8495577064103176
+    ],
+    "too_small": false
+   },
+   "thyroid|3|small": {
+    "cases": 98,
+    "groups": 97,
+    "auroc": [
+     0.9897959183673469,
+     0.9744897959183674,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|matched": {
+    "cases": 98,
+    "groups": 97,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|large": {
+    "cases": 98,
+    "groups": 97,
+    "auroc": [
+     0.9566326530612245,
+     0.9108688118811882,
+     0.9922680412371134
+    ],
+    "too_small": false
+   },
+   "fetal head|1|small": {
+    "cases": 34,
+    "groups": 29,
+    "auroc": [
+     0.9338235294117647,
+     0.8712121212121212,
+     0.9791666666666666
+    ],
+    "too_small": true
+   },
+   "fetal head|1|matched": {
+    "cases": 34,
+    "groups": 29,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": true
+   },
+   "fetal head|1|large": {
+    "cases": 34,
+    "groups": 29,
+    "auroc": [
+     0.8529411764705882,
+     0.7095825426944972,
+     0.9687736742424242
+    ],
+    "too_small": true
+   },
+   "fetal head|2|small": {
+    "cases": 105,
+    "groups": 69,
+    "auroc": [
+     0.9404761904761905,
+     0.9112473644578313,
+     0.9639830508474576
+    ],
+    "too_small": false
+   },
+   "fetal head|2|matched": {
+    "cases": 107,
+    "groups": 70,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|2|large": {
+    "cases": 107,
+    "groups": 70,
+    "auroc": [
+     0.8878504672897196,
+     0.8186274509803921,
+     0.945456795679568
+    ],
+    "too_small": false
+   },
+   "fetal head|3|small": {
+    "cases": 36,
+    "groups": 33,
+    "auroc": [
+     0.9236111111111112,
+     0.8819353070175439,
+     0.9632397776183644
+    ],
+    "too_small": false
+   },
+   "fetal head|3|matched": {
+    "cases": 36,
+    "groups": 33,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|3|large": {
+    "cases": 36,
+    "groups": 33,
+    "auroc": [
+     0.7777777777777778,
+     0.6323529411764706,
+     0.9
+    ],
+    "too_small": false
+   },
+   "ALL|1|small": {
+    "cases": 358,
+    "groups": 332,
+    "auroc": [
+     0.7810754189944135,
+     0.7439617708469003,
+     0.820145474137931
+    ],
+    "too_small": false
+   },
+   "ALL|1|matched": {
+    "cases": 358,
+    "groups": 332,
+    "auroc": [
+     0.9587988826815642,
+     0.9453502288543273,
+     0.9718630115681424
+    ],
+    "too_small": false
+   },
+   "ALL|1|large": {
+    "cases": 358,
+    "groups": 332,
+    "auroc": [
+     0.8516061452513967,
+     0.8217481114258733,
+     0.8832677642359822
+    ],
+    "too_small": false
+   },
+   "ALL|2|small": {
+    "cases": 489,
+    "groups": 432,
+    "auroc": [
+     0.7546864349011588,
+     0.7167651987375017,
+     0.7897853410676241
+    ],
+    "too_small": false
+   },
+   "ALL|2|matched": {
+    "cases": 491,
+    "groups": 433,
+    "auroc": [
+     0.9268499660556687,
+     0.9087528204895896,
+     0.9441723803354736
+    ],
+    "too_small": false
+   },
+   "ALL|2|large": {
+    "cases": 491,
+    "groups": 433,
+    "auroc": [
+     0.7932790224032586,
+     0.7622033847670281,
+     0.823732897779032
+    ],
+    "too_small": false
+   },
+   "ALL|3|small": {
+    "cases": 406,
+    "groups": 279,
+    "auroc": [
+     0.9424261083743842,
+     0.9179147178554415,
+     0.9617372249341392
+    ],
+    "too_small": false
+   },
+   "ALL|3|matched": {
+    "cases": 406,
+    "groups": 279,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|3|large": {
+    "cases": 406,
+    "groups": 279,
+    "auroc": [
+     0.9661330049261084,
+     0.9467012227538543,
+     0.9815228661590863
+    ],
+    "too_small": false
+   }
+  },
+  "judge_score": {
+   "breast|1|small": {
+    "cases": 157,
+    "groups": 139,
+    "auroc": [
+     0.8073248407643312,
+     0.7447712725903615,
+     0.8637890625
+    ],
+    "too_small": false
+   },
+   "breast|1|matched": {
+    "cases": 157,
+    "groups": 139,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|1|large": {
+    "cases": 157,
+    "groups": 139,
+    "auroc": [
+     0.8519108280254777,
+     0.7983649193548387,
+     0.901082836833412
+    ],
+    "too_small": false
+   },
+   "breast|2|small": {
+    "cases": 182,
+    "groups": 167,
+    "auroc": [
+     0.7962454212454212,
+     0.7357234533987674,
+     0.8484003461228037
+    ],
+    "too_small": false
+   },
+   "breast|2|matched": {
+    "cases": 182,
+    "groups": 167,
+    "auroc": [
+     0.9986263736263736,
+     0.9957380275974026,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|2|large": {
+    "cases": 182,
+    "groups": 167,
+    "auroc": [
+     0.8557692307692307,
+     0.8052445219589849,
+     0.9046961325966851
+    ],
+    "too_small": false
+   },
+   "breast|3|small": {
+    "cases": 272,
+    "groups": 149,
+    "auroc": [
+     0.9099264705882353,
+     0.8547343205574912,
+     0.9466671469740634
+    ],
+    "too_small": false
+   },
+   "breast|3|matched": {
+    "cases": 272,
+    "groups": 149,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|3|large": {
+    "cases": 272,
+    "groups": 149,
+    "auroc": [
+     0.9604779411764706,
+     0.9311542443064182,
+     0.9800895944441189
+    ],
+    "too_small": false
+   },
+   "thyroid|1|small": {
+    "cases": 167,
+    "groups": 164,
+    "auroc": [
+     0.9910179640718563,
+     0.9757575757575757,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|1|matched": {
+    "cases": 167,
+    "groups": 164,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|1|large": {
+    "cases": 167,
+    "groups": 164,
+    "auroc": [
+     0.9550898203592815,
+     0.9264527629233512,
+     0.9818209200438116
+    ],
+    "too_small": false
+   },
+   "thyroid|2|small": {
+    "cases": 202,
+    "groups": 196,
+    "auroc": [
+     0.9653465346534653,
+     0.9414634146341463,
+     0.9853658536585366
+    ],
+    "too_small": false
+   },
+   "thyroid|2|matched": {
+    "cases": 202,
+    "groups": 196,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|2|large": {
+    "cases": 202,
+    "groups": 196,
+    "auroc": [
+     0.9443069306930693,
+     0.9133663366336634,
+     0.9725
+    ],
+    "too_small": false
+   },
+   "thyroid|3|small": {
+    "cases": 98,
+    "groups": 97,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|matched": {
+    "cases": 98,
+    "groups": 97,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|large": {
+    "cases": 98,
+    "groups": 97,
+    "auroc": [
+     0.9795918367346939,
+     0.9540816326530612,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|1|small": {
+    "cases": 34,
+    "groups": 29,
+    "auroc": [
+     0.9338235294117647,
+     0.8712121212121212,
+     0.9791666666666666
+    ],
+    "too_small": true
+   },
+   "fetal head|1|matched": {
+    "cases": 34,
+    "groups": 29,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": true
+   },
+   "fetal head|1|large": {
+    "cases": 34,
+    "groups": 29,
+    "auroc": [
+     0.8529411764705882,
+     0.7095825426944972,
+     0.9687736742424242
+    ],
+    "too_small": true
+   },
+   "fetal head|2|small": {
+    "cases": 105,
+    "groups": 69,
+    "auroc": [
+     0.9178571428571428,
+     0.8811163101604278,
+     0.9521113749492077
+    ],
+    "too_small": false
+   },
+   "fetal head|2|matched": {
+    "cases": 107,
+    "groups": 70,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|2|large": {
+    "cases": 107,
+    "groups": 70,
+    "auroc": [
+     0.8878504672897196,
+     0.8186274509803921,
+     0.945456795679568
+    ],
+    "too_small": false
+   },
+   "fetal head|3|small": {
+    "cases": 36,
+    "groups": 33,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|3|matched": {
+    "cases": 36,
+    "groups": 33,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|3|large": {
+    "cases": 36,
+    "groups": 33,
+    "auroc": [
+     0.7777777777777778,
+     0.6323529411764706,
+     0.9
+    ],
+    "too_small": false
+   },
+   "ALL|1|small": {
+    "cases": 358,
+    "groups": 332,
+    "auroc": [
+     0.9050279329608939,
+     0.8760445682451253,
+     0.9328061216158845
+    ],
+    "too_small": false
+   },
+   "ALL|1|matched": {
+    "cases": 358,
+    "groups": 332,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|1|large": {
+    "cases": 358,
+    "groups": 332,
+    "auroc": [
+     0.9001396648044693,
+     0.8682793831619895,
+     0.9304794787765293
+    ],
+    "too_small": false
+   },
+   "ALL|2|small": {
+    "cases": 489,
+    "groups": 432,
+    "auroc": [
+     0.8922119972733469,
+     0.8663229345647193,
+     0.9168438692171297
+    ],
+    "too_small": false
+   },
+   "ALL|2|matched": {
+    "cases": 491,
+    "groups": 433,
+    "auroc": [
+     0.9994908350305499,
+     0.9984143763213531,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|2|large": {
+    "cases": 491,
+    "groups": 433,
+    "auroc": [
+     0.8991853360488798,
+     0.8701221935966601,
+     0.9244806371919917
+    ],
+    "too_small": false
+   },
+   "ALL|3|small": {
+    "cases": 406,
+    "groups": 279,
+    "auroc": [
+     0.9396551724137931,
+     0.9086737915958222,
+     0.960081077069998
+    ],
+    "too_small": false
+   },
+   "ALL|3|matched": {
+    "cases": 406,
+    "groups": 279,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|3|large": {
+    "cases": 406,
+    "groups": 279,
+    "auroc": [
+     0.9488916256157636,
+     0.9224490489130435,
+     0.9680644831048056
+    ],
+    "too_small": false
+   }
+  },
+  "image_medsam_oracle_box": {
+   "breast|1|small": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9704106280193237,
+     0.953048507328961,
+     0.9865611918246738
+    ],
+    "too_small": false
+   },
+   "breast|1|matched": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9704106280193237,
+     0.953048507328961,
+     0.9865611918246738
+    ],
+    "too_small": false
+   },
+   "breast|1|large": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9704106280193237,
+     0.953048507328961,
+     0.9865611918246738
+    ],
+    "too_small": false
+   },
+   "breast|2|small": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9384057971014492,
+     0.914411196911197,
+     0.9599519598209413
+    ],
+    "too_small": false
+   },
+   "breast|2|matched": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9384057971014492,
+     0.914411196911197,
+     0.9599519598209413
+    ],
+    "too_small": false
+   },
+   "breast|2|large": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9384057971014492,
+     0.914411196911197,
+     0.9599519598209413
+    ],
+    "too_small": false
+   },
+   "breast|3|small": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|3|matched": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|3|large": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|1|small": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.9125,
+     0.8740617108585859,
+     0.9438242561381608
+    ],
+    "too_small": false
+   },
+   "thyroid|1|matched": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.9125,
+     0.8740617108585859,
+     0.9438242561381608
+    ],
+    "too_small": false
+   },
+   "thyroid|1|large": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.9125,
+     0.8740617108585859,
+     0.9438242561381608
+    ],
+    "too_small": false
+   },
+   "thyroid|2|small": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.8513888888888889,
+     0.8158091050128948,
+     0.8907435084541064
+    ],
+    "too_small": false
+   },
+   "thyroid|2|matched": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.8513888888888889,
+     0.8158091050128948,
+     0.8907435084541064
+    ],
+    "too_small": false
+   },
+   "thyroid|2|large": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.8513888888888889,
+     0.8158091050128948,
+     0.8907435084541064
+    ],
+    "too_small": false
+   },
+   "thyroid|3|small": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|matched": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|large": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|1|small": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|1|matched": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|1|large": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|2|small": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|2|matched": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|2|large": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|3|small": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|3|matched": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|3|large": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "ALL|1|small": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9475511695906432,
+     0.9288790849083827,
+     0.9647022994394648
+    ],
+    "too_small": false
+   },
+   "ALL|1|matched": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9475511695906432,
+     0.9288790849083827,
+     0.9647022994394648
+    ],
+    "too_small": false
+   },
+   "ALL|1|large": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9475511695906432,
+     0.9288790849083827,
+     0.9647022994394648
+    ],
+    "too_small": false
+   },
+   "ALL|2|small": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9040570175438597,
+     0.8830757180837999,
+     0.9258662797379612
+    ],
+    "too_small": false
+   },
+   "ALL|2|matched": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9040570175438597,
+     0.8830757180837999,
+     0.9258662797379612
+    ],
+    "too_small": false
+   },
+   "ALL|2|large": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9040570175438597,
+     0.8830757180837999,
+     0.9258662797379612
+    ],
+    "too_small": false
+   },
+   "ALL|3|small": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|3|matched": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|3|large": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   }
+  },
+  "image_unet_label_free": {
+   "breast|1|small": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.8864734299516908,
+     0.8530067347129007,
+     0.91903073286052
+    ],
+    "too_small": false
+   },
+   "breast|1|matched": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.8864734299516908,
+     0.8530067347129007,
+     0.91903073286052
+    ],
+    "too_small": false
+   },
+   "breast|1|large": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.8864734299516908,
+     0.8530067347129007,
+     0.91903073286052
+    ],
+    "too_small": false
+   },
+   "breast|2|small": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9408212560386472,
+     0.9143493357487922,
+     0.9630987394957984
+    ],
+    "too_small": false
+   },
+   "breast|2|matched": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9408212560386472,
+     0.9143493357487922,
+     0.9630987394957984
+    ],
+    "too_small": false
+   },
+   "breast|2|large": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9408212560386472,
+     0.9143493357487922,
+     0.9630987394957984
+    ],
+    "too_small": false
+   },
+   "breast|3|small": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9855072463768116,
+     0.9632352941176471,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|3|matched": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9855072463768116,
+     0.9632352941176471,
+     1.0
+    ],
+    "too_small": false
+   },
+   "breast|3|large": {
+    "cases": 138,
+    "groups": 120,
+    "auroc": [
+     0.9855072463768116,
+     0.9632352941176471,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|1|small": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.7712962962962961,
+     0.7101545589826841,
+     0.827258895131086
+    ],
+    "too_small": false
+   },
+   "thyroid|1|matched": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.7712962962962961,
+     0.7101545589826841,
+     0.827258895131086
+    ],
+    "too_small": false
+   },
+   "thyroid|1|large": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.7712962962962961,
+     0.7101545589826841,
+     0.827258895131086
+    ],
+    "too_small": false
+   },
+   "thyroid|2|small": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.8662037037037037,
+     0.8266966540404043,
+     0.9041701007326007
+    ],
+    "too_small": false
+   },
+   "thyroid|2|matched": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.8662037037037037,
+     0.8266966540404043,
+     0.9041701007326007
+    ],
+    "too_small": false
+   },
+   "thyroid|2|large": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     0.8662037037037037,
+     0.8266966540404043,
+     0.9041701007326007
+    ],
+    "too_small": false
+   },
+   "thyroid|3|small": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|matched": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "thyroid|3|large": {
+    "cases": 90,
+    "groups": 87,
+    "auroc": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "too_small": false
+   },
+   "fetal head|1|small": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|1|matched": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|1|large": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|2|small": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|2|matched": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|2|large": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|3|small": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|3|matched": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "fetal head|3|large": {
+    "cases": 0,
+    "groups": 0,
+    "auroc": null,
+    "too_small": true
+   },
+   "ALL|1|small": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.8410087719298246,
+     0.8095285923868701,
+     0.8710322527055249
+    ],
+    "too_small": false
+   },
+   "ALL|1|matched": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.8410087719298246,
+     0.8095285923868701,
+     0.8710322527055249
+    ],
+    "too_small": false
+   },
+   "ALL|1|large": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.8410087719298246,
+     0.8095285923868701,
+     0.8710322527055249
+    ],
+    "too_small": false
+   },
+   "ALL|2|small": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9113669590643275,
+     0.8878618861744139,
+     0.9335892372568778
+    ],
+    "too_small": false
+   },
+   "ALL|2|matched": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9113669590643275,
+     0.8878618861744139,
+     0.9335892372568778
+    ],
+    "too_small": false
+   },
+   "ALL|2|large": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9113669590643275,
+     0.8878618861744139,
+     0.9335892372568778
+    ],
+    "too_small": false
+   },
+   "ALL|3|small": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9912280701754386,
+     0.9777777777777777,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|3|matched": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9912280701754386,
+     0.9777777777777777,
+     1.0
+    ],
+    "too_small": false
+   },
+   "ALL|3|large": {
+    "cases": 228,
+    "groups": 207,
+    "auroc": [
+     0.9912280701754386,
+     0.9777777777777777,
+     1.0
+    ],
+    "too_small": false
+   }
+  }
+ },
+ "spearman": {
+  "bleu": {
+   "breast": {
+    "n": 5342,
+    "groups": 413,
+    "spearman": [
+     0.15907116746808103,
+     0.1280940074073605,
+     0.18944264262175337
+    ],
+    "too_small": false
+   },
+   "thyroid": {
+    "n": 3600,
+    "groups": 417,
+    "spearman": [
+     0.2528906389419098,
+     0.2282736634645117,
+     0.2767381713531605
+    ],
+    "too_small": false
+   },
+   "fetal head": {
+    "n": 1353,
+    "groups": 204,
+    "spearman": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "ALL": {
+    "n": 10295,
+    "groups": 1034,
+    "spearman": [
+     0.23173175971664806,
+     0.21125048039180638,
+     0.2534940394530843
+    ],
+    "too_small": false
+   }
+  },
+  "rougeL": {
+   "breast": {
+    "n": 5342,
+    "groups": 413,
+    "spearman": [
+     0.1924017185918307,
+     0.1597626221183607,
+     0.22567281562116112
+    ],
+    "too_small": false
+   },
+   "thyroid": {
+    "n": 3600,
+    "groups": 417,
+    "spearman": [
+     0.29587652876849907,
+     0.2722321788503514,
+     0.322601424305364
+    ],
+    "too_small": false
+   },
+   "fetal head": {
+    "n": 1353,
+    "groups": 204,
+    "spearman": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "too_small": false
+   },
+   "ALL": {
+    "n": 10295,
+    "groups": 1034,
+    "spearman": [
+     0.24856959194507394,
+     0.22784501233865642,
+     0.2702462002359372
+    ],
+    "too_small": false
+   }
+  },
+  "chrf": {
+   "breast": {
+    "n": 5342,
+    "groups": 413,
+    "spearman": [
+     0.316696333675338,
+     0.28823174363582493,
+     0.34524340988204366
+    ],
+    "too_small": false
+   },
+   "thyroid": {
+    "n": 3600,
+    "groups": 417,
+    "spearman": [
+     0.25888195498211625,
+     0.23822826684634,
+     0.28037696458127204
+    ],
+    "too_small": false
+   },
+   "fetal head": {
+    "n": 1353,
+    "groups": 204,
+    "spearman": [
+     0.13379526403692904,
+     0.09812149531826411,
+     0.1683848411854917
+    ],
+    "too_small": false
+   },
+   "ALL": {
+    "n": 10295,
+    "groups": 1034,
+    "spearman": [
+     0.2942606147674833,
+     0.27498145947472186,
+     0.31408321512891907
+    ],
+    "too_small": false
+   }
+  },
+  "bertscore[roberta-large]": {
+   "breast": {
+    "n": 5342,
+    "groups": 413,
+    "spearman": [
+     0.4333911049247014,
+     0.40456612764760697,
+     0.4622502448773719
+    ],
+    "too_small": false
+   },
+   "thyroid": {
+    "n": 3600,
+    "groups": 417,
+    "spearman": [
+     0.4491919411523795,
+     0.432798026480429,
+     0.4653966008631636
+    ],
+    "too_small": false
+   },
+   "fetal head": {
+    "n": 1353,
+    "groups": 204,
+    "spearman": [
+     0.2478532944741218,
+     0.21766580909149644,
+     0.2783247148089198
+    ],
+    "too_small": false
+   },
+   "ALL": {
+    "n": 10295,
+    "groups": 1034,
+    "spearman": [
+     0.41007764057359575,
+     0.3904439948936335,
+     0.4306218749849683
+    ],
+    "too_small": false
+   }
+  },
+  "ratescore": {
+   "breast": {
+    "n": 5342,
+    "groups": 413,
+    "spearman": [
+     0.43833231146983315,
+     0.39709804743189553,
+     0.4788386883030501
+    ],
+    "too_small": false
+   },
+   "thyroid": {
+    "n": 3600,
+    "groups": 417,
+    "spearman": [
+     0.3286647256813454,
+     0.30660625662934277,
+     0.35152995519575075
+    ],
+    "too_small": false
+   },
+   "fetal head": {
+    "n": 1353,
+    "groups": 204,
+    "spearman": [
+     0.1520511348776652,
+     0.09282096600142593,
+     0.21045709245159927
+    ],
+    "too_small": false
+   },
+   "ALL": {
+    "n": 10295,
+    "groups": 1034,
+    "spearman": [
+     0.3755710871247676,
+     0.3504277680389227,
+     0.40269002473163895
+    ],
+    "too_small": false
+   }
+  },
+  "finding_f1": {
+   "breast": {
+    "n": 5342,
+    "groups": 413,
+    "spearman": [
+     0.29621460958309526,
+     0.2699650665439364,
+     0.3233762354912801
+    ],
+    "too_small": false
+   },
+   "thyroid": {
+    "n": 3600,
+    "groups": 417,
+    "spearman": [
+     0.2417877151573447,
+     0.21566151168416858,
+     0.27284361644415506
+    ],
+    "too_small": false
+   },
+   "fetal head": {
+    "n": 1353,
+    "groups": 204,
+    "spearman": [
+     0.843444462411597,
+     0.8319451104462988,
+     0.8595510384824762
+    ],
+    "too_small": false
+   },
+   "ALL": {
+    "n": 10295,
+    "groups": 1034,
+    "spearman": [
+     0.340844812979672,
+     0.3143757179349899,
+     0.36793844162222156
+    ],
+    "too_small": false
+   }
+  },
+  "sentence_f1": {
+   "breast": {
+    "n": 713,
+    "groups": 257,
+    "spearman": [
+     0.6300873266287002,
+     0.5193994449613215,
+     0.7150212104471715
+    ],
+    "too_small": false
+   },
+   "thyroid": {
+    "n": 623,
+    "groups": 239,
+    "spearman": [
+     0.32470676079067645,
+     0.25377526671926537,
+     0.3891062657386331
+    ],
+    "too_small": false
+   },
+   "fetal head": {
+    "n": 223,
+    "groups": 105,
+    "spearman": [
+     0.050349196372634235,
+     -0.0641402419947387,
+     0.16300944310643253
+    ],
+    "too_small": false
+   },
+   "ALL": {
+    "n": 1559,
+    "groups": 601,
+    "spearman": [
+     0.4524456392902137,
+     0.36037197628362067,
+     0.5337580595756151
+    ],
+    "too_small": false
+   }
+  },
+  "judge_score": {
+   "breast": {
+    "n": 713,
+    "groups": 257,
+    "spearman": [
+     0.31275205205776996,
+     0.21766202804837134,
+     0.409366107559973
+    ],
+    "too_small": false
+   },
+   "thyroid": {
+    "n": 623,
+    "groups": 239,
+    "spearman": [
+     0.5645375886279526,
+     0.5085292521100552,
+     0.6205969946296176
+    ],
+    "too_small": false
+   },
+   "fetal head": {
+    "n": 223,
+    "groups": 105,
+    "spearman": [
+     0.34880054234911373,
+     0.23847897488316783,
+     0.4507368486300698
+    ],
+    "too_small": false
+   },
+   "ALL": {
+    "n": 1559,
+    "groups": 601,
+    "spearman": [
+     0.369053674464842,
+     0.32456301362746676,
+     0.4186132108786379
+    ],
+    "too_small": false
+   }
+  },
+  "image_medsam_oracle_box": {
+   "breast": {
+    "n": 914,
+    "groups": 120,
+    "spearman": [
+     0.3706270058476469,
+     0.34521184111163294,
+     0.3957107483511045
+    ],
+    "too_small": false
+   },
+   "thyroid": {
+    "n": 586,
+    "groups": 87,
+    "spearman": [
+     0.38864029177473763,
+     0.35574574381237273,
+     0.42533100380146444
+    ],
+    "too_small": false
+   },
+   "fetal head": {
+    "n": 0,
+    "groups": 0,
+    "spearman": null,
+    "too_small": true
+   },
+   "ALL": {
+    "n": 1500,
+    "groups": 207,
+    "spearman": [
+     0.3844862011544372,
+     0.36405796974552745,
+     0.4071646934351277
+    ],
+    "too_small": false
+   }
+  },
+  "image_unet_label_free": {
+   "breast": {
+    "n": 914,
+    "groups": 120,
+    "spearman": [
+     0.40893709244975707,
+     0.3671500268863585,
+     0.4475872969863099
+    ],
+    "too_small": false
+   },
+   "thyroid": {
+    "n": 586,
+    "groups": 87,
+    "spearman": [
+     0.45071731450984853,
+     0.4145828059923132,
+     0.48851739670615396
+    ],
+    "too_small": false
+   },
+   "fetal head": {
+    "n": 0,
+    "groups": 0,
+    "spearman": null,
+    "too_small": true
+   },
+   "ALL": {
+    "n": 1500,
+    "groups": 207,
+    "spearman": [
+     0.4290594791462285,
+     0.3975165921826805,
+     0.4587509089843963
+    ],
+    "too_small": false
+   }
+  }
+ },
+ "counts": {
+  "breast|1": {
+   "error_rows": 1738,
+   "cases": 502,
+   "groups": 385,
+   "fields": {
+    "size_mm": 101,
+    "pos": 312,
+    "orient": 502,
+    "birads": 229,
+    "echo": 53,
+    "halo": 101,
+    "post": 39,
+    "size_pct": 401
+   }
+  },
+  "breast|2": {
+   "error_rows": 2109,
+   "cases": 502,
+   "groups": 385,
+   "fields": {
+    "count": 491,
+    "size_mm": 202,
+    "birads": 95,
+    "shape": 101,
+    "margin": 101,
+    "calc": 101,
+    "size_pct": 802,
+    "hist": 216
+   }
+  },
+  "breast|3": {
+   "error_rows": 1495,
+   "cases": 646,
+   "groups": 413,
+   "fields": {
+    "lesion": 646,
+    "path": 502,
+    "birads": 217,
+    "side": 130
+   }
+  },
+  "thyroid|1": {
+   "error_rows": 1166,
+   "cases": 448,
+   "groups": 415,
+   "fields": {
+    "size_pct": 447,
+    "pos": 262,
+    "orient": 300,
+    "tirads": 157
+   }
+  },
+  "thyroid|2": {
+   "error_rows": 1873,
+   "cases": 448,
+   "groups": 415,
+   "fields": {
+    "count": 385,
+    "size_pct": 895,
+    "orient": 148,
+    "comp": 67,
+    "echo": 67,
+    "margin": 110,
+    "foci": 112,
+    "tirads": 89
+   }
+  },
+  "thyroid|3": {
+   "error_rows": 561,
+   "cases": 450,
+   "groups": 417,
+   "fields": {
+    "lesion": 450,
+    "tirads": 111
+   }
+  },
+  "fetal head|1": {
+   "error_rows": 300,
+   "cases": 300,
+   "groups": 203,
+   "fields": {
+    "hc_mm": 300
+   }
+  },
+  "fetal head|2": {
+   "error_rows": 753,
+   "cases": 303,
+   "groups": 204,
+   "fields": {
+    "hc_mm": 600,
+    "plane": 153
+   }
+  },
+  "fetal head|3": {
+   "error_rows": 300,
+   "cases": 300,
+   "groups": 203,
+   "fields": {
+    "hc_mm": 300
+   }
+  }
+ },
+ "image_counts": {
+  "breast|1": {
+   "error_rows": 365,
+   "cases": 138
+  },
+  "breast|2": {
+   "error_rows": 411,
+   "cases": 138
+  },
+  "breast|3": {
+   "error_rows": 138,
+   "cases": 138
+  },
+  "thyroid|1": {
+   "error_rows": 212,
+   "cases": 90
+  },
+  "thyroid|2": {
+   "error_rows": 284,
+   "cases": 90
+  },
+  "thyroid|3": {
+   "error_rows": 90,
+   "cases": 90
+  }
+ }
+}
