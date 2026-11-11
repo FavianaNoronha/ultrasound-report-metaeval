@@ -10,6 +10,12 @@ Every step has a results folder under `usmeta/results/partA/` (index: `usmeta/re
 - **Steps 24-30 (wrap-up work).** Box reliability curve (24); error-type coverage with a built omission type (25); LLM fact extractor and `llm_finding_f1` (27); natural-error validity test with the owner's 30-report hand check (28); label-free image check by a small U-Net and HC18 head-circumference geometry (29, replaces Step 23); severity breakdown (30).
 - Tests: `cd usmeta && PYTHONPATH=. python3 -m pytest -q tests` (needs no dataset or GPU).
 
+
+## Update 2026-11-12: Steps 31-36 (added after `final-v4`; the tag was not moved)
+Details and caveats: `usmeta/results/partA/INDEX.md`, addenda in `usmeta/RESULTS_SUMMARY.md`; the headline findings at the top of that file and the other docs still describe Steps 2-30.
+- **31** cross-dataset segmenter (breast, leave-one-dataset-out): pooled position AUROC 0.95 held out vs 0.94 in-dataset. **32** extractor v3 (stricter prompt): templated agreement kept (>= 0.98), **provisional until `usmeta/docs/step32_check.csv` is hand-checked**. **33** (two steps share this number, see `step34_hybrid/STATUS.md`): `step33_edit_size_law` (R² 0.62 BLEU, 0.71 ROUGE-L) and `step33_factorial` (pre-registered: word scorers wording-driven, judge and finding_f1 fact-driven). **34** metamorphic checks (`step34_metamorphic`); the earlier hybrid-evaluator pre-registration (`step34_hybrid`) was **not run**. **35** limit of detection. **36** adversarial wording attack on the judge (pre-registered hypothesis not supported).
+- Still open: hand check of `step32_check.csv`; the hybrid evaluator (pre-registration kept); Step 26 (on hold); the items above.
+
 ## Not run, on purpose
 - **Step 23 (lesion detector):** replaced by Step 29 (a segmenter trained on dev, not a detector with a pretrained backbone).
 - **Step 26:** on hold at the owner's instruction; nothing was run or guessed. There is no Step 13 folder.
