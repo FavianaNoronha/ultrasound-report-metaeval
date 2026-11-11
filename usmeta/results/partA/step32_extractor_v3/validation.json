@@ -1,0 +1,182 @@
+{
+ "dev": {
+  "per_organ": {
+   "breast": {
+    "field_agreement": 0.998125,
+    "fields": 1600,
+    "all_fields_correct": 0.97,
+    "reports": 100
+   },
+   "thyroid": {
+    "field_agreement": 0.996,
+    "fields": 1000,
+    "all_fields_correct": 0.96,
+    "reports": 100
+   },
+   "fetal": {
+    "field_agreement": 1.0,
+    "fields": 200,
+    "all_fields_correct": 1.0,
+    "reports": 100
+   }
+  },
+  "pooled_field_agreement": 0.9975,
+  "parse_failures": 0,
+  "n": 300,
+  "wrong_examples": [
+   {
+    "organ": "breast",
+    "text": "A mass is seen.",
+    "diffs": {
+     "count": [
+      1,
+      null
+     ]
+    }
+   },
+   {
+    "organ": "breast",
+    "text": "A mass (taller than wide) is seen in the middle central part of the image, measuring about 60% of the image width. Pathology: malignant. Histology: cyst.",
+    "diffs": {
+     "shape": [
+      null,
+      "irregular"
+     ]
+    }
+   },
+   {
+    "organ": "breast",
+    "text": "On breast ultrasound a mass is identified in the upper left part of the image. It is oval and wider than tall, with circumscribed margins and a hypoechoic echo pattern. Its longest diameter is approxi",
+    "diffs": {
+     "side": [
+      null,
+      "left"
+     ]
+    }
+   },
+   {
+    "organ": "thyroid",
+    "text": "A single nodule is seen in the middle central part of the image, measuring about 13% of the image width. Well defined smooth margins, taller than wide, echogenic foci (microcalcifications). Assessment",
+    "diffs": {
+     "echo": [
+      null,
+      "echogenic"
+     ]
+    }
+   },
+   {
+    "organ": "thyroid",
+    "text": "A single nodule is seen in the middle central part of the image, measuring about 26% of the image width. Well defined smooth margins, taller than wide, echogenic foci (microcalcifications). Assessment",
+    "diffs": {
+     "echo": [
+      null,
+      "echogenic"
+     ]
+    }
+   },
+   {
+    "organ": "thyroid",
+    "text": "A single nodule is seen in the middle central part of the image, measuring about 29% of the image width. Well defined smooth margins, wider than tall, echogenic foci (microcalcifications). Assessment:",
+    "diffs": {
+     "echo": [
+      null,
+      "echogenic"
+     ]
+    }
+   },
+   {
+    "organ": "thyroid",
+    "text": "The findings appear to be as follows. A single nodule is seen in the middle central part of the image, measuring about 29% of the image width. Well defined smooth margins, wider than tall, echogenic f",
+    "diffs": {
+     "echo": [
+      null,
+      "echogenic"
+     ]
+    }
+   }
+  ]
+ },
+ "val": {
+  "per_organ": {
+   "breast": {
+    "field_agreement": 0.998125,
+    "fields": 1600,
+    "all_fields_correct": 0.97,
+    "reports": 100
+   },
+   "thyroid": {
+    "field_agreement": 0.999,
+    "fields": 1000,
+    "all_fields_correct": 0.99,
+    "reports": 100
+   },
+   "fetal": {
+    "field_agreement": 1.0,
+    "fields": 200,
+    "all_fields_correct": 1.0,
+    "reports": 100
+   }
+  },
+  "pooled_field_agreement": 0.9985714285714286,
+  "parse_failures": 0,
+  "n": 300,
+  "wrong_examples": [
+   {
+    "organ": "breast",
+    "text": "A mass (wider than tall) is seen in the middle right part of the image, measuring about 10% of the image width. Pathology: malignant.",
+    "diffs": {
+     "side": [
+      null,
+      "right"
+     ]
+    }
+   },
+   {
+    "organ": "breast",
+    "text": "A mass is seen.",
+    "diffs": {
+     "count": [
+      1,
+      null
+     ]
+    }
+   },
+   {
+    "organ": "breast",
+    "text": "A mass (wider than tall) is demonstrated in the middle right part of the image, measuring about 24% of the image width. Pathology: benign.",
+    "diffs": {
+     "side": [
+      null,
+      "right"
+     ]
+    }
+   },
+   {
+    "organ": "thyroid",
+    "text": "A single lesion is demonstrated in the middle central part of the image, with a size of about 36% of the image width. Ill defined borders, taller than wide, echogenic foci (macrocalcifications). Impre",
+    "diffs": {
+     "echo": [
+      null,
+      "echogenic"
+     ]
+    }
+   }
+  ]
+ },
+ "v2_dev_for_reference": {
+  "all_fields_correct": {
+   "breast": 0.96,
+   "thyroid": 0.99,
+   "fetal": 1.0
+  },
+  "per_field_agreement_mean": {
+   "breast": 0.9975,
+   "thyroid": 0.999,
+   "fetal": 1.0
+  }
+ },
+ "criterion": {
+  "threshold": 0.98,
+  "passed": true
+ }
+}

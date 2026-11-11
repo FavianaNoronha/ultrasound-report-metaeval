@@ -1,0 +1,14 @@
+{
+ "step": "32",
+ "extractor": "v3 (instruction text only)",
+ "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+ "validation_criterion": {
+  "threshold": 0.98,
+  "passed": true
+ },
+ "provisional_until": "docs/step32_check.csv filled",
+ "git_head_at_report": "f18d31b",
+ "python": "3.9.6",
+ "platform": "macOS-27.2-arm64-arm-64bit",
+ "date": "2026-11-11"
+}
