@@ -1,0 +1,69 @@
+{
+ "dev": {
+  "stats": {
+   "candidates (d) attempted": 9360,
+   "kept": 9356,
+   "dropped": 4,
+   "error rows not regenerated (skipped)": 132
+  },
+  "reasons": {
+   "error not shown by the regex extractor (size_mm)": 4
+  },
+  "kept_by_organ": {
+   "breast": 6354,
+   "thyroid": 3002
+  },
+  "kept_by_field": {
+   "lesion": 982,
+   "count": 882,
+   "size_mm": 602,
+   "orient": 946,
+   "path": 576,
+   "birads": 812,
+   "shape": 202,
+   "margin": 294,
+   "echo": 202,
+   "post": 52,
+   "halo": 202,
+   "calc": 202,
+   "pos": 590,
+   "size_pct": 2216,
+   "side": 120,
+   "foci": 92,
+   "tirads": 318,
+   "comp": 66
+  }
+ },
+ "val": {
+  "stats": {
+   "candidates (d) attempted": 4268,
+   "kept": 4268,
+   "error rows not regenerated (skipped)": 46
+  },
+  "reasons": {},
+  "kept_by_organ": {
+   "breast": 2830,
+   "thyroid": 1438
+  },
+  "kept_by_field": {
+   "lesion": 488,
+   "count": 400,
+   "size_mm": 300,
+   "pos": 284,
+   "orient": 424,
+   "path": 246,
+   "birads": 348,
+   "shape": 100,
+   "margin": 140,
+   "echo": 104,
+   "post": 42,
+   "halo": 100,
+   "calc": 100,
+   "size_pct": 972,
+   "side": 20,
+   "comp": 32,
+   "foci": 40,
+   "tirads": 128
+  }
+ }
+}

@@ -92,3 +92,7 @@ Claude outputs/
 # local scratch from Steps 28-29 (not part of the repo)
 usmeta/qwen_real_work/
 usmeta/reports_medgemma.jsonl.jobs.json
+
+# Step 33 factorial: large intermediate files (kept local)
+usmeta/results/partA/step33_factorial/test_blocks.json
+usmeta/results/partA/step33_factorial/d_scores.json

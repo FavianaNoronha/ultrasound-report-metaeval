@@ -1,0 +1,10 @@
+{
+ "step": "33_factorial",
+ "git_head_at_report": "f4c67c6",
+ "python": "3.9.6",
+ "platform": "macOS-27.2-arm64-arm-64bit",
+ "date": "2026-11-11",
+ "bootstrap": "reference group, 1000 resamples, seed 0",
+ "min_groups": 30,
+ "decision": "fact-driven iff eta2(fact) > eta2(wording), pooled breast+thyroid"
+}
