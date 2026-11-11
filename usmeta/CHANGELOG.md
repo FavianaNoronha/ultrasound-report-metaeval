@@ -77,3 +77,6 @@ New files `usmeta/step30_severity.py`, `step30_report.py`; results in `results/p
 
 ## Step 33 (2026-11-11): edit-size law, additions only
 New files `usmeta/step33_edit_size_law.py`, `step33_report.py`; results in `results/partA/step33_edit_size_law/` (results.md, results.json, cells.csv, edit_size_law.png). Saved scores only (test access logged under `usmeta.step33_edit_size_law`); `llm_finding_f1` from the Step 27 pair scores and the human cell from the Step 27 cache (no model call). No earlier number changed.
+
+## Step 31 (2026-11-11): cross-dataset segmenter (breast, leave-one-dataset-out), additions only
+New files `usmeta/step31_cross_dataset.py`, `step31_report.py`; results in `results/partA/step31_cross_dataset/`. Same U-Net, settings and leak filter as Step 29 (training code imported unchanged), five folds, 1 h cap per fold (none reached it; early stopping applied). Models git-ignored (`local_data/step29/`). One logged test read (`usmeta.step31_cross_dataset`). Numbering note: the brief of 2026-11-11 re-used the numbers 33-34 for new steps; the earlier edit-size law (`step33_edit_size_law`) stays as committed and the earlier hybrid pre-registration (`step34_hybrid/PREREG.md`, no score computed) is superseded by the new design (see `step34_hybrid/STATUS.md`). No earlier number changed.

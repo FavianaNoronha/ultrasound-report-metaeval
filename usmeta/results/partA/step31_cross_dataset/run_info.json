@@ -1,0 +1,18 @@
+{
+ "step": "31",
+ "seed": 0,
+ "folds": [
+  "BrEaST",
+  "BUS-BRA",
+  "BUSI",
+  "UDIAT",
+  "BUS-UCLM"
+ ],
+ "git_head_at_report": "0862d4d",
+ "python": "3.9.6",
+ "platform": "macOS-27.2-arm64-arm-64bit",
+ "date": "2026-11-11",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "min_groups": 30,
+ "test_scans": 138
+}
