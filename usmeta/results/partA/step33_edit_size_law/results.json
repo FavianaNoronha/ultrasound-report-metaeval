@@ -1,0 +1,1211 @@
+{
+ "bleu": {
+  "label": "BLEU",
+  "n_cells": 15,
+  "n_cells_ge30": 12,
+  "primary": {
+   "slope": -0.2919031335389882,
+   "intercept": 0.9633237495257665,
+   "r2": 0.6184280531763938,
+   "slope_ci": [
+    -0.29599540286620557,
+    -0.2491272978297131
+   ],
+   "r2_ci": [
+    0.5004494058531899,
+    0.7486156556811991
+   ]
+  },
+  "sensitivity_ge30": {
+   "slope": -0.28199264782599465,
+   "intercept": 0.9910967512641288,
+   "r2": 0.7196345357636227,
+   "slope_ci": [
+    -0.28504030176687273,
+    -0.27946503397392136
+   ],
+   "r2_ci": [
+    0.6827590805234192,
+    0.7686509686801135
+   ]
+  },
+  "cells": [
+   {
+    "organ": "breast",
+    "group": "large",
+    "auroc": 0.3039756955846922,
+    "median_ratio": 18.188191881918826,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "small",
+    "auroc": 0.5200655974319697,
+    "median_ratio": 9.563333333333333,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "other",
+    "auroc": 0.31310378597302657,
+    "median_ratio": 9.818540433925051,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "matched",
+    "auroc": 0.7944255135534045,
+    "median_ratio": 1.6541353383458646,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "large",
+    "auroc": 0.13629759129759128,
+    "median_ratio": 23.064606741573037,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "small",
+    "auroc": 0.5348923113923114,
+    "median_ratio": 12.621212121212125,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "other",
+    "auroc": 0.1458967883967884,
+    "median_ratio": 14.218543046357617,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "matched",
+    "auroc": 0.767630069005069,
+    "median_ratio": 3.0000000000000004,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "large",
+    "auroc": 0.0049504950495049506,
+    "median_ratio": 15.625000000000002,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "small",
+    "auroc": 0.35,
+    "median_ratio": 5.581395348837209,
+    "groups": 203,
+    "cases": 300,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "other",
+    "auroc": 0.0,
+    "median_ratio": 20.24691358024692,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "matched",
+    "auroc": 0.5297029702970296,
+    "median_ratio": 5.581395348837209,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "human",
+    "auroc": 0.11507936507936506,
+    "median_ratio": 9.809090909090909,
+    "groups": 9,
+    "cases": 9,
+    "too_small": true
+   },
+   {
+    "organ": "thyroid",
+    "group": "human",
+    "auroc": 0.1408333333333333,
+    "median_ratio": 10.210822510822512,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   },
+   {
+    "organ": "fetal head",
+    "group": "human",
+    "auroc": 0.0,
+    "median_ratio": 10.73170731707317,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   }
+  ]
+ },
+ "rougeL": {
+  "label": "ROUGE-L",
+  "n_cells": 15,
+  "n_cells_ge30": 12,
+  "primary": {
+   "slope": -0.264673387326404,
+   "intercept": 0.8516448932783542,
+   "r2": 0.7069169133693501,
+   "slope_ci": [
+    -0.2690452800415983,
+    -0.21508690796621588
+   ],
+   "r2_ci": [
+    0.6014274710892823,
+    0.7812118721192236
+   ]
+  },
+  "sensitivity_ge30": {
+   "slope": -0.259761547922541,
+   "intercept": 0.8668878799723702,
+   "r2": 0.7445757216703116,
+   "slope_ci": [
+    -0.2634829555736695,
+    -0.25614747507703983
+   ],
+   "r2_ci": [
+    0.7002709674437005,
+    0.7951481000798428
+   ]
+  },
+  "cells": [
+   {
+    "organ": "breast",
+    "group": "large",
+    "auroc": 0.3039756955846922,
+    "median_ratio": 18.188191881918826,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "small",
+    "auroc": 0.3161035949900683,
+    "median_ratio": 9.563333333333333,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "other",
+    "auroc": 0.3066674111631201,
+    "median_ratio": 9.818540433925051,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "matched",
+    "auroc": 0.7336917319832544,
+    "median_ratio": 1.6541353383458646,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "large",
+    "auroc": 0.14074203574203573,
+    "median_ratio": 23.064606741573037,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "small",
+    "auroc": 0.14074203574203573,
+    "median_ratio": 12.621212121212125,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "other",
+    "auroc": 0.18053252303252307,
+    "median_ratio": 14.218543046357617,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "matched",
+    "auroc": 0.7070169182669183,
+    "median_ratio": 3.0000000000000004,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "large",
+    "auroc": 0.0049504950495049506,
+    "median_ratio": 15.625000000000002,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "small",
+    "auroc": 0.16666666666666666,
+    "median_ratio": 5.581395348837209,
+    "groups": 203,
+    "cases": 300,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "other",
+    "auroc": 0.0,
+    "median_ratio": 20.24691358024692,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "matched",
+    "auroc": 0.5,
+    "median_ratio": 5.581395348837209,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "human",
+    "auroc": 0.1220238095238095,
+    "median_ratio": 9.809090909090909,
+    "groups": 9,
+    "cases": 9,
+    "too_small": true
+   },
+   {
+    "organ": "thyroid",
+    "group": "human",
+    "auroc": 0.1720833333333333,
+    "median_ratio": 10.210822510822512,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   },
+   {
+    "organ": "fetal head",
+    "group": "human",
+    "auroc": 0.1,
+    "median_ratio": 10.73170731707317,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   }
+  ]
+ },
+ "chrf": {
+  "label": "chrF",
+  "n_cells": 15,
+  "n_cells_ge30": 12,
+  "primary": {
+   "slope": -0.125532727870883,
+   "intercept": 0.5615571287941127,
+   "r2": 0.20735801905927267,
+   "slope_ci": [
+    -0.15338036365834468,
+    -0.09982936297157811
+   ],
+   "r2_ci": [
+    0.14263663502895513,
+    0.3760782132813496
+   ]
+  },
+  "sensitivity_ge30": {
+   "slope": -0.11659606322077769,
+   "intercept": 0.5857328217205416,
+   "r2": 0.24220020217417557,
+   "slope_ci": [
+    -0.1326622266914624,
+    -0.10940157632234179
+   ],
+   "r2_ci": [
+    0.22994894847870279,
+    0.3029419997504956
+   ]
+  },
+  "cells": [
+   {
+    "organ": "breast",
+    "group": "large",
+    "auroc": 0.3039756955846922,
+    "median_ratio": 18.188191881918826,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "small",
+    "auroc": 0.5628798147965877,
+    "median_ratio": 9.563333333333333,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "other",
+    "auroc": 0.43923722532155657,
+    "median_ratio": 9.818540433925051,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "matched",
+    "auroc": 0.5196614548246765,
+    "median_ratio": 1.6541353383458646,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "large",
+    "auroc": 0.13851981351981352,
+    "median_ratio": 23.064606741573037,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "small",
+    "auroc": 0.532462518962519,
+    "median_ratio": 12.621212121212125,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "other",
+    "auroc": 0.3521118264451598,
+    "median_ratio": 14.218543046357617,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "matched",
+    "auroc": 0.42534118659118664,
+    "median_ratio": 3.0000000000000004,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "large",
+    "auroc": 0.03399339933993399,
+    "median_ratio": 15.625000000000002,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "small",
+    "auroc": 0.4404444444444444,
+    "median_ratio": 5.581395348837209,
+    "groups": 203,
+    "cases": 300,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "other",
+    "auroc": 0.0734323432343234,
+    "median_ratio": 20.24691358024692,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "matched",
+    "auroc": 0.10891089108910888,
+    "median_ratio": 5.581395348837209,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "human",
+    "auroc": 0.11507936507936506,
+    "median_ratio": 9.809090909090909,
+    "groups": 9,
+    "cases": 9,
+    "too_small": true
+   },
+   {
+    "organ": "thyroid",
+    "group": "human",
+    "auroc": 0.16583333333333333,
+    "median_ratio": 10.210822510822512,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   },
+   {
+    "organ": "fetal head",
+    "group": "human",
+    "auroc": 0.0,
+    "median_ratio": 10.73170731707317,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   }
+  ]
+ },
+ "bertscore[roberta-large]": {
+  "label": "BERTScore",
+  "n_cells": 15,
+  "n_cells_ge30": 12,
+  "primary": {
+   "slope": -0.1685376671564463,
+   "intercept": 0.5771773346186405,
+   "r2": 0.45497858613341674,
+   "slope_ci": [
+    -0.17547748368944505,
+    -0.14031640109130228
+   ],
+   "r2_ci": [
+    0.3565576018247926,
+    0.5826553341675262
+   ]
+  },
+  "sensitivity_ge30": {
+   "slope": -0.16339277856445772,
+   "intercept": 0.5896806083209575,
+   "r2": 0.48914761993766526,
+   "slope_ci": [
+    -0.16983313101363245,
+    -0.15914945200078218
+   ],
+   "r2_ci": [
+    0.4254942284640997,
+    0.5762343423857819
+   ]
+  },
+  "cells": [
+   {
+    "organ": "breast",
+    "group": "large",
+    "auroc": 0.3039756955846922,
+    "median_ratio": 18.188191881918826,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "small",
+    "auroc": 0.32378905734282715,
+    "median_ratio": 9.563333333333333,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "other",
+    "auroc": 0.31159346486501155,
+    "median_ratio": 9.818540433925051,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "matched",
+    "auroc": 0.5764308426756068,
+    "median_ratio": 1.6541353383458646,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "large",
+    "auroc": 0.13851981351981352,
+    "median_ratio": 23.064606741573037,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "small",
+    "auroc": 0.14554014504014504,
+    "median_ratio": 12.621212121212125,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "other",
+    "auroc": 0.14850792417459086,
+    "median_ratio": 14.218543046357617,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "matched",
+    "auroc": 0.5552968913802248,
+    "median_ratio": 3.0000000000000004,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "large",
+    "auroc": 0.05445544554455444,
+    "median_ratio": 15.625000000000002,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "small",
+    "auroc": 0.06688888888888887,
+    "median_ratio": 5.581395348837209,
+    "groups": 203,
+    "cases": 300,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "other",
+    "auroc": 0.0011001100110011,
+    "median_ratio": 20.24691358024692,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "matched",
+    "auroc": 0.10891089108910888,
+    "median_ratio": 5.581395348837209,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "human",
+    "auroc": 0.11507936507936506,
+    "median_ratio": 9.809090909090909,
+    "groups": 9,
+    "cases": 9,
+    "too_small": true
+   },
+   {
+    "organ": "thyroid",
+    "group": "human",
+    "auroc": 0.15333333333333332,
+    "median_ratio": 10.210822510822512,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   },
+   {
+    "organ": "fetal head",
+    "group": "human",
+    "auroc": 0.0,
+    "median_ratio": 10.73170731707317,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   }
+  ]
+ },
+ "ratescore": {
+  "label": "RaTEScore",
+  "n_cells": 15,
+  "n_cells_ge30": 12,
+  "primary": {
+   "slope": -0.03504258980278173,
+   "intercept": 0.5583435960315306,
+   "r2": 0.007402991564520011,
+   "slope_ci": [
+    -0.12143878864535405,
+    -0.011521947235564826
+   ],
+   "r2_ci": [
+    0.0009218167980345071,
+    0.11239201670266155
+   ]
+  },
+  "sensitivity_ge30": {
+   "slope": -0.01914872291289155,
+   "intercept": 0.5977664107085797,
+   "r2": 0.003281550671821069,
+   "slope_ci": [
+    -0.03957683987104637,
+    -0.015248780269042486
+   ],
+   "r2_ci": [
+    0.0020518017323557848,
+    0.014136513638543903
+   ]
+  },
+  "cells": [
+   {
+    "organ": "breast",
+    "group": "large",
+    "auroc": 0.48223350967614304,
+    "median_ratio": 18.188191881918826,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "small",
+    "auroc": 0.6157711448607915,
+    "median_ratio": 9.563333333333333,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "other",
+    "auroc": 0.9200559014100491,
+    "median_ratio": 9.818540433925051,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "matched",
+    "auroc": 0.7130006600250522,
+    "median_ratio": 1.6541353383458646,
+    "groups": 413,
+    "cases": 646,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "large",
+    "auroc": 0.30498366448366443,
+    "median_ratio": 23.064606741573037,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "small",
+    "auroc": 0.5400718633218633,
+    "median_ratio": 12.621212121212125,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "other",
+    "auroc": 0.7590154197654199,
+    "median_ratio": 14.218543046357617,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "matched",
+    "auroc": 0.5534993987493988,
+    "median_ratio": 3.0000000000000004,
+    "groups": 417,
+    "cases": 450,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "large",
+    "auroc": 0.07433993399339933,
+    "median_ratio": 15.625000000000002,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "small",
+    "auroc": 0.45361111111111113,
+    "median_ratio": 5.581395348837209,
+    "groups": 203,
+    "cases": 300,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "other",
+    "auroc": 1.0,
+    "median_ratio": 20.24691358024692,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "matched",
+    "auroc": 0.24785478547854783,
+    "median_ratio": 5.581395348837209,
+    "groups": 204,
+    "cases": 303,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "human",
+    "auroc": 0.36507936507936506,
+    "median_ratio": 9.809090909090909,
+    "groups": 9,
+    "cases": 9,
+    "too_small": true
+   },
+   {
+    "organ": "thyroid",
+    "group": "human",
+    "auroc": 0.12,
+    "median_ratio": 10.210822510822512,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   },
+   {
+    "organ": "fetal head",
+    "group": "human",
+    "auroc": 0.05,
+    "median_ratio": 10.73170731707317,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   }
+  ]
+ },
+ "judge_score": {
+  "label": "judge_score",
+  "n_cells": 9,
+  "n_cells_ge30": 9,
+  "primary": {
+   "slope": -0.038795600538505955,
+   "intercept": 1.000088459764595,
+   "r2": 0.350397786860169,
+   "slope_ci": [
+    -0.05944386934398362,
+    -0.019462151407916045
+   ],
+   "r2_ci": [
+    0.14651060147756667,
+    0.5606597000331592
+   ]
+  },
+  "sensitivity_ge30": {
+   "slope": -0.038795600538505955,
+   "intercept": 1.000088459764595,
+   "r2": 0.350397786860169,
+   "slope_ci": [
+    -0.05944386934398362,
+    -0.019462151407916045
+   ],
+   "r2_ci": [
+    0.14651060147756667,
+    0.5606597000331592
+   ]
+  },
+  "cells": [
+   {
+    "organ": "breast",
+    "group": "large",
+    "auroc": 0.9105208333333334,
+    "median_ratio": 6.724719101123596,
+    "groups": 257,
+    "cases": 400,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "small",
+    "auroc": 0.8782291666666666,
+    "median_ratio": 3.051369863013699,
+    "groups": 257,
+    "cases": 400,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "matched",
+    "auroc": 0.999375,
+    "median_ratio": 1.1861313868613137,
+    "groups": 257,
+    "cases": 400,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "large",
+    "auroc": 0.9415322580645161,
+    "median_ratio": 11.532303370786517,
+    "groups": 239,
+    "cases": 248,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "small",
+    "auroc": 0.969758064516129,
+    "median_ratio": 7.28,
+    "groups": 239,
+    "cases": 248,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "matched",
+    "auroc": 1.0,
+    "median_ratio": 1.1821705426356588,
+    "groups": 239,
+    "cases": 248,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "large",
+    "auroc": 0.8309859154929577,
+    "median_ratio": 15.476190476190473,
+    "groups": 105,
+    "cases": 142,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "small",
+    "auroc": 0.9285714285714286,
+    "median_ratio": 5.581395348837209,
+    "groups": 104,
+    "cases": 140,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "matched",
+    "auroc": 1.0,
+    "median_ratio": 5.571428571428571,
+    "groups": 105,
+    "cases": 142,
+    "too_small": false
+   }
+  ]
+ },
+ "sentence_f1": {
+  "label": "judge sentence_f1",
+  "n_cells": 9,
+  "n_cells_ge30": 9,
+  "primary": {
+   "slope": -0.03026046641216287,
+   "intercept": 0.94376756285396,
+   "r2": 0.12949964418880242,
+   "slope_ci": [
+    -0.05215352992730888,
+    -0.009097996212399668
+   ],
+   "r2_ci": [
+    0.017195330465272073,
+    0.2995036563857952
+   ]
+  },
+  "sensitivity_ge30": {
+   "slope": -0.03026046641216287,
+   "intercept": 0.94376756285396,
+   "r2": 0.12949964418880242,
+   "slope_ci": [
+    -0.05215352992730888,
+    -0.009097996212399668
+   ],
+   "r2_ci": [
+    0.017195330465272073,
+    0.2995036563857952
+   ]
+  },
+  "cells": [
+   {
+    "organ": "breast",
+    "group": "large",
+    "auroc": 0.8839583333333334,
+    "median_ratio": 6.724719101123596,
+    "groups": 257,
+    "cases": 400,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "small",
+    "auroc": 0.7546666666666667,
+    "median_ratio": 3.051369863013699,
+    "groups": 257,
+    "cases": 400,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "matched",
+    "auroc": 0.944375,
+    "median_ratio": 1.1861313868613137,
+    "groups": 257,
+    "cases": 400,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "large",
+    "auroc": 0.8455309139784947,
+    "median_ratio": 11.532303370786517,
+    "groups": 239,
+    "cases": 248,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "small",
+    "auroc": 0.9210349462365592,
+    "median_ratio": 7.28,
+    "groups": 239,
+    "cases": 248,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "matched",
+    "auroc": 0.9684139784946237,
+    "median_ratio": 1.1821705426356588,
+    "groups": 239,
+    "cases": 248,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "large",
+    "auroc": 0.8309859154929577,
+    "median_ratio": 15.476190476190473,
+    "groups": 105,
+    "cases": 142,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "small",
+    "auroc": 0.9223214285714286,
+    "median_ratio": 5.581395348837209,
+    "groups": 104,
+    "cases": 140,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "matched",
+    "auroc": 1.0,
+    "median_ratio": 5.571428571428571,
+    "groups": 105,
+    "cases": 142,
+    "too_small": false
+   }
+  ]
+ },
+ "llm_finding_f1": {
+  "label": "llm_finding_f1",
+  "n_cells": 12,
+  "n_cells_ge30": 9,
+  "primary": {
+   "slope": -0.02104004725527437,
+   "intercept": 1.0042677632762425,
+   "r2": 0.05364151013230448,
+   "slope_ci": [
+    -0.059749357151836,
+    0.0004673090651863736
+   ],
+   "r2_ci": [
+    0.0013445718164332948,
+    0.2359410896997741
+   ]
+  },
+  "sensitivity_ge30": {
+   "slope": -0.0017665983332733864,
+   "intercept": 0.9942968326252042,
+   "r2": 0.010531030846112434,
+   "slope_ci": [
+    -0.003874855461474202,
+    0.0015798657431441558
+   ],
+   "r2_ci": [
+    2.042726278374483e-05,
+    0.053944321592885404
+   ]
+  },
+  "cells": [
+   {
+    "organ": "breast",
+    "group": "large",
+    "auroc": 0.9975,
+    "median_ratio": 6.724719101123596,
+    "groups": 257,
+    "cases": 400,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "small",
+    "auroc": 0.9975,
+    "median_ratio": 3.051369863013699,
+    "groups": 257,
+    "cases": 400,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "matched",
+    "auroc": 1.0,
+    "median_ratio": 1.1861313868613137,
+    "groups": 257,
+    "cases": 400,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "large",
+    "auroc": 1.0,
+    "median_ratio": 11.532303370786517,
+    "groups": 239,
+    "cases": 248,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "small",
+    "auroc": 1.0,
+    "median_ratio": 7.28,
+    "groups": 239,
+    "cases": 248,
+    "too_small": false
+   },
+   {
+    "organ": "thyroid",
+    "group": "matched",
+    "auroc": 1.0,
+    "median_ratio": 1.1821705426356588,
+    "groups": 239,
+    "cases": 248,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "large",
+    "auroc": 1.0,
+    "median_ratio": 15.476190476190473,
+    "groups": 105,
+    "cases": 142,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "small",
+    "auroc": 0.9589285714285715,
+    "median_ratio": 5.581395348837209,
+    "groups": 104,
+    "cases": 140,
+    "too_small": false
+   },
+   {
+    "organ": "fetal head",
+    "group": "matched",
+    "auroc": 0.9700704225352113,
+    "median_ratio": 5.571428571428571,
+    "groups": 105,
+    "cases": 142,
+    "too_small": false
+   },
+   {
+    "organ": "breast",
+    "group": "human",
+    "auroc": 0.7281746031746033,
+    "median_ratio": 9.809090909090909,
+    "groups": 9,
+    "cases": 9,
+    "too_small": true
+   },
+   {
+    "organ": "thyroid",
+    "group": "human",
+    "auroc": 0.9583333333333334,
+    "median_ratio": 10.210822510822512,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   },
+   {
+    "organ": "fetal head",
+    "group": "human",
+    "auroc": 1.0,
+    "median_ratio": 10.73170731707317,
+    "groups": 10,
+    "cases": 10,
+    "too_small": true
+   }
+  ]
+ }
+}

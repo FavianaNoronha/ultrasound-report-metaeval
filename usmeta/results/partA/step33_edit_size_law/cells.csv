@@ -1,0 +1,106 @@
+scorer,organ,group,cases,groups,too_small,auroc,median_edit_ratio,ln_ratio
+bleu,breast,large,646,413,False,0.3040,18.1882,2.9008
+bleu,breast,small,646,413,False,0.5201,9.5633,2.2579
+bleu,breast,other,646,413,False,0.3131,9.8185,2.2843
+bleu,breast,matched,646,413,False,0.7944,1.6541,0.5033
+bleu,thyroid,large,450,417,False,0.1363,23.0646,3.1383
+bleu,thyroid,small,450,417,False,0.5349,12.6212,2.5354
+bleu,thyroid,other,450,417,False,0.1459,14.2185,2.6545
+bleu,thyroid,matched,450,417,False,0.7676,3.0000,1.0986
+bleu,fetal head,large,303,204,False,0.0050,15.6250,2.7489
+bleu,fetal head,small,300,203,False,0.3500,5.5814,1.7194
+bleu,fetal head,other,303,204,False,0.0000,20.2469,3.0080
+bleu,fetal head,matched,303,204,False,0.5297,5.5814,1.7194
+bleu,breast,human,9,9,True,0.1151,9.8091,2.2833
+bleu,thyroid,human,10,10,True,0.1408,10.2108,2.3234
+bleu,fetal head,human,10,10,True,0.0000,10.7317,2.3732
+rougeL,breast,large,646,413,False,0.3040,18.1882,2.9008
+rougeL,breast,small,646,413,False,0.3161,9.5633,2.2579
+rougeL,breast,other,646,413,False,0.3067,9.8185,2.2843
+rougeL,breast,matched,646,413,False,0.7337,1.6541,0.5033
+rougeL,thyroid,large,450,417,False,0.1407,23.0646,3.1383
+rougeL,thyroid,small,450,417,False,0.1407,12.6212,2.5354
+rougeL,thyroid,other,450,417,False,0.1805,14.2185,2.6545
+rougeL,thyroid,matched,450,417,False,0.7070,3.0000,1.0986
+rougeL,fetal head,large,303,204,False,0.0050,15.6250,2.7489
+rougeL,fetal head,small,300,203,False,0.1667,5.5814,1.7194
+rougeL,fetal head,other,303,204,False,0.0000,20.2469,3.0080
+rougeL,fetal head,matched,303,204,False,0.5000,5.5814,1.7194
+rougeL,breast,human,9,9,True,0.1220,9.8091,2.2833
+rougeL,thyroid,human,10,10,True,0.1721,10.2108,2.3234
+rougeL,fetal head,human,10,10,True,0.1000,10.7317,2.3732
+chrf,breast,large,646,413,False,0.3040,18.1882,2.9008
+chrf,breast,small,646,413,False,0.5629,9.5633,2.2579
+chrf,breast,other,646,413,False,0.4392,9.8185,2.2843
+chrf,breast,matched,646,413,False,0.5197,1.6541,0.5033
+chrf,thyroid,large,450,417,False,0.1385,23.0646,3.1383
+chrf,thyroid,small,450,417,False,0.5325,12.6212,2.5354
+chrf,thyroid,other,450,417,False,0.3521,14.2185,2.6545
+chrf,thyroid,matched,450,417,False,0.4253,3.0000,1.0986
+chrf,fetal head,large,303,204,False,0.0340,15.6250,2.7489
+chrf,fetal head,small,300,203,False,0.4404,5.5814,1.7194
+chrf,fetal head,other,303,204,False,0.0734,20.2469,3.0080
+chrf,fetal head,matched,303,204,False,0.1089,5.5814,1.7194
+chrf,breast,human,9,9,True,0.1151,9.8091,2.2833
+chrf,thyroid,human,10,10,True,0.1658,10.2108,2.3234
+chrf,fetal head,human,10,10,True,0.0000,10.7317,2.3732
+bertscore[roberta-large],breast,large,646,413,False,0.3040,18.1882,2.9008
+bertscore[roberta-large],breast,small,646,413,False,0.3238,9.5633,2.2579
+bertscore[roberta-large],breast,other,646,413,False,0.3116,9.8185,2.2843
+bertscore[roberta-large],breast,matched,646,413,False,0.5764,1.6541,0.5033
+bertscore[roberta-large],thyroid,large,450,417,False,0.1385,23.0646,3.1383
+bertscore[roberta-large],thyroid,small,450,417,False,0.1455,12.6212,2.5354
+bertscore[roberta-large],thyroid,other,450,417,False,0.1485,14.2185,2.6545
+bertscore[roberta-large],thyroid,matched,450,417,False,0.5553,3.0000,1.0986
+bertscore[roberta-large],fetal head,large,303,204,False,0.0545,15.6250,2.7489
+bertscore[roberta-large],fetal head,small,300,203,False,0.0669,5.5814,1.7194
+bertscore[roberta-large],fetal head,other,303,204,False,0.0011,20.2469,3.0080
+bertscore[roberta-large],fetal head,matched,303,204,False,0.1089,5.5814,1.7194
+bertscore[roberta-large],breast,human,9,9,True,0.1151,9.8091,2.2833
+bertscore[roberta-large],thyroid,human,10,10,True,0.1533,10.2108,2.3234
+bertscore[roberta-large],fetal head,human,10,10,True,0.0000,10.7317,2.3732
+ratescore,breast,large,646,413,False,0.4822,18.1882,2.9008
+ratescore,breast,small,646,413,False,0.6158,9.5633,2.2579
+ratescore,breast,other,646,413,False,0.9201,9.8185,2.2843
+ratescore,breast,matched,646,413,False,0.7130,1.6541,0.5033
+ratescore,thyroid,large,450,417,False,0.3050,23.0646,3.1383
+ratescore,thyroid,small,450,417,False,0.5401,12.6212,2.5354
+ratescore,thyroid,other,450,417,False,0.7590,14.2185,2.6545
+ratescore,thyroid,matched,450,417,False,0.5535,3.0000,1.0986
+ratescore,fetal head,large,303,204,False,0.0743,15.6250,2.7489
+ratescore,fetal head,small,300,203,False,0.4536,5.5814,1.7194
+ratescore,fetal head,other,303,204,False,1.0000,20.2469,3.0080
+ratescore,fetal head,matched,303,204,False,0.2479,5.5814,1.7194
+ratescore,breast,human,9,9,True,0.3651,9.8091,2.2833
+ratescore,thyroid,human,10,10,True,0.1200,10.2108,2.3234
+ratescore,fetal head,human,10,10,True,0.0500,10.7317,2.3732
+judge_score,breast,large,400,257,False,0.9105,6.7247,1.9058
+judge_score,breast,small,400,257,False,0.8782,3.0514,1.1156
+judge_score,breast,matched,400,257,False,0.9994,1.1861,0.1707
+judge_score,thyroid,large,248,239,False,0.9415,11.5323,2.4452
+judge_score,thyroid,small,248,239,False,0.9698,7.2800,1.9851
+judge_score,thyroid,matched,248,239,False,1.0000,1.1822,0.1674
+judge_score,fetal head,large,142,105,False,0.8310,15.4762,2.7393
+judge_score,fetal head,small,140,104,False,0.9286,5.5814,1.7194
+judge_score,fetal head,matched,142,105,False,1.0000,5.5714,1.7177
+sentence_f1,breast,large,400,257,False,0.8840,6.7247,1.9058
+sentence_f1,breast,small,400,257,False,0.7547,3.0514,1.1156
+sentence_f1,breast,matched,400,257,False,0.9444,1.1861,0.1707
+sentence_f1,thyroid,large,248,239,False,0.8455,11.5323,2.4452
+sentence_f1,thyroid,small,248,239,False,0.9210,7.2800,1.9851
+sentence_f1,thyroid,matched,248,239,False,0.9684,1.1822,0.1674
+sentence_f1,fetal head,large,142,105,False,0.8310,15.4762,2.7393
+sentence_f1,fetal head,small,140,104,False,0.9223,5.5814,1.7194
+sentence_f1,fetal head,matched,142,105,False,1.0000,5.5714,1.7177
+llm_finding_f1,breast,large,400,257,False,0.9975,6.7247,1.9058
+llm_finding_f1,breast,small,400,257,False,0.9975,3.0514,1.1156
+llm_finding_f1,breast,matched,400,257,False,1.0000,1.1861,0.1707
+llm_finding_f1,thyroid,large,248,239,False,1.0000,11.5323,2.4452
+llm_finding_f1,thyroid,small,248,239,False,1.0000,7.2800,1.9851
+llm_finding_f1,thyroid,matched,248,239,False,1.0000,1.1822,0.1674
+llm_finding_f1,fetal head,large,142,105,False,1.0000,15.4762,2.7393
+llm_finding_f1,fetal head,small,140,104,False,0.9589,5.5814,1.7194
+llm_finding_f1,fetal head,matched,142,105,False,0.9701,5.5714,1.7177
+llm_finding_f1,breast,human,9,9,True,0.7282,9.8091,2.2833
+llm_finding_f1,thyroid,human,10,10,True,0.9583,10.2108,2.3234
+llm_finding_f1,fetal head,human,10,10,True,1.0000,10.7317,2.3732
