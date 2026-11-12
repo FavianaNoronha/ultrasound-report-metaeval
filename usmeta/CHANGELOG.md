@@ -101,3 +101,6 @@ New files `usmeta/step37_rg_worker.py` (runs in a separate venv), `step37_new_sc
 
 ## Step 38 (2026-11-13): responsible-AI checks on the Step 29 image check, additions only
 New files `usmeta/step38_responsible_ai.py`, `step38_report.py`; results in `results/partA/step38_responsible_ai/` (results.md, a / b / c json, `risk_coverage.png`, `robustness.png`). The saved Step 29 U-Net models, masks and per-scan results are reused: nothing is retrained and no new `splits.load('test')` call is made (the 228 scans come from the logged test reads of Steps 21a / 24 / 29); parts (b) and (c) run the saved models on those scans' images (and, for the val thresholds, on the val images). BUS-BRA scanner codes are anonymised (no device names written). No earlier number changed.
+
+## Docs refresh for Steps 31-38 (2026-11-13): additions only
+`README.md`, `usmeta/README.md`, `ROADMAP.md` and `usmeta/CLAUDE.md` now describe Steps 2-38 (done / not run / open, with the numbering note for the two Step 33 folders and the unrun hybrid evaluator); the headline findings at the top of `RESULTS_SUMMARY.md` were updated to integrate Steps 31-38 (original Step 2-17 findings and all addenda kept, no number changed). Tag `final-v5` marks the repository at this commit; `final-v1` to `final-v4` and `freeze-v1` were not moved.

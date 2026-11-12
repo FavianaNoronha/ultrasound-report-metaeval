@@ -1,4 +1,4 @@
-# Status and roadmap (2026-11-11, Steps 2-30)
+# Status and roadmap (2026-11-13, Steps 2-38; tag `final-v5`)
 
 Every step has a results folder under `usmeta/results/partA/` (index: `usmeta/results/partA/INDEX.md`). Read `usmeta/RESULTS_SUMMARY.md` first and `usmeta/docs/LIMITATIONS.md` before quoting a number.
 
@@ -11,15 +11,16 @@ Every step has a results folder under `usmeta/results/partA/` (index: `usmeta/re
 - Tests: `cd usmeta && PYTHONPATH=. python3 -m pytest -q tests` (needs no dataset or GPU).
 
 
-## Update 2026-11-12: Steps 31-36 (added after `final-v4`; the tag was not moved)
-Details and caveats: `usmeta/results/partA/INDEX.md`, addenda in `usmeta/RESULTS_SUMMARY.md`; the headline findings at the top of that file and the other docs still describe Steps 2-30.
-- **31** cross-dataset segmenter (breast, leave-one-dataset-out): pooled position AUROC 0.95 held out vs 0.94 in-dataset. **32** extractor v3 (stricter prompt): templated agreement kept (>= 0.98), **provisional until `usmeta/docs/step32_check.csv` is hand-checked**. **33** (two steps share this number, see `step34_hybrid/STATUS.md`): `step33_edit_size_law` (R² 0.62 BLEU, 0.71 ROUGE-L) and `step33_factorial` (pre-registered: word scorers wording-driven, judge and finding_f1 fact-driven). **34** metamorphic checks (`step34_metamorphic`); the earlier hybrid-evaluator pre-registration (`step34_hybrid`) was **not run**. **35** limit of detection. **36** adversarial wording attack on the judge (pre-registered hypothesis not supported).
-- Still open: hand check of `step32_check.csv`; the hybrid evaluator (pre-registration kept); Step 26 (on hold); the items above.
+## Steps 31-38 (added after `final-v4`; tag `final-v5` marks this state, earlier tags were not moved)
+Details and caveats: `usmeta/results/partA/INDEX.md`; headline findings and addenda: `usmeta/RESULTS_SUMMARY.md`.
+- **31** cross-dataset segmenter (breast, leave-one-dataset-out): pooled position AUROC 0.95 held out vs 0.94 in-dataset. **32** extractor v3 (stricter prompt): templated agreement kept (>= 0.98); **provisional until `usmeta/docs/step32_check.csv` is hand-checked**.
+- **33** (two steps share this number, see `step34_hybrid/STATUS.md`): `step33_edit_size_law` (BLEU R² 0.62, ROUGE-L 0.71) and `step33_factorial` (pre-registered: word scorers wording-driven, judge and finding_f1 fact-driven). **34** metamorphic checks (`step34_metamorphic`); the earlier hybrid-evaluator pre-registration (`step34_hybrid`) was **not run**. **35** limit of detection. **36** adversarial wording attack on the judge (pre-registered hypothesis not supported).
+- **37** RadGraph-F1 added to Steps 33-35 (wording-driven, never reaches AUROC 0.80); GREEN could not be run on this 16 GB machine (13 GB checkpoint downloaded, two pairs did not finish in 36 minutes; the checkpoint and two venvs sit outside the repository). **38** responsible-AI checks on the image check (per-dataset gaps, risk-coverage, corruptions; scanner metadata exists only in BUS-BRA).
 
 ## Not run, on purpose
 - **Step 23 (lesion detector):** replaced by Step 29 (a segmenter trained on dev, not a detector with a pretrained backbone).
 - **Step 26:** on hold at the owner's instruction; nothing was run or guessed. There is no Step 13 folder.
-- GREEN (7B model too large for 16 GB), a Claude judge (no credit), the original RadFact, Jev (paid API, needs approval), LLaVA-Med.
+- GREEN (attempted in Step 37: the official 7B did not run on 16 GB; needs a CUDA GPU or about 32 GB), a Claude judge (no credit), the original RadFact, Jev (paid API, needs approval), LLaVA-Med.
 
 ## Open (needs input or resources)
 - **Clinician review** of the severity ladder (Step 30 shows severity is provisional and confounded with error type and edit size) and of the template sources.
@@ -27,7 +28,8 @@ Details and caveats: `usmeta/results/partA/INDEX.md`, addenda in `usmeta/RESULTS
 - **A real lesion detector** (Step 29 is a segmenter; its thyroid position AUROC, 0.80 with interval 0.69-0.89, sits on the decision boundary) with a pretrained backbone, and a repeat over seeds and splits.
 - **A better free-text extractor:** on the 30-report hand check the Qwen7B extractor was right in 22 (all 12 fetal-head ones only because they were empty) and in 10 of 18 breast and thyroid reports, so Step 28 (natural errors) is inconclusive for thyroid and fetal head and indicative for breast. More images per organ (100 were planned, 60 run) would also help.
 - Patient-level splits for the five datasets without patient ids; pixel size for FetalHead (head circumference is not testable there); a head-circumference tolerance fitted for fetal head (tau 0.3, tuned on breast and thyroid size, cannot see HC errors).
-- Repo visibility is set by the owner. No `final-v4` claim of completeness is made: it marks the repository state at the end of this wrap-up.
+- Hand check of `usmeta/docs/step32_check.csv` (Step 32 stays provisional until then); the hybrid evaluator (pre-registration kept, not run); Step 26 (on hold).
+- Repo visibility is set by the owner. Tags mark repository states, not claims of completeness.
 
 ## Stale files (kept, not edited)
 - `usmeta/PROJECT_SLIDES.pptx`: built before Steps 18-30; its numbers and wording predate the addenda in `usmeta/RESULTS_SUMMARY.md`. Update the slides from the summary, not the other way round.

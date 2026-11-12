@@ -5,19 +5,20 @@ scorers themselves, not the report writers. On breast, thyroid and fetal-head ul
 from dataset labels and masks, then make candidates with **one planted clinical error** (wrong BI-RADS, wrong side, wrong size, an invented
 or missed finding, each with a provisional severity), **harmless rewordings** of the same report, and identical copies. A good scorer ranks
 the error below the harmless rewording. We test four layers of scorer: word overlap and embeddings (BLEU, ROUGE-L, chrF, BERTScore,
-RaTEScore), a structured fact check, an AI judge, and an image check against masks. Steps 2-30 are done (see `ROADMAP.md`): the
-benchmark and locked test (2-10), real writers and real text (11-17), robustness tests (18-22), and a wrap-up block (24-30): box reliability,
-error-type coverage, an LLM fact extractor, a natural-error test on real model reports, a label-free segmentation check, and a severity
-breakdown.
+RaTEScore), a structured fact check, an AI judge, and an image check against masks. Steps 2-38 are done (see `ROADMAP.md`): the
+benchmark and locked test (2-10), real writers and real text (11-17), robustness tests (18-22), a wrap-up block (24-30: box reliability,
+error-type coverage, an LLM fact extractor, a natural-error test on real model reports, a label-free segmentation check, a severity
+breakdown) and a later block (31-38: a cross-dataset segmenter, a stricter extractor, pre-registered fact-vs-wording and adversarial tests,
+metamorphic and limit-of-detection checks, RadGraph-F1, and responsible-AI checks on the image check).
 
 We found no ultrasound work that tests the scorers with planted errors, severity and harmless rewordings (search not exhaustive).
 
 ## Headline findings (details and numbers: `usmeta/RESULTS_SUMMARY.md`)
 
-- **Word-overlap and embedding scorers do not track planted clinical errors.** They react to how much text changed, not to whether a fact changed, and no threshold catches errors without flagging harmless rewordings. Even at matched edit size (Step 21e) they mostly prefer the error, and their score drop follows our provisional severity only weakly (Step 30).
-- **An AI judge (Gemma-2-9B) separates errors from small rewordings** but is weak against larger harmless rewordings on breast and DDTI, depends on the prompt (18-26% of pairs move by more than 0.1), and its penalty score is floored at 0 on long free-text reports.
+- **Word-overlap and embedding scorers do not track planted clinical errors.** They react to how much text changed, not to whether a fact changed, and no threshold catches errors without flagging harmless rewordings. Even at matched edit size (Step 21e) they mostly prefer the error, and their score drop follows our provisional severity only weakly (Step 30). In a pre-registered 2x2 factorial (Step 33) their score is driven by wording, not by the error (wording share 0.17-0.60 against fact share 0.02-0.04), none reaches AUROC 0.80 even for a size error of x2 (Step 35), and RadGraph-F1 behaves the same way (Step 37).
+- **An AI judge (Gemma-2-9B) separates errors from small rewordings** but is weak against larger harmless rewordings on breast and DDTI, depends on the prompt (18-26% of pairs move by more than 0.1), and its penalty score is floored at 0 on long free-text reports. In the same factorial the judge is fact-driven (0.68 against 0.01), and a simple wording attack does not raise its score on average (Step 36: pre-registered hypothesis not supported). GREEN could not be run on a 16 GB machine (Step 37).
 - **A structured fact check is an upper bound on templated text** (`finding_f1` 1.00). An LLM extractor (Qwen2.5-7B, Step 27) gets 0.99-1.00 on the templated benchmark and is stable under prompt rewording, but is only 56% right on breast and thyroid free text in a 30-report hand check.
-- **The image check only works if the lesion is found.** With the true box it gives position AUROC 0.97; with label-free boxes it collapses to chance (0.39-0.54, Step 21a); it survives imprecise boxes as long as the box centre stays on the lesion (Step 24); a label-free U-Net restores it (0.89 pooled, breast 0.94, thyroid 0.80, Step 29). For head circumference the tolerance rule tuned on breast and thyroid cannot see errors; oracle-geometry numbers are circular.
+- **The image check only works if the lesion is found.** With the true box it gives position AUROC 0.97; with label-free boxes it collapses to chance (0.39-0.54, Step 21a); it survives imprecise boxes as long as the box centre stays on the lesion (Step 24); a label-free U-Net restores it (0.89 pooled, breast 0.94, thyroid 0.80, Step 29). For head circumference the tolerance rule tuned on breast and thyroid cannot see errors; oracle-geometry numbers are circular. Leave-one-dataset-out on breast gives 0.95 on unseen datasets (Step 31); abstaining on low confidence removes most mask failures and mild corruptions cost at most 0.05 AUROC (Step 38).
 - **Natural errors from a real writer (Step 28) are inconclusive.** No scorer clearly separated reports with a wrong key fact from correct ones (AUROC 0.18-0.59), but the labels come from an extractor that was only 56% right on breast and thyroid reports, fetal head was not checkable and thyroid had five wrong reports.
 - **Limits that apply to everything:** templated references, provisional severity (never clinician-confirmed), no clinician review, possible training exposure of the models, five datasets without patient ids, small judge samples.
 

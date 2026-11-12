@@ -9,7 +9,7 @@ scores drop for a clinically important mistake and stay high for harmless reword
 (with severity and magnitude) and *harmless rewordings*, runs any set of graders on them, and reports how well each
 grader tells them apart. Organs: breast, thyroid, fetal.
 
-## Current status (2026-11-11, Steps 2-30; details in `RESULTS_SUMMARY.md`)
+## Current status (2026-11-13, Steps 2-38; details in `RESULTS_SUMMARY.md`)
 | steps | what | state |
 |---|---|---|
 | 2-9 | templated true reports (10 datasets), planted-error benchmark, Layers 0-3, harmless split | done (reruns kept) |
@@ -21,10 +21,18 @@ grader tells them apart. Organs: breast, thyroid, fetal.
 | 27 | LLM fact extractor `llm_finding_f1` (Qwen2.5-7B) | done: 0.99-1.00 on templated text; free text only 56% right on breast and thyroid (hand check) |
 | 28 | natural errors from a real writer (60 images per organ) | done, inconclusive (noisy labels, fetal head not checkable, thyroid 5 wrong reports) |
 | 30 | severity breakdown from saved scores | done (severity is our provisional label) |
+| 31 | cross-dataset segmenter (breast, leave-one-dataset-out) | done: pooled position AUROC 0.95 on held-out datasets vs 0.94 in-dataset |
+| 32 | extractor v3 (stricter free-text prompt) | done, **provisional until `docs/step32_check.csv` is hand-checked** |
+| 33 | edit-size law (BLEU R² 0.62, ROUGE-L 0.71) and 2x2 factorial fact x wording (pre-registered) | done: word scorers wording-driven, judge and finding_f1 fact-driven |
+| 34 | metamorphic checks (the earlier hybrid-evaluator pre-registration in `step34_hybrid/` was NOT run) | done |
+| 35 | limit of detection | done: word scorers never reach AUROC 0.80; judge at 5% / 1 mm |
+| 36 | adversarial wording attack on the judge (pre-registered) | done: hypothesis not supported |
+| 37 | RadGraph-F1 added to Steps 33-35; GREEN attempted | RadGraph-F1 done (wording-driven); GREEN not feasible on this 16 GB machine |
+| 38 | responsible-AI checks on the image check (per-dataset gaps, abstention, corruptions) | done |
 | 23, 26 | lesion detector (replaced by 29); Step 26 | not run (23 replaced, 26 on hold at the owner's instruction) |
 | open | clinician review of severity and templates, bilingual HiSBreast review, a real detector, a better free-text extractor, patient-level splits, GREEN / Claude judge / Jev / LLaVA-Med | see `../ROADMAP.md` |
 
-Tests: `PYTHONPATH=. python3 -m pytest -q tests`. Steps 24-30 modules: `usmeta/step24_*.py` ... `usmeta/step30_*.py` (each also copied into its results folder).
+Tests: `PYTHONPATH=. python3 -m pytest -q tests` (73 pass). Steps 24-38 modules: `usmeta/step24_*.py` ... `usmeta/step38_*.py` (each also copied into its results folder); heavy local files (models, caches, HiSBreast scores) are git-ignored.
 
 ## Pipeline
 
