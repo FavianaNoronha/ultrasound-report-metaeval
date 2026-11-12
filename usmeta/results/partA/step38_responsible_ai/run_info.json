@@ -1,0 +1,11 @@
+{
+ "step": "38",
+ "retrained": "no",
+ "new_test_split_read": "no",
+ "git_head_at_report": "6484aa8",
+ "python": "3.9.6",
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "date": "2026-11-13",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "min_groups": 30
+}
