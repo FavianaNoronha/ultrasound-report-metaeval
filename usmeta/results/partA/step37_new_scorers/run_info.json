@@ -1,0 +1,11 @@
+{
+ "step": "37",
+ "radgraph": "radgraph 0.1.18, model radgraph-xl (StanfordAIMI/RRG_scorers), CPU, reward level partial",
+ "env": "uv venv python 3.12.13, transformers 4.46.3, torch 2.15.0, numpy 1.26.4",
+ "green": "Not run: no GREEN score exists for any item. The official checkpoint was set up as approved, but on this 16 GB Mac it could not score even two pairs within 36 minutes, so the capped-subset analyses were not started and no other model was substituted.",
+ "git_head_at_report": "0640a70",
+ "date": "2026-11-12",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "min_groups": 30,
+ "test_split_read": "no new read (scores for texts of Steps 33-35)"
+}
