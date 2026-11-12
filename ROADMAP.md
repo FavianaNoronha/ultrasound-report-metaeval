@@ -13,7 +13,7 @@ Every step has a results folder under `usmeta/results/partA/` (index: `usmeta/re
 
 ## Steps 31-38 (added after `final-v4`; tag `final-v5` marks this state, earlier tags were not moved)
 Details and caveats: `usmeta/results/partA/INDEX.md`; headline findings and addenda: `usmeta/RESULTS_SUMMARY.md`.
-- **31** cross-dataset segmenter (breast, leave-one-dataset-out): pooled position AUROC 0.95 held out vs 0.94 in-dataset. **32** extractor v3 (stricter prompt): templated agreement kept (>= 0.98); **provisional until `usmeta/docs/step32_check.csv` is hand-checked**.
+- **31** cross-dataset segmenter (breast, leave-one-dataset-out): pooled position AUROC 0.95 held out vs 0.94 in-dataset. **32** extractor v3 (stricter prompt): templated agreement kept (>= 0.98); **provisional until a real independent human hand check of `usmeta/docs/step32_check.csv`**.
 - **33** (two steps share this number, see `step34_hybrid/STATUS.md`): `step33_edit_size_law` (BLEU R² 0.62, ROUGE-L 0.71) and `step33_factorial` (pre-registered: word scorers wording-driven, judge and finding_f1 fact-driven). **34** metamorphic checks (`step34_metamorphic`); the earlier hybrid-evaluator pre-registration (`step34_hybrid`) was **not run**. **35** limit of detection. **36** adversarial wording attack on the judge (pre-registered hypothesis not supported).
 - **37** RadGraph-F1 added to Steps 33-35 (wording-driven, never reaches AUROC 0.80); GREEN could not be run on this 16 GB machine (13 GB checkpoint downloaded, two pairs did not finish in 36 minutes; the checkpoint and two venvs sit outside the repository). **38** responsible-AI checks on the image check (per-dataset gaps, risk-coverage, corruptions; scanner metadata exists only in BUS-BRA).
 
