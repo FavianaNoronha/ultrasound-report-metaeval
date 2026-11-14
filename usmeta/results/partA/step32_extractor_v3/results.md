@@ -1,6 +1,6 @@
 # Step 32: stricter free-text extractor (extractor v3) and the Step 28 metrics re-run
 
-**PROVISIONAL until the owner fills `docs/step32_check.csv`** (30 reports, hand check of the v3 extractions). Nothing in this file is hand-verified for v3. Limitations: [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md). Code: `usmeta/step32_extractor_v3.py`, `step32_report.py` (new files; `step27_extractor.py`, `step28_natural_errors.py` imported unchanged; the v3 calls are cached separately). Prompt version **v3** is logged in `CHANGELOG.md`.
+**Hand-checked 14 Nov 2026 (see [hand_check.md](hand_check.md)): 13 of 30 free-text reports right, so v3 is NOT validated on free text; the Step 28 re-run below uses unreliable labels and Step 28 stays inconclusive.** The sections below were written before the hand check. Limitations: [docs/LIMITATIONS.md](../../../docs/LIMITATIONS.md). Code: `usmeta/step32_extractor_v3.py`, `step32_report.py` (new files; `step27_extractor.py`, `step28_natural_errors.py` imported unchanged; the v3 calls are cached separately). Prompt version **v3** is logged in `CHANGELOG.md`.
 
 ## What changed (extractor v3)
 
@@ -73,7 +73,7 @@ Per-field stated / correct counts (v3) are in `results.json`. The Gemma `judge_s
 
 - v3 keeps the templated-text agreement (>= 0.98 on dev and val): the stricter prompt did not cost accuracy on the text it was tuned on.
 - Whether v3 is **more accurate on free text** is **not known**: the replay above reads the owner's v2 notes, not a v3 hand check. `docs/step32_check.csv` (30 fresh reports: 12 breast, 12 thyroid, 6 fetal head; none of the 30 reports of the Step 28 check) is waiting for the right / wrong marks; until then every v3 free-text number here is **provisional**, and a result that moves with the extractor is a statement about the extractor and the labels, not about the scorers.
-- The Step 28 decision (scorers track similarity and completeness, not mistakes; inconclusive) is not changed by this file; see the pooled AUROC columns above and judge them only after the hand check.
+- The Step 28 decision (scorers track similarity and completeness, not mistakes; inconclusive) is not changed by this file; see the pooled AUROC columns above and the hand check (13 of 30 right) says the v3 labels are not reliable, so these AUROCs do not settle Step 28.
 
 ## Caveats
 
