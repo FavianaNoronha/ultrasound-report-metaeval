@@ -1,0 +1,6 @@
+{
+ "h2_extra_cases_per_dataset": 0,
+ "compute_cap_hours": 3.0,
+ "seed": 0,
+ "note": "H2 uses the same 89 Step 21c cases (a stratified subset of the Step 12 sample: 10 per dataset); no extra cases, to fit the time cap"
+}
