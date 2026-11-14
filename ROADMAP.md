@@ -13,7 +13,7 @@ Every step has a results folder under `usmeta/results/partA/` (index: `usmeta/re
 
 ## Steps 31-38 (added after `final-v4`; tag `final-v5` marks this state, earlier tags were not moved)
 Details and caveats: `usmeta/results/partA/INDEX.md`; headline findings and addenda: `usmeta/RESULTS_SUMMARY.md`.
-- **31** cross-dataset segmenter (breast, leave-one-dataset-out): pooled position AUROC 0.95 held out vs 0.94 in-dataset. **32** extractor v3 (stricter prompt): templated agreement kept (>= 0.98); **provisional until a real independent human hand check of `usmeta/docs/step32_check.csv`**.
+- **31** cross-dataset segmenter (breast, leave-one-dataset-out): pooled position AUROC 0.95 held out vs 0.94 in-dataset. **32** extractor v3 (stricter prompt): templated agreement kept (>= 0.98); **hand-checked (14 Nov): 13 of 30 free-text reports right, not validated on free text (`usmeta/docs/step32_check_filled.csv`)**.
 - **33** (two steps share this number, see `step34_hybrid/STATUS.md`): `step33_edit_size_law` (BLEU R² 0.62, ROUGE-L 0.71) and `step33_factorial` (pre-registered: word scorers wording-driven, judge and finding_f1 fact-driven). **34** metamorphic checks (`step34_metamorphic`); the earlier hybrid-evaluator pre-registration (`step34_hybrid`) was **not run**. **35** limit of detection. **36** adversarial wording attack on the judge (pre-registered hypothesis not supported).
 - **37** RadGraph-F1 added to Steps 33-35 (wording-driven, never reaches AUROC 0.80); GREEN could not be run on this 16 GB machine (13 GB checkpoint downloaded, two pairs did not finish in 36 minutes; the checkpoint and two venvs sit outside the repository). **38** responsible-AI checks on the image check (per-dataset gaps, risk-coverage, corruptions; scanner metadata exists only in BUS-BRA).
 
@@ -28,7 +28,7 @@ Details and caveats: `usmeta/results/partA/INDEX.md`; headline findings and adde
 - **A real lesion detector** (Step 29 is a segmenter; its thyroid position AUROC, 0.80 with interval 0.69-0.89, sits on the decision boundary) with a pretrained backbone, and a repeat over seeds and splits.
 - **A better free-text extractor:** on the 30-report hand check the Qwen7B extractor was right in 22 (all 12 fetal-head ones only because they were empty) and in 10 of 18 breast and thyroid reports, so Step 28 (natural errors) is inconclusive for thyroid and fetal head and indicative for breast. More images per organ (100 were planned, 60 run) would also help.
 - Patient-level splits for the five datasets without patient ids; pixel size for FetalHead (head circumference is not testable there); a head-circumference tolerance fitted for fetal head (tau 0.3, tuned on breast and thyroid size, cannot see HC errors).
-- Hand check of `usmeta/docs/step32_check.csv` (Step 32 stays provisional until then); the hybrid evaluator (pre-registration kept, not run); Step 26 (on hold).
+- Clinician-graded check of extractions (the Step 32 hand check by one non-clinician is done: 13 of 30); the hybrid evaluator (pre-registration kept, not run); Step 26 (on hold).
 - Repo visibility is set by the owner. Tags mark repository states, not claims of completeness.
 
 ## Stale files (kept, not edited)
