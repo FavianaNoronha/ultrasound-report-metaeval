@@ -1,0 +1,14 @@
+{
+ "step": "39",
+ "prereg": "PREREG.md",
+ "H1_supported": false,
+ "H2_supported": true,
+ "compute_start": "2026-11-14 20:32:46 IST (first dev/val judge call)",
+ "compute_cap_hours": 3.0,
+ "git_head_at_report": "0e04a08",
+ "python": "3.9.6",
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "date": "2026-11-15",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "min_groups": 30
+}

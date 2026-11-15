@@ -113,3 +113,6 @@ New files `usmeta/step38_responsible_ai.py`, `step38_report.py`; results in `res
 
 ## Step 39 (2026-11-14, in progress): judge prompt ensemble, prompt texts frozen
 Six judge prompts frozen in `results/partA/step39_judge_ensemble/PREREG.md` (full texts and SHA-256): P0 the frozen prompt_v2 (`608412841d3f...`), P1 Step 21c paraphraseA (`e7211cd6630c...`), P2 Step 21c paraphraseB with rule 4 reworded and a verbatim-copy rule 6 added (`155900411...`; amended on dev / val after the identical-copy gate, so the saved Step 21c replies of paraphraseB are not reused), P3 the P0 text with the inputs swapped (Step 21c swap), P4 new paraphrase C, P5 new paraphrase D (a sibling of P4; the first drafts failed the gate on one identical dev report). Set A = {P0, P1, P2}, set B = {P3, P4, P5}; ensemble = mean judge_score. New files `usmeta/step39_judge_ensemble.py`, `step39_report.py`. Not committed by the assistant (owner commits); no test-split judge call before the PREREG commit.
+
+## Step 39 results (2026-11-15)
+Test run capped at 66 of 91 cases (3 h). Six prompts logged in PREREG.md with SHA-256: P0 prompt_v2, P1 Step 21c paraphraseA, P2 paraphraseB + copy rule, P3 swap, P4 paraphrase C, P5 paraphrase D + copy rule. H1 not supported, H2 supported. Call order changed after 54 P4 replies (interleaved); no prompt or rule changed after the first test call.

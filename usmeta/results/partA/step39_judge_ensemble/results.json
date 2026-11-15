@@ -1,0 +1,256 @@
+{
+ "H1": {
+  "pooled": {
+   "pairs": 311,
+   "missing_pairs": 121,
+   "groups": 67,
+   "too_small": false,
+   "ensemble_share": [
+    0.39228295819935693,
+    0.34274650030432136,
+    0.44660194174757284
+   ],
+   "single_share": [
+    0.21543408360128619,
+    0.16500399233471735,
+    0.26119678176332545
+   ]
+  },
+  "breast": {
+   "pairs": 150,
+   "missing_pairs": 50,
+   "groups": 32,
+   "too_small": false,
+   "ensemble_share": [
+    0.4,
+    0.3219118210556567,
+    0.47473698549752696
+   ],
+   "single_share": [
+    0.25333333333333335,
+    0.19308355437665783,
+    0.31646683900873596
+   ]
+  },
+  "thyroid": {
+   "pairs": 101,
+   "missing_pairs": 46,
+   "groups": 21,
+   "too_small": true,
+   "ensemble_share": [
+    0.42574257425742573,
+    0.3333333333333333,
+    0.5158160851567121
+   ],
+   "single_share": [
+    0.19801980198019803,
+    0.11428571428571428,
+    0.2912621359223301
+   ]
+  },
+  "fetal head": {
+   "pairs": 60,
+   "missing_pairs": 25,
+   "groups": 14,
+   "too_small": true,
+   "ensemble_share": [
+    0.31666666666666665,
+    0.22033898305084745,
+    0.4262295081967213
+   ],
+   "single_share": [
+    0.15,
+    0.06779661016949153,
+    0.23728813559322035
+   ]
+  },
+  "supported": false
+ },
+ "H2": {
+  "pooled": {
+   "matched": {
+    "cases": 60,
+    "groups": 60,
+    "too_small": false,
+    "auroc_P0": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "auroc_ensembleA": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "difference": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "small": {
+    "cases": 63,
+    "groups": 63,
+    "too_small": false,
+    "auroc_P0": [
+     0.873015873015873,
+     0.7896825396825397,
+     0.9404761904761905
+    ],
+    "auroc_ensembleA": [
+     0.9603174603174603,
+     0.9166666666666666,
+     0.9920634920634921
+    ],
+    "difference": [
+     0.0873015873015873,
+     0.027777777777777776,
+     0.1626984126984127
+    ]
+   }
+  },
+  "breast": {
+   "matched": {
+    "cases": 29,
+    "groups": 29,
+    "too_small": true,
+    "auroc_P0": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "auroc_ensembleA": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "difference": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "small": {
+    "cases": 29,
+    "groups": 29,
+    "too_small": true,
+    "auroc_P0": [
+     0.8189655172413793,
+     0.6637931034482759,
+     0.9396551724137931
+    ],
+    "auroc_ensembleA": [
+     0.9827586206896551,
+     0.9568965517241379,
+     1.0
+    ],
+    "difference": [
+     0.16379310344827586,
+     0.05172413793103448,
+     0.3017241379310345
+    ]
+   }
+  },
+  "thyroid": {
+   "matched": {
+    "cases": 20,
+    "groups": 20,
+    "too_small": true,
+    "auroc_P0": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "auroc_ensembleA": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "difference": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "small": {
+    "cases": 20,
+    "groups": 20,
+    "too_small": true,
+    "auroc_P0": [
+     0.9375,
+     0.8375,
+     1.0
+    ],
+    "auroc_ensembleA": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "difference": [
+     0.0625,
+     0.0,
+     0.1625
+    ]
+   }
+  },
+  "fetal head": {
+   "matched": {
+    "cases": 11,
+    "groups": 11,
+    "too_small": true,
+    "auroc_P0": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "auroc_ensembleA": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "difference": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "small": {
+    "cases": 14,
+    "groups": 14,
+    "too_small": true,
+    "auroc_P0": [
+     0.8928571428571429,
+     0.7857142857142857,
+     1.0
+    ],
+    "auroc_ensembleA": [
+     0.8571428571428571,
+     0.6785714285714286,
+     1.0
+    ],
+    "difference": [
+     -0.03571428571428571,
+     -0.10714285714285714,
+     0.0
+    ]
+   }
+  },
+  "supported": true,
+  "cases_h1_only": {
+   "breast": 41,
+   "thyroid": 30,
+   "fetal head": 20
+  },
+  "cases_total_by_organ": {
+   "breast": 41,
+   "thyroid": 30,
+   "fetal head": 20
+  }
+ },
+ "config": {
+  "h2_extra_cases_per_dataset": 0,
+  "compute_cap_hours": 3.0,
+  "seed": 0,
+  "note": "H2 uses the same 89 Step 21c cases (a stratified subset of the Step 12 sample: 10 per dataset); no extra cases, to fit the time cap"
+ }
+}

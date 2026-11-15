@@ -124,12 +124,45 @@ def extra_rows(per_ds):
                 if k not in seen: seen.add(k); out.append(r)
     return out
 
+def balanced_case_order(rows):
+    """H1 cases in a seeded, dataset-round-robin order: any prefix of the schedule is balanced across the 10 datasets"""
+    by = collections.defaultdict(list)
+    for r in rows:
+        if r['case_id'] not in by[r['dataset']]: by[r['dataset']].append(r['case_id'])
+    rng = random.Random(0)
+    for ds in sorted(by): rng.shuffle(by[ds])
+    out = []; i = 0
+    while any(i < len(by[d]) for d in by):
+        for d in sorted(by):
+            if i < len(by[d]): out.append(by[d][i])
+        i += 1
+    return out
+
 def cmd_test(a):
+    """one test run. CALL ORDER (an implementation detail, changed after the first 48 replies of an earlier dataset-ordered schedule; no reply was discarded): case by case in a seeded dataset-round-robin order, and for every pair P2, P4, P5 in turn,
+    so that if the compute cap stops the run the finished pairs are complete for all three prompts and balanced across datasets. H2 extras (none planned) would follow."""
     cfg = json.load(open(P('config.json'))); start = clock_start(); deadline = start + cfg['compute_cap_hours'] * 3600; splits.load('test', script='usmeta.step39_judge_ensemble')              # one logged test read
-    H1 = h1_rows(); X = extra_rows(cfg['h2_extra_cases_per_dataset']); json.dump(X, open(P('h2_extra_rows.json'), 'w')); print('H1 pairs', len(H1), '| H2 extra pairs', len(X), flush=True)
-    for name, rows in (('P4', H1), ('P2', H1), ('P5', H1), ('P1', X), ('P2', X)):
-        d, n, sec = run_pairs(name, [(r['reference'], r['candidate']) for r in rows], P(f'test_{name}.jsonl'), 'test', deadline); print(name, 'new calls', n, round(sec), 's', flush=True)
-        if time.time() > deadline: print('compute cap reached: stopping, no extension on test'); break
+    H1 = h1_rows(); X = extra_rows(cfg['h2_extra_cases_per_dataset']) if cfg['h2_extra_cases_per_dataset'] else []; json.dump(X, open(P('h2_extra_rows.json'), 'w')); print('H1 pairs', len(H1), '| H2 extra pairs', len(X), flush=True)
+    from . import graders
+    shared = graders.LocalLLM('mlx-community/gemma-2-9b-it-4bit', max_tokens=500)                                  # one model instance for all prompts (same cache dir as before: replies are reused)
+    J = {n: judge2_test.SC(PROMPTS[n], cli=shared) for n in ('P2', 'P4', 'P5')}; done = {}
+    for n in J:
+        done[n] = {}
+        if os.path.exists(P(f'test_{n}.jsonl')):
+            for l in open(P(f'test_{n}.jsonl')): d = json.loads(l); done[n][(d['reference'], d['candidate'])] = d['result']
+    by = collections.defaultdict(list)
+    for r in H1: by[r['case_id']].append(r)
+    t0 = time.time(); calls = 0; n_cases_done = 0
+    for ci, cid in enumerate(balanced_case_order(H1)):
+        for r in by[cid]:
+            for n in ('P2', 'P4', 'P5'):
+                k = (r['reference'], r['candidate'])
+                if k in done[n]: continue
+                if time.time() > deadline: print('compute cap reached: stopping, no extension on test; cases completed', n_cases_done); return
+                s_ = J[n].run(*((k[1], k[0]) if n in SWAP else k)); res = None if s_ is None else dict(judge=s_['judge'], f1=s_['f1']); done[n][k] = res; open(P(f'test_{n}.jsonl'), 'a').write(json.dumps(dict(reference=k[0], candidate=k[1], result=res)) + '\n'); calls += 1
+        n_cases_done += 1
+        if ci % 5 == 0: print('test case', ci + 1, 'of', len(by), '| calls this run', calls, '|', round(time.time() - t0), 's', flush=True)
+    print('all H1 pairs scored; calls this run', calls)
 
 def load_scores():
     S = {n: saved(n) for n in ('P0', 'P1', 'P3')}
