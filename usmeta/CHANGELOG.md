@@ -116,3 +116,6 @@ Six judge prompts frozen in `results/partA/step39_judge_ensemble/PREREG.md` (ful
 
 ## Step 39 results (2026-11-15)
 Test run capped at 66 of 91 cases (3 h). Six prompts logged in PREREG.md with SHA-256: P0 prompt_v2, P1 Step 21c paraphraseA, P2 paraphraseB + copy rule, P3 swap, P4 paraphrase C, P5 paraphrase D + copy rule. H1 not supported, H2 supported. Call order changed after 54 P4 replies (interleaved); no prompt or rule changed after the first test call.
+
+## Step 44 (2026-11-18)
+New files `step44_monitors.py`, `step44_report.py`; PREREG committed first (`5d4e1f5`). No frozen item changed. A first run used the test score dictionary for val thresholds; fixed before any number was recorded and re-run. Added after the PREREG and labelled so: a control for the keyword reason-match (another field's keywords).

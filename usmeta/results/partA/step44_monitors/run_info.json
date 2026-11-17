@@ -1,0 +1,12 @@
+{
+ "step": "44",
+ "prereg": "PREREG.md",
+ "git_head": "5d4e1f5",
+ "python": "3.9.6",
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "min_groups": 30,
+ "model_calls": 0,
+ "seconds": 40.7,
+ "date": "2026-11-18"
+}
