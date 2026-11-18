@@ -1,4 +1,4 @@
-# Status and roadmap (2026-11-13, Steps 2-38; tag `final-v5`)
+# Status and roadmap (2026-11-18, Steps 2-44; tag `final-v5` marks Steps 2-38)
 
 Every step has a results folder under `usmeta/results/partA/` (index: `usmeta/results/partA/INDEX.md`). Read `usmeta/RESULTS_SUMMARY.md` first and `usmeta/docs/LIMITATIONS.md` before quoting a number.
 
@@ -17,10 +17,14 @@ Details and caveats: `usmeta/results/partA/INDEX.md`; headline findings and adde
 - **33** (two steps share this number, see `step34_hybrid/STATUS.md`): `step33_edit_size_law` (BLEU R² 0.62, ROUGE-L 0.71) and `step33_factorial` (pre-registered: word scorers wording-driven, judge and finding_f1 fact-driven). **34** metamorphic checks (`step34_metamorphic`); the earlier hybrid-evaluator pre-registration (`step34_hybrid`) was **not run**. **35** limit of detection. **36** adversarial wording attack on the judge (pre-registered hypothesis not supported).
 - **37** RadGraph-F1 added to Steps 33-35 (wording-driven, never reaches AUROC 0.80); GREEN could not be run on this 16 GB machine (13 GB checkpoint downloaded, two pairs did not finish in 36 minutes; the checkpoint and two venvs sit outside the repository). **38** responsible-AI checks on the image check (per-dataset gaps, risk-coverage, corruptions; scanner metadata exists only in BUS-BRA).
 
+## Steps 39-44 (added 15-18 Nov; all pre-registered)
+- **39** judge prompt averaging: did not stabilise the judge (39.2% of pairs move > 0.1 vs 21.5% single prompt); no loss of accuracy. **40** fairness on all 498 usable test scans and Platt calibration: BrEaST and UDIAT above the rest, four datasets too small; pooled ECE 0.030 to 0.018, not distinguishable from 0. **41** thyroid cross-dataset U-Net: 0.64-0.69 vs 0.77-0.93 in-dataset, too small to decide, reads as "does not transfer". **42** GREEN 4-bit on Colab: fact-driven on a small sample, misses 5% size and 1-2 mm HC errors. **43** extractor v4: 2 of 20 breast + thyroid right (17 needed), does not pass; Step 28 stays inconclusive. **44** scorers as monitors: judge catches 71.3% of planted errors flagging 5.6% of harmless rewordings; word scorers at most 27.4% at a 10% budget.
+- Write-ups (full paper, short paper, poster, reports): `paper/`.
+
 ## Not run, on purpose
 - **Step 23 (lesion detector):** replaced by Step 29 (a segmenter trained on dev, not a detector with a pretrained backbone).
-- **Step 26:** on hold at the owner's instruction; nothing was run or guessed. There is no Step 13 folder.
-- GREEN (attempted in Step 37: the official 7B did not run on 16 GB; needs a CUDA GPU or about 32 GB), a Claude judge (no credit), the original RadFact, Jev (paid API, needs approval), LLaVA-Med.
+- **Step 26:** on hold at the owner's instruction; the same idea was later run as Step 39 (judge averaging). There is no Step 13 folder.
+- Full-precision GREEN (Step 37: the official 7B did not run on 16 GB; a 4-bit copy was run on a Colab GPU in Step 42), a Claude judge (no credit), the original RadFact, Jev (paid API, needs approval), LLaVA-Med.
 
 ## Open (needs input or resources)
 - **Clinician review** of the severity ladder (Step 30 shows severity is provisional and confounded with error type and edit size) and of the template sources.
@@ -28,7 +32,7 @@ Details and caveats: `usmeta/results/partA/INDEX.md`; headline findings and adde
 - **A real lesion detector** (Step 29 is a segmenter; its thyroid position AUROC, 0.80 with interval 0.69-0.89, sits on the decision boundary) with a pretrained backbone, and a repeat over seeds and splits.
 - **A better free-text extractor:** on the 30-report hand check the Qwen7B extractor was right in 22 (all 12 fetal-head ones only because they were empty) and in 10 of 18 breast and thyroid reports, so Step 28 (natural errors) is inconclusive for thyroid and fetal head and indicative for breast. More images per organ (100 were planned, 60 run) would also help.
 - Patient-level splits for the five datasets without patient ids; pixel size for FetalHead (head circumference is not testable there); a head-circumference tolerance fitted for fetal head (tau 0.3, tuned on breast and thyroid size, cannot see HC errors).
-- Clinician-graded check of extractions (the Step 32 hand check by one non-clinician is done: 13 of 30); the hybrid evaluator (pre-registration kept, not run); Step 26 (on hold).
+- Clinician-graded check of extractions (the Step 32 hand check by one non-clinician is done: 13 of 30); the hybrid evaluator (pre-registration kept, not run). Extractor v4 (Step 43) also failed its hand check (2 of 20), so a better free-text extractor is still open.
 - Repo visibility is set by the owner. Tags mark repository states, not claims of completeness.
 
 ## Stale files (kept, not edited)

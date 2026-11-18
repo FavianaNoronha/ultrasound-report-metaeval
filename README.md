@@ -65,7 +65,7 @@ from the test split. Frozen versions are listed in `usmeta/FROZEN.md` (tag `free
 
 - **[`paper/`](paper/)**: the full paper, short paper, poster and plain-language reports.
 - **`usmeta/RESULTS_SUMMARY.md`**: plain-language findings that hold, findings that do not, what is unverified, and the limits. Read this first.
-- **`ROADMAP.md`**: what is done (Steps 2-30), what was not run on purpose, what is open, which files are stale, and which files in git history may not be redistributable.
+- **`ROADMAP.md`**: what is done (Steps 2-44), what was not run on purpose, what is open, which files are stale, and which files in git history may not be redistributable.
 - **`usmeta/results/partA/INDEX.md`**: every step with its results folder (`results.md`, `run_info.json`, data); reruns are kept.
 - **`usmeta/docs/LIMITATIONS.md`**: read before quoting any number (templated references, provisional severity, no clinician, possible training exposure).
 - `usmeta/results_layers_all_final.md`: the combined test-split table by layer and dataset, with n and confidence intervals.
