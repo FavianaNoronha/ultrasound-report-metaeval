@@ -4,6 +4,9 @@ Question: **do the scores used to grade AI-written ultrasound reports catch real
 
 All final numbers are from the locked test split (tuning was on dev/val only). Every number below comes from a saved results file; the full table is `results_layers_all_final.md`, the step folders are listed in `results/partA/INDEX.md`, and the caveats are in `docs/LIMITATIONS.md`. Please read the limits section before quoting anything.
 
+## Addendum 2026-11-18: Step 43 (extractor v4 on 30 fresh free-text reports)
+Pre-registered; the stricter instruction (v4, same model and schema) keeps templated agreement (dev 0.9989, val 0.9986) but does **not pass** the fresh-report check: 2 of 20 breast + thyroid reports fully right (rule: at least 17; breast 1 of 10, thyroid 1 of 10; fetal head 8 of 10), graded by one grader (not blinded, not a clinician, rubric differs from Step 32). On 8 of 10 thyroid reports v4 still wrote a stated BI-RADS category into `tirads`. Step 28 (natural errors) was not re-run and stays inconclusive. Details: `results/partA/step43_extractor_v4/results.md`.
+
 ## Addendum 2026-11-18: Step 40 (per-dataset fairness on all test scans, calibrated confidence)
 On 498 usable test scans (574 planned; 76 had no mask) no dataset shows a real gap by the pre-registered rule; BrEaST (+0.06) and UDIAT (+0.10) score above the rest; DDTI (-0.14, 28 groups) and TN5000 (-0.15, 27 groups, no training images) are lower but under 30 groups, so indicative only. Platt scaling of the U-Net confidence lowers ECE from 0.030 to 0.018 pooled (interval of the fall -0.013 to +0.025, not distinguishable from 0; breast falls 0.039 to 0.030, thyroid rises 0.031 to 0.038). Step 38's 228 scans are a subset; its numbers are superseded. Details: `results/partA/step40_fairness_calibration/results.md`.
 

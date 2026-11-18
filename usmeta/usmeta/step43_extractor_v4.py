@@ -73,6 +73,22 @@ def run_sheet(a):
 def wilson(k, n, z=1.96):
     p = k / n; d = 1 + z * z / n; c = p + z * z / (2 * n); h = z * (p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5; return round((c - h) / d, 2), round((c + h) / d, 2)
 
+# author's manual reading of the grader's wrong_fields and notes (wrong rows only; a row can have several types). Not machine-classified.
+MANUAL = {
+ 'BI-RADS category written into tirads on a thyroid report': ['D03', 'D04', 'D07', 'D09', 'D11', 'D17', 'D18', 'D21'],
+ 'key outside the organ schema added (birads on fetal head / thyroid)': ['D05', 'D12', 'D16'],
+ 'thyroid nodule echo omitted': ['D03', 'D07', 'D09', 'D11', 'D17', 'D18'],
+ 'thyroid composition wrong (hypoechoic written as composition) or omitted': ['D04', 'D07', 'D11', 'D16', 'D18'],
+ "count 'multiple' written as a number or as the word": ['D04', 'D07'],
+ 'stated TI-RADS left null (D16: "TIRADS 4C" in the impression)': ['D16'],
+ 'breast shape narrowed or changed ("somewhat irregular ... lobulated" -> irregular)': ['D01', 'D08', 'D15', 'D28'],
+ 'breast margin word not as written (mapped to circumscribed / not circumscribed)': ['D01', 'D08', 'D10', 'D15', 'D19', 'D28'],
+ 'pathology benign filled from suggestive wording ("suggesting", "consistent with", "likely")': ['D02', 'D10', 'D19', 'D26'],
+ 'halo invented': ['D10', 'D19', 'D29'],
+ 'echo heterogeneous written for a mass first described as hypoechoic': ['D15', 'D29'],
+ 'stated "no calcifications" left null': ['D02'],
+}
+
 def run_score(a):
     path = a.sheet or os.path.join(ROOT, 'docs', 'step43_check_filled.csv'); rows = [r for r in csv.DictReader(open(path, encoding='utf-8')) if r.get('id', '').startswith('D')]; assert len(rows) == 30, f'{len(rows)} rows'
     V = {r['id']: r['all_fields_right'].strip().lower() for r in rows}; assert set(V.values()) <= {'yes', 'no'}, 'all_fields_right must be yes or no on every row'
@@ -85,10 +101,29 @@ def run_score(a):
             for k in [x.strip().lower() for x in re.split(r'[,;/]', r.get('wrong_fields') or '') if x.strip()]: wf[r['organ']][k] += 1
     res = dict(n=30, by_organ=by, wrong_fields_by_organ={o: dict(c) for o, c in wf.items()}, notes={r['id']: r.get('note', '') for r in rows if V[r['id']] == 'no'}, breast_thyroid=bt, pass_rule='at least 17 of the 20 breast + thyroid reports fully right', passed=passed, wrong_ids=sorted(i for i in V if V[i] == 'no'), v4_sha256=hashlib.sha256(V4.encode()).hexdigest(),
                caveats=['one grader, not blinded to the project, not a clinician', 'rubric differs from Step 32 (BI-RADS on thyroid; see PREREG)', '30 reports, 20 for the rule'])
+    wrong_ids = set(res['wrong_ids']); assert all(i in wrong_ids for ids in MANUAL.values() for i in ids), 'manual map names a row that was graded right'
+    res['manual_error_types'] = {k: dict(rows=v, n=len(v)) for k, v in MANUAL.items()}; res['manual_error_types_note'] = "author's reading of the grader's wrong_fields and notes; a row can have several types"
+    res['sensitivity'] = dict(note='breast + thyroid fully right if the two rows with a single wrong field that is arguably a judgement call (D21 tirads from BI-RADS, D26 pathology from suggestive wording) were counted right', right=bt['right'] + sum(1 for i in ('D21', 'D26') if V.get(i) == 'no'), n=bt['n'])
     json.dump(res, open(os.path.join(OUT, 'results.json'), 'w'), indent=1)
     md = ['# Step 43: extractor v4 on 30 fresh free-text reports graded by a person', '', f"**{'PASSES' if passed else 'DOES NOT PASS'} the pre-registered rule: {bt['right']} of {bt['n']} breast + thyroid reports fully right (rule: at least 17 of 20; 95% Wilson CI {bt['ci95'][0]}-{bt['ci95'][1]}).** " + ('Step 28 (natural errors) is to be re-run with v4 (`step43_extractor_v4 step28`).' if passed else 'Step 28 stays inconclusive; v4 labels are not validated on free text.'), '',
           '| organ | fully right / n | 95% CI |', '|---|---|---|'] + [f"| {o} | {d['right']} / {d['n']} | {d['ci95'][0]}-{d['ci95'][1]} |" for o, d in by.items()] + ['', f"Wrong rows: {', '.join(res['wrong_ids']) or 'none'}. Wrong fields (grader's `wrong_fields`, by organ): " + (', '.join(o + ' ' + ', '.join(f'{k} x{n}' for k, n in c.most_common()) for o, c in wf.items()) or 'none listed') + ". Pre-registration: [PREREG.md](PREREG.md). One grader, not blinded to the project, not a clinician; rubric differs from Step 32 (BI-RADS on thyroid), so the numbers are not strictly comparable to Step 32's 13 of 30.", '']
+    md += ['## Wrong rows by error type (author reading of the grader notes; a row can have several types)', '', '| error type | rows | n |', '|---|---|---|'] + [f"| {k} | {', '.join(v)} | {len(v)} |" for k, v in MANUAL.items()] + ['', f"Sensitivity: counting the two single-judgement-call rows (D21, D26) as right would give {res['sensitivity']['right']} of {res['sensitivity']['n']} breast + thyroid, still far under 17.", '',
+          '## Reading', '',
+          "- **Instruction rule 4 was not followed on thyroid:** on 8 of the 10 thyroid reports that state a BI-RADS category, v4 still wrote it into `tirads` (and added a `birads` key on a ninth); the model (Qwen2.5-7B-Instruct, 4-bit, greedy) did not obey the rule although templated dev / val agreement stayed at 0.9989 / 0.9986. The thyroid nodule's echo was left null on 6 reports whose text says hypoechoic nodules or areas.",
+          '- **Breast:** 9 of 10 reports have at least one wrong field; the most frequent are the margin word not as written (6), shape narrowed or changed (4), pathology benign taken from suggestive wording (4) and a halo the report does not state (3).',
+          "- **Fetal head 8 of 10:** both wrong rows (D05, D12) are wrong only because the JSON added a `birads` key that is not in the fetal schema (BI-RADS 0 is in the report text); the other eight are all-null on reports that state no plane or head circumference.",
+          '- Step 32 (v3, a different grader rubric and different reports) had breast 7 of 12, thyroid 0 of 12, fetal head 6 of 6; v4 breast 1 of 10, thyroid 1 of 10, fetal head 8 of 10. The two checks are not strictly comparable (rubric, reports, one grader), so this is not evidence that v4 is worse than v3 on breast, but it shows no improvement on thyroid and no pass.', '',
+          '## Caveats', '',
+          '- **One grader, not blinded to the project, not a clinician; AI use by the grader cannot be verified.** Several wrong rows rest on judgement calls: on four breast rows (D02, D10, D19, D26) the grader treated "most consistent with / suggesting a benign lesion" as not a stated pathology, which is stricter than the grading guide (rule 7 accepts "most likely benign"); counting those pathology calls as right still leaves each of D02, D10 and D19 wrong on other fields, and D26 would become right (see the sensitivity line). The margin and shape rows follow guide rule 3 (copy the report\'s words).',
+          '- 30 reports (20 for the rule); the rule is fixed in the PREREG and the verdict does not depend on any single row (the sensitivity count is 4 of 20).',
+          '- Same Qwen2.5-VL-3B reports and writer as Steps 28 / 32; the thyroid and fetal-head reports state BI-RADS (a breast scale), a writer failure (LIMITATIONS 36).',
+          '- v4 changed instruction text only (same model, schema and dev-only few-shot examples); prompt rules alone did not change the 4-bit 7B model\'s behaviour on the thyroid BI-RADS case. **Step 28 (natural errors) was not re-run and stays inconclusive.**', '']
     open(os.path.join(OUT, 'results.md'), 'w').write('\n'.join(md)); print('\n'.join(md))
+    import subprocess, platform
+    def g(*c):
+        try: return subprocess.check_output(c, text=True, cwd=ROOT).strip()
+        except Exception: return None
+    json.dump(dict(step='43', model=X.MODEL, decoding='greedy', variant='v4', v4_sha256=hashlib.sha256(V4.encode()).hexdigest(), sheet_seed=43, git_head_at_report=g('git', 'rev-parse', '--short', 'HEAD'), prereg_commit=g('git', 'log', '--format=%h', '-1', '--', 'results/partA/step43_extractor_v4/PREREG.md'), python=platform.python_version(), platform=platform.platform(), date=time.strftime('%Y-%m-%d'), graded_file='docs/step43_check_filled.csv (untracked)', passed=passed, step28_rerun=False), open(os.path.join(OUT, 'run_info.json'), 'w'), indent=1)
 
 def run_step28(a):
     r = json.load(open(os.path.join(OUT, 'results.json')))

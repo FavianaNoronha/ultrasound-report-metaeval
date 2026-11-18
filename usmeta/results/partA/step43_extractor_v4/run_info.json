@@ -1,0 +1,16 @@
+{
+ "step": "43",
+ "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+ "decoding": "greedy",
+ "variant": "v4",
+ "v4_sha256": "868a89255a628fa799ab4ec74a1018d1e6e118405d3e2fbdae904d278462d1ce",
+ "sheet_seed": 43,
+ "git_head_at_report": "3221ac4",
+ "prereg_commit": "17941d4",
+ "python": "3.9.6",
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "date": "2026-11-18",
+ "graded_file": "docs/step43_check_filled.csv (untracked)",
+ "passed": false,
+ "step28_rerun": false
+}

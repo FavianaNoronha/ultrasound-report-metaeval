@@ -1,0 +1,222 @@
+{
+ "n": 30,
+ "by_organ": {
+  "breast": {
+   "right": 1,
+   "n": 10,
+   "ci95": [
+    0.02,
+    0.4
+   ]
+  },
+  "thyroid": {
+   "right": 1,
+   "n": 10,
+   "ci95": [
+    0.02,
+    0.4
+   ]
+  },
+  "fetal": {
+   "right": 8,
+   "n": 10,
+   "ci95": [
+    0.49,
+    0.94
+   ]
+  }
+ },
+ "wrong_fields_by_organ": {
+  "breast": {
+   "shape": 4,
+   "margin": 6,
+   "pathology": 4,
+   "calcifications": 1,
+   "halo": 3,
+   "echo": 2
+  },
+  "thyroid": {
+   "tirads": 9,
+   "echo": 6,
+   "count": 2,
+   "composition": 5,
+   "birads": 1
+  },
+  "fetal": {
+   "birads": 2
+  }
+ },
+ "notes": {
+  "D01": "Report describes shape as 'somewhat irregular shape with a lobulated appearance' and margin as 'slightly indistinct'.",
+  "D02": "Report says 'most consistent with a benign lesion' (not a confirmed diagnosis) and explicitly notes no calcifications.",
+  "D03": "Report specifies BI-RADS 4 (not TI-RADS), so tirads should be null; hypoechoic areas/nodules echo is missed.",
+  "D04": "Count is 'multiple' (not 3), 'hypoechoic' is echo rather than composition, and report lists BI-RADS 4 rather than TI-RADS.",
+  "D05": "Fetal head schema only checks plane and hc; birads should not be included.",
+  "D07": "Count should be null for 'multiple'; echo (hypoechoic) and composition are omitted; tirads should be null as report states BI-RADS 4C.",
+  "D08": "Report states 'somewhat irregular' shape and 'smooth'/'well-defined' margin rather than 'circumscribed'.",
+  "D09": "Echo 'hypoechoic' is omitted; tirads should be null since report states BI-RADS 4.",
+  "D10": "Report says 'smooth'/'well-defined' (not 'circumscribed'), does not mention a halo, and 'most likely diagnosis' is not a confirmed benign pathology.",
+  "D11": "'hypoechoic' was placed in composition instead of echo, and tirads should be null as report states BI-RADS 4A.",
+  "D12": "Fetal head schema only checks plane and hc; birads should not be included.",
+  "D15": "Report describes shape as 'somewhat irregular shape with a lobulated appearance', margin as 'slightly indistinct', and mass initially as 'hypoechoic'.",
+  "D16": "'hypoechoic' is duplicated in composition, tirads is left null despite report stating '(TIRADS 4C)', and birads is not a thyroid field.",
+  "D17": "Echo 'hypoechoic' is omitted, and tirads must be null since report states BI-RADS 4A.",
+  "D18": "Composition (solid/cystic) and echo (hypoechoic) are omitted, and tirads must be null as report states BI-RADS 4.",
+  "D19": "Report says 'smooth'/'well-defined' (not 'circumscribed'), does not state a halo, and 'suggesting a benign lesion' is not a confirmed diagnosis.",
+  "D21": "Report states BI-RADS 4A rather than TI-RADS, so tirads must be null.",
+  "D26": "Report states findings are 'suggesting' or 'consistent with' a benign lesion and require further evaluation to confirm, not a confirmed pathology diagnosis.",
+  "D28": "Report states 'somewhat irregular' shape and 'smooth'/'well-defined' margin rather than 'circumscribed'.",
+  "D29": "Report does not mention a halo (only edema/enhancement), and initially describes the mass as 'hypoechoic'."
+ },
+ "breast_thyroid": {
+  "right": 2,
+  "n": 20,
+  "ci95": [
+   0.03,
+   0.3
+  ]
+ },
+ "pass_rule": "at least 17 of the 20 breast + thyroid reports fully right",
+ "passed": false,
+ "wrong_ids": [
+  "D01",
+  "D02",
+  "D03",
+  "D04",
+  "D05",
+  "D07",
+  "D08",
+  "D09",
+  "D10",
+  "D11",
+  "D12",
+  "D15",
+  "D16",
+  "D17",
+  "D18",
+  "D19",
+  "D21",
+  "D26",
+  "D28",
+  "D29"
+ ],
+ "v4_sha256": "868a89255a628fa799ab4ec74a1018d1e6e118405d3e2fbdae904d278462d1ce",
+ "caveats": [
+  "one grader, not blinded to the project, not a clinician",
+  "rubric differs from Step 32 (BI-RADS on thyroid; see PREREG)",
+  "30 reports, 20 for the rule"
+ ],
+ "manual_error_types": {
+  "BI-RADS category written into tirads on a thyroid report": {
+   "rows": [
+    "D03",
+    "D04",
+    "D07",
+    "D09",
+    "D11",
+    "D17",
+    "D18",
+    "D21"
+   ],
+   "n": 8
+  },
+  "key outside the organ schema added (birads on fetal head / thyroid)": {
+   "rows": [
+    "D05",
+    "D12",
+    "D16"
+   ],
+   "n": 3
+  },
+  "thyroid nodule echo omitted": {
+   "rows": [
+    "D03",
+    "D07",
+    "D09",
+    "D11",
+    "D17",
+    "D18"
+   ],
+   "n": 6
+  },
+  "thyroid composition wrong (hypoechoic written as composition) or omitted": {
+   "rows": [
+    "D04",
+    "D07",
+    "D11",
+    "D16",
+    "D18"
+   ],
+   "n": 5
+  },
+  "count 'multiple' written as a number or as the word": {
+   "rows": [
+    "D04",
+    "D07"
+   ],
+   "n": 2
+  },
+  "stated TI-RADS left null (D16: \"TIRADS 4C\" in the impression)": {
+   "rows": [
+    "D16"
+   ],
+   "n": 1
+  },
+  "breast shape narrowed or changed (\"somewhat irregular ... lobulated\" -> irregular)": {
+   "rows": [
+    "D01",
+    "D08",
+    "D15",
+    "D28"
+   ],
+   "n": 4
+  },
+  "breast margin word not as written (mapped to circumscribed / not circumscribed)": {
+   "rows": [
+    "D01",
+    "D08",
+    "D10",
+    "D15",
+    "D19",
+    "D28"
+   ],
+   "n": 6
+  },
+  "pathology benign filled from suggestive wording (\"suggesting\", \"consistent with\", \"likely\")": {
+   "rows": [
+    "D02",
+    "D10",
+    "D19",
+    "D26"
+   ],
+   "n": 4
+  },
+  "halo invented": {
+   "rows": [
+    "D10",
+    "D19",
+    "D29"
+   ],
+   "n": 3
+  },
+  "echo heterogeneous written for a mass first described as hypoechoic": {
+   "rows": [
+    "D15",
+    "D29"
+   ],
+   "n": 2
+  },
+  "stated \"no calcifications\" left null": {
+   "rows": [
+    "D02"
+   ],
+   "n": 1
+  }
+ },
+ "manual_error_types_note": "author's reading of the grader's wrong_fields and notes; a row can have several types",
+ "sensitivity": {
+  "note": "breast + thyroid fully right if the two rows with a single wrong field that is arguably a judgement call (D21 tirads from BI-RADS, D26 pathology from suggestive wording) were counted right",
+  "right": 4,
+  "n": 20
+ }
+}
