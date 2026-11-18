@@ -1,0 +1,14 @@
+{
+ "torch": "2.14.1+cu130",
+ "cuda": "13.0",
+ "gpu": "Tesla T4",
+ "gpu_memory_gb": 15.6,
+ "python": "3.13.16",
+ "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+ "transformers": "4.57.6",
+ "bitsandbytes": "0.50.2",
+ "accelerate": "1.15.0",
+ "green_score": "0.0.13",
+ "numpy": "2.4.6",
+ "datasets": "4.8.5"
+}

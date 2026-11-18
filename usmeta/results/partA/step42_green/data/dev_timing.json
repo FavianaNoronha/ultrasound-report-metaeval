@@ -1,0 +1,11 @@
+{
+ "pairs": 20,
+ "seconds": 372.3153009414673,
+ "seconds_per_pair": 18.615765047073364,
+ "batch_size": 8,
+ "identical_copy_scores": [
+  1.0,
+  1.0
+ ],
+ "unparsed": 0
+}

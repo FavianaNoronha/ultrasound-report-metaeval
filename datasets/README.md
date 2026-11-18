@@ -26,6 +26,28 @@ need to get the same data and to verify you have it:
 
 Not in the table: HiSBreast (text only, separate brief) and UltraG thyroid / breast text labels (jsonl files, one over 100 MB).
 
+
+## Where to get each dataset
+
+Download each from its original source and read its licence first. The folder names in the table above are the ones on the author's Mac
+(some were Kaggle re-uploads saved as `archive-N`); rename your copy to match or set the paths in `manifest.json`.
+
+| dataset | source | paper |
+|---|---|---|
+| BrEaST | The Cancer Imaging Archive (BrEaST-Lesions-USG) | Pawłowska et al., Scientific Data 11, 148 (2024), [PMC10830496](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10830496/) |
+| BUS-BRA | [Zenodo 7730708](https://zenodo.org/record/7730708) | Gómez-Flores et al., Medical Physics (2024) |
+| BUSI | from the authors (Cairo University); widely mirrored on Kaggle | Al-Dhabyani et al., Data in Brief 28, 104863 (2020), [doi](https://doi.org/10.1016/j.dib.2019.104863) |
+| UDIAT (Dataset B) | on request from the authors | Yap et al., IEEE JBHI 22(4), 2018 |
+| BUS-UCLM | [Mendeley Data 7fvgj4jsp7](https://data.mendeley.com/datasets/7fvgj4jsp7) | to confirm |
+| TN3K | [TRFE-Net GitHub](https://github.com/haifangong/TRFE-Net-for-thyroid-nodule-segmentation) | Gong et al., IEEE ISBI 2021 |
+| TN5000 | [TN5000-2025 GitHub](https://github.com/Qingyanyichen/TN5000-2025) | Scientific Data (2025), [PubMed 40819171](https://pubmed.ncbi.nlm.nih.gov/40819171/) |
+| DDTI | Universidad Nacional de Colombia (CIM@LAB); widely mirrored on Kaggle | Pedraza et al., Proc. SPIE 9287 (2015) |
+| HC18 | [HC18 Grand Challenge](https://hc18.grand-challenge.org/) | van den Heuvel et al., PLoS ONE 13(8), e0200412 (2018) |
+| FetalHead (planes) | [Zenodo 8265464](https://zenodo.org/record/8265464) | Alzubaidi et al., Data in Brief (2023) |
+
+Links were checked on 18 Nov 2026 where a page was opened; the BrEaST, BUSI, UDIAT and DDTI sources are given by name only and should be
+confirmed before citing.
+
 ## Before anyone downloads or cites
 - **Licences are "to confirm" for every dataset.** Do not redistribute the images from this repository until each licence has been read.
 - The citations in `manifest.json` were written from memory and must be checked against the dataset pages before use in a paper.
