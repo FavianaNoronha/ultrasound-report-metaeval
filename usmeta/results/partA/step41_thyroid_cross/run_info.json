@@ -1,0 +1,21 @@
+{
+ "step": "41",
+ "seed": 0,
+ "folds": [
+  "TN3K",
+  "DDTI"
+ ],
+ "train_seconds": {
+  "TN3K": 1158,
+  "DDTI": 97
+ },
+ "git_head_at_report": "8c2c694",
+ "prereg_commit": "",
+ "python": "3.9.6",
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "date": "2026-11-18",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "min_groups": 30,
+ "test_scans": 60,
+ "device": "mps"
+}

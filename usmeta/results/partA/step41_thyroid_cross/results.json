@@ -1,0 +1,106 @@
+{
+ "folds": {
+  "TN3K": {
+   "trained_on": "DDTI",
+   "scans": 30,
+   "groups_defined": 17,
+   "position": [
+    0.6911764705882353,
+    0.5147058823529411,
+    0.8529411764705882
+   ],
+   "in_dataset_position": [
+    0.9264705882352942,
+    0.8235294117647058,
+    1.0
+   ],
+   "groups_in_dataset": 17,
+   "within_0_05": false,
+   "lower_bound_ge_0_70": false,
+   "rule_would_pass": false,
+   "too_small": true,
+   "decision": "too small (fewer than 30 groups): not decided; indicative rule outcome: would not transfer",
+   "dice": [
+    0.276339328156705,
+    0.1793368824213475,
+    0.3777506823440754
+   ],
+   "in_dataset_dice": [
+    0.8208975959606721,
+    0.7482508840113798,
+    0.8814514291783921
+   ],
+   "found": 0.9333333333333333,
+   "in_dataset_found": 1.0,
+   "correct": [
+    0.6844213132242252,
+    0.5914783708548609,
+    0.7753100234037621
+   ],
+   "in_dataset_correct": [
+    0.9398250096786682,
+    0.8995536585365853,
+    0.9778412698412697
+   ]
+  },
+  "DDTI": {
+   "trained_on": "TN3K",
+   "scans": 30,
+   "groups_defined": 15,
+   "position": [
+    0.640625,
+    0.484375,
+    0.8
+   ],
+   "in_dataset_position": [
+    0.765625,
+    0.5734272875816994,
+    0.9333333333333333
+   ],
+   "groups_in_dataset": 15,
+   "within_0_05": false,
+   "lower_bound_ge_0_70": false,
+   "rule_would_pass": false,
+   "too_small": true,
+   "decision": "too small (fewer than 30 groups): not decided; indicative rule outcome: would not transfer",
+   "dice": [
+    0.5757280055437465,
+    0.46619267254357594,
+    0.6788596334663808
+   ],
+   "in_dataset_dice": [
+    0.6767080935627005,
+    0.5972655606704882,
+    0.7462005637818754
+   ],
+   "found": 1.0,
+   "in_dataset_found": 1.0,
+   "correct": [
+    0.8602958935516926,
+    0.7974195691983603,
+    0.9108981412266967
+   ],
+   "in_dataset_correct": [
+    0.9059747808348214,
+    0.8454258996112446,
+    0.9503807068464989
+   ]
+  }
+ },
+ "pooled_position": [
+  0.6666666666666666,
+  0.5427622767857142,
+  0.7803030303030303
+ ],
+ "pooled_groups": 32,
+ "in_dataset_pooled_position": [
+  0.8484848484848485,
+  0.7421875,
+  0.9453125
+ ],
+ "rule": {
+  "tolerance": 0.05,
+  "lower_bound": 0.7,
+  "min_groups": 30
+ }
+}

@@ -1,0 +1,202 @@
+{
+ "organ": "thyroid_train_DDTI",
+ "dev_total": 192,
+ "dev_dropped_leaky": 87,
+ "dev_trained": 101,
+ "val_n": 92,
+ "epochs_run": 28,
+ "best_val_dice_256": 0.6324460208340921,
+ "log": [
+  {
+   "epoch": 1,
+   "train_loss": 1.423539896806081,
+   "val_dice_256": 0.14987945177112041,
+   "seconds": 3
+  },
+  {
+   "epoch": 2,
+   "train_loss": 1.2544814546902974,
+   "val_dice_256": 0.29092727807606167,
+   "seconds": 6
+  },
+  {
+   "epoch": 3,
+   "train_loss": 1.2017745971679688,
+   "val_dice_256": 0.18615413830151853,
+   "seconds": 10
+  },
+  {
+   "epoch": 4,
+   "train_loss": 1.1463232636451721,
+   "val_dice_256": 0.20590532412242338,
+   "seconds": 13
+  },
+  {
+   "epoch": 5,
+   "train_loss": 1.100132902463277,
+   "val_dice_256": 0.22404876886852151,
+   "seconds": 16
+  },
+  {
+   "epoch": 6,
+   "train_loss": 1.0834580858548482,
+   "val_dice_256": 0.3188365848818725,
+   "seconds": 19
+  },
+  {
+   "epoch": 7,
+   "train_loss": 1.0535288155078888,
+   "val_dice_256": 0.44190292488714134,
+   "seconds": 23
+  },
+  {
+   "epoch": 8,
+   "train_loss": 1.0171423256397247,
+   "val_dice_256": 0.3880820118337759,
+   "seconds": 26
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.9913170039653778,
+   "val_dice_256": 0.3571869896942995,
+   "seconds": 30
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.9552377263704935,
+   "val_dice_256": 0.4983908645409044,
+   "seconds": 33
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.9433952470620474,
+   "val_dice_256": 0.5000338840377971,
+   "seconds": 37
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.9133762915929159,
+   "val_dice_256": 0.5080234387416857,
+   "seconds": 40
+  },
+  {
+   "epoch": 13,
+   "train_loss": 0.9002286195755005,
+   "val_dice_256": 0.5753573321936419,
+   "seconds": 44
+  },
+  {
+   "epoch": 14,
+   "train_loss": 0.8913545310497284,
+   "val_dice_256": 0.5810091234906978,
+   "seconds": 48
+  },
+  {
+   "epoch": 15,
+   "train_loss": 0.8842395941416422,
+   "val_dice_256": 0.5449027510768348,
+   "seconds": 51
+  },
+  {
+   "epoch": 16,
+   "train_loss": 0.8543387651443481,
+   "val_dice_256": 0.5431476174510428,
+   "seconds": 55
+  },
+  {
+   "epoch": 17,
+   "train_loss": 0.8450828095277151,
+   "val_dice_256": 0.5316054271378559,
+   "seconds": 58
+  },
+  {
+   "epoch": 18,
+   "train_loss": 0.81832488377889,
+   "val_dice_256": 0.5743465153835385,
+   "seconds": 62
+  },
+  {
+   "epoch": 19,
+   "train_loss": 0.8022694091002146,
+   "val_dice_256": 0.6033130844895199,
+   "seconds": 65
+  },
+  {
+   "epoch": 20,
+   "train_loss": 0.7934683461983999,
+   "val_dice_256": 0.6157074383555697,
+   "seconds": 68
+  },
+  {
+   "epoch": 21,
+   "train_loss": 0.7816278835137686,
+   "val_dice_256": 0.6182660572026777,
+   "seconds": 72
+  },
+  {
+   "epoch": 22,
+   "train_loss": 0.7690342962741852,
+   "val_dice_256": 0.6324460208340921,
+   "seconds": 76
+  },
+  {
+   "epoch": 23,
+   "train_loss": 0.7734361390272776,
+   "val_dice_256": 0.6200563147980688,
+   "seconds": 80
+  },
+  {
+   "epoch": 24,
+   "train_loss": 0.743971198797226,
+   "val_dice_256": 0.6191931498591429,
+   "seconds": 83
+  },
+  {
+   "epoch": 25,
+   "train_loss": 0.7465506792068481,
+   "val_dice_256": 0.6103379146243991,
+   "seconds": 87
+  },
+  {
+   "epoch": 26,
+   "train_loss": 0.7435586055119833,
+   "val_dice_256": 0.6158250129139493,
+   "seconds": 90
+  },
+  {
+   "epoch": 27,
+   "train_loss": 0.7331378360589346,
+   "val_dice_256": 0.6187761907411037,
+   "seconds": 93
+  },
+  {
+   "epoch": 28,
+   "train_loss": 0.7282053927580515,
+   "val_dice_256": 0.6177341072207347,
+   "seconds": 96
+  }
+ ],
+ "val_grid": {
+  "0.3|raw": 0.6185792682798924,
+  "0.3|largest": 0.5561288583670633,
+  "0.4|raw": 0.6307102863109937,
+  "0.4|largest": 0.5635814936148441,
+  "0.5|raw": 0.6324460208340921,
+  "0.5|largest": 0.5660083141811934,
+  "0.6|raw": 0.622962077099958,
+  "0.6|largest": 0.5585972416199024,
+  "0.7|raw": 0.6020008740466017,
+  "0.7|largest": 0.5455917196270197
+ },
+ "chosen": {
+  "threshold": 0.5,
+  "keep": "raw"
+ },
+ "encoder": "resnet18 (random init, no pretrained weights)",
+ "seconds": 97,
+ "device": "mps",
+ "seed": 0,
+ "train_dataset": "DDTI",
+ "held_out": "TN3K",
+ "max_hours": 1.0
+}
