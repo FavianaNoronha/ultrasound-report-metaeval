@@ -1,0 +1,1 @@
+{"step": 42, "analysis": "python3 -m usmeta.step42_analyse (Mac VM, Python 3.10.12, numpy 2.2.6)", "analysed_at": "2026-11-18", "inputs": ["local_data/step42/green_pairs.jsonl (sha256 3807ae94...)", "pair_key.json", "green_scores.jsonl (507 rows)", "n_chosen.json", "dev_timing.json", "colab_env.json"], "note": "results.md written by hand from results.json"}
