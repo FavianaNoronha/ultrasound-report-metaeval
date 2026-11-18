@@ -1,0 +1,2878 @@
+[
+ {
+  "case_id": "BrEaST:184",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:184",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case184.png",
+  "reused": true,
+  "reference": "A round mass (wider than tall) with circumscribed margins and hypoechoic echo pattern is seen in the middle central part of the image, measuring approximately 5 mm. No posterior acoustic features and no calcifications and no echogenic halo. Assessment: BI-RADS 3. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_mm": 5,
+   "shape": "round",
+   "margin": "circumscribed",
+   "echo": "hypoechoic",
+   "post": "no",
+   "calc": "no",
+   "halo": "no",
+   "birads": "3",
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BrEaST:239",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:239",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case239.png",
+  "reused": true,
+  "reference": "An irregular mass (wider than tall) with not circumscribed (indistinct) margins and hypoechoic echo pattern is seen in the middle central part of the image, measuring approximately 32 mm. Combined posterior features and no calcifications and an echogenic halo. Assessment: BI-RADS 5. Pathology: malignant.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_mm": 32,
+   "shape": "irregular",
+   "margin": "not circumscribed (indistinct)",
+   "echo": "hypoechoic",
+   "post": "combined",
+   "calc": "no",
+   "halo": "yes",
+   "birads": "5",
+   "path": "malignant"
+  }
+ },
+ {
+  "case_id": "BrEaST:214",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:214",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case214.png",
+  "reused": true,
+  "reference": "An irregular mass (wider than tall) with circumscribed margins and anechoic echo pattern is seen in the middle central part of the image, measuring approximately 12 mm. Posterior acoustic enhancement and no calcifications and no echogenic halo. Assessment: BI-RADS 3. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_mm": 12,
+   "shape": "irregular",
+   "margin": "circumscribed",
+   "echo": "anechoic",
+   "post": "enhancement",
+   "calc": "no",
+   "halo": "no",
+   "birads": "3",
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BrEaST:68",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:68",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case068.png",
+  "reused": true,
+  "reference": "An oval mass (wider than tall) with circumscribed margins and hypoechoic echo pattern is seen in the upper central part of the image, measuring approximately 10 mm. No posterior acoustic features and no calcifications and no echogenic halo. Assessment: BI-RADS 3. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_mm": 10,
+   "shape": "oval",
+   "margin": "circumscribed",
+   "echo": "hypoechoic",
+   "post": "no",
+   "calc": "no",
+   "halo": "no",
+   "birads": "3",
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BrEaST:95",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:95",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case095.png",
+  "reused": true,
+  "reference": "An oval mass (wider than tall) with circumscribed margins and hypoechoic echo pattern is seen in the upper central part of the image, measuring approximately 8 mm. No posterior acoustic features and no calcifications and no echogenic halo. Assessment: BI-RADS 3. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_mm": 8,
+   "shape": "oval",
+   "margin": "circumscribed",
+   "echo": "hypoechoic",
+   "post": "no",
+   "calc": "no",
+   "halo": "no",
+   "birads": "3",
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BrEaST:119",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:119",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case119.png",
+  "reused": true,
+  "reference": "An irregular mass (wider than tall) with not circumscribed (spiculated, microlobulated, indistinct) margins and hypoechoic echo pattern is seen in the middle central part of the image, measuring approximately 26 mm. No posterior acoustic features and no calcifications and no echogenic halo. Assessment: BI-RADS 4c. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_mm": 26,
+   "shape": "irregular",
+   "margin": "not circumscribed (spiculated, microlobulated, indistinct)",
+   "echo": "hypoechoic",
+   "post": "no",
+   "calc": "no",
+   "halo": "no",
+   "birads": "4c",
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BrEaST:225",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:225",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case225.png",
+  "reused": true,
+  "reference": "An irregular mass (wider than tall) with not circumscribed (angular, indistinct) margins and heterogeneous echo pattern is seen in the middle central part of the image, measuring approximately 32 mm. No posterior acoustic features and no calcifications and an echogenic halo. Assessment: BI-RADS 5. Pathology: malignant.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_mm": 32,
+   "shape": "irregular",
+   "margin": "not circumscribed (angular, indistinct)",
+   "echo": "heterogeneous",
+   "post": "no",
+   "calc": "no",
+   "halo": "yes",
+   "birads": "5",
+   "path": "malignant"
+  }
+ },
+ {
+  "case_id": "BrEaST:59",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:59",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case059.png",
+  "reused": true,
+  "reference": "An oval mass (wider than tall) with circumscribed margins and hypoechoic echo pattern is seen in the upper central part of the image, measuring approximately 10 mm. No posterior acoustic features and no calcifications and no echogenic halo. Assessment: BI-RADS 4a. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_mm": 10,
+   "shape": "oval",
+   "margin": "circumscribed",
+   "echo": "hypoechoic",
+   "post": "no",
+   "calc": "no",
+   "halo": "no",
+   "birads": "4a",
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BrEaST:145",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:145",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case145.png",
+  "reused": true,
+  "reference": "An irregular mass (wider than tall) with not circumscribed (indistinct) margins and heterogeneous echo pattern is seen in the middle central part of the image, measuring approximately 16 mm. No posterior acoustic features and no calcifications and no echogenic halo. Assessment: BI-RADS 5. Pathology: malignant.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_mm": 16,
+   "shape": "irregular",
+   "margin": "not circumscribed (indistinct)",
+   "echo": "heterogeneous",
+   "post": "no",
+   "calc": "no",
+   "halo": "no",
+   "birads": "5",
+   "path": "malignant"
+  }
+ },
+ {
+  "case_id": "BrEaST:52",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:52",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case052.png",
+  "reused": true,
+  "reference": "An irregular mass (wider than tall) with circumscribed margins and hypoechoic echo pattern is seen in the middle central part of the image, measuring approximately 19 mm. No posterior acoustic features and no calcifications and no echogenic halo. Assessment: BI-RADS 3. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_mm": 19,
+   "shape": "irregular",
+   "margin": "circumscribed",
+   "echo": "hypoechoic",
+   "post": "no",
+   "calc": "no",
+   "halo": "no",
+   "birads": "3",
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BrEaST:54",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:54",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case054.png",
+  "reused": true,
+  "reference": "An irregular mass (wider than tall) with circumscribed margins and isoechoic echo pattern is seen in the upper central part of the image, measuring approximately 8 mm. No posterior acoustic features and no calcifications and no echogenic halo. Assessment: BI-RADS 3. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_mm": 8,
+   "shape": "irregular",
+   "margin": "circumscribed",
+   "echo": "isoechoic",
+   "post": "no",
+   "calc": "no",
+   "halo": "no",
+   "birads": "3",
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BrEaST:58",
+  "dataset": "BrEaST",
+  "organ": "breast",
+  "group_id": "BrEaST:58",
+  "image": "/Users/faviananoronha/Downloads/BrEaST-Lesions_USG-images_and_masks/case058.png",
+  "reused": true,
+  "reference": "An irregular mass (wider than tall) with not circumscribed (angular, microlobulated, indistinct) margins and hypoechoic echo pattern is seen in the middle central part of the image, measuring approximately 20 mm. Posterior acoustic enhancement and calcifications (indefinable) and no echogenic halo. Assessment: BI-RADS 4b. Pathology: malignant.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_mm": 20,
+   "shape": "irregular",
+   "margin": "not circumscribed (angular, microlobulated, indistinct)",
+   "echo": "hypoechoic",
+   "post": "enhancement",
+   "calc": "indefinable",
+   "halo": "no",
+   "birads": "4b",
+   "path": "malignant"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0225-r",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:225",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0225-r.png",
+  "reused": true,
+  "reference": "A mass (wider than tall) is seen in the right breast, upper central part of the image, measuring about 66% of the image width. Assessment: BI-RADS 4. Pathology: malignant. Histology: invasive ductal carcinoma.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 66,
+   "side": "right",
+   "birads": "4",
+   "path": "malignant",
+   "hist": "invasive ductal carcinoma"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0098-r",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:98",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0098-r.png",
+  "reused": true,
+  "reference": "A mass (wider than tall) is seen in the right breast, upper central part of the image, measuring about 51% of the image width. Assessment: BI-RADS 4. Pathology: benign. Histology: fibrocystic changes.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 51,
+   "side": "right",
+   "birads": "4",
+   "path": "benign",
+   "hist": "fibrocystic changes"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0650-r",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:650",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0650-r.png",
+  "reused": true,
+  "reference": "A mass (taller than wide) is seen in the right breast, upper central part of the image, measuring about 42% of the image width. Assessment: BI-RADS 4. Pathology: malignant. Histology: invasive ductal carcinoma.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "taller than wide",
+   "size_pct": 42,
+   "side": "right",
+   "birads": "4",
+   "path": "malignant",
+   "hist": "invasive ductal carcinoma"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0141-l",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:141",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0141-l.png",
+  "reused": true,
+  "reference": "A mass (wider than tall) is seen in the left breast, upper central part of the image, measuring about 71% of the image width. Assessment: BI-RADS 3. Pathology: benign. Histology: fibroadenoma.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 71,
+   "side": "left",
+   "birads": "3",
+   "path": "benign",
+   "hist": "fibroadenoma"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0400-r",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:400",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0400-r.png",
+  "reused": true,
+  "reference": "A mass (wider than tall) is seen in the right breast, middle central part of the image, measuring about 28% of the image width. Assessment: BI-RADS 2. Pathology: benign. Histology: fibroadenoma.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 28,
+   "side": "right",
+   "birads": "2",
+   "path": "benign",
+   "hist": "fibroadenoma"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0670-l",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:670",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0670-l.png",
+  "reused": true,
+  "reference": "A mass (wider than tall) is seen in the left breast, middle central part of the image, measuring about 39% of the image width. Assessment: BI-RADS 2. Pathology: benign. Histology: fibroadenoma.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 39,
+   "side": "left",
+   "birads": "2",
+   "path": "benign",
+   "hist": "fibroadenoma"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0993-r",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:993",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0993-r.png",
+  "reused": true,
+  "reference": "A mass (wider than tall) is seen in the right breast, upper central part of the image, measuring about 45% of the image width. Assessment: BI-RADS 4. Pathology: malignant. Histology: lobular carcinoma in situ.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 45,
+   "side": "right",
+   "birads": "4",
+   "path": "malignant",
+   "hist": "lobular carcinoma in situ"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0250-l",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:250",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0250-l.png",
+  "reused": true,
+  "reference": "A mass (wider than tall) is seen in the left breast, middle central part of the image, measuring about 65% of the image width. Assessment: BI-RADS 4. Pathology: malignant. Histology: invasive ductal carcinoma.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 65,
+   "side": "left",
+   "birads": "4",
+   "path": "malignant",
+   "hist": "invasive ductal carcinoma"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0003-l",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:3",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0003-l.png",
+  "reused": true,
+  "reference": "A mass (taller than wide) is seen in the left breast, middle central part of the image, measuring about 50% of the image width. Assessment: BI-RADS 4. Pathology: malignant. Histology: invasive ductal carcinoma.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "taller than wide",
+   "size_pct": 50,
+   "side": "left",
+   "birads": "4",
+   "path": "malignant",
+   "hist": "invasive ductal carcinoma"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0372-l",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:372",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0372-l.png",
+  "reused": true,
+  "reference": "A mass (wider than tall) is seen in the left breast, upper central part of the image, measuring about 39% of the image width. Assessment: BI-RADS 2. Pathology: benign. Histology: fibroadenoma.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 39,
+   "side": "left",
+   "birads": "2",
+   "path": "benign",
+   "hist": "fibroadenoma"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0444-r",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:444",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0444-r.png",
+  "reused": true,
+  "reference": "A mass (wider than tall) is seen in the right breast, upper central part of the image, measuring about 18% of the image width. Assessment: BI-RADS 2. Pathology: benign. Histology: fibrocystic changes.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 18,
+   "side": "right",
+   "birads": "2",
+   "path": "benign",
+   "hist": "fibrocystic changes"
+  }
+ },
+ {
+  "case_id": "BUS-BRA:bus_0426-r",
+  "dataset": "BUS-BRA",
+  "organ": "breast",
+  "group_id": "BUS-BRA:426",
+  "image": "/Users/faviananoronha/Downloads/archive-5/BUSBRA/BUSBRA/Images/bus_0426-r.png",
+  "reused": true,
+  "reference": "A mass (wider than tall) is seen in the right breast, upper central part of the image, measuring about 68% of the image width. Assessment: BI-RADS 4. Pathology: malignant. Histology: invasive ductal carcinoma.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 68,
+   "side": "right",
+   "birads": "4",
+   "path": "malignant",
+   "hist": "invasive ductal carcinoma"
+  }
+ },
+ {
+  "case_id": "BUSI:benign/benign (26)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:benign/benign (26)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/benign/benign (26).png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper central part of the image, measuring about 49% of the image width. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 49,
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BUSI:normal/normal (122)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:normal/normal (25)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/normal/normal (122).png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (6)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:malignant/malignant (6)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/malignant/malignant (6).png",
+  "reused": false,
+  "reference": "A mass (taller than wide) is seen in the middle central part of the image, measuring about 35% of the image width. Pathology: malignant.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "taller than wide",
+   "size_pct": 35,
+   "path": "malignant"
+  }
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (194)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:malignant/malignant (194)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/malignant/malignant (194).png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the middle right part of the image, measuring about 34% of the image width. Pathology: malignant.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-right",
+   "orient": "wider than tall",
+   "size_pct": 34,
+   "path": "malignant"
+  }
+ },
+ {
+  "case_id": "BUSI:normal/normal (76)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:normal/normal (76)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/normal/normal (76).png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUSI:benign/benign (284)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:benign/benign (285)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/benign/benign (284).png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper right part of the image, measuring about 34% of the image width. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-right",
+   "orient": "wider than tall",
+   "size_pct": 34,
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BUSI:benign/benign (138)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:benign/benign (60)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/benign/benign (138).png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper central part of the image, measuring about 9% of the image width. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 9,
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BUSI:benign/benign (121)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:benign/benign (121)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/benign/benign (121).png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper central part of the image, measuring about 27% of the image width. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 27,
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BUSI:benign/benign (331)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:benign/benign (331)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/benign/benign (331).png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the middle right part of the image, measuring about 17% of the image width. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-right",
+   "orient": "wider than tall",
+   "size_pct": 17,
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BUSI:normal/normal (58)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:normal/normal (60)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/normal/normal (58).png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUSI:benign/benign (228)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:benign/benign (306)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/benign/benign (228).png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the middle central part of the image, measuring about 70% of the image width. Pathology: benign.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 70,
+   "path": "benign"
+  }
+ },
+ {
+  "case_id": "BUSI:malignant/malignant (148)",
+  "dataset": "BUSI",
+  "organ": "breast",
+  "group_id": "BUSI:malignant/malignant (148)",
+  "image": "/Users/faviananoronha/Downloads/Dataset_BUSI_with_GT/malignant/malignant (148).png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper left part of the image, measuring about 12% of the image width. Pathology: malignant.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-left",
+   "orient": "wider than tall",
+   "size_pct": 12,
+   "path": "malignant"
+  }
+ },
+ {
+  "case_id": "UDIAT:000098",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000098",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000098.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper central part of the image, measuring about 15% of the image width. Pathology: benign. Histology: fa.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 15,
+   "path": "benign",
+   "hist": "fa"
+  }
+ },
+ {
+  "case_id": "UDIAT:000109",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000109",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000109.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the middle central part of the image, measuring about 12% of the image width. Pathology: benign. Histology: cyst.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 12,
+   "path": "benign",
+   "hist": "cyst"
+  }
+ },
+ {
+  "case_id": "UDIAT:000140",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000140",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000140.png",
+  "reused": false,
+  "reference": "A mass (taller than wide) is seen in the middle central part of the image, measuring about 15% of the image width. Pathology: malignant. Histology: idc.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "taller than wide",
+   "size_pct": 15,
+   "path": "malignant",
+   "hist": "idc"
+  }
+ },
+ {
+  "case_id": "UDIAT:000053",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000309",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000053.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper central part of the image, measuring about 17% of the image width. Pathology: malignant. Histology: idc.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 17,
+   "path": "malignant",
+   "hist": "idc"
+  }
+ },
+ {
+  "case_id": "UDIAT:000104",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000104",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000104.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the middle central part of the image, measuring about 34% of the image width. Pathology: benign. Histology: cyst.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 34,
+   "path": "benign",
+   "hist": "cyst"
+  }
+ },
+ {
+  "case_id": "UDIAT:000134",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000134",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000134.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper central part of the image, measuring about 29% of the image width. Pathology: malignant. Histology: idc.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 29,
+   "path": "malignant",
+   "hist": "idc"
+  }
+ },
+ {
+  "case_id": "UDIAT:000137",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000137",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000137.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the middle right part of the image, measuring about 23% of the image width. Pathology: malignant. Histology: idc.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-right",
+   "orient": "wider than tall",
+   "size_pct": 23,
+   "path": "malignant",
+   "hist": "idc"
+  }
+ },
+ {
+  "case_id": "UDIAT:000121",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000121",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000121.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper left part of the image, measuring about 25% of the image width. Pathology: benign. Histology: cyst.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-left",
+   "orient": "wider than tall",
+   "size_pct": 25,
+   "path": "benign",
+   "hist": "cyst"
+  }
+ },
+ {
+  "case_id": "UDIAT:000125",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000125",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000125.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper central part of the image, measuring about 31% of the image width. Pathology: benign. Histology: cyst.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 31,
+   "path": "benign",
+   "hist": "cyst"
+  }
+ },
+ {
+  "case_id": "UDIAT:000119",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000119",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000119.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the upper central part of the image, measuring about 31% of the image width. Pathology: benign. Histology: cyst.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 31,
+   "path": "benign",
+   "hist": "cyst"
+  }
+ },
+ {
+  "case_id": "UDIAT:000050",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000050",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000050.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the middle central part of the image, measuring about 64% of the image width. Pathology: malignant. Histology: unk.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 64,
+   "path": "malignant",
+   "hist": "unk"
+  }
+ },
+ {
+  "case_id": "UDIAT:000029",
+  "dataset": "UDIAT",
+  "organ": "breast",
+  "group_id": "UDIAT:000029",
+  "image": "/Users/faviananoronha/Downloads/archive-4/UDIAT_Dataset_B/UDIAT_Dataset_B/original/000029.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the middle central part of the image, measuring about 35% of the image width. Pathology: malignant. Histology: idc.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 35,
+   "path": "malignant",
+   "hist": "idc"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:ANFO_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:ANFO",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/ANFO_000.png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:WAQU_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:WAQU",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/WAQU_000.png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:SIBA_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:SIBA",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/SIBA_000.png",
+  "reused": false,
+  "reference": "A mass (taller than wide) is seen in the middle central part of the image, measuring about 14% of the image width. Pathology: malignant.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "taller than wide",
+   "size_pct": 14,
+   "path": "malignant"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:HUBL_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:HUBL",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/HUBL_000.png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:CRCI_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:CRCI",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/CRCI_000.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the middle central part of the image, measuring about 32% of the image width. Pathology: malignant.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 32,
+   "path": "malignant"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:LOTI_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:LOTI",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/LOTI_000.png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:CODE_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:CODE",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/CODE_000.png",
+  "reused": false,
+  "reference": "A mass (wider than tall) is seen in the middle central part of the image, measuring about 14% of the image width. Pathology: malignant.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 14,
+   "path": "malignant"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:SECH_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:SECH",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/SECH_000.png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:PLBA_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:PLBA",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/PLBA_000.png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:TOCI_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:TOCI",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/TOCI_000.png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:VITR_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:VITR",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/VITR_000.png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "BUS-UCLM:COVA_000",
+  "dataset": "BUS-UCLM",
+  "organ": "breast",
+  "group_id": "BUS-UCLM:COVA",
+  "image": "/Users/faviananoronha/Downloads/archive-8/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM Breast ultrasound lesion segmentation dataset/BUS-UCLM/images/COVA_000.png",
+  "reused": false,
+  "reference": "No focal lesion is seen. Pathology: normal.",
+  "ref_facts": {
+   "lesion": "absent",
+   "path": "normal"
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/1511.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/1511.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/1511.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 25% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 25
+  }
+ },
+ {
+  "case_id": "TN3K:test/0570.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:test/0570.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/test-image/0570.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the upper central part of the image, measuring about 41% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 41
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/0849.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/0849.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/0849.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle left part of the image, measuring about 70% of the image width. Taller than wide.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-left",
+   "orient": "taller than wide",
+   "size_pct": 70
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/0116.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/0116.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/0116.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 83% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 83
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/2864.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/2864.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/2864.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 40% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 40
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/1996.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/1996.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/1996.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 72% of the image width. Taller than wide.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "taller than wide",
+   "size_pct": 72
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/1856.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/1856.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/1856.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 53% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 53
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/2764.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/2764.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/2764.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 69% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 69
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/2185.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/2185.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/2185.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 44% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 44
+  }
+ },
+ {
+  "case_id": "TN3K:test/0173.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:test/0173.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/test-image/0173.jpg",
+  "reused": true,
+  "reference": "Two nodules is seen in the upper central part of the image, measuring about 22% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 2,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 22
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/2668.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/2668.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/2668.jpg",
+  "reused": true,
+  "reference": "Two nodules is seen in the upper left part of the image, measuring about 32% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 2,
+   "pos": "upper-left",
+   "orient": "wider than tall",
+   "size_pct": 32
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/1615.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/1615.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/1615.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle right part of the image, measuring about 28% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-right",
+   "orient": "wider than tall",
+   "size_pct": 28
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/2274.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/2274.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/2274.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the upper right part of the image, measuring about 28% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-right",
+   "orient": "wider than tall",
+   "size_pct": 28
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/1743.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/1743.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/1743.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 51% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 51
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/0412.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/0412.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/0412.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the upper central part of the image, measuring about 59% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 59
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/2762.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/2762.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/2762.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 12% of the image width. Taller than wide.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "taller than wide",
+   "size_pct": 12
+  }
+ },
+ {
+  "case_id": "TN3K:test/0407.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:test/0407.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/test-image/0407.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle right part of the image, measuring about 27% of the image width. Taller than wide.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-right",
+   "orient": "taller than wide",
+   "size_pct": 27
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/2002.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/2002.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/2002.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 27% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 27
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/1792.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/1792.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/1792.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 30% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 30
+  }
+ },
+ {
+  "case_id": "TN3K:trainval/1665.jpg",
+  "dataset": "TN3K",
+  "organ": "thyroid",
+  "group_id": "TN3K:trainval/1665.jpg",
+  "image": "/Users/faviananoronha/Downloads/archive-6/trainval-image/1665.jpg",
+  "reused": true,
+  "reference": "Two nodules is seen in the lower right part of the image, measuring about 28% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 2,
+   "pos": "lower-right",
+   "orient": "wider than tall",
+   "size_pct": 28
+  }
+ },
+ {
+  "case_id": "TN5000:004429",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:004429",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/004429.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 21% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 21
+  }
+ },
+ {
+  "case_id": "TN5000:003495",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:003495",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/003495.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle right part of the image, measuring about 8% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-right",
+   "orient": "wider than tall",
+   "size_pct": 8
+  }
+ },
+ {
+  "case_id": "TN5000:001552",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:001552",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/001552.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the upper left part of the image, measuring about 24% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-left",
+   "orient": "wider than tall",
+   "size_pct": 24
+  }
+ },
+ {
+  "case_id": "TN5000:003423",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:003423",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/003423.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 21% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 21
+  }
+ },
+ {
+  "case_id": "TN5000:000605",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:000606",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/000605.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 10% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 10
+  }
+ },
+ {
+  "case_id": "TN5000:003097",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:003097",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/003097.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 20% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 20
+  }
+ },
+ {
+  "case_id": "TN5000:002480",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:002480",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/002480.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 14% of the image width. Taller than wide.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "taller than wide",
+   "size_pct": 14
+  }
+ },
+ {
+  "case_id": "TN5000:000266",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:000266",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/000266.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 35% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 35
+  }
+ },
+ {
+  "case_id": "TN5000:003009",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:003009",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/003009.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the upper central part of the image, measuring about 19% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 19
+  }
+ },
+ {
+  "case_id": "TN5000:002131",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:002131",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/002131.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 10% of the image width. Taller than wide.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "taller than wide",
+   "size_pct": 10
+  }
+ },
+ {
+  "case_id": "TN5000:000581",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:000581",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/000581.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the upper left part of the image, measuring about 7% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-left",
+   "orient": "wider than tall",
+   "size_pct": 7
+  }
+ },
+ {
+  "case_id": "TN5000:004948",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:004948",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/004948.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 35% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 35
+  }
+ },
+ {
+  "case_id": "TN5000:004162",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:004162",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/004162.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 9% of the image width. Taller than wide.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "taller than wide",
+   "size_pct": 9
+  }
+ },
+ {
+  "case_id": "TN5000:002899",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:002899",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/002899.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle right part of the image, measuring about 30% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-right",
+   "orient": "wider than tall",
+   "size_pct": 30
+  }
+ },
+ {
+  "case_id": "TN5000:004017",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:004017",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/004017.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 42% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 42
+  }
+ },
+ {
+  "case_id": "TN5000:000516",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:000516",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/000516.jpg",
+  "reused": true,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 8% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 8
+  }
+ },
+ {
+  "case_id": "TN5000:004800",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:004800",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/004800.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 29% of the image width. Taller than wide.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "taller than wide",
+   "size_pct": 29
+  }
+ },
+ {
+  "case_id": "TN5000:001701",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:001701",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/001701.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the upper central part of the image, measuring about 11% of the image width. Taller than wide.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "taller than wide",
+   "size_pct": 11
+  }
+ },
+ {
+  "case_id": "TN5000:001056",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:001056",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/001056.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 61% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 61
+  }
+ },
+ {
+  "case_id": "TN5000:002630",
+  "dataset": "TN5000",
+  "organ": "thyroid",
+  "group_id": "TN5000:002630",
+  "image": "/Users/faviananoronha/Downloads/TN5000_forReview/JPEGImages/002630.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 55% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 55
+  }
+ },
+ {
+  "case_id": "DDTI:108_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:108",
+  "image": "/Users/faviananoronha/Downloads/archive-9/108_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the upper central part of the image, measuring about 20% of the image width. Predominantly cystic composition, isoechoic echotexture, well defined margins, wider than tall, echogenic foci (microcalcifications). Assessment: TI-RADS 4a.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 20,
+   "comp": "predominantly cystic",
+   "echo": "isoechoic",
+   "margin": "well defined",
+   "foci": "microcalcifications",
+   "tirads": "4a"
+  }
+ },
+ {
+  "case_id": "DDTI:88_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:88",
+  "image": "/Users/faviananoronha/Downloads/archive-9/88_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 40% of the image width. Predominantly cystic composition, isoechoic echotexture, well defined margins, wider than tall, echogenic foci (microcalcifications). Assessment: TI-RADS 4a.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 40,
+   "comp": "predominantly cystic",
+   "echo": "isoechoic",
+   "margin": "well defined",
+   "foci": "microcalcifications",
+   "tirads": "4a"
+  }
+ },
+ {
+  "case_id": "DDTI:199_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:199",
+  "image": "/Users/faviananoronha/Downloads/archive-9/199_1.jpg",
+  "reused": false,
+  "reference": "Two nodules is seen in the middle central part of the image, measuring about 18% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 2,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 18
+  }
+ },
+ {
+  "case_id": "DDTI:243_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:243",
+  "image": "/Users/faviananoronha/Downloads/archive-9/243_1.jpg",
+  "reused": false,
+  "reference": "Two nodules is seen in the middle left part of the image, measuring about 27% of the image width. Solid composition, hypoechoic echotexture, microlobulated margins, wider than tall, no echogenic foci. Assessment: TI-RADS 4c.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 2,
+   "pos": "middle-left",
+   "orient": "wider than tall",
+   "size_pct": 27,
+   "comp": "solid",
+   "echo": "hypoechoic",
+   "margin": "microlobulated",
+   "foci": "none",
+   "tirads": "4c"
+  }
+ },
+ {
+  "case_id": "DDTI:26_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:26",
+  "image": "/Users/faviananoronha/Downloads/archive-9/26_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 20% of the image width. Solid composition, hypoechoic echotexture, well defined margins, wider than tall, echogenic foci (microcalcifications). Assessment: TI-RADS 4a.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 20,
+   "comp": "solid",
+   "echo": "hypoechoic",
+   "margin": "well defined",
+   "foci": "microcalcifications",
+   "tirads": "4a"
+  }
+ },
+ {
+  "case_id": "DDTI:53_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:53",
+  "image": "/Users/faviananoronha/Downloads/archive-9/53_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 39% of the image width. Dense composition, hypoechoic echotexture, ill defined margins, wider than tall, echogenic foci (microcalcifications). Assessment: TI-RADS 4c.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 39,
+   "comp": "dense",
+   "echo": "hypoechoic",
+   "margin": "ill defined",
+   "foci": "microcalcifications",
+   "tirads": "4c"
+  }
+ },
+ {
+  "case_id": "DDTI:34_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:34",
+  "image": "/Users/faviananoronha/Downloads/archive-9/34_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 19% of the image width. Solid composition, hypoechoic echotexture, spiculated margins, wider than tall, echogenic foci (microcalcifications). Assessment: TI-RADS 4c.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 19,
+   "comp": "solid",
+   "echo": "hypoechoic",
+   "margin": "spiculated",
+   "foci": "microcalcifications",
+   "tirads": "4c"
+  }
+ },
+ {
+  "case_id": "DDTI:293_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:293",
+  "image": "/Users/faviananoronha/Downloads/archive-9/293_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 26% of the image width. Well defined smooth margins, wider than tall, no echogenic foci. Assessment: TI-RADS 4a.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 26,
+   "margin": "well defined smooth",
+   "foci": "none",
+   "tirads": "4a"
+  }
+ },
+ {
+  "case_id": "DDTI:160_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:160",
+  "image": "/Users/faviananoronha/Downloads/archive-9/160_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the upper central part of the image, measuring about 39% of the image width. Solid composition, hyperechoic echotexture, well defined margins, wider than tall, no echogenic foci. Assessment: TI-RADS 2.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "upper-central",
+   "orient": "wider than tall",
+   "size_pct": 39,
+   "comp": "solid",
+   "echo": "hyperechoic",
+   "margin": "well defined",
+   "foci": "none",
+   "tirads": "2"
+  }
+ },
+ {
+  "case_id": "DDTI:320_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:320",
+  "image": "/Users/faviananoronha/Downloads/archive-9/320_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 14% of the image width. Well defined smooth margins, wider than tall, no echogenic foci. Assessment: TI-RADS 4b.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 14,
+   "margin": "well defined smooth",
+   "foci": "none",
+   "tirads": "4b"
+  }
+ },
+ {
+  "case_id": "DDTI:110_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:110",
+  "image": "/Users/faviananoronha/Downloads/archive-9/110_1.jpg",
+  "reused": false,
+  "reference": "Two nodules is seen in the upper left part of the image, measuring about 20% of the image width. Predominantly solid composition, hyperechoic echotexture, well defined margins, wider than tall, echogenic foci (microcalcifications). Assessment: TI-RADS 4a.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 2,
+   "pos": "upper-left",
+   "orient": "wider than tall",
+   "size_pct": 20,
+   "comp": "predominantly solid",
+   "echo": "hyperechoic",
+   "margin": "well defined",
+   "foci": "microcalcifications",
+   "tirads": "4a"
+  }
+ },
+ {
+  "case_id": "DDTI:59_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:59",
+  "image": "/Users/faviananoronha/Downloads/archive-9/59_1.jpg",
+  "reused": false,
+  "reference": "Two nodules is seen in the upper left part of the image, measuring about 31% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 2,
+   "pos": "upper-left",
+   "orient": "wider than tall",
+   "size_pct": 31
+  }
+ },
+ {
+  "case_id": "DDTI:308_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:308",
+  "image": "/Users/faviananoronha/Downloads/archive-9/308_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 29% of the image width. Well defined smooth margins, wider than tall, echogenic foci (microcalcifications). Assessment: TI-RADS 4a.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 29,
+   "margin": "well defined smooth",
+   "foci": "microcalcifications",
+   "tirads": "4a"
+  }
+ },
+ {
+  "case_id": "DDTI:107_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:107",
+  "image": "/Users/faviananoronha/Downloads/archive-9/107_1.jpg",
+  "reused": false,
+  "reference": "Two nodules is seen in the middle left part of the image, measuring about 14% of the image width. Spongiform composition, isoechoic echotexture, well defined margins, wider than tall, echogenic foci (microcalcifications). Assessment: TI-RADS 4a.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 2,
+   "pos": "middle-left",
+   "orient": "wider than tall",
+   "size_pct": 14,
+   "comp": "spongiform",
+   "echo": "isoechoic",
+   "margin": "well defined",
+   "foci": "microcalcifications",
+   "tirads": "4a"
+  }
+ },
+ {
+  "case_id": "DDTI:381_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:381",
+  "image": "/Users/faviananoronha/Downloads/archive-9/381_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 17% of the image width. Ill defined margins, wider than tall, echogenic foci (microcalcifications). Assessment: TI-RADS 4c.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 17,
+   "margin": "ill defined",
+   "foci": "microcalcifications",
+   "tirads": "4c"
+  }
+ },
+ {
+  "case_id": "DDTI:373_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:373",
+  "image": "/Users/faviananoronha/Downloads/archive-9/373_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 23% of the image width. Well defined smooth margins, wider than tall, no echogenic foci. Assessment: TI-RADS 3.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 23,
+   "margin": "well defined smooth",
+   "foci": "none",
+   "tirads": "3"
+  }
+ },
+ {
+  "case_id": "DDTI:338_2",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:338",
+  "image": "/Users/faviananoronha/Downloads/archive-9/338_2.jpg",
+  "reused": false,
+  "reference": "Two nodules is seen in the middle central part of the image, measuring about 21% of the image width. Ill defined margins, wider than tall, echogenic foci (microcalcifications). Assessment: TI-RADS 4c.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 2,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 21,
+   "margin": "ill defined",
+   "foci": "microcalcifications",
+   "tirads": "4c"
+  }
+ },
+ {
+  "case_id": "DDTI:176_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:176",
+  "image": "/Users/faviananoronha/Downloads/archive-9/176_1.jpg",
+  "reused": false,
+  "reference": "No focal nodule is seen.",
+  "ref_facts": {
+   "lesion": "absent"
+  }
+ },
+ {
+  "case_id": "DDTI:146_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:146",
+  "image": "/Users/faviananoronha/Downloads/archive-9/146_1.jpg",
+  "reused": false,
+  "reference": "Two nodules is seen in the middle right part of the image, measuring about 41% of the image width. Wider than tall.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 2,
+   "pos": "middle-right",
+   "orient": "wider than tall",
+   "size_pct": 41
+  }
+ },
+ {
+  "case_id": "DDTI:334_1",
+  "dataset": "DDTI",
+  "organ": "thyroid",
+  "group_id": "DDTI:334",
+  "image": "/Users/faviananoronha/Downloads/archive-9/334_1.jpg",
+  "reused": false,
+  "reference": "A single nodule is seen in the middle central part of the image, measuring about 21% of the image width. Well defined smooth margins, wider than tall, no echogenic foci. Assessment: TI-RADS 3.",
+  "ref_facts": {
+   "lesion": "present",
+   "count": 1,
+   "pos": "middle-central",
+   "orient": "wider than tall",
+   "size_pct": 21,
+   "margin": "well defined smooth",
+   "foci": "none",
+   "tirads": "3"
+  }
+ },
+ {
+  "case_id": "HC18:495_3HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:495_3HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/495_3HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 185.7 mm.",
+  "ref_facts": {
+   "hc_mm": 185.71
+  }
+ },
+ {
+  "case_id": "HC18:323_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:323_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/323_HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 175.1 mm.",
+  "ref_facts": {
+   "hc_mm": 175.08
+  }
+ },
+ {
+  "case_id": "HC18:031_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:031_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/031_HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 67.1 mm.",
+  "ref_facts": {
+   "hc_mm": 67.1
+  }
+ },
+ {
+  "case_id": "HC18:575_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:575_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/575_HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 171.8 mm.",
+  "ref_facts": {
+   "hc_mm": 171.79
+  }
+ },
+ {
+  "case_id": "HC18:796_2HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:796_2HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/796_2HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 315.8 mm.",
+  "ref_facts": {
+   "hc_mm": 315.8
+  }
+ },
+ {
+  "case_id": "HC18:321_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:321_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/321_HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 172.9 mm.",
+  "ref_facts": {
+   "hc_mm": 172.9
+  }
+ },
+ {
+  "case_id": "HC18:800_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:800_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/800_HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 321.8 mm.",
+  "ref_facts": {
+   "hc_mm": 321.83
+  }
+ },
+ {
+  "case_id": "HC18:238_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:238_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/238_HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 160.4 mm.",
+  "ref_facts": {
+   "hc_mm": 160.4
+  }
+ },
+ {
+  "case_id": "HC18:767_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:767_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/767_HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 303.2 mm.",
+  "ref_facts": {
+   "hc_mm": 303.18
+  }
+ },
+ {
+  "case_id": "HC18:699_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:699_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/699_HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 259.3 mm.",
+  "ref_facts": {
+   "hc_mm": 259.3
+  }
+ },
+ {
+  "case_id": "HC18:652_2HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:652_2HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/652_2HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 222.3 mm.",
+  "ref_facts": {
+   "hc_mm": 222.28
+  }
+ },
+ {
+  "case_id": "HC18:775_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:775_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/775_HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 311.4 mm.",
+  "ref_facts": {
+   "hc_mm": 311.4
+  }
+ },
+ {
+  "case_id": "HC18:705_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:705_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/705_HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 270.5 mm.",
+  "ref_facts": {
+   "hc_mm": 270.5
+  }
+ },
+ {
+  "case_id": "HC18:718_2HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:718_2HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/718_2HC.png",
+  "reused": true,
+  "reference": "Fetal head. Head circumference 260.9 mm.",
+  "ref_facts": {
+   "hc_mm": 260.9
+  }
+ },
+ {
+  "case_id": "HC18:054_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:054_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/054_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 73.0 mm.",
+  "ref_facts": {
+   "hc_mm": 73.03
+  }
+ },
+ {
+  "case_id": "HC18:387_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:387_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/387_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 174.8 mm.",
+  "ref_facts": {
+   "hc_mm": 174.76
+  }
+ },
+ {
+  "case_id": "HC18:079_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:079_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/079_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 82.3 mm.",
+  "ref_facts": {
+   "hc_mm": 82.28
+  }
+ },
+ {
+  "case_id": "HC18:751_2HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:751_2HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/751_2HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 284.0 mm.",
+  "ref_facts": {
+   "hc_mm": 284.0
+  }
+ },
+ {
+  "case_id": "HC18:708_3HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:708_3HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/708_3HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 264.6 mm.",
+  "ref_facts": {
+   "hc_mm": 264.55
+  }
+ },
+ {
+  "case_id": "HC18:618_2HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:618_2HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/618_2HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 202.7 mm.",
+  "ref_facts": {
+   "hc_mm": 202.7
+  }
+ },
+ {
+  "case_id": "HC18:356_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:356_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/356_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 181.1 mm.",
+  "ref_facts": {
+   "hc_mm": 181.1
+  }
+ },
+ {
+  "case_id": "HC18:681_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:681_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/681_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 231.3 mm.",
+  "ref_facts": {
+   "hc_mm": 231.27
+  }
+ },
+ {
+  "case_id": "HC18:551_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:551_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/551_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 182.0 mm.",
+  "ref_facts": {
+   "hc_mm": 182.0
+  }
+ },
+ {
+  "case_id": "HC18:069_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:069_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/069_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 72.0 mm.",
+  "ref_facts": {
+   "hc_mm": 72.0
+  }
+ },
+ {
+  "case_id": "HC18:215_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:215_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/215_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 154.6 mm.",
+  "ref_facts": {
+   "hc_mm": 154.6
+  }
+ },
+ {
+  "case_id": "HC18:295_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:295_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/295_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 171.3 mm.",
+  "ref_facts": {
+   "hc_mm": 171.26
+  }
+ },
+ {
+  "case_id": "HC18:450_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:450_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/450_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 168.7 mm.",
+  "ref_facts": {
+   "hc_mm": 168.7
+  }
+ },
+ {
+  "case_id": "HC18:588_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:588_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/588_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 175.8 mm.",
+  "ref_facts": {
+   "hc_mm": 175.84
+  }
+ },
+ {
+  "case_id": "HC18:716_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:716_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/716_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 298.8 mm.",
+  "ref_facts": {
+   "hc_mm": 298.8
+  }
+ },
+ {
+  "case_id": "HC18:415_HC",
+  "dataset": "HC18",
+  "organ": "fetal",
+  "group_id": "HC18:415_HC",
+  "image": "/Users/faviananoronha/Downloads/archive-7/training_set/415_HC.png",
+  "reused": false,
+  "reference": "Fetal head. Head circumference 176.6 mm.",
+  "ref_facts": {
+   "hc_mm": 176.57
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01672_Plane3_1_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01672",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01672_Plane3_1_of_2.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 200 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 200.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01543_Plane3_1_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01543",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient01543_Plane3_1_of_2.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 215 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 215.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01160_Plane3_2_of_4",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01160",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01160_Plane3_2_of_4.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 174 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 174.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01296_Plane3_1_of_5",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01296",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01296_Plane3_1_of_5.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 191 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 191.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient00726_Plane3_1_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient00726",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient00726_Plane3_1_of_3.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 196 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 196.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01651_Plane3_2_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01651",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01651_Plane3_2_of_2.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 168 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 168.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01469_Plane3_1_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01469",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient01469_Plane3_1_of_2.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 242 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 242.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01411_Plane3_1_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01411",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient01411_Plane3_1_of_3.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 311 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 311.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient00766_Plane3_1_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient00766",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient00766_Plane3_1_of_3.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 171 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 171.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01682_Plane3_1_of_6",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01682",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient01682_Plane3_1_of_6.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 308 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 308.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient00764_Plane3_4_of_6",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient00764",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient00764_Plane3_4_of_6.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 178 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 178.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01136_Plane3_2_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01136",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01136_Plane3_2_of_2.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 269 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 269.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01414_Plane3_1_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01414",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient01414_Plane3_1_of_2.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 340 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 340.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01508_Plane3_1_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01508",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01508_Plane3_1_of_2.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 277 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 277.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01207_Plane3_1_of_4",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01207",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01207_Plane3_1_of_4.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 265 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 265.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01611_Plane3_2_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01611",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01611_Plane3_2_of_3.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 170 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 170.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01403_Plane3_1_of_1",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01403",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient01403_Plane3_1_of_1.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 319 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 319.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient00808_Plane3_1_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient00808",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient00808_Plane3_1_of_2.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 326 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 326.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01318_Plane3_2_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01318",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01318_Plane3_2_of_3.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 221 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 221.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01095_Plane3_1_of_4",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01095",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient01095_Plane3_1_of_4.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 316 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 316.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient00682_Plane3_1_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient00682",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient00682_Plane3_1_of_3.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 326 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 326.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01668_Plane3_2_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01668",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01668_Plane3_2_of_3.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 188 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 188.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01239_Plane3_4_of_6",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01239",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01239_Plane3_4_of_6.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 198 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 198.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01701_Plane3_2_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01701",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01701_Plane3_2_of_3.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 301 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 301.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient00892_Plane3_3_of_3",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient00892",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient00892_Plane3_3_of_3.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 334 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 334.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient00744_Plane3_1_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient00744",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient00744_Plane3_1_of_2.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 304 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 304.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient00676_Plane3_1_of_1",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient00676",
+  "image": "/Users/faviananoronha/Downloads/Trans-thalamic/Trans-thalamic/Patient00676_Plane3_1_of_1.png",
+  "reused": false,
+  "reference": "Fetal head, trans thalamic plane. Head circumference approximately 334 mm.",
+  "ref_facts": {
+   "plane": "trans thalamic",
+   "hc_mm": 334.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient01066_Plane3_2_of_2",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient01066",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient01066_Plane3_2_of_2.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 195 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 195.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient00932_Plane3_1_of_1",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient00932",
+  "image": "/Users/faviananoronha/Downloads/Trans-ventricular/Trans-ventricular/Patient00932_Plane3_1_of_1.png",
+  "reused": false,
+  "reference": "Fetal head, trans ventricular plane. Head circumference approximately 171 mm.",
+  "ref_facts": {
+   "plane": "trans ventricular",
+   "hc_mm": 171.0
+  }
+ },
+ {
+  "case_id": "FetalHead:Patient00760_Plane3_3_of_4",
+  "dataset": "FetalHead",
+  "organ": "fetal",
+  "group_id": "FetalHead:Patient00760",
+  "image": "/Users/faviananoronha/Downloads/Trans-cerebellum/Trans-cerebellum/Patient00760_Plane3_3_of_4.png",
+  "reused": false,
+  "reference": "Fetal head, trans cerebellum plane. Head circumference approximately 355 mm.",
+  "ref_facts": {
+   "plane": "trans cerebellum",
+   "hc_mm": 355.0
+  }
+ }
+]
