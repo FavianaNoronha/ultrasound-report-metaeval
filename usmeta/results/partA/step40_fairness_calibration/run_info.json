@@ -1,0 +1,17 @@
+{
+ "step": "40",
+ "seed": 0,
+ "test_scans": 498,
+ "test_scans_planned": 574,
+ "val_scans": 1246,
+ "seconds": 83,
+ "git_head_at_report": "ac2ba26",
+ "prereg_commit": "",
+ "python": "3.9.6",
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "date": "2026-11-18",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "min_groups": 30,
+ "calibrator": "Platt scaling per organ, L2 C=1.0, fitted on val only",
+ "models": "saved Step 29 U-Nets, no retraining"
+}

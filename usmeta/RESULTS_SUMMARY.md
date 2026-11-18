@@ -4,6 +4,9 @@ Question: **do the scores used to grade AI-written ultrasound reports catch real
 
 All final numbers are from the locked test split (tuning was on dev/val only). Every number below comes from a saved results file; the full table is `results_layers_all_final.md`, the step folders are listed in `results/partA/INDEX.md`, and the caveats are in `docs/LIMITATIONS.md`. Please read the limits section before quoting anything.
 
+## Addendum 2026-11-18: Step 40 (per-dataset fairness on all test scans, calibrated confidence)
+On 498 usable test scans (574 planned; 76 had no mask) no dataset shows a real gap by the pre-registered rule; BrEaST (+0.06) and UDIAT (+0.10) score above the rest; DDTI (-0.14, 28 groups) and TN5000 (-0.15, 27 groups, no training images) are lower but under 30 groups, so indicative only. Platt scaling of the U-Net confidence lowers ECE from 0.030 to 0.018 pooled (interval of the fall -0.013 to +0.025, not distinguishable from 0; breast falls 0.039 to 0.030, thyroid rises 0.031 to 0.038). Step 38's 228 scans are a subset; its numbers are superseded. Details: `results/partA/step40_fairness_calibration/results.md`.
+
 ## Addendum 2026-11-18: Step 41 (thyroid cross-dataset image check)
 TN3K <-> DDTI, same U-Net, test on the same 60 scans: position AUROC 0.69 (0.51-0.85) for the DDTI-trained model on TN3K (in-dataset 0.93) and 0.64 (0.48-0.80) for the TN3K-trained model on DDTI (in-dataset 0.77); both folds are under 30 groups (17 and 15), so by the pre-registered rule no fold is decided; the indicative outcome is that neither would transfer. The DDTI fold has only 101 training images, so size and domain cannot be separated. Details: `results/partA/step41_thyroid_cross/results.md`.
 
