@@ -1,0 +1,390 @@
+{
+ "seed": 43,
+ "pool_per_organ": {
+  "breast": 41,
+  "thyroid": 35,
+  "fetal": 42
+ },
+ "picked": {
+  "breast": 10,
+  "thyroid": 10,
+  "fetal": 10
+ },
+ "key": [
+  {
+   "id": "D01",
+   "case_id": "BUS-UCLM:WAQU_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "present",
+    "count": 1,
+    "side": "right",
+    "pos": "upper-outer-quadrant",
+    "size_mm": 30,
+    "shape": "irregular",
+    "margin": "not circumscribed (indistinct)",
+    "echo": "hypoechoic",
+    "birads": "4"
+   }
+  },
+  {
+   "id": "D02",
+   "case_id": "BrEaST:239",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "present",
+    "count": 1,
+    "side": "right",
+    "pos": "upper-outer-quadrant",
+    "size_mm": 30,
+    "shape": "round to oval",
+    "margin": "well-defined",
+    "echo": "hypoechoic",
+    "birads": "4",
+    "path": "benign"
+   }
+  },
+  {
+   "id": "D03",
+   "case_id": "TN5000:002899",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "absent"
+   }
+  },
+  {
+   "id": "D04",
+   "case_id": "TN5000:003495",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "parse_ok": true,
+   "flat": {
+    "count": 3,
+    "size_mm": 20,
+    "comp": "hypoechoic",
+    "echo": "hypoechoic",
+    "tirads": "4",
+    "lesion": "present"
+   }
+  },
+  {
+   "id": "D05",
+   "case_id": "FetalHead:Patient01239_Plane3_4_of_6",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "parse_ok": true,
+   "flat": {}
+  },
+  {
+   "id": "D06",
+   "case_id": "FetalHead:Patient01672_Plane3_1_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "parse_ok": true,
+   "flat": {}
+  },
+  {
+   "id": "D07",
+   "case_id": "DDTI:338_2",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "absent"
+   }
+  },
+  {
+   "id": "D08",
+   "case_id": "UDIAT:000134",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "upper-outer-quadrant",
+    "size_mm": 25,
+    "shape": "irregular",
+    "margin": "circumscribed",
+    "echo": "hypoechoic",
+    "birads": "4"
+   }
+  },
+  {
+   "id": "D09",
+   "case_id": "TN5000:004800",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "absent"
+   }
+  },
+  {
+   "id": "D10",
+   "case_id": "BUS-BRA:bus_0098-r",
+   "organ": "breast",
+   "dataset": "BUS-BRA",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "present",
+    "count": 1,
+    "side": "right",
+    "pos": "upper-outer-quadrant",
+    "size_mm": 30,
+    "shape": "round to oval",
+    "margin": "circumscribed",
+    "echo": "hypoechoic",
+    "halo": "yes",
+    "birads": "4",
+    "path": "benign"
+   }
+  },
+  {
+   "id": "D11",
+   "case_id": "DDTI:88_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "parse_ok": true,
+   "flat": {
+    "count": 1,
+    "comp": "hypoechoic",
+    "tirads": "4a",
+    "lesion": "present"
+   }
+  },
+  {
+   "id": "D12",
+   "case_id": "FetalHead:Patient01508_Plane3_1_of_2",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "parse_ok": true,
+   "flat": {}
+  },
+  {
+   "id": "D13",
+   "case_id": "FetalHead:Patient00932_Plane3_1_of_1",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "parse_ok": true,
+   "flat": {}
+  },
+  {
+   "id": "D14",
+   "case_id": "BUS-UCLM:VITR_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "absent",
+    "birads": "4"
+   }
+  },
+  {
+   "id": "D15",
+   "case_id": "BUSI:malignant/malignant (194)",
+   "organ": "breast",
+   "dataset": "BUSI",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "present",
+    "count": 1,
+    "side": "left",
+    "pos": "upper-outer-quadrant",
+    "size_mm": 30,
+    "shape": "irregular",
+    "margin": "not circumscribed (indistinct)",
+    "echo": "heterogeneous",
+    "birads": "4"
+   }
+  },
+  {
+   "id": "D16",
+   "case_id": "DDTI:381_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "parse_ok": true,
+   "flat": {
+    "count": 1,
+    "comp": "hypoechoic",
+    "echo": "hypoechoic",
+    "lesion": "present"
+   }
+  },
+  {
+   "id": "D17",
+   "case_id": "DDTI:334_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "absent"
+   }
+  },
+  {
+   "id": "D18",
+   "case_id": "TN5000:003009",
+   "organ": "thyroid",
+   "dataset": "TN5000",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "absent"
+   }
+  },
+  {
+   "id": "D19",
+   "case_id": "BUS-UCLM:TOCI_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "present",
+    "count": 1,
+    "side": "right",
+    "pos": "upper-outer-quadrant",
+    "size_mm": 35,
+    "shape": "round to oval",
+    "margin": "circumscribed",
+    "echo": "hypoechoic",
+    "halo": "yes",
+    "birads": "2",
+    "path": "benign"
+   }
+  },
+  {
+   "id": "D20",
+   "case_id": "FetalHead:Patient00892_Plane3_3_of_3",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "parse_ok": true,
+   "flat": {}
+  },
+  {
+   "id": "D21",
+   "case_id": "DDTI:308_1",
+   "organ": "thyroid",
+   "dataset": "DDTI",
+   "parse_ok": true,
+   "flat": {
+    "count": 1,
+    "echo": "hypoechoic",
+    "tirads": "4a",
+    "lesion": "present"
+   }
+  },
+  {
+   "id": "D22",
+   "case_id": "HC18:356_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "parse_ok": true,
+   "flat": {}
+  },
+  {
+   "id": "D23",
+   "case_id": "HC18:215_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "parse_ok": true,
+   "flat": {}
+  },
+  {
+   "id": "D24",
+   "case_id": "TN3K:test/0173.jpg",
+   "organ": "thyroid",
+   "dataset": "TN3K",
+   "parse_ok": true,
+   "flat": {
+    "count": 1,
+    "echo": "hypoechoic",
+    "lesion": "present"
+   }
+  },
+  {
+   "id": "D25",
+   "case_id": "FetalHead:Patient01207_Plane3_1_of_4",
+   "organ": "fetal",
+   "dataset": "FetalHead",
+   "parse_ok": true,
+   "flat": {}
+  },
+  {
+   "id": "D26",
+   "case_id": "BrEaST:95",
+   "organ": "breast",
+   "dataset": "BrEaST",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "present",
+    "count": 1,
+    "side": "right",
+    "pos": "upper-outer-quadrant",
+    "size_mm": 35,
+    "shape": "round to oval",
+    "margin": "smooth",
+    "echo": "hypoechoic",
+    "birads": "2",
+    "path": "benign"
+   }
+  },
+  {
+   "id": "D27",
+   "case_id": "HC18:775_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "parse_ok": true,
+   "flat": {}
+  },
+  {
+   "id": "D28",
+   "case_id": "BUS-UCLM:CRCI_000",
+   "organ": "breast",
+   "dataset": "BUS-UCLM",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "present",
+    "count": 1,
+    "side": "left",
+    "pos": "upper-outer-quadrant",
+    "size_mm": 25,
+    "shape": "irregular",
+    "margin": "circumscribed",
+    "echo": "hypoechoic",
+    "birads": "4"
+   }
+  },
+  {
+   "id": "D29",
+   "case_id": "UDIAT:000098",
+   "organ": "breast",
+   "dataset": "UDIAT",
+   "parse_ok": true,
+   "flat": {
+    "lesion": "present",
+    "count": 1,
+    "pos": "upper-outer-quadrant",
+    "size_mm": 15,
+    "shape": "round to oval",
+    "margin": "not circumscribed (irregular (some areas of indistinct borders)",
+    "echo": "heterogeneous",
+    "halo": "no",
+    "birads": "4"
+   }
+  },
+  {
+   "id": "D30",
+   "case_id": "HC18:575_HC",
+   "organ": "fetal",
+   "dataset": "HC18",
+   "parse_ok": true,
+   "flat": {}
+  }
+ ],
+ "v4_sha256": "868a89255a628fa799ab4ec74a1018d1e6e118405d3e2fbdae904d278462d1ce"
+}

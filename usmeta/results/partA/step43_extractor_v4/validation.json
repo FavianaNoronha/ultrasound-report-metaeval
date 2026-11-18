@@ -1,0 +1,149 @@
+{
+ "dev": {
+  "per_organ": {
+   "breast": {
+    "field_agreement": 0.99875,
+    "fields": 1600,
+    "all_fields_correct": 0.98,
+    "reports": 100
+   },
+   "thyroid": {
+    "field_agreement": 0.999,
+    "fields": 1000,
+    "all_fields_correct": 0.99,
+    "reports": 100
+   },
+   "fetal": {
+    "field_agreement": 1.0,
+    "fields": 200,
+    "all_fields_correct": 1.0,
+    "reports": 100
+   }
+  },
+  "pooled_field_agreement": 0.9989285714285714,
+  "parse_failures": 0,
+  "n": 300,
+  "wrong_examples": [
+   {
+    "organ": "breast",
+    "text": "A mass is seen.",
+    "diffs": {
+     "count": [
+      1,
+      null
+     ]
+    }
+   },
+   {
+    "organ": "breast",
+    "text": "On breast ultrasound a mass is identified in the upper left part of the image. It is oval and wider than tall, with circumscribed margins and a hypoechoic echo pattern. Its longest diameter is approxi",
+    "diffs": {
+     "side": [
+      null,
+      "left"
+     ]
+    }
+   },
+   {
+    "organ": "thyroid",
+    "text": "Two nodules is seen in the upper left part of the image, measuring about 33% of the image width. Solid composition, isoechoic echotexture, well defined margins, wider than tall, no echogenic foci. Ass",
+    "diffs": {
+     "echo": [
+      "isoechoic",
+      "echoechoic"
+     ]
+    }
+   }
+  ]
+ },
+ "val": {
+  "per_organ": {
+   "breast": {
+    "field_agreement": 0.9975,
+    "fields": 1600,
+    "all_fields_correct": 0.96,
+    "reports": 100
+   },
+   "thyroid": {
+    "field_agreement": 1.0,
+    "fields": 1000,
+    "all_fields_correct": 1.0,
+    "reports": 100
+   },
+   "fetal": {
+    "field_agreement": 1.0,
+    "fields": 200,
+    "all_fields_correct": 1.0,
+    "reports": 100
+   }
+  },
+  "pooled_field_agreement": 0.9985714285714286,
+  "parse_failures": 0,
+  "n": 300,
+  "wrong_examples": [
+   {
+    "organ": "breast",
+    "text": "A mass (wider than tall) is seen in the middle right part of the image, measuring about 10% of the image width. Pathology: malignant.",
+    "diffs": {
+     "side": [
+      null,
+      "right"
+     ]
+    }
+   },
+   {
+    "organ": "breast",
+    "text": "A mass is seen.",
+    "diffs": {
+     "count": [
+      1,
+      null
+     ]
+    }
+   },
+   {
+    "organ": "breast",
+    "text": "A mass (wider than tall) is demonstrated in the middle right part of the image, measuring about 24% of the image width. Pathology: benign.",
+    "diffs": {
+     "side": [
+      null,
+      "right"
+     ]
+    }
+   },
+   {
+    "organ": "breast",
+    "text": "On breast ultrasound a mass is identified in the upper left part of the image. It is wider than tall. Its longest diameter is about 54% of the image width. Pathology: benign.",
+    "diffs": {
+     "side": [
+      null,
+      "left"
+     ]
+    }
+   }
+  ]
+ },
+ "v3_for_reference": {
+  "dev": {
+   "pooled_field_agreement": 0.9975,
+   "per_organ": {
+    "breast": 0.998125,
+    "thyroid": 0.996,
+    "fetal": 1.0
+   }
+  },
+  "val": {
+   "pooled_field_agreement": 0.9985714285714286,
+   "per_organ": {
+    "breast": 0.998125,
+    "thyroid": 0.999,
+    "fetal": 1.0
+   }
+  }
+ },
+ "criterion": {
+  "threshold": 0.98,
+  "passed": true,
+  "v4_sha256": "868a89255a628fa799ab4ec74a1018d1e6e118405d3e2fbdae904d278462d1ce"
+ }
+}
