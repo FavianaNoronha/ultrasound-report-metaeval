@@ -39,6 +39,7 @@ def cmd_tune(a):
     json.dump(dict(grid=res, chosen=chosen, n_harmless=len(H), met_target=bool(ok), flagged_by=dict(why), examples=ex, target_max_harmless_flagged=MAXH), open(P('tuning.json'), 'w'), indent=1); print(json.dumps(dict(chosen=chosen, n=len(H), met=bool(ok), why=dict(why)), indent=0))
 
 def cmd_test(a):
+    from . import splits; splits.load('test', script='usmeta.step45_partC')          # the one logged test read of this part
     cases, lod = load(); tune = json.load(open(P('tuning.json'))); tr, th = tune['chosen']['tol_rel'], tune['chosen']['tol_hc']; sc = lambda ref, cand, o: NC.score(ref, cand, o, tr, th)
     H = harmless_rows(cases, 'test'); hf = [float(sc(h['ref'], h['cand'], h['organ']) < 1.0) for h in H]; res = dict(tolerance=dict(rel=tr, hc_mm=th), harmless=dict(reports=len(H), groups=len({h['group'] for h in H}), flagged=gboot(hf, [h['group'] for h in H])))
     for o in ('breast', 'thyroid', 'fetal'):
@@ -52,13 +53,13 @@ def cmd_test(a):
         s = [t for t in tw if t['field'] == fld]; res['twin_catch']['by_field'][fld] = dict(n=len(s), catch=float(np.mean([t['flag'] for t in s])), groups=len({t['group'] for t in s}))
     # limit of detection
     by_case = {cid: [h for h in H if h['case_id'] == cid] for cid in cases}; res['lod'] = {}
-    for (organ, grp), levels in ((('breast', 'size'), SIZE_LEVELS), (('thyroid', 'size'), SIZE_LEVELS), (('fetal', 'hc_mm'), HC_LEVELS)):
+    for (organ, grp), levels in ((('breast', 'size'), SIZE_LEVELS), (('thyroid', 'size'), SIZE_LEVELS), (('breast+thyroid', 'size'), SIZE_LEVELS), (('fetal', 'hc_mm'), HC_LEVELS)):
         per = {lv: [] for lv in levels}; grp_of = {lv: [] for lv in levels}
         for r in lod:
-            if r['organ'] != organ or (r['field'] == 'hc_mm') != (grp == 'hc_mm') or r['level'] not in levels: continue
+            if (r['organ'] != organ and not (organ == 'breast+thyroid' and r['organ'] in ('breast', 'thyroid'))) or (r['field'] == 'hc_mm') != (grp == 'hc_mm') or r['level'] not in levels: continue
             hs = by_case.get(r['case_id'], [])
             if not hs: continue
-            e = sc(cases[r['case_id']]['reference'], r['text'], organ); h = [sc(x['ref'], x['cand'], organ) for x in hs]; per[r['level']].append(auroc_case([e], h)); grp_of[r['level']].append(cases[r['case_id']]['group'])
+            oo = cases[r['case_id']]['organ']; e = sc(cases[r['case_id']]['reference'], r['text'], oo); h = [sc(x['ref'], x['cand'], oo) for x in hs]; per[r['level']].append(auroc_case([e], h)); grp_of[r['level']].append(cases[r['case_id']]['group'])
         point = {lv: (float(np.mean(per[lv])) if per[lv] else None) for lv in levels}; ng = {lv: len(set(grp_of[lv])) for lv in levels}; ci = {lv: (gboot(per[lv], grp_of[lv]) if per[lv] else None) for lv in levels}
         i = L35.lod_of(point, levels); rng = np.random.default_rng(0); allg = sorted({g for lv in levels for g in grp_of[lv]}); gi = {g: k for k, g in enumerate(allg)}; arrs = {lv: (np.array([gi[g] for g in grp_of[lv]]), np.array(per[lv])) for lv in levels if per[lv]}; boots = []
         for _ in range(1000):
@@ -67,8 +68,8 @@ def cmd_test(a):
             boots.append(L35.lod_of(pt, levels))
         enc = [(len(levels) if b is None else b) for b in boots]; lo, hi = int(np.percentile(enc, 2.5)), int(np.percentile(enc, 97.5)); lab = lambda k: ('>' + str(levels[-1])) if k >= len(levels) else str(levels[k])
         res['lod'][f'{organ}|{grp}'] = dict(levels=levels, auroc=point, auroc_ci=ci, cases=len(set(grp_of[levels[0]]) | set(g for lv in levels for g in grp_of[lv])), groups_per_level=ng, lod=(levels[i] if i is not None else None), lod_ci=[lab(lo), lab(hi)], too_small=[lv for lv in levels if ng[lv] < MIN_G])
-    flagged = res['harmless']['flagged'][0]; size_ok = all(res['lod'][k]['lod'] is not None and res['lod'][k]['lod'] <= 0.05 for k in ('breast|size', 'thyroid|size') if k in res['lod']); hc_ok = res['lod'].get('fetal|hc_mm', {}).get('lod') is not None and res['lod']['fetal|hc_mm']['lod'] <= 1
-    res['pass'] = dict(size_lod_le_5pct=bool(size_ok), hc_lod_le_1mm=bool(hc_ok), harmless_flagged_le_2pct=bool(flagged <= 0.02), passed=bool(size_ok and hc_ok and flagged <= 0.02))
+    flagged = res['harmless']['flagged'][0]; size_ok = all(res['lod'][k]['lod'] is not None and res['lod'][k]['lod'] <= 0.05 for k in ('breast|size', 'thyroid|size') if k in res['lod']); size_pooled_ok = res['lod']['breast+thyroid|size']['lod'] is not None and res['lod']['breast+thyroid|size']['lod'] <= 0.05 and not res['lod']['breast+thyroid|size']['too_small']; hc_ok = res['lod'].get('fetal|hc_mm', {}).get('lod') is not None and res['lod']['fetal|hc_mm']['lod'] <= 1
+    res['pass'] = dict(size_lod_le_5pct_per_organ_cells_under_30_groups=bool(size_ok), size_lod_le_5pct_pooled_breast_thyroid_ge_30_groups=bool(size_pooled_ok), hc_lod_le_1mm=bool(hc_ok and not res['lod']['fetal|hc_mm']['too_small']), harmless_flagged_le_2pct=bool(flagged <= 0.02), passed=bool(size_pooled_ok and hc_ok and not res['lod']['fetal|hc_mm']['too_small'] and flagged <= 0.02))
     json.dump(res, open(P('results.json'), 'w'), indent=1); print(json.dumps(res['pass'])); print(json.dumps({k: (v['lod'], v['lod_ci']) for k, v in res['lod'].items()})); print('harmless flagged', res['harmless']['flagged'])
 
 if __name__ == '__main__':

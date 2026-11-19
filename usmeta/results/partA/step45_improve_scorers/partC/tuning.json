@@ -1,0 +1,164 @@
+{
+ "grid": [
+  {
+   "tol_rel": 0.0,
+   "tol_hc": 0.0,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.0,
+   "tol_hc": 0.05,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.0,
+   "tol_hc": 0.1,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.0,
+   "tol_hc": 0.25,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.0,
+   "tol_hc": 0.5,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.005,
+   "tol_hc": 0.0,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.005,
+   "tol_hc": 0.05,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.005,
+   "tol_hc": 0.1,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.005,
+   "tol_hc": 0.25,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.005,
+   "tol_hc": 0.5,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.01,
+   "tol_hc": 0.0,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.01,
+   "tol_hc": 0.05,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.01,
+   "tol_hc": 0.1,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.01,
+   "tol_hc": 0.25,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.01,
+   "tol_hc": 0.5,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.02,
+   "tol_hc": 0.0,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.02,
+   "tol_hc": 0.05,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.02,
+   "tol_hc": 0.1,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.02,
+   "tol_hc": 0.25,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.02,
+   "tol_hc": 0.5,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.03,
+   "tol_hc": 0.0,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.03,
+   "tol_hc": 0.05,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.03,
+   "tol_hc": 0.1,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.03,
+   "tol_hc": 0.25,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.03,
+   "tol_hc": 0.5,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.05,
+   "tol_hc": 0.0,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.05,
+   "tol_hc": 0.05,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.05,
+   "tol_hc": 0.1,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.05,
+   "tol_hc": 0.25,
+   "harmless_flagged": 0.0
+  },
+  {
+   "tol_rel": 0.05,
+   "tol_hc": 0.5,
+   "harmless_flagged": 0.0
+  }
+ ],
+ "chosen": {
+  "tol_rel": 0.0,
+  "tol_hc": 0.0,
+  "harmless_flagged": 0.0
+ },
+ "n_harmless": 581,
+ "met_target": true,
+ "flagged_by": {},
+ "examples": [],
+ "target_max_harmless_flagged": 0.02
+}
