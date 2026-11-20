@@ -1,0 +1,107 @@
+{
+ "pairs": {
+  "devval": 401,
+  "test": 519
+ },
+ "tuning": {
+  "conflict": {
+   "judge_threshold": 0.30000000000000004,
+   "rule_flags_harmless": 0.0,
+   "hybrid_harmless": 0.0498220640569395,
+   "hybrid_catch": 0.9916666666666667
+  },
+  "conflict_omission": {
+   "judge_threshold": 0.30000000000000004,
+   "rule_flags_harmless": 0.0071174377224199285,
+   "hybrid_harmless": 0.05338078291814947,
+   "hybrid_catch": 1.0
+  },
+  "chosen_rule_mode": "conflict_omission",
+  "judge_alone_threshold": 0.30000000000000004,
+  "judge_alone_devval": {
+   "harmless": 0.0498220640569395,
+   "catch": 0.6833333333333333,
+   "n_harmless": 281,
+   "n_error": 120
+  }
+ },
+ "test": {
+  "hybrid": {
+   "catch": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "harmless_flagged": [
+    0.04065040650406504,
+    0.020667859272510438,
+    0.06459966466335684
+   ]
+  },
+  "judge_alone": {
+   "catch": [
+    0.7266666666666667,
+    0.6533194444444445,
+    0.8014487681970884
+   ],
+   "harmless_flagged": [
+    0.03523035230352303,
+    0.016172506738544475,
+    0.056818181818181816
+   ]
+  },
+  "rules_only": {
+   "catch": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "harmless_flagged": [
+    0.008130081300813009,
+    0.0,
+    0.01897147843761046
+   ]
+  },
+  "paired_catch_diff_hybrid_minus_judge": [
+   0.2733333333333333,
+   0.19855123180291154,
+   0.34668055555555555
+  ],
+  "n": {
+   "errors": 150,
+   "harmless": 369,
+   "groups": 164
+  },
+  "by_organ": {
+   "breast": {
+    "n_err": 47,
+    "hybrid_catch": 1.0,
+    "judge_catch": 0.851063829787234
+   },
+   "thyroid": {
+    "n_err": 36,
+    "hybrid_catch": 1.0,
+    "judge_catch": 0.6388888888888888
+   },
+   "fetal": {
+    "n_err": 67,
+    "hybrid_catch": 1.0,
+    "judge_catch": 0.6865671641791045
+   }
+  }
+ },
+ "pass": {
+  "catch_ge_80": true,
+  "harmless_le_5_6": true,
+  "beats_judge_ci_excludes_0": true,
+  "passed": true
+ },
+ "status": {
+  "pairs": 1030,
+  "generated_this_run": 920,
+  "stopped_by_cap": true,
+  "seconds": 7201,
+  "planned_pairs": 1030,
+  "judged_pairs": 920
+ }
+}
