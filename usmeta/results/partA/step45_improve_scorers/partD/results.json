@@ -1,0 +1,153 @@
+{
+ "pairs": {
+  "val": 139,
+  "test": 247,
+  "unparsed": 1,
+  "planned": 489
+ },
+ "variants": {
+  "c1": {
+   "threshold": 0.0,
+   "val": {
+    "n_harmless": 85,
+    "n_error": 49,
+    "catch": [
+     0.1836734693877551,
+     0.0851063829787234,
+     0.2857142857142857
+    ],
+    "catch_n": 49,
+    "harmless_flagged": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "harmless_flagged_n": 85,
+    "identical_flagged": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "identical_flagged_n": 5
+   },
+   "test": {
+    "catch": [
+     0.04878048780487805,
+     0.011764705882352941,
+     0.09759108702198131
+    ],
+    "catch_n": 82,
+    "harmless_flagged": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "harmless_flagged_n": 159,
+    "identical_flagged": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "identical_flagged_n": 6
+   }
+  },
+  "c2": {
+   "threshold": 0.19999999999999996,
+   "val": {
+    "n_harmless": 85,
+    "n_error": 49,
+    "catch": [
+     0.1836734693877551,
+     0.0851063829787234,
+     0.2857142857142857
+    ],
+    "catch_n": 49,
+    "harmless_flagged": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "harmless_flagged_n": 85,
+    "identical_flagged": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "identical_flagged_n": 5
+   },
+   "test": {
+    "catch": [
+     0.04878048780487805,
+     0.011764705882352941,
+     0.09759108702198131
+    ],
+    "catch_n": 82,
+    "harmless_flagged": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "harmless_flagged_n": 159,
+    "identical_flagged": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "identical_flagged_n": 6
+   }
+  }
+ },
+ "status": {
+  "pairs": 489,
+  "calls_this_run": 774,
+  "stopped_by_cap": true,
+  "seconds": 12317
+ },
+ "holistic_step44_same_pairs": {
+  "threshold": 0.4,
+  "test": {
+   "catch": [
+    0.5609756097560976,
+    0.46424107142857146,
+    0.6586356707317073
+   ],
+   "catch_n": 82,
+   "harmless_flagged": [
+    0.08176100628930817,
+    0.04293823881490349,
+    0.12659691227043243
+   ],
+   "harmless_flagged_n": 159,
+   "identical_flagged": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "identical_flagged_n": 6
+  }
+ },
+ "agreement": {
+  "all": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "errors": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "harmless": [
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "pass": {
+  "c1_catch_and_harmless": false,
+  "c2_catch_and_harmless": false,
+  "agreement_ge_90": true,
+  "passed": false,
+  "incomplete": true
+ }
+}

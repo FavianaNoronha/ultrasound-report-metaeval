@@ -1,0 +1,18 @@
+{
+ "step": "45D",
+ "git_head_at_report": "c16a2eb",
+ "prereg_commit": "ca9bf2d",
+ "python": "3.9.6",
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "date": "2026-11-20",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "status": "INCOMPLETE (3 h cap)",
+ "verdict": "DOES NOT PASS",
+ "model": "mlx-community/gemma-2-9b-it-4bit",
+ "variants": [
+  "c1",
+  "c2"
+ ],
+ "test_pairs": 247,
+ "val_pairs": 139
+}
