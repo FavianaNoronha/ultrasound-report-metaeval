@@ -1,18 +1,29 @@
 {
  "step": "45D",
- "git_head_at_report": "c16a2eb",
+ "git_head_at_report": "95ad453",
  "prereg_commit": "ca9bf2d",
  "python": "3.9.6",
  "platform": "macOS-27.2.1-arm64-arm-64bit",
  "date": "2026-11-20",
  "bootstrap": "group, 1000 resamples, seed 0",
- "status": "INCOMPLETE (3 h cap)",
+ "status": "complete after resuming initial 3 h cap; one unparsed response",
  "verdict": "DOES NOT PASS",
+ "resume": {
+  "initial_variant_calls": 774,
+  "initial_run_seconds": 12317,
+  "completion_variant_calls": 204,
+  "completion_run_seconds": 1631,
+  "retried_unparsed_response": true,
+  "retry_seconds": 26,
+  "exceeded_initial_cap": true
+ },
  "model": "mlx-community/gemma-2-9b-it-4bit",
  "variants": [
   "c1",
   "c2"
  ],
- "test_pairs": 247,
- "val_pairs": 139
+ "test_pairs": 349,
+ "planned_test_pairs": 350,
+ "val_pairs": 139,
+ "unparsed": 1
 }

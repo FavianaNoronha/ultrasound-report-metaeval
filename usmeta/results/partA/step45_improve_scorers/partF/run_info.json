@@ -1,12 +1,19 @@
 {
  "step": "45F",
- "git_head_at_report": "4cced4d",
+ "git_head_at_report": "95ad453",
  "prereg_commit": "ca9bf2d",
  "python": "3.9.6",
  "platform": "macOS-27.2.1-arm64-arm-64bit",
  "date": "2026-11-20",
  "bootstrap": "group, 1000 resamples, seed 0",
- "status": "INCOMPLETE (2 h cap)",
+ "status": "complete after resuming initial 2 h cap",
  "numbers_meet_rule": true,
+ "resume": {
+  "initial_run_pairs": 920,
+  "initial_run_seconds": 7201,
+  "completion_run_pairs": 110,
+  "completion_run_seconds": 639,
+  "exceeded_initial_cap": true
+ },
  "judge": "mlx-community/gemma-2-9b-it-4bit, frozen prompt_v2, greedy"
 }
