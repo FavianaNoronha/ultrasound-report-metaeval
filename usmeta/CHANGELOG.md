@@ -119,3 +119,6 @@ Test run capped at 66 of 91 cases (3 h). Six prompts logged in PREREG.md with SH
 
 ## Step 44 (2026-11-18)
 New files `step44_monitors.py`, `step44_report.py`; PREREG committed first (`5d4e1f5`). No frozen item changed. A first run used the test score dictionary for val thresholds; fixed before any number was recorded and re-run. Added after the PREREG and labelled so: a control for the keyword reason-match (another field's keywords).
+
+## Step 45 (2026-11-20)
+New files `step45_freetext.py`, `step45_numchecker.py`, `step45_extractor_v5.py`, `step45_partC.py`, `step45_partE.py`, `step45_gemma.py`, `step45_partD.py`, `step45_partF.py`, `step45_partG.py` and their report scripts, `tests/test_step45.py`; PREREG committed first (`ca9bf2d`). No frozen item changed. Deviations (listed in each part's results.md): smaller set A; an extras filter added to the gold check after the first look at the writer; v5 'JSON-constrained' = output validation; D and F cut at their compute caps; Part C test split read twice. Pretrained ResNet-18 weights downloaded to the git-ignored local_data (SHA-256 in partG/run_info.json), not committed.

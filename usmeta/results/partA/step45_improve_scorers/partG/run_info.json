@@ -1,0 +1,22 @@
+{
+ "step": "45G",
+ "git_head_at_report": "eca239c",
+ "prereg_commit": "ca9bf2d",
+ "python": "3.9.6",
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "date": "2026-11-20",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "verdict": "DOES NOT PASS",
+ "pretrained_weights": {
+  "file": "resnet18-f37072fd.pth",
+  "name": "torchvision resnet18 IMAGENET1K_V1",
+  "source": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+  "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "bytes": 46830571,
+  "committed_to_git": false,
+  "location": "usmeta/local_data/step45/ (git-ignored)",
+  "downloaded": "2026-11-20 with the owner's approval"
+ },
+ "medsam": "wanglab/medsam-vit-base",
+ "seconds_test_eval": 588
+}

@@ -11,6 +11,7 @@ from . import partb, step29_seg as G, step29_run as R29, step40_fairness_calibra
 from .step10d_analysis import gboot
 
 ROOT = G.ROOT; OUT = os.path.join(ROOT, 'results', 'partA', 'step45_improve_scorers', 'partG'); P = lambda f: os.path.join(OUT, f); LOCAL = os.path.join(ROOT, 'local_data', 'step45'); os.makedirs(OUT, exist_ok=True)
+_ORIG_BUILD = G.build_model          # the unchanged Step 29 builder (G.build_model is replaced during pretrained training)
 WEIGHTS = os.path.join(LOCAL, 'resnet18-f37072fd.pth'); SRC = 'https://download.pytorch.org/models/resnet18-f37072fd.pth'; MIN_G = 30
 
 def sha256(path):
@@ -21,7 +22,7 @@ def sha256(path):
 
 def build_pretrained():
     import torch
-    m = G.build_model(); sd = torch.load(WEIGHTS, map_location='cpu'); enc = {}
+    m = _ORIG_BUILD(); sd = torch.load(WEIGHTS, map_location='cpu'); enc = {}
     for k, v in sd.items():
         if k.startswith('fc.'): continue
         if k == 'conv1.weight': v = v.sum(1, keepdim=True)             # RGB -> one grey channel
@@ -43,7 +44,7 @@ def cmd_train(a):
 
 def load_pt(organ, dev):
     import torch
-    n = organ + '_pt'; m = G.build_model().to(dev); m.load_state_dict(torch.load(os.path.join(G.LOCAL, f'unet_{n}.pt'), map_location=dev)); return m.eval(), json.load(open(os.path.join(OUT, f'train_{n}.json')))['chosen']
+    n = organ + '_pt'; m = _ORIG_BUILD().to(dev); m.load_state_dict(torch.load(os.path.join(G.LOCAL, f'unet_{n}.pt'), map_location=dev)); return m.eval(), json.load(open(os.path.join(OUT, f'train_{n}.json')))['chosen']
 
 def run(cx, dev, scans, bench, medsam=None):
     """as step40.run_scans, optionally replacing the U-Net mask by a MedSAM mask prompted with the box of the U-Net mask"""

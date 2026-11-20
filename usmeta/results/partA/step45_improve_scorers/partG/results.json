@@ -1,0 +1,188 @@
+{
+ "baseline_scans": 498,
+ "random_init_step29_step40": {
+  "scans": 498,
+  "pooled": {
+   "position_auroc": [
+    0.8921052631578947,
+    0.862032803718115,
+    0.918901185770751
+   ],
+   "groups": 242
+  },
+  "by_organ": {
+   "breast": {
+    "position_auroc": [
+     0.9424083769633508,
+     0.9184184471078687,
+     0.962920948881945
+    ],
+    "groups": 152,
+    "scans": 325
+   },
+   "thyroid": {
+    "position_auroc": [
+     0.7898936170212766,
+     0.7247138942617666,
+     0.8484166764086977
+    ],
+    "groups": 90,
+    "scans": 173
+   }
+  },
+  "dice": 0.7628740480205622
+ },
+ "pretrained_unet": {
+  "scans": 498,
+  "pooled": {
+   "position_auroc": [
+    0.9052631578947369,
+    0.8771535280426178,
+    0.9301977747861895
+   ],
+   "groups": 242
+  },
+  "by_organ": {
+   "breast": {
+    "position_auroc": [
+     0.9424083769633508,
+     0.9153605857090643,
+     0.9642904135338346
+    ],
+    "groups": 152,
+    "scans": 325
+   },
+   "thyroid": {
+    "position_auroc": [
+     0.8297872340425532,
+     0.7692154255319149,
+     0.8844137717121588
+    ],
+    "groups": 90,
+    "scans": 173
+   }
+  },
+  "dice": 0.7931760832058032,
+  "paired_vs_random_init": {
+   "diff": [
+    0.013157894736842105,
+    -0.00662877494822603,
+    0.03378554335585585
+   ],
+   "scans": 285,
+   "groups": 242
+  },
+  "paired_by_organ": {
+   "breast": [
+    0.0,
+    -0.014564526202236984,
+    0.01381115305961931
+   ],
+   "thyroid": [
+    0.0398936170212766,
+    -0.007659103114930182,
+    0.09616935483870967
+   ]
+  },
+  "pass": {
+   "pooled_ge_0_92": false,
+   "ci_excludes_0": false,
+   "passed": false
+  }
+ },
+ "medsam_from_pretrained_unet_box": {
+  "scans": 498,
+  "pooled": {
+   "position_auroc": [
+    0.8947368421052632,
+    0.8648800586551414,
+    0.9207346501553819
+   ],
+   "groups": 242
+  },
+  "by_organ": {
+   "breast": {
+    "position_auroc": [
+     0.9384816753926701,
+     0.9109163755126842,
+     0.9612697319180785
+    ],
+    "groups": 152,
+    "scans": 325
+   },
+   "thyroid": {
+    "position_auroc": [
+     0.8058510638297872,
+     0.7474199091009865,
+     0.8602150537634409
+    ],
+    "groups": 90,
+    "scans": 173
+   }
+  },
+  "dice": 0.7009316297197364,
+  "paired_vs_random_init": {
+   "diff": [
+    0.002631578947368421,
+    -0.02091639897205268,
+    0.026952341472546867
+   ],
+   "scans": 285,
+   "groups": 242
+  },
+  "paired_by_organ": {
+   "breast": [
+    -0.003926701570680628,
+    -0.02249278499278499,
+    0.013513513513513514
+   ],
+   "thyroid": [
+    0.015957446808510637,
+    -0.041700268817204296,
+    0.07797817321178119
+   ]
+  },
+  "pass": {
+   "pooled_ge_0_92": false,
+   "ci_excludes_0": false,
+   "passed": false
+  }
+ },
+ "train": {
+  "breast": {
+   "organ": "breast_pt",
+   "dev_total": 1501,
+   "dev_dropped_leaky": 15,
+   "dev_trained": 1270,
+   "val_n": 629,
+   "epochs_run": 30,
+   "best_val_dice_256": 0.830084730743751,
+   "chosen": {
+    "threshold": 0.5,
+    "keep": "raw"
+   },
+   "encoder": "resnet18 (random init, no pretrained weights)",
+   "seconds": 1094,
+   "device": "mps",
+   "seed": 0
+  },
+  "thyroid": {
+   "organ": "thyroid_pt",
+   "dev_total": 1590,
+   "dev_dropped_leaky": 148,
+   "dev_trained": 1438,
+   "val_n": 789,
+   "epochs_run": 29,
+   "best_val_dice_256": 0.7914386078348841,
+   "chosen": {
+    "threshold": 0.3,
+    "keep": "raw"
+   },
+   "encoder": "resnet18 (random init, no pretrained weights)",
+   "seconds": 1223,
+   "device": "mps",
+   "seed": 0
+  }
+ },
+ "seconds": 588
+}
