@@ -1,0 +1,41 @@
+{
+ "n_dev_pairs": 11965,
+ "n_val_pairs": 15307,
+ "models": {
+  "logreg": {
+   "val_auroc_templated": 0.9525309806683612,
+   "hp": "10.0",
+   "devval_setA_auroc": 0.8808193668528863,
+   "setA_cases": 179
+  },
+  "gboost": {
+   "val_auroc_templated": 0.9996150615901456,
+   "hp": "(5, 0.1)",
+   "devval_setA_auroc": 0.8999068901303537,
+   "setA_cases": 179
+  },
+  "single_scorers_setA_devval": {
+   "bleu": 0.6675977653631284,
+   "rougeL": 0.7411545623836128,
+   "chrf": 0.7243947858472999,
+   "bertscore[roberta-large]": 0.5912476722532589,
+   "ratescore": 0.6466480446927374
+  }
+ },
+ "features": [
+  "bleu",
+  "rougeL",
+  "chrf",
+  "bertscore[roberta-large]",
+  "ratescore",
+  "n_removed",
+  "n_added",
+  "neg_change",
+  "side_mismatch",
+  "path_mismatch",
+  "size_rel",
+  "hc_abs",
+  "count_mismatch",
+  "cat_mismatch"
+ ]
+}

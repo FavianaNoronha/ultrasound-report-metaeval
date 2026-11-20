@@ -130,4 +130,24 @@ def cmd_test(a):
     json.dump(res, open(P('results.json'), 'w'), indent=1); print(json.dumps(res['pass'])); print({k: (round(v['auroc'][0], 3), round(v['auroc'][1], 3), round(v['auroc'][2], 3)) for k, v in res['setA'].items()}); print({k: round(v['auroc'][0], 3) for k, v in res['templated'].items()})
 
 if __name__ == '__main__':
-    ap = argparse.ArgumentParser(); ap.add_argument('cmd'); a = ap.parse_args(); {'features': cmd_features, 'train': cmd_train, 'test': cmd_test}[a.cmd](a)
+    ap = argparse.ArgumentParser(); ap.add_argument('cmd'); a = ap.parse_args(); {'features': cmd_features, 'train': cmd_train, 'test': cmd_test}.get(a.cmd, lambda a: None)(a)
+
+def cmd_ablation(a):
+    """EXPLORATORY, not pre-registered: the same logistic regression with only the five existing scorer outputs (no diff features), same dev training / val tuning, evaluated on set A test (already logged read)."""
+    from sklearn.pipeline import make_pipeline
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.linear_model import LogisticRegression
+    Xd, yd, md = dev_templated(); Xv, yv, mv = templated('val'); k = len(SC); best = None
+    for C in (0.01, 0.1, 1.0, 10.0):
+        m = make_pipeline(StandardScaler(), LogisticRegression(C=C, max_iter=2000)).fit(Xd[:, :k], yd); v, g = case_auroc(mv, 1 - m.predict_proba(Xv[:, :k])[:, 1]); s = float(np.mean(v))
+        if best is None or s > best[0]: best = (s, C, m)
+    pairs = setA_pairs('test'); sc = score_setA(pairs, 'test'); XA, mA = setA_matrix(pairs, sc); v, g = case_auroc(mA, 1 - best[2].predict_proba(XA[:, :k])[:, 1])
+    full = pickle_load()['logreg']; vf, gf = case_auroc(mA, 1 - full.predict_proba(XA)[:, 1]); coef = full.named_steps['logisticregression'].coef_[0]
+    res = dict(logreg_scorers_only_setA_test=dict(cases=len(v), auroc=gboot(v, g), val_auroc_templated=best[0], C=best[1]), logreg_all_features_setA_test=dict(auroc=gboot(vf, gf)), coef_all_features={n: float(c) for n, c in zip(SC + DF, coef)})
+    json.dump(res, open(P('ablation.json'), 'w'), indent=1); print(json.dumps(res, indent=1))
+
+def pickle_load():
+    import pickle; return pickle.load(open(P('models.pkl'), 'rb'))
+
+if __name__ == '__main__' and sys.argv[1] == 'ablation':
+    cmd_ablation(None)

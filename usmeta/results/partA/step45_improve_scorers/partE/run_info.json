@@ -1,0 +1,11 @@
+{
+ "step": "45E",
+ "git_head_at_report": "9f9dbab",
+ "prereg_commit": "ca9bf2d",
+ "python": "3.9.6",
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "date": "2026-11-20",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "verdict": "PASS",
+ "best_single": "rougeL"
+}
