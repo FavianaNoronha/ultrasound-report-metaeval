@@ -22,10 +22,10 @@ def test_number_checker_parse_and_score():
 
 def test_v5_strict_schema_and_regex_override():
     js = {"lesion_present": True, "count": 3, "side": "left", "size": {"value": 9, "unit": "cm"}, "birads": "2", "margin": "smooth", "halo": "present", "extra": 1}
-    s = V5.strict('breast', js, "A single mass in the right breast, 25 mm. BI-RADS 4b.")
+    s = V5.strict('breast', js, "A single mass in the right breast, 25 mm, with an echogenic halo. BI-RADS 4b.")
     assert s['count'] == 1 and s['side'] == 'right' and s['size'] == {'value': 25.0, 'unit': 'mm'} and s['birads'] == '4b' and 'extra' not in s     # numbers, sides, counts, categories come from the text
     assert s['margin'] == 'circumscribed' and s['halo'] == 'yes'
     t = V5.strict('thyroid', {"count": 1, "tirads": "4", "birads": "4", "echo": "hypoechoic"}, "A nodule, BI-RADS 4, hypoechoic.")
     assert t['tirads'] is None and 'birads' not in t and t['echo'] == 'hypoechoic'                              # BI-RADS never becomes tirads
-    f = V5.strict('fetal', {"plane": "trans-thalamic", "hc": None, "birads": "0"}, "Fetal head. HC 44.3 mm.")
+    f = V5.strict('fetal', {"plane": "trans-thalamic", "hc": None, "birads": "0"}, "Fetal head, trans-thalamic plane. HC 44.3 mm.")
     assert 'birads' not in f and f['plane'] == 'trans thalamic' and f['hc'] == {'value': 44.3, 'unit': 'mm'}

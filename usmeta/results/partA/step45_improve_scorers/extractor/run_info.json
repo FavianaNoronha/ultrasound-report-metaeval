@@ -1,0 +1,16 @@
+{
+ "step": "45B",
+ "model": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+ "decoding": "greedy",
+ "variants": [
+  "v4",
+  "v5"
+ ],
+ "git_head_at_report": "80bebfc",
+ "prereg_commit": "ca9bf2d",
+ "python": "3.9.6",
+ "platform": "macOS-27.2.1-arm64-arm-64bit",
+ "date": "2026-11-20",
+ "bootstrap": "group, 1000 resamples, seed 0",
+ "verdict": "PASS (pooled reading)"
+}

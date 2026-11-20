@@ -48,6 +48,35 @@ def norm_margin_breast(v):
     if re.search(r'indistinct|ill[- ]defined|irregular|spiculated|angular|microlobulated', s): q = sorted({w for w in ('indistinct', 'angular', 'spiculated', 'microlobulated') if w in s}); return 'not circumscribed' + (f" ({', '.join(q)})" if q else '')
     return None
 
+def norm_pos(v):
+    s = str(v).lower(); vert = re.search(r'\b(upper|top|superior|middle|mid|lower|bottom|inferior)\b', s); hor = re.search(r'\b(left|right|central|centre|center|midline)\b', s)
+    if not (vert and hor): return None
+    V = {'upper': 'upper', 'top': 'upper', 'superior': 'upper', 'middle': 'middle', 'mid': 'middle', 'lower': 'lower', 'bottom': 'lower', 'inferior': 'lower'}[vert.group(1)]; H = {'left': 'left', 'right': 'right'}.get(hor.group(1), 'central'); return f'{V}-{H}'
+
+def count_from_text(text):
+    """lesion / nodule count from the text only (extractor-local; step45_numchecker.parse is not changed)"""
+    t = ' '.join(text.lower().split()); W = {'two': 2, 'three': 3, 'four': 4, 'five': 5}
+    if re.search(r'three or more', t): return 3
+    m = re.search(r'\b(two|three|four|five)\b(?=[^.]{0,40}\b(?:nodules?|lesions?|masses)\b)', t) or re.search(r'\b(?:number|count)(?: of (?:lesions|nodules|masses))?\s*[:\-]?\s*(?:is )?([1-5])\b', t) or re.search(r'\b([2-5])\s+(?:lesions|nodules|masses)\b', t)
+    if m: g = m.group(1); return W.get(g) or int(g)
+    if re.search(r'\b(?:nodules?|lesions?|masses)\b', t):
+        m = re.search(r'\b(two|three|four|five)\b', t)
+        if m: return W[m.group(1)]
+    if re.search(r'\b(single|solitary|one|isolated)\b|\b1\b', t): return 1
+    return None
+
+EVID = {'orientation': lambda v: v.replace('-', ' '), 'shape': lambda v: v, 'echo': lambda v: {'complex cystic/solid': 'complex', 'marked hypoechoic': 'hypoechoic'}.get(v, v), 'posterior': lambda v: {'shadowing': 'shadow', 'enhancement': 'enhanc', 'combined': 'posterior', 'no': 'posterior'}[v],
+        'halo': lambda v: 'halo', 'pathology': lambda v: v, 'composition': lambda v: {'predominantly solid': 'solid', 'predominantly cystic': 'cystic'}.get(v, v), 'margin': lambda v: None, 'plane': lambda v: {'trans thalamic': 'thalamic', 'trans cerebellum': 'cerebell', 'trans ventricular': 'ventric'}[v]}
+
+def in_text(k, v, t):
+    """evidence-in-text: the value's key word must occur in the report (a value the text does not contain is dropped)"""
+    f = EVID.get(k)
+    if f is None: return True
+    w = f(v)
+    if w is None: return True
+    if k == 'orientation': return re.sub(r'[- ]', '', w) in re.sub(r'[- ]', '', t)
+    return w in t
+
 def strict(organ, js, text):
     """validated model JSON in the model's own key names (no extra keys; allowed values only; numbers / sides / counts / categories filled from the regex layer only)"""
     keys = [k for k, _, _ in X.FIELDS[organ]]; out = {k: None for k in keys}; al = ALLOWED[organ]; rx = NC.parse(text, organ)
@@ -55,11 +84,11 @@ def strict(organ, js, text):
         v = js.get(k) if isinstance(js, dict) else None
         if v in (None, '', 'null', 'None', 'N/A', 'not stated'): continue
         if k in al:
-            nv = norm(v); out[k] = nv if nv in al[k] else None
+            nv = norm(v); out[k] = nv if nv in al[k] and in_text(k, nv, ' '.join(text.lower().split())) else None
         elif k == 'margin' and organ == 'breast': out[k] = norm_margin_breast(v)
         elif k in ('position', 'histology', 'calcifications'):
             s = norm(v)
-            if k == 'position': s = s.replace(' ', '-'); out[k] = s if re.fullmatch(r'(upper|middle|lower)-(left|central|right)', s) else None
+            if k == 'position': out[k] = norm_pos(v)
             elif k == 'calcifications': out[k] = 'no' if s in ('no', 'none', 'absent') else s
             else: out[k] = s
         elif k == 'foci': s = norm(v); out[k] = 'none' if s in ('no', 'none', 'absent') else s
@@ -68,7 +97,7 @@ def strict(organ, js, text):
     if organ == 'fetal':
         out['hc'] = {'value': rx['hc_mm'], 'unit': 'mm'} if 'hc_mm' in rx else None
     else:
-        out['size'] = ({'value': rx['size_mm'], 'unit': 'mm'} if 'size_mm' in rx else ({'value': rx['size_pct'], 'unit': '%'} if 'size_pct' in rx else None)); out['count'] = rx.get('count')
+        out['size'] = ({'value': rx['size_mm'], 'unit': 'mm'} if 'size_mm' in rx else ({'value': rx['size_pct'], 'unit': '%'} if 'size_pct' in rx else None)); out['count'] = count_from_text(text)
         if organ == 'breast': out['side'] = rx.get('side'); out['birads'] = rx.get('birads')
         else: out['tirads'] = rx.get('tirads')
     return out
@@ -117,7 +146,8 @@ def reports(which):
     return out
 
 def cmd_run(a):
-    from . import step43_extractor_v4 as V43
+    from . import step43_extractor_v4 as V43, splits
+    if a.set == 'test' and not os.path.exists(P('test_read_logged.flag')): splits.load('test', script='usmeta.step45_extractor_v5'); open(P('test_read_logged.flag'), 'w').write('logged once for v4 and v5 on set A test\n')
     X.CACHE = P(f'cache_{a.variant}.jsonl'); X.OUT = OUT
     if a.variant == 'v4': X.INSTR['v4'] = V43.V4
     ex = X.Extractor(a.variant); R = reports(a.set); out = {}; t0 = time.time(); dl = t0 + a.max_hours * 3600
@@ -158,6 +188,46 @@ def cmd_score(a):
             if pairs: res['paired'][o] = dict(n=len(pairs), diff_v5_minus_v4=gboot([a_ - b_ for a_, b_, _ in pairs], [g for _, _, g in pairs]))
     json.dump(res, open(P(f'scores_{a.set}.json'), 'w'), indent=1); print(json.dumps({v: {o: (round(d['full_match'][0], 3), round(d['full_match'][1], 3), d['reports']) for o, d in res[v].items()} for v in ('v4', 'v5') if v in res}, indent=0)); return res
 
+def cmd_reprocess(a):
+    """recompute the v5 post-processing from the SAVED raw model outputs (no model call)"""
+    R = {r['id']: r for r in reports(a.set)}; E = json.load(open(P(f'extraction_{a.variant}_{a.set}.json')))
+    for i, e in E.items():
+        r = R[i]; flat, ok, sj = facts_v5(r['organ'], e['raw'], r['text']); e['flat'], e['ok'], e['strict'] = flat, ok, sj
+    json.dump(E, open(P(f'extraction_{a.variant}_{a.set}.json'), 'w'), ensure_ascii=False); print('reprocessed', len(E))
+
+# ---------------------------------------------------------------- exploratory side check: thyroid reports that state BI-RADS (dropped from set A as "extras"; the Step 43 failure mode). Expected: tirads null (BI-RADS is not TI-RADS).
+def birads_reports():
+    plan = json.load(open(FT.P('plan.json')))['items']; cache = FT.load_cache(); out = []
+    for it in plan:
+        if it['set'] != 'test' or it['organ'] != 'thyroid' or it['kind'] != 'true' or it['id'] not in cache: continue
+        t = cache[it['id']]['reply']; ok0, _ = FT.gold_check('thyroid', it['facts'], t)
+        if ok0 and re.search(r'bi-?rads', t.lower()) and not re.search(r'ti-?rads', t.lower()) and FT.extras('thyroid', it['facts'], t) == ['wrong_organ_scale_or_diagnosis']:
+            out.append(dict(id=it['id'], case_id=it['case_id'], organ='thyroid', group=it['case_id'], text=t, gold=it['facts'], kind='true'))
+    return out
+
+def cmd_birads_run(a):
+    X.CACHE = P(f'cache_{a.variant}.jsonl'); X.OUT = OUT
+    if a.variant == 'v4':
+        from . import step43_extractor_v4 as V43; X.INSTR['v4'] = V43.V4
+    ex = X.Extractor(a.variant); R = birads_reports(); out = {}
+    for i, r in enumerate(R):
+        raw = ex.raw('thyroid', r['text'])
+        if a.variant == 'v5': flat, ok, sj = facts_v5('thyroid', raw, r['text'])
+        else: flat, ok = X.to_flat('thyroid', raw); sj = None
+        out[r['id']] = dict(flat=flat, ok=ok, raw=raw)
+    json.dump(out, open(P(f'extraction_{a.variant}_thyroid_birads.json'), 'w'), ensure_ascii=False); print('saved', len(out))
+
+def cmd_birads_score(a):
+    R = birads_reports(); res = {'reports': len(R)}
+    for v in ('v4', 'v5'):
+        f = P(f'extraction_{v}_thyroid_birads.json')
+        if not os.path.exists(f): continue
+        E = json.load(open(f)); n_ok = sum(E[r['id']]['flat'].get('tirads') is None for r in R if r['id'] in E); other = []
+        for r in R:
+            m = match_report('thyroid', r['gold'], E[r['id']]['flat'], r['text']); m.pop('tirads', None); other.append(all(m.values()))
+        res[v] = dict(tirads_null=n_ok / len(R), tirads_written_from_birads=1 - n_ok / len(R), other_fields_all_right=float(np.mean(other)))
+    json.dump(res, open(P('thyroid_birads_check.json'), 'w'), indent=1); print(json.dumps(res, indent=1))
+
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('cmd'); ap.add_argument('--variant', default='v5'); ap.add_argument('--set', default='devval'); ap.add_argument('--max-hours', type=float, default=3.0); a = ap.parse_args()
-    {'run': cmd_run, 'score': cmd_score}[a.cmd](a)
+    {'run': cmd_run, 'score': cmd_score, 'reprocess': cmd_reprocess, 'birads_run': cmd_birads_run, 'birads_score': cmd_birads_score}[a.cmd](a)

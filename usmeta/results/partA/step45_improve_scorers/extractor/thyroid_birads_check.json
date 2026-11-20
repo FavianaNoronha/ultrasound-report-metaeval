@@ -1,0 +1,13 @@
+{
+ "reports": 79,
+ "v4": {
+  "tirads_null": 0.8987341772151899,
+  "tirads_written_from_birads": 0.10126582278481011,
+  "other_fields_all_right": 0.9240506329113924
+ },
+ "v5": {
+  "tirads_null": 1.0,
+  "tirads_written_from_birads": 0.0,
+  "other_fields_all_right": 1.0
+ }
+}

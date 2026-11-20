@@ -1,0 +1,79 @@
+{
+ "v5": {
+  "breast": {
+   "reports": 159,
+   "groups": 69,
+   "full_match": [
+    0.9748427672955975,
+    0.9440545454545455,
+    0.9949748743718593
+   ],
+   "too_small": false,
+   "per_field": {
+    "lesion": 1.0,
+    "count": 1.0,
+    "side": 1.0,
+    "pos": 1.0,
+    "orient": 1.0,
+    "size_mm": 1.0,
+    "size_pct": 1.0,
+    "shape": 1.0,
+    "margin": 1.0,
+    "echo": 1.0,
+    "post": 1.0,
+    "halo": 1.0,
+    "calc": 1.0,
+    "birads": 1.0,
+    "path": 1.0,
+    "hist": 0.9748427672955975
+   }
+  },
+  "thyroid": {
+   "reports": 162,
+   "groups": 82,
+   "full_match": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": false,
+   "per_field": {
+    "lesion": 1.0,
+    "count": 1.0,
+    "pos": 1.0,
+    "orient": 1.0,
+    "size_mm": 1.0,
+    "size_pct": 1.0,
+    "comp": 1.0,
+    "echo": 1.0,
+    "margin": 1.0,
+    "foci": 1.0,
+    "tirads": 1.0
+   }
+  },
+  "fetal": {
+   "reports": 260,
+   "groups": 74,
+   "full_match": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "too_small": false,
+   "per_field": {
+    "plane": 1.0,
+    "hc_mm": 1.0
+   }
+  },
+  "ALL": {
+   "reports": 581,
+   "groups": 225,
+   "full_match": [
+    0.9931153184165232,
+    0.9855847902477116,
+    0.9984031219340395
+   ],
+   "too_small": false
+  }
+ }
+}
