@@ -53,3 +53,16 @@ The ultrasound field mapping follows the committed Step 46 preregistration: CFC 
 - Paper HTML: https://arxiv.org/html/2607.18448v1
 - Repository: https://github.com/surykntsingh/PathBench/tree/a110a98bc912bdf8daa561138ef0ef41a8235b02
 - Code formula and weights: `crqs/crqs_histai/src/compute_metrics.py`, `crqs/crqs_histai/src/config.py`; the same pattern is used in dataset-specific CRQS implementations.
+
+## Full-paper read (added 2026-11-23, from the arXiv v1 PDF, all 22 pages)
+
+Verified in the paper itself:
+- The sign inconsistency is inside the paper. Eq. (6) prints `+ w3(1-HR) + w4(1-CDS)` (range 0 to 1.3 before the /0.7); Appendix A.7 (prompt, Step 5) states `CRQS = 0.3*CFC + 0.4*KIR - 0.2*HR - 0.4*CDS` and `CRQS_norm = CRQS_raw / 0.7` (max 0.7). Table 3 shows a negative score (-0.0714), possible only under the signed form. Eq. (8) still claims CRQS in [0,1].
+- Eq. (4) defines HR as fields in the generated report with `f not in F_R OR v_hat != v`, so a contradicted field counts in HR and again in CDS (Eq. 5), and key fields count in CFC, KIR and CDS.
+- Our ultrasound adaptation differs from Eq. (4)-(5): our HR counts only unsupported fields, and our CDS is a binary flag over key fields. Label it "CRQS-style adaptation". Consider adding a paper-exact variant (Eq. 4-5, signed weights) as an extra comparator.
+- Schema and key fields are generated per dataset by an LLM prompt (A.7); the paper does not give a fixed schema across datasets, so CRQS values are not comparable across datasets (TCGA ~0.18 vs REG ~0.70).
+- Validation in the paper: two worked examples (Table 3), METEOR-vs-CRQS scatter plots (Fig. 3), no planted-error test, no rewording test, no clinician agreement numbers, no confidence intervals, no extraction accuracy figures. "Pathologist-verified" extraction is stated (intro, Fig. 1, A.5) without sample size or agreement. The extraction model is not named in the text I read.
+- The claim that lexical metrics are "weakly aligned with clinical correctness" is supported only by their weak correlation with CRQS, not by an independent clinical ground truth.
+- Table 2 CRQS spreads between methods are small (TCGA 0.178-0.193; HistAI 0.274-0.294; REG 0.689-0.705), single runs, no intervals.
+- Weights (0.3/0.4/0.2/0.4) have no justification or sensitivity analysis. "w >= 0" in Eq. (6) conflicts with the negative weights in A.7.
+- Authors' own limitations (A.5): extraction errors, predefined attributes only, three datasets.
