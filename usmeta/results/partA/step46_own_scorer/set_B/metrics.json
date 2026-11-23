@@ -1,0 +1,337 @@
+{
+ "bleu": {
+  "n": 861,
+  "groups": 235,
+  "auroc": 0.6755081027844928,
+  "ci": [
+   0.6427995864079052,
+   0.7101210146413905
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "rougeL": {
+  "n": 861,
+  "groups": 235,
+  "auroc": 0.6981302414420868,
+  "ci": [
+   0.6643901197186933,
+   0.7334861398656504
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "chrf": {
+  "n": 861,
+  "groups": 235,
+  "auroc": 0.6824506819470558,
+  "ci": [
+   0.6484421058001684,
+   0.7173706829636635
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "bertscore": {
+  "n": 861,
+  "groups": 235,
+  "auroc": 0.6130211597576627,
+  "ci": [
+   0.5709211136898229,
+   0.6555188804568455
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "ratescore": {
+  "n": 861,
+  "groups": 235,
+  "auroc": 0.5667323245888919,
+  "ci": [
+   0.5258218006217256,
+   0.6045065994534738
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "score": {
+  "n": 861,
+  "groups": 235,
+  "auroc": 0.6562136270033128,
+  "ci": [
+   0.611695233750249,
+   0.6994143620675355
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "crqs_normalized": {
+  "n": 861,
+  "groups": 235,
+  "auroc": 0.9976012475005223,
+  "ci": [
+   0.9957480152793385,
+   0.9989582312887315
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "crqs_clipped": {
+  "n": 861,
+  "groups": 235,
+  "auroc": 0.9976012475005223,
+  "ci": [
+   0.9957480152793385,
+   0.9989582312887315
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "step45_learned": {
+  "n": 861,
+  "groups": 235,
+  "auroc": 0.8429619184051094,
+  "ci": [
+   0.8082486421779604,
+   0.8751313114161303
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "judge_on_rule_clear_subset": {
+  "n": 632,
+  "groups": 229,
+  "too_small_to_compare": true,
+  "reason": "only one label class has a score"
+ },
+ "paired_difference_vs_bleu": {
+  "n": 861,
+  "groups": 235,
+  "difference_primary_minus_comparison": -0.019294475781180043,
+  "ci": [
+   -0.07654260111486952,
+   0.029019732781815733
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "paired_difference_vs_rougeL": {
+  "n": 861,
+  "groups": 235,
+  "difference_primary_minus_comparison": -0.041916614438774036,
+  "ci": [
+   -0.09200854186883507,
+   0.004650282081296522
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "paired_difference_vs_chrf": {
+  "n": 861,
+  "groups": 235,
+  "difference_primary_minus_comparison": -0.026237054943743066,
+  "ci": [
+   -0.08022656553372781,
+   0.023605399538824134
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "paired_difference_vs_bertscore": {
+  "n": 861,
+  "groups": 235,
+  "difference_primary_minus_comparison": 0.04319246724565007,
+  "ci": [
+   -0.010755257796155698,
+   0.09573231770994997
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "paired_difference_vs_ratescore": {
+  "n": 861,
+  "groups": 235,
+  "difference_primary_minus_comparison": 0.08948130241442087,
+  "ci": [
+   0.03789953608957794,
+   0.14360082345327888
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "paired_difference_vs_crqs_normalized": {
+  "n": 861,
+  "groups": 235,
+  "difference_primary_minus_comparison": -0.3413876204972095,
+  "ci": [
+   -0.38542422047949676,
+   -0.2983490737505516
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "paired_difference_vs_step45_learned": {
+  "n": 861,
+  "groups": 235,
+  "difference_primary_minus_comparison": -0.1867482914017966,
+  "ci": [
+   -0.23462878436668033,
+   -0.14366844191201708
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ },
+ "paired_difference_vs_judge": {
+  "n": 632,
+  "groups": 229,
+  "too_small_to_compare": true,
+  "reason": "only one label class has a paired score"
+ },
+ "monitor": {
+  "error_catch": 0.18137254901960784,
+  "harmless_flagged": 0.1628614916286149
+ },
+ "H1_pass": false,
+ "H2_pass": false,
+ "stress_subset": {
+  "n": 179,
+  "error_catch": 0.1827956989247312,
+  "harmless_flagged": 0.2558139534883721
+ },
+ "H5_limit_of_detection": {
+  "5_percent_size": {
+   "n": 122,
+   "groups": 60,
+   "auroc": 0.13155065842515457,
+   "ci": [
+    0.06054861111111113,
+    0.20779166666666665
+   ],
+   "seed": 0,
+   "draws": 1000,
+   "too_small_to_compare": false
+  },
+  "1_mm_head_circumference": {
+   "n": 74,
+   "groups": 33,
+   "auroc": 1.0,
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "seed": 0,
+   "draws": 1000,
+   "too_small_to_compare": false
+  }
+ },
+ "H7_severity": {
+  "n": 204,
+  "groups": 185,
+  "spearman_rho_severity_vs_signed_score_drop": -0.9701403298139049,
+  "p_value_descriptive": 3.087154080776364e-126,
+  "pass": true
+ },
+ "H6_human_rewordings": {
+  "n_human_items": 29,
+  "n_error_items": 204,
+  "human_flagged_share": 0.10344827586206896,
+  "descriptive_auroc": {
+   "n": 233,
+   "groups": 214,
+   "auroc": 0.6538201487491548,
+   "ci": [
+    0.5350995818451256,
+    0.7652373208898945
+   ],
+   "seed": 0,
+   "draws": 1000,
+   "too_small_to_compare": false
+  },
+  "status": "descriptive; 29 human items, too small for comparison"
+ },
+ "H4_template_ceiling": {
+  "n_blocks": 17444,
+  "groups": 830,
+  "eta2": {
+   "fact": 0.4398379634143874,
+   "wording": 7.271777674387958e-09,
+   "interaction": 7.271777674405563e-09,
+   "residual": 0.5601620220420571
+  },
+  "ci": {
+   "fact": [
+    0.4355622024376469,
+    0.4440553448759828
+   ],
+   "wording": [
+    0.0,
+    4.843899795606623e-08
+   ]
+  },
+  "fact_share_ge_0_60": false,
+  "wording_share_le_0_05": true,
+  "pass": false,
+  "interpretation": "template-only ceiling using the project's deterministic fact extractor; not free-text evidence"
+ },
+ "set_B_devval_transfer": {
+  "n_scored": 293,
+  "test_read_for_tuning": false,
+  "uScore_auroc": {
+   "n": 293,
+   "groups": 88,
+   "auroc": 0.5843049327354259,
+   "ci": [
+    0.5142817534255895,
+    0.6525183322011681
+   ],
+   "seed": 0,
+   "draws": 1000,
+   "too_small_to_compare": false
+  },
+  "crqs_auroc": {
+   "n": 293,
+   "groups": 88,
+   "auroc": 0.9961883408071749,
+   "ci": [
+    0.991326894082915,
+    0.9994219748918415
+   ],
+   "seed": 0,
+   "draws": 1000,
+   "too_small_to_compare": false
+  },
+  "monitor": {
+   "error_catch": 0.17142857142857143,
+   "harmless_flagged": 0.2062780269058296
+  },
+  "status": "transfer description only; tuning remains Set A dev/val"
+ },
+ "exploratory_rule_only_no_diff_as_perfect": {
+  "n": 861,
+  "groups": 235,
+  "auroc": 0.9895394992091204,
+  "ci": [
+   0.9825170413940627,
+   0.9945798537752353
+  ],
+  "seed": 0,
+  "draws": 1000,
+  "too_small_to_compare": false
+ }
+}

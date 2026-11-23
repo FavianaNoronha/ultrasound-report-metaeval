@@ -1,0 +1,60 @@
+{
+ "by_set_organ": {
+  "devval|breast": {
+   "generated": 120,
+   "missing_gold_dropped": 26,
+   "extras_filter_dropped": 17,
+   "kept": 82,
+   "missing_gold_drop_share": 0.21666666666666667,
+   "extras_filter_drop_share": 0.14166666666666666,
+   "kept_share": 0.6833333333333333
+  },
+  "devval|thyroid": {
+   "generated": 120,
+   "missing_gold_dropped": 14,
+   "extras_filter_dropped": 8,
+   "kept": 101,
+   "missing_gold_drop_share": 0.11666666666666667,
+   "extras_filter_drop_share": 0.06666666666666667,
+   "kept_share": 0.8416666666666667
+  },
+  "devval|fetal": {
+   "generated": 120,
+   "missing_gold_dropped": 2,
+   "extras_filter_dropped": 8,
+   "kept": 110,
+   "missing_gold_drop_share": 0.016666666666666666,
+   "extras_filter_drop_share": 0.06666666666666667,
+   "kept_share": 0.9166666666666666
+  },
+  "test|breast": {
+   "generated": 515,
+   "missing_gold_dropped": 124,
+   "extras_filter_dropped": 112,
+   "kept": 314,
+   "missing_gold_drop_share": 0.2407766990291262,
+   "extras_filter_drop_share": 0.2174757281553398,
+   "kept_share": 0.6097087378640776
+  },
+  "test|thyroid": {
+   "generated": 517,
+   "missing_gold_dropped": 50,
+   "extras_filter_dropped": 31,
+   "kept": 443,
+   "missing_gold_drop_share": 0.09671179883945841,
+   "extras_filter_drop_share": 0.059961315280464215,
+   "kept_share": 0.8568665377176016
+  },
+  "test|fetal": {
+   "generated": 520,
+   "missing_gold_dropped": 11,
+   "extras_filter_dropped": 36,
+   "kept": 480,
+   "missing_gold_drop_share": 0.021153846153846155,
+   "extras_filter_drop_share": 0.06923076923076923,
+   "kept_share": 0.9230769230769231
+  }
+ },
+ "all_filter_dropped": 382,
+ "stress_reports": 212
+}

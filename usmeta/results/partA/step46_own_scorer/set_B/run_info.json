@@ -1,0 +1,25 @@
+{
+ "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+ "model_revision": "241a666dad6cb93c8ff213d39a7f34a36bf26db4",
+ "seed": 46,
+ "temperature": 0.7,
+ "max_tokens": 230,
+ "cases": 360,
+ "set_A_overlap": 0,
+ "mlx_lm_version": "0.29.1",
+ "planned_cases": 360,
+ "generated_reports": 1912,
+ "planned_by_set_kind": {
+  "devval|true": 270,
+  "devval|twin": 90,
+  "test|true": 810,
+  "test|twin": 270
+ },
+ "generated_by_set_kind": {
+  "devval|true": 270,
+  "devval|twin": 90,
+  "test|true": 810,
+  "test|twin": 270
+ },
+ "test_core_complete": true
+}
