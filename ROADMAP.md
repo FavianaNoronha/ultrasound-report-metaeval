@@ -21,6 +21,11 @@ Details and caveats: `usmeta/results/partA/INDEX.md`; headline findings and adde
 - **39** judge prompt averaging: did not stabilise the judge (39.2% of pairs move > 0.1 vs 21.5% single prompt); no loss of accuracy. **40** fairness on all 498 usable test scans and Platt calibration: BrEaST and UDIAT above the rest, four datasets too small; pooled ECE 0.030 to 0.018, not distinguishable from 0. **41** thyroid cross-dataset U-Net: 0.64-0.69 vs 0.77-0.93 in-dataset, too small to decide, reads as "does not transfer". **42** GREEN 4-bit on Colab: fact-driven on a small sample, misses 5% size and 1-2 mm HC errors. **43** extractor v4: 2 of 20 breast + thyroid right (17 needed), does not pass; Step 28 stays inconclusive. **44** scorers as monitors: judge catches 71.3% of planted errors flagging 5.6% of harmless rewordings; word scorers at most 27.4% at a 10% budget.
 - Write-ups (full paper, short paper, poster, reports): `paper/`.
 
+## Steps 45-46 (added 2026-11-23)
+- **45** free-text scorer improvements: Parts B, C, E and F pass; D and pretrained U-Net G do not pass. See `usmeta/results/partA/step45_improve_scorers/`.
+- **46** UScore versus CRQS on a new Llama-written set: CRQS AUROC 0.998 (0.996-0.999) versus UScore 0.656 (0.612-0.699), paired difference -0.341 (-0.385 to -0.298); H1/H2/H4 do not pass. Writer-made reports and automatic gold are not clinical validation. Step 46's test must not be reused to tune a new scorer.
+- **47** audit-and-route evaluator is a draft preregistration only; no fresh-data results yet. Commit the preregistration before any Step 47 scoring.
+
 ## Not run, on purpose
 - **Step 23 (lesion detector):** replaced by Step 29 (a segmenter trained on dev, not a detector with a pretrained backbone).
 - **Step 26:** on hold at the owner's instruction; the same idea was later run as Step 39 (judge averaging). There is no Step 13 folder.
