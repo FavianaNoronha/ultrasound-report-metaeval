@@ -1,0 +1,79 @@
+{
+ "primary_variant": "S1 (Stage 1 trial T12)",
+ "replaces_v3_as_primary": true,
+ "stage1_trials_logged": 12,
+ "stage1_data": "Step 46 Set B dev-val saved Gemma replies only (no new model calls)",
+ "selection_metric": "catch of major/critical errors at harmless routed <= 30%, on dev",
+ "dev_s1_major_critical_catch": 1.0,
+ "dev_s1_harmless_routed": 0.24663677130044842,
+ "s1_route_budget": 0.42662116040955633,
+ "comparator_cutoffs": {
+  "crqs_normalized": {
+   "threshold": 1.0,
+   "tie_hash_max": "3bfc72f510bb289162ea97c2c6aa755f610797045f5d457c2fe04c30a7c7dd7b",
+   "devval_routes": 125,
+   "devval_route_share": 0.42662116040955633,
+   "target_route_share": 0.42662116040955633,
+   "n_devval": 293
+  },
+  "crqs_paper_normalized": {
+   "threshold": 1.0,
+   "tie_hash_max": "3bfc72f510bb289162ea97c2c6aa755f610797045f5d457c2fe04c30a7c7dd7b",
+   "devval_routes": 125,
+   "devval_route_share": 0.42662116040955633,
+   "target_route_share": 0.42662116040955633,
+   "n_devval": 293
+  },
+  "bleu": {
+   "threshold": 0.1501104453819994,
+   "tie_hash_max": "f8665c127a22bc8140ebd18d94f223b43d5056957f296771edfcf1dbf57c1872",
+   "devval_routes": 125,
+   "devval_route_share": 0.42662116040955633,
+   "target_route_share": 0.42662116040955633,
+   "n_devval": 293
+  },
+  "rougeL": {
+   "threshold": 0.4776119402985074,
+   "tie_hash_max": "d51577a25b00db16c090a1b6230ed5daba32292ba70d157f485f02b78d2cc54b",
+   "devval_routes": 125,
+   "devval_route_share": 0.42662116040955633,
+   "target_route_share": 0.42662116040955633,
+   "n_devval": 293
+  },
+  "chrf": {
+   "threshold": 0.5250188944497061,
+   "tie_hash_max": "04d10f5027c276eeeebfc6fa961b2a439bf31c7187f93d9e2a820372b04e7f15",
+   "devval_routes": 125,
+   "devval_route_share": 0.42662116040955633,
+   "target_route_share": 0.42662116040955633,
+   "n_devval": 293
+  },
+  "bertscore": {
+   "threshold": 0.8866087198257446,
+   "tie_hash_max": "3f35e9a3b78488bfa5cc427dcd0f60be89043f77058bcb3279efd651d2ac1dca",
+   "devval_routes": 125,
+   "devval_route_share": 0.42662116040955633,
+   "target_route_share": 0.42662116040955633,
+   "n_devval": 293
+  },
+  "ratescore": {
+   "threshold": 0.6424068733253713,
+   "tie_hash_max": "103709969ffe3b929de8f0226af1dec173885c150d5530da597263302026f404",
+   "devval_routes": 125,
+   "devval_route_share": 0.42662116040955633,
+   "target_route_share": 0.42662116040955633,
+   "n_devval": 293
+  },
+  "step45_learned": {
+   "threshold": 0.9177808551737087,
+   "tie_hash_max": "f2f2ebe8032ee6bc4894a281ed1bbd053ed041c4f1692f6127dc13e995c9df4d",
+   "devval_routes": 125,
+   "devval_route_share": 0.42662116040955633,
+   "target_route_share": 0.42662116040955633,
+   "n_devval": 293
+  }
+ },
+ "v3_thresholds_sha256": "91ea3053113b7bbe03f8b71dddef24129a514aed5f782c6e23070a3a6af99924",
+ "code_sha256": "e16e84d6ffe57de91ab0db3ab4847bc074e4c77416d74ce22800cad3adf2ca15",
+ "sha256": "17ff9879e07c9f7a2446c7d9f19afe8b3132e4a73f5e85d11ca480a63450218f"
+}
