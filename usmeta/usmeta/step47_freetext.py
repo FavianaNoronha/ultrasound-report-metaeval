@@ -22,7 +22,7 @@ OUT = os.path.join(ROOT, "results", "partA", "step47_audit_route", "set_C")
 P = lambda filename: os.path.join(OUT, filename)
 MODEL = "mlx-community/Mistral-7B-Instruct-v0.3-4bit"
 SEED = 47
-N_TEST_PER_ORGAN = 120
+N_TEST_PER_ORGAN = 250  # Amendment 2 item 3: ~75% of twins are major/critical, ~85% survive the filters, so ~640 kept cases give >= 400 major/critical errors
 
 # Step 45 builder, writer prompt, lexicon and gold filters are reused unchanged.
 base.OUT = OUT

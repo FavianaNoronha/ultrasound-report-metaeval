@@ -115,10 +115,20 @@ def prompt_for(key, reference, candidate):
     return PROMPTS[key].replace("{ref}", reference).replace("{cand}", candidate)
 
 
+JUDGES = {
+    "gemma": dict(model=AUDIT_MODEL, suffix="", cache=".llm_cache"),
+    "llama": dict(
+        model="mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+        suffix="_llama",
+        cache=".llm_cache_llama",
+    ),
+}
+
+
 class Runner:
-    def __init__(self):
-        cache_dir = os.path.join(OUT, ".llm_cache")
-        self.llm = graders.LocalLLM(AUDIT_MODEL, cache_dir=cache_dir, max_tokens=700)
+    def __init__(self, judge="gemma"):
+        cache_dir = os.path.join(OUT, JUDGES[judge]["cache"])
+        self.llm = graders.LocalLLM(JUDGES[judge]["model"], cache_dir=cache_dir, max_tokens=700)
         self.holistic = judge2.SentenceCheck(cli=self.llm)
 
     def audit(self, key, reference, candidate):
@@ -212,8 +222,8 @@ def load_extraction(which):
     return json.load(open(set_c.P("extraction_v5.json")))
 
 
-def current_judge_rows(which):
-    path = P(f"audit_calls_{which}.jsonl")
+def current_judge_rows(which, judge="gemma"):
+    path = P(f"audit_calls_{which}{JUDGES[judge]['suffix']}.jsonl")
     calls = collections.defaultdict(dict)
     if os.path.exists(path):
         for line in open(path):
@@ -232,11 +242,76 @@ def current_holistic_rows(which):
     return rows
 
 
+CONCEPT = {
+    "size_mm": "size",
+    "size_pct": "size",
+    "size": "size",
+    "hc_mm": "hc",
+    "hc_abs_mm": "hc",
+}
+KEY_FIELDS = {
+    "breast": ("path", "birads", "size_mm", "size_pct"),
+    "thyroid": ("tirads", "size_mm", "size_pct", "comp"),
+    "fetal": ("hc_mm", "plane"),
+}
+
+
+def blind(row):
+    """Amendment 2 item 1: scorers never see the planted severity label."""
+    return dict(row, severity=None)
+
+
+def field_penalties(row, differences):
+    return {
+        field: s46.PENALTY[s46.severity_for(row["organ"], field, blind(row))]
+        for field in differences
+    }
+
+
+def v5_v6_scores(row, differences):
+    penalties = field_penalties(row, differences)
+    merged = {}
+    for field, value in penalties.items():
+        concept = CONCEPT.get(field, field)
+        merged[concept] = max(merged.get(concept, 0.0), value)
+    v5 = max(0.0, 1.0 - sum(merged.values()))
+    v6 = 1.0 / (1.0 + sum(penalties.values()))
+    return v5, v6
+
+
+def crqs_paper_exact(row, flat):
+    """CRQS per arXiv 2607.18448 Eq. (2)-(5), signed weights of Appendix A.7, /0.7."""
+    reference = {k: v for k, v in row["gold"].items() if v is not None and str(v).strip()}
+    candidate = {k: v for k, v in flat.items() if v is not None and str(v).strip()}
+    matches = {
+        key: key in reference and key in candidate and s46.v5.vmatch(key, candidate[key], reference[key])
+        for key in set(reference) | set(candidate)
+    }
+    cfc = sum(matches[k] for k in reference) / len(reference) if reference else 0.0
+    key_reference = [k for k in KEY_FIELDS[row["organ"]] if k in reference]
+    kir = sum(matches[k] for k in key_reference) / len(key_reference) if key_reference else 0.0
+    hr = (
+        sum(1 for k in candidate if k not in reference or not matches[k]) / len(candidate)
+        if candidate
+        else 0.0
+    )
+    common = [k for k in candidate if k in reference]
+    cds = sum(not matches[k] for k in common) / len(common) if common else 0.0
+    raw = 0.3 * cfc + 0.4 * kir - 0.2 * hr - 0.4 * cds
+    normalized = raw / 0.7
+    return {"CFC": cfc, "KIR": kir, "HR": hr, "CDS": cds, "raw": raw,
+            "normalized": normalized, "clipped": min(1.0, max(0.0, normalized))}
+
+
+def audits_needed(row, extraction):
+    return not is_rule_major(row, extraction[row["id"]])[1]
+
+
 def is_rule_major(row, extraction):
     diffs = s46.rule_result(row, extraction["flat"])
     major_fields = []
     for field in diffs:
-        severity = s46.severity_for(row["organ"], field, row)
+        severity = s46.severity_for(row["organ"], field, blind(row))
         if severity in {"major", "critical"}:
             major_fields.append(field)
     return diffs, major_fields
@@ -261,11 +336,12 @@ def run_calls(which="devval", args=None):
     if which in ("devval", "test"):
         rows = [row for row in rows if row["kind"] in ("error", "harmless")]
     extraction = load_extraction(which)
-    audits = current_judge_rows(which)
+    judge = getattr(args, "judge", "gemma") if args is not None else "gemma"
+    audits = current_judge_rows(which, judge)
     holistic = current_holistic_rows(which)
-    audit_path = P(f"audit_calls_{which}.jsonl")
+    audit_path = P(f"audit_calls_{which}{JUDGES[judge]['suffix']}.jsonl")
     holistic_path = P(f"holistic_{which}.jsonl")
-    runner = Runner()
+    runner = Runner(judge)
     deadline = time.time() + (getattr(args, "max_hours", 8.0) * 3600)
     new_calls = 0
     for index, row in enumerate(rows, 1):
@@ -286,7 +362,7 @@ def run_calls(which="devval", args=None):
                 )
                 audits[row["id"]][key] = {"parsed": parsed, "raw": raw}
                 new_calls += 1
-        if which != "setr" and not differences and row["id"] not in holistic:
+        if judge == "gemma" and which != "setr" and not differences and row["id"] not in holistic:
             if time.time() >= deadline:
                 print("holistic time cap reached at", index, "of", len(rows), flush=True)
                 return
@@ -301,10 +377,11 @@ def run_calls(which="devval", args=None):
 
 def evaluate_row(row, flat, audit_rows, holistic_result):
     differences = s46.rule_result(row, flat)
-    rule_score, _ = s46.primary_score(row, flat)
+    rule_score, _ = s46.primary_score(blind(row), flat)
     v1_score = 1.0 if rule_score is None else rule_score
+    v5_score, v6_score = v5_v6_scores(row, differences)
     v0_score, _ = s46.primary_score(
-        row,
+        blind(row),
         flat,
         holistic_result.get("judge") if holistic_result else None,
     )
@@ -332,7 +409,7 @@ def evaluate_row(row, flat, audit_rows, holistic_result):
     reasons = []
     major_fields = []
     for field in differences:
-        severity = s46.severity_for(row["organ"], field, row)
+        severity = s46.severity_for(row["organ"], field, blind(row))
         if severity in {"major", "critical"}:
             major_fields.append(field)
     rule_major = bool(major_fields)
@@ -400,6 +477,8 @@ def evaluate_row(row, flat, audit_rows, holistic_result):
         "rule_major_fields": major_fields,
         "v0_score": v0_score,
         "v1_score": v1_score,
+        "v5_score": v5_score,
+        "v6_score": v6_score,
         "v2_score": v2_score,
         "v2_flag": v2_flag,
         "audit": parsed,
@@ -412,7 +491,7 @@ def evaluate_row(row, flat, audit_rows, holistic_result):
     }
 
 
-def score_rows(which="devval"):
+def score_rows(which="devval", judge="gemma"):
     if which == "devval":
         rows = set_b_candidates("devval")
     elif which == "setr":
@@ -422,7 +501,7 @@ def score_rows(which="devval"):
     if which in ("devval", "test"):
         rows = [row for row in rows if row["kind"] in ("error", "harmless")]
     extraction = load_extraction(which)
-    audits = current_judge_rows(which)
+    audits = current_judge_rows(which, judge)
     holistic = current_holistic_rows(which)
     scored = []
     for row in rows:
@@ -473,7 +552,7 @@ def scalar_scores(which, rows):
             print(which, "comparator", key, len(values), flush=True)
 
         model_path = os.path.join(
-            set_a.ROOT,
+            s46.set_a.ROOT,
             "results",
             "partA",
             "step45_improve_scorers",
@@ -494,7 +573,7 @@ def scalar_scores(which, rows):
                 "bertscore[roberta-large]": new_values[row["id"]]["bertscore"],
                 "ratescore": new_values[row["id"]]["ratescore"],
             }
-            vectors.append(part_e.vec(feature_scores, row["ref"], row["cand"], row["organ"]))
+            vectors.append(s46.part_e.vec(feature_scores, row["ref"], row["cand"], row["organ"]))
         learned_values = 1.0 - learned.predict_proba(np.asarray(vectors, dtype=float))[:, 1]
         for row, value in zip(missing, learned_values):
             saved[row["id"]]["step45_learned"] = float(value)
@@ -506,7 +585,10 @@ def scalar_scores(which, rows):
         row.update(saved[row["id"]])
         row["crqs_normalized"] = s46.crqs_score(row, flat)["normalized"]
         row["crqs_clipped"] = s46.crqs_score(row, flat)["clipped"]
-    json.dump({row["id"]: {key: row[key] for key in (*score_keys, "crqs_normalized", "crqs_clipped")} for row in core}, open(path, "w"), ensure_ascii=False)
+        paper = crqs_paper_exact(row, flat)
+        row["crqs_paper_normalized"] = paper["normalized"]
+        row["crqs_paper_clipped"] = paper["clipped"]
+    json.dump({row["id"]: {key: row[key] for key in (*score_keys, "crqs_normalized", "crqs_clipped", "crqs_paper_normalized", "crqs_paper_clipped")} for row in core}, open(path, "w"), ensure_ascii=False)
     return core
 
 
@@ -567,7 +649,7 @@ def freeze_devval(args=None):
         if row["id"] not in extraction:
             missing.append(row["id"] + "|extraction")
             continue
-        if any(key not in audits.get(row["id"], {}) for key in PROMPT_KEYS):
+        if audits_needed(row, extraction) and any(key not in audits.get(row["id"], {}) for key in PROMPT_KEYS):
             missing.append(row["id"])
         if not s46.rule_result(row, extraction[row["id"]]["flat"]) and row["id"] not in holistic:
             missing.append(row["id"])
@@ -582,6 +664,7 @@ def freeze_devval(args=None):
     route_share = float(np.mean([row["v3_route"] for row in core_scored])) if core_scored else None
     comparator_keys = (
         "crqs_normalized",
+        "crqs_paper_normalized",
         "bleu",
         "rougeL",
         "chrf",
@@ -678,6 +761,29 @@ def extract_set_r():
     print("saved Set R extraction", len(results), flush=True)
 
 
+def clopper_pearson_upper(misses, n, level=0.95):
+    from scipy.stats import beta
+    if n == 0:
+        return None
+    if misses >= n:
+        return 1.0
+    return float(beta.ppf(level, misses + 1, n - misses))
+
+
+def miss_rate_h1(rows):
+    """Amendment 2 item 2: unrouted planted major/critical errors / all of them."""
+    major = [row for row in rows if row["kind"] == "error" and row.get("severity") in (2, 3)]
+    misses = sum(not row["v3_route"] for row in major)
+    upper = clopper_pearson_upper(misses, len(major))
+    return {
+        "n_major_or_critical": len(major),
+        "misses": misses,
+        "miss_rate": (misses / len(major)) if major else None,
+        "upper_95_clopper_pearson": upper,
+        "groups_with_major_or_critical": len({row["group"] for row in major}),
+    }
+
+
 def bootstrap_h1(rows, draws=1000, seed=0):
     major_errors = [row for row in rows if row["kind"] == "error" and row.get("severity") in (2, 3)]
     groups = sorted({row["group"] for row in rows})
@@ -757,7 +863,7 @@ def require_complete_calls(which, rows):
         if row["id"] not in extraction:
             missing.append(row["id"] + "|extraction")
             continue
-        if any(key not in audits.get(row["id"], {}) for key in PROMPT_KEYS):
+        if audits_needed(row, extraction) and any(key not in audits.get(row["id"], {}) for key in PROMPT_KEYS):
             missing.append(row["id"] + "|audit")
         if which != "setr" and not s46.rule_result(row, extraction[row["id"]]["flat"]) and row["id"] not in holistic:
             missing.append(row["id"] + "|holistic")
@@ -785,13 +891,13 @@ def limit_of_detection_metrics():
     for row in core_rows:
         if row["kind"] != "harmless" or row["id"] not in extraction:
             continue
-        score, _ = s46.primary_score(row, extraction[row["id"]]["flat"])
+        score, _ = s46.primary_score(blind(row), extraction[row["id"]]["flat"])
         base_scores[row["case"]].append(1.0 if score is None else float(score))
     lod_rows = []
     for row in rows:
         if row["kind"] != "lod" or row["id"] not in extraction or row["case"] not in base_scores:
             continue
-        score, _ = s46.primary_score(row, extraction[row["id"]]["flat"])
+        score, _ = s46.primary_score(blind(row), extraction[row["id"]]["flat"])
         lod_rows.append(dict(row, v1_score=1.0 if score is None else float(score)))
     output = {}
     for name, matches in (
@@ -865,7 +971,7 @@ def evaluate_test(args=None):
         key: grouped_catch_difference(core, key + "_route")
         for key in frozen["comparator_cutoffs"]
     }
-    h2_required = {key: value for key, value in h2_comparisons.items() if key != "step45_learned"}
+    h2_required = {key: value for key, value in h2_comparisons.items() if key not in ("step45_learned", "crqs_paper_normalized")}
     paired_cases = {
         row["case"] for row in core if row["kind"] == "error"
     } & {row["case"] for row in core if row["kind"] == "harmless"}
@@ -878,7 +984,8 @@ def evaluate_test(args=None):
         for organ in sorted({row["organ"] for row in core})
     }
     n_test_cases = len(paired_cases)
-    sample_eligible = n_test_cases >= 300 and bool(group_counts_by_organ) and all(
+    n_major_critical = sum(1 for row in core if row["kind"] == "error" and row.get("severity") in (2, 3))
+    sample_eligible = n_major_critical >= 400 and bool(group_counts_by_organ) and all(
         count >= 30 for count in group_counts_by_organ.values()
     )
     h2_pass = sample_eligible and bool(h2_required) and all(
@@ -909,16 +1016,50 @@ def evaluate_test(args=None):
     h1 = bootstrap_h1(core)
     harmless_route = float(np.mean([row["v3_route"] for row in core if row["kind"] == "harmless"])) if any(row["kind"] == "harmless" for row in core) else None
     h1["harmless_routed_share"] = harmless_route
+    h1["amendment2_miss_rate"] = miss_rate_h1(core)
     h1["pass"] = bool(
         not h1.get("too_small_to_compare", False)
-        and h1.get("auto_pass_major_critical_share") is not None
-        and h1["auto_pass_major_critical_share"] <= 0.01
-        and h1.get("ci") is not None
-        and h1["ci"][1] <= 0.02
+        and h1["amendment2_miss_rate"]["upper_95_clopper_pearson"] is not None
+        and h1["amendment2_miss_rate"]["upper_95_clopper_pearson"] <= 0.02
         and harmless_route is not None
         and harmless_route <= 0.30
         and sample_eligible
     )
+
+    h9 = {"status": "second-judge calls not found"}
+    if os.path.exists(P("audit_calls_test_llama.jsonl")):
+        llama_audits = current_judge_rows("test", "llama")
+        extraction_test = load_extraction("test")
+        incomplete = [
+            row["id"]
+            for row in core
+            if row["id"] in extraction_test
+            and audits_needed(row, extraction_test)
+            and any(key not in llama_audits.get(row["id"], {}) for key in PROMPT_KEYS)
+        ]
+        if incomplete:
+            h9 = {"status": "incomplete", "missing_reports": len(incomplete)}
+        else:
+            llama_rows = {r["id"]: r for r in score_rows("test", "llama") if r["kind"] in ("error", "harmless")}
+            both = [row for row in core if row["id"] in llama_rows]
+            for row in both:
+                row["llama_v3_route"] = llama_rows[row["id"]]["v3_route"]
+            llama_view = [dict(row, v3_route=row["llama_v3_route"]) for row in both]
+            h9 = {
+                "status": "complete",
+                "gemma": {
+                    "error_catch": float(np.mean([r["v3_route"] for r in both if r["kind"] == "error"])),
+                    "harmless_routed_share": float(np.mean([r["v3_route"] for r in both if r["kind"] == "harmless"])),
+                    "h1_miss_rate": miss_rate_h1(both),
+                },
+                "llama": {
+                    "error_catch": float(np.mean([r["llama_v3_route"] for r in both if r["kind"] == "error"])),
+                    "harmless_routed_share": float(np.mean([r["llama_v3_route"] for r in both if r["kind"] == "harmless"])),
+                    "h1_miss_rate": miss_rate_h1(llama_view),
+                },
+                "routes_differ_share": float(np.mean([r["v3_route"] != r["llama_v3_route"] for r in both])),
+                "note": "descriptive; if the two judges disagree on H1 or H2 both are reported",
+            }
 
     set_b_metrics = json.load(open(s46.P("metrics.json")))
     crqs_set_b = set_b_metrics.get("crqs_normalized", {}).get("auroc")
@@ -946,10 +1087,14 @@ def evaluate_test(args=None):
             "groups_by_organ": group_counts_by_organ,
             "meets_preregistered_minimum": sample_eligible,
         },
-        "variants_tried": ["V0", "V1", "V2", "V3", "V4"],
+        "variants_tried": ["V0", "V1", "V2", "V3", "V4", "V5", "V6"],
         "V0": s46.grouped_auc(core, "V0", "v0_score"),
         "V1": v1_auc,
         "V2": s46.grouped_auc(core, "V2", "v2_score"),
+        "V5": s46.grouped_auc(core, "V5", "v5_score"),
+        "V6": s46.grouped_auc(core, "V6", "v6_score"),
+        "H8_V5_minus_V1": s46.paired_auc_difference(core, "v1_score", primary_key="v5_score"),
+        "H8_V6_minus_V1": s46.paired_auc_difference(core, "v1_score", primary_key="v6_score"),
         "H1": h1,
         "H2": {
             "same_budget_as_v3_devval": frozen["v3_route_budget"],
@@ -973,6 +1118,7 @@ def evaluate_test(args=None):
         "H5": h5,
         "H6_Set_R": evaluate_set_r(),
         "H7": h7,
+        "H9_second_judge": h9,
         "frozen_thresholds_sha256": frozen["sha256"],
     }
     json.dump(scored, open(P("scored_test.json"), "w"), ensure_ascii=False)
@@ -980,11 +1126,60 @@ def evaluate_test(args=None):
     print(json.dumps(metrics, indent=1))
 
 
+TRIAL_COLUMNS = (
+    "trial_id", "date", "description", "code_git_hash", "judge",
+    "dev_auroc", "catch_major_critical_at_30pct_harmless", "model_calls_per_report", "notes",
+)
+
+
+def log_trial(**fields):
+    """Amendment 2 item 6: every Stage 1 trial is appended, none deleted."""
+    path = P("trial_log.csv")
+    new = not os.path.exists(path)
+    with open(path, "a", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=TRIAL_COLUMNS)
+        if new:
+            writer.writeheader()
+        writer.writerow({key: fields.get(key, "") for key in TRIAL_COLUMNS})
+
+
+def export_handcheck(n=50, seed=0):
+    """Amendment 2 item 8: 50 Set C reports, extractor v5 fields beside the text, no scores, no labels."""
+    path = P("handcheck_setC.csv")
+    if os.path.exists(path):
+        raise RuntimeError("handcheck_setC.csv already exists; refusing to overwrite.")
+    rows = [r for r in set_c_candidates() if r["kind"] in ("error", "harmless")]
+    extraction = load_extraction("test")
+    strata = collections.defaultdict(list)
+    for row in rows:
+        if row["id"] in extraction:
+            strata[(row["organ"], row["kind"])].append(row)
+    rng = np.random.default_rng(seed)
+    for key in strata:
+        rng.shuffle(strata[key])
+    chosen = []
+    keys = sorted(strata)
+    while len(chosen) < n and any(strata[k] for k in keys):
+        for key in keys:
+            if strata[key] and len(chosen) < n:
+                chosen.append(strata[key].pop())
+    rng.shuffle(chosen)
+    with open(path, "w", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["report_id", "organ", "report_text", "field", "extracted_value", "correct_yes_no", "notes"])
+        for row in chosen:
+            flat = extraction[row["id"]]["flat"]
+            for field, value in sorted(flat.items()):
+                writer.writerow([row["id"], row["organ"], row["cand"], field, value, "", ""])
+    print("wrote", path, "reports", len(chosen))
+
+
 def main():
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=("calls", "freeze-devval", "extract-setr", "score-test"))
+    parser.add_argument("command", choices=("calls", "freeze-devval", "extract-setr", "score-test", "export-handcheck"))
+    parser.add_argument("--judge", choices=tuple(JUDGES), default="gemma")
     parser.add_argument("--set", choices=("devval", "test", "setr"), default="devval")
     parser.add_argument("--max-hours", type=float, default=8.0)
     args = parser.parse_args()
@@ -993,6 +1188,8 @@ def main():
         run_calls(args.set, args)
     elif args.command == "freeze-devval":
         freeze_devval(args)
+    elif args.command == "export-handcheck":
+        export_handcheck()
     elif args.command == "extract-setr":
         extract_set_r()
     else:
