@@ -1,0 +1,7 @@
+# SHA-256 of Step 47 code and pre-registration, written 2026-11-24T07:19:17Z before freeze-devval
+e877d63c93823ea89792d780d009af87ef68995681e3b0c6df71c6a8557b42fa  usmeta/usmeta/step47_audit_route.py
+92cbb4320436e02019b8ec471d652c88553d80f152a17f372be46c539334fd79  usmeta/usmeta/step47_freetext.py
+ed5d37ee176f4916c7799172010296d4599710b565b867a7583140f50cd119c4  usmeta/results/partA/step47_audit_route/prompts.json
+eadc13a04535d0ddfcc7b713e724986092c815c02818f7991228b8a76304aa5a  usmeta/results/partA/step47_audit_route/PREREG.md
+f5be55205a36f201e32c7d32f6337c7e116e77c2d30a20d41d1cecdf6ad73052  usmeta/results/partA/step47_audit_route/PREREG_AMENDMENT.md
+7a64504eef1f9472d25cca0025274f6fe4ce4f412c82a53366bb88641e094ec4  usmeta/results/partA/step47_audit_route/PREREG_AMENDMENT_2.md
