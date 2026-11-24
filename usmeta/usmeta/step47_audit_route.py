@@ -303,6 +303,49 @@ def crqs_paper_exact(row, flat):
             "normalized": normalized, "clipped": min(1.0, max(0.0, normalized))}
 
 
+def s1_route(parsed, differences, major_fields):
+    """Stage 1 winner (trial T12, dev/val only; amendment 3).
+
+    Route when: a rule finds a major difference or any difference; any judge
+    reply could not be parsed; the three prompt presentations disagree on
+    whether there is a major issue; any reply says unsure; or any reply makes a
+    major claim (quote validity no longer gates a major claim).
+    """
+    reasons = []
+    if major_fields:
+        reasons.extend(f"rule_major:{field}" for field in major_fields)
+    if differences:
+        reasons.append("rule_difference")
+    replies = [parsed.get(key) for key in PROMPT_KEYS]
+    if any(reply is None for reply in replies):
+        reasons.append("unparsed_judge_reply")
+    else:
+        majors = [any(i["severity"] == "major" for i in reply["issues"]) for reply in replies]
+        if majors[0] != majors[1]:
+            reasons.append("order_swap_disagreement")
+        if majors[0] != majors[2]:
+            reasons.append("prompt_reword_disagreement")
+    if any(
+        reply is not None
+        and (reply["verdict"] == "unsure" or any(i["severity"] == "unsure" for i in reply["issues"]))
+        for reply in replies
+    ):
+        reasons.append("judge_unsure")
+    if any(reply is not None and any(i["severity"] == "major" for i in reply["issues"]) for reply in replies):
+        reasons.append("judge_major_claim")
+    return bool(reasons), reasons
+
+
+LLAMA_SUBSET = 300
+
+
+def llama_subset(rows):
+    """Amendment 3: the second judge runs on a fixed 300-report subset (stable SHA-256 order of report IDs)."""
+    core = [row for row in rows if row["kind"] in ("error", "harmless")]
+    ordered = sorted(core, key=lambda row: hashlib.sha256(row["id"].encode()).hexdigest())
+    return {row["id"] for row in ordered[:LLAMA_SUBSET]}
+
+
 def audits_needed(row, extraction):
     return not is_rule_major(row, extraction[row["id"]])[1]
 
@@ -337,6 +380,9 @@ def run_calls(which="devval", args=None):
         rows = [row for row in rows if row["kind"] in ("error", "harmless")]
     extraction = load_extraction(which)
     judge = getattr(args, "judge", "gemma") if args is not None else "gemma"
+    if judge == "llama" and which == "test":
+        keep = llama_subset(rows)
+        rows = [row for row in rows if row["id"] in keep]
     audits = current_judge_rows(which, judge)
     holistic = current_holistic_rows(which)
     audit_path = P(f"audit_calls_{which}{JUDGES[judge]['suffix']}.jsonl")
@@ -470,6 +516,7 @@ def evaluate_row(row, flat, audit_rows, holistic_result):
     }
     v3_route = bool(rule_major or judge_major or any(r in uncertain_reasons for r in reasons))
     v4_route = bool(rule_major or judge_major)
+    s1, s1_reasons = s1_route(parsed, differences, major_fields)
     if v3_route and not reasons:
         reasons = ["unspecified_route_reason"]
     return {
@@ -485,6 +532,8 @@ def evaluate_row(row, flat, audit_rows, holistic_result):
         "quote_valid": valid,
         "invalid_quote_issue_indexes": invalid_quotes,
         "v3_route": v3_route,
+        "s1_route": s1,
+        "s1_route_reason": s1_reasons,
         "v3_route_reason": reasons if v3_route else [],
         "v4_route": v4_route,
         "v4_route_reason": [r for r in reasons if r.startswith("rule_major:") or r == "judge_major_valid_quote"] if v4_route else [],
@@ -1030,10 +1079,12 @@ def evaluate_test(args=None):
     if os.path.exists(P("audit_calls_test_llama.jsonl")):
         llama_audits = current_judge_rows("test", "llama")
         extraction_test = load_extraction("test")
+        subset_ids = llama_subset(core)
         incomplete = [
             row["id"]
             for row in core
-            if row["id"] in extraction_test
+            if row["id"] in subset_ids
+            and row["id"] in extraction_test
             and audits_needed(row, extraction_test)
             and any(key not in llama_audits.get(row["id"], {}) for key in PROMPT_KEYS)
         ]
@@ -1041,9 +1092,10 @@ def evaluate_test(args=None):
             h9 = {"status": "incomplete", "missing_reports": len(incomplete)}
         else:
             llama_rows = {r["id"]: r for r in score_rows("test", "llama") if r["kind"] in ("error", "harmless")}
-            both = [row for row in core if row["id"] in llama_rows]
+            both = [row for row in core if row["id"] in llama_rows and row["id"] in subset_ids]
             for row in both:
                 row["llama_v3_route"] = llama_rows[row["id"]]["v3_route"]
+                row["llama_s1_route"] = llama_rows[row["id"]]["s1_route"]
             llama_view = [dict(row, v3_route=row["llama_v3_route"]) for row in both]
             h9 = {
                 "status": "complete",
@@ -1058,8 +1110,45 @@ def evaluate_test(args=None):
                     "h1_miss_rate": miss_rate_h1(llama_view),
                 },
                 "routes_differ_share": float(np.mean([r["v3_route"] != r["llama_v3_route"] for r in both])),
+                "s1": {
+                    "gemma_error_catch": float(np.mean([r["s1_route"] for r in both if r["kind"] == "error"])),
+                    "gemma_harmless_routed": float(np.mean([r["s1_route"] for r in both if r["kind"] == "harmless"])),
+                    "llama_error_catch": float(np.mean([r["llama_s1_route"] for r in both if r["kind"] == "error"])),
+                    "llama_harmless_routed": float(np.mean([r["llama_s1_route"] for r in both if r["kind"] == "harmless"])),
+                    "routes_differ_share": float(np.mean([r["s1_route"] != r["llama_s1_route"] for r in both])),
+                },
+                "subset_size": len(both),
                 "note": "descriptive; if the two judges disagree on H1 or H2 both are reported",
             }
+
+    stage1 = load_frozen_stage1()
+    for row in core:
+        comparator = comparator_by_id[row["id"]]
+        for key, cutoff in stage1["comparator_cutoffs"].items():
+            row[key + "_s1budget_route"] = route_by_scalar(comparator, key, cutoff)
+    s1_h1 = miss_rate_h1([dict(r, v3_route=r["s1_route"]) for r in core])
+    s1_harmless = float(np.mean([r["s1_route"] for r in core if r["kind"] == "harmless"]))
+    s1_h2 = {
+        key: grouped_catch_difference(core, key + "_s1budget_route", v3_key="s1_route")
+        for key in stage1["comparator_cutoffs"]
+    }
+    s1_h2_required = {k: v for k, v in s1_h2.items() if k not in ("step45_learned", "crqs_paper_normalized")}
+    primary = {
+        "variant": stage1["primary_variant"],
+        "frozen_variants_sha256": stage1["sha256"],
+        "H1": dict(s1_h1, harmless_routed_share=s1_harmless, pass_=bool(
+            sample_eligible
+            and s1_h1["upper_95_clopper_pearson"] is not None
+            and s1_h1["upper_95_clopper_pearson"] <= 0.02
+            and s1_harmless <= 0.30
+        )),
+        "H2": {"comparators": s1_h2, "pass_": bool(sample_eligible and s1_h2_required and all(
+            not v.get("too_small_to_compare", False) and v.get("ci", [0, 0])[0] > 0 for v in s1_h2_required.values()
+        ))},
+        "error_catch": float(np.mean([r["s1_route"] for r in core if r["kind"] == "error"])),
+        "route_reasons": dict(collections.Counter(x for r in core if r["s1_route"] for x in r["s1_route_reason"])),
+        "all_routed_have_reason": all(bool(r["s1_route_reason"]) for r in core if r["s1_route"]),
+    }
 
     set_b_metrics = json.load(open(s46.P("metrics.json")))
     crqs_set_b = set_b_metrics.get("crqs_normalized", {}).get("auroc")
@@ -1087,7 +1176,7 @@ def evaluate_test(args=None):
             "groups_by_organ": group_counts_by_organ,
             "meets_preregistered_minimum": sample_eligible,
         },
-        "variants_tried": ["V0", "V1", "V2", "V3", "V4", "V5", "V6"],
+        "variants_tried": ["V0", "V1", "V2", "V3", "V4", "V5", "V6", "S1"],
         "V0": s46.grouped_auc(core, "V0", "v0_score"),
         "V1": v1_auc,
         "V2": s46.grouped_auc(core, "V2", "v2_score"),
@@ -1119,11 +1208,53 @@ def evaluate_test(args=None):
         "H6_Set_R": evaluate_set_r(),
         "H7": h7,
         "H9_second_judge": h9,
+        "PRIMARY_S1": primary,
         "frozen_thresholds_sha256": frozen["sha256"],
     }
     json.dump(scored, open(P("scored_test.json"), "w"), ensure_ascii=False)
     json.dump(metrics, open(P("metrics.json"), "w"), indent=1)
     print(json.dumps(metrics, indent=1))
+
+
+def freeze_stage1(args=None):
+    """Amendment 3: freeze the Stage 1 winner, its dev budget and same-budget comparator cutoffs."""
+    path = P("frozen_variants.json")
+    if os.path.exists(path):
+        raise RuntimeError("frozen_variants.json already exists; refusing to overwrite.")
+    if os.path.exists(set_c.P("set_C.json")):
+        raise RuntimeError("Set C already exists; Stage 1 can no longer be frozen.")
+    frozen_v3 = load_frozen_thresholds()
+    scored = score_rows("devval")
+    core = [row for row in scored if row["kind"] in ("error", "harmless")]
+    comparator_rows = scalar_scores("devval", core)
+    budget = float(np.mean([row["s1_route"] for row in core]))
+    cutoffs = {key: calibrate_route_cutoff(comparator_rows, key, budget) for key in frozen_v3["comparator_cutoffs"]}
+    major = [r for r in core if r["kind"] == "error" and r.get("severity") in (2, 3)]
+    frozen = {
+        "primary_variant": "S1 (Stage 1 trial T12)",
+        "replaces_v3_as_primary": True,
+        "stage1_trials_logged": 12,
+        "stage1_data": "Step 46 Set B dev-val saved Gemma replies only (no new model calls)",
+        "selection_metric": "catch of major/critical errors at harmless routed <= 30%, on dev",
+        "dev_s1_major_critical_catch": sum(r["s1_route"] for r in major) / len(major),
+        "dev_s1_harmless_routed": float(np.mean([r["s1_route"] for r in core if r["kind"] == "harmless"])),
+        "s1_route_budget": budget,
+        "comparator_cutoffs": cutoffs,
+        "v3_thresholds_sha256": frozen_v3["sha256"],
+        "code_sha256": hashlib.sha256(open(__file__, "rb").read()).hexdigest(),
+    }
+    frozen["sha256"] = hashlib.sha256(json.dumps(frozen, sort_keys=True).encode()).hexdigest()
+    json.dump(frozen, open(path, "w"), indent=1)
+    print(json.dumps({k: v for k, v in frozen.items() if k != "comparator_cutoffs"}, indent=1))
+
+
+def load_frozen_stage1():
+    data = json.load(open(P("frozen_variants.json")))
+    saved = data.pop("sha256")
+    if hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest() != saved:
+        raise RuntimeError("frozen_variants.json failed its SHA-256 check.")
+    data["sha256"] = saved
+    return data
 
 
 TRIAL_COLUMNS = (
@@ -1178,7 +1309,7 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=("calls", "freeze-devval", "extract-setr", "score-test", "export-handcheck"))
+    parser.add_argument("command", choices=("calls", "freeze-devval", "freeze-stage1", "extract-setr", "score-test", "export-handcheck"))
     parser.add_argument("--judge", choices=tuple(JUDGES), default="gemma")
     parser.add_argument("--set", choices=("devval", "test", "setr"), default="devval")
     parser.add_argument("--max-hours", type=float, default=8.0)
@@ -1190,6 +1321,8 @@ def main():
         freeze_devval(args)
     elif args.command == "export-handcheck":
         export_handcheck()
+    elif args.command == "freeze-stage1":
+        freeze_stage1(args)
     elif args.command == "extract-setr":
         extract_set_r()
     else:

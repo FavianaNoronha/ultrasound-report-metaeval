@@ -1,0 +1,78 @@
+{
+ "source": "Step 46 Set B dev-val only",
+ "n_rows": 293,
+ "groups": 88,
+ "v3_route_budget": 0.5870307167235495,
+ "v3_routes": 172,
+ "v3_quote_valid_share": 0.48464163822525597,
+ "comparator_cutoffs": {
+  "crqs_normalized": {
+   "threshold": 1.0,
+   "tie_hash_max": "7209fb32201a4c4feb3f447d7c78b04f6c2dbbb2692bcabc4148c9cf7c7b56b0",
+   "devval_routes": 172,
+   "devval_route_share": 0.5870307167235495,
+   "target_route_share": 0.5870307167235495,
+   "n_devval": 293
+  },
+  "crqs_paper_normalized": {
+   "threshold": 1.0,
+   "tie_hash_max": "7209fb32201a4c4feb3f447d7c78b04f6c2dbbb2692bcabc4148c9cf7c7b56b0",
+   "devval_routes": 172,
+   "devval_route_share": 0.5870307167235495,
+   "target_route_share": 0.5870307167235495,
+   "n_devval": 293
+  },
+  "bleu": {
+   "threshold": 0.19520215011765987,
+   "tie_hash_max": "b56c9e48242c28dd2e1db4d54db15f950fdb6cf586eb75f3471c42becceeb505",
+   "devval_routes": 172,
+   "devval_route_share": 0.5870307167235495,
+   "target_route_share": 0.5870307167235495,
+   "n_devval": 293
+  },
+  "rougeL": {
+   "threshold": 0.5185185185185185,
+   "tie_hash_max": "e7849daf2d64a337019e65748d7670c4113ca9c71cef7acf2f56534a69df2e32",
+   "devval_routes": 172,
+   "devval_route_share": 0.5870307167235495,
+   "target_route_share": 0.5870307167235495,
+   "n_devval": 293
+  },
+  "chrf": {
+   "threshold": 0.5662160702367319,
+   "tie_hash_max": "8c6ea9685209885fb14cd3b9ba72df93f7db12ec70012cf614b80435a8528fec",
+   "devval_routes": 172,
+   "devval_route_share": 0.5870307167235495,
+   "target_route_share": 0.5870307167235495,
+   "n_devval": 293
+  },
+  "bertscore": {
+   "threshold": 0.9018728137016296,
+   "tie_hash_max": "af22d820c2e849bc2c1a0e75446abd7453b22aa34f858fd06c3a15f3a85b007b",
+   "devval_routes": 172,
+   "devval_route_share": 0.5870307167235495,
+   "target_route_share": 0.5870307167235495,
+   "n_devval": 293
+  },
+  "ratescore": {
+   "threshold": 0.6900019944590551,
+   "tie_hash_max": "7c4972a23de9f75eed5fb708ebfb37dd8db78964a724e4fda0948d28686bfc1a",
+   "devval_routes": 172,
+   "devval_route_share": 0.5870307167235495,
+   "target_route_share": 0.5870307167235495,
+   "n_devval": 293
+  },
+  "step45_learned": {
+   "threshold": 0.9759586117816559,
+   "tie_hash_max": "405d8b7feb4a80ec1e998d3cff4b02d083f0879d024a32e6adb6aa65fd36c152",
+   "devval_routes": 172,
+   "devval_route_share": 0.5870307167235495,
+   "target_route_share": 0.5870307167235495,
+   "n_devval": 293
+  }
+ },
+ "prompt_sha256": "f5f532f35496092125781e7075c90f26e399d2cf3c32914a88200793054ef2a4",
+ "audit_model": "mlx-community/gemma-2-9b-it-4bit",
+ "calibration_rows_sha256": "5e3cbfd6ab64fea4ca302b8a2111425dd29dfc6a66d821543551f96ed419bab4",
+ "sha256": "91ea3053113b7bbe03f8b71dddef24129a514aed5f782c6e23070a3a6af99924"
+}

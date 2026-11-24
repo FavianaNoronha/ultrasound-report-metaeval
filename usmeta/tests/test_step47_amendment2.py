@@ -50,3 +50,28 @@ def test_clopper_pearson_and_miss_rate():
     out = s47.miss_rate_h1(rows)
     assert out["n_major_or_critical"] == 400
     assert out["misses"] == 4
+
+
+def _reply(verdict="clean", severities=()):
+    return {"verdict": verdict, "issues": [
+        {"candidate_quote": "x", "reference_quote": "y", "type": "contradicted", "severity": s, "reason": ""}
+        for s in severities]}
+
+
+def test_s1_route_amendment3():
+    keys = s47.PROMPT_KEYS
+    clean = {k: _reply() for k in keys}
+    assert s47.s1_route(clean, {}, [])[0] is False
+    assert s47.s1_route(clean, {"plane": "extractor_v5"}, [])[0] is True
+    assert s47.s1_route(dict(clean, **{keys[1]: None}), {}, [])[0] is True
+    minor_only = {k: _reply("minor", ["minor"]) for k in keys}
+    assert s47.s1_route(minor_only, {}, [])[0] is False
+    one_major = dict(clean, **{keys[2]: _reply("major", ["major"])})
+    routed, reasons = s47.s1_route(one_major, {}, [])
+    assert routed and "judge_major_claim" in reasons and "prompt_reword_disagreement" in reasons
+
+
+def test_llama_subset_is_fixed_and_300():
+    rows = [dict(id=f"r{i}", kind="harmless") for i in range(1000)]
+    a = s47.llama_subset(rows)
+    assert len(a) == 300 and a == s47.llama_subset(list(reversed(rows)))
