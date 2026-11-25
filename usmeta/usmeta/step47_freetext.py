@@ -22,7 +22,11 @@ OUT = os.path.join(ROOT, "results", "partA", "step47_audit_route", "set_C")
 P = lambda filename: os.path.join(OUT, filename)
 MODEL = "mlx-community/Mistral-7B-Instruct-v0.3-4bit"
 SEED = 47
-N_TEST_PER_ORGAN = 250  # Amendment 2 item 3: ~75% of twins are major/critical, ~85% survive the filters, so ~640 kept cases give >= 400 major/critical errors
+N_TEST_PER_ORGAN = 290
+# Amendment 2 item 3 needs >= 400 major/critical errors (~75% of twins are major/critical, ~85% survive filters).
+# Only 111 fresh fetal cases exist, so fetal uses all of them and breast/thyroid take 290 each (see DEVIATIONS.md).
+TARGET_PER_ORGAN = {"breast": 290, "thyroid": 290, "fetal": 290}
+SHORTFALL = {}
 
 # Step 45 builder, writer prompt, lexicon and gold filters are reused unchanged.
 base.OUT = OUT
@@ -87,16 +91,15 @@ def sample_cases(by_split, split, n_per_organ, rng):
             rng.shuffle(by_dataset[dataset])
         picked = []
         cursor = 0
-        while len(picked) < n_per_organ and any(by_dataset.values()):
+        target = TARGET_PER_ORGAN.get(organ, n_per_organ)
+        while len(picked) < target and any(by_dataset.values()):
             dataset = datasets[cursor % len(datasets)]
             cursor += 1
             if by_dataset[dataset]:
                 picked.append(by_dataset[dataset].pop())
-        if len(picked) < n_per_organ:
-            raise RuntimeError(
-                f"Only {len(picked)} fresh {organ} test cases remain; "
-                f"Step 47 planned {n_per_organ}."
-            )
+        if len(picked) < target:
+            SHORTFALL[organ] = {"planned": target, "available": len(picked)}
+            print(f"NOTE: only {len(picked)} fresh {organ} test cases remain; using all of them (planned {target}).", flush=True)
         selected.extend(picked)
     return selected
 
@@ -184,6 +187,7 @@ def plan(args):
         "mlx_lm_version": __import__("importlib.metadata", fromlist=["version"]).version("mlx-lm"),
         "planned_cases": len(cases),
         "planned_by_organ": dict(collections.Counter(c["organ"] for c in cases.values())),
+        "fresh_case_shortfall": SHORTFALL,
         "prior_report_case_ids_blocked": len(blocked),
         "overlap_with_prior_report_case_ids": len(set(cases) & blocked),
         "test_read_script": "usmeta.step47_freetext.plan",

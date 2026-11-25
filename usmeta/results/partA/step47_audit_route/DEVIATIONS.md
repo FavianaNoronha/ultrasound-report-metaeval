@@ -1,0 +1,3 @@
+# Step 47 deviations
+
+1. **2026-11-25, before any Set C report was generated.** `plan` stopped with "Only 111 fresh fetal test cases remain; Step 47 planned 250." The plan size per organ is an implementation choice, not a pre-registered number; the pre-registered rule is >= 400 major/critical planted errors and >= 30 groups per organ (amendment 2 item 3). Fix: fetal uses all 111 fresh cases; breast and thyroid take 290 each (about 690 cases, expected about 440 major/critical errors after filtering). If fewer than 400 remain after filtering, H1 is reported as not eligible, as pre-registered. No hypothesis, threshold or variant changes.
