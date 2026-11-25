@@ -199,6 +199,17 @@ def plan(args):
     json.dump(info, open(P("run_info.json"), "w"), indent=1)
 
 
+def fold_system(messages):
+    """Mistral's chat template has no system role: put the system text at the top of the first user turn."""
+    if not messages or messages[0].get("role") != "system":
+        return messages
+    system, rest = messages[0]["content"], [dict(m) for m in messages[1:]]
+    if rest and rest[0].get("role") == "user":
+        rest[0]["content"] = system + "\n\n" + rest[0]["content"]
+        return rest
+    return [{"role": "user", "content": system}] + rest
+
+
 def generate(args):
     import mlx.core as mx
     from mlx_lm import generate as mlx_generate, load
@@ -227,7 +238,7 @@ def generate(args):
                 print("time cap reached after", index - 1, "items", flush=True)
                 break
             prompt = tokenizer.apply_chat_template(
-                item["messages"], add_generation_prompt=True, tokenize=False
+                fold_system(item["messages"]), add_generation_prompt=True, tokenize=False
             )
             mx.random.seed(zlib.crc32(f"{SEED}|{item['id']}".encode()) & 0x7FFFFFFF)
             item_started = time.time()
