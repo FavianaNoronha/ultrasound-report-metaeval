@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7fb">
+  <title>EchoCheck — Ultrasound report research demo</title>
+  <style>
+    :root { color-scheme: light; --ink:#18252b; --muted:#718087; --line:#dce5e7; --paper:#fff; --canvas:#f3f7f7; --teal:#087e78; --teal-dark:#075c59; --mint:#e2f4ef; --amber:#9a6720; --amber-bg:#fff5df; --red:#ad4c45; --red-bg:#fff0ed; --shadow:0 14px 36px rgba(23,52,57,.07); }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--canvas); color:var(--ink); font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    button,select,textarea { font:inherit; }
+    .top { height:72px; display:flex; align-items:center; justify-content:space-between; padding:0 clamp(20px,5vw,72px); background:#fff; border-bottom:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:12px; font-size:19px; font-weight:750; letter-spacing:-.4px; }
+    .mark { width:34px; height:34px; display:grid; place-items:center; border-radius:11px; color:white; background:var(--teal); font-size:16px; }
+    .brand small { display:block; color:var(--muted); font-size:11px; font-weight:550; letter-spacing:.02em; }
+    .top-right { display:flex; align-items:center; gap:10px; color:var(--muted); font-size:12px; }
+    .local-dot { width:8px; height:8px; border-radius:50%; background:#3d9a71; box-shadow:0 0 0 3px #e6f4ed; }
+    main { max-width:1260px; padding:34px 26px 48px; margin:auto; }
+    .intro { display:flex; justify-content:space-between; align-items:end; gap:24px; margin:0 0 25px; }
+    h1 { margin:0; font-size:clamp(27px,3vw,37px); line-height:1.13; letter-spacing:-1.1px; }
+    .intro p { margin:10px 0 0; color:var(--muted); max-width:710px; }
+    .tag { padding:7px 11px; border:1px solid #cfe4df; border-radius:20px; color:var(--teal-dark); background:#f7fcfa; white-space:nowrap; font-size:12px; font-weight:700; }
+    .notice { display:flex; gap:12px; align-items:flex-start; padding:13px 16px; margin:0 0 20px; border:1px solid #ecd9ad; border-radius:12px; background:var(--amber-bg); color:#684914; font-size:13px; }
+    .notice strong { display:block; margin-bottom:1px; }
+    .layout { display:grid; grid-template-columns:minmax(300px,.9fr) minmax(420px,1.35fr); gap:20px; align-items:start; }
+    .card { overflow:hidden; background:var(--paper); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); }
+    .card-head { display:flex; align-items:center; justify-content:space-between; padding:19px 21px 15px; border-bottom:1px solid #edf1f2; }
+    .card-head h2 { margin:0; font-size:16px; letter-spacing:-.2px; }
+    .step { color:#829097; font-size:11px; font-weight:750; letter-spacing:.09em; text-transform:uppercase; }
+    .card-body { padding:20px 21px 22px; }
+    label { display:block; margin:0 0 7px; color:#3a4b52; font-size:12px; font-weight:700; }
+    select,textarea { width:100%; padding:11px 12px; border:1px solid #d6e0e2; border-radius:9px; background:#fff; color:var(--ink); outline:none; }
+    select:focus,textarea:focus { border-color:#58a9a0; box-shadow:0 0 0 3px #ddf2ed; }
+    .field { margin-bottom:17px; }
+    .tabs { display:grid; grid-template-columns:1fr 1fr; gap:4px; padding:4px; margin-bottom:18px; border-radius:10px; background:#eff4f4; }
+    .tab { border:0; border-radius:7px; padding:9px; background:transparent; color:#63747a; font-size:13px; font-weight:700; cursor:pointer; }
+    .tab.active { background:#fff; color:var(--teal-dark); box-shadow:0 1px 5px #183d3e17; }
+    .drop { display:grid; place-items:center; min-height:208px; padding:18px; border:1.5px dashed #b7ccce; border-radius:12px; background:#f8fbfb; text-align:center; cursor:pointer; transition:.15s; }
+    .drop.drag,.drop:hover { border-color:var(--teal); background:#f0faf7; }
+    .upload-icon { display:grid; place-items:center; width:42px; height:42px; margin:0 auto 10px; border-radius:13px; background:var(--mint); color:var(--teal-dark); font-size:21px; }
+    .drop b { display:block; font-size:13px; }
+    .drop span { display:block; margin-top:5px; color:var(--muted); font-size:11px; }
+    .drop input { display:none; }
+    .preview-wrap { margin-top:12px; }
+    .preview-wrap img { display:block; max-width:100%; max-height:260px; margin:auto; border-radius:8px; object-fit:contain; }
+    .preview-name { margin-top:7px; overflow:hidden; color:var(--muted); font-size:11px; text-align:center; text-overflow:ellipsis; white-space:nowrap; }
+    .btn { width:100%; display:flex; justify-content:center; align-items:center; gap:8px; padding:12px 15px; border:0; border-radius:9px; background:var(--teal); color:white; font-weight:750; cursor:pointer; transition:background .15s,transform .15s; }
+    .btn:hover { background:var(--teal-dark); transform:translateY(-1px); }
+    .btn:disabled { background:#9bbab7; cursor:wait; transform:none; }
+    .btn.secondary { width:auto; padding:9px 12px; border:1px solid var(--line); background:#fff; color:#35545a; font-size:12px; }
+    .subtle { margin:10px 0 0; color:var(--muted); font-size:11px; }
+    .report-upload { display:flex; flex-direction:column; gap:12px; }
+    .file-button { padding:11px; border:1px dashed #b7ccce; border-radius:9px; background:#f8fbfb; color:#35545a; font-size:12px; font-weight:700; text-align:center; cursor:pointer; }
+    .file-button input { display:none; }
+    .report-box { min-height:155px; resize:vertical; font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace; }
+    .small-box { min-height:110px; resize:vertical; }
+    .candidate-box { min-height:230px; resize:vertical; }
+    .hint { color:var(--muted); font-size:11px; margin:-9px 0 15px; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .output-title { display:flex; align-items:center; justify-content:space-between; margin:0 0 8px; }
+    .output-title label { margin:0; }
+    .pill { padding:4px 8px; border-radius:20px; background:#edf5f3; color:var(--teal-dark); font-size:10px; font-weight:750; }
+    .score-panel { margin-top:17px; padding:15px; border:1px solid #d8e8e5; border-radius:12px; background:#f8fcfb; }
+    .score-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .score-value { font-size:30px; line-height:1; font-weight:780; letter-spacing:-1px; color:var(--teal-dark); }
+    .score-label { color:#51676b; font-size:12px; font-weight:700; }
+    .score-track { height:6px; margin:12px 0; border-radius:6px; background:#e3ebea; overflow:hidden; }
+    .score-fill { height:100%; width:0; border-radius:6px; background:var(--teal); transition:width .4s ease; }
+    .flags { margin:0; padding:0; list-style:none; }
+    .flags li { display:flex; gap:8px; align-items:flex-start; padding:8px 0; border-top:1px solid #e6eeee; font-size:12px; }
+    .flag-dot { flex:0 0 7px; width:7px; height:7px; margin-top:5px; border-radius:50%; background:#d58b32; }
+    .empty-flags { color:#54716c; font-size:12px; }
+    .score-foot { margin-top:10px; color:var(--muted); font-size:10px; }
+    details { margin-top:11px; border-top:1px solid #e6eeee; padding-top:10px; color:#51676b; font-size:11px; }
+    summary { cursor:pointer; font-weight:700; }
+    pre { max-height:190px; overflow:auto; margin:9px 0 0; padding:10px; border-radius:8px; background:#f0f5f4; color:#2d4549; font-size:10px; white-space:pre-wrap; }
+    .status { display:none; margin:12px 0 0; padding:10px 12px; border-radius:9px; background:#edf4f6; color:#35515b; font-size:12px; }
+    .status.show { display:block; }
+    .status.error { background:var(--red-bg); color:var(--red); }
+    .status.good { background:#eaf6ef; color:#2d6a4d; }
+    .divider { height:1px; margin:20px 0; background:#edf1f2; }
+    .footer { padding:19px 0 0; color:#829097; font-size:11px; text-align:center; }
+    .footer a { color:var(--teal-dark); }
+    @media(max-width:850px) { .layout { grid-template-columns:1fr; } .intro { align-items:start; flex-direction:column; } .split { grid-template-columns:1fr; } .top { padding:0 18px; } main { padding:25px 16px 38px; } }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><div class="mark">E</div><div>EchoCheck<small>ULTRASOUND REPORT RESEARCH DEMO</small></div></div>
+    <div class="top-right"><span class="local-dot"></span><span>Runs locally on this computer</span></div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><h1>Review a report, fact by fact.</h1><p>Generate an experimental draft from one ultrasound frame, or bring an existing report. Compare a candidate with a reference and inspect the scorer’s flags.</p></div>
+      <div class="tag">Research prototype · v0.1</div>
+    </section>
+    <div class="notice"><span>ⓘ</span><div><strong>For research demonstration only</strong>This prototype is not a medical device and does not provide a diagnosis. AI-generated text and scores can be wrong. A qualified clinician must review all outputs.</div></div>
+    <div class="layout">
+      <section class="card">
+        <div class="card-head"><h2>Choose an input</h2><span class="step">01 / SOURCE</span></div>
+        <div class="card-body">
+          <div class="field"><label for="organ">Ultrasound type</label><select id="organ"><option value="breast">Breast</option><option value="thyroid">Thyroid</option><option value="fetal">Fetal head</option></select></div>
+          <div class="tabs"><button class="tab active" data-tab="image">Image → draft</button><button class="tab" data-tab="report">Existing report</button></div>
+          <div id="imagePane">
+            <label class="drop" id="dropzone" for="imageFile"><div><div class="upload-icon">↑</div><b>Drop an ultrasound image here</b><span>or click to choose · PNG, JPG, WebP · max 12 MB</span></div><input id="imageFile" type="file" accept="image/png,image/jpeg,image/webp"></label>
+            <div id="imagePreview" class="preview-wrap"></div>
+            <button id="generateBtn" class="btn" style="margin-top:14px" disabled><span>✦</span> Generate draft report</button>
+            <p class="subtle">Uses the local MedGemma 1.5 4B model. One frame may not contain all information needed for a complete examination report.</p>
+          </div>
+          <div id="reportPane" hidden>
+            <div class="report-upload">
+              <label class="file-button" for="reportFile">Upload a plain-text report (.txt)<input id="reportFile" type="file" accept=".txt,text/plain"></label>
+              <label for="candidate">Or paste the candidate report</label>
+              <textarea id="candidateInput" class="report-box" placeholder="Paste an existing report here. It will be placed in the candidate box for comparison."></textarea>
+              <button id="useReportBtn" class="btn">Use this report for comparison</button>
+            </div>
+          </div>
+          <div id="leftStatus" class="status"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Compare the report</h2><span class="step">02 / REVIEW</span></div>
+        <div class="card-body">
+          <div class="output-title"><label for="candidateOutput">Candidate report</label><span class="pill" id="candidateSource">Awaiting input</span></div>
+          <textarea id="candidateOutput" class="candidate-box" placeholder="A generated draft or uploaded report will appear here. You can also paste or edit it directly."></textarea>
+          <div class="divider"></div>
+          <div class="output-title"><label for="reference">Reference report</label><span class="pill">Needed for scoring</span></div>
+          <textarea id="reference" class="small-box" placeholder="Paste a verified reference report. The current research scorer compares candidate facts with this reference."></textarea>
+          <p class="hint">Without a reference, this prototype cannot estimate factual agreement. Image-only scoring is not implemented.</p>
+          <button id="scoreBtn" class="btn"><span>⌕</span> Compare and score</button>
+          <div id="scoreStatus" class="status"></div>
+          <div id="scorePanel" class="score-panel" hidden>
+            <div class="score-top"><div><div class="step">RULES PREVIEW SCORE</div><div class="score-label">Reference-based agreement</div></div><div class="score-value" id="scoreValue">—</div></div>
+            <div class="score-track"><div class="score-fill" id="scoreFill"></div></div>
+            <ul class="flags" id="flags"></ul>
+            <details><summary>View extracted candidate facts</summary><pre id="factsOutput"></pre></details>
+            <div class="score-foot" id="scoreFoot"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="footer">EchoCheck is a research prototype. A high score does not establish that a report is correct. No patient data is stored by this local demo.</div>
+  </main>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    let image = null;
+    const status = (node, message, kind='') => { node.textContent = message; node.className = 'status show ' + kind; };
+    document.querySelectorAll('.tab').forEach(btn => btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x === btn));
+      $('imagePane').hidden = btn.dataset.tab !== 'image'; $('reportPane').hidden = btn.dataset.tab !== 'report';
+      $('leftStatus').className = 'status';
+    }));
+    function setImage(file) {
+      if (!file) return;
+      if (!['image/png','image/jpeg','image/webp'].includes(file.type) || file.size > 12 * 1024 * 1024) {
+        status($('leftStatus'), 'Choose a PNG, JPG, or WebP image smaller than 12 MB.', 'error'); return;
+      }
+      image = file; $('generateBtn').disabled = false;
+      const url = URL.createObjectURL(file);
+      $('imagePreview').replaceChildren();
+      const preview = document.createElement('img'); preview.alt = 'Selected ultrasound preview'; preview.src = url;
+      const fileName = document.createElement('div'); fileName.className = 'preview-name'; fileName.textContent = file.name;
+      $('imagePreview').append(preview, fileName);
+      $('leftStatus').className = 'status';
+    }
+    $('imageFile').addEventListener('change', e => setImage(e.target.files[0]));
+    const dz = $('dropzone');
+    ['dragenter','dragover'].forEach(n => dz.addEventListener(n,e=>{e.preventDefault();dz.classList.add('drag')}));
+    ['dragleave','drop'].forEach(n => dz.addEventListener(n,e=>{e.preventDefault();dz.classList.remove('drag')}));
+    dz.addEventListener('drop',e=>setImage(e.dataTransfer.files[0]));
+    $('generateBtn').addEventListener('click', async () => {
+      if (!image) return;
+      const btn = $('generateBtn'); btn.disabled = true; btn.textContent = 'Generating locally…';
+      status($('leftStatus'), 'Loading the local model and generating a draft. This may take several minutes.');
+      const data = new FormData(); data.append('image', image); data.append('organ', $('organ').value);
+      try {
+        const response = await fetch('/api/generate',{method:'POST',body:data}); const result = await response.json();
+        if (!response.ok) throw new Error(result.error || 'Generation failed.');
+        $('candidateOutput').value = result.report || ''; $('candidateSource').textContent = 'MedGemma draft';
+        status($('leftStatus'), `${result.model} · ${result.seconds ?? '—'} s. ${result.notice}`, 'good');
+      } catch (error) { status($('leftStatus'), error.message, 'error'); }
+      finally { btn.disabled = false; btn.innerHTML = '<span>✦</span> Generate draft report'; }
+    });
+    $('reportFile').addEventListener('change', async e => {
+      const file=e.target.files[0]; if (!file) return;
+      if (file.size > 200000) return status($('leftStatus'),'Text file must be under 200 KB.','error');
+      $('candidateInput').value=await file.text();
+    });
+    $('useReportBtn').addEventListener('click', () => {
+      const text=$('candidateInput').value.trim(); if (!text) return status($('leftStatus'),'Paste or upload a candidate report first.','error');
+      $('candidateOutput').value=text; $('candidateSource').textContent='Existing report';
+      status($('leftStatus'),'Candidate report added. Add a reference report to compare it.','good');
+    });
+    $('scoreBtn').addEventListener('click', async () => {
+      const candidate=$('candidateOutput').value.trim(), reference=$('reference').value.trim();
+      if (!candidate || !reference) return status($('scoreStatus'),'A candidate and a reference report are both required.','error');
+      const btn=$('scoreBtn'); btn.disabled=true; btn.textContent='Extracting facts and comparing…';
+      status($('scoreStatus'),'The local fact extractor is running.'); $('scorePanel').hidden=true;
+      try {
+        const response=await fetch('/api/score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({organ:$('organ').value,candidate,reference})});
+        const result=await response.json(); if (!response.ok) throw new Error(result.error||'Scoring failed.');
+        $('scorePanel').hidden=false; $('scoreValue').textContent=Number(result.score).toFixed(2); $('scoreFill').style.width=`${Math.max(0,Math.min(1,result.score))*100}%`;
+        $('flags').innerHTML='';
+        if (!result.flags.length) $('flags').innerHTML='<li class="empty-flags">No mismatch was detected by the enabled rule checks. This is not proof that the candidate is correct.</li>';
+        else result.flags.forEach(flag=>{
+          const li=document.createElement('li'), dot=document.createElement('span'), detail=document.createElement('span'), title=document.createElement('b');
+          dot.className='flag-dot'; title.textContent=flag.field; detail.append(title,document.createTextNode(` · ${flag.severity} · ${flag.detected_by} · reference: ${JSON.stringify(flag.reference_value)} · candidate: ${JSON.stringify(flag.candidate_value)}`));
+          li.append(dot,detail); $('flags').appendChild(li);
+        });
+        $('factsOutput').textContent=JSON.stringify(result.extracted_facts,null,2);
+        $('scoreFoot').textContent=result.notice;
+        status($('scoreStatus'),`${result.scorer} completed. Review the flags and extracted facts; do not use this score for clinical decisions.`,'good');
+      } catch(error) { status($('scoreStatus'),error.message,'error'); }
+      finally { btn.disabled=false; btn.innerHTML='<span>⌕</span> Compare and score'; }
+    });
+  </script>
+</body>
+</html>
