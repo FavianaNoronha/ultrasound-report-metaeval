@@ -1,0 +1,1060 @@
+report_id,organ,report_text,field,extracted_value,correct_yes_no,notes
+BUS-BRA:bus_0069-l|true|impression_first,breast,"Impression: Benign fibrocystic change, BI-RADS 3
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Upper central part of the image.
+- Orientation: Wider than tall.
+- Size: Approximately 42% of the image width.
+- BI-RADS category: 3.
+- Pathology: Benign.
+- Histologic type: Fibrocystic changes.",birads,3,yes,
+BUS-BRA:bus_0069-l|true|impression_first,breast,"Impression: Benign fibrocystic change, BI-RADS 3
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Upper central part of the image.
+- Orientation: Wider than tall.
+- Size: Approximately 42% of the image width.
+- BI-RADS category: 3.
+- Pathology: Benign.
+- Histologic type: Fibrocystic changes.",count,1,yes,
+BUS-BRA:bus_0069-l|true|impression_first,breast,"Impression: Benign fibrocystic change, BI-RADS 3
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Upper central part of the image.
+- Orientation: Wider than tall.
+- Size: Approximately 42% of the image width.
+- BI-RADS category: 3.
+- Pathology: Benign.
+- Histologic type: Fibrocystic changes.",hist,fibrocystic changes,yes,
+BUS-BRA:bus_0069-l|true|impression_first,breast,"Impression: Benign fibrocystic change, BI-RADS 3
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Upper central part of the image.
+- Orientation: Wider than tall.
+- Size: Approximately 42% of the image width.
+- BI-RADS category: 3.
+- Pathology: Benign.
+- Histologic type: Fibrocystic changes.",lesion,present,yes,
+BUS-BRA:bus_0069-l|true|impression_first,breast,"Impression: Benign fibrocystic change, BI-RADS 3
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Upper central part of the image.
+- Orientation: Wider than tall.
+- Size: Approximately 42% of the image width.
+- BI-RADS category: 3.
+- Pathology: Benign.
+- Histologic type: Fibrocystic changes.",orient,wider than tall,yes,
+BUS-BRA:bus_0069-l|true|impression_first,breast,"Impression: Benign fibrocystic change, BI-RADS 3
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Upper central part of the image.
+- Orientation: Wider than tall.
+- Size: Approximately 42% of the image width.
+- BI-RADS category: 3.
+- Pathology: Benign.
+- Histologic type: Fibrocystic changes.",path,benign,yes,
+BUS-BRA:bus_0069-l|true|impression_first,breast,"Impression: Benign fibrocystic change, BI-RADS 3
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Upper central part of the image.
+- Orientation: Wider than tall.
+- Size: Approximately 42% of the image width.
+- BI-RADS category: 3.
+- Pathology: Benign.
+- Histologic type: Fibrocystic changes.",pos,upper-central,yes,
+BUS-BRA:bus_0069-l|true|impression_first,breast,"Impression: Benign fibrocystic change, BI-RADS 3
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Upper central part of the image.
+- Orientation: Wider than tall.
+- Size: Approximately 42% of the image width.
+- BI-RADS category: 3.
+- Pathology: Benign.
+- Histologic type: Fibrocystic changes.",side,left,yes,
+BUS-BRA:bus_0069-l|true|impression_first,breast,"Impression: Benign fibrocystic change, BI-RADS 3
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Upper central part of the image.
+- Orientation: Wider than tall.
+- Size: Approximately 42% of the image width.
+- BI-RADS category: 3.
+- Pathology: Benign.
+- Histologic type: Fibrocystic changes.",size_pct,42,yes,
+HC18:375_HC|twin|terse,fetal,Head circumference: 164.4 mm (Calipers),hc_mm,164.4,yes,
+TN3K:trainval/2125.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is visualized in the upper central part of the image.
+- The nodule is taller than wide and measures approximately 17% of the image width.",count,1,yes,
+TN3K:trainval/2125.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is visualized in the upper central part of the image.
+- The nodule is taller than wide and measures approximately 17% of the image width.",lesion,present,yes,
+TN3K:trainval/2125.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is visualized in the upper central part of the image.
+- The nodule is taller than wide and measures approximately 17% of the image width.",orient,taller than wide,yes,
+TN3K:trainval/2125.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is visualized in the upper central part of the image.
+- The nodule is taller than wide and measures approximately 17% of the image width.",pos,upper-central,yes,
+TN3K:trainval/2125.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is visualized in the upper central part of the image.
+- The nodule is taller than wide and measures approximately 17% of the image width.",size_pct,17,yes,
+BUS-BRA:bus_0643-r|twin|impression_first,breast,"Impression: Benign fibroadenoma, BI-RADS 4, left breast.
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Middle central part of the image.
+- Orientation: Wider than tall.
+- Size: About 87% of the image width.
+- BI-RADS category: 4.
+- Pathology: Benign.
+- Histologic type: Fibroadenoma.",birads,4,yes,
+BUS-BRA:bus_0643-r|twin|impression_first,breast,"Impression: Benign fibroadenoma, BI-RADS 4, left breast.
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Middle central part of the image.
+- Orientation: Wider than tall.
+- Size: About 87% of the image width.
+- BI-RADS category: 4.
+- Pathology: Benign.
+- Histologic type: Fibroadenoma.",count,1,yes,
+BUS-BRA:bus_0643-r|twin|impression_first,breast,"Impression: Benign fibroadenoma, BI-RADS 4, left breast.
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Middle central part of the image.
+- Orientation: Wider than tall.
+- Size: About 87% of the image width.
+- BI-RADS category: 4.
+- Pathology: Benign.
+- Histologic type: Fibroadenoma.",hist,fibroadenoma,yes,
+BUS-BRA:bus_0643-r|twin|impression_first,breast,"Impression: Benign fibroadenoma, BI-RADS 4, left breast.
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Middle central part of the image.
+- Orientation: Wider than tall.
+- Size: About 87% of the image width.
+- BI-RADS category: 4.
+- Pathology: Benign.
+- Histologic type: Fibroadenoma.",lesion,present,yes,
+BUS-BRA:bus_0643-r|twin|impression_first,breast,"Impression: Benign fibroadenoma, BI-RADS 4, left breast.
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Middle central part of the image.
+- Orientation: Wider than tall.
+- Size: About 87% of the image width.
+- BI-RADS category: 4.
+- Pathology: Benign.
+- Histologic type: Fibroadenoma.",orient,wider than tall,yes,
+BUS-BRA:bus_0643-r|twin|impression_first,breast,"Impression: Benign fibroadenoma, BI-RADS 4, left breast.
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Middle central part of the image.
+- Orientation: Wider than tall.
+- Size: About 87% of the image width.
+- BI-RADS category: 4.
+- Pathology: Benign.
+- Histologic type: Fibroadenoma.",path,benign,yes,
+BUS-BRA:bus_0643-r|twin|impression_first,breast,"Impression: Benign fibroadenoma, BI-RADS 4, left breast.
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Middle central part of the image.
+- Orientation: Wider than tall.
+- Size: About 87% of the image width.
+- BI-RADS category: 4.
+- Pathology: Benign.
+- Histologic type: Fibroadenoma.",pos,middle-central,yes,
+BUS-BRA:bus_0643-r|twin|impression_first,breast,"Impression: Benign fibroadenoma, BI-RADS 4, left breast.
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Middle central part of the image.
+- Orientation: Wider than tall.
+- Size: About 87% of the image width.
+- BI-RADS category: 4.
+- Pathology: Benign.
+- Histologic type: Fibroadenoma.",side,left,yes,
+BUS-BRA:bus_0643-r|twin|impression_first,breast,"Impression: Benign fibroadenoma, BI-RADS 4, left breast.
+
+Findings:
+- A lesion (mass) is present.
+- Number of lesions: 1.
+- Side: Left breast.
+- Position in the image: Middle central part of the image.
+- Orientation: Wider than tall.
+- Size: About 87% of the image width.
+- BI-RADS category: 4.
+- Pathology: Benign.
+- Histologic type: Fibroadenoma.",size_pct,87,yes,
+DDTI:302_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 4b
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and approximately 19% of the image width.
+- The margin of the nodule appears microlobulated.
+- No echogenic foci are identified within the nodule.",count,1,yes,
+DDTI:302_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 4b
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and approximately 19% of the image width.
+- The margin of the nodule appears microlobulated.
+- No echogenic foci are identified within the nodule.",foci,none,yes,
+DDTI:302_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 4b
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and approximately 19% of the image width.
+- The margin of the nodule appears microlobulated.
+- No echogenic foci are identified within the nodule.",lesion,present,yes,
+DDTI:302_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 4b
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and approximately 19% of the image width.
+- The margin of the nodule appears microlobulated.
+- No echogenic foci are identified within the nodule.",margin,microlobulated,yes,
+DDTI:302_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 4b
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and approximately 19% of the image width.
+- The margin of the nodule appears microlobulated.
+- No echogenic foci are identified within the nodule.",orient,wider than tall,yes,
+DDTI:302_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 4b
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and approximately 19% of the image width.
+- The margin of the nodule appears microlobulated.
+- No echogenic foci are identified within the nodule.",pos,upper-central,yes,
+DDTI:302_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 4b
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and approximately 19% of the image width.
+- The margin of the nodule appears microlobulated.
+- No echogenic foci are identified within the nodule.",size_pct,19,yes,
+DDTI:302_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 4b
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and approximately 19% of the image width.
+- The margin of the nodule appears microlobulated.
+- No echogenic foci are identified within the nodule.",tirads,4b,yes,
+TN3K:trainval/1744.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule is present.
+
+Findings:
+- Number of nodules: 1
+- Position in the image: Middle central part
+- Orientation: Wider than tall
+- Size: Approximately 54% of the image width",count,1,yes,
+TN3K:trainval/1744.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule is present.
+
+Findings:
+- Number of nodules: 1
+- Position in the image: Middle central part
+- Orientation: Wider than tall
+- Size: Approximately 54% of the image width",lesion,present,yes,
+TN3K:trainval/1744.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule is present.
+
+Findings:
+- Number of nodules: 1
+- Position in the image: Middle central part
+- Orientation: Wider than tall
+- Size: Approximately 54% of the image width",orient,wider than tall,yes,
+TN3K:trainval/1744.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule is present.
+
+Findings:
+- Number of nodules: 1
+- Position in the image: Middle central part
+- Orientation: Wider than tall
+- Size: Approximately 54% of the image width",pos,middle-central,yes,
+TN3K:trainval/1744.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule is present.
+
+Findings:
+- Number of nodules: 1
+- Position in the image: Middle central part
+- Orientation: Wider than tall
+- Size: Approximately 54% of the image width",size_pct,54,yes,
+FetalHead:Patient01093_Plane3_1_of_3|true|terse,fetal,"Trans thalamic scan plane
+Head circumference: 371 mm",hc_mm,371.0,yes,
+FetalHead:Patient01093_Plane3_1_of_3|true|terse,fetal,"Trans thalamic scan plane
+Head circumference: 371 mm",plane,trans thalamic,yes,
+TN5000:003266|true|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is wider than tall and measures approximately 23% of the image width.",count,1,yes,
+TN5000:003266|true|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is wider than tall and measures approximately 23% of the image width.",lesion,present,yes,
+TN5000:003266|true|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is wider than tall and measures approximately 23% of the image width.",orient,wider than tall,yes,
+TN5000:003266|true|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is wider than tall and measures approximately 23% of the image width.",pos,middle-central,yes,
+TN5000:003266|true|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is wider than tall and measures approximately 23% of the image width.",size_pct,23,yes,
+HC18:048_HC|true|terse,fetal,Head circumference: 73.8 mm,hc_mm,73.8,yes,
+HC18:613_HC|twin|narrative,fetal,Head circumference measures 210 mm (normal range). No intracranial abnormalities identified.,hc_mm,210.0,yes,
+TN3K:trainval/0957.jpg|true|narrative,thyroid,"A solitary thyroid nodule is identified, predominantly occupying the middle central portion of the image, exhibiting a wider-than-tall orientation. The nodule measures approximately 95% of the image width.",count,1,yes,
+TN3K:trainval/0957.jpg|true|narrative,thyroid,"A solitary thyroid nodule is identified, predominantly occupying the middle central portion of the image, exhibiting a wider-than-tall orientation. The nodule measures approximately 95% of the image width.",lesion,present,yes,
+TN3K:trainval/0957.jpg|true|narrative,thyroid,"A solitary thyroid nodule is identified, predominantly occupying the middle central portion of the image, exhibiting a wider-than-tall orientation. The nodule measures approximately 95% of the image width.",orient,wider than tall,yes,
+TN3K:trainval/0957.jpg|true|narrative,thyroid,"A solitary thyroid nodule is identified, predominantly occupying the middle central portion of the image, exhibiting a wider-than-tall orientation. The nodule measures approximately 95% of the image width.",pos,middle-central,yes,
+TN3K:trainval/0957.jpg|true|narrative,thyroid,"A solitary thyroid nodule is identified, predominantly occupying the middle central portion of the image, exhibiting a wider-than-tall orientation. The nodule measures approximately 95% of the image width.",size_pct,95,yes,
+UDIAT:000087|twin|narrative,breast,"A solitary lesion, predominantly located in the lower central region of the image, exhibits an elongated shape, roughly 89% of the image width, and is oriented wider than tall. The histologic type indicates a benign FA lesion.",count,1,yes,
+UDIAT:000087|twin|narrative,breast,"A solitary lesion, predominantly located in the lower central region of the image, exhibits an elongated shape, roughly 89% of the image width, and is oriented wider than tall. The histologic type indicates a benign FA lesion.",hist,fa lesion,yes,
+UDIAT:000087|twin|narrative,breast,"A solitary lesion, predominantly located in the lower central region of the image, exhibits an elongated shape, roughly 89% of the image width, and is oriented wider than tall. The histologic type indicates a benign FA lesion.",lesion,present,yes,
+UDIAT:000087|twin|narrative,breast,"A solitary lesion, predominantly located in the lower central region of the image, exhibits an elongated shape, roughly 89% of the image width, and is oriented wider than tall. The histologic type indicates a benign FA lesion.",orient,wider than tall,yes,
+UDIAT:000087|twin|narrative,breast,"A solitary lesion, predominantly located in the lower central region of the image, exhibits an elongated shape, roughly 89% of the image width, and is oriented wider than tall. The histologic type indicates a benign FA lesion.",path,benign,yes,
+UDIAT:000087|twin|narrative,breast,"A solitary lesion, predominantly located in the lower central region of the image, exhibits an elongated shape, roughly 89% of the image width, and is oriented wider than tall. The histologic type indicates a benign FA lesion.",pos,lower-central,yes,
+UDIAT:000087|twin|narrative,breast,"A solitary lesion, predominantly located in the lower central region of the image, exhibits an elongated shape, roughly 89% of the image width, and is oriented wider than tall. The histologic type indicates a benign FA lesion.",size_pct,89,yes,
+BUSI:benign/benign (357)|true|impression_first,breast,"Impression: Benign lesion (mass)
+
+Findings:
+- 1 lesion (mass) in the middle central part of the image
+- Size: about 28% of the image width
+- Orientation: Wider than tall",count,1,yes,
+BUSI:benign/benign (357)|true|impression_first,breast,"Impression: Benign lesion (mass)
+
+Findings:
+- 1 lesion (mass) in the middle central part of the image
+- Size: about 28% of the image width
+- Orientation: Wider than tall",lesion,present,yes,
+BUSI:benign/benign (357)|true|impression_first,breast,"Impression: Benign lesion (mass)
+
+Findings:
+- 1 lesion (mass) in the middle central part of the image
+- Size: about 28% of the image width
+- Orientation: Wider than tall",orient,wider than tall,yes,
+BUSI:benign/benign (357)|true|impression_first,breast,"Impression: Benign lesion (mass)
+
+Findings:
+- 1 lesion (mass) in the middle central part of the image
+- Size: about 28% of the image width
+- Orientation: Wider than tall",path,benign,yes,
+BUSI:benign/benign (357)|true|impression_first,breast,"Impression: Benign lesion (mass)
+
+Findings:
+- 1 lesion (mass) in the middle central part of the image
+- Size: about 28% of the image width
+- Orientation: Wider than tall",pos,middle-central,yes,
+BUSI:benign/benign (357)|true|impression_first,breast,"Impression: Benign lesion (mass)
+
+Findings:
+- 1 lesion (mass) in the middle central part of the image
+- Size: about 28% of the image width
+- Orientation: Wider than tall",size_pct,28,yes,
+HC18:731_3HC|true|terse,fetal,Head circumference: 277.4 mm,hc_mm,277.4,yes,
+TN3K:test/0244.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is wider than tall and approximately 100% of the image width.",count,1,yes,
+TN3K:test/0244.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is wider than tall and approximately 100% of the image width.",lesion,present,yes,
+TN3K:test/0244.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is wider than tall and approximately 100% of the image width.",orient,wider than tall,yes,
+TN3K:test/0244.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is wider than tall and approximately 100% of the image width.",pos,middle-central,yes,
+TN3K:test/0244.jpg|twin|impression_first,thyroid,"Impression: Thyroid nodule
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is wider than tall and approximately 100% of the image width.",size_pct,100,yes,
+TN5000:000566|twin|terse,thyroid,"Thyroid nodule (1), lower central, wider than tall (5% image width)",count,1,yes,
+TN5000:000566|twin|terse,thyroid,"Thyroid nodule (1), lower central, wider than tall (5% image width)",lesion,present,yes,
+TN5000:000566|twin|terse,thyroid,"Thyroid nodule (1), lower central, wider than tall (5% image width)",orient,wider than tall,yes,
+TN5000:000566|twin|terse,thyroid,"Thyroid nodule (1), lower central, wider than tall (5% image width)",pos,lower-central,yes,
+TN5000:000566|twin|terse,thyroid,"Thyroid nodule (1), lower central, wider than tall (5% image width)",size_pct,5,yes,
+FetalHead:Patient01207_Plane3_2_of_4|twin|narrative,fetal,Transthalamic scan reveals a head circumference measuring 287 mm. No significant intracranial findings identified.,hc_mm,287.0,yes,
+FetalHead:Patient01207_Plane3_2_of_4|twin|narrative,fetal,Transthalamic scan reveals a head circumference measuring 287 mm. No significant intracranial findings identified.,plane,trans thalamic,yes,
+BUS-BRA:bus_0225-l|true|impression_first,breast,"Impression: Malignant lesion (invasive ductal carcinoma) in the left breast, BI-RADS category 4.
+
+Findings:
+- 1 lesion (mass) is present in the upper central part of the image in the left breast.
+- The lesion is wider than tall, approximately 68% of the image width.
+- BI-RADS category: 4.
+- Pathology: Malignant.
+- Histologic type: Invasive ductal carcinoma.",birads,4,yes,
+BUS-BRA:bus_0225-l|true|impression_first,breast,"Impression: Malignant lesion (invasive ductal carcinoma) in the left breast, BI-RADS category 4.
+
+Findings:
+- 1 lesion (mass) is present in the upper central part of the image in the left breast.
+- The lesion is wider than tall, approximately 68% of the image width.
+- BI-RADS category: 4.
+- Pathology: Malignant.
+- Histologic type: Invasive ductal carcinoma.",count,1,yes,
+BUS-BRA:bus_0225-l|true|impression_first,breast,"Impression: Malignant lesion (invasive ductal carcinoma) in the left breast, BI-RADS category 4.
+
+Findings:
+- 1 lesion (mass) is present in the upper central part of the image in the left breast.
+- The lesion is wider than tall, approximately 68% of the image width.
+- BI-RADS category: 4.
+- Pathology: Malignant.
+- Histologic type: Invasive ductal carcinoma.",hist,invasive ductal carcinoma,yes,
+BUS-BRA:bus_0225-l|true|impression_first,breast,"Impression: Malignant lesion (invasive ductal carcinoma) in the left breast, BI-RADS category 4.
+
+Findings:
+- 1 lesion (mass) is present in the upper central part of the image in the left breast.
+- The lesion is wider than tall, approximately 68% of the image width.
+- BI-RADS category: 4.
+- Pathology: Malignant.
+- Histologic type: Invasive ductal carcinoma.",lesion,present,yes,
+BUS-BRA:bus_0225-l|true|impression_first,breast,"Impression: Malignant lesion (invasive ductal carcinoma) in the left breast, BI-RADS category 4.
+
+Findings:
+- 1 lesion (mass) is present in the upper central part of the image in the left breast.
+- The lesion is wider than tall, approximately 68% of the image width.
+- BI-RADS category: 4.
+- Pathology: Malignant.
+- Histologic type: Invasive ductal carcinoma.",orient,wider than tall,yes,
+BUS-BRA:bus_0225-l|true|impression_first,breast,"Impression: Malignant lesion (invasive ductal carcinoma) in the left breast, BI-RADS category 4.
+
+Findings:
+- 1 lesion (mass) is present in the upper central part of the image in the left breast.
+- The lesion is wider than tall, approximately 68% of the image width.
+- BI-RADS category: 4.
+- Pathology: Malignant.
+- Histologic type: Invasive ductal carcinoma.",path,malignant,yes,
+BUS-BRA:bus_0225-l|true|impression_first,breast,"Impression: Malignant lesion (invasive ductal carcinoma) in the left breast, BI-RADS category 4.
+
+Findings:
+- 1 lesion (mass) is present in the upper central part of the image in the left breast.
+- The lesion is wider than tall, approximately 68% of the image width.
+- BI-RADS category: 4.
+- Pathology: Malignant.
+- Histologic type: Invasive ductal carcinoma.",pos,upper-central,yes,
+BUS-BRA:bus_0225-l|true|impression_first,breast,"Impression: Malignant lesion (invasive ductal carcinoma) in the left breast, BI-RADS category 4.
+
+Findings:
+- 1 lesion (mass) is present in the upper central part of the image in the left breast.
+- The lesion is wider than tall, approximately 68% of the image width.
+- BI-RADS category: 4.
+- Pathology: Malignant.
+- Histologic type: Invasive ductal carcinoma.",side,left,yes,
+BUS-BRA:bus_0225-l|true|impression_first,breast,"Impression: Malignant lesion (invasive ductal carcinoma) in the left breast, BI-RADS category 4.
+
+Findings:
+- 1 lesion (mass) is present in the upper central part of the image in the left breast.
+- The lesion is wider than tall, approximately 68% of the image width.
+- BI-RADS category: 4.
+- Pathology: Malignant.
+- Histologic type: Invasive ductal carcinoma.",size_pct,68,yes,
+BrEaST:209|true|terse,breast,"No lesion/nodule seen.
+BI-RADS 1.
+Pathology: Normal.",birads,1,yes,
+BrEaST:209|true|terse,breast,"No lesion/nodule seen.
+BI-RADS 1.
+Pathology: Normal.",lesion,absent,yes,
+BrEaST:209|true|terse,breast,"No lesion/nodule seen.
+BI-RADS 1.
+Pathology: Normal.",path,normal,yes,
+TN5000:001972|true|narrative,thyroid,"A solitary thyroid nodule is observed, situated centrally in the middle of the scanned image. The nodule exhibits a wider-than-tall orientation, measuring approximately 20% of the image width.",count,1,yes,
+TN5000:001972|true|narrative,thyroid,"A solitary thyroid nodule is observed, situated centrally in the middle of the scanned image. The nodule exhibits a wider-than-tall orientation, measuring approximately 20% of the image width.",lesion,present,yes,
+TN5000:001972|true|narrative,thyroid,"A solitary thyroid nodule is observed, situated centrally in the middle of the scanned image. The nodule exhibits a wider-than-tall orientation, measuring approximately 20% of the image width.",orient,wider than tall,yes,
+TN5000:001972|true|narrative,thyroid,"A solitary thyroid nodule is observed, situated centrally in the middle of the scanned image. The nodule exhibits a wider-than-tall orientation, measuring approximately 20% of the image width.",size_pct,20,yes,
+TN5000:002450|true|terse,thyroid,"Thyroid nodule, 1 nodule, middle central part, wider than tall, 18% image width.",count,1,yes,
+TN5000:002450|true|terse,thyroid,"Thyroid nodule, 1 nodule, middle central part, wider than tall, 18% image width.",lesion,present,yes,
+TN5000:002450|true|terse,thyroid,"Thyroid nodule, 1 nodule, middle central part, wider than tall, 18% image width.",orient,wider than tall,yes,
+TN5000:002450|true|terse,thyroid,"Thyroid nodule, 1 nodule, middle central part, wider than tall, 18% image width.",pos,middle-central,yes,
+TN5000:002450|true|terse,thyroid,"Thyroid nodule, 1 nodule, middle central part, wider than tall, 18% image width.",size_pct,18,yes,
+BUSI:malignant/malignant (122)|true|narrative,breast,"A solitary malignant lesion, predominantly wider than tall, occupying approximately 63% of the central part of the image.",count,1,yes,
+BUSI:malignant/malignant (122)|true|narrative,breast,"A solitary malignant lesion, predominantly wider than tall, occupying approximately 63% of the central part of the image.",lesion,present,yes,
+BUSI:malignant/malignant (122)|true|narrative,breast,"A solitary malignant lesion, predominantly wider than tall, occupying approximately 63% of the central part of the image.",orient,wider than tall,yes,
+BUSI:malignant/malignant (122)|true|narrative,breast,"A solitary malignant lesion, predominantly wider than tall, occupying approximately 63% of the central part of the image.",path,malignant,yes,
+BUSI:malignant/malignant (122)|true|narrative,breast,"A solitary malignant lesion, predominantly wider than tall, occupying approximately 63% of the central part of the image.",size_pct,63,yes,
+HC18:035_HC|twin|terse,fetal,Head circumference: 62.1 mm,hc_mm,62.1,yes,
+BUS-UCLM:SECH_003|true|impression_first,breast,"Impression: No abnormality detected
+
+Findings:
+- No lesion or nodule is seen
+- Pathology: Normal",lesion,absent,yes,
+BUS-UCLM:SECH_003|true|impression_first,breast,"Impression: No abnormality detected
+
+Findings:
+- No lesion or nodule is seen
+- Pathology: Normal",path,normal,yes,
+BUS-BRA:bus_0723-s|true|impression_first,breast,"Impression: Malignant invasive lobular carcinoma (BI-RADS category 4)
+
+Findings:
+- A single lesion (mass) is present in the middle central part of the image, oriented wider than tall, measuring approximately 60% of the image width.",birads,4,yes,
+BUS-BRA:bus_0723-s|true|impression_first,breast,"Impression: Malignant invasive lobular carcinoma (BI-RADS category 4)
+
+Findings:
+- A single lesion (mass) is present in the middle central part of the image, oriented wider than tall, measuring approximately 60% of the image width.",count,1,yes,
+BUS-BRA:bus_0723-s|true|impression_first,breast,"Impression: Malignant invasive lobular carcinoma (BI-RADS category 4)
+
+Findings:
+- A single lesion (mass) is present in the middle central part of the image, oriented wider than tall, measuring approximately 60% of the image width.",hist,invasive lobular carcinoma,yes,
+BUS-BRA:bus_0723-s|true|impression_first,breast,"Impression: Malignant invasive lobular carcinoma (BI-RADS category 4)
+
+Findings:
+- A single lesion (mass) is present in the middle central part of the image, oriented wider than tall, measuring approximately 60% of the image width.",lesion,present,yes,
+BUS-BRA:bus_0723-s|true|impression_first,breast,"Impression: Malignant invasive lobular carcinoma (BI-RADS category 4)
+
+Findings:
+- A single lesion (mass) is present in the middle central part of the image, oriented wider than tall, measuring approximately 60% of the image width.",orient,wider than tall,yes,
+BUS-BRA:bus_0723-s|true|impression_first,breast,"Impression: Malignant invasive lobular carcinoma (BI-RADS category 4)
+
+Findings:
+- A single lesion (mass) is present in the middle central part of the image, oriented wider than tall, measuring approximately 60% of the image width.",path,malignant,yes,
+BUS-BRA:bus_0723-s|true|impression_first,breast,"Impression: Malignant invasive lobular carcinoma (BI-RADS category 4)
+
+Findings:
+- A single lesion (mass) is present in the middle central part of the image, oriented wider than tall, measuring approximately 60% of the image width.",pos,middle-central,yes,
+BUS-BRA:bus_0723-s|true|impression_first,breast,"Impression: Malignant invasive lobular carcinoma (BI-RADS category 4)
+
+Findings:
+- A single lesion (mass) is present in the middle central part of the image, oriented wider than tall, measuring approximately 60% of the image width.",size_pct,60,yes,
+TN5000:003686|twin|impression_first,thyroid,"Impression: Thyroid nodule in the middle central part of the image, wider than tall, approximately 23% of the image width.
+
+Findings:
+- Thyroid nodule present
+- Number of nodules: 1
+- Position: Middle central part of the image
+- Orientation: Wider than tall
+- Size: About 23% of the image width",count,1,yes,
+TN5000:003686|twin|impression_first,thyroid,"Impression: Thyroid nodule in the middle central part of the image, wider than tall, approximately 23% of the image width.
+
+Findings:
+- Thyroid nodule present
+- Number of nodules: 1
+- Position: Middle central part of the image
+- Orientation: Wider than tall
+- Size: About 23% of the image width",lesion,present,yes,
+TN5000:003686|twin|impression_first,thyroid,"Impression: Thyroid nodule in the middle central part of the image, wider than tall, approximately 23% of the image width.
+
+Findings:
+- Thyroid nodule present
+- Number of nodules: 1
+- Position: Middle central part of the image
+- Orientation: Wider than tall
+- Size: About 23% of the image width",orient,wider than tall,yes,
+TN5000:003686|twin|impression_first,thyroid,"Impression: Thyroid nodule in the middle central part of the image, wider than tall, approximately 23% of the image width.
+
+Findings:
+- Thyroid nodule present
+- Number of nodules: 1
+- Position: Middle central part of the image
+- Orientation: Wider than tall
+- Size: About 23% of the image width",pos,middle-central,yes,
+TN5000:003686|twin|impression_first,thyroid,"Impression: Thyroid nodule in the middle central part of the image, wider than tall, approximately 23% of the image width.
+
+Findings:
+- Thyroid nodule present
+- Number of nodules: 1
+- Position: Middle central part of the image
+- Orientation: Wider than tall
+- Size: About 23% of the image width",size_pct,23,yes,
+TN5000:004732|twin|narrative,thyroid,"A solitary thyroid nodule is identified in the middle central aspect of the imaging, demonstrating a wider-than-tall configuration and occupying approximately 20% of the image width.",count,1,yes,
+TN5000:004732|twin|narrative,thyroid,"A solitary thyroid nodule is identified in the middle central aspect of the imaging, demonstrating a wider-than-tall configuration and occupying approximately 20% of the image width.",lesion,present,yes,
+TN5000:004732|twin|narrative,thyroid,"A solitary thyroid nodule is identified in the middle central aspect of the imaging, demonstrating a wider-than-tall configuration and occupying approximately 20% of the image width.",orient,wider than tall,yes,
+TN5000:004732|twin|narrative,thyroid,"A solitary thyroid nodule is identified in the middle central aspect of the imaging, demonstrating a wider-than-tall configuration and occupying approximately 20% of the image width.",pos,middle-central,yes,
+TN5000:004732|twin|narrative,thyroid,"A solitary thyroid nodule is identified in the middle central aspect of the imaging, demonstrating a wider-than-tall configuration and occupying approximately 20% of the image width.",size_pct,20,yes,
+BUS-UCLM:ANAT_014|twin|terse,breast,Single mass present.,count,1,yes,
+BUS-UCLM:ANAT_014|twin|terse,breast,Single mass present.,lesion,present,yes,
+FetalHead:Patient01011_Plane3_1_of_2|true|terse,fetal,Trans thalamic scan plane. Head circumference: 175 mm.,hc_mm,175.0,yes,
+FetalHead:Patient01011_Plane3_1_of_2|true|terse,fetal,Trans thalamic scan plane. Head circumference: 175 mm.,plane,trans thalamic,yes,
+BUS-UCLM:ANAT_012|true|terse,breast,"Normal ultrasound, no lesion or nodule identified. Pathology: normal.",lesion,absent,yes,
+BUS-UCLM:ANAT_012|true|terse,breast,"Normal ultrasound, no lesion or nodule identified. Pathology: normal.",path,normal,yes,
+FetalHead:Patient01782_Plane3_2_of_2|twin|terse,fetal,"Trans cerebellum, Head Circumference: 175 mm",hc_mm,175.0,yes,
+FetalHead:Patient01782_Plane3_2_of_2|twin|terse,fetal,"Trans cerebellum, Head Circumference: 175 mm",plane,trans cerebellum,yes,
+BUS-UCLM:CRCI_001|twin|narrative,breast,"A solitary lesion, characterized as a malignant mass, is situated in the middle central portion of the image. The lesion presents as wider than tall, occupying approximately 48% of the image width.",count,1,yes,
+BUS-UCLM:CRCI_001|twin|narrative,breast,"A solitary lesion, characterized as a malignant mass, is situated in the middle central portion of the image. The lesion presents as wider than tall, occupying approximately 48% of the image width.",lesion,present,yes,
+BUS-UCLM:CRCI_001|twin|narrative,breast,"A solitary lesion, characterized as a malignant mass, is situated in the middle central portion of the image. The lesion presents as wider than tall, occupying approximately 48% of the image width.",orient,wider than tall,yes,
+BUS-UCLM:CRCI_001|twin|narrative,breast,"A solitary lesion, characterized as a malignant mass, is situated in the middle central portion of the image. The lesion presents as wider than tall, occupying approximately 48% of the image width.",path,malignant,yes,
+BUS-UCLM:CRCI_001|twin|narrative,breast,"A solitary lesion, characterized as a malignant mass, is situated in the middle central portion of the image. The lesion presents as wider than tall, occupying approximately 48% of the image width.",pos,middle-central,yes,
+BUS-UCLM:CRCI_001|twin|narrative,breast,"A solitary lesion, characterized as a malignant mass, is situated in the middle central portion of the image. The lesion presents as wider than tall, occupying approximately 48% of the image width.",size_pct,48,yes,
+FetalHead:Patient01776_Plane3_1_of_5|true|terse,fetal,Trans thalamic scan. Head circumference: 304 mm.,hc_mm,304.0,yes,
+FetalHead:Patient01776_Plane3_1_of_5|true|terse,fetal,Trans thalamic scan. Head circumference: 304 mm.,plane,trans thalamic,yes,
+HC18:269_HC|true|terse,fetal,Head circumference: 174.8 mm,hc_mm,174.8,yes,
+DDTI:177_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS category 4c
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and measures approximately 21% of the image width.
+- The nodule composition is solid with well-defined margins.
+- The echo pattern is hypoechoic with the presence of macrocalcifications.",comp,solid,yes,
+DDTI:177_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS category 4c
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and measures approximately 21% of the image width.
+- The nodule composition is solid with well-defined margins.
+- The echo pattern is hypoechoic with the presence of macrocalcifications.",count,1,yes,
+DDTI:177_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS category 4c
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and measures approximately 21% of the image width.
+- The nodule composition is solid with well-defined margins.
+- The echo pattern is hypoechoic with the presence of macrocalcifications.",echo,hypoechoic,yes,
+DDTI:177_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS category 4c
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and measures approximately 21% of the image width.
+- The nodule composition is solid with well-defined margins.
+- The echo pattern is hypoechoic with the presence of macrocalcifications.",foci,macrocalcifications,yes,
+DDTI:177_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS category 4c
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and measures approximately 21% of the image width.
+- The nodule composition is solid with well-defined margins.
+- The echo pattern is hypoechoic with the presence of macrocalcifications.",lesion,present,yes,
+DDTI:177_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS category 4c
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and measures approximately 21% of the image width.
+- The nodule composition is solid with well-defined margins.
+- The echo pattern is hypoechoic with the presence of macrocalcifications.",margin,well defined,yes,
+DDTI:177_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS category 4c
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and measures approximately 21% of the image width.
+- The nodule composition is solid with well-defined margins.
+- The echo pattern is hypoechoic with the presence of macrocalcifications.",orient,wider than tall,yes,
+DDTI:177_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS category 4c
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and measures approximately 21% of the image width.
+- The nodule composition is solid with well-defined margins.
+- The echo pattern is hypoechoic with the presence of macrocalcifications.",pos,upper-central,yes,
+DDTI:177_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS category 4c
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and measures approximately 21% of the image width.
+- The nodule composition is solid with well-defined margins.
+- The echo pattern is hypoechoic with the presence of macrocalcifications.",size_pct,21,yes,
+DDTI:177_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS category 4c
+
+Findings:
+- A single thyroid nodule is present in the upper central part of the image.
+- The nodule is wider than tall and measures approximately 21% of the image width.
+- The nodule composition is solid with well-defined margins.
+- The echo pattern is hypoechoic with the presence of macrocalcifications.",tirads,4c,yes,
+DDTI:189_1|twin|terse,thyroid,"Thyroid nodules, 2, upper left, wider than tall, 66% image width.",lesion,present,yes,
+DDTI:189_1|twin|terse,thyroid,"Thyroid nodules, 2, upper left, wider than tall, 66% image width.",orient,wider than tall,yes,
+DDTI:189_1|twin|terse,thyroid,"Thyroid nodules, 2, upper left, wider than tall, 66% image width.",pos,upper-left,yes,
+DDTI:189_1|twin|terse,thyroid,"Thyroid nodules, 2, upper left, wider than tall, 66% image width.",size_pct,66,yes,
+HC18:749_HC|twin|narrative,fetal,"Head circumference measured at 313.3 mm, representing the 98th percentile for age and gender. No notable intracranial or intraorbital abnormalities were detected. The cerebral structures and ventricular system appear normal.",hc_mm,313.3,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",birads,4c,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",calc,no,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",count,2,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",echo,heterogeneous,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",halo,yes,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",lesion,present,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",margin,"not circumscribed (angular, indistinct)",yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",orient,wider than tall,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",path,malignant,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",pos,middle-central,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",post,shadowing,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",shape,irregular,yes,
+BrEaST:243|twin|impression_first,breast,"Impression: Malignant mass, BI-RADS 4c
+
+Findings:
+- Two lesions are present in the middle central part of the image.
+- The lesions are wider than tall and measure approximately 21 mm each.
+- The lesions have irregular shapes and not circumscribed (angular, indistinct) margins.
+- The lesions exhibit heterogeneous echo patterns with posterior acoustic shadowing.
+- No calcifications are noted.
+- An echogenic halo is present around each lesion.
+- No other significant findings.",size_mm,21,yes,
+FetalHead:Patient00823_Plane3_3_of_4|true|terse,fetal,"Trans ventricular scan plane, head circumference 185 mm.",hc_mm,185.0,yes,
+FetalHead:Patient00823_Plane3_3_of_4|true|terse,fetal,"Trans ventricular scan plane, head circumference 185 mm.",plane,trans ventricular,yes,
+DDTI:19_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 5
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is taller than wide and approximately 18% of the image width.
+- The nodule composition is solid and has well-defined margins.
+- The echo pattern is markedly hypoechoic.
+- Macrocalcifications are present within the nodule.",comp,solid,yes,
+DDTI:19_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 5
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is taller than wide and approximately 18% of the image width.
+- The nodule composition is solid and has well-defined margins.
+- The echo pattern is markedly hypoechoic.
+- Macrocalcifications are present within the nodule.",count,1,yes,
+DDTI:19_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 5
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is taller than wide and approximately 18% of the image width.
+- The nodule composition is solid and has well-defined margins.
+- The echo pattern is markedly hypoechoic.
+- Macrocalcifications are present within the nodule.",echo,marked hypoechoic,yes,
+DDTI:19_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 5
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is taller than wide and approximately 18% of the image width.
+- The nodule composition is solid and has well-defined margins.
+- The echo pattern is markedly hypoechoic.
+- Macrocalcifications are present within the nodule.",foci,macrocalcifications,yes,
+DDTI:19_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 5
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is taller than wide and approximately 18% of the image width.
+- The nodule composition is solid and has well-defined margins.
+- The echo pattern is markedly hypoechoic.
+- Macrocalcifications are present within the nodule.",lesion,present,yes,
+DDTI:19_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 5
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is taller than wide and approximately 18% of the image width.
+- The nodule composition is solid and has well-defined margins.
+- The echo pattern is markedly hypoechoic.
+- Macrocalcifications are present within the nodule.",margin,well defined,yes,
+DDTI:19_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 5
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is taller than wide and approximately 18% of the image width.
+- The nodule composition is solid and has well-defined margins.
+- The echo pattern is markedly hypoechoic.
+- Macrocalcifications are present within the nodule.",orient,taller than wide,yes,
+DDTI:19_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 5
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is taller than wide and approximately 18% of the image width.
+- The nodule composition is solid and has well-defined margins.
+- The echo pattern is markedly hypoechoic.
+- Macrocalcifications are present within the nodule.",pos,middle-central,yes,
+DDTI:19_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 5
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is taller than wide and approximately 18% of the image width.
+- The nodule composition is solid and has well-defined margins.
+- The echo pattern is markedly hypoechoic.
+- Macrocalcifications are present within the nodule.",size_pct,18,yes,
+DDTI:19_1|true|impression_first,thyroid,"Impression: Thyroid nodule, TI-RADS 5
+
+Findings:
+- A single thyroid nodule is present in the middle central part of the image.
+- The nodule is taller than wide and approximately 18% of the image width.
+- The nodule composition is solid and has well-defined margins.
+- The echo pattern is markedly hypoechoic.
+- Macrocalcifications are present within the nodule.",tirads,5,yes,
+DDTI:146_2|true|terse,thyroid,"Thyroid nodule, 1 nodule, middle central, wider than tall, 38% image width.",count,1,yes,
+DDTI:146_2|true|terse,thyroid,"Thyroid nodule, 1 nodule, middle central, wider than tall, 38% image width.",lesion,present,yes,
+DDTI:146_2|true|terse,thyroid,"Thyroid nodule, 1 nodule, middle central, wider than tall, 38% image width.",orient,wider than tall,yes,
+DDTI:146_2|true|terse,thyroid,"Thyroid nodule, 1 nodule, middle central, wider than tall, 38% image width.",pos,middle-central,yes,
+DDTI:146_2|true|terse,thyroid,"Thyroid nodule, 1 nodule, middle central, wider than tall, 38% image width.",size_pct,38,yes,
+BUS-UCLM:ANAT_010|twin|terse,breast,"Lesion present, 1 in number.",count,1,yes,
+BUS-UCLM:ANAT_010|twin|terse,breast,"Lesion present, 1 in number.",lesion,present,yes,
+TN5000:002008|twin|impression_first,thyroid,"Impression: Two thyroid nodules.
+
+Findings:
+- Two thyroid nodules are present in the middle central part of the image.
+- The nodules are wider than tall.
+- The size of each nodule is approximately 8% of the image width.",count,2,yes,
+TN5000:002008|twin|impression_first,thyroid,"Impression: Two thyroid nodules.
+
+Findings:
+- Two thyroid nodules are present in the middle central part of the image.
+- The nodules are wider than tall.
+- The size of each nodule is approximately 8% of the image width.",lesion,present,yes,
+TN5000:002008|twin|impression_first,thyroid,"Impression: Two thyroid nodules.
+
+Findings:
+- Two thyroid nodules are present in the middle central part of the image.
+- The nodules are wider than tall.
+- The size of each nodule is approximately 8% of the image width.",orient,wider than tall,yes,
+TN5000:002008|twin|impression_first,thyroid,"Impression: Two thyroid nodules.
+
+Findings:
+- Two thyroid nodules are present in the middle central part of the image.
+- The nodules are wider than tall.
+- The size of each nodule is approximately 8% of the image width.",pos,middle-central,yes,
+TN5000:002008|twin|impression_first,thyroid,"Impression: Two thyroid nodules.
+
+Findings:
+- Two thyroid nodules are present in the middle central part of the image.
+- The nodules are wider than tall.
+- The size of each nodule is approximately 8% of the image width.",size_pct,8,yes,
+FetalHead:Patient00870_Plane3_5_of_5|twin|terse,fetal,"Trans cerebellum, Head Circ. 265 mm",hc_mm,265.0,yes,
+FetalHead:Patient00870_Plane3_5_of_5|twin|terse,fetal,"Trans cerebellum, Head Circ. 265 mm",plane,trans cerebellum,yes,
+BUSI:malignant/malignant (102)|true|terse,breast,"Mass in middle central part, 43% image width, malignant. Single lesion, wider than tall. No additional findings.",count,1,yes,
+BUSI:malignant/malignant (102)|true|terse,breast,"Mass in middle central part, 43% image width, malignant. Single lesion, wider than tall. No additional findings.",lesion,present,yes,
+BUSI:malignant/malignant (102)|true|terse,breast,"Mass in middle central part, 43% image width, malignant. Single lesion, wider than tall. No additional findings.",orient,wider than tall,yes,
+BUSI:malignant/malignant (102)|true|terse,breast,"Mass in middle central part, 43% image width, malignant. Single lesion, wider than tall. No additional findings.",path,malignant,yes,
+BUSI:malignant/malignant (102)|true|terse,breast,"Mass in middle central part, 43% image width, malignant. Single lesion, wider than tall. No additional findings.",pos,middle-central,yes,
+BUSI:malignant/malignant (102)|true|terse,breast,"Mass in middle central part, 43% image width, malignant. Single lesion, wider than tall. No additional findings.",size_pct,43,yes,
+FetalHead:Patient01322_Plane3_3_of_4|twin|narrative,fetal,Transthalamic scan plane reveals a head with a circumference of 158 mm. No additional findings are noted.,hc_mm,158.0,yes,
+FetalHead:Patient01322_Plane3_3_of_4|twin|narrative,fetal,Transthalamic scan plane reveals a head with a circumference of 158 mm. No additional findings are noted.,plane,trans thalamic,yes,
+BUS-BRA:bus_0164-r|twin|terse,breast,"Right breast, 2 lesions (masses) in middle central part, wider than tall (78% x image width), BI-RADS 3, benign, histologic type: fibroadenoma.",birads,3,yes,
+BUS-BRA:bus_0164-r|twin|terse,breast,"Right breast, 2 lesions (masses) in middle central part, wider than tall (78% x image width), BI-RADS 3, benign, histologic type: fibroadenoma.",count,2,yes,
+BUS-BRA:bus_0164-r|twin|terse,breast,"Right breast, 2 lesions (masses) in middle central part, wider than tall (78% x image width), BI-RADS 3, benign, histologic type: fibroadenoma.",hist,fibroadenoma,yes,
+BUS-BRA:bus_0164-r|twin|terse,breast,"Right breast, 2 lesions (masses) in middle central part, wider than tall (78% x image width), BI-RADS 3, benign, histologic type: fibroadenoma.",lesion,present,yes,
+BUS-BRA:bus_0164-r|twin|terse,breast,"Right breast, 2 lesions (masses) in middle central part, wider than tall (78% x image width), BI-RADS 3, benign, histologic type: fibroadenoma.",orient,wider than tall,yes,
+BUS-BRA:bus_0164-r|twin|terse,breast,"Right breast, 2 lesions (masses) in middle central part, wider than tall (78% x image width), BI-RADS 3, benign, histologic type: fibroadenoma.",path,benign,yes,
+BUS-BRA:bus_0164-r|twin|terse,breast,"Right breast, 2 lesions (masses) in middle central part, wider than tall (78% x image width), BI-RADS 3, benign, histologic type: fibroadenoma.",pos,middle-central,yes,
+BUS-BRA:bus_0164-r|twin|terse,breast,"Right breast, 2 lesions (masses) in middle central part, wider than tall (78% x image width), BI-RADS 3, benign, histologic type: fibroadenoma.",side,right,yes,
+BUS-BRA:bus_0164-r|twin|terse,breast,"Right breast, 2 lesions (masses) in middle central part, wider than tall (78% x image width), BI-RADS 3, benign, histologic type: fibroadenoma.",size_pct,78,yes,
+UDIAT:000035|twin|impression_first,breast,"Impression: Simple cyst
+
+Findings:
+- A single lesion (mass) is present.
+- The lesion is located in the middle central part of the image.
+- The lesion is wider than tall.
+- The size of the lesion is approximately 16% of the image width.
+- The pathology is benign.
+- The histologic type is cyst.",count,1,yes,
+UDIAT:000035|twin|impression_first,breast,"Impression: Simple cyst
+
+Findings:
+- A single lesion (mass) is present.
+- The lesion is located in the middle central part of the image.
+- The lesion is wider than tall.
+- The size of the lesion is approximately 16% of the image width.
+- The pathology is benign.
+- The histologic type is cyst.",hist,cyst,yes,
+UDIAT:000035|twin|impression_first,breast,"Impression: Simple cyst
+
+Findings:
+- A single lesion (mass) is present.
+- The lesion is located in the middle central part of the image.
+- The lesion is wider than tall.
+- The size of the lesion is approximately 16% of the image width.
+- The pathology is benign.
+- The histologic type is cyst.",lesion,present,yes,
+UDIAT:000035|twin|impression_first,breast,"Impression: Simple cyst
+
+Findings:
+- A single lesion (mass) is present.
+- The lesion is located in the middle central part of the image.
+- The lesion is wider than tall.
+- The size of the lesion is approximately 16% of the image width.
+- The pathology is benign.
+- The histologic type is cyst.",orient,wider than tall,yes,
+UDIAT:000035|twin|impression_first,breast,"Impression: Simple cyst
+
+Findings:
+- A single lesion (mass) is present.
+- The lesion is located in the middle central part of the image.
+- The lesion is wider than tall.
+- The size of the lesion is approximately 16% of the image width.
+- The pathology is benign.
+- The histologic type is cyst.",path,benign,yes,
+UDIAT:000035|twin|impression_first,breast,"Impression: Simple cyst
+
+Findings:
+- A single lesion (mass) is present.
+- The lesion is located in the middle central part of the image.
+- The lesion is wider than tall.
+- The size of the lesion is approximately 16% of the image width.
+- The pathology is benign.
+- The histologic type is cyst.",pos,middle-central,yes,
+UDIAT:000035|twin|impression_first,breast,"Impression: Simple cyst
+
+Findings:
+- A single lesion (mass) is present.
+- The lesion is located in the middle central part of the image.
+- The lesion is wider than tall.
+- The size of the lesion is approximately 16% of the image width.
+- The pathology is benign.
+- The histologic type is cyst.",size_pct,16,yes,
+FetalHead:Patient01207_Plane3_3_of_4|true|terse,fetal,"Trans thalamic scan plane, Head circumference: 267 mm",hc_mm,267.0,yes,
+FetalHead:Patient01207_Plane3_3_of_4|true|terse,fetal,"Trans thalamic scan plane, Head circumference: 267 mm",plane,trans thalamic,yes,
+BUSI:malignant/malignant (72)|twin|terse,breast,"Lesion (mass) present, 1 lesion, middle central part, wider than tall, 79% image width, malignant.",count,1,yes,
+BUSI:malignant/malignant (72)|twin|terse,breast,"Lesion (mass) present, 1 lesion, middle central part, wider than tall, 79% image width, malignant.",lesion,present,yes,
+BUSI:malignant/malignant (72)|twin|terse,breast,"Lesion (mass) present, 1 lesion, middle central part, wider than tall, 79% image width, malignant.",orient,wider than tall,yes,
+BUSI:malignant/malignant (72)|twin|terse,breast,"Lesion (mass) present, 1 lesion, middle central part, wider than tall, 79% image width, malignant.",path,malignant,yes,
+BUSI:malignant/malignant (72)|twin|terse,breast,"Lesion (mass) present, 1 lesion, middle central part, wider than tall, 79% image width, malignant.",pos,middle-central,yes,
+BUSI:malignant/malignant (72)|twin|terse,breast,"Lesion (mass) present, 1 lesion, middle central part, wider than tall, 79% image width, malignant.",size_pct,79,yes,
