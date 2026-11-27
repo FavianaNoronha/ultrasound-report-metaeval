@@ -1,0 +1,39 @@
+{
+ "step": 48,
+ "set": "C-F",
+ "writer_model": "mlx-community/Mistral-7B-Instruct-v0.3-4bit",
+ "writer_revision": "a4b8f870474b0eb527f466a03fbc187830d271f5",
+ "writer_snapshot": "/Users/faviananoronha/.cache/huggingface/hub/models--mlx-community--Mistral-7B-Instruct-v0.3-4bit/snapshots/a4b8f870474b0eb527f466a03fbc187830d271f5",
+ "seed": 4801,
+ "planned_cases": 300,
+ "planned_items": {
+  "twin": 150,
+  "true": 150
+ },
+ "by_organ": {
+  "breast": 100,
+  "thyroid": 100,
+  "fetal": 100
+ },
+ "test_core_complete": true,
+ "kept_cases": 300,
+ "test_core_expected_reports": 300,
+ "test_core_generated_reports": 300,
+ "test_core_generated_complete": true,
+ "test_core_kept_cases": 106,
+ "test_core_kept_cases_by_organ": {
+  "breast": 26,
+  "thyroid": 38,
+  "fetal": 42
+ },
+ "test_core_kept_groups_by_organ": {
+  "breast": 18,
+  "thyroid": 38,
+  "fetal": 37
+ },
+ "test_lod_expected_reports": 0,
+ "test_lod_generated_reports": 0,
+ "test_lod_generated_complete": true,
+ "stress_reports": 21,
+ "extracted_reports": 239
+}

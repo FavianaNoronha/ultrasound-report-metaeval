@@ -1,0 +1,11 @@
+trial_id,date,description,code_git_hash,judge,dev_auroc,catch_major_critical_at_30pct_harmless,model_calls_per_report,notes
+S48-T1,2026-11-27,"S1 baseline: Gemma, strict parser (Step 47 rule)",ebdfd46,gemma,,0.958,3,Set C saved replies; harmless routed 0.2283; missing calls 0
+S48-T2,2026-11-27,"S1 rule, Gemma, parser P2",ebdfd46,gemma,,0.9407,3,Set C saved replies; harmless routed 0.1616; missing calls 0
+S48-T3,2026-11-27,"S1 rule, Llama, strict parser",ebdfd46,llama,,not eligible (harmless > 30%),3,Set C saved replies; harmless routed 0.6142; missing calls 0
+S48-T4,2026-11-27,"S1 rule, Llama, parser P2",ebdfd46,llama,,not eligible (harmless > 30%),3,Set C saved replies; harmless routed 0.5963; missing calls 0
+S48-T5,2026-11-27,"S1 rule, Gemma P2 OR Llama P2 (route if either judge part routes)",ebdfd46,gemma+llama,,not eligible (harmless > 30%),6,Set C saved replies; harmless routed 0.6293; missing calls 0
+S48-T6,2026-11-27,"S1 rule, Gemma P2 AND Llama P2 (judge part routes only if both do)",ebdfd46,gemma+llama,,0.9111,6,Set C saved replies; harmless routed 0.1286; missing calls 0
+S48-T7,2026-11-27,"Rules only: route on any rule difference, no judge (baseline, amendment 1 item 8)",ebdfd46,,,0.7309,0,Set C saved replies; harmless routed 0.0715; missing calls 0
+S48-T8,2026-11-27,"S1 rule, Gemma P2, judge major claim needs 2 of 3 readings (amendment 1 item 8)",ebdfd46,gemma,,0.8815,3,Set C saved replies; harmless routed 0.1087; missing calls 0
+S48-T9,2026-11-27,"S1 rule, Gemma P2 OR Llama P2, judge part = major claim / unparsed / unsure only (reading disagreement alone does not route)",ebdfd46,gemma+llama,,not eligible (harmless > 30%),6,Set C saved replies; harmless routed 0.6293; missing calls 0
+S48-T10,2026-11-27,"S1 rule, Gemma P2, judge part = major claim / unparsed / unsure only (reading disagreement alone does not route)",ebdfd46,gemma,,0.9407,3,Set C saved replies; harmless routed 0.1616; missing calls 0

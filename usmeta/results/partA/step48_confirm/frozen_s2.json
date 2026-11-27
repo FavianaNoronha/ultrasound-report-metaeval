@@ -1,0 +1,45 @@
+{
+ "primary_variant": "S2 = S48-T1: S1 baseline: Gemma, strict parser (Step 47 rule)",
+ "trial": {
+  "n_major_critical": 405,
+  "catch_major_critical": 0.9580246913580247,
+  "missed_major_critical": 17,
+  "catch_all_errors": 0.9681647940074907,
+  "harmless_routed": 0.22833562585969738,
+  "n_harmless": 1454,
+  "calls_per_audited_report": 3,
+  "n_fabrication": 112,
+  "catch_fabrication": 0.8482142857142857,
+  "n_normal_addition": 106,
+  "normal_addition_routed": 0.6509433962264151,
+  "trial": "S48-T1",
+  "description": "S1 baseline: Gemma, strict parser (Step 47 rule)",
+  "judges": [
+   "gemma"
+  ],
+  "parser": "strict",
+  "combine": "any",
+  "missing_calls": 0,
+  "harmless_route_reasons": {
+   "unparsed_judge_reply": 209,
+   "rule_difference": 104,
+   "judge_major_claim": 64,
+   "rule_major": 29,
+   "order_swap_disagreement": 28,
+   "judge_unsure": 17,
+   "prompt_reword_disagreement": 12
+  }
+ },
+ "judges": [
+  "gemma"
+ ],
+ "parser": "strict",
+ "combine": "any",
+ "selection_rule": "max catch of major/critical at harmless routed <= 30%; ties: lower harmless routed, then fewer calls",
+ "stage1_trials_logged": 10,
+ "step48_code_sha256": "64167c3d90c7d358876e695198806aa387a17c909ff6da169392288c87b7fa73",
+ "step47_code_sha256": "e16e84d6ffe57de91ab0db3ab4847bc074e4c77416d74ce22800cad3adf2ca15",
+ "prereg_sha256": "1eb5f7aa4b1dcf1b609ffef5ab88da784b27efd4b053a2f575ab917492c5de33",
+ "amendment1_sha256": "1c6668d9e1fa314172dfc51cc5d11b2711defa5b30db88d89bc54e4cfebc1ed6",
+ "sha256": "0303a9f53507a53b24230e592721b7a5c1c7b9429923ec04a80f412a4eb5b398"
+}

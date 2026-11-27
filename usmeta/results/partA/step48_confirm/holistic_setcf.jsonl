@@ -1,0 +1,212 @@
+{"id": "BUS-BRA:bus_0691-s#f|twin|impression_first", "result": {"judge": 0.4, "f1": 0.9333333333333333, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-BRA:bus_0126-s#f|twin|impression_first", "result": {"judge": 0.10000000000000009, "f1": 0.5714285714285715, "n_err": 2, "cats": ["false finding", "false finding"]}}
+{"id": "BUS-BRA:bus_0358-l#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.7058823529411765, "n_err": 4, "cats": ["false finding", "missed finding", "missed finding", "missed finding"]}}
+{"id": "BUS-BRA:bus_0358-l#n|true|impression_first", "result": {"judge": 0.0, "f1": 0.7317073170731706, "n_err": 3, "cats": ["missed finding", "false finding", "false finding"]}}
+{"id": "BUS-UCLM:VITR_007#f|twin|impression_first", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:VITR_007#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:TOCI_019#f|twin|impression_first", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "BUS-UCLM:ANAT_016#n|true|narrative", "result": {"judge": 0.9, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUSI:normal/normal (32)#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUSI:normal/normal (30)#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:VITR_027#f|twin|terse", "result": {"judge": 0.4, "f1": 0.4444444444444444, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:VITR_027#n|true|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUSI:malignant/malignant (112)#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-BRA:bus_0225-l#f|twin|narrative", "result": {"judge": 0.6, "f1": 0.7058823529411765, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "BUSI:benign/benign (332)#n|true|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-BRA:bus_0240-l#n|true|impression_first", "result": {"judge": 0.4, "f1": 0.8, "n_err": 1, "cats": ["missed finding"]}}
+{"id": "BUSI:benign/benign (217)#f|twin|impression_first", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:MENE_005#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:MENE_005#n|true|impression_first", "result": {"judge": 0.0, "f1": 0.5, "n_err": 3, "cats": ["wrong location", "wrong measurement", "false finding"]}}
+{"id": "BUS-UCLM:HUBL_009#f|twin|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:HUBL_009#n|true|impression_first", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BrEaST:86#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.7741935483870969, "n_err": 4, "cats": ["false finding", "false finding", "missed finding", "missed finding"]}}
+{"id": "UDIAT:000077#f|twin|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:ANAT_011#f|twin|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:ANAT_011#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:TOCI_030#f|twin|terse", "result": {"judge": 0.10000000000000009, "f1": 0.0, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "BUS-UCLM:TOCI_030#n|true|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUSI:normal/normal (8)#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUSI:normal/normal (8)#n|true|narrative", "result": {"judge": 0.9, "f1": 0.8571428571428571, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUSI:malignant/malignant (100)#n|true|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:VITR_028#f|twin|terse", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:VITR_028#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-BRA:bus_0624-r#n|true|impression_first", "result": {"judge": 0.0, "f1": 0.7384615384615384, "n_err": 3, "cats": ["false finding", "missed finding", "wrong severity/category"]}}
+{"id": "BUS-UCLM:VITR_016#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.5, "n_err": 3, "cats": ["false finding", "false finding", "false finding"]}}
+{"id": "BUS-UCLM:VITR_016#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:CODE_001#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.3333333333333333, "n_err": 3, "cats": ["false finding", "false finding", "missed finding"]}}
+{"id": "BUS-UCLM:MENE_000#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:MENE_000#n|true|narrative", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUSI:benign/benign (229)#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-BRA:bus_0723-s#n|true|impression_first", "result": {"judge": 0.10000000000000009, "f1": 0.7058823529411765, "n_err": 2, "cats": ["missed finding", "false finding"]}}
+{"id": "BUS-UCLM:SECH_008#n|true|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-BRA:bus_0093-s#f|twin|impression_first", "result": {"judge": 0.10000000000000009, "f1": 0.4, "n_err": 2, "cats": ["missed finding", "false finding"]}}
+{"id": "BUS-UCLM:ANAT_012#n|true|terse", "result": {"judge": 0.4, "f1": 0.8, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUSI:benign/benign (386)#f|twin|impression_first", "result": {"judge": 0.30000000000000004, "f1": 0.4444444444444444, "n_err": 2, "cats": ["false finding", "wrong measurement"]}}
+{"id": "BUSI:benign/benign (386)#n|true|impression_first", "result": {"judge": 0.4, "f1": 0.689655172413793, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "BUS-UCLM:ANAT_005#f|twin|impression_first", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUS-UCLM:ANAT_005#n|true|impression_first", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "BrEaST:29#f|twin|impression_first", "result": {"judge": 0.4, "f1": 0.7636363636363638, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BrEaST:29#n|true|terse", "result": {"judge": 0.0, "f1": 0.0, "n_err": 5, "cats": ["false finding", "wrong location", "wrong measurement", "missed finding", "missed finding"]}}
+{"id": "BUSI:normal/normal (82)#f|twin|terse", "result": {"judge": 0.4, "f1": 0.4444444444444444, "n_err": 1, "cats": ["false finding"]}}
+{"id": "BUSI:normal/normal (82)#n|true|impression_first", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "BUS-UCLM:ANAT_008#f|twin|narrative", "result": {"judge": 0.0, "f1": 0.3333333333333333, "n_err": 2, "cats": ["false finding", "false finding"]}}
+{"id": "BUS-UCLM:ANAT_008#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:004062#n|true|impression_first", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "TN3K:trainval/1509.jpg#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.36363636363636365, "n_err": 3, "cats": ["false finding", "false finding", "wrong measurement"]}}
+{"id": "TN3K:trainval/1509.jpg#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:003621#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:003621#n|true|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/0894.jpg#f|twin|terse", "result": {"judge": 0.0, "f1": 0.0, "n_err": 4, "cats": ["false finding", "wrong measurement", "wrong location", "wrong location"]}}
+{"id": "TN3K:trainval/0894.jpg#n|true|impression_first", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:003427#f|twin|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/0363.jpg#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/1284.jpg#n|true|impression_first", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:003242#f|twin|terse", "result": {"judge": 0.0, "f1": 0.0, "n_err": 4, "cats": ["false finding", "wrong measurement", "wrong measurement", "wrong location"]}}
+{"id": "TN5000:003242#n|true|narrative", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "DDTI:73_1#f|twin|impression_first", "result": {"judge": 0.6, "f1": 0.6666666666666666, "n_err": 2, "cats": ["false finding", "false finding"]}}
+{"id": "DDTI:73_1#n|true|terse", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "TN3K:trainval/2644.jpg#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/2644.jpg#n|true|narrative", "result": {"judge": 0.7, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/0957.jpg#f|twin|terse", "result": {"judge": 1.1102230246251565e-16, "f1": 0.0, "n_err": 3, "cats": ["false finding", "wrong measurement", "missed finding"]}}
+{"id": "TN3K:trainval/0957.jpg#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/2746.jpg#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/2746.jpg#n|true|impression_first", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:004670#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:test/0273.jpg#f|twin|terse", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:test/0273.jpg#n|true|terse", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "TN3K:trainval/0182.jpg#n|true|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:test/0471.jpg#f|twin|terse", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:002673#f|twin|terse", "result": {"judge": 1.1102230246251565e-16, "f1": 0.0, "n_err": 3, "cats": ["false finding", "wrong measurement", "missed finding"]}}
+{"id": "TN5000:002673#n|true|impression_first", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:004684#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:004684#n|true|impression_first", "result": {"judge": 0.9, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/0002.jpg#f|twin|impression_first", "result": {"judge": 0.10000000000000009, "f1": 0.5714285714285715, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "DDTI:129_2#f|twin|impression_first", "result": {"judge": 1.1102230246251565e-16, "f1": 0.7058823529411765, "n_err": 3, "cats": ["false finding", "wrong severity/category", "wrong measurement"]}}
+{"id": "TN3K:trainval/2553.jpg#f|twin|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/2553.jpg#n|true|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "DDTI:353_1#n|true|terse", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "TN3K:trainval/1760.jpg#n|true|impression_first", "result": {"judge": 0.4, "f1": 0.5714285714285715, "n_err": 2, "cats": ["false finding", "false finding"]}}
+{"id": "TN3K:trainval/2637.jpg#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/2637.jpg#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/2320.jpg#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/2533.jpg#f|twin|impression_first", "result": {"judge": 0.20000000000000007, "f1": 0.47058823529411764, "n_err": 3, "cats": ["false finding", "wrong severity/category", "wrong severity/category"]}}
+{"id": "TN3K:trainval/2533.jpg#n|true|terse", "result": {"judge": 0.0, "f1": 0.5, "n_err": 3, "cats": ["false finding", "wrong measurement", "false finding"]}}
+{"id": "TN3K:test/0251.jpg#f|twin|impression_first", "result": {"judge": 1.1102230246251565e-16, "f1": 0.5, "n_err": 3, "cats": ["false finding", "missed finding", "wrong measurement"]}}
+{"id": "TN3K:test/0251.jpg#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:000615#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:000615#n|true|terse", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "DDTI:227_1#f|twin|narrative", "result": {"judge": 0.0, "f1": 0.5714285714285715, "n_err": 3, "cats": ["false finding", "missed finding", "false finding"]}}
+{"id": "TN5000:000566#f|twin|impression_first", "result": {"judge": 1.1102230246251565e-16, "f1": 0.5, "n_err": 3, "cats": ["false finding", "missed finding", "wrong measurement"]}}
+{"id": "TN5000:000566#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "DDTI:6_1#n|true|narrative", "result": {"judge": 0.4, "f1": 0.8571428571428571, "n_err": 1, "cats": ["false finding"]}}
+{"id": "DDTI:168_1#f|twin|terse", "result": {"judge": 0.4, "f1": 0.8, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:004245#f|twin|terse", "result": {"judge": 0.0, "f1": 0.0, "n_err": 5, "cats": ["false finding", "wrong measurement", "missed finding", "missed finding", "missed finding"]}}
+{"id": "TN5000:001933#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:001933#n|true|impression_first", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:000544#f|twin|impression_first", "result": {"judge": 0.4, "f1": 0.6, "n_err": 2, "cats": ["false finding", "false finding"]}}
+{"id": "TN5000:000544#n|true|narrative", "result": {"judge": 0.7, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:002905#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:002905#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/2223.jpg#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/2223.jpg#n|true|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "DDTI:366_2#f|twin|terse", "result": {"judge": 1.1102230246251565e-16, "f1": 0.0, "n_err": 3, "cats": ["false finding", "wrong measurement", "wrong location"]}}
+{"id": "DDTI:52_1#n|true|impression_first", "result": {"judge": 1.1102230246251565e-16, "f1": 0.6153846153846153, "n_err": 3, "cats": ["missed finding", "wrong measurement", "wrong location"]}}
+{"id": "TN5000:002008#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:002008#n|true|narrative", "result": {"judge": 0.7, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/2200.jpg#f|twin|impression_first", "result": {"judge": 1.1102230246251565e-16, "f1": 0.5, "n_err": 3, "cats": ["false finding", "wrong category", "wrong measurement"]}}
+{"id": "TN5000:003212#n|true|impression_first", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:003169#f|twin|impression_first", "result": {"judge": 0.9, "f1": 1.0, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:003266#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:003266#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:trainval/1924.jpg#f|twin|terse", "result": {"judge": 1.1102230246251565e-16, "f1": 0.0, "n_err": 3, "cats": ["false finding", "wrong measurement", "wrong severity/category"]}}
+{"id": "TN3K:trainval/1924.jpg#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN3K:test/0559.jpg#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.42857142857142855, "n_err": 2, "cats": ["false finding", "false finding"]}}
+{"id": "TN5000:002011#f|twin|terse", "result": {"judge": 1.1102230246251565e-16, "f1": 0.0, "n_err": 3, "cats": ["false finding", "wrong measurement", "wrong severity/category"]}}
+{"id": "TN5000:002011#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:001108#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "TN5000:001108#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "DDTI:47_1#f|twin|terse", "result": {"judge": 0.4, "f1": 0.5714285714285715, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:505_HC#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:505_HC#n|true|impression_first", "result": {"judge": 0.10000000000000009, "f1": 0.0, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "HC18:058_HC#f|twin|impression_first", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:058_HC#n|true|impression_first", "result": {"judge": 1.1102230246251565e-16, "f1": 0.0, "n_err": 3, "cats": ["false finding", "false finding", "wrong measurement"]}}
+{"id": "HC18:247_HC#n|true|narrative", "result": {"judge": 0.4, "f1": 0.0, "n_err": 2, "cats": ["false finding", "false finding"]}}
+{"id": "HC18:395_HC#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01191_Plane3_3_of_4#f|twin|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01191_Plane3_3_of_4#n|true|terse", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "FetalHead:Patient01093_Plane3_1_of_3#f|twin|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01670_Plane3_2_of_7#f|twin|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01198_Plane3_1_of_2#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.5714285714285715, "n_err": 2, "cats": ["missed finding", "false finding"]}}
+{"id": "FetalHead:Patient01730_Plane3_3_of_3#f|twin|terse", "result": {"judge": 0.10000000000000009, "f1": 0.0, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "FetalHead:Patient01730_Plane3_3_of_3#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:411_HC#f|twin|narrative", "result": {"judge": 1.1102230246251565e-16, "f1": 0.8571428571428571, "n_err": 3, "cats": ["false finding", "false finding", "false finding"]}}
+{"id": "HC18:411_HC#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient00870_Plane3_5_of_5#f|twin|impression_first", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 2, "cats": ["false finding", "false finding"]}}
+{"id": "FetalHead:Patient00704_Plane3_1_of_5#f|twin|terse", "result": {"judge": 0.30000000000000004, "f1": 0.0, "n_err": 2, "cats": ["false finding", "wrong wording"]}}
+{"id": "FetalHead:Patient00704_Plane3_1_of_5#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01552_Plane3_1_of_2#f|twin|impression_first", "result": {"judge": 0.20000000000000007, "f1": 0.5714285714285715, "n_err": 3, "cats": ["false finding", "wrong wording", "wrong wording"]}}
+{"id": "FetalHead:Patient01552_Plane3_1_of_2#n|true|terse", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "FetalHead:Patient01093_Plane3_3_of_3#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:617_2HC#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:617_2HC#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01191_Plane3_1_of_4#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01191_Plane3_1_of_4#n|true|terse", "result": {"judge": 0.0, "f1": 0.6666666666666666, "n_err": 3, "cats": ["missed finding", "missed finding", "false finding"]}}
+{"id": "FetalHead:Patient00970_Plane3_3_of_4#f|twin|impression_first", "result": {"judge": 0.30000000000000004, "f1": 0.46153846153846156, "n_err": 2, "cats": ["false finding", "wrong measurement"]}}
+{"id": "FetalHead:Patient00970_Plane3_3_of_4#n|true|impression_first", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01151_Plane3_1_of_13#f|twin|impression_first", "result": {"judge": 0.30000000000000004, "f1": 0.46153846153846156, "n_err": 3, "cats": ["false finding", "false finding", "wrong location"]}}
+{"id": "FetalHead:Patient01151_Plane3_1_of_13#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:148_HC#n|true|narrative", "result": {"judge": 0.10000000000000009, "f1": 0.0, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "FetalHead:Patient01682_Plane3_2_of_6#f|twin|impression_first", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01682_Plane3_2_of_6#n|true|impression_first", "result": {"judge": 0.10000000000000009, "f1": 0.5, "n_err": 2, "cats": ["false finding", "false finding"]}}
+{"id": "FetalHead:Patient00823_Plane3_3_of_4#f|twin|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient00823_Plane3_3_of_4#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:744_HC#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:744_HC#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:124_2HC#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:124_2HC#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:522_HC#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:522_HC#n|true|impression_first", "result": {"judge": 0.0, "f1": 0.0, "n_err": 4, "cats": ["false finding", "false finding", "wrong measurement", "missed finding"]}}
+{"id": "HC18:269_HC#f|twin|impression_first", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["missed finding"]}}
+{"id": "HC18:269_HC#n|true|impression_first", "result": {"judge": 0.0, "f1": 0.0, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "FetalHead:Patient00649_Plane3_1_of_1#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient00649_Plane3_1_of_1#n|true|impression_first", "result": {"judge": 0.0, "f1": 0.0, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "FetalHead:Patient01782_Plane3_2_of_2#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:102_2HC#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:035_HC#f|twin|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:035_HC#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:003_HC#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:003_HC#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01245_Plane3_2_of_2#f|twin|narrative", "result": {"judge": 0.10000000000000009, "f1": 0.0, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "FetalHead:Patient01245_Plane3_2_of_2#n|true|terse", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "HC18:731_3HC#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:731_3HC#n|true|impression_first", "result": {"judge": 0.0, "f1": 0.0, "n_err": 2, "cats": ["missed finding", "missed finding"]}}
+{"id": "FetalHead:Patient01670_Plane3_3_of_7#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01670_Plane3_3_of_7#n|true|narrative", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient00870_Plane3_3_of_5#f|twin|impression_first", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:001_HC#n|true|impression_first", "result": {"judge": 0.0, "f1": 0.0, "n_err": 3, "cats": ["false finding", "wrong severity/category", "false finding"]}}
+{"id": "FetalHead:Patient01151_Plane3_6_of_13#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.5, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "FetalHead:Patient01151_Plane3_6_of_13#n|true|narrative", "result": {"judge": 0.6, "f1": 0.6666666666666666, "n_err": 2, "cats": ["false finding", "false finding"]}}
+{"id": "FetalHead:Patient01682_Plane3_6_of_6#f|twin|terse", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01682_Plane3_6_of_6#n|true|narrative", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01093_Plane3_2_of_3#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.5, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "FetalHead:Patient01093_Plane3_2_of_3#n|true|impression_first", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01599_Plane3_1_of_2#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.5, "n_err": 4, "cats": ["missed finding", "missed finding", "false finding", "false finding"]}}
+{"id": "FetalHead:Patient01322_Plane3_1_of_4#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01322_Plane3_1_of_4#n|true|impression_first", "result": {"judge": 0.0, "f1": 0.5, "n_err": 2, "cats": ["missed finding", "missed finding"]}}
+{"id": "FetalHead:Patient01322_Plane3_2_of_4#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.4, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "FetalHead:Patient01322_Plane3_2_of_4#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01179_Plane3_3_of_3#f|twin|impression_first", "result": {"judge": 0.0, "f1": 0.5, "n_err": 2, "cats": ["false finding", "missed finding"]}}
+{"id": "FetalHead:Patient01179_Plane3_3_of_3#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:482_HC#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:482_HC#n|true|terse", "result": {"judge": 0.6, "f1": 0.0, "n_err": 2, "cats": ["false finding", "wrong measurement"]}}
+{"id": "FetalHead:Patient01323_Plane3_2_of_8#f|twin|impression_first", "result": {"judge": 0.30000000000000004, "f1": 0.46153846153846156, "n_err": 3, "cats": ["false finding", "wrong wording", "false finding"]}}
+{"id": "FetalHead:Patient01323_Plane3_2_of_8#n|true|terse", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "HC18:117_HC#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:117_HC#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient00742_Plane3_3_of_4#n|true|terse", "result": {"judge": 1, "f1": 1.0, "n_err": 0, "cats": []}}
+{"id": "HC18:061_HC#f|twin|narrative", "result": {"judge": 0.4, "f1": 0.5, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:061_HC#n|true|narrative", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01322_Plane3_3_of_4#f|twin|impression_first", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "FetalHead:Patient01322_Plane3_3_of_4#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:224_HC#f|twin|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}
+{"id": "HC18:224_HC#n|true|terse", "result": {"judge": 0.7, "f1": 0.6666666666666666, "n_err": 1, "cats": ["false finding"]}}

@@ -1,0 +1,296 @@
+{
+ "trials": [
+  {
+   "n_major_critical": 405,
+   "catch_major_critical": 0.9580246913580247,
+   "missed_major_critical": 17,
+   "catch_all_errors": 0.9681647940074907,
+   "harmless_routed": 0.22833562585969738,
+   "n_harmless": 1454,
+   "calls_per_audited_report": 3,
+   "n_fabrication": 112,
+   "catch_fabrication": 0.8482142857142857,
+   "n_normal_addition": 106,
+   "normal_addition_routed": 0.6509433962264151,
+   "trial": "S48-T1",
+   "description": "S1 baseline: Gemma, strict parser (Step 47 rule)",
+   "judges": [
+    "gemma"
+   ],
+   "parser": "strict",
+   "combine": "any",
+   "missing_calls": 0,
+   "harmless_route_reasons": {
+    "unparsed_judge_reply": 209,
+    "rule_difference": 104,
+    "judge_major_claim": 64,
+    "rule_major": 29,
+    "order_swap_disagreement": 28,
+    "judge_unsure": 17,
+    "prompt_reword_disagreement": 12
+   }
+  },
+  {
+   "n_major_critical": 405,
+   "catch_major_critical": 0.9407407407407408,
+   "missed_major_critical": 24,
+   "catch_all_errors": 0.9550561797752809,
+   "harmless_routed": 0.16162310866574967,
+   "n_harmless": 1454,
+   "calls_per_audited_report": 3,
+   "n_fabrication": 112,
+   "catch_fabrication": 0.7857142857142857,
+   "n_normal_addition": 106,
+   "normal_addition_routed": 0.2830188679245283,
+   "trial": "S48-T2",
+   "description": "S1 rule, Gemma, parser P2",
+   "judges": [
+    "gemma"
+   ],
+   "parser": "p2",
+   "combine": "any",
+   "missing_calls": 0,
+   "harmless_route_reasons": {
+    "judge_major_claim": 116,
+    "rule_difference": 104,
+    "order_swap_disagreement": 77,
+    "prompt_reword_disagreement": 48,
+    "judge_unsure": 31,
+    "rule_major": 29,
+    "unparsed_judge_reply": 8
+   }
+  },
+  {
+   "n_major_critical": 405,
+   "catch_major_critical": 0.9580246913580247,
+   "missed_major_critical": 17,
+   "catch_all_errors": 0.9681647940074907,
+   "harmless_routed": 0.6141678129298487,
+   "n_harmless": 1454,
+   "calls_per_audited_report": 3,
+   "n_fabrication": 112,
+   "catch_fabrication": 0.8482142857142857,
+   "n_normal_addition": 106,
+   "normal_addition_routed": 0.6698113207547169,
+   "trial": "S48-T3",
+   "description": "S1 rule, Llama, strict parser",
+   "judges": [
+    "llama"
+   ],
+   "parser": "strict",
+   "combine": "any",
+   "missing_calls": 0,
+   "harmless_route_reasons": {
+    "unparsed_judge_reply": 717,
+    "judge_major_claim": 224,
+    "prompt_reword_disagreement": 126,
+    "rule_difference": 104,
+    "rule_major": 29,
+    "order_swap_disagreement": 17,
+    "judge_unsure": 8
+   }
+  },
+  {
+   "n_major_critical": 405,
+   "catch_major_critical": 0.9506172839506173,
+   "missed_major_critical": 20,
+   "catch_all_errors": 0.9625468164794008,
+   "harmless_routed": 0.5962861072902338,
+   "n_harmless": 1454,
+   "calls_per_audited_report": 3,
+   "n_fabrication": 112,
+   "catch_fabrication": 0.8214285714285714,
+   "n_normal_addition": 106,
+   "normal_addition_routed": 0.42452830188679247,
+   "trial": "S48-T4",
+   "description": "S1 rule, Llama, parser P2",
+   "judges": [
+    "llama"
+   ],
+   "parser": "p2",
+   "combine": "any",
+   "missing_calls": 0,
+   "harmless_route_reasons": {
+    "unparsed_judge_reply": 662,
+    "judge_major_claim": 245,
+    "prompt_reword_disagreement": 152,
+    "rule_difference": 104,
+    "rule_major": 29,
+    "order_swap_disagreement": 22,
+    "judge_unsure": 8
+   }
+  },
+  {
+   "n_major_critical": 405,
+   "catch_major_critical": 0.980246913580247,
+   "missed_major_critical": 8,
+   "catch_all_errors": 0.9850187265917603,
+   "harmless_routed": 0.6292984869325997,
+   "n_harmless": 1454,
+   "calls_per_audited_report": 6,
+   "n_fabrication": 112,
+   "catch_fabrication": 0.9285714285714286,
+   "n_normal_addition": 106,
+   "normal_addition_routed": 0.5,
+   "trial": "S48-T5",
+   "description": "S1 rule, Gemma P2 OR Llama P2 (route if either judge part routes)",
+   "judges": [
+    "gemma",
+    "llama"
+   ],
+   "parser": "p2",
+   "combine": "any",
+   "missing_calls": 0,
+   "harmless_route_reasons": {
+    "unparsed_judge_reply": 670,
+    "judge_major_claim": 361,
+    "prompt_reword_disagreement": 200,
+    "rule_difference": 104,
+    "order_swap_disagreement": 99,
+    "judge_unsure": 39,
+    "rule_major": 29
+   }
+  },
+  {
+   "n_major_critical": 405,
+   "catch_major_critical": 0.9111111111111111,
+   "missed_major_critical": 36,
+   "catch_all_errors": 0.9325842696629213,
+   "harmless_routed": 0.12861072902338377,
+   "n_harmless": 1454,
+   "calls_per_audited_report": 6,
+   "n_fabrication": 112,
+   "catch_fabrication": 0.6785714285714286,
+   "n_normal_addition": 106,
+   "normal_addition_routed": 0.20754716981132076,
+   "trial": "S48-T6",
+   "description": "S1 rule, Gemma P2 AND Llama P2 (judge part routes only if both do)",
+   "judges": [
+    "gemma",
+    "llama"
+   ],
+   "parser": "p2",
+   "combine": "all",
+   "missing_calls": 0,
+   "harmless_route_reasons": {
+    "judge_major_claim": 119,
+    "rule_difference": 104,
+    "unparsed_judge_reply": 66,
+    "order_swap_disagreement": 63,
+    "prompt_reword_disagreement": 62,
+    "rule_major": 29,
+    "judge_unsure": 20
+   }
+  },
+  {
+   "n_major_critical": 405,
+   "catch_major_critical": 0.7308641975308642,
+   "missed_major_critical": 109,
+   "catch_all_errors": 0.795880149812734,
+   "harmless_routed": 0.07152682255845942,
+   "n_harmless": 1454,
+   "calls_per_audited_report": 0,
+   "n_fabrication": 112,
+   "catch_fabrication": 0.026785714285714284,
+   "n_normal_addition": 106,
+   "normal_addition_routed": 0.02830188679245283,
+   "trial": "S48-T7",
+   "description": "Rules only: route on any rule difference, no judge (baseline, amendment 1 item 8)",
+   "judges": [],
+   "parser": "none",
+   "combine": "any",
+   "missing_calls": 0,
+   "harmless_route_reasons": {
+    "rule_difference": 104,
+    "rule_major": 29
+   }
+  },
+  {
+   "n_major_critical": 405,
+   "catch_major_critical": 0.8814814814814815,
+   "missed_major_critical": 48,
+   "catch_all_errors": 0.9101123595505618,
+   "harmless_routed": 0.10866574965612105,
+   "n_harmless": 1454,
+   "calls_per_audited_report": 3,
+   "n_fabrication": 112,
+   "catch_fabrication": 0.5714285714285714,
+   "n_normal_addition": 106,
+   "normal_addition_routed": 0.1792452830188679,
+   "trial": "S48-T8",
+   "description": "S1 rule, Gemma P2, judge major claim needs 2 of 3 readings (amendment 1 item 8)",
+   "judges": [
+    "gemma"
+   ],
+   "parser": "p2",
+   "combine": "majority",
+   "missing_calls": 0,
+   "harmless_route_reasons": {
+    "rule_difference": 104,
+    "judge_unsure": 31,
+    "rule_major": 29,
+    "judge_major_claim_2of3": 24,
+    "unparsed_judge_reply": 8
+   }
+  },
+  {
+   "n_major_critical": 405,
+   "catch_major_critical": 0.980246913580247,
+   "missed_major_critical": 8,
+   "catch_all_errors": 0.9850187265917603,
+   "harmless_routed": 0.6292984869325997,
+   "n_harmless": 1454,
+   "calls_per_audited_report": 6,
+   "n_fabrication": 112,
+   "catch_fabrication": 0.9285714285714286,
+   "n_normal_addition": 106,
+   "normal_addition_routed": 0.5,
+   "trial": "S48-T9",
+   "description": "S1 rule, Gemma P2 OR Llama P2, judge part = major claim / unparsed / unsure only (reading disagreement alone does not route)",
+   "judges": [
+    "gemma",
+    "llama"
+   ],
+   "parser": "p2",
+   "combine": "majors",
+   "missing_calls": 0,
+   "harmless_route_reasons": {
+    "unparsed_judge_reply": 670,
+    "judge_major_claim": 361,
+    "rule_difference": 104,
+    "judge_unsure": 39,
+    "rule_major": 29
+   }
+  },
+  {
+   "n_major_critical": 405,
+   "catch_major_critical": 0.9407407407407408,
+   "missed_major_critical": 24,
+   "catch_all_errors": 0.9550561797752809,
+   "harmless_routed": 0.16162310866574967,
+   "n_harmless": 1454,
+   "calls_per_audited_report": 3,
+   "n_fabrication": 112,
+   "catch_fabrication": 0.7857142857142857,
+   "n_normal_addition": 106,
+   "normal_addition_routed": 0.2830188679245283,
+   "trial": "S48-T10",
+   "description": "S1 rule, Gemma P2, judge part = major claim / unparsed / unsure only (reading disagreement alone does not route)",
+   "judges": [
+    "gemma"
+   ],
+   "parser": "p2",
+   "combine": "majors",
+   "missing_calls": 0,
+   "harmless_route_reasons": {
+    "judge_major_claim": 116,
+    "rule_difference": 104,
+    "judge_unsure": 31,
+    "rule_major": 29,
+    "unparsed_judge_reply": 8
+   }
+  }
+ ],
+ "winner": "S48-T1",
+ "rule": "max catch of major/critical at harmless routed <= 30%; ties: lower harmless routed, then fewer calls"
+}
