@@ -83,7 +83,7 @@ def llama_setc(args):
 
 
 # ---------------- Set C-F / Set D rows and judge calls (saved raw text always) ----------------
-SET_PATHS = {"setcf": ("set_CF", "set_C.json"), "setd": ("set_D", "set_D.json")}
+SET_PATHS = {"setcf": ("set_CF", "set_C.json"), "setd": ("set_D", "set_D.json"), "setd2": ("set_D2", "set_D.json")}
 
 
 def rows_for(which):
@@ -131,7 +131,7 @@ def run_set_calls(args):
     which, judge = args.which, args.judge
     rows = rows_for(which)
     extraction = extraction_for(which)
-    if which == "setd" and judge != "gemma":
+    if which in ("setd", "setd2") and judge != "gemma":
         keep = subset_300(rows)
         rows = [r for r in rows if r["id"] in keep]
     done = judge_calls_for(which, judge)
@@ -398,7 +398,7 @@ def main():
     import argparse
     p = argparse.ArgumentParser()
     p.add_argument("command", choices=("retry-raw", "llama-setc", "stage1", "freeze", "calls"))
-    p.add_argument("--which", choices=("setcf", "setd"), default="setcf")
+    p.add_argument("--which", choices=("setcf", "setd", "setd2"), default="setcf")
     p.add_argument("--judge", choices=("gemma", "llama"), default="gemma")
     p.add_argument("--max-hours", type=float, default=8.0)
     p.add_argument("--dry", action="store_true", help="stage1: print only, log nothing")

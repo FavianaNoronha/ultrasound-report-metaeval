@@ -16,14 +16,37 @@ from . import step48_fab as fab
 from . import step48_devfab as devfab
 
 ROOT = s47f.ROOT
-OUT = os.path.join(ROOT, "results", "partA", "step48_confirm", "set_D")
+# DEVIATIONS.md 2: the Phi-3.5 Set D (folder set_D) kept too few reports; Set D2 (folder set_D2) is written by
+# Llama-3.1-8B-Instruct with the same plan, seed and filter. Choose with env STEP48_WRITER=phi|llama (default llama).
+WRITER = os.environ.get("STEP48_WRITER", "llama")
+OUT = os.path.join(ROOT, "results", "partA", "step48_confirm", "set_D" if WRITER == "phi" else "set_D2")
 P = lambda name: os.path.join(OUT, name)
-MODEL = "mlx-community/Phi-3.5-mini-instruct-4bit"
+MODEL = {"phi": "mlx-community/Phi-3.5-mini-instruct-4bit", "llama": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit"}[WRITER]
 SEED = 48
 
 # reuse Step 47 generate / gold / extract with new paths, writer and seed
 base.OUT, base.P, base.MODEL, base.SEED = OUT, P, MODEL, SEED
 s47f.OUT, s47f.P, s47f.MODEL, s47f.SEED = OUT, P, MODEL, SEED
+
+# DEVIATIONS.md 1: Phi-3.5 does not stop at its <|end|> turn marker in mlx-lm, so replies continue with a
+# repeated '<|assistant|>' turn. Every reply is cut at the first '<|end|>' (or '<|assistant|>') before the gold filter.
+_load_cache = base.load_cache
+
+
+def _clean(text):
+    for marker in ("<|end|>", "<|assistant|>", "<|endoftext|>"):
+        text = text.split(marker)[0]
+    return text.strip()
+
+
+def load_cache():
+    cache = _load_cache()
+    for rec in cache.values():
+        rec["reply"] = _clean(rec["reply"])
+    return cache
+
+
+base.load_cache = load_cache
 
 
 def setd_case_ids():
@@ -102,7 +125,7 @@ def build_plan():
 
 
 def model_info():
-    root = os.path.expanduser("~/.cache/huggingface/hub/models--mlx-community--Phi-3.5-mini-instruct-4bit")
+    root = os.path.expanduser("~/.cache/huggingface/hub/models--" + MODEL.replace("/", "--"))
     ref = os.path.join(root, "refs", "main")
     if not os.path.exists(ref):
         from huggingface_hub import snapshot_download
@@ -152,15 +175,28 @@ def gold(args):
     print("ELIGIBILITY major/critical errors kept:", major, "(need >= 400); groups by organ:", groups, flush=True)
 
 
+def pilot(args):
+    plan_items = {i["id"]: i for i in json.load(open(P("plan.json")))["items"]}
+    cache = base.load_cache()
+    kept = 0
+    for k, r in cache.items():
+        it = plan_items.get(k)
+        if it is None:
+            continue
+        ok, _ = base.gold_check(it["organ"], it["facts"], r["reply"])
+        kept += ok and not base.extras(it["organ"], it["facts"], r["reply"])
+    print("PILOT", WRITER, "generated", len(cache), "kept", kept, "rate", round(kept / max(len(cache), 1), 2), flush=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=("plan", "generate", "gold", "extract"))
+    ap.add_argument("command", choices=("plan", "generate", "gold", "extract", "pilot"))
     ap.add_argument("--max-hours", type=float, default=6.0)
     ap.add_argument("--only", default=None)
     ap.add_argument("--refresh-lod", action="store_true")
     a = ap.parse_args()
     os.makedirs(OUT, exist_ok=True)
-    {"plan": plan, "generate": s47f.generate, "gold": gold, "extract": s47f.extract}[a.command](a)
+    {"plan": plan, "generate": s47f.generate, "gold": gold, "extract": s47f.extract, "pilot": pilot}[a.command](a)
 
 
 if __name__ == "__main__":
